@@ -1,0 +1,188 @@
+{
+  "DOI": "10.1109/micro56248.2022.00019",
+  "title": [
+    "CRONUS: Fault-isolated, Secure and High-performance Heterogeneous Computing for Trusted Execution Environment"
+  ],
+  "author": [
+    {
+      "given": "Jianyu",
+      "family": "Jiang",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "The University of Hong Kong,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ji",
+      "family": "Qi",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "The University of Hong Kong,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tianxiang",
+      "family": "Shen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "The University of Hong Kong,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xusheng",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "The University of Hong Kong,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Shixiong",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "The University of Hong Kong,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sen",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Huawei Technologies,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Li",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Huawei Technologies,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Gong",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Huawei Technologies,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xiapu",
+      "family": "Luo",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "The Hong Kong Polytechnic University,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Heming",
+      "family": "Cui",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "The University of Hong Kong,Hong Kong,China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "2022 55th IEEE/ACM International Symposium on Microarchitecture (MICRO)"
+  ],
+  "type": "proceedings-article",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        10
+      ]
+    ]
+  },
+  "relation": {},
+  "resource": {
+    "primary": {
+      "URL": "https://ieeexplore.ieee.org/document/9923810/"
+    }
+  },
+  "checked_at_utc": "2026-10-15T22:10:27+00:00",
+  "metadata_source": "https://api.crossref.org/works/10.1109/micro56248.2022.00019"
+}

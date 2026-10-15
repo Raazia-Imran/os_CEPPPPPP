@@ -42,3 +42,9 @@ Next: recover ACM provenance; resolve version pairs; finish abstracts and genuin
 ## Cycle 1 started
 
 Baseline main: 07085c4fb40ab0ea6b1e2d0702a776a110b4eb18. Baseline counts verified against committed registers. 2026-10-15T21:46:02.589311+00:00 UTC: recovered teammate search log; claimed ACM 1600 displayed / 1603 exported needs raw-file reconciliation. New exports staged separately, active counts unchanged. Human final decisions remain pending.
+
+Published checkpoint 1: 8a9dc3dd116940747cff1b4a6f6f009f7b3f100f, verified 2026-10-15T21:47 UTC (16 October Pakistan time).
+
+Cycle 1 batch C1-01: 400 new rules-assisted preliminary recommendations; total 1200, excludes 849, retain/uncertain 351; 1047 pending. Raw hash/ID checks pass. Shared snippets are not full abstracts. Recovered overlapping master exports staged separately; active imported totals unchanged. 2026-10-15T21:50:54.067739+00:00
+
+Cycle 1 batch C1-02: total1600 recommendations,1123 preliminary exclusions,477 retain/uncertain,647 awaiting first recommendation. All41 version pairs audited:30containers,3verified identity proposals,3companion-report proposals,5unresolved paper pairs; no linkage applied. QA50items/5reports;26outcomes;10citation events. Publication temporarily blocked by automated disclosure review; changed text files scanned with no credential/private URL findings; exact repository admin/push access verified. 2026-10-15T22:10:58.438420+00:00

@@ -1,0 +1,83 @@
+{
+  "DOI": "10.1145/3711699",
+  "title": [
+    "Exploring Function Granularity for Serverless Machine Learning Application with GPU Sharing"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-7078-5454",
+      "authenticated-orcid": false,
+      "given": "Xinning",
+      "family": "Hui",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "North Carolina State University, Raleigh, NC, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-4165-9138",
+      "authenticated-orcid": false,
+      "given": "Yuanchao",
+      "family": "Xu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of California Santa Cruz, Santa Cruz, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-3599-8010",
+      "authenticated-orcid": false,
+      "given": "Xipeng",
+      "family": "Shen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "North Carolina State University, Raleigh, NC, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Proceedings of the ACM on Measurement and Analysis of Computing Systems"
+  ],
+  "type": "journal-article",
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        3,
+        6
+      ]
+    ]
+  },
+  "relation": {},
+  "resource": {
+    "primary": {
+      "URL": "https://dl.acm.org/doi/10.1145/3711699"
+    }
+  },
+  "checked_at_utc": "2026-10-15T22:10:27+00:00",
+  "metadata_source": "https://api.crossref.org/works/10.1145/3711699"
+}

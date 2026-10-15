@@ -1,12 +1,18 @@
 {
-  "first_reviewer_records": 800,
-  "first_reviewer_fraction": 0.3560302625723186,
-  "exclude_recommendations": 652,
-  "retained_or_uncertain": 148,
-  "unreviewed": 1447,
+  "first_reviewer_records": 1600,
+  "first_reviewer_fraction": 0.7120605251446372,
+  "exclude_recommendations": 1123,
+  "retained_or_uncertain": 477,
+  "unreviewed": 647,
   "source_checked_reports": 5,
-  "new_outcome_rows": 6,
-  "appraised_reports": 2,
+  "new_outcome_rows": 26,
+  "appraised_reports": 5,
+  "quality_item_rows": 50,
+  "snowballing_events": 10,
   "final_decisions": "pending",
-  "final_included_studies": "pending"
+  "final_included_studies": "pending",
+  "updated_at_utc": "2026-10-15T22:10:28+00:00",
+  "cycle1_new_recommendations": 800,
+  "human_candidate_records": 1124,
+  "exclusion_sample_records": 115
 }

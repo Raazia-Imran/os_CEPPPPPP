@@ -1,0 +1,65 @@
+{
+  "DOI": "10.1145/3801489.3806868",
+  "title": [
+    "HealthServe: A Public Health-Aware Inference Framework"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0000-9991-5136",
+      "authenticated-orcid": false,
+      "given": "Sicheng",
+      "family": "Zhou",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "University of Utah, Salt Lake City, Utah, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1082-9846",
+      "authenticated-orcid": false,
+      "given": "Rohan Basu",
+      "family": "Roy",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of Utah, Salt Lake City, Utah, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Abstracts of the 2026 ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems"
+  ],
+  "type": "proceedings-article",
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        8
+      ]
+    ]
+  },
+  "relation": {},
+  "resource": {
+    "primary": {
+      "URL": "https://dl.acm.org/doi/10.1145/3801489.3806868"
+    }
+  },
+  "checked_at_utc": "2026-10-15T22:10:27+00:00",
+  "metadata_source": "https://api.crossref.org/works/10.1145/3801489.3806868"
+}

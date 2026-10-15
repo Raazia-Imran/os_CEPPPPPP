@@ -1,0 +1,52 @@
+{
+  "DOI": "10.1007/978-3-031-92870-3_22",
+  "title": [
+    "Application of Generative Adversarial Networks (GAN) to Geostatistical Modeling of Categorical Variables"
+  ],
+  "author": [
+    {
+      "given": "Mostafa",
+      "family": "Hadavand",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Clayton V.",
+      "family": "Deutsch",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Quantitative Geology and Geostatistics",
+    "International Geostatistics Congress 2024"
+  ],
+  "type": "book-chapter",
+  "published": {
+    "date-parts": [
+      [
+        2025
+      ]
+    ]
+  },
+  "relation": {},
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/978-3-031-92870-3_22"
+    }
+  },
+  "checked_at_utc": "2026-10-15T22:10:27+00:00",
+  "metadata_source": "https://api.crossref.org/works/10.1007/978-3-031-92870-3_22"
+}

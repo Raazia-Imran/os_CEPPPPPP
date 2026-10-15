@@ -16,19 +16,19 @@ summary.getRange('A5:C16').values=[
 ['First-review recommendations',null,'Title or explicit publication-type check'],
 ['First-review coverage',null,'Recommendations divided by canonical queue'],
 ['Final independent decisions','Pending','Do not substitute first votes for final exclusions'],
-['Priority reports source-checked',5,'Bounded source checks; final inclusion pending'],
-['New checked outcome rows',6,'Independent numerical checks pending'],
-['First-review QA reports',2,'Group B 0-2 rubric; no copied scores'],
-['Unresolved version pairs',41,'Different identifiers require review'],
+['Priority reports source-checked',d.progress.source_checked_reports,'Bounded source checks; final inclusion pending'],
+['New checked outcome rows',d.progress.new_outcome_rows,'Independent numerical checks pending'],
+['First-review QA reports',d.progress.appraised_reports,'Group B 0-2 rubric; no copied scores'],
+['Original possible version pairs',41,'See Version audit for current dispositions'],
 ['ScienceDirect','Deferred','Earlier RIS originals preserved outside active counts'],
-['ACM run mapping','Unknown','Recover exact queries, fields, hits, dates and pages']];
+['ACM run mapping','Partly recovered','Search log recovered; 79-file mapping and counts unresolved']];
 summary.getRange('A19:C19').values=[['First-review quality calibration','Raw score','Applicable maximum']];
 summary.getRange('A20:A21').values=[['GB-P001 VastPipe (local GPU evidence)'],['GB-P002 iGniter']];
 summary.getRange('D19').values=[['Normalized']];
 for(const [name,rows] of Object.entries(d.sheets)){
  const sh=wb.worksheets.add(name);sh.showGridLines=false;
- let fields=Object.keys(rows[0]||{});
- if(name==='Screening') fields=['record_id','database','title','priority','reviewer_1_vote','reviewer_2_vote','screening_decision','criterion','reason','doi','fulltext_status'];
+ let fields=[...new Set(rows.flatMap(r=>Object.keys(r)))];
+ if(name==='Screening') fields=[...new Set(['record_id','database','title','priority','reviewer_1_vote','reviewer_2_vote','screening_decision','criterion','reason','doi','fulltext_status',...fields])];
  if(name==='Records') fields=['record_id','canonical_record_id','database','title','authors','year','doi','url','entry_type','source_run','source_file','source_position','source_hash','abstract'];
  const vals=[fields,...rows.map(r=>fields.map(k=>{
  let v=r[k]??'';

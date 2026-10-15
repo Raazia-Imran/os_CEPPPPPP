@@ -1,0 +1,245 @@
+{
+  "DOI": "10.1145/3581784.3607054",
+  "title": [
+    "EasyScale: Elastic Training with Consistent Accuracy and Improved Utilization on GPUs"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-4115-9072",
+      "authenticated-orcid": false,
+      "given": "Mingzhen",
+      "family": "Li",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Beihang University, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3043-522X",
+      "authenticated-orcid": false,
+      "given": "Wencong",
+      "family": "Xiao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alibaba Group, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-1101-7927",
+      "authenticated-orcid": false,
+      "given": "Hailong",
+      "family": "Yang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Beihang University, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0000-7100-0866",
+      "authenticated-orcid": false,
+      "given": "Biao",
+      "family": "Sun",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Beihang University, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-2536-0016",
+      "authenticated-orcid": false,
+      "given": "Hanyu",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alibaba Group, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-2430-2009",
+      "authenticated-orcid": false,
+      "given": "Shiru",
+      "family": "Ren",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alibaba Group, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-7186-0556",
+      "authenticated-orcid": false,
+      "given": "Zhongzhi",
+      "family": "Luan",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Beihang University, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0006-8663-0653",
+      "authenticated-orcid": false,
+      "given": "Xianyan",
+      "family": "Jia",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alibaba Group, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-1829-2817",
+      "authenticated-orcid": false,
+      "given": "Yi",
+      "family": "Liu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Beihang University, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9072-3170",
+      "authenticated-orcid": false,
+      "given": "Yong",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alibaba Group, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3003-0150",
+      "authenticated-orcid": false,
+      "given": "Wei",
+      "family": "Lin",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alibaba Group, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-5382-1473",
+      "authenticated-orcid": false,
+      "given": "Depei",
+      "family": "Qian",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Beihang University, Beijing, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+  ],
+  "type": "proceedings-article",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        11
+      ]
+    ]
+  },
+  "relation": {},
+  "resource": {
+    "primary": {
+      "URL": "https://dl.acm.org/doi/10.1145/3581784.3607054"
+    }
+  },
+  "checked_at_utc": "2026-10-15T22:10:27+00:00",
+  "metadata_source": "https://api.crossref.org/works/10.1145/3581784.3607054"
+}

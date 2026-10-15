@@ -1,0 +1,4 @@
+report_id,source_url,bytes,sha256,pdf_pages,retrieved_date_utc,receipt_checked_at_utc,version,local_only,reviewer
+GB-P003,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,7567937,8b3ec8c3ac38f3d1fbe29361e65a6f8afee5ae8f9fca57b1e30ff15466027a9f,18,2026-10-15,2026-10-15T22:10:27+00:00,published conference PDF,yes; source PDF not committed,Codex-GroupB
+GB-P004,https://www.usenix.org/system/files/osdi20-bai.pdf,929126,bda339767febf69c5aaf9091fbfef42f3073df27c7f1a30b8973dd7867e7c0aa,17,2026-10-15,2026-10-15T22:10:27+00:00,published conference PDF,yes; source PDF not committed,Codex-GroupB
+GB-P005,https://www.usenix.org/system/files/osdi22-han.pdf,804508,d0c1dfc5274d4a44826d02b70d78a90b7b9f1279d87804f398a1386abcecce91,21,2026-10-15,2026-10-15T22:10:27+00:00,published conference PDF,yes; source PDF not committed,Codex-GroupB

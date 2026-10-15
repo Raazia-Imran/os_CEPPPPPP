@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "file": "evidence/incoming_shared/acm_master/ACM_MASTER_01.bib",
+      "bytes": 1207663,
+      "sha256": "a879137e9541e94e4e83ba6b90b330a705e902f7a7d6d2de783f62f23b5128a9",
+      "parsed_entries": 829
+    },
+    {
+      "file": "evidence/incoming_shared/acm_master/ACM_MASTER_02.bib",
+      "bytes": 1733132,
+      "sha256": "54bfb9f1e1ac2b60e7fa2469135b08106593457f59cf7711cc5924fb125c137f",
+      "parsed_entries": 1000
+    }
+  ],
+  "claimed_displayed": 1600,
+  "claimed_exported": 1603,
+  "actual_combined_occurrences": 1829,
+  "actual_distinct_doi_or_title": 879,
+  "new_distinct_candidates": 68,
+  "metadata_enriched_occurrences": 1014,
+  "active_counts_changed": false,
+  "conclusion": "Two overlapping exports; teammate claimed total is not reproduced. Existing numbered exports not automatically mapped to this run."
+}

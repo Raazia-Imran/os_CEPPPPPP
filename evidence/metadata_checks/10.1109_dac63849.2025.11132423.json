@@ -1,0 +1,61 @@
+{
+  "DOI": "10.1109/dac63849.2025.11132423",
+  "title": [
+    "DARIS: An Oversubscribed Spatio-Temporal Scheduler for Real-Time DNN Inference on GPUs"
+  ],
+  "author": [
+    {
+      "given": "Amir Fakhim",
+      "family": "Babaei",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Virginia Tech Arlington,Department of Electrical &#x0026; Computer Engineering,Virginia,USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Thidapat",
+      "family": "Chantem",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Virginia Tech Arlington,Department of Electrical &#x0026; Computer Engineering,Virginia,USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "2025 62nd ACM/IEEE Design Automation Conference (DAC)"
+  ],
+  "type": "proceedings-article",
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        6,
+        22
+      ]
+    ]
+  },
+  "relation": {},
+  "resource": {
+    "primary": {
+      "URL": "https://ieeexplore.ieee.org/document/11132423/"
+    }
+  },
+  "checked_at_utc": "2026-10-15T22:10:27+00:00",
+  "metadata_source": "https://api.crossref.org/works/10.1109/dac63849.2025.11132423"
+}
