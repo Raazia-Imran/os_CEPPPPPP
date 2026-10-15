@@ -1,0 +1,259 @@
+@proceedings{10.1145/3800935,
+editor = {Sam Brooker, Francesca Benatti, Mariusz Pisarski and Alessandro Adamou},
+title = {HT '26: Proceedings of the 37th ACM Conference on Hypertext},
+year = {2026},
+isbn = {9798400725647},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {London, United Kingdom}
+}
+
+@proceedings{10.1145/3582700,
+title = {AHs '23: Proceedings of the Augmented Humans International Conference 2023},
+year = {2023},
+isbn = {9781450399845},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Glasgow, United Kingdom}
+}
+
+@inproceedings{10.1145/3745756.3809189,
+author = {Quan, Minh K. and Pathirana, Pubudu N.},
+title = {StreamSplit: Continuous Audio Representation Learning via Uncertainty-Guided Adaptive Splitting},
+year = {2026},
+isbn = {9798400720277},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3745756.3809189},
+doi = {10.1145/3745756.3809189},
+abstract = {Large-batch Contrastive Learning (CL), the foundation of modern representation learning, is fundamentally incompatible with the volatile resource constraints of edge devices. This conflict creates a dilemma: small on-device batches degrade model fidelity, while offloading to the cloud incurs unacceptable latency and bandwidth costs. Existing solutions often resort to static model compression, which fails to adapt to the runtime volatility of edge environments. To bridge this gap, we present StreamSplit, a novel framework that makes streaming CL practical across heterogeneous ARM client platforms. StreamSplit resolves the conflict between the continuous nature of ambient audio and the discrete batch requirements of models like CLAP and COLA. We introduce: (1) A distribution-based streaming framework that decouples representation quality from local batch size, using a tractable Hybrid Loss to maintain fidelity despite sparse updates; and (2) An Uncertainty-Guided Adaptive Splitter that uses a lightweight Reinforcement Learning (RL) policy to dynamically partition computation. Uniquely, this policy integrates real-time resource monitoring with embedding ambiguity to optimize the accuracy-latency trade-off on the fly. We evaluate StreamSplit on diverse hardware, from the resource-constrained Raspberry Pi 4 to the high-performance Apple M2. Results demonstrate that StreamSplit reduces per-sample latency by up to 4.7{\texttimes} and cuts bandwidth by 77.1\% and energy by 52.3\% compared to server-centric baselines. Crucially, it maintains accuracy within 2.2\% of server-centric models, proving that adaptive, distributed learning is a viable path for the modern edge ecosystem.},
+booktitle = {Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services},
+pages = {54–68},
+numpages = {15},
+keywords = {edge computing, contrastive learning, reinforcement learning, split computing, resource management},
+location = {Cambridge, United Kingdom},
+series = {MobiSys '26}
+}
+
+@proceedings{10.1145/3786995,
+editor = {Zhiyong Fu, Archan Misra, Jiannan Li and Robert Xiao},
+title = {ICHEC '25: Proceedings of the 2025 International Conference on Human-Engaged Computing},
+year = {2025},
+isbn = {9798400722349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@inproceedings{10.1145/3466752.3480103,
+author = {Nag, Anirban and Balasubramonian, Rajeev},
+title = {OrderLight: Lightweight Memory-Ordering Primitive for Efficient Fine-Grained PIM Computations},
+year = {2021},
+isbn = {9781450385572},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3466752.3480103},
+doi = {10.1145/3466752.3480103},
+abstract = {Modern workloads such as neural networks, genomic analysis, and data analytics exhibit significant data-intensive phases (low compute to byte ratio) and, as such, stand to gain considerably by using processing-in-memory (PIM) solutions along with more traditional accelerators. While PIM has been researched extensively, the granularity of computation offload to PIM and the granularity of memory access arbitration between host and PIM, as well as their implications, have received relatively little attention. In this work, we first introduce a taxonomy to study the design space whilst considering these two aspects. Based on this taxonomy, we observe that much of PIM research to date has largely relied on coarse-grained approaches which, we argue, have steep costs (incompatibility with mainstream memory interfaces, prohibition of concurrent host accesses, and more). To this end, we believe that better support for fine-grained approaches is warranted in accelerators coupled with PIM-enabled memories. A key challenge in the adoption of fine-grained PIM approaches is enforcing memory ordering. We discuss how existing memory ordering primitives (fences) are not only insufficient but their large overheads render them impractical to support fine-grain computation offloads and arbitration. To address this challenge, we make the key observation that the core-centric nature of memory ordering is unnecessary for PIM computations. We propose a novel lightweight memory ordering primitive for PIM use cases, OrderLight, which moves away from core-centric ordering enforcement and considerably reduces the overheads of enforcing correctness. For a suite of key computations from machine learning, data analytics, and genomics, we demonstrate that OrderLight delivers 5.5 {\texttimes} to 8.5 {\texttimes} speedup over traditional fences.},
+booktitle = {MICRO-54: 54th Annual IEEE/ACM International Symposium on Microarchitecture},
+pages = {298–310},
+numpages = {13},
+keywords = {Processing-in-Memory, PIM Taxonomy, Memory-centric Ordering, Fine-grain Offload, Fine-grain Arbitration},
+location = {Virtual Event, Greece},
+series = {MICRO '21}
+}
+
+@article{10.1145/3511807,
+author = {Chaudhury, Ayan and Mukherjee, Partha Sarathi and Das, Sudip and Biswas, Chandan and Bhattacharya, Ujjwal},
+title = {A Deep OCR for Degraded Bangla Documents},
+year = {2022},
+issue_date = {September 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {5},
+issn = {2375-4699},
+url = {https://doi.org/10.1145/3511807},
+doi = {10.1145/3511807},
+abstract = {Despite the significant success of document image analysis techniques, efficient Optical Character Recognition (OCR) of degraded document images still remains an open problem. Although a body of work has been reported on degraded document recognition for English language, only little attention has been paid to Indic scripts. In this work, we focus on developing a degraded OCR for Bangla, a major Indian language. In general, an OCR system includes segmentation of the foreground text part from the background followed by recognition of the extracted text. The text segmentation module aims to assign the foreground or background label to each pixel of the document image. In this paper, we present a new OCR system which is particularly suitable for degraded quality Bangla document images. The contribution is two fold. In the first phase, we use a semi-supervised Markov Random Field (MRF)-based Generative Adversarial Network (GAN) model (which we call MRF-GAN) for foreground segmentation of texts from degraded text. In the proposed MRF-GAN, we extend the concept of GAN to a multitask learning mechanism where discriminator-classifier networks differentiate between real/fake images and also assign a foreground or background label to each pixel. In the second phase, we propose to use a new encoder-decoder based recognizer that incorporates an attention-based character to a word prediction model, which has the capability of minimizing Word Error Rate (WER). We optimize this network using a Multitask based Transfer Learning scheme (MTTL). We perform experiments on a publicly available degraded Bangla document image dataset as well as on a new degraded printed Hindi document image dataset, which has been created as a part of the present study. Results of the experimentations demonstrate the efficacy of the proposed OCR.},
+journal = {ACM Trans. Asian Low-Resour. Lang. Inf. Process.},
+month = aug,
+articleno = {98},
+numpages = {20},
+keywords = {Degraded OCR, MRF, GMM, GAN, BLSTM, CTC}
+}
+
+@inproceedings{10.1145/3755881.3755916,
+author = {Luo, Haoming and Yang, Wanqi and Chen, Pengfei},
+title = {MicroGuard:Non-Intrusive Dynamic Analysis for Inter-Service Access Control of Microservices},
+year = {2025},
+isbn = {9798400719264},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3755881.3755916},
+doi = {10.1145/3755881.3755916},
+abstract = {Cloud-native systems enable high-scalibility for application development and deployment with loosely coupled microservices that interact over the network, but they also introduce security risks, potentially leading to unauthorized inter-service access. To mitigate such risks, existing approaches rely on manual policy configuration or static code analysis. However, these methods are time-consuming for policy maintainance, require code avalibility and fail to support access control for hidden service invocations. To address these limitations, we propose MicroGuard, an access control system that automatically generates and enforces access control policies in microservices. During microservice development and testing, MicroGuard captures and analyzes inter-service communication packets to identify hidden runtime service invocations. MicroGuard leverages a bidirectional prefix tree (Trie) and pre-trained language models to extract comprehensive access control policies. During execution of microservice systems, MicroGuard enforces these policies to detect and block unauthorized access requests. Our experimental results show that MicroGuard effectively captures and rejects all unauthorized attempts, introducing an average processing delay of only 2\% to the original response time of microservice systems.},
+booktitle = {Proceedings of the 16th International Conference on Internetware},
+pages = {245–257},
+numpages = {13},
+keywords = {cloud-native, access control, eBPF, microservice},
+location = {Trondheim, Norway},
+series = {Internetware '25}
+}
+
+@proceedings{10.1145/3696952,
+title = {ICIIP '24: Proceedings of the 2024 9th International Conference on Intelligent Information Processing},
+year = {2024},
+isbn = {9798400718076},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bucharest, Romania}
+}
+
+@proceedings{10.1145/3565066,
+editor = {Andreas Komninos, Carmen Santoro, Damianos Gavalas, Johannes Schoening, Maristella Matera and Luis A. Leiva},
+title = {MobileHCI '23 Companion: Proceedings of the 25th International Conference on Mobile Human-Computer Interaction},
+year = {2023},
+isbn = {9781450399241},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Athens, Greece}
+}
+
+@inproceedings{10.1145/3774904.3793002,
+author = {Zhang, Xiaoyang and Deng, Yang and He, Fang and Wang, Dan},
+title = {Fairer AI Carbon Accounting: Incorporating Market-based Attribution and Uncertainty in Embodied and Operational Carbon Footprint},
+year = {2026},
+isbn = {9798400723070},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3774904.3793002},
+doi = {10.1145/3774904.3793002},
+abstract = {The computational demands of large-scale AI models raise significant concerns about their carbon footprint. Most carbon accounting methods for large-scale AI models suffer from three key limitations: they overlook embodied carbon (from hardware manufacturing) or model it simplistically, rely on location-based carbon attribution that fails to reflect individual corporate efforts to decarbonize (e.g., via Power Purchase Agreements (PPAs)), and are deterministic, ignoring inherent uncertainties. This paper proposes PUMA, a Probabilistic Uncertainty Market Attribution carbon accounting model for large-scale AI models. PUMA integrates market-based carbon intensity to accurately account for the impact of PPAs and employs probabilistic modeling to capture uncertainties in the carbon accounting for AI models arising from spatiotemporal variations in manufacturing and operation, as well as evolving efficiency. We make an effort to develop a comprehensive carbon dataset by aggregating related data from diverse sources, and then we implement a simple yet effective Kernel Density Estimate (KDE) on the distribution of the parameters from the collected dataset. We compare PUMA with LLMCarbon, the state-of-the-art carbon accounting model for large AI models. The deviation of the accounting result is significant, reaching up to around 201\%.},
+booktitle = {Proceedings of the ACM Web Conference 2026},
+pages = {9006–9014},
+numpages = {9},
+keywords = {carbon accounting, large ai model, sustainable computing},
+location = {Dubai, United Arab Emirates},
+series = {WWW '26}
+}
+
+@proceedings{10.1145/3593013,
+title = {FAccT '23: Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency},
+year = {2023},
+isbn = {9798400701924},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Chicago, IL, USA}
+}
+
+@proceedings{10.1145/3800645,
+editor = {Ching Chiuan Yen, Jung-Joo Lee, Ellen Yi-Luen Do, Clement Zheng, Daisy Yoo and Tony Tang},
+title = {DIS '26: Proceedings of the 2026 Designing Interactive Systems Conference},
+year = {2026},
+isbn = {9798400725630},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@proceedings{10.1145/3657054,
+editor = {Hsin-Chung Liao, David Duenas Cid, Marie Anne Macadar and Flavia Bernardini},
+title = {dg.o '24: Proceedings of the 25th Annual International Conference on Digital Government Research},
+year = {2024},
+isbn = {9798400709883},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Taipei, Taiwan}
+}
+
+@proceedings{10.1145/3731459,
+title = {TEI '26: Proceedings of the Twentieth International Conference on Tangible, Embedded, and Embodied Interaction},
+year = {2026},
+isbn = {9798400718687},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Chicago, IL, USA}
+}
+
+@article{10.1145/3543510,
+author = {Sharma, Ashish and Badjatiya, Mayank and Sahay, Aayush and Verma, Aryan and Agarwal, Ayush and Singal, Gaurav and Garg, Deepak and Jain, Deepak Kumar and Kotecha, Ketan},
+title = {TAM: A Front-End to an Auto-Parallelizing Compiler},
+year = {2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {2375-4699},
+url = {https://doi.org/10.1145/3543510},
+doi = {10.1145/3543510},
+abstract = {The multi-core architecture has revolutionized the parallel computing. Despite this, the modern age compilers have a long way to achieve auto-parallelization. Through this paper, we introduce a language that encouraging the auto-parallelization. We are also introducing Front-End for our auto-parallelizing compiler. Later, we examined our compiler employing a different number of core and verify results based on different metrics based on total compilation time, memory utilization, power utilization and CPU utilization. At last, we learned that parallelizing multiple files engage more CPU resources, memory and energy, but it finishes the task at hand in less time. In this paper, we have proposed a loop code generation technique that makes the generation of nested loop IR code faster by dividing the blocks into some extra code blocks using a modular approach. Our TAM compiler technique speedup by 7.506, 5.283 and 2.509 against sequential compilation when we utilized 8, 4 and 2 cores respectively. We observed that the CPU utilization of the TAM compiler reaches the maximum permissible limit when an optimal parallelizable instance is compiled.},
+note = {Just Accepted},
+journal = {ACM Trans. Asian Low-Resour. Lang. Inf. Process.},
+month = jun,
+keywords = {Parallelization, Compiler, Optimization, CPU utilization, multiprocessor}
+}
+
+@inproceedings{10.1109/ISCA59077.2024.00047,
+author = {Bakhshalipour, Mohammad and Gibbons, Phillip B.},
+title = {Tartan: Microarchitecting a Robotic Processor},
+year = {2025},
+isbn = {9798350326581},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ISCA59077.2024.00047},
+doi = {10.1109/ISCA59077.2024.00047},
+abstract = {This paper presents Tartan, a CPU architecture designed for a wide range of robotic applications. Tartan provides architectural support for common robotic kernels, ensuring its broad utility across different robotic tasks. The architecture effectively addresses both computational and memory bottlenecks, marking a significant advancement over previous works. Key features of Tartan include architectural support for oriented vectorization, approximate acceleration with accurate outcome, robot-semantic prefetching, and intra-application cache partitioning.On the six end-to-end robots in the RoWild Suite, Tartan boosts the performance of legacy robotic software by 1.2{\texttimes} (up to 1.4{\texttimes}), non-approximable software optimized for Tartan by 1.61{\texttimes} (up to 3.54{\texttimes}), and approximable software optimized for Tartan by 2.11{\texttimes} (up to 3.87{\texttimes}).},
+booktitle = {Proceedings of the 51st Annual International Symposium on Computer Architecture},
+pages = {548–565},
+numpages = {18},
+keywords = {robotics, domain-specific processors, approximate computing, specialization},
+location = {Buenos Aires, Argentina},
+series = {ISCA '24}
+}
+
+@proceedings{10.1145/3719160,
+editor = {Jaisie Sin, Edith Law, Jim Wallace, Cosmin Munteanu and Danai Korre},
+title = {CUI '25: Proceedings of the 7th ACM Conference on Conversational User Interfaces},
+year = {2025},
+isbn = {9798400715273},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Waterloo, ON, Canada}
+}
+
+@inproceedings{10.1145/3565010.3569065,
+author = {Tootaghaj, Diman Zad and Mercian, Anu and Adarsh, Vivek and Sharifian, Mehrnaz and Sharma, Puneet},
+title = {SmartNICs at edge for transient compute elasticity},
+year = {2022},
+isbn = {9781450399227},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3565010.3569065},
+doi = {10.1145/3565010.3569065},
+abstract = {This paper proposes a new architecture that strategically harvests the untapped compute capacity of the SmartNICs to offload transient microservices workload spikes, thereby reducing the SLA violations while providing better performance/energy consumption. This is particularly important for ML workloads at Edge deployments with stringent SLA requirements. Usage of the untapped compute capacity is more favorable than deploying extra servers, as SmartNICs are economically and operationally more desirable. We propose Spike-Offload, a low-cost and scalable platform that leverages machine learning to predict the spikes and orchestrates seamless offloading of generic microservices workloads to the SmartNICs, eliminating the need for pre-deploying expensive host servers and their under-utilization. Our SpikeOffload evaluation shows that SLA violations can be reduced by up to 20\% for specific workloads. Furthermore, we demonstrate that for specific workloads our approach can potentially reduce capital expenditure (CAPEX) by more than 40\%. Also, performance per unit energy consumption can be improved by upto 2X.},
+booktitle = {Proceedings of the 3rd International Workshop on Distributed Machine Learning},
+pages = {9–15},
+numpages = {7},
+keywords = {SmartNIC, application offload, edge, serverless computing},
+location = {Rome, Italy},
+series = {DistributedML '22}
+}
+
+@proceedings{10.1145/3725789,
+title = {CUG '24: Proceedings of the Cray User Group},
+year = {2024},
+isbn = {9798400713286},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The Cray User Group (CUG) is an independent, international organization composed of member institutions that own or operate Cray—and now select HPE Apollo—high-performance computing (HPC) systems. Since its founding in 1978, CUG has served as a vital forum for collaboration, technical exchange, and community building within the global HPE/Cray HPC ecosystem.  Each year, CUG hosts a flagship technical conference, welcoming submissions of full papers, presentations, tutorials and Birds-of-a-Feather (BoF) sessions in the following categories:— Applications, Analytics and Environments—Systems Support—User Services—File Systems and I/OThis year we received 49 full paper submissions, and each was rigorously peer-reviewed by between three and five reviewers drawn from a large pool of program committee members. The eight most highly rated full papers were selected for inclusion in the present proceedings.The theme of CUG 2024, Diverse Universe, reflected the community's dedication to supporting a wide range of scientific workloads and services—most notably, world—class radio astronomy. The theme also celebrated Australia's rich biodiversity, symbolized by the quokka featured in the event's logo, and underscored CUG's ongoing commitment to diversity and inclusivity in the HPC field.},
+location = {Perth, Australia}
+}
+
+@proceedings{10.1145/3831586,
+title = {PLOS '26: Proceedings of the 14th Workshop on Programming Languages and Operating Systems},
+year = {2026},
+isbn = {9798400728778},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {This volume contains the proceedings of the 14th Workshop on Programming Languages and Operating Systems (PLOS 2026). The PLOS workshop series brings together people from the programming language and operating system communities to discuss emerging work at the intersection of these fields. It is a venue for discussing new visions, experiences, problems, and solutions arising from the application of advanced programming and software engineering concepts to operating systems construction, and vice versa.},
+location = {Prague, Czech Republic}
+}
+

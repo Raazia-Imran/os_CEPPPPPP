@@ -1,0 +1,4 @@
+record_id,related_record_id,relation,decision
+GA-R0234,GA-R0166,Identical title but distinct Springer DOI/report,Keep both records; no study identity asserted; both rejected at title
+GA-X007,GA-SUP001,Explicit journal extension of OSDI2022; same GA-S001,Prefer GA-X007 for extraction/QA; GA-SUP001 retained as less complete full-text E8 companion; count study once
+GA-R0006,ICCD2021 report not yet assigned a record ID,VastPipe supplied first-page notice identifies preliminary ICCD2021 version,Version lead only; no additional record/study counted; journal preferred; conference identity not independently assessed

@@ -1,0 +1,227 @@
+@proceedings{10.1145/3809986,
+title = {BIC '26: Proceedings of the 2026 6th International Conference on Bioinformatics and Intelligent Computing},
+year = {2026},
+isbn = {9798400721946},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dongguan, China}
+}
+
+@proceedings{10.1145/3776865,
+title = {IoTCCT '25: Proceedings of the 2025 3rd International Conference on Internet of Things and Cloud Computing Technology},
+year = {2025},
+isbn = {9798400721144},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Haikou, China}
+}
+
+@inbook{10.1145/3789240.3829178,
+author = {Liu, Yang and Liu, Tianxiang and Yao, Haipeng},
+title = {HyNA: Taming Tail Latency in MoE Training with Hybrid Switch Silicon},
+year = {2026},
+isbn = {9798400724671},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3789240.3829178},
+abstract = {The transition to trillion-parameter models, particularly Mixture-of-Experts (MoE), shifts the bottleneck of distributed training from computation to communication. However, existing Parameter Server (PS) architectures succumb to incast congestion, while state-of-the-art In-Network Aggregation (INA) solutions like ATP fail to handle the sparse, bursty traffic of MoE workloads. These solutions suffer from severe tail latency amplification due to their reliance on slow, host-based fallbacks for collisions and overflows. To dismantle this communication wall, we propose HyNA, a fully serverless aggregation system that eliminates dedicated parameter-server nodes by leveraging a novel hardware-software co-designed switch architecture. HyNA couples wire-speed Reconfigurable Match Tables (RMT) with embedded RISC-V cores. By adhering to a strict on-chip closure principle, the system processes all traffic anomalies—including hash collisions and floating-point variances—entirely within the switch ASIC, converting unpredictable network RTT into deterministic on-chip latency. We validate our design through a 100 Gbps FPGA prototype and a 7nm ASIC synthesis analysis. Results demonstrate that HyNA incurs less than 3\% silicon area overhead while improving aggregation throughput by 7.35X over BytePS and 1.4X over ATP. Crucially, in the MoE gradient synchronization phase, the system eliminates the fallback penalty and reduces synchronization time by up to 1.6X compared to dynamic INA baselines, without compromising bit-level model accuracy.},
+booktitle = {Proceedings of the ACM SIGCOMM 2026 Conference},
+pages = {353–367},
+numpages = {15}
+}
+
+@article{10.1145/3461478,
+author = {Reggiani, Enrico and Del Sozzo, Emanuele and Conficconi, Davide and Natale, Giuseppe and Moroni, Carlo and Santambrogio, Marco D.},
+title = {Enhancing the Scalability of Multi-FPGA Stencil Computations via Highly Optimized HDL Components},
+year = {2021},
+issue_date = {September 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {14},
+number = {3},
+issn = {1936-7406},
+url = {https://doi.org/10.1145/3461478},
+doi = {10.1145/3461478},
+abstract = {Stencil-based algorithms are a relevant class of computational kernels in high-performance systems, as they appear in a plethora of fields, from image processing to seismic simulations, from numerical methods to physical modeling. Among the various incarnations of stencil-based computations, Iterative Stencil Loops (ISLs) and Convolutional Neural Networks (CNNs) represent two well-known examples of kernels belonging to the stencil class. Indeed, ISLs apply the same stencil several times until convergence, while CNN layers leverage stencils to extract features from an image. The computationally intensive essence of ISLs, CNNs, and in general stencil-based workloads, requires solutions able to produce efficient implementations in terms of throughput and power efficiency. In this context, FPGAs are ideal candidates for such workloads, as they allow design architectures tailored to the stencil regular computational pattern. Moreover, the ever-growing need for performance enhancement leads FPGA-based architectures to scale to multiple devices to benefit from a distributed acceleration. For this reason, we propose a library of HDL components to effectively compute ISLs and CNNs inference on FPGA, along with a scalable multi-FPGA architecture, based on custom PCB interconnects. Our solution eases the design flow and guarantees both scalability and performance competitive with state-of-the-art works.},
+journal = {ACM Trans. Reconfigurable Technol. Syst.},
+month = aug,
+articleno = {15},
+numpages = {33},
+keywords = {CNN, HDL, stencil computation, Multi-FPGA}
+}
+
+@proceedings{10.1145/3811242,
+title = {COMPASS '26: Proceedings of the 2026 ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies},
+year = {2026},
+isbn = {9798400727023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Virtual Event, USA}
+}
+
+@inproceedings{10.1145/3789240.3829125,
+author = {Zhang, Zhaochen and Gao, Jiaqi and Cheng, Sheng and Yu, Peiwen and Xue, Feiyang and Liu, Chang and Liu, Boliang and Liu, Kun and Li, Yubin and Li, Rui and Wang, Li and Cao, Peirui and Meng, Qingkai and Chen, Guihai and Lu, Gang and Shi, Bo and Cheng, Shuguang and Ma, Shu and Xi, Yongqing and Fu, Binzhang and Cai, Dennis and Tian, Chen},
+title = {Anytest: Localizing the Root Cause of Hardware Transport Performance Anomalies},
+year = {2026},
+isbn = {9798400724671},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3789240.3829125},
+doi = {10.1145/3789240.3829125},
+abstract = {RoCEv2-based RDMA fabrics are the backbone of modern high-performance data-center workloads, yet large-scale deployments increasingly suffer transport-layer network performance anomalies (NPAs) such as throughput collapse, persistent unfairness, and latency inflation even without link failures. Localizing root causes of NPAs is one of today's hardest operational challenges: RoCEv2 transport logic is offloaded into proprietary NIC/switch hardware with limited observability; available counters miss μs-scale dynamics; and similar symptoms can originate from sender, receiver, or switch behaviors in the tightly coupled RoCEv2 system.We present Anytest, an in-situ black-box testing tool that localizes root causes of transport-layer NPAs on commodity RoCEv2 RNICs and Ethernet switches without re-cabling or hardware modification. Anytest decomposes RoCEv2 network system into logical roles and isolates the hardware under test by emulating the other roles with protocol-correct DPDK endpoints. This enables deterministic injection of transport events and μs-resolution measurements. We overcome non-trivial technical challenges to implement Anytest's DPDK-based endpoints, which realize protocol correctness while enforcing μs-level packet timing at the hardware line rate. Integrated into a trace-reproduce-localize workflow, Anytest has been deployed in production for ~1 year, reducing mean localization effort to 3.1 person-hours.},
+booktitle = {Proceedings of the ACM SIGCOMM 2026 Conference},
+pages = {822–836},
+numpages = {15},
+keywords = {RDMA, RoCEv2, network performance anomaly, DPDK},
+location = {Denver, CO, USA},
+series = {SIGCOMM '26}
+}
+
+@proceedings{10.1145/3789514,
+title = {HotMobile '26: Proceedings of the 27th International Workshop on Mobile Computing Systems and Applications},
+year = {2026},
+isbn = {9798400724718},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Atlanta, GA, USA}
+}
+
+@proceedings{10.1145/3614008,
+title = {SPML '23: Proceedings of the 2023 6th International Conference on Signal Processing and Machine Learning},
+year = {2023},
+isbn = {9798400707575},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tianjin, China}
+}
+
+@proceedings{10.1145/3762329,
+title = {AITC '25: Proceedings of the 2nd International Conference on Artificial Intelligence of Things and Computing},
+year = {2025},
+isbn = {9798400718625},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hangzhou, China}
+}
+
+@proceedings{10.1145/3718491,
+title = {AIBDF '24: Proceedings of the 4th Asia-Pacific Artificial Intelligence and Big Data Forum},
+year = {2024},
+isbn = {9798400710865},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Ganzhou, Shaanxi, China}
+}
+
+@proceedings{10.1145/3616855,
+title = {WSDM '24: Proceedings of the 17th ACM International Conference on Web Search and Data Mining},
+year = {2024},
+isbn = {9798400703713},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to the 17th ACM International Conference on Web Search and Data Mining - WSDM 2024. WSDM is one of the premier conferences in the fields of web search and data mining, with a dynamic and growing community from academia and industry. After two years of virtual conferences and in-person conferences in Singapore, the 2024 edition is an in-person conference with virtual elements. We hope you enjoy the conference at the "Centro Internacional de Congresos de Yucatan (CIC)" in Merida from March 4 to March 8, 2024.We are excited to kick off the program with a dynamic mix of Tutorials and Industry Day. Our seven tutorials will cover a broad range of search and data mining topics. Industry Day will provide valuable insights from leaders at major technology companies. The core technical program continues WSDM's tradition of a single-track format, featuring 109 thought-provoking papers from both academic and industry experts. We're honored to have inspiring keynote speakers each day: Nicolas Christin (CMU), Elizabeth Reid (Google), and Saiph Savage (Civic A.I. Lab). Additionally, 17 interactive demonstrations will showcase the latest prototypes and systems. The final day offers a stimulating Doctoral Consortium and six engaging workshops on topics including integrity in social networks, large language model for society, psychology-informed information access system, interactive and scalable information retrieval system and machine learning on graphs. WSDM 2024 proudly presents WSDM day on information retrieval and Web in the region. WSDM Cup Day highlights finalists' presentations addressing challenges in Conversational Multi-Doc QA. This diverse and stimulating program promises to be an enriching experience for all!.},
+location = {Merida, Mexico}
+}
+
+@proceedings{10.1145/3746059,
+editor = {Andrea Bianchi, Elena Glassman, Wendy E. Mackay, Shengdong Zhao, Jeeeun Kim and Ian Oakley},
+title = {UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+year = {2025},
+isbn = {9798400720376},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Busan, Republic of Korea}
+}
+
+@proceedings{10.1145/3725472,
+title = {DSDE '25: Proceedings of the 2025 8th International Conference on Data Storage and Data Engineering},
+year = {2025},
+isbn = {9798400710391},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Nanjing, China}
+}
+
+@proceedings{10.1145/3658644,
+title = {CCS '24: Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security},
+year = {2024},
+isbn = {9798400706363},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is with great enthusiasm that we, on behalf of the Organizing Committee, invite you to join us for the 31st ACM SIGSAC Conference on Computer and Communications Security (CCS), a premier security and privacy conference where researchers, practitioners, and educators come together to present, learn, and debate research, innovation, and trends in the field of Computer and Communications Security and Privacy.This year, we are proud to introduce our conference theme to be "Inclusion, Mentorship, Community." These three pillars reflect our collective commitment to fostering a vibrant, supportive, and forwardthinking environment within the CCS community. Particularly, we host our inaugural Doctoral Symposium, which offers PhD students a unique platform to receive timely, constructive feedback on their dissertation research from leading experts in our community. Additionally, our first-ever Diversity, Equity, and Inclusion (DEI) Workshop is designed to cultivate a culture that embraces diversity and champions equity in our field. Moreover, understanding the importance of guidance and support, we have organized panels focusing on Student Mentoring, Faculty Mentoring, and Public Service. These panels are designed to facilitate mentorship connections, share valuable experiences, and encourage service that extends the impact of our work beyond academia. These new initiatives are also opportunities to strengthen the bonds within our CCS community.Regarding the main conference, this year's main conference is our largest ever, featuring 328 paper presentations that showcase the latest research and developments in our field. We are also honored to have two distinguished keynote speakers: Dr. Dan Boneh and Dr. Gene Tsudik, who will share their invaluable insights and perspectives on pressing topics in security and privacy. Additionally, 18 specialized workshops will take place on the pre-conference and post-conference days, providing platforms for focused discussions and collaborations on numerous specialized topics.},
+location = {Salt Lake City, UT, USA}
+}
+
+@inproceedings{10.1145/3712285.3759816,
+author = {Wang, Xi and Ma, Bin and Kim, Jongryool and Koh, Byungil and Kim, Hoshik and Li, Dong},
+title = {cMPI: Using CXL Memory Sharing for MPI One-Sided and Two-Sided Inter-Node Communications},
+year = {2025},
+isbn = {9798400714665},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3712285.3759816},
+doi = {10.1145/3712285.3759816},
+abstract = {Message Passing Interface (MPI) is a foundational programming model for high-performance computing. MPI libraries traditionally employ network interconnects (e.g., Ethernet and InfiniBand) and network protocols (e.g., TCP and RoCE) with complex software stacks for cross-node communication.This paper presents cMPI, the first work to optimize MPI point-to-point communication (both one-sided and two-sided) using CXL memory sharing on a real CXL platform, transforming cross-node communication into memory transactions and data copies within CXL memory, bypassing traditional network protocols. We analyze performance across various interconnects and find that CXL memory sharing achieves 7.2 {\texttimes} -8.1 {\texttimes} lower latency than TCP-based interconnects deployed in small- and medium-scale clusters. We address challenges of CXL memory sharing for MPI communication, including data object management over the dax representation&nbsp;[50], cache coherence, and atomic operations. Overall, cMPI outperforms TCP over standard Ethernet NIC and high-end SmartNIC by up to 49 {\texttimes} and 72 {\texttimes} in latency and bandwidth, respectively, for small messages.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+pages = {2216–2232},
+numpages = {17},
+keywords = {MPI, Compute Express Link (CXL), high-performance computing (HPC), shared memory, interconnection architectures},
+location = {St. Louis, MO, USA},
+series = {SC '25}
+}
+
+@proceedings{10.1145/3625468,
+title = {MMSys '24: Proceedings of the 15th ACM Multimedia Systems Conference},
+year = {2024},
+isbn = {9798400704123},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Dear MMSys 2024 Participants,On behalf of the organizers, we are very pleased to welcome you to the 15th ACM Multimedia Systems Conference, taking place for the first time in Italy, in the city of Bari.MMSys is a premier conference dedicated to the exciting and multidisciplinary field of multimedia, with a specific focus on its systems and applications. The conference provides a platform for researchers from both academia and industry to share their latest findings in the multimedia systems research area. Many international researchers, practitioners, engineers, and students from academia, industry, standardization bodies, and government agencies join the MMSys conference each year.},
+location = {Bari, Italy}
+}
+
+@proceedings{10.1145/3733826,
+editor = {Jinoh Kim, Massimo Cafaro, Eric Chan-Tin and Jerry Chou},
+title = {WATCH '25: Proceedings of the First International Workshop on Analytics, Telemetry, and Cybersecurity for HPCC},
+year = {2025},
+isbn = {9798400719141},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Taipei, Taiwan}
+}
+
+@proceedings{10.1145/3786583,
+title = {ICSE-SEIP '26: Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice},
+year = {2026},
+isbn = {9798400724268},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rio de Janeiro, Brazil}
+}
+
+@proceedings{10.1145/3789237,
+title = {DaMoN '26: Proceedings of the 22nd International Workshop on Data Management on New Hardware},
+year = {2026},
+isbn = {9798400724558},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bengaluru, India}
+}
+
+@inproceedings{10.1145/3663384.3663389,
+author = {Drosos, Ian and Sarkar, Advait and Xu, Xiaotong and Negreanu, Carina and Rintel, Sean and Tankelevitch, Lev},
+title = {"It's like a rubber duck that talks back": Understanding Generative AI-Assisted Data Analysis Workflows through a Participatory Prompting Study},
+year = {2024},
+isbn = {9798400710179},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3663384.3663389},
+doi = {10.1145/3663384.3663389},
+abstract = {Generative AI tools can help users with many tasks. One such task is data analysis, which is notoriously challenging for non-expert end-users due to its expertise requirements, and where AI holds much potential, such as finding relevant data sources, proposing analysis strategies, and writing analysis code. To understand how data analysis workflows can be assisted or impaired by generative AI, we conducted a study (n=15) using Bing Chat via participatory prompting. Participatory prompting is a recently developed methodology in which users and researchers reflect together on tasks through co-engagement with generative AI. In this paper we demonstrate the value of the participatory prompting method. We found that generative AI benefits the information foraging and sensemaking loops of data analysis in specific ways, but also introduces its own barriers and challenges, arising from the difficulties of query formulation, specifying context, and verifying results.},
+booktitle = {Proceedings of the 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work},
+articleno = {16},
+numpages = {21},
+location = {Newcastle upon Tyne, United Kingdom},
+series = {CHIWORK '24}
+}
+

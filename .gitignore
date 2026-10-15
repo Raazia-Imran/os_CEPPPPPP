@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+task2/report/*.aux
+task2/report/*.log
+task2/report/*.out
+task2/report/*.toc
+task2/report/*.blg
+task2/report/*.bbl
+task2/tracker/workbook_input.json
+tmp/
+
+task2/report/main.pdf
+*.inspect.ndjson

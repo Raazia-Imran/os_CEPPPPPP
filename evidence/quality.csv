@@ -1,0 +1,21 @@
+report_id,criterion,score,maximum,rationale,anchor,reviewer,second_score,reconciled_score,status
+GB-P001,Q1,2,2,Objective and local GPU portability question explicit,"sections1,6.7",Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q2,2,2,Tuned MPS quotas and CU masking described,sections6.7-6.8,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q3,1,2,GPU-specific repeats and variance unresolved in conversion,sections6.7-6.9,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q4,1,2,GPU/backend named; precise GPU loads and versions incomplete,sections6.7-6.8,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q5,1,2,Same hardware and no/default/tuned MPS; quotas incomplete,Fig14,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q6,2,2,Throughput ratios and baseline named in prose,Fig14 and prose,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q7,NA,0,GPU-portability extraction makes no latency claim; do not score NPU latency as GPU evidence,sections6.7-6.8,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q8,2,2,Multiple named co-located inference pairs evaluated,Figs14-16,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q9,1,2,Performance interference considered; no separate security/fault validation extracted,sections6.7-6.8,Codex-GroupB,,,first_review_calibration_only
+GB-P001,Q10,1,2,Stable-mix Q-table constraint; GPU replication settings incomplete,section6.9,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q1,2,2,Interference-aware inference provisioning objective explicit,"abstract,section1",Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q2,2,2,MPS allocation and shadow implementation described,section4.2,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q3,2,2,Model checks repeated three times with SD; metric windows specified,sections5.1-5.3,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q4,1,2,GPU/workloads/backend detailed; OS/driver unresolved,"sections4.2,5.1",Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q5,1,2,Adapted baselines and allocation/batch differences disclosed,section5.1,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q6,2,2,"Cost, throughput, resource-allocation metrics distinguished","sections5.1,5.3",Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q7,2,2,"P99 windows, SLO and recovery timing explicit",section5.3 Fig17,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q8,2,2,Four co-located models and quota configuration specified,section5.2 Fig13,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q9,1,2,Performance interference measured; security/fault boundaries not tested in checked portion,sections5.2-5.3,Codex-GroupB,,,first_review_calibration_only
+GB-P002,Q10,2,2,"Code, prediction limitations and PCIe caveat explicit","sections4.2,5.2",Codex-GroupB,,,first_review_calibration_only

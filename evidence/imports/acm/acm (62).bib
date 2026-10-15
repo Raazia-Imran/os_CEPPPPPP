@@ -1,0 +1,243 @@
+@inproceedings{10.1145/3744200.3744762,
+author = {St{\r a}hl, Emil and Chiesa, Marco and Ferlin, Simone and Chaudron, Eelco},
+title = {On the Benefits of Predictable Traffic in Virtual Switches: A Case Study},
+year = {2025},
+isbn = {9798400720093},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3744200.3744762},
+doi = {10.1145/3744200.3744762},
+abstract = {Software-Defined Networking (SDN) has increasingly shifted toward hardware solutions that accelerate packet processing within data planes. However, optimizing the interaction between the data plane and the control plane, commonly referred to as the slow path, remains a significant challenge since the control plane installs rules in the data plane reactively as new flows arrive, which requires time-consuming transitions to user space. In this paper, we demonstrate how to prevent a bottleneck in the slow path by investigating the impact of predicting flows and preemptively installing their rules in the data plane. Using a workload containing different levels of "coflows", our results demonstrate that this predictive approach varies with the flow rate of traffic traces. Notably, a system that could predict 25\% of the traffic flows would decrease the average latency by up to approximately 24\% and reduce CPU utilization by approximately 12\%.},
+booktitle = {Proceedings of the 2025 Applied Networking Research Workshop},
+pages = {113–119},
+numpages = {7},
+keywords = {Coflows, Open vSwitch, Slow path, Software-Defined Networking},
+location = {Madrid, Spain},
+series = {ANRW '25}
+}
+
+@inproceedings{10.1145/3627673.3679706,
+author = {Ding, Guohui and Jiang, Tianhao and Zhou, Rui and Gao, Qian},
+title = {ALDF: An Adaptive Logical Decision Framework for Multimodal Named Entity Recognition},
+year = {2024},
+isbn = {9798400704369},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3627673.3679706},
+doi = {10.1145/3627673.3679706},
+abstract = {Multimodal Named Entity Recognition (MNER) aims to achieve more accurate entity recognition by incorporating image information to assist text, which is particularly significant on social media platforms. Current research disproportionately emphasizes enhancing text with images, overlooking that the core of the NER task remains textual. The modal differences between images and text inevitably introduces noise when incorporating image information. Therefore, when textual information is sufficient to independently complete the NER task, the introduction of image information is unnecessary. This paper proposes an Adaptive Logical Decision Framework (ALDF) capable of determining the sufficiency of textual information in NER tasks, deciding whether to introduce image information, avoiding unnecessary noise, and focusing more on information-scarce entities when introducing image information. Specifically, we designed a Logic Reasoning Neural Network (LRNN) that uses an evidence-theory-based method to simulate human decision-making logic and generate decision support degrees for deciding whether image information should participate in the recognition task. When incorporating image information, we utilize the generated decision support degrees to guide the multi-head self-attention mechanism, enhancing the model's focus on information-scarce entities. Additionally, we employ a modality-aware progressive training method that can use decision information in real-time during multimodal training and reduce information redundancy between modalities. Extensive experiments demonstrate that our model achieves state-of-the-art performance on popular public datasets.},
+booktitle = {Proceedings of the 33rd ACM International Conference on Information and Knowledge Management},
+pages = {436–445},
+numpages = {10},
+keywords = {image noise, logic decision, multimodal named entity recognition},
+location = {Boise, ID, USA},
+series = {CIKM '24}
+}
+
+@proceedings{10.1145/3796731,
+title = {CMSDA '25: Proceedings of the 2025 5th International Conference on Computational Modeling, Simulation and Data Analysis},
+year = {2025},
+isbn = {9798400720000},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Qingdao, China}
+}
+
+@inproceedings{10.1145/3503222.3507732,
+author = {Du, Dong and Liu, Qingyuan and Jiang, Xueqiang and Xia, Yubin and Zang, Binyu and Chen, Haibo},
+title = {Serverless computing on heterogeneous computers},
+year = {2022},
+isbn = {9781450392051},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3503222.3507732},
+doi = {10.1145/3503222.3507732},
+abstract = {Existing serverless computing platforms are built upon homogeneous computers, limiting the function density and restricting serverless computing to limited scenarios. We introduce Molecule, the first serverless computing system utilizing heterogeneous computers. Molecule enables both general-purpose devices (e.g., Nvidia DPU) and domain-specific accelerators (e.g., FPGA and GPU) for serverless applications that significantly improve function density (50\% higher) and application performance (up to 34.6x). To achieve these results, we first propose XPU-Shim, a distributed shim to bridge the gap between underlying multi-OS systems (when using general-purpose devices) and our serverless runtime (i.e., Molecule). We further introduce vectorized sandbox, a sandbox abstraction to abstract hardware heterogeneity (when using domain-specific accelerators). Moreover, we also review state-of-the-art serverless optimizations on startup and communication latency and overcome the challenges to implement them on heterogeneous computers. We have implemented Molecule on real platforms with Nvidia DPUs and Xilinx FPGAs and evaluate it using benchmarks and real-world applications.},
+booktitle = {Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {797–813},
+numpages = {17},
+keywords = {Cloud computing, function-as-a-service, heterogeneous computers, operating system, serverless computing},
+location = {Lausanne, Switzerland},
+series = {ASPLOS '22}
+}
+
+@inproceedings{10.1145/3624062.3624230,
+author = {Diehl, Patrick and Daiss, Gregor and Brandt, Steven and Kheirkhahan, Alireza and Kaiser, Hartmut and Taylor, Christopher and Leidel, John},
+title = {Evaluating HPX and Kokkos on RISC-V using an astrophysics application Octo-Tiger},
+year = {2023},
+isbn = {9798400707858},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3624062.3624230},
+doi = {10.1145/3624062.3624230},
+abstract = {In recent years, computers based on the RISC-V architecture have raised broad interest in the high-performance computing (HPC) community. As the RISC-V community develops the core instruction set architecture (ISA) along with ISA extensions, the HPC community has been actively ensuring HPC applications and environments&nbsp;[10, 29] are supported. In this context, assessing the performance of asynchronous many-task runtime systems (AMT) is essential. In this paper, we describe our experience with porting of a full 3D adaptive mesh-refinement, multi-scale, multi-model, and multi-physics application, Octo-Tiger, that is based on the HPX AMT, and we explore its performance characteristics on different RISC-V systems. Despite the (limited) capabilities of the RISC-V test systems we used, Octo-Tiger already shows promising results and good scaling. We, however, expect that additional hardware support based on dedicated ISA extensions (such as single-cycle context switches, extended atomic operations, and direct support for HPX’s global address space) would allow for even better performance results.},
+booktitle = {Proceedings of the SC '23 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis},
+pages = {1533–1542},
+numpages = {10},
+keywords = {HPX, Kokkos, RISC-V, asynchronous many-task system, task-based run time system},
+location = {Denver, CO, USA},
+series = {SC-W '23}
+}
+
+@proceedings{10.1145/3743049,
+editor = {Lewis Chuang, Maximilian Eibl, Martin Gaedke and Jasmin Niess},
+title = {MuC '25: Proceedings of the Mensch und Computer 2025},
+year = {2025},
+isbn = {9798400715822},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Chemnitz, Germany}
+}
+
+@article{10.1145/3677035,
+author = {Gozzi, Giovanni and Fiorito, Michele and Curzel, Serena and Barone, Claudio and Castellana, Vito Giovanni and Minutoli, Marco and Tumeo, Antonino and Ferrandi, Fabrizio},
+title = {SPARTA: High-Level Synthesis of Parallel Multi-Threaded Accelerators},
+year = {2024},
+issue_date = {March 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {18},
+number = {1},
+issn = {1936-7406},
+url = {https://doi.org/10.1145/3677035},
+doi = {10.1145/3677035},
+abstract = {This article presents a methodology for the Synthesis of PARallel multi-Threaded Accelerators (SPARTA) from OpenMP annotated C/C++ specifications. SPARTA extends an open-source HLS tool, enabling the generation of accelerators that provide latency tolerance for irregular memory accesses through multithreading, support fine-grained memory-level parallelism through a hot-potato deflection-based network-on-chip (NoC), support synchronization constructs, and can instantiate memory-side caches. Our approach is based on a custom runtime OpenMP library, providing flexibility and extensibility. Experimental results show high scalability when synthesizing irregular graph kernels. The accelerators generated with our approach are, on average, 2.29 (times)  faster than state-of-the-art HLS methodologies.},
+journal = {ACM Trans. Reconfigurable Technol. Syst.},
+month = dec,
+articleno = {9},
+numpages = {30},
+keywords = {Design automation, FPGA architecture, graph algorithms, parallelism}
+}
+
+@proceedings{10.1145/3696843,
+title = {HASP '24: Proceedings of the International Workshop on Hardware and Architectural Support for Security and Privacy 2024},
+year = {2024},
+isbn = {9798400712210},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Austin, TX, USA}
+}
+
+@proceedings{10.1145/3589737,
+title = {ICONS '23: Proceedings of the 2023 International Conference on Neuromorphic Systems},
+year = {2023},
+isbn = {9798400701757},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Santa Fe, NM, USA}
+}
+
+@proceedings{10.1145/3750069,
+title = {CHItaly '25: Proceedings of the 16th Biannual Conference of the Italian SIGCHI Chapter},
+year = {2025},
+isbn = {9798400721021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Salerno, Italy}
+}
+
+@proceedings{10.1145/3678890,
+editor = {Eleonora Losiouk, Alessandro Brighente, Mauro Conti, Yousra Aafer and Yanick Fratantonio},
+title = {RAID '24: Proceedings of the 27th International Symposium on Research in Attacks, Intrusions and Defenses},
+year = {2024},
+isbn = {9798400709593},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Padua, Italy}
+}
+
+@proceedings{10.1145/3643796,
+title = {IDE '24: Proceedings of the 1st ACM/IEEE Workshop on Integrated Development Environments},
+year = {2024},
+isbn = {9798400705809},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Despite the research community's desire to improve the productivity of software developers, it is challenging for research to move beyond papers into the everyday practice of software development. Since IDEs are one of the most widely used tools in developers' toolkit, they remain a crucial venue for research to reach the practitioners. To close the gap between research and adoption in practice, we launched the first edition of the IDE Workshop.},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3690407,
+title = {CAIBDA '24: Proceedings of the 2024 4th International Conference on Artificial Intelligence, Big Data and Algorithms},
+year = {2024},
+isbn = {9798400710247},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Zhengzhou, China}
+}
+
+@article{10.1145/3528223.3530110,
+author = {Peng, Xue Bin and Guo, Yunrong and Halper, Lina and Levine, Sergey and Fidler, Sanja},
+title = {ASE: large-scale reusable adversarial skill embeddings for physically simulated characters},
+year = {2022},
+issue_date = {July 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {41},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3528223.3530110},
+doi = {10.1145/3528223.3530110},
+abstract = {The incredible feats of athleticism demonstrated by humans are made possible in part by a vast repertoire of general-purpose motor skills, acquired through years of practice and experience. These skills not only enable humans to perform complex tasks, but also provide powerful priors for guiding their behaviors when learning new tasks. This is in stark contrast to what is common practice in physics-based character animation, where control policies are most typically trained from scratch for each task. In this work, we present a large-scale data-driven framework for learning versatile and reusable skill embeddings for physically simulated characters. Our approach combines techniques from adversarial imitation learning and unsupervised reinforcement learning to develop skill embeddings that produce life-like behaviors, while also providing an easy to control representation for use on new downstream tasks. Our models can be trained using large datasets of unstructured motion clips, without requiring any task-specific annotation or segmentation of the motion data. By leveraging a massively parallel GPU-based simulator, we are able to train skill embeddings using over a decade of simulated experiences, enabling our model to learn a rich and versatile repertoire of skills. We show that a single pre-trained model can be effectively applied to perform a diverse set of new tasks. Our system also allows users to specify tasks through simple reward functions, and the skill embedding then enables the character to automatically synthesize complex and naturalistic strategies in order to achieve the task objectives.},
+journal = {ACM Trans. Graph.},
+month = jul,
+articleno = {94},
+numpages = {17},
+keywords = {adversarial imitation learning, character animation, reinforcement learning, unsupervised reinforcement learning}
+}
+
+@proceedings{10.1145/3665689,
+title = {BIC '24: Proceedings of the 2024 4th International Conference on Bioinformatics and Intelligent Computing},
+year = {2024},
+isbn = {9798400716645},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Beijing, China}
+}
+
+@proceedings{10.1145/3610548,
+editor = {June Kim, Ming C. Lin and Bernd Bickel},
+title = {SA '23: SIGGRAPH Asia 2023 Conference Papers},
+year = {2023},
+isbn = {9798400703157},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sydney, NSW, Australia}
+}
+
+@proceedings{10.1145/3828158,
+title = {AutomotiveUI Adjunct '26: Adjunct Proceedings of the 18th International Conference on Automotive User Interfaces and Interactive Vehicular Applications},
+year = {2026},
+isbn = {9798400728150},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Gothenburg, Sweden}
+}
+
+@proceedings{10.1145/3829807,
+title = {NordiCHI '26: Proceedings of the 14th Nordic Conference on Human-Computer Interaction},
+year = {2026},
+isbn = {9798400723735},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Vaasa, Finland}
+}
+
+@proceedings{3590145,
+title = {ASONAM '22: Proceedings of the 2022 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining},
+year = {2022},
+isbn = {9781665456616},
+publisher = {IEEE Press},
+abstract = {We were delighted to welcome each participant at ASONAM 2022 and thank you for having contributed virtually or in person in Istanbul. ASONAM 2022 was the fourteenth annual conference in the successful ASONAM conferences series and also the first hybrid version of the conference. Previous ASONAM conferences were held in Athens (2009), Odense (2010), Kaohsiung (2011), Istanbul (2012), Niagara Falls (2013), Beijing (2014), Paris (2015), San Francisco (2016), Sydney (2017), Barcelona (2018), Vancouver (2019), Virtual (2020), Virtual (2021). The pre-pandemic locations of the conferences have enabled the participants to enjoy local sights and to engage in person-to-person interactions, making new contacts and form new scientific collaborations. These possibilities were only available in a limited form during the virtual conferences. As the covid pandemic seems to be moving towards an endemic form it was decided to have the conference in the hybrid form, as a move towards normal endemic in-person conferences.For more than a century, social networks have been studied in a variety of disciplines including sociology, anthropology, psychology, and economics. The Internet, the social Web, and other large-scale, sociotechnological infrastructures have triggered a growing interest and resulted in significant methodological advancements in social network analysis and mining. Method development in graph theory, statistics, data mining, machine learning, and AI have inspired new research problems and, in turn, opens up further possibilities for application. These spiraling trends have led to a rising prominence of social network analysis and mining methods and tools in academia, politics, security, and business.},
+location = {Istanbul, Turkey}
+}
+
+@proceedings{10.1145/3594536,
+title = {ICAIL '23: Proceedings of the Nineteenth International Conference on Artificial Intelligence and Law},
+year = {2023},
+isbn = {9798400701979},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is my great pleasure to present to you the proceedings of the Nineteenth International Conference on Artificial Intelligence and Law (ICAIL 2023). The conference will be held June 19-23 at the Universidade do Minho in Braga, Portugal. It has been organized by the International Association for Artificial Intelligence and Law (IAAIL) and is held in cooperation with AAAI and ACM SIGAI. IAAIL's mission is to facilitate research, collaboration, and interdisciplinary communication at the intersection of law and the technical disciplines belonging to the field of artificial intelligence. The first ICAIL conference was held in 1987 and its 2023 iteration is the first to be held in person again after the Covid-19 pandemic.},
+location = {Braga, Portugal}
+}
+

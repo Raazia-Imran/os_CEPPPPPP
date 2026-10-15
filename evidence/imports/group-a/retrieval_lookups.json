@@ -1,0 +1,1073 @@
+[
+  {
+    "record_id": "GA-R0005",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-27448-9_18",
+    "source_ref": "turn43view0",
+    "response_lines": 344,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0007",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-99854-6_27",
+    "source_ref": "turn43view1",
+    "response_lines": 444,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0012",
+    "url": "https://link.springer.com/article/10.1007/s41635-026-00175-3",
+    "source_ref": "turn43view2",
+    "response_lines": 307,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0013",
+    "url": "https://link.springer.com/article/10.1007/s10922-025-09962-9",
+    "source_ref": "turn43view3",
+    "response_lines": 367,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0018",
+    "url": "https://link.springer.com/article/10.1007/s41870-023-01456-8",
+    "source_ref": "turn43view4",
+    "response_lines": 279,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0022",
+    "url": "https://link.springer.com/article/10.1007/s10586-026-06507-w",
+    "source_ref": "turn43view5",
+    "response_lines": 356,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0025",
+    "url": "https://link.springer.com/article/10.1007/s10489-025-06763-0",
+    "source_ref": "turn43view6",
+    "response_lines": 394,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0026",
+    "url": "https://link.springer.com/article/10.1186/s44147-026-01033-3",
+    "source_ref": "turn43view7",
+    "response_lines": 920,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0027",
+    "url": "https://link.springer.com/article/10.1007/s11241-024-09418-4",
+    "source_ref": "turn43view8",
+    "response_lines": 918,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0033",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-99857-7_22",
+    "source_ref": "turn43view9",
+    "response_lines": 364,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0035",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-34953-9_6",
+    "source_ref": "turn43view10",
+    "response_lines": 457,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0039",
+    "url": "https://link.springer.com/article/10.1038/s41598-026-42625-6",
+    "source_ref": "turn43view11",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0041",
+    "url": "https://link.springer.com/article/10.1007/s41781-024-00123-2",
+    "source_ref": "turn44view0",
+    "response_lines": 563,
+    "outcome": "open_fulltext",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0044",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-99854-6_23",
+    "source_ref": "turn44view1",
+    "response_lines": 350,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0045",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-39698-4_1",
+    "source_ref": "turn44view2",
+    "response_lines": 402,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0048",
+    "url": "https://link.springer.com/article/10.1007/s11432-025-5044-3",
+    "source_ref": "turn44view3",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0059",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-64948-6_4",
+    "source_ref": "turn44view4",
+    "response_lines": 451,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0060",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-30637-2_36",
+    "source_ref": "turn44view5",
+    "response_lines": 448,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0061",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-80408-3_2",
+    "source_ref": "turn44view6",
+    "response_lines": 328,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0067",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-50385-6_2",
+    "source_ref": "turn44view7",
+    "response_lines": 467,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0070",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-97623-0_2",
+    "source_ref": "turn44view8",
+    "response_lines": 390,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0079",
+    "url": "https://link.springer.com/article/10.1007/s11241-025-09452-w",
+    "source_ref": "turn44view9",
+    "response_lines": 868,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0081",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-15471-3_21",
+    "source_ref": "turn44view10",
+    "response_lines": 439,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0085",
+    "url": "https://link.springer.com/article/10.1007/s41635-025-00170-0",
+    "source_ref": "turn44view11",
+    "response_lines": 325,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0087",
+    "url": "https://link.springer.com/article/10.1007/s11554-026-01915-y",
+    "source_ref": "turn45view0",
+    "response_lines": 325,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0089",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-50385-6_5",
+    "source_ref": "turn45view1",
+    "response_lines": 359,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0092",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-72673-6_25",
+    "source_ref": "turn45view2",
+    "response_lines": 511,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0096",
+    "url": "https://link.springer.com/article/10.1007/s10723-023-09646-1",
+    "source_ref": "turn45view3",
+    "response_lines": 293,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0097",
+    "url": "https://link.springer.com/chapter/10.1007/978-981-96-5013-2_30",
+    "source_ref": "turn45view4",
+    "response_lines": 466,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0113",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-78698-3_4",
+    "source_ref": "turn45view5",
+    "response_lines": 507,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0117",
+    "url": "https://link.springer.com/article/10.1007/s10586-025-05702-5",
+    "source_ref": "turn45view6",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0131",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-87647-9_38",
+    "source_ref": "turn45view7",
+    "response_lines": 331,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0137",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-22051-6_2",
+    "source_ref": "turn45view8",
+    "response_lines": 340,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0139",
+    "url": "https://link.springer.com/article/10.1007/s42979-023-02101-8",
+    "source_ref": "turn45view9",
+    "response_lines": 339,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0150",
+    "url": "https://link.springer.com/article/10.1007/s10586-025-05154-x",
+    "source_ref": "turn45view10",
+    "response_lines": 395,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0154",
+    "url": "https://link.springer.com/article/10.1038/s41598-026-38622-4",
+    "source_ref": "turn45view11",
+    "response_lines": 833,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0157",
+    "url": "https://link.springer.com/article/10.1007/s11227-021-03779-4",
+    "source_ref": "turn46view0",
+    "response_lines": 265,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0171",
+    "url": "https://link.springer.com/article/10.1007/s42452-025-07388-1",
+    "source_ref": "turn46view1",
+    "response_lines": 926,
+    "outcome": "open_fulltext",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0173",
+    "url": "https://link.springer.com/article/10.1007/s10723-022-09625-y",
+    "source_ref": "turn46view2",
+    "response_lines": 380,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0187",
+    "url": "https://link.springer.com/article/10.1007/s11432-023-3894-4",
+    "source_ref": "turn46view3",
+    "response_lines": 311,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0195",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-14186-6_39",
+    "source_ref": "turn46view4",
+    "response_lines": 453,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0197",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-73716-9_16",
+    "source_ref": "turn46view5",
+    "response_lines": 397,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0211",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-85700-3_14",
+    "source_ref": "turn46view6",
+    "response_lines": 366,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0217",
+    "url": "https://link.springer.com/article/10.1007/s10270-022-01052-7",
+    "source_ref": "turn46view7",
+    "response_lines": 706,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0232",
+    "url": "https://link.springer.com/article/10.1007/s11241-025-09446-8",
+    "source_ref": "turn46view8",
+    "response_lines": 287,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0239",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-04190-6_5",
+    "source_ref": "turn46view9",
+    "response_lines": 365,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0242",
+    "url": "https://link.springer.com/article/10.1007/s10586-021-03299-z",
+    "source_ref": "turn46view10",
+    "response_lines": 306,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0249",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-73503-5_5",
+    "source_ref": "turn46view11",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0255",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-21867-5_4",
+    "source_ref": "turn47view0",
+    "response_lines": 367,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0277",
+    "url": "https://link.springer.com/article/10.1007/s10586-019-03044-7",
+    "source_ref": "turn47view1",
+    "response_lines": 304,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0293",
+    "url": "https://link.springer.com/article/10.1007/s12243-023-00994-3",
+    "source_ref": "turn47view2",
+    "response_lines": 600,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0370",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-85665-6_6",
+    "source_ref": "turn47view3",
+    "response_lines": 409,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0391",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-22503-0_2",
+    "source_ref": "turn47view4",
+    "response_lines": 340,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0424",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-81645-2_7",
+    "source_ref": "turn47view5",
+    "response_lines": 439,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0445",
+    "url": "https://link.springer.com/article/10.1007/s11227-020-03508-3",
+    "source_ref": "turn47view6",
+    "response_lines": 332,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0446",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-38651-1_23",
+    "source_ref": "turn47view7",
+    "response_lines": 409,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0479",
+    "url": "https://link.springer.com/article/10.1007/s10586-021-03429-7",
+    "source_ref": "turn47view8",
+    "response_lines": 321,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0497",
+    "url": "https://link.springer.com/article/10.1186/s13677-021-00238-6",
+    "source_ref": "turn47view9",
+    "response_lines": 682,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0525",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-16815-4_12",
+    "source_ref": "turn47view10",
+    "response_lines": 410,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0533",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-60239-0_33",
+    "source_ref": "turn47view11",
+    "response_lines": 387,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0551",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-41005-6_14",
+    "source_ref": "turn48view0",
+    "response_lines": 338,
+    "outcome": "publisher_metadata_response",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0591",
+    "url": "https://ieeexplore.ieee.org/document/11727489/",
+    "source_ref": "turn48view1",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0592",
+    "url": "https://ieeexplore.ieee.org/document/11223102/",
+    "source_ref": "turn48view2",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0593",
+    "url": "https://ieeexplore.ieee.org/document/10601534/",
+    "source_ref": "turn48view3",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0595",
+    "url": "https://ieeexplore.ieee.org/document/10062171/",
+    "source_ref": "turn48view4",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0596",
+    "url": "https://ieeexplore.ieee.org/document/9643486/",
+    "source_ref": "turn48view5",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0597",
+    "url": "https://ieeexplore.ieee.org/document/11619013/",
+    "source_ref": "turn48view6",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0598",
+    "url": "https://ieeexplore.ieee.org/document/11357986/",
+    "source_ref": "turn48view7",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0599",
+    "url": "https://ieeexplore.ieee.org/document/10474357/",
+    "source_ref": "turn48view8",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0600",
+    "url": "https://ieeexplore.ieee.org/document/11230091/",
+    "source_ref": "turn48view9",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0601",
+    "url": "https://ieeexplore.ieee.org/document/10572198/",
+    "source_ref": "turn48view10",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0602",
+    "url": "https://ieeexplore.ieee.org/document/9335804/",
+    "source_ref": "turn48view11",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0603",
+    "url": "https://ieeexplore.ieee.org/document/10414009/",
+    "source_ref": "turn49view0",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0604",
+    "url": "https://ieeexplore.ieee.org/document/10820577/",
+    "source_ref": "turn49view1",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0605",
+    "url": "https://ieeexplore.ieee.org/document/9259361/",
+    "source_ref": "turn49view2",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0607",
+    "url": "https://ieeexplore.ieee.org/document/10571631/",
+    "source_ref": "turn49view3",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0608",
+    "url": "https://ieeexplore.ieee.org/document/11132423/",
+    "source_ref": "turn49view4",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0613",
+    "url": "https://ieeexplore.ieee.org/document/11645315/",
+    "source_ref": "turn49view5",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0614",
+    "url": "https://ieeexplore.ieee.org/document/11653193/",
+    "source_ref": "turn49view6",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0617",
+    "url": "https://ieeexplore.ieee.org/document/9835424/",
+    "source_ref": "turn49view7",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0618",
+    "url": "https://ieeexplore.ieee.org/document/10786517/",
+    "source_ref": "turn49view8",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0620",
+    "url": "https://ieeexplore.ieee.org/document/11330349/",
+    "source_ref": "turn49view9",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0621",
+    "url": "https://ieeexplore.ieee.org/document/10765967/",
+    "source_ref": "turn49view10",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0622",
+    "url": "https://ieeexplore.ieee.org/document/10546669/",
+    "source_ref": "turn49view11",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0624",
+    "url": "https://ieeexplore.ieee.org/document/10605084/",
+    "source_ref": "turn50view0",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0628",
+    "url": "https://ieeexplore.ieee.org/document/11695654/",
+    "source_ref": "turn50view1",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0630",
+    "url": "https://ieeexplore.ieee.org/document/11619023/",
+    "source_ref": "turn50view2",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0631",
+    "url": "https://ieeexplore.ieee.org/document/11578439/",
+    "source_ref": "turn50view3",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0636",
+    "url": "https://ieeexplore.ieee.org/document/10384636/",
+    "source_ref": "turn50view4",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0637",
+    "url": "https://ieeexplore.ieee.org/document/9153424/",
+    "source_ref": "turn50view5",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0638",
+    "url": "https://ieeexplore.ieee.org/document/9460478/",
+    "source_ref": "turn50view6",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0639",
+    "url": "https://ieeexplore.ieee.org/document/9624962/",
+    "source_ref": "turn50view7",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0640",
+    "url": "https://ieeexplore.ieee.org/document/9139602/",
+    "source_ref": "turn50view8",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0641",
+    "url": "https://ieeexplore.ieee.org/document/9391551/",
+    "source_ref": "turn50view9",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0642",
+    "url": "https://ieeexplore.ieee.org/document/10682915/",
+    "source_ref": "turn50view10",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0644",
+    "url": "https://ieeexplore.ieee.org/document/10487073/",
+    "source_ref": "turn50view11",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0646",
+    "url": "https://ieeexplore.ieee.org/document/11102455/",
+    "source_ref": "turn51view0",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0647",
+    "url": "https://ieeexplore.ieee.org/document/11504752/",
+    "source_ref": "turn51view1",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0648",
+    "url": "https://ieeexplore.ieee.org/document/11169657/",
+    "source_ref": "turn51view2",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0650",
+    "url": "https://ieeexplore.ieee.org/document/11096367/",
+    "source_ref": "turn51view3",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0654",
+    "url": "https://ieeexplore.ieee.org/document/11479931/",
+    "source_ref": "turn51view4",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0655",
+    "url": "https://ieeexplore.ieee.org/document/9529641/",
+    "source_ref": "turn51view5",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0656",
+    "url": "https://ieeexplore.ieee.org/document/9292952/",
+    "source_ref": "turn51view6",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0657",
+    "url": "https://ieeexplore.ieee.org/document/11662711/",
+    "source_ref": "turn51view7",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0659",
+    "url": "https://ieeexplore.ieee.org/document/11044818/",
+    "source_ref": "turn51view8",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0662",
+    "url": "https://ieeexplore.ieee.org/document/11044666/",
+    "source_ref": "turn51view9",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0663",
+    "url": "https://ieeexplore.ieee.org/document/10598129/",
+    "source_ref": "turn51view10",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0666",
+    "url": "https://ieeexplore.ieee.org/document/9566822/",
+    "source_ref": "turn51view11",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0668",
+    "url": "https://ieeexplore.ieee.org/document/10195463/",
+    "source_ref": "turn52view0",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0672",
+    "url": "https://ieeexplore.ieee.org/document/11539390/",
+    "source_ref": "turn52view1",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0674",
+    "url": "https://ieeexplore.ieee.org/document/9923810/",
+    "source_ref": "turn52view2",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0678",
+    "url": "https://ieeexplore.ieee.org/document/10476480/",
+    "source_ref": "turn52view3",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0681",
+    "url": "https://ieeexplore.ieee.org/document/11587741/",
+    "source_ref": "turn52view4",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0682",
+    "url": "https://ieeexplore.ieee.org/document/11715568/",
+    "source_ref": "turn52view5",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0684",
+    "url": "https://ieeexplore.ieee.org/document/11113647/",
+    "source_ref": "turn52view6",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0685",
+    "url": "https://ieeexplore.ieee.org/document/10122723/",
+    "source_ref": "turn52view7",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0686",
+    "url": "https://ieeexplore.ieee.org/document/9236964/",
+    "source_ref": "turn52view8",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0687",
+    "url": "https://ieeexplore.ieee.org/document/9465570/",
+    "source_ref": "turn52view9",
+    "response_lines": 1,
+    "outcome": "fetch_failed",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  },
+  {
+    "record_id": "GA-R0688",
+    "url": "https://ieeexplore.ieee.org/document/10989732/",
+    "source_ref": "turn52view10",
+    "response_lines": 3,
+    "outcome": "robot_verification",
+    "attempt_date": "2026-10-11",
+    "method": "public web retrieval; no institutional login"
+  }
+]

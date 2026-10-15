@@ -1,0 +1,257 @@
+@inproceedings{10.1145/3746027.3755367,
+author = {Zhang, Xinlong and Li, Zejian and Li, Wei and Zhang, Xiaoyu and Wei, Jia and Lin, Chengyu and Tang, Yongchuan},
+title = {ObjCtrl: Object-based Control Relaxation for Conditional Text-to-Image Generation},
+year = {2025},
+isbn = {9798400720352},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746027.3755367},
+doi = {10.1145/3746027.3755367},
+abstract = {Conditional text-to-image diffusion models enhance the controllability of text-to-image generation by incorporating additional visual conditions. However, they often encounter two main challenges when dealing with complex visual conditions (namely, including multiple different objects): semantic leakage among objects and conflicts between visual inputs and text descriptions. To address these issues, we propose an innovative object-level conditional image generation method. It associates visual features with object semantic information, ensuring that generated objects are accurately positioned in their expected locations within the visual inputs. To address semantic leakage, we design an Object-level Structure Controller (OSC) module. This module utilizes an attention mechanism to fuse bounding box annotations, object prompts, and visual conditional inputs, allowing the model to learn essential object-level structural features. Besides, we propose an Object-level Control Relaxation (OCR) module to predict object-level scale features, which can reconcile conflicts between object semantics and visual features. Finally, the scaled backbone features are fused with structural features to form the final output features. Extensive experiments demonstrate that our approach outperforms state-of-the-art methods in terms of text-image alignment, structural similarity, and spatial fidelity.},
+booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+pages = {10064–10073},
+numpages = {10},
+keywords = {controlnet, diffusion model, object-level conditional text-to-image generation},
+location = {Dublin, Ireland},
+series = {MM '25}
+}
+
+@inproceedings{10.65109/EAHU8566,
+author = {Goodall, Alexander W. and Belardinelli, Francesco},
+title = {Safe Reinforcement Learning via Recovery-based Shielding with Gaussian Process Dynamics Models},
+year = {2026},
+isbn = {9798400723179},
+publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+address = {Richland, SC},
+url = {https://doi.org/10.65109/EAHU8566},
+doi = {10.65109/EAHU8566},
+abstract = {Reinforcement learning (RL) is a powerful framework for optimal decision-making and control but often lacks provable guarantees for safety-critical applications. In this paper, we introduce a novel recovery-based shielding framework that enables safe RL with a provable safety lower bound for unknown and non-linear continuous dynamical systems. The proposed approach integrates a backup policy (shield) with the RL agent, leveraging Gaussian process (GP) based uncertainty quantification to predict potential violations of safety constraints, dynamically recovering to safe trajectories only when necessary. Experience gathered by the 'shielded' agent is used to construct the GP models, with policy optimization via internal model-based sampling -- enabling unrestricted exploration and sample efficient learning, without compromising safety. Empirically our approach demonstrates strong performance and strict safety-compliance on a suite of continuous control environments.},
+booktitle = {Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems},
+pages = {540–549},
+numpages = {10},
+keywords = {safe control, reinforcement learning, gaussian process},
+location = {Paphos, Cyprus},
+series = {AAMAS '26}
+}
+
+@proceedings{10.1145/3744200,
+title = {ANRW '25: Proceedings of the 2025 Applied Networking Research Workshop},
+year = {2025},
+isbn = {9798400720093},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Madrid, Spain}
+}
+
+@proceedings{10.1145/3671151,
+title = {CIBDA '24: Proceedings of the 5th International Conference on Computer Information and Big Data Applications},
+year = {2024},
+isbn = {9798400718106},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Wuhan, China}
+}
+
+@proceedings{10.1145/3652628,
+title = {ICAICE '23: Proceedings of the 4th International Conference on Artificial Intelligence and Computer Engineering},
+year = {2023},
+isbn = {9798400708831},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dalian, China}
+}
+
+@inproceedings{10.1145/3542929.3563459,
+author = {Jia, Weiwei and Zhang, Jiyuan and Shan, Jianchen and Li, Jing and Ding, Xiaoning},
+title = {Achieving low latency in public edges by hiding workloads mutual interference},
+year = {2022},
+isbn = {9781450394147},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3542929.3563459},
+doi = {10.1145/3542929.3563459},
+abstract = {On multi-tenant platforms, such as public clouds and edges, workloads interfere with each other through shared resources. The performance degradation caused by such interference is a notoriously challenging problem. Though many solutions have been proposed for clouds, they can hardly help the application in edges, where workloads are mostly latency-critical, highly dynamic, and more sensitive to interference. Aggressive resource over-provisioning looks to be the only practical solution, albeit it causes significant resource waste.The paper proposes dynamic asymmetric scheduling for edge computing (DASEC) as a unique approach to achieve low latency in public edges and improve resource utilization. DASEC makes application performance less sensitive to the interference between workloads by making the interference affect mostly the tasks on non-critical paths and rarely the tasks on critical paths. With DASEC, the interference is largely hidden from being reflected on the end-to-end performance observed by users.The paper has investigated the techniques to implement DASEC in the task schedulers for edge workloads and tested its effectiveness in managing the interference caused by sharing CPU cores. For different types of edges that schedule tasks at different system levels, the paper implemented DASEC prototypes based on Linux/KVM vCPU scheduler, the completely fair scheduler (CFS) in Linux OS, and Google user-level scheduling framework. Extensive experiments with diverse real-world applications show that DASEC can reduce the latencies of the workloads consolidated on the same edge server by 32\% ~ 52\%.},
+booktitle = {Proceedings of the 13th Symposium on Cloud Computing},
+pages = {477–492},
+numpages = {16},
+keywords = {virtualization, scheduling, edge computing},
+location = {San Francisco, California},
+series = {SoCC '22}
+}
+
+@article{10.1145/3700418,
+author = {Misono, Masanori and Stavrakakis, Dimitrios and Santos, Nuno and Bhatotia, Pramod},
+title = {Confidential VMs Explained: An Empirical Analysis of AMD SEV-SNP and Intel TDX},
+year = {2024},
+issue_date = {December 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {3},
+url = {https://doi.org/10.1145/3700418},
+doi = {10.1145/3700418},
+abstract = {Confidential computing is gaining traction in the cloud, driven by the increasing security and privacy concerns across various industries. Recent trusted hardware advancements introduce Confidential Virtual Machines (CVMs) to alleviate the programmability and usability challenges of the previously proposed enclave-based trusted computing technologies. CVM hardware extensions facilitate secure, hardware-isolated encrypted VMs, promoting programmability and easier deployment in cloud infrastructures. However, differing microarchitectural features, interfaces, and security properties among hardware vendors complicate the evaluation of CVMs for different use cases. Understanding the performance implications, functional limitations, and security guarantees of CVMs is a crucial step toward their adoption.This paper presents a detailed empirical analysis of two leading CVM technologies: AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) and Intel Trust Domain Extensions (TDX). We review their microarchitectural components and conduct a thorough performance evaluation across various aspects, including memory management, computational performance, storage and network stacks, and attestation primitives. We further present a security analysis through a trusted computing base (TCB) evaluation and Common Vulnerabilities and Exposures (CVE) analysis. Our key findings demonstrate, among others, the effect of CVMs on boot time, memory management and I/O, and identify inefficiencies in their context switch mechanisms. We further provide insights into the performance implications of CVMs and highlight potential room for improvement.},
+journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+month = dec,
+articleno = {36},
+numpages = {42},
+keywords = {amd sev-snp, confidential computing, intel tdx, virtual machine}
+}
+
+@proceedings{10.1145/3555776,
+title = {SAC '23: Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing},
+year = {2023},
+isbn = {9781450395175},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tallinn, Estonia}
+}
+
+@inproceedings{10.1145/3477083.3480153,
+author = {Rachuri, Sri Pramodh and Bronzino, Francesco and Jain, Shubham},
+title = {Decentralized modular architecture for live video analytics at the edge},
+year = {2021},
+isbn = {9781450387002},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3477083.3480153},
+doi = {10.1145/3477083.3480153},
+abstract = {Live video analytics have become a key technology to support surveillance, security, traffic control, and even consumer multimedia applications in real time. The continuous growth in number of networked video cameras will further increase their widespread adoption. Yet, until now, developments in video analytics have largely focused on using fixed cameras, omitting the ever-growing presence of mobile cameras such as car dash-cams, drones, and smartphones. Edge computing, coupled with centralized clouds, has helped alleviate the network traffic and processing load, reducing latency and data transmissions. However, the current approach of processing video feeds through a hierarchy of clusters across a somewhat predictable path in the network will not be sufficient to support the integration of mobile feeds into the video analytics architecture. In this paper, we argue that a crucial step towards supporting heterogeneous camera sources is the adoption of a flat edge computing architecture. Such architecture should enable the dynamic distribution of processing loads through distributed computing points of presence, rapidly adapting to sudden changes in traffic conditions. In support of this hypothesis, we present exploratory results that show that smartly distributing and processing vision modules in parallel across available edge compute nodes can ultimately lead to better resource utilization and improved performance.},
+booktitle = {Proceedings of the 3rd ACM Workshop on Hot Topics in Video Analytics and Intelligent Edges},
+pages = {13–18},
+numpages = {6},
+keywords = {video analytics, edge computing, distributed computing, computer vision},
+location = {New Orleans, Louisiana},
+series = {HotEdgeVideo '21}
+}
+
+@proceedings{10.1145/3698061,
+editor = {Salvatore Andolina, Nick Bryan-Kinns and Sarah Fdili Alaoui},
+title = {C&amp;C '25: Proceedings of the 2025 Conference on Creativity and Cognition},
+year = {2025},
+isbn = {9798400712890},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Virtual, United Kingdom}
+}
+
+@proceedings{10.1145/3573834,
+title = {AISS '22: Proceedings of the 4th International Conference on Advanced Information Science and System},
+year = {2022},
+isbn = {9781450397933},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sanya, China}
+}
+
+@proceedings{10.1145/3508352,
+title = {ICCAD '22: Proceedings of the 41st IEEE/ACM International Conference on Computer-Aided Design},
+year = {2022},
+isbn = {9781450392174},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Jointly sponsored by ACM and IEEE, ICCAD is the premier forum to explore new challenges, present leading-edge innovative solutions, and identify emerging technologies in the Electronic Design Automation (EDA) research areas. ICCAD covers the full range of Computer-Aided Design (CAD) topics - from device and circuit-level up through system-level, as well as post-CMOS design.},
+location = {San Diego, California}
+}
+
+@proceedings{10.1145/3544548,
+editor = {Albrecht Schmidt, Kaisa V{\"a}{\"a}n{\"a}nen, Tesh Goyal, Per Ola Kristensson, Anicia Peters, Stefanie Mueller, Julie R. Williamson and Max L. Wilson},
+title = {CHI '23: Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+year = {2023},
+isbn = {9781450394215},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hamburg, Germany}
+}
+
+@proceedings{10.1145/3743642,
+title = {ApPLIED '25: Proceedings of the 7th Workshop on Advanced tools, programming languages, and PLatforms for Implementing and Evaluating algorithms for Distributed systems},
+year = {2025},
+isbn = {9798400720062},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to ApPLIED 2025, the 7th workshop on Advanced tools, programming languages, and PLatforms for Implementing and Evaluating algorithms for Distributed systems. The workshop is co-located with PODC 2025, and earlier editions were held with PODC 2018, DISC 2019, PODC 2021, PODC 2022, PODC 2023, and PODC 2024. Further information about the workshop can be found at our website, see tinyurl.com/ApPLIED2025.},
+location = {Huatulco, Mexico}
+}
+
+@proceedings{10.1145/3694907,
+editor = {Anil Ufuk Batmaz, Robert J. Teather, Derek Reilly, Huyen Nguyen, Monica Perusqu{\'i}a-Hern{\'a}ndez and Alvaro Quevedo},
+title = {SUI '25: Proceedings of the 2025 ACM Symposium on Spatial User Interaction},
+year = {2025},
+isbn = {9798400712593},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Montreal, QC, Canada}
+}
+
+@inproceedings{10.1145/3632047.3632078,
+author = {Szundefinedcs, {\'A}d{\'a}m Istv{\'a}n and Horv{\'a}th, Krist{\'o}f and S{\'o}lyomv{\'a}ri, Katalin and Zlehovszky, {\'A}d{\'a}m and K{\'a}ri, B{\'e}la},
+title = {Self-supervised segmentation of myocardial perfusion imaging SPECT left ventricles},
+year = {2024},
+isbn = {9798400708152},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3632047.3632078},
+doi = {10.1145/3632047.3632078},
+abstract = {Myocardial Perfusion Imaging (MPI) is the golden standard in detecting and assessing Coronary Artery Disease (CAD). Due to its role and incidence in diagnostics, automated and semi-automated solutions are available aiding diagnoses based on the perfusion and function of the left ventricle. Evaluation with Single-Photon Emission Computed Tomography (SPECT) cameras often takes &gt; 30 minutes and due to patient cardinality, shortened acquisition produces images with lower Signal-to-Noise Ratio (SNR), challenging automated solutions. Here a fully automated method is presented, solving the left ventricle (LV) segmentation problem. The method is a 3D U-Net-based, self-supervised learning (SSL) approach, with a rich augmentation pipeline. A brief study is presented where the proposed algorithm is compared to the current state-of-the-art solution in Machine Learning (ML), with the evaluation of various segmentation metrics of the left ventricular muscle tissue. The proposed method showed an effective 89 \% precision on the segmentation task of MPI studies on both simulated and real datasets. In conclusion, the technique can aid the evaluation of MPI studies in clinical environments by automating the segmentation of studies with a high success rate.},
+booktitle = {Proceedings of the 2023 10th International Conference on Bioinformatics Research and Applications},
+pages = {206–211},
+numpages = {6},
+keywords = {Myocardial Perfusion Imaging • Single-Photon Emission Computed Tomography • Coronary Artery Disease • Self-Supervised Learning},
+location = {Barcelona, Spain},
+series = {ICBRA '23}
+}
+
+@proceedings{10.1145/3641142,
+editor = {David Abramson, Sasha Vassar and Chao Jin},
+title = {ACSW '24: Proceedings of the 2024 Australasian Computer Science Week},
+year = {2024},
+isbn = {9798400717307},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sydney, NSW, Australia}
+}
+
+@article{10.1145/3696420,
+author = {Cai, Xinjun and Xu, Jingao and Deng, Kuntian and Lan, Hongbo and Wu, Yue and Zhuge, Xiangwen and Yang, Zheng},
+title = {TrinitySLAM: On-board Real-time Event-image Fusion SLAM System for Drones},
+year = {2024},
+issue_date = {November 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {20},
+number = {6},
+issn = {1550-4859},
+url = {https://doi.org/10.1145/3696420},
+doi = {10.1145/3696420},
+abstract = {Drones have witnessed extensive popularity among diverse smart applications, and visual Simultaneous Localization and Mapping (SLAM) technology is commonly used to estimate the six-degrees-of-freedom pose for drone flight control systems. However, traditional image-based SLAM cannot ensure the flight safety of drones, especially in challenging environments such as high-speed flight and high dynamic range scenarios. The event camera, a new vision sensor, holds the potential to enable drones to overcome these challenging scenarios if fused with the image-based SLAM. Unfortunately, the computational demands of event-image fusion SLAM have grown manifold compared with image-based SLAM. Existing research on visual SLAM acceleration cannot achieve real-time operation of event-image fusion SLAM on on-board computing platforms for drones. To fill this gap, we present TrinitySLAM, a high-accuracy, real-time, low-energy consumption event-image fusion SLAM acceleration framework utilizing Xilinx Zynq, an on-board heterogeneous computing platform. The key innovations of TrinitySLAM&nbsp; include a fine-grained computation allocation strategy, several novel hardware–software co-acceleration designs, and an efficient data exchange mechanism. We fully implement TrinitySLAM&nbsp; on the latest Zynq UltraScale+ platform and evaluate its performance on one custom-made drone dataset and four official datasets covering various scenarios. Comprehensive experiments show that TrinitySLAM&nbsp; improves the pose estimation accuracy by 28\% with half end-to-end latency and 1.2{\texttimes} energy consumption reduction compared with the most comparable state-of-the-art heterogeneous computing platform acceleration baseline.},
+journal = {ACM Trans. Sen. Netw.},
+month = nov,
+articleno = {121},
+numpages = {22},
+keywords = {Drone, pose estimation, event camera, SLAM, software–hardware co-design}
+}
+
+@proceedings{10.1145/3582197,
+title = {ICIT '22: Proceedings of the 2022 10th International Conference on Information Technology: IoT and Smart City},
+year = {2022},
+isbn = {9781450397438},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Shanghai, China}
+}
+
+@inbook{10.1145/3774748.3795671,
+author = {Yao, Simeng and Zhao, Jialin and Zhang, Yang and Wu, Yiwen and Wang, Tao and Zhang, Xunhui},
+title = {Understanding the Executability of Example Code in Hugging Face Model Cards: An Empirical Study},
+year = {2026},
+isbn = {9798400722967},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3774748.3795671},
+abstract = {Example code in Hugging Face model cards serves as an important entry point for users to understand and adopt pretrained models; however, during execution, users frequently encounter execution errors, which in turn undermines reproducibility and practical usability. Given the long-standing lack of systematic evaluation of this phenomenon, we conduct a large-scale empirical study on the executability of model-card example code. Our results show that, among 291 model cards, 65.98\% of example code fails to execute, indicating substantial limitations in real-world usability. Further analysis reveals that failure rates increase with model size and vary significantly across task types, with speech, vision, multimodal, and generative tasks being particularly fragile. Based on execution logs, we identify three dominant root causes: insufficient documentation of dependencies and version requirements, implicit runtime environment assumptions embedded in example code, and incompatibilities induced by ecosystem evolution (e.g., API changes). This study provides preliminary empirical evidence for assessing the effectiveness of model-card examples in real-world usage scenarios.},
+booktitle = {Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering},
+pages = {443–445},
+numpages = {3}
+}
+

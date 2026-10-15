@@ -1,29 +1,30 @@
-# Group B progress | 15 October 2026
+# Group B status: 15 October 2026 continuation
 
-## What is complete
+Start with `task2/CONTINUE_HERE.md`. Current outputs are `task2/report/report.pdf`, its LaTeX/BibTeX sources, `task2/report/prisma_flow.pdf` and `task2/tracker/review_workbook.xlsx`.
 
-- Topic 23 and the three Group B names are confirmed by the submitted protocol cover and assigned-topic text.
-- Task 1 protocol was submitted on 27 September 2026. Its PDF is preserved at `task1/submitted_protocol.pdf`; its proposed sixteen expressions and criteria are in the editable source.
-- Task 2 has a LaTeX **draft scaffold** and a blank tracking workbook. A Group B checklist and separate evidence registers exist.
-- Four ScienceDirect RIS files supplied earlier contain **100 imported occurrences** (25 each). Their exact run strings, field settings, displayed hit counts, export pagination and times have not been supplied; thus these are **incoming records, not a complete documented ScienceDirect search**. They are not screened or included by Group B.
-- Group A has shared candidate data. Its 21 accepted-study rows are imported only as **Group B leads awaiting independent checking**. The lead register does not assert that all 21 qualify for Group B.
-- Simple DOI/title keys detect 10 repeated occurrences among the 100 RIS records, leaving 90 key-distinct RIS leads; manual duplicate review is pending. Reversible rules-assisted metadata triage flags 7 for full-text checking, 8 uncertain, and 75 likely outside scope. These are **not** protocol screening decisions or final exclusions. The 21 Group A leads were not triaged here.
-- Three public manuscript versions downloaded and inspected in a single-reviewer pilot: Naranjo et al., Lilou, and Gilman/Walls. Three DOI identities and issue dates checked against Crossref; two provisional eligibility recommendations and one context/exclusion recommendation remain subject to final-version and independent review. Five anchored pilot extraction rows saved; no final included-study count is asserted. See `evidence/pilot/`.
+| Item | Verified state |
+| --- | --- |
+| Submitted protocol | Original 27 September PDF preserved |
+| ACM | 79 original batches; 1,582 occurrences; exact run mapping unknown |
+| Shared IEEE/Springer | 102 + 587 occurrences, attributed to Group A |
+| Supplementary | 20 shared leads, separately labelled |
+| Combined payload | 2,291 occurrences; 2,271 database-source occurrences |
+| Identity linkage | 44 repeats linked; 2,247 canonical records; 41 unresolved title/version pairs |
+| First review | 800/2,247 recommendations (35.6%); 652 exclude and 148 retain/uncertain; 1,447 pending |
+| Review composition | 183 individually inspected high-priority titles + 617 explicit container/book/report type checks |
+| Source checks | Five bounded priority-report checks with exact locations and remaining questions |
+| QA | Two fresh Group B first-review forms, 20 item rows; independent scoring pending |
+| Extraction | Six fresh checked outcomes; five older pilot rows remain separately labelled |
+| Citation chasing | Four targeted backward links; exhaustive backward/forward chasing pending |
+| Outputs | Interim report, workbook and pending-stage flow built from the registers |
+| History | 42 recovered older files indexed, 23 byte-distinct copies archived; licensed paper conversions private |
 
-## What is still needed for Task 2 through Data Extraction (guideline §14)
+The user authorizes attributed reuse of Group A searches. These are shared executed searches, not newly executed Group B runs. Group A's accepted list and 0-1 QA scores are prior assessments. Group B's final eligible set and its 0-2 rubric remain independently checked. No second reviewer or final consensus is claimed.
 
-| Stage | Group B status | Evidence that closes it |
-| --- | --- | --- |
-| Four database access and exact search | Access probes only; zero documented complete Group B runs | IEEE, ACM, ScienceDirect, Springer run logs with accepted strings, dates, counts and full exports, or documented inaccessible-source amendment |
-| Search imports and duplicate removal | 100 unverified incoming RIS occurrences; no finalized B dedup | Original exports with provenance, stable IDs and logged duplicate decisions |
-| Title/abstract and full-text screening | Three single-reviewer pilot source checks; no final Group B decisions | Recorded independent decisions, retrieval attempts and full-text exclusions by criterion |
-| PRISMA 2020 flow | No defensible Group B numbers yet | Reconciled counts from the above stages |
-| Quality and data extraction | Five pilot extraction rows for two candidate manuscripts; no final studies appraised or extraction set completed | Actual final candidates, anchored Q1–Q10 ratings and extraction rows independently checked against final full texts |
-| Task 2 LaTeX/PDF | Scaffold only | Actual methods/results through §14, references, figures and appendices verified for submission |
+The interrupted-session text reported 74 duplicates / 2,217 records, but no supporting committed ledger was recovered. This reconstruction reports 44 / 2,247 under its reproducible conservative rules and preserves 41 unresolved pairs rather than silently collapsing them. Do not mix the two count sets.
 
-The final CEP additionally needs taxonomy, comparison, trade-offs, conflicting evidence, synthesis, conditional recommendation, research gaps, limitations and all 25 deliverables in `docs/deliverables_map.md`. The full course guideline states **week 13**, 12-point font, IEEE references and the wording “min 20 to 30 pages”; it does not specify a separate Task 2 page count. The precise Task 2 rubric and deadline have not been provided in these files.
+ScienceDirect is deferred by user instruction. Its earlier 100 RIS occurrences remain preserved outside active counts. ACM query/date/field/hit/page mapping, older-MPS coverage and differences from the submitted Group B search plan remain documented limitations.
 
-**Evidence boundary:** The 100 RIS occurrences and 21 Group A leads can overlap; they are not added together into unique-paper or PRISMA totals. There is no valid Group B “percentage complete” for screening until run coverage and record linkage exist.
+Next: recover ACM provenance; resolve version pairs; finish abstracts and genuinely independent votes; complete retrieval/eligibility, QA and extraction; complete citation chasing; reconcile final PRISMA; revise the submission through Section 14. Final CEP Sections 15-22 still need taxonomy, fair comparisons, trade-offs, conflicts, RQ synthesis, recommendations, gaps and validity.
 
-**Repository handoff:** Files were uploaded to `group-b/task2-evidence-setup`; [draft PR #1](https://github.com/Raazia-Imran/os_CEPPPPPP/pull/1) is open for teammate review. It has not been merged. Subsequent evidence updates continue on that branch. The remote desktop device was offline during the latest check on 15 October 2026, so its VPN/browser could not be used for database searches.
-
+35.6% measures first-review coverage, not overall Task 2 completion or marks. Final inclusion is not established and a 50% overall completion claim is not verified. Continue on the existing feature branch and draft PR; do not auto-merge.

@@ -1,0 +1,276 @@
+@proceedings{10.1145/3677525,
+title = {GoodIT '24: Proceedings of the 2024 International Conference on Information Technology for Social Good},
+year = {2024},
+isbn = {9798400710940},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bremen, Germany}
+}
+
+@proceedings{10.1145/3736731,
+title = {ACM REP '25: Proceedings of the 3rd ACM Conference on Reproducibility and Replicability},
+year = {2025},
+isbn = {9798400719585},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Vancouver, Canada}
+}
+
+@proceedings{10.1145/3643916,
+title = {ICPC '24: Proceedings of the 32nd IEEE/ACM International Conference on Program Comprehension},
+year = {2024},
+isbn = {9798400705861},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {ICPC is the premier (CORE A) venue for research on program comprehension. Research on program comprehension encompasses both human activities for comprehending the software and technologies for supporting such comprehension.},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3696348,
+title = {HotNets '24: Proceedings of the 23rd ACM Workshop on Hot Topics in Networks},
+year = {2024},
+isbn = {9798400712722},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Irvine, CA, USA}
+}
+
+@inproceedings{10.1145/3701716.3715514,
+author = {Lu, Hui and Chai, Zheng and Zheng, Yuchao and Chen, Zhe and Xie, Deping and Xu, Peng and Zhou, Xun and Wu, Di},
+title = {Large Memory Network for Recommendation},
+year = {2025},
+isbn = {9798400713316},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3701716.3715514},
+doi = {10.1145/3701716.3715514},
+abstract = {Modeling user behavior sequences in recommender systems is essential for understanding user preferences over time, enabling personalized and accurate recommendations for improving user retention and enhancing business values. Despite its significance, there are two challenges for current sequential modeling approaches. From the spatial dimension, it is difficult to mutually perceive similar users' interests for a generalized intention understanding; from the temporal dimension, current methods are generally prone to forgetting long-term interests due to the fixed-length input sequence. In this paper, we present Large Memory Network (LMN), providing a novel idea by compressing and storing user history behavior information in a large-scale memory block. With the elaborated online deployment strategy, the memory block can be easily scaled up to million-scale in the industry. Extensive offline comparison experiments, memory scaling up experiments, and online A/B test on Douyin E-Commerce Search (ECS) are performed, validating the superior performance of LMN. Currently, LMN has been fully deployed in Douyin ECS, serving millions of users each day.},
+booktitle = {Companion Proceedings of the ACM on Web Conference 2025},
+pages = {1162–1166},
+numpages = {5},
+keywords = {large recommender models, memory learning, personalized recommender system, sequential modeling},
+location = {Sydney NSW, Australia},
+series = {WWW '25}
+}
+
+@inproceedings{10.1145/3581784.3607099,
+author = {Chrapek, Marcin and Khalilov, Mikhail and Hoefler, Torsten},
+title = {HEAR: Homomorphically Encrypted Allreduce},
+year = {2023},
+isbn = {9798400701092},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3581784.3607099},
+doi = {10.1145/3581784.3607099},
+abstract = {Allreduce is one of the most commonly used collective operations. Its latency and bandwidth can be improved by offloading the calculations to the network. However, no way exists to conduct such offloading securely; in state-of-the-art solutions, the data is passed unprotected into the network. Security is a significant concern for High-Performance Computing applications, but achieving it while maintaining performance remains challenging. We present HEAR, the first high-performance system for securing in-network compute and Allreduce operations based on homomorphic encryption. HEAR implements carefully designed and modified encryption schemes for the most common Allreduce functions and leverages communication domain knowledge in MPI programs to obtain decryption and encryption routines with high performance. HEAR operates on integers and floats with no code base and no or little hardware changes. We design and evaluate HEAR, showing its minimal overhead, and open-source our implementation. HEAR represents the first step towards achieving confidential HPC.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {36},
+numpages = {17},
+keywords = {message passing interface, allreduce, in-network computing, homomorphic encryption, confidential computing},
+location = {Denver, CO, USA},
+series = {SC '23}
+}
+
+@proceedings{10.1145/3571560,
+title = {ICAAI '22: Proceedings of the 6th International Conference on Advances in Artificial Intelligence},
+year = {2022},
+isbn = {9781450396943},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Birmingham, United Kingdom}
+}
+
+@inproceedings{10.1145/3373376.3378462,
+author = {Sanchez Vicarte, Jose Rodrigo and Schreiber, Benjamin and Paccagnella, Riccardo and Fletcher, Christopher W.},
+title = {Game of Threads: Enabling Asynchronous Poisoning Attacks},
+year = {2020},
+isbn = {9781450371025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3373376.3378462},
+doi = {10.1145/3373376.3378462},
+abstract = {As data sizes continue to grow at an unprecedented rate, machine learning training is being forced to adopt asynchronous algorithms to maintain performance and scalability. In asynchronous training, many threads share and update the model in a racy fashion to avoid costly inter-thread synchronization.This paper studies the security implications of these codes by introducing asynchronous poisoning attacks. Our attack influences training outcome---e.g., degrades model accuracy or biases the model towards an adversary-specified label---purely by scheduling asynchronous training threads in a malicious fashion. Since thread scheduling is outside the protections of modern trusted execution environments (TEEs), e.g., Intel SGX, our attack bypasses these protections even when the training set can be verified as correct. To the best of our knowledge, this represents the first example where a class of applications loses integrity guarantees, despite being protected by enclave-based TEEs such as SGX.We demonstrate both accuracy degradation and model biasing attacks on the CIFAR-10 image recognition task, trained on Resnet-style DNNs using an asynchronous training code published by Pytorch. We also perform proof-of-concept experiments to validate our assumptions on an SGX-enabled machine. Our accuracy degradation attacks are capable of returning a converged model to pre-trained accuracy or to some accuracy in between. Our model biasing attack can force the model to predict an adversary-specified label up to ~40\% of the time on the CIFAR-10 validation set (whereas the un-attacked model's prediction rate towards any label is ~10\%).},
+booktitle = {Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {35–52},
+numpages = {18},
+keywords = {adversarial machine learning, asynchronous stochastic gradient descent, trusted execution environment},
+location = {Lausanne, Switzerland},
+series = {ASPLOS '20}
+}
+
+@proceedings{10.1145/3822516,
+editor = {Mahmood Alzubaidi, Jens Schneider, Marco Agus, Giovanni Pintore, Pere-Pau Vazquez and Adel Bibi},
+title = {Web3D '26: Proceedings of the 31st ACM International Conference on 3D Web Technology},
+year = {2026},
+isbn = {9798400728105},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Doha, Qatar}
+}
+
+@proceedings{10.1145/3806383,
+title = {SLE '26: Proceedings of the 19th ACM SIGPLAN International Conference on Software Language Engineering},
+year = {2026},
+isbn = {9798400726392},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rennes, France}
+}
+
+@inproceedings{10.1145/3805712.3809607,
+author = {Li, Yuan and Hu, Jun and Jiang, Jiaxin and Hooi, Bryan and He, Bingsheng},
+title = {Robust Multimodal Recommendation via Graph Retrieval-Enhanced Modality Completion},
+year = {2026},
+isbn = {9798400725999},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3805712.3809607},
+doi = {10.1145/3805712.3809607},
+abstract = {Multimodal data plays a critical role in web-based recommendation systems, where information from diverse modalities such as vision and text enhances representation learning. However, real-world multimodal datasets often suffer from modality incompleteness due to sensor failures, annotation scarcity, or privacy constraints, which substantially degrade model performance and reliability. One effective solution to address this issue is modality completion, which reconstructs missing features to provide modality-complete graphs for downstream tasks. Given a query node with missing multimodal features, existing modality completion methods typically infer information from the node itself or its neighbors to reconstruct the missing modality. However, these methods may overlook semantically relevant context in the graph, which contains valuable cues that are non-trivial to capture through simple methods like neighborhood aggregation. In this work, we propose GRE-MC, a Graph Retrieval–Enhanced Modality Completion framework, to overcome these limitations. By introducing a modality-aware subgraph retrieval mechanism, GRE-MC selects semantically relevant subgraphs from the entire graph, providing richer contextual information for completing missing modalities. Subsequently, a graph transformer jointly encodes the query node and the retrieved subgraph via global attention to complete the missing features, while a learnable sparse-routing codebook regularizes latent embeddings into compact bases for improved robustness. Extensive experiments on multimodal recommendation benchmarks demonstrate that GRE-MC consistently outperforms state-of-the-art methods, validating the effectiveness of subgraph retrieval and joint-encoding graph transformer for robust modality completion.},
+booktitle = {Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {946–957},
+numpages = {12},
+keywords = {multimodal recommendation, data completion, graph retrieval},
+location = {Melbourne, VIC, Australia},
+series = {SIGIR '26}
+}
+
+@inproceedings{10.1145/3632047.3632048,
+author = {Wang, Yifan and Lenarz, Thomas and Kral, Andrej and John, Samuel},
+title = {Automatic Landmark Localization in 3D Medical CT Images: Few-Shot Learning through Optimized Data Pre-Processing and Network Design},
+year = {2024},
+isbn = {9798400708152},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3632047.3632048},
+doi = {10.1145/3632047.3632048},
+abstract = {As surgeons increasingly rely on computed tomography (CT) scans, including low-dose cone beam CT, it has become critical to effectively understand and annotate these medical images, not only for improved treatment planning, but also for robotic and implant surgery. However, in clinical practice, accurate localization and annotation of specific landmarks still relies heavily on manual efforts. Consequently, we present an automatic landmark localization pipeline with few-shot learning, specifically designed for 3D CT scans. In this paper, we focus on the cochlea structure with its three landmarks (apex point, basal point, round window center). The pipeline leverages an optimized data processing in conjunction with a novel designed 2D Convolutional Neural Network (CNN) model. To evaluate the effectiveness of our pipeline in a few-shot learning context, we used 31 volumetric CT scans along with their corresponding annotated landmarks, where 20 volumes are reserved for testing exclusively, while with varying quantities volumes for training, ranging from 1 up to 11. A comparative analysis was conducted among models trained on different numbers of CT volumes. We began by using the weighted F1 score to evaluate the landmark classification performance within the extracted 2D sub-images. A model trained with only 5 CT volumes achieves its peak performance&nbsp;with median weighted F1 scores of around&nbsp;0.99 (apex), 0.985 (basal), 0.98 (round window center), 0.98 (background). By manually providing an initial point placed near the cochlea, the automatic localization for all three landmarks within the 3D CT volume was then accomplished using a sliding window approach. Compared to manually defined ground truth, the 5-volume-trained model attained an average&nbsp;Euclidean distance error of 0.70 mm (apex), 1.15 mm (basal) and 0.84 mm (round window center) on 3D CT volumes from test set. This demonstrates the efficiency and accuracy of this pipeline.},
+booktitle = {Proceedings of the 2023 10th International Conference on Bioinformatics Research and Applications},
+pages = {1–7},
+numpages = {7},
+keywords = {Artificial neural network, Automatic landmark localization, CNN, Data augmentation, Medical image processing},
+location = {Barcelona, Spain},
+series = {ICBRA '23}
+}
+
+@inproceedings{10.1109/DAC63849.2025.11133282,
+author = {Ouyang, Yikang and Yu, Xiaofei and Zhu, Jiadong and Chen, Tinghuan and Ma, Yuzhe},
+title = {Efficient Continuous Logic Optimization with Diffusion Model},
+year = {2025},
+isbn = {9798331503048},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/DAC63849.2025.11133282},
+doi = {10.1109/DAC63849.2025.11133282},
+abstract = {The logic synthesis optimization flow is crucial to the quality of results (QoR), which applies a sequence of transformations to a design. Recently, there has been a growing focus on the automatic optimization of synthesis flows to improve QoR, utilizing techniques such as Bayesian optimization and reinforcement learning, which may fall short in efficiency due to the exponentially large search space. In contrast, continuous optimization offers notable efficiency advantages by leveraging the explicit gradient. However, despite its potential, several significant concerns remain to be addressed. On one hand, it is essential to obtain a reliable gradient. On the other hand, a major challenge arises from the fact that searching within a continuous space can yield solutions that deviate from feasible ones. In this paper, we propose an efficient approach to optimize synthesis sequences within a continuous latent space. Specifically, the gradient information is derived from a QoR surrogate model, while the discrepancies between solutions and feasible transformations are minimized by a diffusion model. Experimental results on extensive benchmarks demonstrate that the proposed method not only achieves lower area and delay but also improves efficiency by 5X to 130X, compared with previous methods.},
+booktitle = {Proceedings of the 62nd Annual ACM/IEEE Design Automation Conference},
+articleno = {395},
+numpages = {7},
+location = {San Francisco, California, United States},
+series = {DAC '25}
+}
+
+@article{10.1145/3725266,
+author = {Chang, Jiwon and Nargesian, Fatemeh},
+title = {Approximating Opaque Top-k Queries},
+year = {2025},
+issue_date = {June 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {3},
+number = {3},
+url = {https://doi.org/10.1145/3725266},
+doi = {10.1145/3725266},
+abstract = {Combining query answering and data science workloads has become prevalent. An important class of such workloads is top-k queries with a scoring function implemented as an opaque UDF - a black box whose internal structure and scores on the search domain are unavailable. Some typical examples include costly calls to fuzzy classification and regression models. The models may also be changed in an ad-hoc manner. Since the algorithm does not know the scoring function's behavior on the input data, opaque top-k queries become expensive to evaluate exactly or speed up by indexing. Hence, we propose an approximation algorithm for opaque top-k query answering. Our proposed solution is a task-independent hierarchical index and a novel bandit algorithm. The index clusters elements by some cheap vector representation then builds a tree of the clusters. Our bandit is a diminishing returns submodular epsilon-greedy bandit algorithm that maximizes the sum of the solution set's scores. Our bandit models the distribution of scores in each arm using a histogram, then targets arms with fat tails. We prove that our bandit algorithm approaches a constant factor of the optimal algorithm. We evaluate our standalone library on large synthetic, image, and tabular datasets over a variety of scoring functions. Our method accelerates the time required to achieve nearly optimal scores by up to an order of magnitude compared to exhaustive scan while consistently outperforming baseline sampling algorithms.},
+journal = {Proc. ACM Manag. Data},
+month = jun,
+articleno = {129},
+numpages = {25},
+keywords = {approximate query processing, top-k queries, user-defined functions}
+}
+
+@article{10.14778/3675034.3675039,
+author = {Wang, Kai and Xu, Yuwei and Luo, Siqiang},
+title = {TIGER: Training Inductive Graph Neural Network for Large-Scale Knowledge Graph Reasoning},
+year = {2024},
+issue_date = {June 2024},
+publisher = {VLDB Endowment},
+volume = {17},
+number = {10},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3675034.3675039},
+doi = {10.14778/3675034.3675039},
+abstract = {Knowledge Graph (KG) Reasoning plays a vital role in various applications by predicting missing facts from existing knowledge. Inductive KG reasoning approaches based on Graph Neural Networks (GNNs) have shown impressive performance, particularly when reasoning with unseen entities and dynamic KGs. However, such state-of-the-art KG reasoning approaches encounter efficiency and scalability challenges on large-scale KGs due to the high computational costs associated with subgraph extraction - a key component in inductive KG reasoning. To address the computational challenge, we introduce TIGER, an inductive GNN training framework tailored for large-scale KG reasoning. TIGER employs a novel, efficient streaming procedure that facilitates rapid subgraph slicing and dynamic subgraph caching to minimize the cost of subgraph extraction. The fundamental challenge in TIGER lies in the optimal subgraph slicing problem, which we prove to be NP-hard. We propose a novel two-stage algorithm SiGMa to solve the problem practically. By decoupling the complicated problem into two classical ones, SiGMa achieves low computational complexity and high slice reuse. We also propose four new benchmarks for robust evaluation of large-scale inductive KG reasoning, the biggest of which performs on the Freebase KG (encompassing 86M entities, 285M edges). Through comprehensive experiments on state-of-the-art GNN-based KG reasoning models, we demonstrate that TIGER significantly reduces the running time of subgraph extraction, achieving an average 3.7{\texttimes} speedup relative to the basic training procedure.},
+journal = {Proc. VLDB Endow.},
+month = jun,
+pages = {2459–2472},
+numpages = {14}
+}
+
+@proceedings{10.1145/3788763,
+editor = {Taosheng Wang},
+title = {ICDEIT '25: Proceedings of the International Conference on Digital Economy and Information Technology},
+year = {2025},
+isbn = {9798400721960},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hong Kong, China}
+}
+
+@article{10.1145/3742939.3742952,
+author = {Sharman, Ken and Coronel, Javier and S{\'a}ez, Sergio},
+title = {Design Space Exploration using Evolutionary Optimisation in Cyber-Physical Systems: A Smart Port Case Study},
+year = {2025},
+issue_date = {December 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {44},
+number = {2},
+issn = {1094-3641},
+url = {https://doi.org/10.1145/3742939.3742952},
+doi = {10.1145/3742939.3742952},
+abstract = {This work discusses using evolutionary optimisation algorithms at the design stage of cyber-physical systems. We present a parametrized model for a complex, heterogeneous, distributed cyber-physical system. This model is then used to calculate certain performance metrics of the system which will assist the design engineer. The optimisation of the system structure and its parameters is then performed by an evolutionary algorithm.},
+journal = {Ada Lett.},
+month = jun,
+pages = {76–80},
+numpages = {5},
+keywords = {cyber-physical systems, design space exploration., evolutionary algorithms}
+}
+
+@proceedings{10.1145/3603781,
+title = {CNIOT '23: Proceedings of the 2023 4th International Conference on Computing, Networks and Internet of Things},
+year = {2023},
+isbn = {9798400700705},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xiamen, China}
+}
+
+@article{10.1145/3451179,
+author = {Huang, Guyue and Hu, Jingbo and He, Yifan and Liu, Jialong and Ma, Mingyuan and Shen, Zhaoyang and Wu, Juejian and Xu, Yuanfan and Zhang, Hengrui and Zhong, Kai and Ning, Xuefei and Ma, Yuzhe and Yang, Haoyu and Yu, Bei and Yang, Huazhong and Wang, Yu},
+title = {Machine Learning for Electronic Design Automation: A Survey},
+year = {2021},
+issue_date = {September 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {26},
+number = {5},
+issn = {1084-4309},
+url = {https://doi.org/10.1145/3451179},
+doi = {10.1145/3451179},
+abstract = {With the down-scaling of CMOS technology, the design complexity of very large-scale integrated is increasing. Although the application of machine learning (ML) techniques in electronic design automation (EDA) can trace its history back to the 1990s, the recent breakthrough of ML and the increasing complexity of EDA tasks have aroused more interest in incorporating ML to solve EDA tasks. In this article, we present a comprehensive review of existing ML for EDA studies, organized following the EDA hierarchy.},
+journal = {ACM Trans. Des. Autom. Electron. Syst.},
+month = jun,
+articleno = {40},
+numpages = {46},
+keywords = {Electronic design automation, machine learning, neural networks}
+}
+
+@proceedings{10.1145/3661638,
+title = {AISNS '23: Proceedings of the 2023 International Conference on Artificial Intelligence, Systems and Network Security},
+year = {2023},
+isbn = {9798400716966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Mianyang, China}
+}
+

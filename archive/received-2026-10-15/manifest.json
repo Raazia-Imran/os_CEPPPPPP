@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "image(4).png",
+    "sha256": "dd5496556ae93dcb70f0cdb95e9b5498c7236ef42b3e40cb6727870ee4b76938",
+    "received_checkpoint_utc": "2026-10-15T18:22:48.615721+00:00",
+    "role": "User supplied; Group A prior work unless instructor guideline; does not establish Group B final eligibility"
+  },
+  {
+    "filename": "CEP_Operating_Systems_guideline(2).pdf",
+    "sha256": "bcfdafc5497202bb985a160210fd9c46bc19a65cf9da9b401426d40cc6e05b37",
+    "received_checkpoint_utc": "2026-10-15T18:22:48.616248+00:00",
+    "role": "User supplied; Group A prior work unless instructor guideline; does not establish Group B final eligibility"
+  },
+  {
+    "filename": "query_review_workbook (2).xlsx",
+    "sha256": "8f24132aa75550f5f178e3989b0f8eb1ce3938d3316df63cf772639be52417fb",
+    "received_checkpoint_utc": "2026-10-15T18:22:48.616620+00:00",
+    "role": "User supplied; Group A prior work unless instructor guideline; does not establish Group B final eligibility"
+  },
+  {
+    "filename": "TASK2_SUBMISSION_CHECKLIST (1).md",
+    "sha256": "bce15182b395de6c8470696fe47ce70dc511bc4a7aa4892578a8748b73f38f35",
+    "received_checkpoint_utc": "2026-10-15T18:22:48.616766+00:00",
+    "role": "User supplied; Group A prior work unless instructor guideline; does not establish Group B final eligibility"
+  }
+]
