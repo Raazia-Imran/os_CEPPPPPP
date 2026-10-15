@@ -38,3 +38,7 @@ Next: recover ACM provenance; resolve version pairs; finish abstracts and genuin
 - Version audit: 30 of 41 pairs are whole-container pairs; 11 are paper identity/version pairs. No additional duplicates removed.
 - Approximate planning readiness: 40%, not a verified completion measure; first-review coverage remains 35.6%.
 - Simple team handoff: task2/COMPLETION_AND_TEAM.md.
+
+## Cycle 1 started
+
+Baseline main: 07085c4fb40ab0ea6b1e2d0702a776a110b4eb18. Baseline counts verified against committed registers. 2026-10-15T21:46:02.589311+00:00 UTC: recovered teammate search log; claimed ACM 1600 displayed / 1603 exported needs raw-file reconciliation. New exports staged separately, active counts unchanged. Human final decisions remain pending.

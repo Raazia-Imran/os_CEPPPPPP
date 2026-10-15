@@ -1,0 +1,77 @@
+Run ID: ACM-MASTER
+Site + collection: ACM Digital Library (The ACM Full-Text Collection)
+Search date/time (Pakistan time): 14 October 2026, 10:30 PM
+Exact query entered: (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("time slicing" OR "time sharing" OR "context switching" OR MPS OR "multi-process service" OR MIG OR "multi-instance GPU" OR "GPU partitioning" OR "API remoting" OR "CUDA remoting" OR "GPU proxy" OR "GPU virtualization")
+Query displayed/transformed by site (if different): [[All: gpu] OR [All: "graphics processing unit"]] AND [[All: inference] OR [All: "model serving"] OR [All: "deep learning"] OR [All: dnn] OR [All: llm]] AND [[All: "time slicing"] OR [All: "time sharing"] OR [All: "context switching"] OR [All: mps] OR [All: "multi-process service"] OR [All: mig] OR [All: "multi-instance gpu"] OR [All: "gpu partitioning"] OR [All: "api remoting"] OR [All: "cuda remoting"] OR [All: "gpu proxy"] OR [All: "gpu virtualization"]] AND [E-Publication Date: (01/01/2020 TO 31/12/2026)]
+Search field(s): All Fields
+Filters (year, type, language, other): 2020 - 2026
+Search result URL: https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=dl&AllField=%28GPU+OR+%22graphics+processing+unit%22%29+AND+%28inference+OR+%22model+serving%22+OR+%22deep+learning%22+OR+DNN+OR+LLM%29+AND+%28%22time+slicing%22+OR+%22time+sharing%22+OR+%22context+switching%22+OR+MPS+OR+%22multi-process+service%22+OR+MIG+OR+%22multi-instance+GPU%22+OR+%22GPU+partitioning%22+OR+%22API+remoting%22+OR+%22CUDA+remoting%22+OR+%22GPU+proxy%22+OR+%22GPU+virtualization%22%29&AfterYear=2020&BeforeYear=2026&queryID=51%2F11177895894
+Displayed hit count: 1600
+Export format and filename(s): BibTeX, ACM_MASTER_01.bib
+Number of records exported (if known): 1603
+Status: completed
+Notes or error: Executed successfully via NED University library access. ACM limits bulk export to page-by-page.
+
+--------------------------------------------------
+
+Run ID: SD-TEMPORAL
+Site + collection: ScienceDirect
+Search date/time (Pakistan time): 14 October 2026, 11:45 PM
+Exact query entered: (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning") AND ("time slicing" OR "time sharing" OR "context switching")
+Query displayed/transformed by site (if different): Same
+Search field(s): Find articles with these terms
+Filters (year, type, language, other): 2020 - 2026
+Search result URL: https://www.sciencedirect.com/search?date=2020-2026&qs=%28GPU+OR+%22graphics+processing+unit%22%29+AND+%28inference+OR+%22model+serving%22+OR+%22deep+learning%22%29+AND+%28%22time+slicing%22+OR+%22time+sharing%22+OR+%22context+switching%22%29&lastSelectedFacet=accessTypes&accessTypes=openaccess
+Displayed hit count: 1053
+Export format and filename(s): RIS, SD_TEMPORAL_01.ris
+Number of records exported (if known): 1053
+Status: completed
+Notes or error: Master query rejected due to ScienceDirect 8 boolean connector limit; executed TEMPORAL fallback query. Exported visible page selection.
+
+--------------------------------------------------
+
+Run ID: SD-MPS
+Site + collection: ScienceDirect
+Search date/time (Pakistan time): 14 October 2026, 11:52 PM
+Exact query entered: (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning") AND (MPS OR "multi-process service")
+Query displayed/transformed by site (if different): Same
+Search field(s): Find articles with these terms
+Filters (year, type, language, other): 2020 - 2026
+Search result URL: https://www.sciencedirect.com/search?date=2020-2026&qs=%28GPU+OR+%22graphics+processing+unit%22%29+AND+%28inference+OR+%22model+serving%22+OR+%22deep+learning%22%29+AND+%28MPS+OR+%22multi-process+service%22%29
+Displayed hit count: 517
+Export format and filename(s): RIS, SD_MPS_01.ris
+Number of records exported (if known): 563
+Status: completed
+Notes or error: Master query rejected due to ScienceDirect 8 boolean connector limit; executed MPS fallback query. Exported visible page selection.
+
+--------------------------------------------------
+
+Run ID: SD-MIG
+Site + collection: ScienceDirect
+Search date/time (Pakistan time): 14 October 2026, 11:55 PM
+Exact query entered: (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning") AND (MIG OR "multi-instance GPU" OR "GPU partitioning")
+Query displayed/transformed by site (if different): Same
+Search field(s): Find articles with these terms
+Filters (year, type, language, other): 2020 - 2026
+Search result URL: https://www.sciencedirect.com/search?date=2020-2026&qs=%28GPU%20OR%20%22graphics%20processing%20unit%22%29%20AND%20%28inference%20OR%20%22model%20serving%22%20OR%20%22deep%20learning%22%29%20AND%20%28MIG%20OR%20%22multi-instance%20GPU%22%20OR%20%22GPU%20partitioning%22%29
+Displayed hit count: 241
+Export format and filename(s): RIS, SD_MIG_01.ris
+Number of records exported (if known): 241
+Status: completed
+Notes or error: Master query rejected due to ScienceDirect 8 boolean connector limit; executed MIG fallback query. Exported visible page selection.
+
+--------------------------------------------------
+
+Run ID: SD-API
+Site + collection: ScienceDirect
+Search date/time (Pakistan time): 14 October 2026, 11:56 PM
+Exact query entered: (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning") AND ("API remoting" OR "CUDA remoting" OR "GPU proxy" OR "GPU virtualization")
+Query displayed/transformed by site (if different): Same
+Search field(s): Find articles with these terms
+Filters (year, type, language, other): 2020 - 2026
+Search result URL: https://www.sciencedirect.com/search?date=2020-2026&qs=%28GPU%20OR%20%22graphics%20processing%20unit%22%29%20AND%20%28inference%20OR%20%22model%20serving%22%20OR%20%22deep%20learning%22%29%20AND%20%28%22API%20remoting%22%20OR%20%22CUDA%20remoting%22%20OR%20%22GPU%20proxy%22%20OR%20%22GPU%20virtualization%22%29
+Displayed hit count: 41
+Export format and filename(s): RIS, SD_API_01.ris
+Number of records exported (if known): 41
+Status: completed
+Notes or error: Master query rejected due to ScienceDirect 8 boolean connector limit; executed API fallback query. Exported visible page selection.
