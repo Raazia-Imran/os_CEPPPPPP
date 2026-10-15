@@ -1,0 +1,507 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2026-08-25T07:28:43Z",
+      "timestamp": 1787642923784,
+      "version": "build-2736575974"
+    },
+    "reference-count": 29,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2021-11-01T00:00:00Z",
+          "timestamp": 1635724800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Performance Evaluation"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.peva.2021.102234",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2021-09-28T12:43:07Z",
+      "timestamp": 1632832987000
+    },
+    "page": "102234",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "special_numbering": "C",
+    "title": [
+      "Characterizing concurrency mechanisms for NVIDIA GPUs under deep learning workloads"
+    ],
+    "prefix": "10.1016",
+    "volume": "151",
+    "author": [
+      {
+        "given": "Guin",
+        "family": "Gilman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert J.",
+        "family": "Walls",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.peva.2021.102234_b1",
+        "series-title": "2018 IEEE International Symposium on High Performance Computer Architecture",
+        "first-page": "620",
+        "article-title": "Applied machine learning at facebook: A datacenter infrastructure perspective",
+        "author": "Hazelwood",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b2",
+        "series-title": "GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform",
+        "first-page": "492",
+        "author": "Dhakal",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b3",
+        "series-title": "14th USENIX Symposium on Operating Systems Design and Implementation",
+        "first-page": "533",
+        "article-title": "AntMan: Dynamic scaling on GPU clusters for deep learning",
+        "author": "Xiao",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J.T. Adriaens, K. Compton, N.S. Kim, M.J. Schulte, The case for GPGPU spatial multitasking, in: IEEE International Symposium on High-Performance Comp Architecture, 2012.",
+        "DOI": "10.1109/HPCA.2012.6168946"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Q. Xu, H. Jeon, K. Kim, W.W. Ro, M. Annavaram, Warped-slicer: Efficient intra-SM slicing through dynamic resource partitioning for GPU multiprogramming, in: 2016 ACM/IEEE 43rd Annual International Symposium on Computer Architecture, ISCA, 2016.",
+        "DOI": "10.1109/ISCA.2016.29"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b6",
+        "series-title": "Dynamic space-time scheduling for GPU inference",
+        "author": "Jain",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b7",
+        "series-title": "Laius: Towards latency awareness and improved utilization of spatial multitasking accelerators in datacenters",
+        "first-page": "58",
+        "author": "Zhang",
+        "year": "2019"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.peva.2021.102234_b8",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/2678373.2665702",
+        "article-title": "Enabling preemptive multiprogramming on GPUs",
+        "volume": "42",
+        "author": "Tanasic",
+        "year": "2014",
+        "journal-title": "SIGARCH Comput. Archit. News"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.peva.2021.102234_b9",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/2775054.2694346",
+        "article-title": "Chimera: Collaborative preemption for multitasking on a shared GPU",
+        "volume": "50",
+        "author": "Park",
+        "year": "2015",
+        "journal-title": "SIGPLAN Not."
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "T. Amert, N. Otterness, M. Yang, J.H. Anderson, F.D. Smith, GPU Scheduling on the NVIDIA TX2: Hidden details revealed, in: 2017 IEEE Real-Time Systems Symposium, RTSS, 2017.",
+        "DOI": "10.1109/RTSS.2017.00017"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hao Li, Di Yu, Anand Kumar, Yi-Cheng Tu, Performance modeling in CUDA streams - a means for high-throughput data processing, in: IEEE International Conference on Big Data, 2014.",
+        "DOI": "10.1109/BigData.2014.7004245"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b12",
+        "series-title": "Dissecting the CUDA scheduling hierarchy: a performance and predictability perspective",
+        "author": "Sañudo",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b13",
+        "series-title": "2018 IEEE Real-Time Systems Symposium",
+        "first-page": "119",
+        "article-title": "Deadline-based scheduling for GPU with preemption support",
+        "author": "Capodieci",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b14",
+        "series-title": "NVIDIA Ampere GA102 GPU Architecture: The Ultimate Play",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b15",
+        "unstructured": "Guin R. Gilman, Samuel S. Ogden, Tian Guo, Robert J. Walls, Demystifying the placement policies of the GPU thread block scheduler for concurrent kernels, in: 38th International Symposium on Computer Performance, Modeling, Measurements and Evaluation, 2020."
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b16",
+        "series-title": "MLPerf inference benchmark",
+        "author": "Reddi",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b17",
+        "series-title": "PyTorch examples",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b18",
+        "series-title": "2016 IEEE Conference on Computer Vision and Pattern Recognition",
+        "first-page": "770",
+        "article-title": "Deep residual learning for image recognition",
+        "author": "He",
+        "year": "2016"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.peva.2021.102234_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.1145/3065386",
+        "article-title": "ImageNet classification with deep convolutional neural networks",
+        "volume": "60",
+        "author": "Krizhevsky",
+        "year": "2017",
+        "journal-title": "Commun. ACM"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b20",
+        "series-title": "Very deep convolutional networks for large-scale image recognition",
+        "author": "Simonyan",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b21",
+        "series-title": "Densely connected convolutional networks",
+        "author": "Huang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b22",
+        "series-title": "Operating Systems: Three Easy Pieces",
+        "author": "Arpaci-Dusseau",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b23",
+        "series-title": "Nsight systems user’s guide",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b24",
+        "series-title": "NVML API reference guide",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b25",
+        "unstructured": "Sreepathi Pai, Matthew J. Thazhuthaveetil, R. Govindarajan, Improving GPGPU concurrency with elastic kernels, in: Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems (Houston, Texas, USA), ASPLOS ’13, 2013."
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "483",
+        "DOI": "10.1145/3093337.3037742",
+        "article-title": "Flep: Enabling flexible and efficient preemption on GPUs",
+        "volume": "45",
+        "author": "Wu",
+        "year": "2017",
+        "journal-title": "ACM SIGARCH Comput. Archit. News"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mehmet E. Belviranli, Farzad Khorasani, Laxmi N. Bhuyan, Rajiv Gupta, CuMAS: Data transfer aware multi-application scheduling for shared GPUs, in: Proceedings of the 2016 International Conference on Supercomputing (Istanbul, Turkey), ICS ’16, 2016.",
+        "DOI": "10.1145/2925426.2926271"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b28",
+        "series-title": "Nimble: Lightweight and parallel GPU task scheduling for deep learning",
+        "author": "Kwon",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2021.102234_b29",
+        "series-title": "2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture",
+        "first-page": "473",
+        "article-title": "Accel-Sim: An extensible simulation framework for validated GPU modeling",
+        "author": "Khairy",
+        "year": "2020"
+      }
+    ],
+    "container-title": [
+      "Performance Evaluation"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0166531621000511?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0166531621000511?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2025-09-28T14:58:22Z",
+      "timestamp": 1759071502000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0166531621000511"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          11
+        ]
+      ]
+    },
+    "references-count": 29,
+    "alternative-id": [
+      "S0166531621000511"
+    ],
+    "URL": "https://doi.org/10.1016/j.peva.2021.102234",
+    "relation": {},
+    "ISSN": [
+      "0166-5316"
+    ],
+    "issn-type": [
+      {
+        "value": "0166-5316",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Characterizing concurrency mechanisms for NVIDIA GPUs under deep learning workloads",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Performance Evaluation",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.peva.2021.102234",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2021 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "102234"
+  }
+}

@@ -1,0 +1,94 @@
+\noindent\textbf{IEEE Xplore Command Search.} Select \emph{All Metadata}; enter each expression separately. The field label follows IEEE's Command Search conventions. Apply publication years 2020--2026 and record the interface's exact date range, type and language filter settings \cite{ieeeSearch}.
+\begin{Verbatim}[fontsize=\footnotesize,breaklines=true]
+I1 = ("All Metadata":"GPU sharing" OR "All Metadata":"GPU partitioning"
+ OR "All Metadata":"multi-tenant GPU" OR "All Metadata":"GPU virtualization")
+ AND ("All Metadata":inference OR "All Metadata":"model serving" OR
+ "All Metadata":"ML serving" OR "All Metadata":"LLM serving" OR
+ "All Metadata":"DNN serving")
+
+I2 = ("All Metadata":GPU) AND
+ ("All Metadata":MPS OR "All Metadata":"multi-process service" OR
+  "All Metadata":MIG OR "All Metadata":"multi-instance GPU" OR
+  "All Metadata":"time slicing" OR "All Metadata":"time sharing")
+ AND ("All Metadata":inference OR "All Metadata":"model serving" OR
+ "All Metadata":"ML serving" OR "All Metadata":"LLM serving" OR
+ "All Metadata":"DNN serving")
+
+I3 = ("All Metadata":GPU) AND
+ ("All Metadata":"API remoting" OR "All Metadata":"CUDA remoting" OR
+  "All Metadata":"API interception" OR "All Metadata":"GPU proxy")
+ AND ("All Metadata":inference OR "All Metadata":"model serving" OR
+ "All Metadata":"ML serving" OR "All Metadata":"LLM serving" OR
+ "All Metadata":"DNN serving")
+
+H1 = ("All Metadata":GPU) AND
+ ("All Metadata":MPS OR "All Metadata":"multi-process service" OR
+  "All Metadata":"multi process service")
+ AND ("All Metadata":inference OR "All Metadata":"model serving" OR
+ "All Metadata":"DNN serving")
+\end{Verbatim}
+
+\noindent\textbf{ACM Digital Library Advanced Search.} Set the collection to \emph{ACM Guide to Computing Literature} where available to capture records beyond ACM-published full text. Enter each expression separately in the chosen search box and retain its generated query and field scope. Limit years 2020--2026; document language and peer-reviewed document-type filtering where supported \cite{acmSearch}.
+\begin{Verbatim}[fontsize=\footnotesize,breaklines=true]
+A1 = ("GPU sharing" OR "GPU partitioning" OR "multi-tenant GPU"
+ OR "GPU virtualization") AND (inference OR "model serving" OR
+ "ML serving" OR "LLM serving" OR "DNN serving")
+
+A2 = GPU AND (MPS OR "multi-process service" OR MIG OR
+ "multi-instance GPU" OR "time slicing" OR "time sharing")
+ AND (inference OR "model serving" OR "ML serving" OR
+ "LLM serving" OR "DNN serving")
+
+A3 = GPU AND ("API remoting" OR "CUDA remoting" OR
+ "API interception" OR "GPU proxy")
+ AND (inference OR "model serving" OR "ML serving" OR
+ "LLM serving" OR "DNN serving")
+
+H2 = GPU AND (MPS OR "multi-process service" OR
+ "multi process service")
+ AND (inference OR "model serving" OR "DNN serving")
+\end{Verbatim}
+
+\noindent\textbf{ScienceDirect Advanced Search.} Select \emph{Title, abstract, or author-specified keywords} under \emph{Show more fields}; the general ``Find articles with these terms'' field searches the body and is not the planned scope. Record the actual selected field and accepted query. Apply the date range and available article-type filters, then verify peer review and eligibility at screening \cite{elsevierSearch}.
+\begin{Verbatim}[fontsize=\footnotesize,breaklines=true]
+D1 = ("GPU sharing" OR "GPU partitioning" OR "multi-tenant GPU"
+ OR "GPU virtualization") AND (inference OR "model serving" OR
+ "ML serving" OR "LLM serving" OR "DNN serving")
+
+D2 = GPU AND (MPS OR "multi-process service" OR MIG OR
+ "multi-instance GPU" OR "time slicing" OR "time sharing")
+ AND (inference OR "model serving" OR "ML serving" OR
+ "LLM serving" OR "DNN serving")
+
+D3 = GPU AND ("API remoting" OR "CUDA remoting" OR
+ "API interception" OR "GPU proxy")
+ AND (inference OR "model serving" OR "ML serving" OR
+ "LLM serving" OR "DNN serving")
+
+H3 = GPU AND (MPS OR "multi-process service" OR
+ "multi process service")
+ AND (inference OR "model serving" OR "DNN serving")
+\end{Verbatim}
+
+\noindent\textbf{Springer Nature Link Advanced Search.} Enter each expression in \emph{Keywords}, which Springer states searches title, abstract and body; there is a \emph{Title} field but no documented abstract-only field in its listed options. Pilot the full-text noise and result volume as specified in Section~5.3. If needed, run a supplementary, separately logged Title-field precision search while retaining recall coverage from the Keywords runs. Apply the publication-date range and filter out books/chapters at screening or through a documented interface filter \cite{springerSearch}.
+\begin{Verbatim}[fontsize=\footnotesize,breaklines=true]
+S1 = ("GPU sharing" OR "GPU partitioning" OR "multi-tenant GPU"
+ OR "GPU virtualization") AND (inference OR "model serving" OR
+ "ML serving" OR "LLM serving" OR "DNN serving")
+
+S2 = GPU AND (MPS OR "multi-process service" OR MIG OR
+ "multi-instance GPU" OR "time slicing" OR "time sharing")
+ AND (inference OR "model serving" OR "ML serving" OR
+ "LLM serving" OR "DNN serving")
+
+S3 = GPU AND ("API remoting" OR "CUDA remoting" OR
+ "API interception" OR "GPU proxy")
+ AND (inference OR "model serving" OR "ML serving" OR
+ "LLM serving" OR "DNN serving")
+
+H4 = GPU AND (MPS OR "multi-process service" OR
+ "multi process service")
+ AND (inference OR "model serving" OR "DNN serving")
+\end{Verbatim}
+
+\noindent\textbf{Date and adaptation rule.} I1--S3 are the twelve main-window queries (1 January 2020 through the actual 2026 run date); H1--H4 are four supplementary pre-2020 MPS queries (all indexed years through 31 December 2019). Query identifiers are protocol labels, not text to paste. If an interface rejects an expression or cannot set the historical date boundary, log the error and the closest semantically equivalent accepted query/filter, preserving both. Record any platform-specific stemming, phrase interpretation, collection scope, field and export limit rather than assuming them. The final report will print the exact executed strings, fields, years and real results by database and search lane.

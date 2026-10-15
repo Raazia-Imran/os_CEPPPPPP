@@ -1,0 +1,575 @@
+TY  - JOUR
+T1  - D3Fuzz: Dynamic, directed and decaying LLM-driven fuzzing for deep learning libraries
+AU  - Sun, Jiaze
+AU  - Dong, Jiayao
+AU  - Zhang, Hengshan
+AU  - Tian, Zhenzhou
+AU  - Zhang, Yadong
+JO  - Information and Software Technology
+VL  - 199
+SP  - 108289
+PY  - 2026
+DA  - 2026/11/01/
+SN  - 0950-5849
+DO  - https://doi.org/10.1016/j.infsof.2026.108289
+UR  - https://www.sciencedirect.com/science/article/pii/S0950584926002788
+KW  - Fuzz testing
+KW  - Large language models
+KW  - Artificial intelligence security
+KW  - Vulnerability detection
+KW  - Deep-learning libraries
+AB  - Context:
+API vulnerability detection in deep learning (DL) frameworks is hindered by two major challenges: insufficient test coverage and low-quality test cases. These issues arise from inefficient exploration of the high-dimensional and sparsely populated input space. Existing fuzzing techniques often fail to improve coverage for critical code modules. Furthermore, they lack effective strategies for generating diverse, high-impact test inputs, which results in stagnated coverage and missed vulnerabilities.
+Objectives:
+This paper aims to enhance the efficiency and effectiveness of fuzz testing in DL frameworks by addressing critical module under-coverage and improving the quality of test case generation through dynamic, directed, and adaptive strategies.
+Methods:
+We propose D3Fuzz, a coverage-guided, large language model(LLM)-driven fuzzing framework that integrates three core techniques: (1) a hierarchical multi-task prompting mechanism powered by LLM to generate semantically rich test inputs guided by real-time coverage feedback; (2) a coverage-driven decaying factor prioritization model that dynamically adjusts test input weights to focus on under-tested critical modules; and (3) a stochastic perturbation mechanism combined with dynamic decay factors to escape local coverage plateaus and encourage exploration.
+Results:
+Experimental evaluations on two mainstream DL frameworks, PyTorch and JAX, demonstrate the effectiveness of D3Fuzz. On PyTorch, it achieves a 31% increase in C++ coverage, a 61.9% improvement in Python coverage, and a 5.36× increase in vulnerability detection efficiency over the baseline tool, ∇Fuzz. On JAX, it yields a 57.7% improvement in C++ coverage, a 61.7% enhancement in Python coverage, and a 1.34× improvement in vulnerability detection efficiency.
+Conclusion:
+D3Fuzz demonstrates that combining LLM-based semantic understanding with dynamic coverage feedback can substantially improve both the breadth and depth of fuzzing in DL frameworks. It offers a promising direction for future research in automated vulnerability detection.
+ER  - 
+
+TY  - JOUR
+T1  - AutoSurrogate: An LLM-driven multi-agent framework for autonomous construction of deep learning surrogate models in subsurface flow
+AU  - Liu, Jiale
+AU  - Wang, Nanzhe
+JO  - Advanced Engineering Informatics
+VL  - 76
+SP  - 105058
+PY  - 2026
+DA  - 2026/11/01/
+SN  - 1474-0346
+DO  - https://doi.org/10.1016/j.aei.2026.105058
+UR  - https://www.sciencedirect.com/science/article/pii/S1474034626007500
+KW  - Surrogate modeling
+KW  - Subsurface flow
+KW  - Large language model
+KW  - Autonomous agent
+AB  - High-fidelity numerical simulation of subsurface flow is computationally intensive, especially for many-query tasks such as uncertainty quantification and data assimilation. Deep learning (DL) surrogates can significantly accelerate forward simulations, yet constructing them requires substantial machine learning (ML) expertise, from architecture design to hyperparameter tuning, that most domain scientists do not possess. Furthermore, the process is predominantly manual and relies heavily on heuristic choices. This gap remains a key barrier to the broader adoption of DL surrogate techniques. In this work, we present AutoSurrogate, a large-language-model-driven multi-agent framework that empowers practitioners without ML expertise to build high-quality surrogates for subsurface flow problems through natural-language instructions. Given simulation data and optional preferences, four specialized agents collaboratively execute data profiling, architecture selection from a model zoo, Bayesian hyperparameter optimization (HPO), model training, and quality assessment against user-specified thresholds. The system also handles common failure modes autonomously, including restarting training with adjusted configurations when numerical instabilities occur and switching to alternative architectures when predictive accuracy falls short of targets. In our setting, a single natural-language sentence can be sufficient to produce a deployment-ready surrogate model, with minimal human intervention required at any intermediate stage. We demonstrate the utility of AutoSurrogate on two representative subsurface flow problems, including a 3D geological carbon storage case and a 2D underground hydrogen storage case, where surrogate models are constructed to map geological properties (e.g., permeability, porosity) to spatio-temporal pressure and saturation fields. Without any manual tuning, AutoSurrogate is able to outperform a range of baseline models and domain-agnostic AutoML methods. The results demonstrate strong potential of the AutoSurrogate framework for practical deployment in scientific and engineering applications.
+ER  - 
+
+TY  - JOUR
+T1  - Spatiotemporal deep learning framework for dynamic fracture evolution prediction in multiphase composite structures
+AU  - Kang, Yufeng
+AU  - Zheng, Yanfeng
+AU  - Su, Haijian
+AU  - Zhang, Jingyao
+AU  - Cai, Yuxiang
+AU  - Luo, Yaozhi
+JO  - Engineering Fracture Mechanics
+VL  - 330
+SP  - 111670
+PY  - 2025
+DA  - 2025/12/22/
+SN  - 0013-7944
+DO  - https://doi.org/10.1016/j.engfracmech.2025.111670
+UR  - https://www.sciencedirect.com/science/article/pii/S0013794425008719
+KW  - Multiphase composite structures (MCS)
+KW  - Dynamic fracture
+KW  - Graph attention network (GAT)
+KW  - Gated recurrent unit (GRU)
+KW  - Finite particle method (FPM)
+AB  - To efficiently predict dynamic fracture evolution in Multiphase Composite Structures (MCS), a Spatiotemporal collaborative Encoder–Decoder deep learning framework (ST-EnDec) driven by Finite Particle Method (FPM) data is proposed. Taking concrete as an example, crack evolution data across multiple loading rates are first generated automatically via a Graphics Processing Units (GPU)-accelerated FPM. Subsequently, a multidimensional differentiated normalized feature system integrating geometry, material, phase, and rate effects is designed to preserve physical interpretability. Furthermore, a multi-head Graph Attention Network (GAT) encoder is coupled with a Gated Recurrent Unit (GRU) decoder to capture spatiotemporal coupling. Finally, a composite loss function weighted by dynamic masked mean squared error, binary cross-entropy, and Wasserstein distance is established to enhance the sensitivity to high-damage regions. The results demonstrate that on untrained loading rates, R2=0.85, MAE = 0.04, RMSE = 0.12 are achieved for damage prediction, with 96.4 % fracture classification accuracy; rate-dependent fracture patterns are reproduced. Single-case inference requires only 20 ms, three orders of magnitude faster than GPU-FPM simulation. The method is physically consistent and computationally efficient, enabling effective fracture prediction for MCS.
+ER  - 
+
+TY  - JOUR
+T1  - Multi-depth hologram generation from two-dimensional images by deep learning
+AU  - Ishii, Yoshiyuki
+AU  - Wang, Fan
+AU  - Shiomi, Harutaka
+AU  - Kakue, Takashi
+AU  - Ito, Tomoyoshi
+AU  - Shimobaba, Tomoyoshi
+JO  - Optics and Lasers in Engineering
+VL  - 170
+SP  - 107758
+PY  - 2023
+DA  - 2023/11/01/
+SN  - 0143-8166
+DO  - https://doi.org/10.1016/j.optlaseng.2023.107758
+UR  - https://www.sciencedirect.com/science/article/pii/S0143816623002877
+KW  - Holography
+KW  - Computer-generated hologram
+KW  - Deep learning
+KW  - 3D display
+AB  - Recently, proposals have been made to use deep learning for hologram calculations to directly infer holograms from three-dimensional (3D) data. However, this approach is expensive because it requires capturing depth information using an RGB-D camera for inference. In this study, we propose a novel approach that can infer 3D holograms directly from a color two-dimensional (2D) image without requiring depth information, using deep learning. The proposed scheme comprises three deep neural networks (DNNs). The first DNN predicts the depth information from the 2D images, the second DNN generates holograms using the 2D image and the inferred depth information, and the third DNN optimizes the quality of the holograms generated by the second CNN. The inference speed was superior to a state-of-the-art graphics processing unit. We prepared a training dataset comprising pairs of holograms and 2D images. The holograms are generated from the RGB-D image using a layer-based hologram calculation. One significant benefit of our proposed approach is that the reproduced image of the final hologram contains a natural depth cue, i.e., it can represent a natural 3D reproduced image in the depth direction. In addition, conventional image sensors can be used to create input information for inference.
+ER  - 
+
+TY  - JOUR
+T1  - Urban traffic monitoring based on deep learning on an embedded GPU
+AU  - Nocua M, Fredy
+AU  - Pérez-Holguín, Wilson-Javier
+AU  - Pardo-Beainy, Camilo
+JO  - Expert Systems with Applications
+VL  - 273
+SP  - 126847
+PY  - 2025
+DA  - 2025/05/10/
+SN  - 0957-4174
+DO  - https://doi.org/10.1016/j.eswa.2025.126847
+UR  - https://www.sciencedirect.com/science/article/pii/S0957417425004695
+KW  - Deep learning
+KW  - Computer vision
+KW  - Object detection
+KW  - Object tracking
+KW  - Embedded system
+AB  - This paper presents a deep learning-based system for urban traffic monitoring, focusing on the detection and tracking of motorcycles using embedded hardware, due to the high accident rates of this type of vehicle. Different convolutional neural network (CNN) models were evaluated, including MobileNet-v1-SSD, YOLOv5, and Faster R-CNN, implemented on an NVIDIA Graphics Processing Units (GPUs) board as the Jetson Xavier NX®. The MobileNet-v1-SSD model stands out for its balance between precision (90 %), recall (66 %), and latency (∼10 ms), making it ideal for real-time applications. Additionally, a tracking algorithm based on optical flow using the Lucas-Kanade method was developed, complemented with logic for creating and deleting identities (IDs), enabling object tracking in dynamic scenarios with partial occlusions. The system includes a methodology for calculating key traffic variables such as speed and direction by correlating pixels with real-world distances through camera calibration. This approach demonstrates the feasibility of developing complex image-processing applications based on resource-constrained platforms by leveraging the features of efficient embedded systems such as General Purpose GPUs.
+ER  - 
+
+TY  - JOUR
+T1  - Liberating GPU with cocktails: Enhancing gradient compression for distributed deep learning
+AU  - Yu, Enda
+AU  - Bai, Zhe
+AU  - Dong, Dezun
+AU  - Liao, Xiangke
+JO  - Computer Networks
+VL  - 289
+SP  - 112676
+PY  - 2026
+DA  - 2026/10/01/
+SN  - 1389-1286
+DO  - https://doi.org/10.1016/j.comnet.2026.112676
+UR  - https://www.sciencedirect.com/science/article/pii/S1389128626006882
+KW  - Distributed deep learning
+KW  - Gradient compression
+KW  - Distributed communication optimization
+AB  - Gradient compression is a crucial technology for mitigating communication bottlenecks in distributed deep learning (DDL). However, achieving significant performance improvements with gradient compression remains challenging. In practical applications, gradient compression faces several challenges: (1) it fails to effectively optimize the initial overhead of small-scale tensor communication; (2) compression operations might compete with tensor computations for GPU resources, thereby delaying gradient transmission; (3) it can potentially cause accuracy issues that require careful handling. To maximize the benefits of gradient compression and address these challenges, we propose the Cocktails system. Additionally, to circumvent contention for GPU compute and memory resources, Cocktails offloads compression operations to the CPU and employs a model backup technique that decouples read dependencies on model parameters across worker nodes, thus hiding CPU compression costs and partial communication overhead. Cocktails optimizes and enhances the performance of existing 1-bit and 2-bit compression algorithms through its innovative strategies. Experimental evaluations on a 16-V100 GPU cluster demonstrate that for typical DDL training tasks, the Cocktails system improves the training throughput of the 1-bit and 2-bit compression algorithms by 74.3% and 68.7%, respectively. Furthermore, it enhances convergence accuracy by 1.1% to 2.3% and reduces GPU memory consumption by 10.3%. Notably, with the 2-bit compression algorithm, Cocktails matches the accuracy of lossless precision training and outperforms current state-of-the-art methods by up to 56% in training throughput.
+ER  - 
+
+TY  - JOUR
+T1  - GpuEnergyUsageCallback: A Python tool for batch-level GPU energy monitoring during deep-learning training on cloud platforms
+AU  - Katta, Rasin
+AU  - Alhaj Ali, Ammar
+AU  - Jasek, Roman
+AU  - Chramcov, Bronislav
+AU  - Krayem, Said
+JO  - SoftwareX
+VL  - 35
+SP  - 102980
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 2352-7110
+DO  - https://doi.org/10.1016/j.softx.2026.102980
+UR  - https://www.sciencedirect.com/science/article/pii/S2352711026004711
+KW  - Green AI
+KW  - GPU energy measurement
+KW  - Deep learning
+KW  - NVML
+KW  - Cloud computing
+KW  - TensorFlow
+KW  - Keras
+AB  - Deep-learning workloads on graphics processing units (GPUs) consume substantial electrical energy and therefore contribute non-negligibly to the environmental footprint of modern artificial intelligence systems. Existing tools for energy and carbon accounting typically operate at coarse temporal resolution, focus on central processing unit (CPU)-centric measurements, or require low-level access that is not available on mainstream cloud platforms. This article presents GpuEnergyUsageCallback, a Python software tool that enables batch-level monitoring of GPU energy consumption during deep-learning training in TensorFlow/Keras. The software builds on the NVIDIA Management Library (NVML) and its actively maintained Python bindings, providing a reusable callback that records per-batch telemetry and converts it into kilowatt-hour estimates using standard numerical integration. This work contributes mainly to tools and system integration, not a new energy estimation method. The software allows fine-grained measurement of GPU energy within restricted, managed cloud services. The implementation is designed for managed cloud environments such as Kaggle and Google Colab, where users rely on high-level Python application programming interfaces (APIs) and lack administrative control over GPU hardware. To demonstrate the tool, a case study on the Cassava leaf-disease classification task compares EfficientNet, DenseNet, and ResNet architectures in terms of validation accuracy, training time, and GPU energy usage. The results illustrate how batch-level traces support model selection and Green AI education by revealing trade-offs between accuracy and energy. The software is released as open-source code with a worked example notebook to facilitate integration into existing workflows.
+ER  - 
+
+TY  - JOUR
+T1  - An efficient deep learning strategy for real-time semantic segmentation of trees for embedded systems
+AU  - Leroy, Pierre
+AU  - Abisset-Chavanne, Emmanuelle
+AU  - Pommier, Régis
+AU  - Montemurro, Marco
+JO  - Engineering Applications of Artificial Intelligence
+VL  - 159
+SP  - 111516
+PY  - 2025
+DA  - 2025/11/01/
+SN  - 0952-1976
+DO  - https://doi.org/10.1016/j.engappai.2025.111516
+UR  - https://www.sciencedirect.com/science/article/pii/S0952197625015180
+KW  - Segmentation
+KW  - Simultaneous localization and mapping
+KW  - Curriculum learning
+KW  - Deep learning
+KW  - Real-time
+KW  - Standing tree diagnostic
+AB  - Real-time segmentation plays a critical role in semantic simultaneous localization and mapping (SLAM) and autonomous navigation, where speed of inference is often prioritized over pixel-level accuracy. Existing segmentation models, such as “You Only Look Once” version 8 (YOLOv8) or tree detection and diameter estimation algorithm based on deep learning (known as “Perceptree”) are designed for generic use cases, leading to unnecessary computational overhead in structured environments such as managed pine forests. In this paper, we propose a lightweight and optimized method for real-time tree segmentation using red, green, blue, and depth channels (RGB-D) data. Our contribution is threefold. The first contribution focuses on depth-guided region proposal: we extract candidate regions from the depth map using mathematical filtering techniques, thus reducing the search space of the supervised model. The second one deals with the development of an embedded-friendly backbone: we simplify the YOLOv8 backbone while integrating depth information, improving inference speed without compromising key features for similarly shaped and sized objects. The last one focuses on the development of a compact segmentation head: instead of pixel-wise classification, we estimate polynomial coefficients to represent object contours, drastically reducing the number of parameters and accelerating inference. Our model achieves 53 frames per second on a ray tracing 2060 super graphics processing unit (GPU), which is 2.7 times faster than YOLOv8 and 10.8 times faster than Perceptree, while achieving a mean average precision score of 78.13% on real forest data.
+ER  - 
+
+TY  - JOUR
+T1  - Concurrent kernel execution and interference analysis on GPUs using deep learning approaches
+AU  - Ayub, Mohammed
+AU  - Helmy, Tarek
+JO  - Journal of King Saud University - Computer and Information Sciences
+VL  - 34
+IS  - 10, Part B
+SP  - 10193
+EP  - 10204
+PY  - 2022
+DA  - 2022/11/01/
+SN  - 1319-1578
+DO  - https://doi.org/10.1016/j.jksuci.2022.10.016
+UR  - https://www.sciencedirect.com/science/article/pii/S1319157822003676
+KW  - Concurrent kernel execution
+KW  - Interference analysis in GPUs
+KW  - Deep learning
+KW  - Datasets
+KW  - Performance evaluation
+AB  - Graphic processing units (GPUs) are becoming gradually popular in large-scale data centers and cloud computing. Sharing a GPU across different applications is an important feature in these platforms to improve resource utilization and system productivity. However, in situations where GPUs are competitively shared, some challenges arise. In this paper, concurrent kernel execution and interference detection are investigated using Extreme Gradient Boosting, Convolutional Neural Network, Gated Recurrent Unit, and Conditional Generative Adversarial Network learning techniques on Tesla P100 and RTX-2080 GPU architectures. The experimental results obtained by applying the deep learning models on the dataset, which consists of four GPU resources: blocks per grid, threads per block, number of registers, and shared memory, show that the Extreme Gradient Boosting and Multi-Channel Convolutional Neural Network models have the promising capability of concurrent kernel execution classification and interference detection. In comparison to the existing work, the proposed models investigated using real and synthesized datasets show clear outperformance and generalization capability in terms of recall and precision.
+ER  - 
+
+TY  - JOUR
+T1  - LLM-structured expert feedback for knowledge calibration of deep learning model to detect phishing URL
+AU  - Choi, Seok-Hun
+AU  - Buu, Seok-Jun
+AU  - Cho, Sung-Bae
+JO  - Applied Soft Computing
+VL  - 197
+SP  - 115234
+PY  - 2026
+DA  - 2026/07/01/
+SN  - 1568-4946
+DO  - https://doi.org/10.1016/j.asoc.2026.115234
+UR  - https://www.sciencedirect.com/science/article/pii/S1568494626006824
+KW  - Cybersecurity
+KW  - Phishing URL detection
+KW  - Neuro-symbolic integration
+KW  - Large language models
+KW  - In-context learning
+KW  - Deep learning model
+AB  - Phishing attacks increasingly exhibit structural variability and intent obfuscation, challenging detection systems that rely on static features or limited data distributions. Deep neural models provide strong representation learning capabilities, yet often misclassify novel URLs that differ from the training distribution. In contrast, human decision-making incorporates external knowledge and structured reasoning beyond observed data. To reduce this gap, we propose a knowledge calibration method that incorporates symbolic expert knowledge from large language model into phishing detectors. An LLM translates expert feedback expressed in natural language into formal first-order logic rules. This translation is guided by five in-context learning strategies, enabling the structured incorporation of symbolic knowledge into the detection framework. These rules are used to generate phishing scores, which are then combined with neural outputs through a discrepancy-aware calibration objective. A triplet-based Transformer encoder is used to learn discriminative URL representations, and the joint loss function aligns neural predictions with symbolic expectations. Extensive experiments across four benchmark datasets show that our method achieves up to 98.85% accuracy and 97.42% recall, significantly outperforming baselines and ensemble models. Moreover, temporal drift evaluations under chronologically split zero-day settings show that the proposed model maintains an accuracy of 0.8153 even under the most severe drift scenario, outperforming the strongest baseline by over 9%p, demonstrating robust generalization of symbolic knowledge to unseen phishing attacks.
+ER  - 
+
+TY  - JOUR
+T1  - PriorityDRL: Dual-agent deadline-aware GPU scheduling for deep learning jobs
+AU  - Ayadi, Hajer
+AU  - An, Aijun
+AU  - Shao, Yiming
+AU  - Deng, Junjie
+AU  - Huang, Jimmy X.
+AU  - Feiman, Michael
+AU  - Zhou, Hao
+JO  - Journal of Parallel and Distributed Computing
+VL  - 217
+SP  - 105322
+PY  - 2026
+DA  - 2026/11/01/
+SN  - 0743-7315
+DO  - https://doi.org/10.1016/j.jpdc.2026.105322
+UR  - https://www.sciencedirect.com/science/article/pii/S0743731526001000
+KW  - GPU scheduling
+KW  - Deep reinforcement learning
+KW  - Deadline-aware scheduler
+AB  - Modern GPU clusters are widely used to train distributed deep learning (DL) jobs, where scheduling decisions directly affect both system efficiency and user experience. In practice, DL jobs often come with deadlines, and failing to meet them can have serious consequences for users. Designing effective schedulers for such environments is challenging: scheduling decisions are tightly coupled, the problem is NP-hard, and most existing approaches either optimize job selection or GPU allocation in isolation, while largely overlooking deadline awareness and preemption. In this paper, we introduce PriorityDRL, a deadline-aware deep reinforcement learning (DRL) scheduler, with one agent for job selection and another for GPU allocation, jointly optimizing scheduling decisions. The job selection agent prioritizes jobs based on deadline urgency and supports preemption, allowing the system to respond dynamically to urgent jobs. The GPU allocation agent assigns jobs to physically proximal GPUs, reducing communication costs and mitigating resource fragmentation. By coordinating these complementary decisions, PriorityDRL balances deadline satisfaction with overall scheduling efficiency. Extensive experiments on real-world GPU cluster traces show that PriorityDRL consistently reduces missed deadlines and deadline lateness, improves GPU utilization, and achieves competitive job completion times compared to state-of-the-art heuristic and DRL-based schedulers. These results demonstrate that explicitly accounting for deadlines while separating job selection from GPU allocation is crucial for efficient and reliable operation in modern, shared GPU clusters.
+ER  - 
+
+TY  - JOUR
+T1  - Integrating cloud motion information: A deep learning approach for real-time wind field retrieval using geostationary satellite imagery
+AU  - Zhang, Wei
+AU  - Xu, Zhilin
+AU  - Gan, Yanhai
+AU  - Jin, Zhuyu
+AU  - Zhang, Xiangguang
+JO  - ISPRS Journal of Photogrammetry and Remote Sensing
+VL  - 239
+SP  - 477
+EP  - 491
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 0924-2716
+DO  - https://doi.org/10.1016/j.isprsjprs.2026.05.029
+UR  - https://www.sciencedirect.com/science/article/pii/S0924271626002765
+KW  - Cloud motion wind
+KW  - Deep learning
+KW  - Geostationary satellite
+KW  - Wind field retrieval
+AB  - Wind field retrieval plays a critical role in weather forecasting, climate change analysis, and marine transportation. In the early stages of wind field retrieval research, data-driven deep learning approaches have attracted considerable attention. However, many existing methods neglect the value of multi-temporal information—particularly cloud motion data, which is extensively used in cloud motion wind (CMW) retrieval techniques. To better utilize this information, this study proposed CMW_SimVP, a deep learning model that integrates CMW retrieval techniques with SimVP, a simple yet efficient architecture for time series prediction. The CMW_SimVP model extracts and synthesizes cloud motion features from three consecutive satellite images to improve the accuracy of 10-m wind field retrieval. Experimental validation using Level 1 Himawari-8 satellite data demonstrated that compared to models without cloud motion integration, CMW_SimVP improves wind field retrieval accuracy by more than 15%. Moreover, by leveraging the high spatial coverage and temporal resolution of geostationary satellites, our method achieves full-area coverage at fine temporal intervals. Unlike the numerical weather prediction models that require substantial supercomputing resources to generate wind fields, our method enables real-time retrieval of 10-m wind fields with a 10-min temporal resolution and 0.25° spatial resolution over the range of 0°–60°N and 100°–160°E within less than 1 s, using a single graphics processing unit and with mean absolute error rates of 1.0 m/s for both the u-component and V-component.
+ER  - 
+
+TY  - JOUR
+T1  - Deep Learning-enabled fast prediction of transient concentration gradients and mass transport in microfluidic systems with embedded cavities
+AU  - Dong, Jianhong
+AU  - Liu, Wen
+AU  - Wang, Yu
+AU  - Yu, Qing
+AU  - Wang, Junsheng
+JO  - International Communications in Heat and Mass Transfer
+VL  - 180
+SP  - 112677
+PY  - 2026
+DA  - 2026/11/01/
+SN  - 0735-1933
+DO  - https://doi.org/10.1016/j.icheatmasstransfer.2026.112677
+UR  - https://www.sciencedirect.com/science/article/pii/S0735193326021986
+KW  - Concentration gradient generation
+KW  - Mass transfer
+KW  - Deep neural network
+KW  - COMSOL simulation
+KW  - Transient diffusion
+KW  - Surrogate model
+AB  - In this study, the deep learning-based surrogate models are developed for the rapid and accurate prediction of transient concentration gradients in microfluidic mass transfer devices with various cavity configurations and channel heights. Time-dependent concentration datasets are established using numerical simulations in COMSOL Multiphysics. Two decoupled deep neural networks are established to separately predict time-dependent outlet concentration scalar and reconstruct steady two-dimensional cross-sectional concentration maps under fixed geometry and operating conditions. The proposed unified surrogate model achieves R2 > 0.99 for within-sample temporal prediction via blocked temporal split; under strict leave-one-geometry-out cross-validation on unseen geometric configurations, the average R2 reaches 0.89, and the target circular cavity design attains an R2 of 0.96. Remarkably, after offline training, the well-trained DNN achieves over 120,000 times faster inference speed for single-case prediction compared with a standalone COMSOL transient simulation, demonstrating the improvement in computational efficiency for microscale mass transfer analysis. The results confirm that the DNN model can precisely capture the transient mass transport characteristics and concentration dynamics within different microfluidic cavity structures. This work provides a data-driven tool for the fast design, performance optimization, and dynamic monitoring of microfluidic concentration gradient generators. The proposed framework can be further extended to accelerate multiphysics simulations, thermal-fluid analysis, and mass transfer studies in a broad range of microscale heat and mass transfer devices.
+ER  - 
+
+TY  - JOUR
+T1  - Benchmark analysis of deep learning algorithms for edge-based robotic applications
+AU  - Nguyen Le, Quang Nhat
+AU  - Chembakasseril, Mamen Thomas
+AU  - Hartanto, Ronny
+JO  - Array
+VL  - 30
+SP  - 100818
+PY  - 2026
+DA  - 2026/07/01/
+SN  - 2590-0056
+DO  - https://doi.org/10.1016/j.array.2026.100818
+UR  - https://www.sciencedirect.com/science/article/pii/S2590005626001414
+KW  - Embedded accelerated systems
+KW  - Robotics applications
+KW  - Energy efficiency
+KW  - Artificial Intelligence
+KW  - Computer vision
+KW  - Deep learning
+AB  - Driven by the increasing demand for deploying Artificial Intelligence (AI) in resource-constrained computing devices, this study presents a comprehensive benchmark comparing the inference speed, energy efficiency, and hardware utilization of various deep learning algorithms across multiple commercial edge devices, consisting of Jetson Nano, Jetson Tegra X2 (TX2), Raspberry Pi 4 (RPi4), and Coral Artificial Intelligence Accelerator (Coral AI). Specifically, vision algorithms crucial for robotics applications including object detection, image segmentation, human pose estimation, and face detection are investigated. We provide an analysis of hardware performance across various machine learning frameworks, such as Tensor RunTime (TensorRT), TensorFlow Lite, PyTorch, and Open Source Computer Vision Library (OpenCV). The result highlights the vital role of Graphic Processing Units in enhancing inference speed, yet Central Processing Units remain essential for effective data processing tasks. Furthermore, our study shows that inference speed can be significantly improved by utilizing model optimization techniques and AI accelerator.
+ER  - 
+
+TY  - JOUR
+T1  - Graph-based clustering cost model for performance optimization in deep learning compilers
+AU  - Shen, Chaoyao
+AU  - Shen, Yixian
+AU  - Xu, Tao
+AU  - Guo, Bohan
+AU  - Jiang, Linfeng
+AU  - Zhang, Meng
+AU  - Pathania, Anuj
+AU  - Pimentel, Andy D.
+JO  - Journal of Systems Architecture
+VL  - 178
+SP  - 103895
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 1383-7621
+DO  - https://doi.org/10.1016/j.sysarc.2026.103895
+UR  - https://www.sciencedirect.com/science/article/pii/S1383762126002134
+KW  - Deep learning compiler
+KW  - Cost model
+KW  - Tensor program
+KW  - Subgraph clustering
+AB  - Deep learning (DL) compilers enable automated deployment of deep neural networks (DNNs) across diverse hardware platforms by leveraging cost models for efficient tensor program optimization. The effectiveness of these systems depends on the prediction accuracy and cross-model generalization capability of offline-trained cost models. Existing approaches mainly focus on feature engineering and cost model architecture design, while largely overlooking structural similarity at the computational subgraph level, which limits further improvements in prediction performance. To address this limitation, we propose an unsupervised subgraph clustering framework based on graph autoencoders to enhance offline-trained cost models. Specifically, DL models are partitioned into computational subgraphs, and node features are extracted. A graph autoencoder learns high-dimensional structural embeddings of these subgraphs, followed by K-means clustering to group structurally similar patterns. Dedicated cost models are trained for different subgraph clusters to predict tensor program performance. This fine-grained, cluster-aware training strategy improves both prediction accuracy and generalization capability, thereby enhancing auto-tuning efficiency. Experimental results across multiple DL models demonstrate significant improvements in search efficiency and latency optimization on both CPU and GPU platforms. Compared with Tenset, our method achieves average search speedups of 9.46× and 5.15×, while achieving inference latency improvements of 1.18× and 1.07×.
+ER  - 
+
+TY  - JOUR
+T1  - Deep learning for sorghum yield forecasting using uncrewed aerial systems and lab-derived imagery
+AU  - Bari, Md. Abdullah Al
+AU  - Bakshi, Aliva
+AU  - Choton, Jahid Chowdhury
+AU  - Pramanik, Swaraj
+AU  - Witt, Trevor D.
+AU  - Caragea, Doina
+AU  - Bean, Scott
+AU  - Krishna Jagadish, S.V.
+AU  - Felderhoff, Terry
+JO  - Plant Phenomics
+VL  - 8
+IS  - 1
+SP  - 100133
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 2643-6515
+DO  - https://doi.org/10.1016/j.plaphe.2025.100133
+UR  - https://www.sciencedirect.com/science/article/pii/S2643651525001396
+KW  - Deep Learning
+KW  - Computer Vision, YOLO, Faster-RCNN
+KW  - Unmanned Aerial Systems (UAS) Imagery
+KW  - Extracting Yield Features
+KW  - Sorghum Yield Prediction using Machine Learning
+AB  - The AI revolution, advanced Graphics Processing Units (GPUs), and open-source platforms have enabled Machine Learning (ML) and Deep Learning (DL) algorithms to rapidly and accurately extract phenotypic features from imagery. Such advancements have led to phenotypic digitization and made rapid yield forecasting possible. Yield predictions are critical to assess the merit of genotypes to propel cultivar development. This trial followed a three-replicated Randomized Complete Block Design (RCBD) with 36 diverse sorghum genotypes in 2023 at Ashland Bottoms, Kansas. The field images were captured 6 m above using a DJI M300 drone at 90° nadir and 45° oblique angles. This research trained YOLO and Faster R-CNN (Detectron2) models to harness yield attributes from UAS field and lab images. The YOLO models outperformed the Faster R-CNN in detecting sorghum panicles, achieving a mean average precision at 50 % IoU (mAP@0.50) scores of 0.92–0.98, compared to 0.61–0.89 for Faster R-CNN. Panicle detection from field imagery showed a linear correlation of 0.86 with ground truth field panicle counts. Lab imagery analyses measured panicle area, seed counts, and seed area with correlation coefficients of 0.79, 0.94, and 0.25 with respective ground truth observations. Support Vector Regression (SVR), Random Forest Regression (RFR), and Decision Tree Regression (DTR) were used to predict yield with correlation coefficients of 0.74, 0.71, and 0.78, respectively, and SHapley Additive exPlanation (SHAP) analysis revealed panicle seed count as the primary driver of yield prediction. We observed YOLO models are well-suited for extracting yield-predictive features from pertinent images. Such features can then be incorporated into ML regression models to predict yield per se performance with greater accuracy. The GitHub link is provided in the Data availability section.
+ER  - 
+
+TY  - JOUR
+T1  - DeepPlus: An adaptive deadline and fairness aware scheduler for accelerating mixed deep learning training and inference workloads in GPU cluster
+AU  - Xi, Yupeng
+AU  - Jing, Chao
+JO  - Computer Networks
+VL  - 275
+SP  - 111883
+PY  - 2026
+DA  - 2026/02/01/
+SN  - 1389-1286
+DO  - https://doi.org/10.1016/j.comnet.2025.111883
+UR  - https://www.sciencedirect.com/science/article/pii/S1389128625008497
+KW  - Artificial intelligence
+KW  - Deadline and fairness aware scheduler
+KW  - Mixed deep-learning training and inference workloads
+KW  - Resource fragmentation utilization
+AB  - The widespread development of Deep Learning (DL) applications has surged DL workloads across numerous fields. To accelerate DL workloads in Graph Process Unit (GPU) clusters, most researches target to optimally scheduling training or inference workloads alone. However, diverse demands by mixed workloads turn to resource preemption and fragmentation that resulting in cluster inefficiency. To tackle this issue, we proposed DeepPlus, an adaptive deadline- and fairness-aware scheduler for accelerating mixed training and inference workloads. To start with, we established a job-level model considering various Service-Level Objective (SLO) requirements and a resource-level model accounting for fairness to improve cluster efficiency. Subsequently, we designed a job classification and preemption estimation scheme (JCPS) to categorize jobs with various SLO demands and profile job preemption possibilities. To meet deadline constraint, we devised job deadline-aware scheduling scheme (JDAS) to dynamically schedule training jobs considering jobs’ resource usage and SLO demands. Furthermore, a fairness-aware resource fragment utilization scheme (FRUS) was implemented and leveraged to reduce the fragments from inference jobs’ allocation while accounting for fairness issue. Finally, a simulation was conducted using a Microsoft DL workload. The experimental results demonstrated that, compared with Tiresias, Themis, Pollux, and DeepBoot, DeepPlus can achieve an overall maximum improvement of 9.2 %, 25.9 % and 20.1 % makespan reduction across small, middle, and large workload scales while satisfying deadline and fairness constraints. Simultaneously, the effectiveness of DeepPlus was discussed in terms of fairness, larger-scale cluster, key parameter variation, and various job submission rates under diurnal periodicity.
+ER  - 
+
+TY  - JOUR
+T1  - Multi-strategy deep learning for crop yield prediction
+AU  - Köksal, Daniyal Durmuş
+AU  - Bennin, Kwabena Ebo
+AU  - Tekinerdoğan, Bedir
+JO  - Smart Agricultural Technology
+VL  - 15
+SP  - 102518
+PY  - 2026
+DA  - 2026/12/01/
+SN  - 2772-3755
+DO  - https://doi.org/10.1016/j.atech.2026.102518
+UR  - https://www.sciencedirect.com/science/article/pii/S2772375526007434
+KW  - Ensemble deep learning
+KW  - Multi-task learning
+KW  - Crop yield prediction
+KW  - Monte Carlo dropout
+KW  - Irrigated and rainfed systems
+AB  - Reliable crop yield estimation under climate variability requires modeling frameworks that balance predictive accuracy, robustness, and structural consistency across heterogeneous simulation environments. Although deep neural networks (DNNs) have demonstrated strong capability in capturing nonlinear climate–crop relationships, limited attention has been given to systematically comparing architectural strategies that influence stability and uncertainty characterization, particularly under minimum input configurations. This study develops and evaluates a multi-strategy deep learning framework for maize and wheat yield prediction that integrates independent single-task DNNs, multi-task DNNs with shared latent representations, deterministic averaging ensembles, and stochastic ensembles based on Monte Carlo (MC) Dropout. Ethiopia is used as a case study, combining ERA5-derived climate variables with yield simulations from the DSSAT and LPJmL crop models under irrigated and rainfed conditions. Single-task models are trained separately for each crop–regime–simulation combination, while multi-task networks jointly learn structurally related yield targets. Ensemble approaches aggregate model realizations to reduce variance and, in the case of MC Dropout, approximate predictive uncertainty through repeated stochastic inference. Results indicate that ensemble configurations consistently deliver the highest predictive performance, achieving R² values up to 0.94 for wheat and 0.88 for maize, compared to 0.77–0.92 for single-task and 0.76–0.94 for multi-task models. Validation against FAO yield statistics over a 15-year period confirms that ensemble DNNs better reproduce interannual variability and moderate structural divergence between DSSAT- and LPJmL-driven outputs. The findings demonstrate that variance reduction and uncertainty-aware ensemble strategies provide more consistent generalization than architectural task coupling alone, offering a scalable and robustness-oriented framework for climate-sensitive crop yield assessment using parsimonious environmental inputs.
+ER  - 
+
+TY  - JOUR
+T1  - Fusing explainable deep learning ensembles and LLM recommendations for real-time plant leaf disease diagnosis
+AU  - Saha, Dip Kumar
+AU  - Ahmed, Mohammad Rasel
+AU  - Nath, Tushar Deb
+AU  - Boby, Rounakul Islam
+AU  - Hossen, Md. Jakir
+AU  - Mridha, M.F.
+JO  - Intelligent Systems with Applications
+VL  - 28
+SP  - 200596
+PY  - 2025
+DA  - 2025/12/01/
+SN  - 2667-3053
+DO  - https://doi.org/10.1016/j.iswa.2025.200596
+UR  - https://www.sciencedirect.com/science/article/pii/S266730532500122X
+KW  - Plant leaf
+KW  - Identification
+KW  - Deep learning
+KW  - LLM
+KW  - XAI
+AB  - Timely and accurate identification of plant leaf diseases plays a vital role in ensuring sustainable agriculture and universal food security. Accurate identification of plant leaf diseases ensures healthier plant cultivation, which is pivotal for sustainable agriculture operations. In this study, we present a plant leaf disease recognition mechanism that utilizes a stacking ensemble structure combined with a Large Language Model (LLM) and Explainable AI (XAI) mechanism to improve identification accuracy and comprehensibility. To capture high textural structure, we utilized the Gray Level Co-occurrence Matrix (GLCM), whereas the MobileNetV3 architecture was utilized to maintain low computational cost in feature extraction. GoogleNet was integrated to improve multi-scale feature extraction by employing inception blocks, which effectively obtain fine-grained details and universal spatial patterns. Our ensemble framework integrates improved versions of MobileNetV3, GoogleNet, and ConvNeXtSmall with CatBoost employed as a nonlinear meta-learner allowing the framework to effectively capture complex connections among the base models within the ensemble framework. Moreover, we utilized additional CNN models, including AlexNet and EfficientNetV2B0, to compare the result of our proposed stacking ensemble model and to evaluate its generalization ability over various architectural designs. In addition, we developed a real-time system integrating an LLM with the proposed ensemble model, ensuring automatic plant leaf disease recognition and delivering corresponding curing recommendations. Our findings contribute to plant-based agriculture by enabling early diagnosis of leaf diseases and providing real-time recommendations through DL and LLM technology.
+ER  - 
+
+TY  - JOUR
+T1  - DarcyWarp: A graphics processing unit (GPU)-accelerated multigrid solver for repeated 2D fixed-transmissivity groundwater solves validated against reference solvers
+AU  - Durney, Patrick
+AU  - Fourie, Jaco
+JO  - Environmental Modelling & Software
+VL  - 204
+SP  - 107081
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 1364-8152
+DO  - https://doi.org/10.1016/j.envsoft.2026.107081
+UR  - https://www.sciencedirect.com/science/article/pii/S1364815226002288
+KW  - Groundwater modelling
+KW  - Multigrid
+KW  - GPU acceleration
+KW  - Finite difference
+KW  - MODFLOW 6
+KW  - NVIDIA warp
+AB  - Repeated steady-state groundwater solves for calibration and uncertainty analysis are often limited by runtime. We present DarcyWarp, a graphics processing unit (GPU)-accelerated geometric multigrid solver for two-dimensional, steady-state, single-layer groundwater flow using a fixed-transmissivity formulation on structured grids. DarcyWarp implements an explicit cell-integrated five-point finite-difference operator and multigrid cycle as Python kernels just in time compiled for GPU execution with NVIDIA Warp, and supports areal source/sink terms, prescribed head, no-flow, and general-head boundaries. Validation against a sparse finite-difference direct solve and MODFLOW 6 on matched grids shows close head agreement, consistent residuals, and mass-balance closure. Benchmarks span matched-grid single-instance cases from 104 to 9×106 active cells and two 48-case repeated-solve ensembles. DarcyWarp reaches about 70 times end-to-end speedup over MODFLOW 6 in the single-instance suite and order-of-magnitude throughput gains in ensembles, enabling reproducible repeated-solve workflows on commodity GPUs.
+ER  - 
+
+TY  - JOUR
+T1  - A multi-expert deep learning framework with LLM-guided arbitration for multimodal histopathology prediction
+AU  - Debsarkar, Shyam Sundar
+AU  - Prasath, V.B. Surya
+JO  - Computerized Medical Imaging and Graphics
+VL  - 128
+SP  - 102704
+PY  - 2026
+DA  - 2026/02/01/
+SN  - 0895-6111
+DO  - https://doi.org/10.1016/j.compmedimag.2026.102704
+UR  - https://www.sciencedirect.com/science/article/pii/S0895611126000078
+KW  - Deep learning
+KW  - Large language models
+KW  - Histopathology
+KW  - Multimodal
+KW  - Agentic AI
+AB  - Recent advances in deep learning have significantly improved the accuracy of computational pathology; however conventional model ensembling strategies often lack adaptability and interpretability hindering the clinical adaptability. While multiple artificial intelligence (AI) expert models can provide complementary perspectives, simply aggregating their outputs is often insufficient for handling inter-model disagreement and delivering interpretable decisions. To address these challenges, we propose a novel multi-expert framework that integrates diverse vision-based predictors and a clinical feature-based model, with a large language model (LLM) acting as an intelligent arbitrator. By leveraging the contextual reasoning and explanation capabilities of LLMs, our architecture dynamically synthesizes insights from both imaging and clinical data, resolving model conflicts, and providing transparent, rational decisions. We validate our approach on two cancer histopathology datasets, namely the HMU-GC-HE-30K which is a gastric cancer dataset containing pathology images only, and the BCNB which is a breast cancer biopsy dataset that is multimodal — contains pathology imaging and clinical information. Our proposed multi-expert, LLM arbitrated framework (MELLMA) outperforms convolutional neural networks (CNNs), and transformers, which are currently the de facto and state-of-the-art classification ensemble models, with better overall results. We test different LLMs as arbitrators, namely LLaMA, GPT variants, and Mistral. Further, our proposed framework outperforms strong single-agent CNN/ViT baselines on the datasets, and ablations show that learned per-agent trust materially improves the arbitrator’s decisions without altering prompts or data. These experimental results demonstrate that LLM-guided arbitration consistently provides more robust and explainable performance than individual models, conventional ensembling with majority vote, uniform average, and meta-learners. The results obtained highlight the promise of LLM-driven arbitration for building transparent and extensible AI systems in digital pathology.
+ER  - 
+
+TY  - JOUR
+T1  - Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving
+AU  - Liang, Qianlin
+AU  - Wang, Haoliang
+AU  - Shenoy, Prashant
+JO  - Performance Evaluation
+VL  - 171
+SP  - 102539
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 0166-5316
+DO  - https://doi.org/10.1016/j.peva.2025.102539
+UR  - https://www.sciencedirect.com/science/article/pii/S0166531625000732
+KW  - GPU
+KW  - Performance
+KW  - Neural network
+KW  - Latency
+AB  - As deep learning has been widely used in various application domains, a diversity of GPUs are adopted to accelerate DNN inference workloads and ensure Quality of Service (QoS). Robust prediction of inference latency using GPUs within cloud environments facilitates enhanced efficiency and maintains QoS in resource management solutions, such as consolidation and autoscaling. However, latency prediction is challenging due to the vast heterogeneity in both DNN architectures and GPU capacities. In this work, we present Lilou, an efficient and accurate latency predicting system for a wide range of DNN inference tasks across diverse GPU resource allocations. Lilou employs two techniques. (i) Lilou represents DNNs as directed acyclic graphs (DAGs), and utilizes a novel graph neural network (GNN) model for edge classification to detect the fusion of operators, also known as kernels. (ii) Lilou identifies the GPU features that significantly impact inference latency and learns a predictor to estimate the latency and type of kernels, which are detected in the preceding step. To evaluate Lilou, we conduct comprehensive experiments across a variety of commercial GPUs commonly utilized in public cloud environments, employing a wide range of popular DNN architectures, including both convolutional neural networks and transformers. Our experiment results show that Lilou is robust to a wide range of DNN architectures and GPU resource allocations. Our novel learning-based method surpasses the state-of-the-art rule-based approach in fusion prediction with an accuracy of 98.26%, laying a solid foundation for end-to-end latency prediction that achieves a MAPE of 8.68%, also outperforming existing benchmarks.
+ER  - 
+
+TY  - JOUR
+T1  - Bridging 2D vision and 3D CAD: Integrating cross-modal deep learning and LLM-assisted semantic graph reasoning for spatial disassembly constraint modelling
+AU  - Deng, Wupeng
+AU  - Yang, Haodong
+AU  - Liu, Quan
+AU  - Wang, Yongjing
+AU  - Cai, Yijie
+AU  - Jiang, Kaiwen
+AU  - Pham, Duc Truong
+JO  - Journal of Manufacturing Systems
+VL  - 88
+SP  - 88
+EP  - 107
+PY  - 2026
+DA  - 2026/10/01/
+SN  - 0278-6125
+DO  - https://doi.org/10.1016/j.jmsy.2026.05.017
+UR  - https://www.sciencedirect.com/science/article/pii/S0278612526001536
+KW  - Robotic disassembly
+KW  - Cross-modal deep learning
+KW  - Large language models
+KW  - Semantic graph
+KW  - Spatial constraint modelling
+KW  - Remanufacturing
+AB  - To advance automation in the remanufacturing sector, this paper proposes a novel spatial disassembly constraint modelling method that integrates cross-modal deep learning with the reasoning capabilities of Large Language Models (LLMs). A significant challenge in robotic disassembly is accurately identifying spatial constraints for used products, which often exhibit uncertain conditions and structural deviations from original designs. To address this, we introduce a cross-modal deep learning technique that unifies the detection mechanism for both captured images of used products and CAD models of original products, effectively resolving multimodal data fusion issues during model training. Furthermore, we leverage LLMs to construct and match semantic graphs based on the spatial positional relationships among components. This allows for the precise identification of the optimal matching CAD model and the correct numbering of detected components, thereby deriving specific spatial constraints for each component. The rigour and performance of this method are validated through a case study involving the removal of used bolster springs from railway wagon bogies on a robotic platform. The results demonstrate that the proposed method enables robots to accurately construct spatial disassembly constraints under complex and uncertain conditions, facilitating automated disassembly operations.
+ER  - 
+
+TY  - JOUR
+T1  - CIT: A combined approach of improving inference and training phases of deep learning for IoT applications
+AU  - Rahmani, Amir Masoud
+AU  - Mirmahaleh, Seyedeh Yasaman Hosseini
+JO  - Expert Systems with Applications
+VL  - 280
+SP  - 127554
+PY  - 2025
+DA  - 2025/06/25/
+SN  - 0957-4174
+DO  - https://doi.org/10.1016/j.eswa.2025.127554
+UR  - https://www.sciencedirect.com/science/article/pii/S0957417425011765
+KW  - Internet of Things (IoT)
+KW  - Deep Learning (DL)
+KW  - Weight combination
+KW  - Pruning
+KW  - Bit reduction
+AB  - Memory demand and processing power restrictions are critical factors in IoT-based applications as technology evolves to support a wide range of devices. Deep learning (DL) techniques have emerged as solutions to address the complexities associated with computations and demand management in IoT systems. However, challenges such as energy efficiency, bandwidth requirements, and limited memory capacity persist for devices with restricted storage and processing power. This research aims to tackle these challenges by customizing deep learning techniques through methods such as bit reduction, weak weight pruning, neuron pruning, and layer pruning in multi-layer perceptron models of deep neural networks (DNNs). The primary focus is on enhancing the efficiency of both inference and training phases of DNNs to accommodate IoT devices with constrained memory and energy consumption. By pruning weak neurons, weights, and layers, this study seeks to optimize the performance of DNNs in IoT applications. Additionally, the research involves combining similar weights within each layer and aligning them with corresponding locations in the subsequent layer. This approach creates opportunities for weight reusability, thereby improving memory utilization by reducing redundant weight storage. The results demonstrate significant improvements in latency and memory demands, with reductions of approximately 95% and 43%, respectively, compared to traditional DL models. These findings underscore the potential of customized deep learning techniques in effectively addressing memory and power constraints in IoT applications.
+ER  - 
+
+TY  - JOUR
+T1  - Individual sapling-level leaf chlorophyll content estimation in Ginkgo biloba with weed background: A novel deep-learning approach coupling APUNet-YOLO with PROSAIL-DNN
+AU  - Su, Lin
+AU  - Zhou, Kai
+AU  - Coops, Nicholas C.
+AU  - Morgenroth, Justin
+AU  - Irwin, Liam A.K.
+AU  - White, Donald
+AU  - Han, Jimei
+AU  - Shen, Xin
+AU  - Cao, Lin
+JO  - International Journal of Applied Earth Observation and Geoinformation
+VL  - 147
+SP  - 105194
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 1569-8432
+DO  - https://doi.org/10.1016/j.jag.2026.105194
+UR  - https://www.sciencedirect.com/science/article/pii/S156984322600110X
+KW  - Individual sapling segmentation
+KW  - Deep-learning
+KW  - Leaf chlorophyll content
+KW  - Attention and pyramid U-Net
+KW  - Deep neural network
+KW  - PROSAIL
+AB  - Accurate estimation of chlorophyll content helps understand the physiological health of saplings. Traditional field measurement methods limit large-scale applications, while remote sensing monitoring methods, though improving efficiency, still face challenges in data analysis and processing. A key challenge is extracting the canopy of individual trees and estimating chlorophyll content amid interference from weed vegetation. To overcome this challenge, this study develops a novel coupled deep learning approach. First, an Attention and Pyramid U-Net (APUNet) was proposed to improve the segmentation accuracy of Ginkgo seedlings crown boundaries in multispectral drone images. Second, the hyper-parameter combination of the You Only Look Once (YOLO) model was optimized to improve sapling detection accuracy under complex conditions with high weed coverage. Next, a sliding window method was developed to reduce duplicate detection rates for detecting all saplings in the entire image, and the intersection of APUNet and detection results was used for segmentation of individual saplings. Finally, a PROSAIL-Deep Neural Network (DNN) model for chlorophyll estimation was developed, and the impact of using APUNet YOLO to remove weed pixels on chlorophyll estimation was investigated, along with how over-coverage and under-coverage during the segmentation process affect the accuracy of chlorophyll estimation. The results show that, compared to U-Net, APUNet improved segmentation performance, with the IoU increasing from 0.697 to 0.736. After hyper-parameter optimization through grid search, the YOLOv8l model achieved an mAP50 of 0.968 and when this model was applied to full-image detection using a sliding window approach, its duplicate detection rate (ddr) decreased by 11.2% compared with the general method. In chlorophyll inversion, the chlorophyll estimation accuracy reached its highest after using APUNet-YOLO to reduce the interference from weed pixels, with an R2 of 0.752 and an RMSE of 7.143 μg/cm2. Meanwhile, the sensitivity analysis of the impact of segmentation errors on chlorophyll estimation accuracy shows that, compared to under-coverage segmentation, over-inclusion segmentation leads to a greater decline in chlorophyll estimation accuracy. This novel coupled model can effectively monitor the chlorophyll content of Ginkgo saplings in settings with complex backgrounds, providing a practical possibility for the realization of precision forestry.
+ER  - 

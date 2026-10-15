@@ -1,0 +1,1 @@
+study_id,report_id,doi,source_page_table_figure,mechanism_configuration,gpu_hardware,driver_runtime_os,model_workload,tenant_count,batch_load_slo,baseline,metric,value_and_units,uncertainty,method,reported_limitations,reviewer_interpretation,RQ_tag,extracted_by,checked_by

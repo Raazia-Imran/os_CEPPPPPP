@@ -5,6 +5,8 @@
 
 Start with [the Task 2 checklist](task2/CHECKLIST.md). It states which parts have evidence and which still need work. The [status page](STATUS.md) is dated and never treats another team's results as Group B's results.
 
+For a short update to share with teammates, read [Team progress](task2/TEAM_PROGRESS.md). Current work is on [draft PR #1](https://github.com/Raazia-Imran/os_CEPPPPPP/pull/1); it remains open for human review.
+
 | Where | What it contains |
 | --- | --- |
 | [`docs/`](docs/) | Instructor guideline and Topic 23 text, plus the 25-deliverable map. These control the assignment. |
