@@ -1,0 +1,11 @@
+original_priority,record_id,title,url,receipt_status,active_request
+1,GA-X005,iGniter: Interference-Aware GPU Resource Provisioning for Predictable DNN Inference in the Cloud,https://doi.org/10.1109/TPDS.2022.3232715,received_and_assessed,no
+2,GA-R0011,GhostWriter: Exploiting GPU-Cache Contention to Steal and Steer Multi-tenant Large-Language-Model Inference,https://link.springer.com/chapter/10.1007/978-3-032-16342-4_8,unavailable_no_repeat_request,no
+3,GA-R0004,HAS-GPU: Efficient Hybrid Auto-scaling with Fine-Grained GPU Allocation for SLO-Aware Serverless Inferences,https://link.springer.com/chapter/10.1007/978-3-031-99854-6_11,unavailable_no_repeat_request,no
+4,GA-R0292,A Close Look at Multi-tenant Parallel CNN Inference for Autonomous Driving,https://link.springer.com/chapter/10.1007/978-3-030-79478-1_8,unavailable_no_repeat_request,no
+5,GA-R0006,VastPipe: A High-Throughput Inference System via Adaptive Space-Division Multiplexing for Diverse Accelerators,https://link.springer.com/article/10.1007/s11390-024-3773-5,received_and_assessed,no
+6,GA-R0014,Dyna-P: placement-aware dynamic partitioning for lightweight applications with modern GPUs,https://link.springer.com/article/10.1007/s10586-025-05284-2,received_and_assessed,no
+7,GA-X006,InferFair: Towards QoS-aware scheduling for performance isolation guarantee in heterogeneous model serving systems,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,received_and_assessed,no
+8,GA-X007,"Real-time, Work-conserving GPU Scheduling for Concurrent DNN Inference",https://doi.org/10.1145/3768622,received_and_assessed,no
+9,GA-R0009,vGPU Performance Testing Framework for Large Model Inference,https://link.springer.com/chapter/10.1007/978-981-96-8728-2_35,unavailable_no_repeat_request,no
+10,GA-R0037,ArkGPU: enabling applications' high-goodput co-location execution on multitasking GPUs,https://link.springer.com/article/10.1007/s42514-023-00154-y,received_and_assessed,no

@@ -1,0 +1,241 @@
+@proceedings{10.1145/3629479,
+editor = {Edna Dias Canedo, Daniel de Paula Porto, F{\'a}bio L{\'u}cio Lopes Mendon{\c c}a, Rafael Tim{\'o}teo de Sousa J{\'u}nior, Monalessa Perini Barcellos, Ismayle Sousa Santos, Sheila Reinehr, Sergio Soares, Uir{\'a} Kulesza, {\'E}rica Ferreira de Souza, Adriano Albuquerque, Carla Bezerra, Rodrigo Santos, Alessandro Garcia, Simone Dornelas Costa and Adolfo Gustavo Serra Seca Neto},
+title = {SBQS '23: Proceedings of the XXII Brazilian Symposium on Software Quality},
+year = {2023},
+isbn = {9798400707865},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bras\'{\i}lia, Brazil}
+}
+
+@proceedings{10.1145/3771882,
+editor = {Salvatore Sorce, Passant Elagroudy and Mohamed Khamis},
+title = {MUM '25: Proceedings of the 24th International Conference on Mobile and Ubiquitous Multimedia},
+year = {2025},
+isbn = {9798400720154},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Enna, Italy}
+}
+
+@proceedings{10.1145/3623476,
+title = {SLE 2023: Proceedings of the 16th ACM SIGPLAN International Conference on Software Language Engineering},
+year = {2023},
+isbn = {9798400703966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 16th ACM SIGPLAN International Conference on Software Language Engineering (SLE) held in October 2023 as part of SPLASH 2023. Software Language Engineering (SLE) is a thriving research discipline targeted at establishing an engineering approach to the development, use, and maintenance of software languages, that is, of languages for the specification, modeling and tooling of software. Key topics of interest for SLE include approaches, methodologies and tools for language design and implementation with a focus on techniques for static and behavioral semantics, generative or interpretative approaches (including transformation languages and code generation) as well as meta-languages and tools (including language workbenches). Techniques enabling the testing, simulation or formal verification for language validation purposes are also of particular interest. SLE also accommodates empirical evaluation and experience reports of language engineering tools, such as user studies evaluating usability, performance benchmarks or industrial applications.},
+location = {Cascais, Portugal}
+}
+
+@proceedings{10.1145/3626183,
+title = {SPAA '24: Proceedings of the 36th ACM Symposium on Parallelism in Algorithms and Architectures},
+year = {2024},
+isbn = {9798400704161},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to the 36th ACM Symposium on Parallelism in Algorithms and Architectures - SPAA 2024. SPAA aims to develop a deeper understanding of parallel and distributed computing, both in theory and in practice. Topics relevant to SPAA include algorithms, data structures, computational models, complexity theory, architectures, performance engineering, languages, runtime systems, compilers, programming systems, and networking systems. This year, there were 125 submissions to SPAA (117 regular submission and 8 brief announcements). The program committee accepted 35 regular papers and 19 brief announcements.},
+location = {Nantes, France}
+}
+
+@proceedings{10.1145/3578339,
+title = {BDSIC '22: Proceedings of the 2022 4th International Conference on Big-data Service and Intelligent Computation},
+year = {2022},
+isbn = {9781450397070},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xiamen, China}
+}
+
+@inproceedings{10.1145/3658644.3690323,
+author = {Kuvaiskii, Dmitrii and Stavrakakis, Dimitrios and Qin, Kailun and Xing, Cedric and Bhatotia, Pramod and Vij, Mona},
+title = {Gramine-TDX: A Lightweight OS Kernel for Confidential VMs},
+year = {2024},
+isbn = {9798400706363},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3658644.3690323},
+doi = {10.1145/3658644.3690323},
+abstract = {While Confidential Virtual Machines (CVMs) have emerged as a prominent way for hardware-assisted confidential computing, their primary usage is not suitable for small, specialized, security-critical workloads, i.e., legacy VMs with their conventional OS distributions result in a large trusted computing base.In this paper, we present the Gramine-TDX OS kernel to execute slim, single-purpose, security-first, unmodified Linux workloads with a minimal attack surface. In comparison to a typical Linux kernel, Gramine-TDX's codebase is ~ 50{\texttimes} less in binary size and has a significantly smaller attack surface, which makes it a perfect match for emerging cloud-native confidential-computing workloads. Our evaluation on 11 workloads indicates that Gramine-TDX has 1-25\% average overhead for CPU- and memory-intensive applications. Performance on network- and FS-intensive applications can drop to 6\% of the native application's, as Gramine-TDX prioritizes security over optimizations in virtual hardware communication. We build our prototype using Intel®Trust Domain Extensions (TDX).},
+booktitle = {Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security},
+pages = {4598–4612},
+numpages = {15},
+keywords = {Gramine, OS, confidential computing, intel TDX, security},
+location = {Salt Lake City, UT, USA},
+series = {CCS '24}
+}
+
+@inproceedings{10.1145/3466752.3480048,
+author = {Nguyen, Quan M. and Sanchez, Daniel},
+title = {Fifer: Practical Acceleration of Irregular Applications on Reconfigurable Architectures},
+year = {2021},
+isbn = {9781450385572},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3466752.3480048},
+doi = {10.1145/3466752.3480048},
+abstract = {Coarse-grain reconfigurable arrays (CGRAs) can achieve much higher performance and efficiency than general-purpose cores, approaching the performance of a specialized design while retaining programmability. Unfortunately, CGRAs have so far only been effective on applications with regular compute patterns. However, many important workloads like graph analytics, sparse linear algebra, and databases, are irregular applications with unpredictable access patterns and control flow. Since CGRAs map computation statically to a spatial fabric of functional units, irregular memory accesses and control flow cause frequent stalls and load imbalance. We present Fifer, an architecture and compilation technique that makes irregular applications efficient on CGRAs. Fifer first decouples irregular applications into a feed-forward network of pipeline stages. Each resulting stage is regular and can efficiently use the CGRA fabric. However, irregularity causes stages to have widely varying loads, resulting in high load imbalance if they execute spatially in a conventional CGRA. Fifer solves this by introducing dynamic temporal pipelining: it time-multiplexes multiple stages onto the same CGRA, and dynamically schedules stages to avoid load imbalance. Fifer makes time-multiplexing fast and cheap to quickly respond to load imbalance while retaining the efficiency and simplicity of a CGRA design. We show that Fifer improves performance by gmean 2.8 {\texttimes} (and up to 5.5 {\texttimes}) over a conventional CGRA architecture (and by gmean 17 {\texttimes} over an out-of-order multicore) on a variety of challenging irregular applications.},
+booktitle = {MICRO-54: 54th Annual IEEE/ACM International Symposium on Microarchitecture},
+pages = {1064–1077},
+numpages = {14},
+keywords = {reconfigurable architectures, pipeline parallelism, CGRAs},
+location = {Virtual Event, Greece},
+series = {MICRO '21}
+}
+
+@inproceedings{10.1145/3680528.3687565,
+author = {Shen, Zehong and Pi, Huaijin and Xia, Yan and Cen, Zhi and Peng, Sida and Hu, Zechen and Bao, Hujun and Hu, Ruizhen and Zhou, Xiaowei},
+title = {World-Grounded Human Motion Recovery via Gravity-View Coordinates},
+year = {2024},
+isbn = {9798400711312},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3680528.3687565},
+doi = {10.1145/3680528.3687565},
+abstract = {We present a novel method for recovering world-grounded human motion from monocular video. The main challenge lies in the ambiguity of defining the world coordinate system, which varies between sequences. Previous approaches attempt to alleviate this issue by predicting relative motion in an autoregressive manner, but are prone to accumulating errors. Instead, we propose estimating human poses in a novel Gravity-View (GV) coordinate system, which is defined by the world gravity and the camera view direction. The proposed GV system is naturally gravity-aligned and uniquely defined for each video frame, largely reducing the ambiguity of learning image-pose mapping. The estimated poses can be transformed back to the world coordinate system using camera rotations, forming a global motion sequence. Additionally, the per-frame estimation avoids error accumulation in the autoregressive methods. Experiments on in-the-wild benchmarks demonstrate that our method recovers more realistic motion in both the camera space and world-grounded settings, outperforming state-of-the-art methods in both accuracy and speed. The code is available at https://zju3dv.github.io/gvhmr.},
+booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+articleno = {144},
+numpages = {11},
+keywords = {human pose estimation, motion capture},
+location = {Tokyo, Japan},
+series = {SA '24}
+}
+
+@proceedings{10.1145/3641525,
+title = {ACM REP '24: Proceedings of the 2nd ACM Conference on Reproducibility and Replicability},
+year = {2024},
+isbn = {9798400705304},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rennes, France}
+}
+
+@proceedings{10.1145/3689492,
+title = {Onward! '24: Proceedings of the 2024 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+year = {2024},
+isbn = {9798400712159},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 2024 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2024), the premier multidisciplinary conference focused on everything to do with programming and software, including processes, methods, languages, communities and applications. Onward! is more radical, more visionary and more open than other conferences to ideas that are well-argued but not yet proven. We welcome different ways of thinking about, approaching, and reporting on programming language and software engineering research.},
+location = {Pasadena, CA, USA}
+}
+
+@inproceedings{10.1145/3649329.3657331,
+author = {Mu, Jianan and Han, Husheng and Shi, Shangyi and Ye, Jing and Liu, Zizhen and Liang, Shengwen and Li, Meng and Zhang, Mingzhe and Bian, Song and Hu, Xing and Li, Huaiwei and Li, Xiaowei},
+title = {Alchemist: A Unified Accelerator Architecture for Cross-Scheme Fully Homomorphic Encryption},
+year = {2024},
+isbn = {9798400706011},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3649329.3657331},
+doi = {10.1145/3649329.3657331},
+abstract = {The use of cross-scheme fully homomorphic encryption (FHE) in privacy-preserving applications present to be a new challenge to hardware accelerator design. Existing accelerator architectures with customized polynomial-level operator abstraction fail to efficiently handle hybrid FHE schemes due to the mismatch between computational demands and available hardware resources under various parameter settings. In this work, we propose a new accelerator architecture that consists of a novel finer-grained low-level operator, i.e., Meta-OP, that not only mathematically supports a diverse range of polynomial operations, but is also hardware-friendly for accelerator design without complex topological logic. We then design a new slot-based data management scheme to efficiently handle the distinct memory access patterns over the Meta-OP. With a slot-based data management approach, Alchemist can accelerate both arithmetic and logic FHE workloads with high hardware utilization rates. In the experiment, we show that Alchemist is up to 24,829X faster than CPU. For arithmetic FHE, compared with the SOTA ASIC accelerators, Alchemist achieves a 29.4X performance per area improvement on average. For logic FHE, compared with the SOTA ASIC accelerators, Alchemist achieves a 7.0X overall speed up on average.},
+booktitle = {Proceedings of the 61st ACM/IEEE Design Automation Conference},
+articleno = {26},
+numpages = {6},
+location = {San Francisco, CA, USA},
+series = {DAC '24}
+}
+
+@proceedings{10.1145/3663548,
+editor = {David Flatla, Faustina Hwang, Tiago Guerreiro and Robin Brewer},
+title = {ASSETS '24: Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility},
+year = {2024},
+isbn = {9798400706776},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {St. John's, NL, Canada}
+}
+
+@proceedings{10.1145/3604930,
+title = {HotCarbon '23: Proceedings of the 2nd Workshop on Sustainable Computer Systems},
+year = {2023},
+isbn = {9798400702426},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Hot Carbon focuses on understanding and addressing the negative environmental impacts of computing's success and computing's proliferation. The objective of the workshop is to foster insights and discussions as well as a growing community that focuses on sustainability of computer systems. We expect this includes innovative approaches to how we build, deploy, operate, and retire our creations, but perhaps even more. For example, software-driven hardware obsolescence that increases E-waste and embodied carbon suggests we must challenge computing's endemic upgrade and throwaway practices, and mindset.},
+location = {Boston, MA, USA}
+}
+
+@inproceedings{10.1145/3689031.3717483,
+author = {Chang, Tzu-Tao and Venkataraman, Shivaram},
+title = {Eva: Cost-Efficient Cloud-Based Cluster Scheduling},
+year = {2025},
+isbn = {9798400711961},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3689031.3717483},
+doi = {10.1145/3689031.3717483},
+abstract = {Cloud computing offers flexibility in resource provisioning, allowing an organization to host its batch processing workloads cost-efficiently by dynamically scaling the size and composition of a cloud-based cluster - a collection of instances provisioned from the cloud. However, existing schedulers fail to minimize total cost due to suboptimal task and instance scheduling strategies, interference between co-located tasks, and instance provisioning overheads. We present Eva, a scheduler for cloud-based clusters that reduces the overall cost of hosting long-running batch jobs. Eva leverages reservation price from economics to derive the optimal set of instances to provision and task-to-instance assignments. Eva also takes into account performance degradation when co-locating tasks and quantitatively evaluates the trade-off between short-term migration overhead and long-term provision savings when considering a change in cluster configuration. Experiments on AWS EC2 and large-scale trace-driven simulations demonstrate that Eva reduces costs by 42\% while incurring only a 15\% increase in JCT, compared to provisioning a separate instance for each task.},
+booktitle = {Proceedings of the Twentieth European Conference on Computer Systems},
+pages = {1399–1416},
+numpages = {18},
+keywords = {Cloud Computing, Cluster Scheduling},
+location = {Rotterdam, Netherlands},
+series = {EuroSys '25}
+}
+
+@article{3417608.3417618,
+author = {Case, Denise M. and Rogers, Michael P.},
+title = {Is it getting foggy in here? cloud computing in the classroom},
+year = {2020},
+issue_date = {April 2020},
+publisher = {Consortium for Computing Sciences in Colleges},
+address = {Evansville, IN, USA},
+volume = {35},
+number = {6},
+issn = {1937-4771},
+abstract = {Cloud computing is now an integral, essential business tool. The same advantages it brings to business apply to academia, and in computer science education in particular it offers the ability to transform how and what we teach in many applied courses. This experience paper examines the history of cloud computing to provide context, offers concrete examples of how cloud computing can be used in the classroom, and provides tips for faculty wishing to explore this technology.},
+journal = {J. Comput. Sci. Coll.},
+month = apr,
+pages = {92–106},
+numpages = {15}
+}
+
+@proceedings{10.1145/3659996,
+title = {HPQCI '24: Proceedings of the 2024 Workshop on High Performance and Quantum Computing Integration},
+year = {2024},
+isbn = {9798400706431},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Pisa, Italy}
+}
+
+@proceedings{10.1145/3660829,
+editor = {Emma S{\"o}derberg and Luke Church},
+title = {Programming '24: Companion Proceedings of the 8th International Conference on the Art, Science, and Engineering of Programming},
+year = {2024},
+isbn = {9798400706349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Lund, Sweden}
+}
+
+@proceedings{10.1145/3773077,
+title = {IDC '26: Proceedings of the 25th Annual ACM Interaction Design and Children Conference},
+year = {2026},
+isbn = {9798400722837},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Brighton, United Kingdom}
+}
+
+@proceedings{10.1145/3607505,
+title = {CSET '23: Proceedings of the 16th Cyber Security Experimentation and Test Workshop},
+year = {2023},
+isbn = {9798400707889},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Marina del Rey, CA, USA}
+}
+
+@proceedings{10.1145/3613905,
+editor = {Florian Floyd Mueller, Penny Kyburz, Julie R. Williamson and Corina Sas},
+title = {CHI EA '24: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+year = {2024},
+isbn = {9798400703317},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Honolulu, HI, USA}
+}
+

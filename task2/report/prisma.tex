@@ -1,0 +1,15 @@
+\begin{center}
+\begin{tikzpicture}[box/.style={draw=blue!55!black,rounded corners,align=center,text width=5.4cm,minimum height=1.1cm,font=\small},side/.style={box,draw=orange!70!black,text width=4.1cm},>=Latex,node distance=0.9cm]
+\node[box] (db) {Database records: 2,271\\ACM 1,582; Springer 587; IEEE 102};
+\node[side,right=0.6cm of db] (other) {Other-source records: 20\\ACM query mapping unresolved};
+\node[box,below=of db] (all) {Imported records: 2,291};
+\node[side,right=0.6cm of all] (dup) {Duplicates linked: 44\\41 version pairs pending};
+\node[box,below=of all] (queue) {Review queue: 2,247};
+\node[box,below=of queue] (first) {First review: 800\\Awaiting first review: 1,447};
+\node[side,right=0.6cm of first] (votes) {Exclude votes: 652\\Retain/uncertain: 148\\Second review pending};
+\node[box,below=1.5cm of first] (ft) {Priority source checks: 5\\Final assessment count pending};
+\node[side,right=0.6cm of ft] (retr) {Reports sought / not retrieved\\Final exclusions and reasons\\Counts pending};
+\node[box,below=of ft] (inc) {Final inclusion: pending\\Six checked outcome rows; two QA drafts};
+\draw[->] (db)--(all);\draw[->] (other)--(all);\draw[->] (all)--(queue);\draw[->] (all)--(dup);\draw[->] (queue)--(first);\draw[->] (first)--(votes);\draw[->] (first)--(ft);\draw[->] (ft)--(retr);\draw[->] (ft)--(inc);
+\end{tikzpicture}
+\end{center}

@@ -1,0 +1,244 @@
+@inproceedings{10.1145/3472883.3486972,
+author = {Romero, Francisco and Zhao, Mark and Yadwadkar, Neeraja J. and Kozyrakis, Christos},
+title = {Llama: A Heterogeneous \&amp; Serverless Framework for Auto-Tuning Video Analytics Pipelines},
+year = {2021},
+isbn = {9781450386388},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3472883.3486972},
+doi = {10.1145/3472883.3486972},
+abstract = {The proliferation of camera-enabled devices and large video repositories has led to a diverse set of video analytics applications. These applications rely on video pipelines, represented as DAGs of operations, to transform videos, process extracted metadata, and answer questions like, "Is this intersection congested?" The latency and resource efficiency of pipelines can be optimized using configurable knobs for each operation (e.g., sampling rate, batch size, or type of hardware used). However, determining efficient configurations is challenging because (a) the configuration search space is exponentially large, and (b) the optimal configuration depends on users' desired latency and cost targets, (c) input video contents may exercise different paths in the DAG and produce a variable amount intermediate results. Existing video analytics and processing systems leave it to the users to manually configure operations and select hardware resources.We present Llama: a heterogeneous and serverless framework for auto-tuning video pipelines. Given an end-to-end latency target, Llama optimizes for cost efficiency by (a) calculating a latency target for each operation invocation, and (b) dynamically running a cost-based optimizer to assign configurations across heterogeneous hardware that best meet the calculated per-invocation latency target. This makes the problem of auto-tuning large video pipelines tractable and allows us to handle input-dependent behavior, conditional branches in the DAG, and execution variability. We describe the algorithms in Llama and evaluate it on a cloud platform using serverless CPU and GPU resources. We show that compared to state-of-the-art cluster and serverless video analytics and processing systems, Llama achieves 7.8x lower latency and 16x cost reduction on average.},
+booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+pages = {1–17},
+numpages = {17},
+keywords = {distributed systems, heterogeneous, scheduling, serverless computing, video analytics},
+location = {Seattle, WA, USA},
+series = {SoCC '21}
+}
+
+@inproceedings{10.1145/3629526.3645041,
+author = {Pandey, Shrey and Das, Saikat Kumar and Ganu, Hrishikesh V. and Singh, Satyajeet},
+title = {Rethinking 'Complement' Recommendations at Scale with SIMD},
+year = {2024},
+isbn = {9798400704444},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3629526.3645041},
+doi = {10.1145/3629526.3645041},
+abstract = {Maximizing cart value by increasing the number of items in electronic carts is one of the key strategies adopted by e-commerce platforms for optimal conversion of positive user intent during an online shopping session. Recommender systems play a key-role in suggesting personalized candidate items that can be added to cart by the user. However, it is important to serve a diverse set of personalized recommendations that 'complement' user's cart content to practically increase item count in cart and also contribute towards product discovery. Borrowed from Quantum Physics, Determinantal Point Processes (DPP) are used widely in recommender systems to diversify personalized product recommendations for improved user engagement. However, vertically scaling DPP for recommendation sets, personalized with vector similarity metric like cosine similarity, to serve large scale real-time concurrent user requests is non-trivial. We propose a vectorized reformulation of cosine similarity and conditional DPP implementation to best utilize the highly improved vector computation capabilities (SIMD) of modern processors. Experimental evidence on real-world traffic shows that the proposed method can handle upto 15x more concurrent traffic while improving latency. The proposed method also uses portable SIMD constructs from Python libraries which can be easily adopted in most available SIMD supported CPUs with minimal code changes.},
+booktitle = {Proceedings of the 15th ACM/SPEC International Conference on Performance Engineering},
+pages = {25–36},
+numpages = {12},
+keywords = {determinantal point processes, diversification, recommendations, recommender systems, simd, vectorization},
+location = {London, United Kingdom},
+series = {ICPE '24}
+}
+
+@proceedings{10.1145/3837873,
+title = {DEAI '26: Proceedings of the 2026 3rd Guangdong-Hong Kong-Macao Greater Bay Area International Conference on Digital Economy and Artificial Intelligence},
+year = {2026},
+isbn = {9798400722660},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dongguan, China}
+}
+
+@proceedings{10.1145/3638985,
+title = {ICIT '23: Proceedings of the 2023 11th International Conference on Information Technology: IoT and Smart City},
+year = {2023},
+isbn = {9798400709043},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Kyoto, Japan}
+}
+
+@proceedings{10.1145/3805773,
+title = {SecDev '26: Proceedings of the 2026 ACM Secure Development Conference},
+year = {2026},
+isbn = {9798400726026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It has been an honor and a pleasure to serve as program chairs for the 2026 ACM Secure Development Conference (SecDev’26). We are looking forward to meeting with the SecDev community in person in Montreal, Canada, where SecDev will be co-located with the ACM International Conference on the Foundations of Software Engineering (FSE).},
+location = {Montreal, QC, Canada}
+}
+
+@proceedings{10.1145/3793654,
+editor = {Breno Miranda, Ana Paiva, Markus Borg, Andy Zaidman and Morena Barboni},
+title = {AST '26: Proceedings of the 7th ACM/IEEE International Conference on Automation of Software Test},
+year = {2026},
+isbn = {9798400724763},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The special theme of AST 2026 is "Adapting test automation to the AI era including sustainability and emerging challenges". We are seeing that the AI era is causing a transformative shift in test automation, revolutionizing traditional approaches and enhancing efficiency, accuracy, and adaptability. This integration of AI and machine learning introduces intelligent test case generation, self-healing test scripts, and predictive analytics. These advances have the potential to significantly reduce testing time, while improving overall software quality. The role of testers will evolve from test script writers to strategic overseers, focusing on test design, data and quality interpretation, and critical problem-solving. As AI takes on repetitive tasks, it allows for more comprehensive test coverage, including the identification of edge cases that human testers might overlook. The future of test automation lies in agent-like testing systems that learn continuously, adapt to changes, and provide deeper insights into software quality, ultimately leading to faster, more reliable software delivery in an increasingly complex digital landscape.},
+location = {Rio de Janeiro, Brazil}
+}
+
+@proceedings{10.1145/3804504,
+title = {ICDIR '26: Proceedings of the 2nd International Conference on Digital Society, Information Science and Risk Management},
+year = {2026},
+isbn = {9798400722882},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Shenyang, China}
+}
+
+@proceedings{10.1145/3788731,
+title = {EILM '25: Proceedings of the 2025 International Conference on Embodied Intelligence and Large Models},
+year = {2025},
+isbn = {9798400722301},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Chengdu, China}
+}
+
+@proceedings{10.1145/3626202,
+title = {FPGA '24: Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+year = {2024},
+isbn = {9798400704185},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 32nd ACM International Symposium on Field-Programmable Gate Arrays (FPGA 2024)! We are thrilled to host a premier forum for the presentation of new and exciting research across various facets of FPGA technology. These include:Novel FPGA architectures and circuits.Advances in CAD tools for FPGAs, in areas such as technology mapping, placement, routing, and others.High-level design methodologies that permit FPGA design at higher levels of abstraction.New applications for FPGAs, particularly for energy efficient and high-performance computation.Uses of FPGAs in reconfigurable computing, datacenter, and cloudMachine Learning on and for FPGAs.This year, our program committee diligently reviewed 89 papers with 25.8\% of them earning acceptance for presentation. The symposium spans three days: Sunday features 9 invited tutorials and workshops, while the main event on Monday and Tuesday includes 20 full research papers (10 pages), 3 short research papers (6 pages), and 2 invited keynotes. Keynote abstracts are published in the proceedings. Additionally, 18 submissions are presented as posters, appearing in the proceedings as abstracts. We encourage you to make the most of live presentations, engage with authors and fellow researchers during breaks and poster sessions, and take advantage of social opportunities offered by an in-person conference.},
+location = {Monterey, CA, USA}
+}
+
+@proceedings{10.1145/3722567,
+title = {RAGE '25: Proceedings of the 4th International Workshop on Real-time and IntelliGent Edge computing},
+year = {2025},
+isbn = {9798400716119},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Irvine, CA, USA}
+}
+
+@article{10.1145/3491243,
+author = {Ramakrishna, Shreyas and Rahiminasab, Zahra and Karsai, Gabor and Easwaran, Arvind and Dubey, Abhishek},
+title = {Efficient Out-of-Distribution Detection Using Latent Space of β-VAE for Cyber-Physical Systems},
+year = {2022},
+issue_date = {April 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {2},
+issn = {2378-962X},
+url = {https://doi.org/10.1145/3491243},
+doi = {10.1145/3491243},
+abstract = {Deep Neural Networks are actively being used in the design of autonomous Cyber-Physical Systems (CPSs). The advantage of these models is their ability to handle high-dimensional state-space and learn compact surrogate representations of the operational state spaces. However, the problem is that the sampled observations used for training the model may never cover the entire state space of the physical environment, and as a result, the system will likely operate in conditions that do not belong to the training distribution. These conditions that do not belong to training distribution are referred to as Out-of-Distribution (OOD). Detecting OOD conditions at runtime is critical for the safety of CPS. In addition, it is also desirable to identify the context or the feature(s) that are the source of OOD to select an appropriate control action to mitigate the consequences that may arise because of the OOD condition. In this article, we study this problem as a multi-labeled time series OOD detection problem over images, where the OOD is defined both sequentially across short time windows (change points) as well as across the training data distribution. A common approach to solving this problem is the use of multi-chained one-class classifiers. However, this approach is expensive for CPSs that have limited computational resources and require short inference times. Our contribution is an approach to design and train a single β-Variational Autoencoder detector with a partially disentangled latent space sensitive to variations in image features. We use the feature sensitive latent variables in the latent space to detect OOD images and identify the most likely feature(s) responsible for the OOD. We demonstrate our approach using an Autonomous Vehicle in the CARLA simulator and a real-world automotive dataset called nuImages.},
+journal = {ACM Trans. Cyber-Phys. Syst.},
+month = apr,
+articleno = {15},
+numpages = {34},
+keywords = {Cyber-physical systems, deep neural networks, out-of-distribution, disentanglement, β-variational autoencoders, mutual information gap}
+}
+
+@article{10.1145/3609504,
+author = {Barrios, Carlos and Kumar, Mohan},
+title = {Service Caching and Computation Reuse Strategies at the Edge: A Survey},
+year = {2023},
+issue_date = {February 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {56},
+number = {2},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3609504},
+doi = {10.1145/3609504},
+abstract = {With the proliferation of connected devices including smartphones, novel network connectivity and management methods are needed to meet user Quality of Experience (QoE) and computational demands of contemporary applications. Service caching and computation reuse techniques are being employed to alleviate challenges due to scalability, interoperability, and mobility, as well as to reduce application latency by enabling caching at the edge. This survey provides a taxonomy for service caching and computation reuse and describes the current state of the research and its challenges. This is the first survey that provides a comprehensive analysis and suggests future research directions on this topic.},
+journal = {ACM Comput. Surv.},
+month = sep,
+articleno = {43},
+numpages = {38},
+keywords = {Service caching, computation reuse, task caching, computation deduplication}
+}
+
+@inproceedings{10.1145/3643787.3648030,
+author = {Rejithkumar, Gokul and Anish, Preethu Rose and Sonar, Pratik and Ghaisas, Smita},
+title = {Automated Extraction of Compliance Elements in Software Engineering Contracts Using Natural Language Generation},
+year = {2024},
+isbn = {9798400705762},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643787.3648030},
+doi = {10.1145/3643787.3648030},
+abstract = {Software Engineering (SE) contracts are legally binding agreements governing software development, usage, related responsibilities, and rights between the parties involved. SE contracts contain obligatory clauses which encompass compliance elements such as Regulations, Standards, and Policies. Identifying these elements is essential for ensuring compliance by aiding in contract negotiation, assignment of the obligatory clauses to relevant departments within the organization and for identification of high-level software requirements. Non-compliance may lead to penalties, damaging an organization's reputation and trust. In this paper, we automate the extraction of compliance elements from SE contracts. We employed a text-to-text generation approach and conducted experiments using the T5 model for the automated extraction of compliance elements from obligatory contractual clauses. The text-to-text generation approach yielded a mean F1-score of 0.92 for ROUGE-L.},
+booktitle = {Proceedings of the Third ACM/IEEE International Workshop on NL-Based Software Engineering},
+pages = {69–72},
+numpages = {4},
+keywords = {text-to-text generation, T5, legal language, compliance, regulation, standard, policy},
+location = {Lisbon, Portugal},
+series = {NLBSE '24}
+}
+
+@proceedings{10.1145/3743646,
+title = {WCAE '25: Proceedings of the Workshop on Computer Architecture Education},
+year = {2025},
+isbn = {9798400720079},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tokyo, Japan}
+}
+
+@proceedings{10.1145/3793655,
+title = {FORGE '26: Proceedings of the 2026 IEEE/ACM Third International Conference on AI Foundation Models and Software Engineering},
+year = {2026},
+isbn = {9798400724770},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rio de Janeiro, Brazil}
+}
+
+@proceedings{10.1145/3717934,
+title = {ICITEE '24: Proceedings of the 7th International Conference on Information Technologies and Electrical Engineering},
+year = {2024},
+isbn = {9798400707087},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Guangzhou, China}
+}
+
+@inproceedings{10.1145/3654777.3676397,
+author = {Fok, Raymond and Chang, Joseph Chee and August, Tal and Zhang, Amy X. and Weld, Daniel S.},
+title = {Qlarify: Recursively Expandable Abstracts for Dynamic Information Retrieval over Scientific Papers},
+year = {2024},
+isbn = {9798400706288},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3654777.3676397},
+doi = {10.1145/3654777.3676397},
+abstract = {Navigating the vast scientific literature often starts with browsing a paper’s abstract. However, when a reader seeks additional information, not present in the abstract, they face a costly cognitive chasm during their dive into the full text. To bridge this gap, we introduce recursively expandable abstracts, a novel interaction paradigm that dynamically expands abstracts by progressively incorporating additional information from the papers’ full text. This lightweight interaction allows scholars to specify their information needs by quickly brushing over the abstract or selecting AI-suggested expandable entities. Relevant information is synthesized using a retrieval-augmented generation approach, presented as a fluid, threaded expansion of the abstract, and made efficiently verifiable via attribution to relevant source-passages in the paper. Through a series of user studies, we demonstrate the utility of recursively expandable abstracts and identify future opportunities to support low-effort and just-in-time exploration of long-form information contexts through LLM-powered interactions.},
+booktitle = {Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {145},
+numpages = {21},
+keywords = {Information Retrieval, Interactive Documents, Large Language Models, Mixed-Initiative User Interfaces, Scientific Papers},
+location = {Pittsburgh, PA, USA},
+series = {UIST '24}
+}
+
+@proceedings{10.1145/3795546,
+title = {DTM '25: Proceedings of the 2025 International Conference on Digital Transformation and Management},
+year = {2025},
+isbn = {9798400721571},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Foshan, China}
+}
+
+@proceedings{10.1145/3716554,
+editor = {Nikitas N. Karanikolas, Iraklis Varlamis, Kyriakos Sgarbas, Dimitris Kalles and Ioannis Voyiatzis},
+title = {PCI '24: Proceedings of the 28th Pan-Hellenic Conference on Progress in Computing and Informatics},
+year = {2024},
+isbn = {9798400713170},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Athens, Greece}
+}
+
+@proceedings{10.1145/3721250,
+editor = {Ginger Alford and Chloe LeGendre},
+title = {SIGGRAPH Posters '25: Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Posters},
+year = {2025},
+isbn = {9798400715495},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Vancouver, British Columbia, Canada}
+}
+

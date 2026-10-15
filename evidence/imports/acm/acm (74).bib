@@ -1,0 +1,266 @@
+@article{10.1145/3608447,
+author = {Metz, David and Kumar, Vineet and Sj{\"a}lander, Magnus},
+title = {BISDU: A Bit-Serial Dot-Product Unit for Microcontrollers},
+year = {2023},
+issue_date = {September 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {22},
+number = {5},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3608447},
+doi = {10.1145/3608447},
+abstract = {Low-precision quantized neural networks (QNNs) reduce the required memory space, bandwidth, and computational power, and hence are suitable for deployment in applications such as IoT edge devices. Mixed-precision QNNs, where weights commonly have lower precision than activations or different precision is used for different layers, can limit the accuracy loss caused by low-bit quantization, while still benefiting from reduced memory footprint and faster execution. Previous multiple-precision functional units supporting 8-bit, 4-bit, and 2-bit SIMD instructions have limitations, such as large area overhead, under-utilization of multipliers, and wasted memory space for low and mixed bit-width operations.This article introduces BISDU, a bit-serial dot-product unit to support and accelerate execution of mixed-precision low-bit QNNs on resource-constrained microcontrollers. BISDU is a multiplier-less dot-product unit, with frugal hardware requirements (a population count unit and 2:1 multiplexers). The proposed bit-serial dot-product unit leverages the conventional logical operations of a microcontroller to perform multiplications, which enables efficient software implementations of binary (Xnor), ternary (Xor), and mixed-precision [W{\texttimes}A] (And) dot-product operations.The experimental results show that BISDU achieves competitive performance compared to two state-of-the-art units, XpulpNN and Dustin, when executing low-bit-width CNNs. We demonstrate the advantage that bit-serial execution provides by enabling trading accuracy against weight footprint and execution time. BISDU increases the area of the ALU by 68\% and the ALU power consumption by 42\% compared to a baseline 32-bit RISC-V (RV32IC) microcontroller core. In comparison, XpulpNN and Dustin increase the area by 6.9{\texttimes} and 11.1{\texttimes} and the power consumption by 3.8{\texttimes} and 5.97{\texttimes}, respectively. The bit-serial state-of-the-art, based on a conventional popcount instruction, increases the area by 42\% and power by 32\%, with BISDU providing a 37\% speedup over it.},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = sep,
+articleno = {79},
+numpages = {22},
+keywords = {Bit-serial, Dot-product, Microcontroller, Quantized neural networks, Low power, ISA extension}
+}
+
+@proceedings{10.1145/3656766,
+title = {ICBAR '23: Proceedings of the 2023 3rd International Conference on Big Data, Artificial Intelligence and Risk Management},
+year = {2023},
+isbn = {9798400716478},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Chengdu, China}
+}
+
+@inproceedings{10.1145/3659996.3660036,
+author = {Saurabh, Nishant and Mantha, Pradeep and Kiwit, Florian J. and Jha, Shantenu and Luckow, Andre},
+title = {Quantum Mini-Apps: A Framework for Developing and Benchmarking Quantum-HPC Applications},
+year = {2024},
+isbn = {9798400706431},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3659996.3660036},
+doi = {10.1145/3659996.3660036},
+abstract = {With the increasing maturity and scale of quantum hardware and its integration into HPC systems, there is a need to develop robust techniques for developing, characterizing, and benchmarking quantum-HPC applications and middleware systems. This requires a better understanding of interaction, coupling, and common execution patterns between quantum and classical workload tasks and components. This paper identifies six quantum-HPC execution motifs---recurring execution patterns characterized by distinct coupling and interaction modes. These motifs provide the basis for a suite of quantum mini-apps - simplified application prototypes that encapsulate essential characteristics of production systems. To support these developments, we introduce a mini-app framework that offers the necessary abstractions for creating and executing mini-apps across heterogeneous quantum-HPC infrastructure, making it a valuable tool for performance characterizations and middleware development.},
+booktitle = {Proceedings of the 2024 Workshop on High Performance and Quantum Computing Integration},
+pages = {11–18},
+numpages = {8},
+keywords = {quantum computing, HPC, mini-app},
+location = {Pisa, Italy},
+series = {HPQCI '24}
+}
+
+@proceedings{10.1145/3578178,
+title = {HPCAsia '23: Proceedings of the International Conference on High Performance Computing in Asia-Pacific Region},
+year = {2023},
+isbn = {9781450398053},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@inproceedings{10.1109/ISCA45697.2020.00025,
+author = {Wang, Moyang and Ta, Tuan and Cheng, Lin and Batten, Christopher},
+title = {Efficiently supporting dynamic task parallelism on heterogeneous cache-coherent systems},
+year = {2020},
+isbn = {9781728146614},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ISCA45697.2020.00025},
+doi = {10.1109/ISCA45697.2020.00025},
+abstract = {Manycore processors, with tens to hundreds of tiny cores but no hardware-based cache coherence, can offer tremendous peak throughput on highly parallel programs while being complexity and energy efficient. Manycore processors can be combined with a few high-performance big cores for executing operating systems, legacy code, and serial regions. These systems use heterogeneous cache coherence (HCC) with hardware-based cache coherence between big cores and software-centric cache coherence between tiny cores. Unfortunately, programming these heterogeneous cache-coherent systems to enable collaborative execution is challenging, especially when considering dynamic task parallelism. This paper seeks to address this challenge using a combination of light-weight software and hardware techniques. We provide a detailed description of how to implement a work-stealing runtime to enable dynamic task parallelism on heterogeneous cache-coherent systems. We also propose direct task stealing (DTS), a new technique based on user-level interrupts to bypass the memory system and thus improve the performance and energy efficiency of work stealing. Our results demonstrate that executing dynamic task-parallel applications on a 64-core system (4 big, 60 tiny) with complexity-effective HCC and DTS can achieve: 7x speedup over a single big core; 1.4x speedup over an area-equivalent eight big-core system with hardware-based cache coherence; and 21\% better performance and similar energy efficiency compared to a 64-core system (4 big, 60 tiny) with full-system hardware-based cache coherence.},
+booktitle = {Proceedings of the ACM/IEEE 47th Annual International Symposium on Computer Architecture},
+pages = {173–186},
+numpages = {14},
+location = {Virtual Event},
+series = {ISCA '20}
+}
+
+@inproceedings{10.1145/3387514.3405876,
+author = {Gong, Junzhi and Li, Yuliang and Anwer, Bilal and Shaikh, Aman and Yu, Minlan},
+title = {Microscope: Queue-based Performance Diagnosis for Network Functions},
+year = {2020},
+isbn = {9781450379557},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3387514.3405876},
+doi = {10.1145/3387514.3405876},
+abstract = {By moving monolithic network appliances to software running on commodity hardware, network function virtualization allows flexible resource sharing among network functions and achieves scalability with low cost. However, due to resource contention, network functions can suffer from performance problems that are hard to diagnose. In particular, when many flows traverse a complex topology of NF instances, it is hard to pinpoint root causes for a flow experiencing performance issues such as low throughput or high latency. Simply maintaining resource counters at individual NFs is not sufficient since the effect of resource contention can propagate across NFs and over time. In this paper, we introduce Microscope, a performance diagnosis tool, for network functions that leverages queuing information at NFs to identify the root causes (i.e., resources, NFs, traffic patterns of flows etc.). Our evaluation on realistic NF chains and traffic shows that we can correctly capture root causes behind 89.7\% of performance impairments, up to 2.5 times more than the state-of-the-art tools with low overhead.},
+booktitle = {Proceedings of the Annual Conference of the ACM Special Interest Group on Data Communication on the Applications, Technologies, Architectures, and Protocols for Computer Communication},
+pages = {390–403},
+numpages = {14},
+keywords = {NFV, diagnosis, performance},
+location = {Virtual Event, USA},
+series = {SIGCOMM '20}
+}
+
+@inproceedings{10.1145/3746265.3759666,
+author = {Zhu, Chenyang and Zhang, Xing and Sun, Yuyang and Chang, Ching-Chun and Echizen, Isao},
+title = {AnimeDL-2M: Million-Scale AI-Generated Anime Image Detection and Localization in Diffusion Era},
+year = {2025},
+isbn = {9798400720475},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746265.3759666},
+doi = {10.1145/3746265.3759666},
+abstract = {Recent advances in image generation, particularly diffusion models, have significantly lowered the barrier for creating sophisticated forgeries, making image manipulation detection and localization (IMDL) increasingly challenging. While prior work in IMDL has focused largely on natural images, the anime domain remains underexplored-despite its growing vulnerability to AI-generated forgeries. Misrepresentations of AI-generated images as hand-drawn artwork, copyright violations, and inappropriate content modifications pose serious threats to the anime community and industry. To address this gap, we propose AnimeDL-2M, the first large-scale benchmark for anime IMDL with comprehensive annotations. which comprises over two million images including real, partially manipulated, and fully AI-generated samples. Experiments indicate that models trained on existing IMDL datasets of natural images perform poorly when applied to anime images, highlighting a clear domain gap between anime and natural images. To better handle IMDL tasks in anime domain, we further propose AniXplore, a novel model tailored to the visual characteristics of anime imagery. Extensive evaluations demonstrate that AniXplore achieves superior performance compared to existing methods. Dataset and code can be found in https://github.com/AnimeDL-2M/AnimeDL-2M},
+booktitle = {Proceedings of the 1st on Deepfake Forensics Workshop: Detection, Attribution, Recognition, and Adversarial Challenges in the Era of AI-Generated Media},
+pages = {45–54},
+numpages = {10},
+keywords = {copyright protection, generative ai, image manipulation detection and localization, synthetic anime dataset and benchmark},
+location = {Dublin, Ireland},
+series = {DFF '25}
+}
+
+@proceedings{10.1145/3579990,
+title = {CGO '23: Proceedings of the 21st ACM/IEEE International Symposium on Code Generation and Optimization},
+year = {2023},
+isbn = {9798400701016},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 21st ACM/IEEE International Symposium on Code Generation and Optimization (CGO ’23), and to Montreal. After two years of virtual CGO, we are finally back in person!   CGO provides a premier venue to bring together researchers and practitioners working at the interface of hardware and software on a wide range of optimization and code generation techniques and related issues. The conference spans the spectrum from purely static to fully dynamic approaches, and from pure software-based methods to specific architectural features and support for code generation and optimization.},
+location = {Montr{\'e}al, QC, Canada}
+}
+
+@proceedings{10.1145/3698062,
+title = {WSSE '24: Proceedings of the 2024 The 6th World Symposium on Software Engineering (WSSE)},
+year = {2024},
+isbn = {9798400717086},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Kyoto, Japan}
+}
+
+@inproceedings{10.1145/3611659.3615718,
+author = {Yu, Zhongyuan and Zeidler, Daniel and Victor, Victor and Mcginity, Matthew},
+title = {Dynascape : Immersive Authoring of Real-World Dynamic Scenes with Spatially Tracked RGB-D Videos},
+year = {2023},
+isbn = {9798400703287},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3611659.3615718},
+doi = {10.1145/3611659.3615718},
+abstract = {In this paper, we present Dynascape, an immersive approach to the composition and playback of dynamic real-world scenes in mixed and virtual reality. We use spatially tracked RGB-D cameras to capture point cloud representations of arbitrary dynamic real-world scenes. Dynascape provides a suite of tools for spatial and temporal editing and composition of such scenes, as well as fine control over their visual appearance. We also explore strategies for spatiotemporal navigation and different tools for the in situ authoring and viewing of mixed and virtual reality scenes. Dynascape is intended as a research platform for exploring the creative potential of dynamic point clouds captured with mobile, tracked RGB-D cameras. We believe our work represents a first attempt to author and playback spatially tracked RGB-D video in an immersive environment, and opens up new possibilities for involving dynamic 3D scenes in virtual space.},
+booktitle = {Proceedings of the 29th ACM Symposium on Virtual Reality Software and Technology},
+articleno = {10},
+numpages = {12},
+keywords = {Data Visualization, Human Computer Interaction, Immersive Authoring},
+location = {Christchurch, New Zealand},
+series = {VRST '23}
+}
+
+@proceedings{10.1145/3723498,
+editor = {Johanna Pirker, Fares Kayali, Katta Spiel, Sabine Harrer, Ahmed Khalifa and Gabriella Barros},
+title = {FDG '25: Proceedings of the 20th International Conference on the Foundations of Digital Games},
+year = {2025},
+isbn = {9798400718564},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Vienna \&amp; Graz, Austria}
+}
+
+@proceedings{10.1145/3648050,
+title = {AIMSCM '23: Proceedings of the 2023 International Conference on AI and Metaverse in Supply Chain Management},
+year = {2023},
+isbn = {9798400708251},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bhubaneswar, India}
+}
+
+@proceedings{10.1145/3789859,
+title = {ICEEL '25: Proceedings of the 2025 9th International Conference on Education and E-Learning},
+year = {2025},
+isbn = {9798400722356},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tokyo, Japan}
+}
+
+@inproceedings{10.1145/3743093.3771013,
+author = {Zhang, Hong and Duan, Zhongjie and Wang, Xingjun and Chen, Yingda and Zhang, Yu},
+title = {EliGen: Entity-Level Controlled Image Generation with Regional Attention},
+year = {2025},
+isbn = {9798400720055},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3743093.3771013},
+doi = {10.1145/3743093.3771013},
+abstract = {Recent advancements in diffusion models have significantly advanced text-to-image generation, yet global text prompts alone remain insufficient for achieving fine-grained control over individual entities within an image. To address this limitation, we present EliGen, a novel framework for Entity-level controlled image Generation. Firstly, we put forward regional attention, a mechanism for diffusion transformers that requires no additional structures, seamlessly integrating entity prompts and arbitrary-shaped spatial masks. By contributing a high-quality dataset with fine-grained spatial and semantic entity-level annotations, we train EliGen to achieve robust and accurate entity-level manipulation, surpassing existing methods in both spatial precision and image quality. Additionally, we propose an inpainting fusion pipeline, extending EliGen’s capabilities to multi-entity image inpainting tasks. We further demonstrate EliGen’s flexibility by integrating it with other open-source models such as IP-Adapter, In-Context LoRA and MLLM, unlocking new creative possibilities. The source code, model, and dataset will be published.},
+booktitle = {Proceedings of the 7th ACM International Conference on Multimedia in Asia},
+articleno = {67},
+numpages = {7},
+keywords = {Entity, Controlled Image Generation, Regional Attention, Diffusion Transformer},
+location = {Kuala Lumpur, Malaysia},
+series = {MMAsia '25}
+}
+
+@proceedings{10.1145/3663547,
+editor = {Shaun Kane, Kristen Shinohara, Cynthia Bennett and Martez Mott},
+title = {ASSETS '25: Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility},
+year = {2025},
+isbn = {9798400706769},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Denver, Colorado, USA}
+}
+
+@proceedings{10.1109/3656337,
+title = {ASPDAC '20: Proceedings of the 25th Asia and South Pacific Design Automation Conference},
+year = {2020},
+isbn = {9781728141237},
+publisher = {IEEE Press},
+abstract = {Since 1995, ASP-DAC has been served as a great platform for researchers, academics, industrial participants and students to exchange and share their ideas and the latest advanced technologies on LSI design and design automation areas.},
+location = {Beijing, China}
+}
+
+@inproceedings{10.1145/3676641.3716020,
+author = {Hetterich, Lorenz and Thomas, Fabian and Gerlach, Lukas and Zhang, Ruiyi and Bernsdorf, Nils and Ebert, Eduard and Schwarz, Michael},
+title = {ShadowLoad: Injecting State into Hardware Prefetchers},
+year = {2025},
+isbn = {9798400710797},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3676641.3716020},
+doi = {10.1145/3676641.3716020},
+abstract = {Hardware prefetchers are an optimization in modern CPUs that predict memory accesses and preemptively load the corresponding value into the cache. Previous work showed that the internal state of hardware prefetchers can act as a side channel, leaking information across security boundaries such as processes, user and kernel space, and even trusted execution environments.In this paper, we present ShadowLoad, a new attack primitive to bring inaccessible victim data into the cache by injecting state into the hardware prefetcher. ShadowLoad relies on the inner workings of the hardware stride prefetchers, which we automatically reverse-engineer using our tool StrideRE. We illustrate how ShadowLoad extends the attack surface of existing microarchitectural attacks such as Meltdown and software-based power analysis attacks like Collide+Power and how it can partially bypass L1TF mitigations on clouds, such as AWS. We further demonstrate FetchProbe, a stride prefetcher side-channel attack leaking offsets of memory accesses with sub-cache-line granularity, extending previous work on control-flow leakage. We demonstrate FetchProbe on the side-channel hardened Base64 implementation of WolfSSL, showing that even real-world side-channel-hardened implementations can be attacked with our new attack.},
+booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+pages = {1060–1075},
+numpages = {16},
+keywords = {microarchitecture, prefetcher, side channel},
+location = {Rotterdam, Netherlands},
+series = {ASPLOS '25}
+}
+
+@inproceedings{10.1145/3696348.3696860,
+author = {Saran, Nitika and Amir, Daniel and Wilson, Tegan and Kleinberg, Robert and Shrivastav, Vishal and Weatherspoon, Hakim},
+title = {Semi-Oblivious Reconfigurable Datacenter Networks},
+year = {2024},
+isbn = {9798400712722},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3696348.3696860},
+doi = {10.1145/3696348.3696860},
+abstract = {Reconfigurable datacenter networks use fast optical circuit switches to provide high bandwidths at low cost, therefore emerging as a compelling alternative to packet switching. These switches offer micro- and nano-second reconfiguration, and reacting to demand at this time scale is infeasible. Proposed designs have therefore largely been oblivious, supporting arbitrary traffic patterns. However, this imposes a fundamental latency-throughput tradeoff that significantly limits the benefits of these switches.In this paper, we illustrate the feasibility of semi-oblivious reconfigurable datacenter networks that periodically adapt to large-scale structural patterns in traffic. We argue that such patterns are predictable in modern datacenters, that optimizing for them can provide latency-throughput scaling superior to oblivious designs, and that existing fast circuit-switched technologies support coarse-grained flexibility to adapt to these patterns.},
+booktitle = {Proceedings of the 23rd ACM Workshop on Hot Topics in Networks},
+pages = {150–158},
+numpages = {9},
+keywords = {Datacenter Networks, Optical Switches},
+location = {Irvine, CA, USA},
+series = {HotNets '24}
+}
+
+@proceedings{10.1145/3749893,
+editor = {Juergen Hagler, Margarita K{\"o}hl, Philippe Pasquier, Philipp Wintersberger, Birgitta Hosea, June Kim and Martin Kocur},
+title = {Expanded '25: Proceedings of the Conference on Animation and Interactive Art},
+year = {2025},
+isbn = {9798400715327},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Linz, Austria}
+}
+
+@proceedings{10.1145/3629479,
+editor = {Edna Dias Canedo, Daniel de Paula Porto, F{\'a}bio L{\'u}cio Lopes Mendon{\c c}a, Rafael Tim{\'o}teo de Sousa J{\'u}nior, Monalessa Perini Barcellos, Ismayle Sousa Santos, Sheila Reinehr, Sergio Soares, Uir{\'a} Kulesza, {\'E}rica Ferreira de Souza, Adriano Albuquerque, Carla Bezerra, Rodrigo Santos, Alessandro Garcia, Simone Dornelas Costa and Adolfo Gustavo Serra Seca Neto},
+title = {SBQS '23: Proceedings of the XXII Brazilian Symposium on Software Quality},
+year = {2023},
+isbn = {9798400707865},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bras\'{\i}lia, Brazil}
+}
+

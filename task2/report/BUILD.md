@@ -1,8 +1,11 @@
-# Task 2 LaTeX draft
+# Build current outputs
 
-`main.tex` and `references.bib` are an editable **scaffold**. It still contains red `EVIDENCE PENDING` markers. Do not submit it as a finished report or convert placeholder text into claims.
+From the repository root:
 
-In Overleaf, create a project with these two files and compile `main.tex` using pdfLaTeX and BibTeX. Locally: `pdflatex main.tex`, `bibtex main`, then `pdflatex main.tex` twice. This source compiled to a four-page preview on 15 October 2026, with no unresolved citations; no actual Group B search result is present.
+1. `python scripts/import_shared.py` rebuilds the original import and resets the work queue. Do not run this over unsaved reviewer edits. Preserve independent vote files separately and reapply them by record ID.
+2. `python scripts/advance_review.py` reproduces this checkpoint's bounded first-review events, source checks and extraction/QA drafts. It is not a general automated full-text screener.
+3. `python scripts/build_checkpoint.py` rebuilds report sources and workbook input from registers.
+4. In `task2/report`, run `pdflatex main.tex`, `bibtex main`, then `pdflatex main.tex` twice; copy main.pdf to report.pdf. Run `pdflatex prisma_flow.tex` for the standalone flow.
+5. The saved `scripts/build_workbook.mjs` uses the Codex bundled artifact runtime and `task2/tracker/workbook_input.json`. Set `OS_CEP_ROOT` to this repository root before running it from a temporary directory linked to the bundled node modules. Preserve the required artifact-tool dependency.
 
-Populate methods and results only from `evidence/` records. The submitted protocol is in `task1/`. Include exact run strings, source database counts, dedup/screening reasons, PRISMA, study list, Q1–Q10 scores, and data extraction through guideline §14 when verified. The final CEP report later adds guideline §§15–22.
-
+After changes, verify counts, source anchors, references, PDF layout, workbook formulas and image previews. The report is explicitly interim until final screening and independent review are closed.

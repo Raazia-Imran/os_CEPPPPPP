@@ -1,0 +1,244 @@
+@proceedings{10.1145/3766557,
+title = {ETAIC '25: Proceedings of the 2025 International Conference on Educational Technology and Artificial Intelligence},
+year = {2025},
+isbn = {9798400721168},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Wuhan, China}
+}
+
+@inproceedings{10.1145/3773078.3831925,
+author = {Qu, Jiaxing and Chen, Yilin and Hou, Junpeng and Rao, Jinfeng and Gudmundsson, Olafur and Xiao, Sai and Duan, Huizhong},
+title = {MESH: Scaling Up Retrieval with Heterogeneous Content Unification},
+year = {2026},
+isbn = {9798400722844},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3773078.3831925},
+doi = {10.1145/3773078.3831925},
+abstract = {Optimizing large-scale retrieval hinges on the ability to efficiently surface candidates across diverse content tiers. However, to capture segments such as fresh and long-tail content, modern systems typically resort to a fragmented “zoo” of specialized retrieval models. This operational complexity is attributed to a fundamental challenge in heterogeneous retrieval systems — the Scaling Bias of Heterogeneity — where model capacity gains do not apply equally across diverse content tiers. To bridge this gap, we propose MESH as a unified retrieval scaling framework that mitigates this bias through a modularized architecture integrated with gated bias correction. By partitioning the feature space into independent domains, MESH enforces a structural inductive bias that reduces interference between sparse-item signals and high-frequency engagement features. This protected gradient path leads to improved scaling behavior for sparse content, empirically validated by a 14 {\texttimes} improvement in the power-law scaling exponent for fresh items. In online evaluations on Pinterest’s Related Pins platform — a billion-scale item-to-item recommendation system — these improvements translate into a +5.5\% lift in fresh-item repins, alongside with 55\% improvement in funnel efficiency and +0.46\% improvement in user retention. Finally, our asynchronous serving strategy ensures production viability by delivering a 2.87 {\texttimes} improvement in system throughput. Our findings suggest MESH as a promising paradigm for consolidating fragmented retrieval infrastructures into more scalable and ecosystem-aware backbones.},
+booktitle = {Proceedings of the 20th ACM Conference on Recommender Systems},
+pages = {1298–1306},
+numpages = {9},
+keywords = {Recommender systems, Cold-start, Scaling Law},
+location = {Minneapolis, USA},
+series = {RecSys '26}
+}
+
+@article{10.1145/3811327,
+author = {Tang, Xuan and Huang, Kemeng and Bernstein, Gilbert and Li, Minchen and Li, Tzumao},
+title = {YASPS: A Symbolic Framework for Extensible, High-Performance IPC Simulation},
+year = {2026},
+issue_date = {July 2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {45},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3811327},
+doi = {10.1145/3811327},
+abstract = {Incremental Potential Contact (IPC) has emerged as a robust and unifying formulation for contact-rich physical simulation by casting elasticity and collision handling as a single energy minimization problem. Achieving high performance, however, typically requires heavily specialized implementations that hard-code assumptions about energies, primitive types, and parameterizations, creating a major barrier to extensibility. Adding new energies or alternative parameterizations often requires re-deriving first and second-order derivatives, and implementing new assembly logic for the global Hessian and gradient. This challenge is further exacerbated by collision energies, where the same energy definition is often applied to mixed parameterizations, which can lead to a combinatorial explosion of parameterization-specific derivative and assembly cases.In this paper we introduce YASPS, a framework for physical simulation that resolves this limitation by making structural relationships explicit in a differentiable representation. YASPS introduces two relational operators, JOIN and UNION, which encode connectivity and heterogeneous parameterizations directly in the symbolic computation graph. Using symbolic differentiation over these operators, YASPS automatically derives local derivatives, and determines the induced sparsity and block structure of global gradients and Hessians from the same description while avoiding any code explosion induced by mixed-parameterizations.Targeting IPC workloads, YASPS compiles the resulting symbolic graphs into GPU kernels for local energy evaluation, derivative computation, and block-sparse matrix assembly, and solves the resulting Newton systems using a GPU-based iterative solver. This approach achieves performance competitive with state-of-the-art IPC implementations while enabling new energies and parameterizations to be added through localized symbolic definitions, without hand-written derivative or assembly code.},
+journal = {ACM Trans. Graph.},
+month = jul,
+articleno = {142},
+numpages = {35},
+keywords = {simulation, incremental potential contact, symbolic differentiation, compiler}
+}
+
+@proceedings{10.1145/3757749,
+title = {ICCMT '25: Proceedings of the 2025 2nd International Conference on Computer and Multimedia Technology},
+year = {2025},
+isbn = {9798400713347},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sanming, China}
+}
+
+@proceedings{10.1145/3817395,
+title = {BDIM '26: Proceedings of the 2026 International Conference on Big Data and Intelligent Manufacturing},
+year = {2026},
+isbn = {9798400722493},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Jinan, China}
+}
+
+@proceedings{10.1145/3733799,
+title = {AISec '25: Proceedings of the 18th ACM Workshop on Artificial Intelligence and Security},
+year = {2025},
+isbn = {9798400718953},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Taipei, Taiwan}
+}
+
+@proceedings{10.1145/3796028,
+title = {ICSTPA '25: Proceedings of the 2025 2nd International Conference on Sports Technology and Performance Analysis},
+year = {2025},
+isbn = {9798400719493},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Guangzhou, China}
+}
+
+@proceedings{10.1145/3801487,
+editor = {Hubertus Franke, Maurizio Palesi, Rub{\'e}n Salvador and Estela Suarez},
+title = {CF '26: Proceedings of the 23rd ACM International Conference on Computing Frontiers},
+year = {2026},
+isbn = {9798400725685},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Catania, Italy}
+}
+
+@proceedings{10.1145/3659914,
+title = {PASC '24: Proceedings of the Platform for Advanced Scientific Computing Conference},
+year = {2024},
+isbn = {9798400706394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The PASC Conference series is an international and interdisciplinary platform for the exchange of knowledge in scientific computing and computational science with a strong focus on methods, tools, algorithms, workflows, application challenges, and novel techniques in the context of scientific usage of high-performance computing.},
+location = {Zurich, Switzerland}
+}
+
+@proceedings{10.1145/3676151,
+title = {ICPE '25: Proceedings of the 16th ACM/SPEC International Conference on Performance Engineering},
+year = {2025},
+isbn = {9798400710735},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 16th ACM/SPEC International Conference of Performance Engineering (ICPE), held in Toronto, Canada, from May 5, 2025, to May 9, 2025. ICPE serves as the premier global forum for showcasing and discussing new concepts, innovations, trends, and experiences in performance engineering.On May 5 and 6, the first two days of the conference, we scheduled five workshops and two tutorials. The workshops cover important topics in performance engineering today. These include cloud computing (HotCloudPerf 2025) and its benchmarking (BID 2025), the benchmarking and load testing of software systems (LTB 2025), performance engineering in the Large Language Models (AIPerfLLM 2025), and the application of performance engineering in both educational and practical contexts (WEPPE 2025). We thank the workshop chairs, Luca Trani and Marios Fokaefs, for arranging a great workshop agenda. On May 5, we have a tutorial on serverless computing entitled "Serverless Orchestration on the Edge-Cloud Continuum: Challenges and Solutions," authored by Reza Farahing and Radu Prodan, while May 6 is dedicated to energy-efficiency benchmarking with the tutorial conducted by Maximilian Meissner, Klaus-Dieter Lange, Aaron Cragin, and Diego Esteves, called "Next Generation Energy-Efficiency Benchmarking - Reliable and Reproducible Efficiency Testing in a Diverse IT-Landscape" and to a hands-on session with the Kieker 2 Observability Framework, authored by Shinhyung Yang, David Georg Reichelt, Reiner Jung, Marcel Hansson, and Wilhelm Hasselbring. We express our gratitude to the tutorial chairs, Vittoria de Nitto Person{\`e} and Cristina Abad, for organizing such engaging tutorial session.The main conference occurs from May 7 to May 9, with each day starting with a keynote that we are excited to welcome. Lizy John opens May 7 from the University of Texas (USA), who shares insights on AI for Performance Engineering and Performance Engineering for AI, while we host Ahmed Hassan from Queen's University (Canada) on May 8, who emphasizes the importance of software performance engineering on Foundation Models. Marc Brooker from AWS, USA, presents different approaches to performance engineering during bad times, such as during and after overload and failures.The program features many research presentations spanning various tracks, including Research, Industry, Emerging Research, Artifacts, Data Challenges, Posters, and Demos. The Research track features 24 presentations, while the Industry track, chaired by Lishan Yang and Alex Podelko (a big thank you to both of them!), includes eight papers. This year, the main conference is enriched by five presentations from the Industry Presentation Track, a showcase for industrial contributors to share their insights and experiences on performance engineering.We accepted 3 submissions in the Emerging Research track and 2 papers in the Artifact Evaluation, Data Challenge, Poster and Demo tracks, respectively. Thank you, Ana Lucia Varbanescu and Y.C. Tay, for your invaluable expertise in guiding the Emerging Research track. We appreciate the meticulous work of Nikolas Herbst and S{\"o}ren Henning to ensure the quality and rigor of the contributions to the Artifact Evaluation track, as well as the efforts of Emilio Incerto for the Poster and Demo track, and Andr{\'e} Bauer and Naser Ezzati-Jivan for the Data Challenge track. ICPE25 features 3 presentations from the Journal First track, perfectly organized by Raffaela Mirandola and Weiyi (Ian) Shang.This year conference recognizes three of the pioneers of software performance engineering, Connie Smith, Dorina Petriu, Murray Woodside. Thank you Antinisca Di Marco for organizing a panel to hear their views on the past, present and future of software performance.We want to express our gratitude to the rest of the organizing committee for their hard work in organizing this edition of ICPE. Big thanks to our Award Chairs, William Knottenbelt and Diwakar Krishnamurthy, to the Publicity and Social Media Chairs: Alim Gias, Joydeep Mukherjee, Nasim Beigi Mohammadi, and Guocong Quan, and to the Finance and Sponsorship Chairs, Hamzeh Khazaei and Zhen Ming (Jack) Jiang.A special thank you goes to the Local and Social Events and Web Chairs, Hung Viet Pham, Arik Sendorovich, Komal Sarda, and Hamza Hussain. We would also like to thank Zhenhao Li and Vincenzo Stoico for handling the registration and the proceedings of ICPE'25, respectively, with professionalism and care.We are truly grateful to SPEC and ACM, along with SIGSOFT and SIGMETRICS, for their support, as well as York University and Snowflake which support is crucial for the success of ICPE'25.We extend our thanks to all the authors who submitted their papers, as well as the program committees and the additional reviewers who contribute to making ICPE a leading venue for performance engineering. Finally, thank you to all ICPE'25 participants for making this event interactive, engaging, and inspiring for everyone involved. We trust that you will enjoy ICPE'25 and take advantage of the many interaction opportunities in the dedicated physical and virtual space of the conference.},
+location = {Toronto ON, Canada}
+}
+
+@inproceedings{10.1145/3589334.3645341,
+author = {Yuan, Jinliang and Wang, Shangguang and Li, Hongyu and Xu, Daliang and Li, Yuanchun and Xu, Mengwei and Liu, Xuanzhe},
+title = {Towards Energy-efficient Federated Learning via INT8-based Training on Mobile DSPs},
+year = {2024},
+isbn = {9798400701719},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3589334.3645341},
+doi = {10.1145/3589334.3645341},
+abstract = {AI is making the Web an even cooler place, but also introduces serious privacy risks due to the extensive user data collection. Federated learning (FL), as a privacy-preserving machine learning paradigm, enables mobile devices to collaboratively learn a shared prediction model while keeping all training data on devices. However, a key obstacle towards practical cross-device FL training is huge energy consumption, especially for lightweight mobile devices. In this work, we perform the first-of-its-kind analysis of improving FL performance through low-precision training with an energy-friendly Digital Signal Processor (DSP) on mobile devices. We first demonstrate that directly integrating the state-of-the-art INT8 (8-bit integer) training algorithm and classic FL protocols will significantly degrade the model accuracy. Moreover, we observe that there are still unavoidable frequent quantization operations on devices that cause extreme load stress on DSP-enabled INT8 training. To address the above challenges, we present Q-FedUpdate, an FL framework that efficiently preserves model accuracy with ultra-low energy consumption. It maintains a global full-precision model and allows the tiny model updates to be continuously accumulated, instead of being erased by the quantization. Furthermore, it introduces pipelining technology to parallel CPU-based quantization and DSP-enabled training, which reduces the floating-point computation overhead of frequent data quantization. Extensive experiments show that Q-FedUpdate can effectively reduce the on-device energy consumption by 21{\texttimes}, and accelerate the FL convergence by 6.1{\texttimes} with only 2\% accuracy loss.},
+booktitle = {Proceedings of the ACM Web Conference 2024},
+pages = {2786–2794},
+numpages = {9},
+keywords = {energy efficiency, federated learning, mobile computing},
+location = {Singapore, Singapore},
+series = {WWW '24}
+}
+
+@inproceedings{10.1145/3712676.3719266,
+author = {Rudolph, Michael and Rizk, Amr},
+title = {Learned Compression in Adaptive Point Cloud Streaming: Opportunities, Challenges and Limitations},
+year = {2025},
+isbn = {9798400714672},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3712676.3719266},
+doi = {10.1145/3712676.3719266},
+abstract = {Learned point cloud compression methods have achieved rate-distortion performance, which is comparable to or higher than conventional approaches. However, this often comes at the cost of high hardware requirements and thus low throughput during encoding and decoding. In this paper, we present an adaptive bitrate point cloud streaming system utilizing learned compression. While other learned compression techniques require to split geometry and attributes, resulting in high encoding latency, we deploy a unified model to handle both modalities together, which drastically reduces the coding complexity. We explore the capabilities of the learned encoder to derive multiple quality representations with only re-running a fraction of the encoding steps, making it a suitable fit for adaptive bitrate streaming. Furthermore, we ablate the encoding latency of each component in the encoder and decoder stack, identifying bottlenecks in the process.},
+booktitle = {Proceedings of the 16th ACM Multimedia Systems Conference},
+pages = {328–334},
+numpages = {7},
+keywords = {point cloud streaming, adaptive bitrate streaming, learned point cloud compression},
+location = {Stellenbosch, South Africa},
+series = {MMSys '25}
+}
+
+@proceedings{10.1145/3793828,
+editor = {Ricardo S. Alonso Rinc{\'o}n, Gaetano C. La Delfa and Javier Prieto Tejedo},
+title = {NOUS '26: Proceedings of the 2026 International conference on Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS) solutions for Europe's Next-Gen Cloud Infrastructure},
+year = {2026},
+isbn = {9798400723384},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Virtual Event, Spain}
+}
+
+@inproceedings{10.1145/3746027.3754475,
+author = {Iskhakov, Anvar and Kovalev, Viktor and Naumov, Vladislav and Makarov, Ilya},
+title = {Real-Time SSL Sperm Whale Click Detector: Interactive Web Demo},
+year = {2025},
+isbn = {9798400720352},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746027.3754475},
+doi = {10.1145/3746027.3754475},
+abstract = {Reliable, real-time detection of sperm-whale clicks is essential yet difficult in noisy ocean audio streams. We present the first browser-based pipeline that combines self-supervised embeddings with a BiLSTM to label clicks at millisecond resolution. The system attains 99\% F1 on the Watkins benchmark, reduces false alarms by 60\% against the best published baseline, and analyses one-second segments in ~40 ms on a consumer GPU. An interactive UI overlays multi-algorithm detections on waveform and spectrogram views with drag-zoom and live streaming. Code, pretrained weights and the public demo are released to advance bioacoustic event detection.},
+booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+pages = {13519–13521},
+numpages = {3},
+keywords = {bioacoustics, event detection, interactive demo, self-supervised learning, web interface},
+location = {Dublin, Ireland},
+series = {MM '25}
+}
+
+@proceedings{10.1145/3805622,
+editor = {Stevan Rudinac, Helen (Zi) Huang, Marcel Worring, Lucia Vadicamo, Xirong Li, Pascal Mettes and Lizi Liao},
+title = {ICMR '26: Proceedings of the 2026 International Conference on Multimedia Retrieval},
+year = {2026},
+isbn = {9798400726170},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Amsterdam, The Netherlands}
+}
+
+@proceedings{10.1145/3805689,
+title = {FAccT '26: Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency},
+year = {2026},
+isbn = {9798400725968},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Montreal, QC, Canada}
+}
+
+@proceedings{10.1145/3628454,
+title = {IAIT '23: Proceedings of the 13th International Conference on Advances in Information Technology},
+year = {2023},
+isbn = {9798400708497},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bangkok, Thailand}
+}
+
+@book{10.1145/3731975,
+author = {Dubhashi, Devdatt and Panconesi, Alessandro and Schneider, Gerardo},
+title = {Turing’s Children: How His Ideas Have Shaped the Modern World},
+year = {2026},
+isbn = {9798400731754},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {71},
+abstract = {This book explores the profound legacy of Alan Turing, and how his five great ideas have been developed by the winners of the Turing Prize to shape the digital world we live in today. These five groundbreaking concepts–universal computability and insolvability, cryptography, electronic digital computers and software, artificial intelligence (AI), and computational biology–serve as the pillars of the narrative.Turing’s Children makes the complex ideas in the work of the Turing Prize winners accessible to a broad audience. It traces the evolution of these ideas from abstract mathematical principles to their real-world applications, demonstrating their influence on everyday life. Readers will discover how Turing’s legacy is woven into the fabric of modern technology: from the smartphones in our pockets and secure online banking, to the development of life-saving drugs and the conversational abilities of AI systems like ChatGPT.The book weaves together historical anecdotes, profiles of pioneering scientists, and vivid examples of current innovations. It offers a comprehensive view of how Turing’s vision continues to inspire breakthroughs across science and technology. Turing’s Children reveals the enduring relevance of Turing’s ideas and the ongoing quest to push the boundaries of what machines–and humanity–can achieve.Advance Praise for Turing’s Children“In Turing’s Children, the authors offer a bird’s eye view of computer science in a compact and accessible way… the lay reader will have a broad picture as computer science and a field of science and engineering.” – Moshe Vardi, the Karen Ostrum George Distinguished Service Professor in Computational Engineering at Rice University and former Editor in Chief of the Communications of the ACM“An engrossing tour de force of the greatest ideas in modern computer science.” – Prabhakar Raghavan, Chief Technologist, Google}
+}
+
+@proceedings{10.1145/3671127,
+title = {BuildSys '24: Proceedings of the 11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+year = {2024},
+isbn = {9798400707063},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hangzhou, China}
+}
+
+@article{10.1109/TNET.2021.3087221,
+author = {Han, Zhenhua and Tan, Haisheng and Jiang, Shaofeng H.-C. and Cao, Wanli and Fu, Xiaoming and Zhang, Lan and Lau, Francis C. M.},
+title = {SPIN: BSP Job Scheduling With Placement-Sensitive Execution},
+year = {2021},
+issue_date = {Oct. 2021},
+publisher = {IEEE Press},
+volume = {29},
+number = {5},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2021.3087221},
+doi = {10.1109/TNET.2021.3087221},
+abstract = {The Bulk Synchronous Parallel (BSP) paradigm is gaining tremendous importance recently due to the popularity of computations as distributed machine learning and graph computation. In a typical BSP job, multiple workers concurrently conduct iterative computations, where frequent synchronization is required. Therefore, the workers should be scheduled simultaneously and their placement on different computing devices could significantly affect the performance. Simply retrofitting a traditional scheduling discipline will likely not yield the desired performance due to the unique characteristics of BSP jobs. In this work, we derive &lt;monospace&gt;SPIN&lt;/monospace&gt;, a novel scheduling designed for BSP jobs with placement-sensitive execution to minimize the makespan of all jobs. We first prove the problem approximation hardness and then present how &lt;monospace&gt;SPIN&lt;/monospace&gt; solves it with a rounding-based randomized approximation approach. Our analysis indicates &lt;monospace&gt;SPIN&lt;/monospace&gt; achieves a good performance guarantee efficiently. Moreover, &lt;monospace&gt;SPIN&lt;/monospace&gt; is robust against misestimation of job execution time by theoretically bounding its negative impact. We implement &lt;monospace&gt;SPIN&lt;/monospace&gt; on a production-trace driven testbed with 40 GPUs. Our extensive experiments show that &lt;monospace&gt;SPIN&lt;/monospace&gt; can reduce the job makespan and the average job completion time by up to &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$3times $ &lt;/tex-math&gt;&lt;/inline-formula&gt; and &lt;inline-formula&gt; &lt;tex-math notation="LaTeX"&gt;$4.68times $ &lt;/tex-math&gt;&lt;/inline-formula&gt;, respectively. &lt;monospace&gt;SPIN&lt;/monospace&gt; also demonstrates better robustness to execution time misestimation compared with state-of-the-art heuristic baselines.},
+journal = {IEEE/ACM Trans. Netw.},
+month = jun,
+pages = {2267–2280},
+numpages = {14}
+}
+

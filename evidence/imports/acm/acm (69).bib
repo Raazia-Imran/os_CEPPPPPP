@@ -1,0 +1,262 @@
+@proceedings{10.1145/3575879,
+editor = {Nikitas N. Karanikolas, Christos Troussas, Michael Gr. Vassilakopoulos, Stefanos Kollias, Christos Douligeris and Ioannis Voyiatzis},
+title = {PCI '22: Proceedings of the 26th Pan-Hellenic Conference on Informatics},
+year = {2022},
+isbn = {9781450398541},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Athens, Greece}
+}
+
+@proceedings{10.1145/3600100,
+title = {BuildSys '23: Proceedings of the 10th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+year = {2023},
+isbn = {9798400702303},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Istanbul, Turkey}
+}
+
+@article{10.1145/3408298,
+author = {Chen, Xu and Yao, Jiangchao and Li, Maosen and Zhang, Ya and Wang, Yanfeng},
+title = {Decoupled Variational Embedding for Signed Directed Networks},
+year = {2020},
+issue_date = {February 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {15},
+number = {1},
+issn = {1559-1131},
+url = {https://doi.org/10.1145/3408298},
+doi = {10.1145/3408298},
+abstract = {Node representation learning for signed directed networks has received considerable attention in many real-world applications such as link sign prediction, node classification, and node recommendation. The challenge lies in how to adequately encode the complex topological information of the networks. Recent studies mainly focus on preserving the first-order network topology that indicates the closeness relationships of nodes. However, these methods generally fail to capture the high-order topology that indicates the local structures of nodes and serves as an essential characteristic of the network topology. In addition, for the first-order topology, the additional value of non-existent links is largely ignored. In this article, we propose to learn more representative node embeddings by simultaneously capturing the first-order and high-order topology in signed directed networks. In particular, we reformulate the representation learning problem on signed directed networks from a variational auto-encoding perspective and further develop a decoupled variational embedding (DVE) method. DVE leverages a specially designed auto-encoder structure to capture both the first-order and high-order topology of signed directed networks, and thus learns more representative node embeddings. Extensive experiments are conducted on three widely used real-world datasets. Comprehensive results on both link sign prediction and node recommendation task demonstrate the effectiveness of DVE. Qualitative results and analysis are also given to provide a better understanding of DVE.},
+journal = {ACM Trans. Web},
+month = oct,
+articleno = {3},
+numpages = {31},
+keywords = {signed directed networks, network embedding, graph convolution, Decoupled variational embedding}
+}
+
+@inproceedings{10.1145/3805622.3810574,
+author = {Li, Wenfeng and Wang, Ru and Xu, Fuyong and Yang, Guoshuai and Liu, Peiyu},
+title = {ESG-Rec: Enhancing Static-Graph Representations via Tri-view Contrastive Learning for Multimodal Recommendation},
+year = {2026},
+isbn = {9798400726170},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3805622.3810574},
+doi = {10.1145/3805622.3810574},
+abstract = {Multimodal recommendation systems increasingly adopt GNNs to perform message passing on the user–item interaction graph and content-based item graphs to learn user and item representations. However, existing methods that use static-graph GNNs in multimodal recommendation face two key limitations: (i) representation homogenization, where repeated aggregation on a fixed topology makes node embeddings overly similar and weakens personalized signals; and (ii) incomplete context modeling, where similarity-based item graphs mainly capture local pairwise resemblance but miss group- or scenario-level relations that are far apart in the similarity space. Together, these limitations reduce the quality of learned node representations on static graphs and lead to suboptimal recommendations. To alleviate these limitations, we propose ESG-Rec, a unified multi-view framework that constructs three complementary structural views: degree-aware structural diversification to preserve individualized collaborative signals, content-based semantic modeling to provide stable local relations, and group-level semantic modeling to capture higher-order contextual information. ESG-Rec further performs multi-view contrastive alignment to learn consistent representations across views. Extensive experiments on benchmark datasets demonstrate that ESG-Rec consistently improves recommendation performance over strong multimodal baselines and effectively mitigates the above two limitations.},
+booktitle = {Proceedings of the 2026 International Conference on Multimedia Retrieval},
+pages = {1194–1202},
+numpages = {9},
+keywords = {Multimodal Recommendation, Graph Neural Networks, Multi-View Representation Learning, Contrastive Learning},
+location = {Amsterdam, The Netherlands},
+series = {ICMR '26}
+}
+
+@proceedings{10.1145/3578357,
+title = {EUROSEC '23: Proceedings of the 16th European Workshop on System Security},
+year = {2023},
+isbn = {9798400700859},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rome, Italy}
+}
+
+@proceedings{10.1145/3821409,
+editor = {Torsten Kuhlen, Nuria Pelechano, Ludovic Hoyet, Katja Zibrek and Sandra Malpica},
+title = {SAP '26: Proceedings of the 2026 ACM Symposium on Applied Perception},
+year = {2026},
+isbn = {9798400727993},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rennes, France}
+}
+
+@inproceedings{10.1145/3445814.3446760,
+author = {Bl{\"o}cher, Marcel and Wang, Lin and Eugster, Patrick and Schmidt, Max},
+title = {Switches for HIRE: resource scheduling for data center in-network computing},
+year = {2021},
+isbn = {9781450383172},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3445814.3446760},
+doi = {10.1145/3445814.3446760},
+abstract = {The recent trend towards more programmable switching hardware in data centers opens up new possibilities for distributed applications to leverage in-network computing (INC). Literature so far has largely focused on individual application scenarios of INC, leaving aside the problem of coordinating usage of potentially scarce and heterogeneous switch resources among multiple INC scenarios, applications, and users. The traditional model of resource pools of isolated compute containers does not fit an INC-enabled data center.  This paper describes HIRE, a Holistic INC-aware Resource managEr which allows for server-local and INC resources to be coordinated in a unified manner. HIRE introduces a novel flexible resource (meta-)model to address heterogeneity, resource interchangeability, and non-linear resource requirements, and integrates dependencies between resources and locations in a unified cost model, cast as a min-cost max-flow problem. In absence of prior work, we compare HIRE against variants of state-of-the-art schedulers retrofitted to handle INC requests. Experiments with a workload trace of a 4000 machine cluster show that HIRE makes better use of INC resources by serving 8-30\% more INC requests, while at the same time reducing network detours by 20\%, and reducing tail placement latency by 50\%.},
+booktitle = {Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {268–285},
+numpages = {18},
+keywords = {scheduling, non-linear resource usage, in-network computing, heterogeneity, data center},
+location = {Virtual, USA},
+series = {ASPLOS '21}
+}
+
+@proceedings{10.1145/3584684,
+title = {ApPLIED 2023: Proceedings of the 5th workshop on Advanced tools, programming languages, and PLatforms for Implementing and Evaluating algorithms for Distributed systems},
+year = {2023},
+isbn = {9798400701283},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Orlando, FL, USA}
+}
+
+@proceedings{10.1145/3622758,
+title = {Onward! 2023: Proceedings of the 2023 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+year = {2023},
+isbn = {9798400703881},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 2023 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2023), the premier multidisciplinary conference focused on everything to do with programming and software, including processes, methods, languages, communities and applications. Onward! is more radical, more visionary, and more open than other conferences to ideas that are well-argued but not yet fully proven. We welcome different ways of thinking about, approaching, and reporting on programming language and software engineering research.    Onward! 2023 is co-located with SPLASH 2023, running from Sunday 22nd of October till Friday 27th of October, in Cascais, Portugal. We are delighted to have Felienne Hermans giving the Onward! keynote, on Wednesday 25th of October, on "Creating a learnable and inclusive programming language".    All papers and essays that lie here before you received at least three reviews, leading to a decision of accept, reject, or conditional accept. Authors of conditionally accepted papers were provided with explicit requirements for acceptance, and were carefully re-reviewed in the second phase. The essays track received six submissions, out of which four were accepted. The papers track accepted nine out of nineteen submissions.   We hope that the papers and essays in these proceedings will stimulate and challenge your thinking about programming and software engineering, and we are looking forward to many discussions at the conference.},
+location = {Cascais, Portugal}
+}
+
+@article{10.1145/3463911,
+author = {Zou, Yu and Awad, Amro and Lin, Mingjie},
+title = {DirectNVM: Hardware-accelerated NVMe SSDs for High-performance Embedded Computing},
+year = {2022},
+issue_date = {January 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {1},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3463911},
+doi = {10.1145/3463911},
+abstract = {With data-intensive artificial intelligence (AI) and machine learning (ML) applications rapidly surging, modern high-performance embedded systems, with heterogeneous computing resources, critically demand low-latency and high-bandwidth data communication. As such, the newly emerging NVMe (Non-Volatile Memory Express) protocol, with parallel queuing, access prioritization, and optimized I/O arbitration, starts to be widely adopted as a de facto fast I/O communication interface. However, effectively leveraging the potential of modern NVMe storage proves to be nontrivial and demands fine-grained control, high processing concurrency, and application-specific optimization. Fortunately, modern FPGA devices, capable of efficient parallel processing and application-specific programmability, readily meet the underlying physical layer requirements of the NVMe protocol, therefore providing unprecedented opportunities to implementing a rich-featured NVMe middleware to benefit modern high-performance embedded computing.In this article, we present how to rethink existing accessing mechanisms of NVMe storage and devise innovative hardware-assisted solutions to accelerating NVMe data access performance for the high-performance embedded computing system. Our key idea is to exploit the massively parallel I/O queuing capability, provided by the NVMe storage system, through leveraging FPGAs’ reconfigurability and native hardware computing power to operate transparently to the main processor. Specifically, our DirectNVM system aims at providing effective hardware constructs for facilitating high-performance and scalable userspace storage applications through (1) hardening all the essential NVMe driver functionalities, therefore avoiding expensive OS syscalls and enabling zero-copy data access from the application, (2) relying on hardware for the I/O communication control instead of relying on OS-level interrupts that can significantly reduce both total I/O latency and its variance, and (3) exposing cutting-edge and application-specific weighted-round-robin I/O traffic scheduling to the userspace.To validate our design methodology, we developed a complete DirectNVM system utilizing the Xilinx Zynq MPSoC architecture that incorporates a high-performance application processor (APU) equipped with DDR4 system memory and a hardened configurable PCIe Gen3 block in its programmable logic part. We then measured the storage bandwidth and I/O latency of both our DirectNVM system and a conventional OS-based system when executing the standard FIO benchmark suite&nbsp;[2]. Specifically, compared against the PetaLinux built-in kernel driver code running on a Zynq MPSoC, our DirectNVM has shown to achieve up to 18.4{\texttimes} higher throughput and up to 4.5{\texttimes} lower latency. To ensure the fairness of our performance comparison, we also measured our DirectNVM system against the Intel SPDK&nbsp;[26], a highly optimized userspace asynchronous NVMe I/O framework running on a X86 PC system. Our experiment results have shown that our DirectNVM, even running on a considerably less powerful embedded ARM processor than a full-scale AMD processor, achieved up to 2.2{\texttimes} higher throughput and 1.3{\texttimes} lower latency. Furthermore, by experimenting with a multi-threading test case, we have demonstrated that our DirectNVM’s weighted-round-robin scheduling can significantly optimize the bandwidth allocation between latency-constraint frontend applications and other backend applications in real-time systems. Finally, we have developed a theoretical framework of performance modeling with classic queuing theory that can quantitatively define the relationship between a system’s I/O performance and its I/O implementation.},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = feb,
+articleno = {9},
+numpages = {24},
+keywords = {NVMe, SSDs, FPGA, high-Throughput high-Performance computing}
+}
+
+@inproceedings{10.1145/3368826.3377917,
+author = {Kang, Seokwon and Choi, Kyunghwan and Park, Yongjun},
+title = {PreScaler: an efficient system-aware precision scaling framework on heterogeneous systems},
+year = {2020},
+isbn = {9781450370479},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3368826.3377917},
+doi = {10.1145/3368826.3377917},
+abstract = {Graphics processing units (GPUs) have been commonly utilized to accelerate multiple emerging applications, such as big data processing and machine learning. While GPUs are proven to be effective, approximate computing, to trade off performance with accuracy, is one of the most common solutions for further performance improvement. Precision scaling of originally high-precision values into lower-precision values has recently been the most widely used GPU-side approximation technique, including hardware-level half-precision support. Although several approaches to find optimal mixed-precision configuration of GPU-side kernels have been introduced, total program performance gain is often low because total execution time is the combination of data transfer, type conversion, and kernel execution. As a result, kernel-level scaling may incur high type-conversion overhead of the kernel input/output data. To address this problem, this paper proposes an automatic precision scaling framework called PreScaler that maximizes the program performance at the memory object level by considering whole OpenCL program flows. The main difficulty is that the best configuration cannot be easily predicted due to various application- and system-specific characteristics. PreScaler solves this problem using search space minimization and decision-tree-based search processes. First, it minimizes the number of test configurations based on the information from system inspection and dynamic profiling. Then, it finds the best memory-object level mixed-precision configuration using a decision-tree-based search. PreScaler achieves an average performance gain of 1.33x over the baseline while maintaining the target output quality level.},
+booktitle = {Proceedings of the 18th ACM/IEEE International Symposium on Code Generation and Optimization},
+pages = {280–292},
+numpages = {13},
+keywords = {Compiler, HSA, Precision Scaling, Profile-guided, Runtime},
+location = {San Diego, CA, USA},
+series = {CGO '20}
+}
+
+@proceedings{10.1145/3564625,
+title = {ACSAC '22: Proceedings of the 38th Annual Computer Security Applications Conference},
+year = {2022},
+isbn = {9781450397599},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Austin, TX, USA}
+}
+
+@proceedings{3694718,
+title = {JCDL '23: Proceedings of the 2023 ACM/IEEE Joint Conference on Digital Libraries},
+year = {2024},
+isbn = {9798350399318},
+publisher = {IEEE Press},
+location = {Santa Fe, New Mexico, USA}
+}
+
+@proceedings{10.1145/3610978,
+title = {HRI Companion '24 : Companion Proceedings of the 2024 ACM/IEEE International Conference on Human-Robot Interaction},
+year = {2024},
+isbn = {9798400703232},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome one and all to the 19th Annual ACM/IEEE International Conference on Human-Robot Interaction (HRI)!We are so pleased to re-welcome the HRI community to Boulder, Colorado, where HRI 2021 would have been held, had the COVID pandemic not interfered. Following up on the successful in-person conference held last year in Sweden, this year's theme is "HRI in the Real World," and focuses on advances that aim to bring human-robot interaction out of the lab and into everyday life.One aspect of this that we are very excited about is the introduction of a robot challenge to the conference activities, where teams from around the world will showcase their research and development via actual, interactive robots in the "real world" of an academic conference. It is our hope that this feature will grow and develop over the coming years into a staple of the HRI conference.This year's HRI conference saw an impressive surge in global interest, with 352 full paper submissions from around the world, marking a significant 40\% increase compared to the previous year. These papers were categorized under relevant thematic subcommittees and underwent a double-blind review process, a rebuttal phase, and selective shepherding by the HRI program committee. From this process, 87 outstanding papers (24.7\%) were chosen for full presentation at the conference. Reflecting our joint sponsorship with IEEE and ACM, all accepted papers will be accessible in the ACM Digital Library and IEEE Xplore.},
+location = {Boulder, CO, USA}
+}
+
+@article{10.1145/3785670,
+author = {Wang, Erwei and Bayliss, Samuel and Bisca, Andra and Blair, Zachary and Chowdhary, Sangeeta and Denolf, Kristof and Fifield, Jeff and Freiberger, Brandon and Hunhoff, Erika and James-Roxby, Phil and Lo, Jack and Melber, Joseph and Neuendorffer, Stephen and Richter, Eddie and Rosti, Andre and Setoain, Javier and Singh, Gagandeep and Taka, Endri and Vasireddy, Pranathi and Yu, Zhewen and Zhang, Niansong and Zhuang, Jinming},
+title = {From Loop Nests to Silicon: Mapping AI Workloads onto AMD NPUs with MLIR-AIR},
+year = {2026},
+issue_date = {June 2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {19},
+number = {2},
+issn = {1936-7406},
+url = {https://doi.org/10.1145/3785670},
+doi = {10.1145/3785670},
+abstract = {General-purpose compilers abstract away parallelism, locality, and synchronization, limiting their effectiveness on modern spatial architectures. As modern computing architectures increasingly rely on fine-grained control over data movement, execution order, and compute placement for performance, compiler infrastructure must provide explicit mechanisms for orchestrating compute and data to fully exploit such architectures. We introduce MLIR-AIR, a novel, open source compiler stack built on MLIR that bridges the semantic gap between high-level workloads and fine-grained spatial architectures such as AMD’s NPUs. MLIR-AIR defines the AIR dialect, which provides structured representations for asynchronous and hierarchical operations across compute and memory resources. AIR primitives allow the compiler to orchestrate spatial scheduling, distribute computation across hardware regions, and overlap communication with computation without relying on ad hoc runtime coordination or manual scheduling. We demonstrate MLIR-AIR’s capabilities through two case studies: matrix multiplication and the multi-head attention block from the LLaMA 2 model. For matrix multiplication, MLIR-AIR achieves up to 78.7\% compute efficiency and generates implementations with performance almost identical to state-of-the-art, hand-optimized matrix multiplication written using the lower-level, close-to-metal MLIR-AIE framework. For multi-head attention, we demonstrate that the AIR interface supports fused implementations using approximately 150 lines of code, enabling tractable expression of complex workloads with efficient mapping to spatial hardware. MLIR-AIR transforms high-level structured control flow into spatial programs that efficiently utilize the compute fabric and memory hierarchy of an NPU, leveraging asynchronous execution, tiling, and communication overlap through compiler-managed scheduling.},
+journal = {ACM Trans. Reconfigurable Technol. Syst.},
+month = may,
+articleno = {28},
+numpages = {36},
+keywords = {Compiler, dataflow architecture, hardware acceleration, machine learning, reconfigurable technology, spatial architecture.}
+}
+
+@inproceedings{10.1145/3394885.3431560,
+author = {Neto, Walter Lau and Moreira, Matheus Trevisan and Amaru, Luca and Yu, Cunxi and Gaillardon, Pierre-Emmanuel},
+title = {Read your Circuit: Leveraging Word Embedding to Guide Logic Optimization},
+year = {2021},
+isbn = {9781450379991},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3394885.3431560},
+doi = {10.1145/3394885.3431560},
+abstract = {To tackle the involved complexity, Electronic Design Automation (EDA) tools are broken in well-defined steps, each operating at different abstraction levels. Higher levels of abstraction shorten the flow run-time while sacrificing correlation with the physical circuit implementation. Bridging this gap between Logic Synthesis tool and Physical Design (PnR) tools is key to improve Quality of Results (QoR), while possibly shorting the time-to-market. To address this problem, in this work, we formalize logic paths as sentences, with the gates being a bag of words. Thus, we show how word embedding can be leveraged to represent generic paths and predict if a given path is likely to be critical post-PnR. We present the effectiveness of our approach, with accuracy over than 90\% for our test-cases. Finally, we give a step further and introduce an intelligent and non-intrusive flow that uses this information to guide optimization. Our flow presents up to 15.53\% area delay product (ADP) and 18.56\% power delay product (PDP), compared to a standard flow.},
+booktitle = {Proceedings of the 26th Asia and South Pacific Design Automation Conference},
+pages = {530–535},
+numpages = {6},
+keywords = {Word Embedding, Timing Closure, Machine Learning, Electronic Design Automation},
+location = {Tokyo, Japan},
+series = {ASPDAC '21}
+}
+
+@proceedings{10.1145/3644479,
+editor = {Rita Yi Man Li, Jing Sun, Ben Niu and Yudong Zhang},
+title = {EBIMCS '23: Proceedings of the 2023 6th International Conference on E-Business, Information Management and Computer Science},
+year = {2023},
+isbn = {9798400709333},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hong Kong, Hong Kong}
+}
+
+@article{10.14778/3827998.3828014,
+author = {Zeyl, Tim and Lam, Jason and Lin, Shu and Pournaghi, Reza and Cheng, Qi and Wong, Calvin and Du, Kaixiang and He, Yuliang and Sun, Yang and Wang, Weicheng and Lee, Paul and Ruo, Chen and Xinyi, Yang and Qunan, Li and Junjie, Wang and Dongxing, Hu and Chen, Chong and Larson, Per-{\r A}ke},
+title = {No Silver Bullet: Boosting GaussDB Performance on the 30TB TPC-H Workload},
+year = {2026},
+issue_date = {August 2026},
+publisher = {VLDB Endowment},
+volume = {19},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3827998.3828014},
+doi = {10.14778/3827998.3828014},
+abstract = {GaussDB is Huawei's premier database system, designed for large-scale deployments and the most demanding workloads. It is a distributed shared-nothing system, capable of handling all types of workloads. This paper outlines a series of modifications to GaussDB aimed at improving its performance on large-scale and complex analytical workloads. After these changes, its performance on the TPC-H workload exceeded the best published result by 40\% at 30 TB.The key enhancements to achieve this elite performance include adopting a pipeline execution model, a faster and more scalable inter-node data shuffle, exploiting a unified bus and unified remote memory access. We also expanded the support of cost-based Bloom filter placement and implemented several Bloom filter streaming strategies, enabling their use across nodes.},
+journal = {Proc. VLDB Endow.},
+month = sep,
+pages = {4036–4048},
+numpages = {13}
+}
+
+@proceedings{10.1145/3603269,
+title = {ACM SIGCOMM '23: Proceedings of the ACM SIGCOMM 2023 Conference},
+year = {2023},
+isbn = {9798400702365},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {New York, NY, USA}
+}
+
+@proceedings{10.1145/3760023,
+title = {MSCE '25: Proceedings of the 2025 International Conference on Management Science and Computer Engineering},
+year = {2025},
+isbn = {9798400715969},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dalian, China}
+}
+

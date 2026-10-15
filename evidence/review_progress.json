@@ -1,0 +1,12 @@
+{
+  "first_reviewer_records": 800,
+  "first_reviewer_fraction": 0.3560302625723186,
+  "exclude_recommendations": 652,
+  "retained_or_uncertain": 148,
+  "unreviewed": 1447,
+  "source_checked_reports": 5,
+  "new_outcome_rows": 6,
+  "appraised_reports": 2,
+  "final_decisions": "pending",
+  "final_included_studies": "pending"
+}

@@ -1,0 +1,289 @@
+@inproceedings{10.1145/3731569.3764803,
+author = {Kuchler, Tom and Li, Pinghe and Zhang, Yazhuo and Cvetkovi{\'c}, Lazar and Goranov, Boris and Stocker, Tobias and Thomm, Leon and Kalbermatter, Simone and Notter, Tim and Lattuada, Andrea and Klimovic, Ana},
+title = {Unlocking True Elasticity for the Cloud-Native Era with Dandelion},
+year = {2025},
+isbn = {9798400718700},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731569.3764803},
+doi = {10.1145/3731569.3764803},
+abstract = {Elasticity is fundamental to cloud computing. An elastic platform can quickly allocate resources to match the demand of each workload as it arrives, rather than pre-provisioning resources to meet performance objectives. However, even serverless platforms — which boot sandboxes in 10s to 100s of milliseconds — are not sufficiently elastic to avoid pre-provisioning expensive resources. Today's FaaS platforms provision many extra, idle sandboxes in memory to reduce the occurrence of slow, cold starts. Initializing securely isolated sandboxes with a POSIX-like computing environment that today's cloud users expect is slow as it requires booting a guest OS and configuring networking.Our key insight is that the rise of cloud-native application development provides an opportunity to rethink the application interface to the cloud and co-design a much more efficient, elastic computing platform under the hood. We propose Dandelion, an elastic cloud platform with a declarative cloud-native programming model that replaces POSIX-based network interfaces with higher-level (e.g., HTTP-based) interfaces for applications to interact with remote services like cloud storage, databases, and AI inference services. Dandelion executes applications expressed as DAGs of pure compute functions and communication functions.This enables Dandelion to securely execute compute functions in lightweight sandboxes that cold start in 100s of microseconds, since pure functions do not rely on software environments such as a guest OS. Dandelion makes it practical to boot sandboxes on-demand per request, decreasing performance variability by two to three orders of magnitude compared to Firecracker and reducing committed memory by 96\% on average when running the Azure Functions trace.},
+booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles},
+pages = {944–961},
+numpages = {18},
+location = {Seoul, Republic of Korea},
+series = {SOSP '25}
+}
+
+@proceedings{10.1145/3650200,
+title = {ICS '24: Proceedings of the 38th ACM International Conference on Supercomputing},
+year = {2024},
+isbn = {9798400706103},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Kyoto, Japan}
+}
+
+@article{10.1145/3677329,
+author = {Dixit, Akanksha and Sarangi, Smruti R.},
+title = {PredATW: Predicting the Asynchronous Time Warp Latency For VR Systems},
+year = {2024},
+issue_date = {September 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {23},
+number = {5},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3677329},
+doi = {10.1145/3677329},
+abstract = {With the advent of low-power ultra-fast hardware and GPUs, virtual reality (VR) has gained a lot of prominence in the past few years and is being used in various areas, such as education, entertainment, scientific visualization, and computer-aided design. VR-based applications are highly interactive, and one of the most important performance metrics for these applications is the motion-to-photon-delay (MPD). MPD is the delay from the user’s head movement to the time at which the image gets updated on the VR screen. Since the human visual system can even detect an error of a few pixels (very spatially sensitive), the MPD should be as small as possible.Popular VR vendors use the GPU-accelerated Asynchronous Time Warp (ATW) algorithm to reduce the MPD. ATW reduces the MPD if and only if the warping operation finishes just before the display refreshes. However, due to the competition between the different constituent applications for the single, shared GPU, the GPU-accelerated ATW algorithm suffers from an unpredictable ATW latency, making it challenging to find the ideal time instance for starting the time warp and ensuring that it completes with the least amount of lag relative to the screen refresh. Hence, the state-of-the-art is to use a separate hardware unit for the time-warping operation. Our approach, PredATW, uses an ML-based hardware predictor to predict the ATW latency for a VR application, and then schedule it as late as possible while running the time-warping operation on the GPU itself. As far as we know, this is the first work to do so. Our predictor achieves an error of only 0.22 ms across several popular VR applications for predicting the ATW latency. As compared to the baseline architecture, we reduce deadline misses by 80.6\%.},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = aug,
+articleno = {80},
+numpages = {37},
+keywords = {Virtual Reality, time warping, motion-to-photon delay, genetic algorithm}
+}
+
+@proceedings{10.1145/3650212,
+title = {ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis},
+year = {2024},
+isbn = {9798400706127},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 33rd edition of the International Symposium on Software Testing and Analysis, ISSTA 2024, held on September 16--20, 2024 in Vienna, Austria. ISSTA 2024 is co-located with ECOOP and MPLR 2024. ISSTA brings together academics, industrial researchers, and practitioners from all over the world working on testing and analyzing software systems.},
+location = {Vienna, Austria}
+}
+
+@article{10.1145/3703453,
+author = {Liu, Zhihong and Xu, Xin and Qiao, Peng and Li, Dongsheng},
+title = {Acceleration for Deep Reinforcement Learning using Parallel and Distributed Computing: A Survey},
+year = {2024},
+issue_date = {April 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {57},
+number = {4},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3703453},
+doi = {10.1145/3703453},
+abstract = {Deep reinforcement learning has led to dramatic breakthroughs in the field of artificial intelligence for the past few years. As the amount of rollout experience data and the size of neural networks for deep reinforcement learning have grown continuously, handling the training process and reducing the time consumption using parallel and distributed computing is becoming an urgent and essential desire. In this article, we perform a broad and thorough investigation on training acceleration methodologies for deep reinforcement learning based on parallel and distributed computing, providing a comprehensive survey in this field with state-of-the-art methods and pointers to core references. In particular, a taxonomy of literature is provided, along with a discussion of emerging topics and open issues. This incorporates learning system architectures, simulation parallelism, computing parallelism, distributed synchronization mechanisms, and deep evolutionary reinforcement learning. Furthermore, we compare 16 current open-source libraries and platforms with criteria of facilitating rapid development. Finally, we extrapolate future directions that deserve further research.},
+journal = {ACM Comput. Surv.},
+month = dec,
+articleno = {91},
+numpages = {35},
+keywords = {Deep reinforcement learning, acceleration, parallel and distributed computing, large-scale}
+}
+
+@proceedings{10.1145/3735452,
+title = {LCTES '25: Proceedings of the 26th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems},
+year = {2025},
+isbn = {9798400719219},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES 2025). We have the privilege of organising the 26th edition of this longstanding conference in the beautiful city -- Seoul, South Korea. This year’s conference is co-located with the premier event 46th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2025), bringing together affiliated research conferences and workshops into a week-long joint meeting. The mission of LCTES is to provide a link between languages, compilers, and tools for embedded systems, bringing together scientists and engineers from these communities. LCTES offers a forum for researchers and developers from either area to come together, interact, share insights, and collaborate on developing novel solutions.},
+location = {Seoul, Republic of Korea}
+}
+
+@inproceedings{10.1145/3737895.3768306,
+author = {Wu, Zongshen and Doost-Mohammady, Rahman and Sabharwal, Ashutosh},
+title = {ETHOS: Demystifying Performance, Energy, and Computational Efficiency in Virtualized 5G O-RAN Networks},
+year = {2025},
+isbn = {9798400719721},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3737895.3768306},
+doi = {10.1145/3737895.3768306},
+abstract = {Radio Access Networks (RANs) are increasingly softwarized and disaggregated, resulting in diverse and interoperable components running on commodity hardware and compute platforms. This heterogeneous paradigm demands principled and comprehensive testing to ensure high performance and efficiency in RAN deployments. In this paper, we present a real-time RAN testing framework, called ETHOS, designed to capture fine-grained metrics on performance, energy consumption, and computational efficiency for O-RAN-compliant systems across a range of compute platforms. ETHOS leverages a shared memory-based inter-process communication (IPC) framework and automates testing through the emulation of diverse user traffic and channel conditions. We deploy ETHOS on the NVIDIA ARC-OTA platform and demonstrate its effectiveness through a detailed case study evaluating RAN components under varying scenarios. We also present a comparative study versus the srsRAN for the cross-platform observation. ETHOS is designed to be easily portable to other commercial and open-source RAN software, offering the potential for a unified testing and evaluation framework to accelerate O-RAN research and innovation.},
+booktitle = {Proceedings of the ACM Workshop on Wireless Network Testbeds, Experimental Evaluation \&amp; Characterization},
+pages = {97–104},
+numpages = {8},
+keywords = {O-RAN, energy efficiency, communication performance, real-time profiling system, automated testing framework},
+location = {Hong Kong, China},
+series = {WiNTECH '25}
+}
+
+@proceedings{10.1145/3820915,
+title = {AIVRID '26: Proceedings of the 2nd International Conference on Artificial Intelligence, Virtual Reality and Interaction Design},
+year = {2026},
+isbn = {9798400723612},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dalian, China}
+}
+
+@proceedings{10.1145/3698364,
+title = {ISPD '25: Proceedings of the 2025 International Symposium on Physical Design},
+year = {2025},
+isbn = {9798400712937},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {On behalf of the organizing committee, we are delighted to welcome you to the 34th ACM International Symposium on Physical Design (ISPD), held in Austin, Texas, providing a premier forum to exchange ideas, highlight key technology challenges, present leading-edge theoretical and experimental contributions, and identify future research directions in this field. We extend the good practice of having a YouTube channel to view the talks during the symposium and afterward, improving access to the presentations.Across three days, ISPD 2025 has 3 keynotes, 18 accepted papers, 13 invited talks; one panel on Monday with 4 panelists; and 4 speakers with longer talks in Professor Jason Cong''s commemorative session, and finally the ISPD 2025 contest results.This year, we received a total of 64 abstracts and we received 48 full manuscripts, from which 18 were selected - a 37.5\% acceptance rate. The regular papers in the ISPD 2025 program were selected, after a rigorous month-long double-blind review process and virtual meetings, by the Technical Program Committee with 20 outstanding international professionals from both academia and industry. These papers exhibit the latest advancements in a variety of topics in physical design, including global placement; mixed cell-height legalization; PCB placement; inverse lithography; quantum layout; photonic integrated circuits and side channel analysis; timing propagation; logic optimization; crosstalk mitigation; DRC checking; gate sizing; standard cell layout; CFET cell design; timing rule generation; analog cell design; 3D net-to-pad assignment, and 3D power delivery. A number of these papers utilize advanced mathematical programming, satisfiability modulo theories, GPU acceleration, and machine learning techniques.We are delighted to host three distinguished keynote speakers. The Monday keynote "Towards Designing and Deploying Ising Machines" will be given by Professor Sachin Sapatnekar of the University of Minnesota. He will explore opportunities for solving complex combinatorial optimization problems using Ising machines. The discussion will emphasize the layout and timing challenges specific to Ising machines that are based on coupled CMOS ring oscillators. On Tuesday morning, Dr. Charles J Alpert of Cadence Design Systems will present "How Automotive Functional Safety is Disrupting Digital Implementation". He will provide an overview of the challenges in achieving functional-safe ICs for automotive applications and discuss their impact on the digital implementation flow, including synthesis, placement, and routing. Wednesday's keynote is given by Dr. Henry Sheng from Synopsys on "Automation and Optimization of Heterogeneous Systems". He will explore the challenges and strategies for automating heterogeneous integration, an area that has traditionally relied on disconnected workflows and significant manual effort.The ISPD 2025 program is complemented by invited talks on topics ranging across design technology co-optimization; systolic array-based ICs; ECO automation, ML \&amp; AI methods in design automation; 3D IC design and integration; power design and analysis; and an analysis of the historical impact of ISPD. Additionally, we have a panel discussing EDA challenges in heterogeneous integration.In the ISPD Lifetime Achievement Award session on Tuesday, we will pay tribute to Professor Jason Cong. This session highlights Professor Cong's pioneering contributions in the algorithmic aspects of the physical design of silicon chips. This session has talks from his mentor, labmate and former students. Dr Bryan Preas will present the Innovation in Times of Technology Disruption. Followed by the talk from Professor Martin Wong from Hong Kong Baptist University. Professor David Pan, from University of Texas at Austin, will discuss the future of interconnected Physical Design. Finally, Professor Jason Cong will also grace the symposium with a delightful talk on coping with interconnects and a recount of his numerous contributions in EDA and Physical Design..Since 2005, ISPD has organized highly competitive contests to promote and advance research in placement, global routing, clock network synthesis, gate sizing, detailed routing-driven placement, and hardware security. The contest this year features the second contest on GPU-accelerated and machine learning-enhanced large scale global routing. This time the contest integrates timing and power metric. The contest is again organized by NVIDIA. The contest aims to not only deliver substantial reductions in global routing runtime but take performance and power into account as required in real-world applications. This year's contest attracted 46 teams from all over the world, reaching a record high.This year, we continue with a short format for the invited talks and regular papers. Presentations are 12 minutes in length, plus about 5 minutes for questions and answers after each talk, and some time at the end of each session for open discussion. This format is intended to encourage discussion among our research community. The talks in the lifetime achievement session are 20 minutes in length, with 5 minutes for questions and answers. Keynotes remain about 40 minutes in length, with 10 minutes for discussion.},
+location = {Austin, TX, USA}
+}
+
+@inproceedings{10.1145/3770855.3818994,
+author = {Islam, Md. Khairul and Xia, Zeyu and Goudjil, Ryan and Wang, Jialu and Farahi, Arya and Fox, Judy},
+title = {Cosmo3DFlow: Wavelet Flow Matching for Spatial-to-Spectral Compression in Reconstructing the Early Universe},
+year = {2026},
+isbn = {9798400722592},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3770855.3818994},
+doi = {10.1145/3770855.3818994},
+abstract = {Reconstructing the early universe from the evolved present-day universe is a challenging and computationally demanding problem in modern astrophysics. We devise a novel generative framework, Cosmo3DFlow, designed to address dimensionality and sparsity, the critical bottlenecks inherent in current state-of-the-art methods for cosmological inference. By integrating 3D Discrete Wavelet Transform (DWT) with flow matching, we effectively represent high-dimensional cosmological structures. The Wavelet Transform addresses the ''void problem'' by translating spatial emptiness into spectral sparsity. It decouples high-frequency details from low-frequency structures, and wavelet-space velocity fields facilitate stable ordinary differential equation (ODE) solvers with large step sizes. Using large-scale cosmological N-body simulations at 1283 resolution, we achieve up to 46{\texttimes} faster sampling than diffusion models. Our results enable initial conditions to be sampled in seconds, compared to minutes for previous methods.},
+booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2},
+pages = {11153–11164},
+numpages = {12},
+keywords = {generative models, wavelet representation, spatial sparsity, spectral sparsity, flow matching, astronomy},
+location = {Jeju Island, Republic of Korea},
+series = {KDD '26}
+}
+
+@inproceedings{10.1145/3424636.3426904,
+author = {Carrigan, Emma and Zibrek, Katja and Dahyot, Rozenn and McDonnell, Rachel},
+title = {Investigating perceptually based models to predict importance of facial blendshapes},
+year = {2020},
+isbn = {9781450381710},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3424636.3426904},
+doi = {10.1145/3424636.3426904},
+abstract = {Blendshape facial rigs are used extensively in the industry for facial animation of virtual humans. However, storing and manipulating large numbers of facial meshes is costly in terms of memory and computation for gaming applications, yet the relative perceptual importance of blendshapes has not yet been investigated. Research in Psychology and Neuroscience has shown that our brains process faces differently than other objects, so we postulate that the perception of facial expressions will be feature-dependent rather than based purely on the amount of movement required to make the expression. In this paper, we explore the noticeability of blendshapes under different activation levels, and present new perceptually based models to predict perceptual importance of blendshapes. The models predict visibility based on commonly-used geometry and image-based metrics.},
+booktitle = {Proceedings of the 13th ACM SIGGRAPH Conference on Motion, Interaction and Games},
+articleno = {2},
+numpages = {6},
+keywords = {action units, blendshapes, linear model, perception},
+location = {Virtual Event, SC, USA},
+series = {MIG '20}
+}
+
+@proceedings{10.1145/3813822,
+title = {CIBDA '26: Proceedings of the 2026 7th International Conference on Computer Information and Big Data Applications},
+year = {2026},
+isbn = {9798400722578},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Wuhan, China}
+}
+
+@proceedings{10.1145/3582514,
+title = {PMAM'23: Proceedings of the 14th International Workshop on Programming Models and Applications for Multicores and Manycores},
+year = {2023},
+isbn = {9798400701153},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Montreal, QC, Canada}
+}
+
+@article{10.1109/TNET.2022.3223412,
+author = {Yang, Zheng and Wang, Xu and Wu, Jiahang and Zhao, Yi and Ma, Qiang and Miao, Xin and Zhang, Li and Zhou, Zimu},
+title = {EdgeDuet: Tiling Small Object Detection for Edge Assisted Autonomous Mobile Vision},
+year = {2022},
+issue_date = {Aug. 2023},
+publisher = {IEEE Press},
+volume = {31},
+number = {4},
+issn = {1063-6692},
+url = {https://doi.org/10.1109/TNET.2022.3223412},
+doi = {10.1109/TNET.2022.3223412},
+abstract = {Accurate, real-time object detection on resource-constrained devices enables autonomous mobile vision applications such as traffic surveillance, situational awareness, and safety inspection, where it is crucial to detect both small and large objects in crowded scenes. Prior studies either perform object detection locally on-board or offload the task to the edge/cloud. Local object detection yields low accuracy on small objects since it operates on low-resolution videos to fit in mobile memory. Offloaded object detection incurs high latency due to uploading high-resolution videos to the edge/cloud. Rather than either pure local processing or offloading, we propose to detect large objects locally while offloading small object detection to the edge. The key challenge is to reduce the latency of small object detection. Accordingly, we develop EdgeDuet, the first edge-device collaborative framework for enhancing small object detection with tile-level parallelism. It optimizes the offloaded detection pipeline in tiles rather than the entire frame for high accuracy and low latency. Evaluations on drone vision datasets under LTE, WiFi 2.4GHz, WiFi 5GHz show that EdgeDuet outperforms local object detection in small object detection accuracy by 233.0%. It also improves the detection accuracy by 44.7% and latency by 34.2% over the state-of-the-art offloading schemes.},
+journal = {IEEE/ACM Trans. Netw.},
+month = dec,
+pages = {1765–1778},
+numpages = {14}
+}
+
+@article{10.1145/3763790,
+author = {Ramdas, Abishek and Cock, David and Giardino, Michael and Korolija, Dario and Ruzhanskaia, Anastasiia and Schwyn, Daniel and Turowski, Adam and Alonso, Gustavo and Roscoe, Timothy},
+title = {CCKit: An open-source toolkit for cache coherent accelerators},
+year = {2025},
+issue_date = {August 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {43},
+number = {3},
+issn = {0734-2071},
+url = {https://doi.org/10.1145/3763790},
+doi = {10.1145/3763790},
+abstract = {The trend toward system specialization is leading to a proliferation of accelerators, exposing interconnects as serious bottlenecks, both in functionality and performance. As a result, several alternative approaches have been proposed which promise to expand the coherence domain beyond homogeneous sockets to rack scale heterogeneous systems. In parallel, GPU vendors have developed their own high bandwidth interconnects also aiming for heterogeneous coherence beyond the CPU. This expansion of the coherency domain raises many questions that remain unanswered, in particular, how devices other than CPUs will interact with the coherence protocol and whether applications can take advantage of these expanded domains. As protocols such as CXL are still evolving, it is important to explore alternative designs that go beyond what the commercial specifications dictate. For this purpose, we developed CCKit, an open-source, server-class toolkit comprising a complete cache coherency stack on reconfigurable accelerators. CCKit is more flexible than commercial products and its performance is highly competitive with hardware-based implementations, thus enabling important and novel application use-cases for expanded coherence domains. Experimental data from real workloads provide the ability to influence and expand future interconnects, protocols, and applications.},
+journal = {ACM Trans. Comput. Syst.},
+month = sep,
+articleno = {9},
+numpages = {30},
+keywords = {Cache coherence, reconfigurable computing, disaggregated systems, far memory, near memory compute, operator pushdown, interconnects}
+}
+
+@proceedings{10.1145/3670474,
+title = {MLCAD '24: Proceedings of the 2024 ACM/IEEE International Symposium on Machine Learning for CAD},
+year = {2024},
+isbn = {9798400706998},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Salt Lake City, UT, USA}
+}
+
+@inproceedings{10.1145/3476886.3477503,
+author = {Hale, Kyle},
+title = {Coalescent computing},
+year = {2021},
+isbn = {9781450386982},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3476886.3477503},
+doi = {10.1145/3476886.3477503},
+abstract = {As computational infrastructure extends to the edge, it will increasingly offer the same fine-grained resource provisioning mechanisms used in large-scale cloud datacenters, and advances in low-latency, wireless networking technology will allow service providers to blur the distinction between local and remote resources for commodity computing. From the users' perspectives, their devices will no longer have fixed computational power, but rather will appear to have flexible computational capabilities that vary subject to the shared, disaggregated edge resources available in their physical proximity. System software will transparently leverage these ephemeral resources to provide a better end-user experience. We discuss key systems challenges to enabling such tightly-coupled, disaggregated, and ephemeral infrastructure provisioning, advocate for more research in the area, and outline possible paths forward.},
+booktitle = {Proceedings of the 12th ACM SIGOPS Asia-Pacific Workshop on Systems},
+pages = {79–88},
+numpages = {10},
+keywords = {wireless networks, operating systems, edge computing, disaggregated hardware},
+location = {Hong Kong, China},
+series = {APSys '21}
+}
+
+@inproceedings{10.1145/3581791.3596844,
+author = {Ouyang, Xiaomin and Xie, Zhiyuan and Fu, Heming and Cheng, Sitong and Pan, Li and Ling, Neiwen and Xing, Guoliang and Zhou, Jiayu and Huang, Jianwei},
+title = {Harmony: Heterogeneous Multi-Modal Federated Learning through Disentangled Model Training},
+year = {2023},
+isbn = {9798400701108},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3581791.3596844},
+doi = {10.1145/3581791.3596844},
+abstract = {Multi-modal sensing systems are increasingly prevalent in real-world applications such as health monitoring and autonomous driving. Most multi-modal learning approaches need to access users' raw data, which poses significant concerns to users' privacy. Federated learning (FL) provides a privacy-aware distributed learning framework. However, current FL approaches have not addressed the unique challenges of heterogeneous multi-modal FL systems, such as modality heterogeneity and significantly longer training delay. In this paper, we propose Harmony, a new system for heterogeneous multi-modal federated learning. Harmony disentangles the multi-modal network training in a novel two-stage framework, namely modality-wise federated learning and federated fusion learning. By integrating a novel balance-aware resource allocation mechanism in modality-wise FL and exploiting modality biases in federated fusion learning, Harmony improves the model accuracy under non-i.i.d. data distributions and speeds up system convergence. We implemented Harmony on a real-world multi-modal sensor testbed deployed in the homes of 16 elderly subjects for Alzheimer's Disease monitoring. Our evaluation on the testbed and three large-scale public datasets of different applications show that, Harmony outperforms by up to 46.35\% accuracy over state-of-the-art baselines and saves up to 30\% training delay.},
+booktitle = {Proceedings of the 21st Annual International Conference on Mobile Systems, Applications and Services},
+pages = {530–543},
+numpages = {14},
+keywords = {multi-modal federated learning systems, modality heterogeneity, balance-aware resource allocation},
+location = {Helsinki, Finland},
+series = {MobiSys '23}
+}
+
+@proceedings{10.1145/3799830,
+title = {CODS '25: Proceedings of the 13th ACM IKDD International Conference on Data Science},
+year = {2025},
+isbn = {9798400723551},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Pune, India}
+}
+
+@article{10.1145/3687463,
+author = {Mack, Joshua and Krishnakumar, Anish and Ogras, Umit and Akoglu, Ali},
+title = {Tutorial: A Novel Runtime Environment for Accelerator-Rich Heterogeneous Architectures},
+year = {2024},
+issue_date = {January 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {24},
+number = {1},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3687463},
+doi = {10.1145/3687463},
+abstract = {As the landscape of computing advances, system designers are increasingly exploring methodologies that leverage higher levels of heterogeneity to enhance performance within constrained size, weight, power, and cost parameters. CEDR (Compiler-integrated Extensible DSSoC Runtime) stands as an ecosystem facilitating productive and efficient application development and deployment across heterogeneous computing systems. It fosters the co-design of applications, scheduling heuristics, and accelerators within a unified framework. Our goal is to present CEDR as a promising environment for lifting the barriers to research on heterogeneous systems and addressing the broader challenges within domain-specific architectures. We introduce CEDR and discuss the evolutionary design decisions underlying its programming model. Subsequently, we explore its utility for a broad range of users through design sweeps on off-the-shelf heterogeneous platforms across scheduling heuristics, hardware compositions, and workload scenarios.},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = dec,
+articleno = {20},
+numpages = {24},
+keywords = {Domain-specific SoCs, heterogeneous application runtimes}
+}
+

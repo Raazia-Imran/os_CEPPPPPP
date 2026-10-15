@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-15T18:25:49.712012+00:00",
+  "record_rows": 2291,
+  "canonical_queue_rows": 2247,
+  "linked_duplicate_rows": 44,
+  "first_recommendations": 800,
+  "nonempty_abstract_occurrences": 1806,
+  "empty_abstract_occurrences": 485,
+  "final_decisions_claimed": false,
+  "checks": "Unique IDs, vote references and occurrence arithmetic pass; no fabricated final counts"
+}

@@ -1,0 +1,269 @@
+@inproceedings{10.1145/3689031.3696075,
+author = {Sheng, Guangming and Zhang, Chi and Ye, Zilingfeng and Wu, Xibin and Zhang, Wang and Zhang, Ru and Peng, Yanghua and Lin, Haibin and Wu, Chuan},
+title = {HybridFlow: A Flexible and Efficient RLHF Framework},
+year = {2025},
+isbn = {9798400711961},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3689031.3696075},
+doi = {10.1145/3689031.3696075},
+abstract = {Reinforcement Learning from Human Feedback (RLHF) is widely used in Large Language Model (LLM) alignment. Traditional RL can be modeled as a dataflow, where each node represents computation of a neural network (NN) and each edge denotes data dependencies between the NNs. RLHF complicates the dataflow by expanding each node into a distributed LLM training or generation program, and each edge into a many-to-many multicast. Traditional RL frameworks execute the dataflow using a single controller to instruct both intra-node computation and inter-node communication, which can be inefficient in RLHF due to large control dispatch overhead for distributed intra-node computation. Existing RLHF systems adopt a multi-controller paradigm, which can be inflexible due to nesting distributed computation and data communication. We propose HybridFlow, which combines single-controller and multi-controller paradigms in a hybrid manner to enable flexible representation and efficient execution of the RLHF data flow. We carefully design a set of hierarchical APIs that decouple and encapsulate computation and data dependencies in the complex RLHF dataflow, allowing efficient operation orchestration to implement RLHF algorithms and flexible mapping of the computation onto various devices. We further design a 3D-HybridEngine for efficient actor model resharding between training and generation phases, with zero memory redundancy and significantly reduced communication overhead. Our experimental results demonstrate 1.53x~20.57{\texttimes} throughput improvement when running various RLHF algorithms using HybridFlow, as compared with state-of-the-art baselines. HybridFlow source code is available at https://github.com/volcengine/verl},
+booktitle = {Proceedings of the Twentieth European Conference on Computer Systems},
+pages = {1279–1297},
+numpages = {19},
+keywords = {Distributed systems, Reinforcement Learning from Human Feedback},
+location = {Rotterdam, Netherlands},
+series = {EuroSys '25}
+}
+
+@inproceedings{10.1145/3793655.3793726,
+author = {Li, Songrui and You, Hanmo and Jiang, Jiajun},
+title = {Jailbreaking Large Language Models via Multi-Task Embedding-based Prompt},
+year = {2026},
+isbn = {9798400724770},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3793655.3793726},
+doi = {10.1145/3793655.3793726},
+abstract = {With the widespread application of large language models (LLMs), jailbreak attacks that bypass their security mechanisms have become an important threat. Existing methods suffer from limited effectiveness, as they use only one attack pattern at a time, along with excessive query costs. To address these limitations, this paper proposes the Multi-Task Embedding-based Attack (MTEA), a novel jailbreak approach that embeds malicious instructions within three different tasks (e.g., Code Understanding, Language Translation, and Pattern Adherence). By exploiting LLMs’ reduced performance when handling multiple tasks concurrently, MTEA disrupts their safety alignment mechanisms. Extensive experiments on six widely used LLMs (including GPT-4o and Gemini-2.5-pro) using the AdvBench benchmark show that MTEA achieves 100\% attack success rate (ASR) and 100\% following rate (FR) across all models. It outperforms state-of-the-art baselines by 48.0 ∼ 49.7\% in ASR and 60.4 ∼ 60.7\% in FR. Even against advanced defense mechanisms (Perplexity Filter and SmoothLLM), MTEA maintains 100\% ASR, while reducing query costs by 90\% compared to baselines. These results demonstrate the effectiveness and efficiency of MTEA.},
+booktitle = {Proceedings of the 2026 IEEE/ACM Third International Conference on AI Foundation Models and Software Engineering},
+pages = {139–143},
+numpages = {5},
+keywords = {Jailbreak Attack, Large Language Models},
+location = {Rio de Janeiro, Brazil},
+series = {FORGE '26}
+}
+
+@proceedings{10.1145/3814576,
+editor = {Riadh Ben Abdelhamid, Ray Cheung, Frank Hannig, Shreejith Shanker, Dirk Koch, Shinya Takamaeda and Mirjana Stojilovi{\'c}},
+title = {HEART '26: Proceedings of the 16th International Symposium on Highly Efficient Accelerators and Reconfigurable Technologies},
+year = {2026},
+isbn = {9798400724527},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Heidelberg, Germany}
+}
+
+@proceedings{10.1145/3721463,
+title = {Middleware Industry Track '25: Proceedings of the 26th International Middleware Conference Industry Track},
+year = {2025},
+isbn = {9798400715556},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Nashville, TN, USA}
+}
+
+@proceedings{10.1145/3832928,
+title = {CMNM '26: Proceedings of the 2026 3rd International Conference on Machine Learning, Natural Language Processing and Modeling},
+year = {2026},
+isbn = {9798400723339},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Guangzhou, China}
+}
+
+@inproceedings{10.1109/ISCA52012.2021.00010,
+author = {Jouppi, Norman P. and Yoon, Doe Hyun and Ashcraft, Matthew and Gottscho, Mark and Jablin, Thomas B. and Kurian, George and Laudon, James and Li, Sheng and Ma, Peter and Ma, Xiaoyu and Norrie, Thomas and Patil, Nishant and Prasad, Sushma and Young, Cliff and Zhou, Zongwei and Patterson, David},
+title = {Ten lessons from three generations shaped Google's TPUv4i},
+year = {2021},
+isbn = {9781450390866},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ISCA52012.2021.00010},
+doi = {10.1109/ISCA52012.2021.00010},
+abstract = {Google deployed several TPU generations since 2015, teaching us lessons that changed our views: semi-conductor technology advances unequally; compiler compatibility trumps binary compatibility, especially for VLIW domain-specific architectures (DSA); target total cost of ownership vs initial cost; support multi-tenancy; deep neural networks (DNN) grow 1.5X annually; DNN advances evolve workloads; some inference tasks require floating point; inference DSAs need air-cooling; apps limit latency, not batch size; and backwards ML compatibility helps deploy DNNs quickly. These lessons molded TPUv4i, an inference DSA deployed since 2020.},
+booktitle = {Proceedings of the 48th Annual International Symposium on Computer Architecture},
+pages = {1–14},
+numpages = {14},
+location = {Virtual Event, Spain},
+series = {ISCA '21}
+}
+
+@proceedings{3715674,
+title = {SC-W '24: Proceedings of the SC '24 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis},
+year = {2024},
+isbn = {9798350355543},
+publisher = {IEEE Press},
+location = {Atlanta, GA, USA}
+}
+
+@inproceedings{10.1145/3677525.3678648,
+author = {Truong, Hong-Linh and Nguyen, Ngoc Nhu Trang},
+title = {CuLao - Constructing Utilities of Large Language Models in Resource-Constrained Environments},
+year = {2024},
+isbn = {9798400710940},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3677525.3678648},
+doi = {10.1145/3677525.3678648},
+abstract = {The increasing development and utilization of Large Language Model (LLM) services have demonstrated many benefits in different contexts. However, LLM services are mainly available in the public cloud and require huge computing resources to operate, thus not accessible to many companies, organizations or communities with constrained resources. While research efforts have concentrated on LLMs quantization for resource-constrained computing environments like edge devices, to democratize the availability of LLM services as utilities for such communities requires much more than the optimization of LLM models. In this paper, we introduce CuLao&nbsp;– a framework for constructing utilities from LLMs in resource-constrained environments. Our framework focuses on key requirements of resource-constrained companies, organizations and communities by enabling the provisioning and coordination of LLMs as utilities, based on the availability of open-source LLMs.},
+booktitle = {Proceedings of the 2024 International Conference on Information Technology for Social Good},
+pages = {100–104},
+numpages = {5},
+location = {Bremen, Germany},
+series = {GoodIT '24}
+}
+
+@proceedings{10.1145/3829641,
+title = {SECA '26: Proceedings of the 2nd International Conference on Software Engineering and Computer Applications},
+year = {2026},
+isbn = {9798400723742},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Liuzhou, China}
+}
+
+@proceedings{10.1145/3746265,
+title = {DFF '25: Proceedings of the 1st on Deepfake Forensics Workshop: Detection, Attribution, Recognition, and Adversarial Challenges in the Era of AI-Generated Media},
+year = {2025},
+isbn = {9798400720475},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to the 1st Deepfake Forensics Workshop: Detection, Attribution, Recognition, and Adversarial Challenges in the Era of AI-Generated Media - DFF-2025 at ACM MM 2025. This workshop aims to build a specialized community dedicated to addressing the forensic challenges posed by AI-generated content. In recent years, Deepfake technologies have seen unprecedented advances, becoming a central issue in multimedia analysis and raising urgent questions about authenticity and reliability.The purpose of DFF-2025 is not only to present methods addressing current challenges in Deepfake detection, but also to promote the exchange of ideas, solutions, and forward-looking perspectives that can drive future advances in Deepfake attribution, recognition, and adversarial forensics. Given the fast evolution of generative models, we are aware that approaches effective today may quickly lose relevance. For this reason, it is essential to promote an interdisciplinary community in which researchers actively share and discuss innovative strategies, linking multimedia forensics, adversarial machine learning, and legalethical perspectives. Through this dialogue, the workshop seeks to advance robust and generalizable methodologies, strengthening the role of deepfake forensics in safeguarding the integrity and trustworthiness of digital content.},
+location = {Dublin, Ireland}
+}
+
+@article{10.1145/3563946,
+author = {Krishnakumar, Anish and Ogras, Umit and Marculescu, Radu and Kishinevsky, Mike and Mudge, Trevor},
+title = {Domain-Specific Architectures: Research Problems and Promising Approaches},
+year = {2023},
+issue_date = {March 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {22},
+number = {2},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3563946},
+doi = {10.1145/3563946},
+abstract = {Process technology-driven performance and energy efficiency improvements have slowed down as we approach physical design limits. General-purpose manycore architectures attempt to circumvent this challenge, but they have a significant performance and energy-efficient gap compared to special-purpose solutions. Domain-specific architectures (DSAs), an instance of heterogeneous architectures, efficiently combine general-purpose cores and specialized hardware accelerators to boost energy efficiency and provide programming flexibility. Indeed, the hardware, software, and systems aspects in DSAs are highly tailored to maximize the energy efficiency of applications in a target domain. As DSAs and their conceptualization advance rapidly, there is a strong need to understand the research problems that need immediate attention. This article discusses the primary research directions in the design and runtime management of DSAs. Then, it surveys some promising approaches and highlights the outstanding research needs.},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = jan,
+articleno = {28},
+numpages = {26},
+keywords = {Domain-specific architectures, domain-specific system-on-chip, DSA runtime resource management, hardware architectures, emerging systems, runtime frameworks}
+}
+
+@inproceedings{10.1145/3617232.3624863,
+author = {Zhao, Bohan and Xu, Wei and Liu, Shuo and Tian, Yang and Wang, Qiaoling and Wu, Wenfei},
+title = {Training Job Placement in Clusters with Statistical In-Network Aggregation},
+year = {2024},
+isbn = {9798400703720},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3617232.3624863},
+doi = {10.1145/3617232.3624863},
+abstract = {In-Network Aggregation (INA) offloads the gradient aggregation in distributed training (DT) onto programmable switches, where the switch memory could be allocated to jobs in either synchronous or statistical multiplexing mode. Statistical INA has advantages in switch memory utilization, control-plane simplicity, and management safety, but it faces the problem of cross-layer resource efficiency in job placement. This paper presents a job placement system NetPack for clusters with statistical INA, which aims to maximize the utilization of both computation and network resources. NetPack periodically batches and places jobs into the cluster. When placing a job, NetPack runs a steady state estimation algorithm to acquire the available resources in the cluster, heuristically values each server according to its available resources (GPU and bandwidth), and runs a dynamic programming algorithm to efficiently search for servers with the highest value for the job. Our prototype of NetPack and the experiments demonstrate that NetPack outperforms prior job placement methods by 45\% in terms of average job completion time on production traces.},
+booktitle = {Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1},
+pages = {420–434},
+numpages = {15},
+keywords = {in-network aggregation, distributed training, placement},
+location = {La Jolla, CA, USA},
+series = {ASPLOS '24}
+}
+
+@proceedings{10.1145/3634769,
+title = {IGSC '23: Proceedings of the 14th International Green and Sustainable Computing Conference},
+year = {2023},
+isbn = {9798400716690},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Toronto, ON, Canada}
+}
+
+@inproceedings{10.1145/3630138.3630456,
+author = {Xiao, Yuanyuan and Lai, Zhiquan and Li, Dongsheng},
+title = {CD-Sched: An Automated Scheduling Framework for Accelerating Neural Network Training on Shared Memory CPU-DSP Platforms},
+year = {2024},
+isbn = {9781450399951},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3630138.3630456},
+doi = {10.1145/3630138.3630456},
+abstract = {DSP holds significant potential for important applications in Deep Neural Networks. However, there is currently a lack of research focused on shared-memory CPU-DSP heterogeneous chips. This paper proposes CD-Sched, an automated scheduling framework that aims to address this gap. By predicting the latency of operators on both CPU and DSP, CD-Sched automatically schedules the computation of operators to the appropriate computing device. This scheduling optimization accelerates the computation of individual operators and ultimately improves the overall training time of neural networks. In end-to-end training tasks, CD-Sched can significantly reduce the overall training time, with an average reduction of approximately 10.77\%.},
+booktitle = {Proceedings of the 2023 International Conference on Power, Communication, Computing and Networking Technologies},
+articleno = {41},
+numpages = {6},
+keywords = {computation offloading, digital signal processors, neural network training, operators, scheduling framework, shared memory},
+location = {Wuhan, China},
+series = {PCCNT '23}
+}
+
+@inproceedings{10.1145/3731599.3787529,
+author = {AI Generated},
+title = {Session Summary Podcast: Session 7: EXHETAI: The first International Workshop on Extreme Heterogeneity and AI Convergence in HPC},
+year = {2026},
+isbn = {9798400718717},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731599.3787529},
+doi = {10.1145/3731599.3787529},
+abstract = {An AI-generated podcast companion article to augment the EXHETAI: The first International Workshop on Extreme Heterogeneity and AI Convergence in HPC Session of the SC Workshops '25NOTE: AI content can contain errors and should be double-checked before use.},
+booktitle = {Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+location = {St Louis, MO, USA},
+series = {SC Workshops '25}
+}
+
+@proceedings{10.1145/3722212,
+title = {SIGMOD/PODS '25: Companion of the 2025 International Conference on Management of Data},
+year = {2025},
+isbn = {9798400715648},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is with great pleasure that we welcome you to the 2025 ACM SIGMOD/PODS International Conference on Management of Data in the capital of the Federal Republic of Germany. We are looking forward to your having an exciting conference here in Berlin, a vibrant metropolis located in the heart of Europe.With over 3.6 million inhabitants, Berlin thrives thanks in part to the diverse people from all over the world who have shaped the city. Nowhere else in Germany can you find so many world-famous sights, business events, concerts, museums, shopping opportunities, and vast culinary delights. Interestingly, Berlin is known as a water city, with its extensive network of rivers, lakes, and canals, and a great many bridges: significantly more than Venice!Modern Berlin is not only a leading cultural hub, it is a leading science hub as well. Over the past few decades, the metro area has developed into an international stronghold in data systems technology. Today, there are major industrial players, including Amazon, Databricks, Google, and Snowflake. In addition, there are several leading academic institutions and research organizations, including BIFOLD/ Technische Universit{\"a}t Berlin, DFKI (German Research Center for Artificial Intelligence), the Hasso-Plattner Institute at the University of Potsdam, and the Humboldt University of Berlin. Furthermore, Berlin boasts a vibrant startup scene.This year SIGMOD will be held at the InterContinental Berlin, a modern and internationally renowned hotel, distinctive for its checkerboard fa{\c c}ade and one of the most famous hotels in the region. Directly located at the famous Tiergarten and just a short walk from the iconic Brandenburg Gate, the InterContinental Berlin is a fantastic point to begin exploring the multicultural metropolis.The conference banquet will be held at the Colosseum Berlin, a former horse-drawn railway hall, later a cinema, and now an impressive complex that hosts events. This one-of-a-kind space seamlessly blends the charm of historic brickwork with a contemporary atmosphere.},
+location = {Berlin, Germany}
+}
+
+@proceedings{10.1145/3787109,
+editor = {Fan Chen, Peipei Zhou, Jie Gu, Amit R. Trivedi and Xiaoxuan Yang},
+title = {GLSVLSI '26: Proceedings of the Great Lakes Symposium on VLSI 2026},
+year = {2026},
+isbn = {9798400724312},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Canandaigua, NY, USA}
+}
+
+@inproceedings{10.1145/3579371.3589059,
+author = {Xue, Yuqi and Liu, Yiqi and Nai, Lifeng and Huang, Jian},
+title = {V10: Hardware-Assisted NPU Multi-tenancy for Improved Resource Utilization and Fairness},
+year = {2023},
+isbn = {9798400700958},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3579371.3589059},
+doi = {10.1145/3579371.3589059},
+abstract = {Modern cloud platforms have deployed neural processing units (NPUs) like Google Cloud TPUs to accelerate online machine learning (ML) inference services. To improve the resource utilization of NPUs, they allow multiple ML applications to share the same NPU, and developed both time-multiplexed and preemptive-based sharing mechanisms. However, our study with real-world NPUs discloses that these approaches suffer from surprisingly low utilization, due to the lack of support for fine-grained hardware resource sharing in the NPU. Specifically, its separate systolic array and vector unit cannot be fully utilized at the same time, which requires fundamental hardware assistance for supporting multi-tenancy.In this paper, we present V10, a hardware-assisted NPU multi-tenancy framework for improving resource utilization, while ensuring fairness for different ML services. We rethink the NPU architecture for supporting multi-tenancy. V10 employs an operator scheduler for enabling concurrent operator executions on the systolic array and the vector unit and offers flexibility for enforcing different priority-based resource-sharing mechanisms. V10 also enables fine-grained operator preemption and lightweight context switch in the NPU. To further improve NPU utilization, V10 also develops a clustering-based workload collocation mechanism for identifying the best-matching ML services on a shared NPU. We implement V10 with an NPU simulator. Our experiments with various ML workloads from MLPerf AI Benchmarks demonstrate that V10 can improve the overall NPU utilization by 1.64{\texttimes}, increase the aggregated throughput by 1.57{\texttimes}, reduce the average latency of ML services by 1.56{\texttimes}, and tail latency by 1.74{\texttimes} on average, in comparison with state-of-the-art NPU multi-tenancy approaches.},
+booktitle = {Proceedings of the 50th Annual International Symposium on Computer Architecture},
+articleno = {24},
+numpages = {15},
+keywords = {ML accelerator, multi-tenancy, neural processing unit},
+location = {Orlando, FL, USA},
+series = {ISCA '23}
+}
+
+@proceedings{10.1145/3768292,
+title = {ICAIF '25: Proceedings of the 6th ACM International Conference on AI in Finance},
+year = {2025},
+isbn = {9798400722202},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@inproceedings{10.1145/3583780.3615459,
+author = {Mohankumar, Akash Kumar and Dodla, Bhargav and K, Gururaj and Singh, Amit},
+title = {Unified Generative \&amp; Dense Retrieval for Query Rewriting in Sponsored Search},
+year = {2023},
+isbn = {9798400701245},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3583780.3615459},
+doi = {10.1145/3583780.3615459},
+abstract = {Sponsored search is a key revenue source for search engines, where advertisers bid on keywords to target users or search queries of interest. However, finding relevant keywords for a given query is challenging due to the large and dynamic keyword space, ambiguous user/advertiser intents, and diverse possible topics and languages. In this work, we present a comprehensive comparison between two paradigms for online query rewriting: Generative (NLG) and Dense Retrieval (DR) methods. We observe that both methods offer complementary benefits that are additive. As a result, we show that around 40\% of the high-quality keywords retrieved by the two approaches are unique and not retrieved by the other. To leverage the strengths of both methods, we propose CLOVER-Unity, a novel approach that unifies generative and dense retrieval methods in one single model. Through offline experiments, we show that the NLG and DR components of CLOVER-Unity consistently outperform individually trained NLG and DR models on public and internal benchmarks. Furthermore, we show that CLOVER-Unity achieves 9.8\% higher good keyword density than the ensemble of two separate DR and NLG models while reducing computational costs by almost half. We conduct extensive online A/B experiments on Microsoft Bing in 140+ countries and achieve improved user engagement, with an average increase in total clicks by 0.89\% and increased revenue by 1.27\%. We also share our practical lessons and optimization tricks for deploying such unified models in production.},
+booktitle = {Proceedings of the 32nd ACM International Conference on Information and Knowledge Management},
+pages = {4745–4751},
+numpages = {7},
+keywords = {sponsored search, natural language generation, dense retrieval},
+location = {Birmingham, United Kingdom},
+series = {CIKM '23}
+}
+

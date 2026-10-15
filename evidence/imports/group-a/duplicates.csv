@@ -1,0 +1,11 @@
+record_id,canonical_record_id,relation,rule
+GA-R0201,GA-R0200,same report,exact DOI/URL
+GA-R0341,GA-R0340,same report,exact DOI/URL
+GA-R0421,GA-R0420,same report,exact DOI/URL
+GA-R0615,GA-R0591,same report,exact DOI/URL
+GA-R0616,GA-R0589,same report,exact DOI/URL
+GA-R0619,GA-R0594,same report,exact DOI/URL
+GA-R0625,GA-R0601,same report,exact DOI/URL
+GA-R0649,GA-R0591,same report,exact DOI/URL
+GA-R0673,GA-R0631,same report,exact DOI/URL
+GA-R0683,GA-R0667,same report,exact DOI/URL

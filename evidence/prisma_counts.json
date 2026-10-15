@@ -1,0 +1,21 @@
+{
+  "occurrences": 2291,
+  "database_occurrences": 2271,
+  "supplementary_occurrences": 20,
+  "by_source": {
+    "ACM": 1582,
+    "Springer": 587,
+    "IEEE": 102,
+    "Supplementary": 20
+  },
+  "exact_duplicate_occurrences": 44,
+  "records_after_exact_linkage": 2247,
+  "possible_version_pairs": 41,
+  "triage": {
+    "uncertain": 251,
+    "high": 183,
+    "low": 1813
+  },
+  "final_screened": null,
+  "final_included": null
+}
