@@ -45,9 +45,10 @@ for(const [name,rows] of Object.entries(d.sheets)){
  sh.getRange(`A2:${end}${vals.length}`).format.wrapText=true;
  sh.freezePanes.freezeRows(1);sh.freezePanes.freezeColumns(name==='Screening'||name==='Records'?2:1);
  for(let i=0;i<fields.length;i++){
-  const k=fields[i];if(/title|reason|rationale|caveat|remaining_checks|abstract|criterion_rationale/.test(k))sh.getRange(`${col(i)}1:${col(i)}${vals.length}`).format.columnWidth=64;
+  const k=fields[i];if(/title|reason|rationale|caveat|remaining_checks|abstract|criterion_rationale|basis|assessment|check_required|eligibility_task|outcome_task|quality_task|remaining_action|evidence_excerpt/.test(k))sh.getRange(`${col(i)}1:${col(i)}${vals.length}`).format.columnWidth=64;
   if(/source_hash|sha256/.test(k))sh.getRange(`${col(i)}1:${col(i)}${vals.length}`).format.columnWidth=68;
  }
+ sh.getRange(`A2:${end}${vals.length}`).format.autofitRows();
  if(name==='Screening'){
   sh.getRange(`F2:F${vals.length}`).format.fill='#FFF2CC';
   sh.getRange(`F2:F${vals.length}`).dataValidation={rule:{type:'list',values:['retain','exclude','uncertain']}};

@@ -31,7 +31,8 @@ The original800 recommendation events are retained. Rameen's reported ACM human 
 
 - `8a9dc3dd116940747cff1b4a6f6f009f7b3f100f`: recovered search-log baseline; commit time2026-10-15T21:47:30UTC.
 - `324b7856d43f2828a0dd0bd92e97a7c87581d6a1`: first800 new recommendations,version audit,50QA items,26outcomes and10citation events; commit time2026-10-15T22:16:23UTC;remote main read back2026-10-15T22:17UTC.
-- Current local snapshot updated 2026-10-15T22:19:09+00:00; next commit publishes the completed preliminary pass and refreshed outputs. A commit cannot contain its own hash; the next checkpoint records its predecessor and the final response provides the final hash.
+- `9636d2ff257c40d18a23aa773924e209e14c5798`: completed preliminary pass,24-page PDF and18-sheet workbook;commit time 2026-10-16T03:28:31+05:00;remote main verified 2026-10-15T22:29:22+00:00.
+- Current local snapshot updated 2026-10-15T22:19:09+00:00; completed research package is published;the final receipt also saves workbook row-height/readability improvements. A commit cannot contain its own hash; the next checkpoint records its predecessor and the final response provides the final hash.
 
 Shell Git lacked push credentials. The connected GitHub app publishes checkpoints. One automatic disclosure rejection was followed by an exact-repository permission check and changed-file credential/private-URL scan; no sensitive matches were found. The authorized public bibliography/register upload then succeeded. No licensed source PDFs or private access URLs are included.
 

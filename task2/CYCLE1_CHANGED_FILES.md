@@ -52,3 +52,4 @@ Compared with baseline main07085c4. Raw original imports and submitted protocol 
 - `task2/report/prisma_flow.pdf`
 - `task2/report/report.pdf`
 - `task2/tracker/review_workbook.xlsx`
+- `evidence/attachment_comparison.json`

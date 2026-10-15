@@ -1,0 +1,8 @@
+{
+  "checked_at_utc": "2026-10-15T22:29:22+00:00",
+  "attached_protocol_sha256": "9219c5b5a843c7153aea57c5b5ff1fcff493d52a7abab647a56f0fa6b53a8ef8",
+  "repository_submitted_protocol_sha256": "cc1179c8f0e6656075e9d7e3f2b8da5d86e84f853af89a48f8dc7b87c39ac44d",
+  "difference": "Attached Table5 says Executed core block;repository submitted Table5 says Planned core block. Other extracted text differs only in wrapping/spacing.",
+  "effect": "No change to IC/EC,RQs or0-2 QA rubric. The instructed repository submitted protocol remains the governing immutable baseline. No actual search execution inferred from the attachment label.",
+  "guideline_attachment_matches_preserved_bytes": true
+}

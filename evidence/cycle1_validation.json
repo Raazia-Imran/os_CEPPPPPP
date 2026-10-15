@@ -25,5 +25,8 @@
   "pdf_visual": "All24pages rendered and inspected;layout passed",
   "workbook_integrity": "PASS;18sheets;formula scan0errors;previews inspected",
   "final_studies": "pending",
-  "readiness": "approximately50-55%;planning estimate only"
+  "readiness": "approximately50-55%;planning estimate only",
+  "published_data_commit": "9636d2ff257c40d18a23aa773924e209e14c5798",
+  "published_data_commit_time": "2026-10-16T03:28:31+05:00",
+  "workbook_layout": "Long text columns widened;row heights autofitted;final formula/error scan passed"
 }
