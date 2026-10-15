@@ -1,0 +1,774 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T07:00:33Z",
+      "timestamp": 1791529233119,
+      "version": "4.3.4"
+    },
+    "reference-count": 43,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2211302"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2211302"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2211301"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2211301"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2213636"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2213636"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2211888"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2211888"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2325956"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2325956"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006751",
+        "name": "U.S. Army",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100006751",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100004344",
+        "name": "Adobe",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100004344",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100003187",
+        "name": "NSF",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100003187",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006754",
+        "name": "US Army Research Laboratory",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "W911NF-17-2-0196"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "W911NF-17-2-0196"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100006754",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Performance Evaluation"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.peva.2025.102539",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          27
+        ]
+      ],
+      "date-time": "2025-12-27T16:10:15Z",
+      "timestamp": 1766851815000
+    },
+    "page": "102539",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "special_numbering": "C",
+    "title": [
+      "Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving"
+    ],
+    "prefix": "10.1016",
+    "volume": "171",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4702-5689",
+        "authenticated-orcid": false,
+        "given": "Qianlin",
+        "family": "Liang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haoliang",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Prashant",
+        "family": "Shenoy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.peva.2025.102539_b1",
+        "series-title": "Amazon ec2 instance types",
+        "author": "Amazon Web Services",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b2",
+        "series-title": "Multi-instance gpu (mig)",
+        "author": "Nvidia Corporation",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b3",
+        "series-title": "Multi-process service (mps)",
+        "author": "Nvidia Corporation",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b4",
+        "series-title": "Computer Vision – ECCV 2018: 15th European Conference, Munich, Germany, September (2018) 8-14, Proceedings, Part I",
+        "first-page": "19",
+        "article-title": "Progressive neural architecture search",
+        "author": "Liu",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b5",
+        "unstructured": "X. Dong, Y. Yang, Nas-bench-201: Extending the scope of reproducible neural architecture search, in: International Conference on Learning Representations, ICLR, 2020."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b6",
+        "series-title": "Proceedings of the 34th International Conference on Neural Information Processing Systems",
+        "article-title": "Brp-nas: Prediction-based nas using gcns",
+        "author": "Dudziak",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Y. Gao, X. Gu, H. Zhang, H. Lin, M. Yang, Runtime performance prediction for deep learning models with graph neural network, in: IEEE/ACM. the 45th International Conference on Software Engineering, Software Engineering in Practice (SEIP) Track, ICSE ’23, 2023.",
+        "DOI": "10.1109/ICSE-SEIP58684.2023.00039"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b8",
+        "series-title": "Proceedings of the 51st International Conference on Parallel Processing",
+        "article-title": "Nnlqp: A multi-platform neural network latency query and prediction system with an evolving database",
+        "author": "Liu",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b9",
+        "series-title": "2022 IEEE 42nd International Conference on Distributed Computing Systems",
+        "first-page": "906",
+        "article-title": "Sectum: Accurate latency prediction for tee-hosted deep learning inference",
+        "author": "Li",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b10",
+        "series-title": "Perfsage: Generalized inference performance predictor for arbitrary deep learning models on edge devices",
+        "author": "Chai",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b11",
+        "unstructured": "H. Qi, E.R. Sparks, A. Talwalkar, Paleo: A performance model for deep neural networks, in: Proceedings of the International Conference on Learning Representations, 2017."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b12",
+        "series-title": "Neuralpower: Predict and deploy energy-efficient convolutional neural networks",
+        "author": "Cai",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b13",
+        "series-title": "2018 IEEE/ACM International Conference on Computer-Aided Design",
+        "first-page": "1",
+        "article-title": "Hardware-aware machine learning: Modeling and optimization",
+        "author": "Marculescu",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "D. Justus, J. Brennan, S. Bonner, A.S. McGough, Predicting the computational cost of deep learning models, in: 2018 IEEE International Conference on Big Data, Big Data, 2018, pp. 3873–3882, http://dx.doi.org/10.1109/BigData.2018.8622396.",
+        "DOI": "10.1109/BigData.2018.8622396"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b15",
+        "series-title": "Proceedings of the 19th Annual International Conference on Mobile Systems, Applications, and Services",
+        "article-title": "nn-meter: towards accurate latency prediction of deep-learning model inference on diverse edge devices",
+        "author": "Zhang",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b16",
+        "series-title": "Proceedings of the 2023 ACM/SPEC International Conference on Performance Engineering",
+        "first-page": "99",
+        "article-title": "Predicting inference latency of neural architectures on mobile devices",
+        "author": "Li",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b17",
+        "unstructured": "P. Veličković, G. Cucurull, A. Casanova, A. Romero, P. Liò, Y. Bengio, Graph attention networks, in: International Conference on Learning Representations, 2018."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1735",
+        "DOI": "10.1162/neco.1997.9.8.1735",
+        "article-title": "Long short-term memory",
+        "volume": "9",
+        "author": "Hochreiter",
+        "year": "1997",
+        "journal-title": "Neural Comput."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b19",
+        "series-title": "14th USENIX Symposium on Networked Systems Design and Implementation",
+        "first-page": "613",
+        "article-title": "Clipper: A low-latency online prediction serving system",
+        "author": "Crankshaw",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b20",
+        "series-title": "2021 USENIX Annual Technical Conference",
+        "first-page": "397",
+        "article-title": "Infaas: Automated model-less inference serving",
+        "author": "Romero",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b21",
+        "doi-asserted-by": "crossref",
+        "unstructured": "K. He, X. Zhang, S. Ren, J. Sun, Deep residual learning for image recognition, in: 2016 IEEE Conference on Computer Vision and Pattern Recognition, CVPR, 2015, pp. 770–778.",
+        "DOI": "10.1109/CVPR.2016.90"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b22",
+        "series-title": "Efficientnet: Rethinking model scaling for convolutional neural networks",
+        "author": "Tan",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "G. Huang, Z. Liu, K.Q. Weinberger, Densely connected convolutional networks, in: 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR, 2016, pp. 2261–2269.",
+        "DOI": "10.1109/CVPR.2017.243"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b24",
+        "series-title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+        "author": "Devlin",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b25",
+        "series-title": "19th USENIX Symposium on Networked Systems Design and Implementation",
+        "first-page": "945",
+        "article-title": "Mlaas in the wild: Workload analysis and scheduling in large-scale heterogeneous GPU clusters",
+        "author": "Weng",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b26",
+        "series-title": "Tensorrt sdk",
+        "author": "Nvidia Corporation",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b27",
+        "series-title": "13th USENIX Symposium on Operating Systems Design and Implementation",
+        "first-page": "578",
+        "article-title": "TVM: An automated end-to-end optimizing compiler for deep learning",
+        "author": "Chen",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b28",
+        "series-title": "Xla : Compiling machine learning for peak performance",
+        "author": "Sabne",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b29",
+        "series-title": "Faster, more flexible inference on gpus using aitemplate, a revolutionary new inference engine",
+        "author": "Bing",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b30",
+        "series-title": "Onnx: Open neural network exchange",
+        "author": "Bai",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b31",
+        "series-title": "2017 IEEE Real-Time Systems Symposium",
+        "first-page": "104",
+        "article-title": "Gpu scheduling on the nvidia tx2: Hidden details revealed",
+        "author": "Amert",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b32",
+        "unstructured": "T.N. Kipf, M. Welling, Semi-supervised classification with graph convolutional networks, in: International Conference on Learning Representations, 2017."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b33",
+        "series-title": "Benchmarking graph neural networks",
+        "author": "Dwivedi",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b34",
+        "series-title": "Proceedings of the 18th ACM International Conference on Multimedia",
+        "first-page": "1485",
+        "article-title": "Torchvision the machine-vision package of torch",
+        "author": "Marcel",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b35",
+        "series-title": "Huggingface’s transformers: State-of-the-art natural language processing",
+        "author": "Wolf",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b36",
+        "series-title": "Tudataset: A collection of benchmark datasets for learning with graphs",
+        "author": "Morris",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b37",
+        "unstructured": "M. Fey, J.E. Lenssen, Fast graph representation learning with PyTorch Geometric, in: ICLR Workshop on Representation Learning on Graphs and Manifolds, 2019."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b38",
+        "series-title": "Automatic differentiation in pytorch",
+        "author": "Paszke",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b39",
+        "series-title": "Adam: A method for stochastic optimization",
+        "author": "Kingma",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b40",
+        "series-title": "Defense Commercial Sensing",
+        "article-title": "Super-convergence: very fast training of neural networks using large learning rates",
+        "author": "Smith",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b41",
+        "series-title": "Thop: Pytorch-opcounter",
+        "author": "Ligeng",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b42",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/3520132",
+        "article-title": "Resource-demand estimation for edge tensor processing units",
+        "volume": "21",
+        "author": "Herzog",
+        "year": "2022",
+        "journal-title": "ACM Trans. Embed. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.peva.2025.102539_b43",
+        "series-title": "12th USENIX Workshop on Hot Topics in Cloud Computing",
+        "article-title": "Towards GPU utilization prediction for cloud deep learning",
+        "author": "Yeung",
+        "year": "2020"
+      }
+    ],
+    "container-title": [
+      "Performance Evaluation"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0166531625000732?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0166531625000732?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          20
+        ]
+      ],
+      "date-time": "2026-03-20T00:23:39Z",
+      "timestamp": 1773966219000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0166531625000732"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "references-count": 43,
+    "alternative-id": [
+      "S0166531625000732"
+    ],
+    "URL": "https://doi.org/10.1016/j.peva.2025.102539",
+    "relation": {},
+    "ISSN": [
+      "0166-5316"
+    ],
+    "issn-type": [
+      {
+        "value": "0166-5316",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Performance Evaluation",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.peva.2025.102539",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2026 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "102539"
+  }
+}

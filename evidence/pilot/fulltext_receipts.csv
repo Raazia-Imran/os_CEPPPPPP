@@ -1,0 +1,4 @@
+lead_id,source_url,source_version,source_pages,file_bytes,sha256,retrieved_date_utc,repository_pdf_uploaded,screening_status
+B-LEAD-0014,https://www.grycap.upv.es/gmolto/publications/preprints/Diana2020asc.pdf,author_hosted_manuscript,30,1889690,9f71ed9cb3615e05b76c972aec2543beaacb897c50f108fbaae5b6dd3154a838,2026-10-15,no,single_AI_pilot_only
+B-LEAD-0020,https://lass.cs.umass.edu/papers/pdf/lilou_gpu_prediction.pdf,author_hosted_manuscript,12,1878924,a74fac66d9486274082fb0cffdfc5c7556498f98d2048d915477bab61e6fdfb9,2026-10-15,no,single_AI_pilot_only
+B-LEAD-0039,https://arxiv.org/pdf/2110.00459,arxiv_v1_author_manuscript,21,2338745,d2d8b6bf2732513fc653615d797ae3e8148d9c07dbcf3e5cbad4771d6d027c16,2026-10-15,no,single_AI_pilot_only

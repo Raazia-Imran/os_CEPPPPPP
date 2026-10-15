@@ -1,0 +1,741 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2026-05-12T16:21:56Z",
+      "timestamp": 1778602916494,
+      "version": "3.51.4"
+    },
+    "reference-count": 54,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2020-05-01T00:00:00Z",
+          "timestamp": 1588291200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2020-05-01T00:00:00Z",
+          "timestamp": 1588291200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Comunitat Valenciana"
+      },
+      {
+        "DOI": "10.13039/501100008530",
+        "name": "ERDF funds",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "IDIFEDER/2018/ 032"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "IDIFEDER/2018/ 032"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100008530",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003329",
+        "name": "Spanish “Ministerio de Economía, Industria y Competitividad”",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "TIN2016-79951-R"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "TIN2016-79951-R"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003329",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100000780",
+        "name": "European Commission",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "777154"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "777154"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000780",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003545",
+        "name": "Brazilian Ministério de Ciência, Tecnologia e Inovação",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "51119"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "51119"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003545",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003359",
+        "name": "Generalitat Valenciana, Spain",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "GrisolíaP/2017/071"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "GrisolíaP/2017/071"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003359",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Parallel and Distributed Computing"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jpdc.2020.01.004",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          25
+        ]
+      ],
+      "date-time": "2020-01-25T11:33:48Z",
+      "timestamp": 1579952028000
+    },
+    "page": "32-42",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 49,
+    "special_numbering": "C",
+    "title": [
+      "Accelerated serverless computing based on GPU virtualization"
+    ],
+    "prefix": "10.1016",
+    "volume": "139",
+    "author": [
+      {
+        "given": "Diana M.",
+        "family": "Naranjo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sebastián",
+        "family": "Risco",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "de Alfonso",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Alfonso",
+        "family": "Pérez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ignacio",
+        "family": "Blanquer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Germán",
+        "family": "Moltó",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "8",
+        "key": "10.1016/j.jpdc.2020.01.004_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "2579",
+        "DOI": "10.1016/j.compeleceng.2013.05.004",
+        "article-title": "An energy management system for cluster infrastructures",
+        "volume": "39",
+        "author": "de Alfonso",
+        "year": "2013",
+        "journal-title": "Comput. Electr. Eng."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b2",
+        "unstructured": ". Alibaba, Alibaba Cloud Function Compute, URL https://www.alibabacloud.com/products/function-compute."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b3",
+        "unstructured": ". Amazon, Amazon Web Services (AWS), URL http://aws.amazon.com."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b4",
+        "unstructured": ". Amazon, Amazon Simple Storage Service (Amazon S3), URL http://aws.amazon.com/s3/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b5",
+        "unstructured": ". Amazon Web Services, AWS Lambda, URL https://aws.amazon.com/lambda."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b6",
+        "unstructured": ". Apache, OpenWhisk, URL https://openwhisk.apache.org/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b7",
+        "unstructured": "Apache Mesos, URL http://mesos.apache.org/."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jpdc.2020.01.004_b8",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1007/s10723-014-9296-5",
+        "article-title": "Dynamic management of virtual infrastructures",
+        "volume": "13",
+        "author": "Caballer",
+        "year": "2015",
+        "journal-title": "J. Grid Comput."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b9",
+        "unstructured": "E. Camacho-Ramos, A. Jimenez-Pastor, I. Blanquer, F. García-Castro, A. Alberich-Bayarri, Computer Aided Diagnosis for Rheumatic Heart Disease by AI Applied to Features Extraction from Echocardiography."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b10",
+        "series-title": "2010 International Conference on High Performance Computing & Simulation",
+        "first-page": "224",
+        "article-title": "rCUDA: Reducing the number of GPU-based accelerators in high performance clusters",
+        "author": "Duato",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b11",
+        "unstructured": "A. Ellis, OpenFaaS, URL https://www.openfaas.com/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b12",
+        "series-title": "Proceedings of the 2nd International Workshop on Serverless Computing - WoSC ’17",
+        "first-page": "1",
+        "article-title": "The SPEC cloud group’s research vision on FaaS and serverless architectures",
+        "author": "van Eyk",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b13",
+        "unstructured": "Fission, URL https://fission.io/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b14",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.future.2019.02.057",
+        "article-title": "A framework and a performance assessment for serverless MapReduce on AWS Lambda",
+        "author": "Giménez-Alventosa",
+        "year": "2019",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b15",
+        "series-title": "Euro-Par 2010 - Parallel Processing",
+        "first-page": "379",
+        "article-title": "A GPGPU transparent virtualization component for high performance computing clouds",
+        "author": "Giunta",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b16",
+        "unstructured": ". Google, Knative, URL https://github.com/knative/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b17",
+        "unstructured": ". Google, Google Cloud Functions, URL https://cloud.google.com/functions/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b18",
+        "unstructured": ". Google, Tensorflow, URL https://www.tensorflow.org/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b19",
+        "series-title": "Proceedings of the 3rd ACM Workshop on System-Level Virtualization for High Performance Computing",
+        "first-page": "17",
+        "article-title": "GViM: GPU-accelerated virtual machines",
+        "author": "Gupta",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b20",
+        "series-title": "Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center",
+        "first-page": "295",
+        "author": "Hindman",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b21",
+        "unstructured": ". IBM, IBM Cloud Functions, URL https://www.ibm.com/cloud/functions."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b22",
+        "series-title": "2018 IEEE International Conference on Cloud Engineering, IC2E",
+        "first-page": "257",
+        "article-title": "Serving deep learning models in a serverless platform",
+        "author": "Ishakian",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b23",
+        "unstructured": "A. Jimenez-Pastor, A. Alberich-Bayarri, F. Garcia-Castro, L. Marti-Bonmati, Automatic visceral fat characterisation on CT scans through deep learning and CNN for the assessment of metabolic syndrome, in: ECR 2019: Book of Abstracts. Insights Into Imaging, Vol. 10 (S1), , 2019."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b24",
+        "series-title": "Proceedings of the 2017 Symposium on Cloud Computing - SoCC ’17",
+        "first-page": "445",
+        "article-title": "Occupy the cloud: distributed computing for the 99%",
+        "author": "Jonas",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b25",
+        "series-title": "Cloud Programming Simplified: A Berkeley View on Serverless Computing",
+        "author": "Jonas",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b26",
+        "unstructured": ". Keras, Keras, URL https://keras.io/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b27",
+        "series-title": "2018 26th Euromicro International Conference on Parallel, Distributed and Network-Based Processing, PDP",
+        "first-page": "533",
+        "article-title": "GPU enabled serverless computing framework",
+        "author": "Kim",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b28",
+        "unstructured": ". Kubernetes, Kubernetes, URL https://kubernetes.io/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b29",
+        "series-title": "Episode 3: Performance comparison of native GPU to virtualized GPU and scalability of virtualized GPUs for machine learning",
+        "author": "Kurkure",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b30",
+        "series-title": "Proceedings of the International Conference on Cloud Computing Technology and Science, CloudCom, Vol. 2017-Decem",
+        "first-page": "162",
+        "article-title": "A preliminary review of enterprise serverless cloud computing (function-as-a-service) platforms",
+        "author": "Lynn",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b31",
+        "unstructured": ". Microsoft, Microsoft Azure Functions, URL https://azure.microsoft.com/en-us/services/functions/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b32",
+        "unstructured": ". Microsoft, Microsoft Cognitive Toolkit, URL https://www.microsoft.com/en-us/cognitive-toolkit/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b33",
+        "unstructured": "MinIO, URL https://min.io."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b34",
+        "doi-asserted-by": "crossref",
+        "first-page": "439",
+        "DOI": "10.1016/j.ijcard.2016.06.088",
+        "article-title": "Echocardiographic prevalence of rheumatic heart disease in Brazilian schoolchildren: Data from the PROVAR study",
+        "volume": "219",
+        "author": "Nascimento",
+        "year": "2016",
+        "journal-title": "Int. J. Cardiol."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b35",
+        "unstructured": "Nuclio, URL https://nuclio.io/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b36",
+        "series-title": "What is a virtual GPU",
+        "author": "NVIDIA",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b37",
+        "unstructured": "Open Container Initiative, URL https://www.opencontainers.org/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b38",
+        "unstructured": ". Oracle, Fn Project, URL https://fnproject.io/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1016/j.future.2018.01.022",
+        "article-title": "Serverless computing for container-based architectures",
+        "volume": "83",
+        "author": "Pérez",
+        "year": "2018",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b40",
+        "first-page": "82",
+        "article-title": "Providing CUDA acceleration to KVM virtual machines in InfiniBand clusters with rCUDA",
+        "volume": "vol. 9687",
+        "author": "Pérez",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b41",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. Pérez, S. Risco, D.M. Naranjo, M. Caballer, G. Moltó, Serverless computing for event-driven data processing applications, in: 2019 IEEE International Conference on Cloud Computing, CLOUD 2019, , 2019.",
+        "DOI": "10.1109/CLOUD.2019.00073"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b42",
+        "unstructured": ". Pivotal, Project riff, URL https://projectriff.io/."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b43",
+        "series-title": "2015 IEEE International Conference on Cluster Computing",
+        "first-page": "488",
+        "article-title": "A performance comparison of CUDA remote GPU virtualization frameworks",
+        "author": "Reano",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b44",
+        "series-title": "Proceedings of the Industrial Track of the 16th International Middleware Conference on ZZZ - Middleware Industry ’15",
+        "first-page": "1",
+        "article-title": "Local and remote GPUs perform similar with EDR 100G InfiniBand",
+        "author": "Reaño",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b45",
+        "unstructured": "A.W. Services, API Gateway, URL https://aws.amazon.com/api-gateway."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b46",
+        "series-title": "Numpywren: serverless linear algebra",
+        "author": "Shankar",
+        "year": "2018"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.jpdc.2020.01.004_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "804",
+        "DOI": "10.1109/TC.2011.112",
+        "article-title": "vCUDA: GPU-accelerated high-performance computing in virtual machines",
+        "volume": "61",
+        "author": "Shi",
+        "year": "2012",
+        "journal-title": "IEEE Trans. Comput."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b48",
+        "series-title": "Communications in Computer and Information Science, Vol. 796",
+        "doi-asserted-by": "crossref",
+        "first-page": "154",
+        "DOI": "10.1007/978-3-319-73353-1_11",
+        "article-title": "Faaster, better, cheaper: the prospect of serverless scientific computing and HPC",
+        "author": "Spillner",
+        "year": "2018"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.jpdc.2020.01.004_b49",
+        "doi-asserted-by": "crossref",
+        "first-page": "2752",
+        "DOI": "10.1109/TC.2015.2506582",
+        "article-title": "GPUvm: GPU virtualization at the hypervisor",
+        "volume": "65",
+        "author": "Suzuki",
+        "year": "2016",
+        "journal-title": "IEEE Trans. Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jpdc.2020.01.004_b50",
+        "doi-asserted-by": "crossref",
+        "first-page": "257",
+        "DOI": "10.1109/TPDS.2018.2865341",
+        "article-title": "A virtual multi-channel GPU fair scheduling method for virtual machines",
+        "volume": "30",
+        "author": "Tan",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Parallel Distrib. Syst."
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b51",
+        "first-page": "207",
+        "article-title": "CUDA achievements and GPU challenges ahead",
+        "volume": "vol. 9756",
+        "author": "Ujaldón",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b52",
+        "article-title": "GPU virtualization for high performance general purpose computing on the ESX hypervisor",
+        "volume": "vol. 46",
+        "author": "Vu",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b53",
+        "series-title": "2014 IEEE 7th International Conference on Cloud Computing",
+        "first-page": "636",
+        "article-title": "GPU passthrough performance: A comparison of KVM, Xen, VMWare ESXi, and LXC for CUDA and OpenCL applications",
+        "author": "Walters",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.jpdc.2020.01.004_b54",
+        "series-title": "Full Virtualization for GPUs Reconsidered",
+        "author": "Yu",
+        "year": "2017"
+      }
+    ],
+    "container-title": [
+      "Journal of Parallel and Distributed Computing"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0743731519303533?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0743731519303533?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2025-10-09T22:31:36Z",
+      "timestamp": 1760049096000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0743731519303533"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          5
+        ]
+      ]
+    },
+    "references-count": 54,
+    "alternative-id": [
+      "S0743731519303533"
+    ],
+    "URL": "https://doi.org/10.1016/j.jpdc.2020.01.004",
+    "relation": {},
+    "ISSN": [
+      "0743-7315"
+    ],
+    "issn-type": [
+      {
+        "value": "0743-7315",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Accelerated serverless computing based on GPU virtualization",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Parallel and Distributed Computing",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jpdc.2020.01.004",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}
