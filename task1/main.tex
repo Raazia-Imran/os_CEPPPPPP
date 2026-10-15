@@ -1,0 +1,295 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=0.85in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,graphicx,booktabs,longtable,array,tabularx,enumitem,fancyhdr,xcolor,fvextra}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.42em}
+\setlist{topsep=2pt,itemsep=1pt,parsep=0pt}
+\renewcommand{\arraystretch}{1.18}
+\emergencystretch=2em
+\pagestyle{fancy}\fancyhf{}\lhead{SLR Protocol | Topic 23}\rhead{Operating Systems CEP}\cfoot{\thepage}
+\newcommand{\term}[1]{\textbf{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+\pagenumbering{roman}
+\begin{titlepage}
+\centering
+\includegraphics[width=1.13in]{figures/ned_logo-000.jpg}\par\vspace{0.6cm}
+{\large NED UNIVERSITY OF ENGINEERING AND TECHNOLOGY\par}
+{Department of Software Engineering\par}\vspace{0.8cm}
+{\large Course: OPERATING SYSTEMS\par}
+{Course code: SE-303 \quad Instructor: Dr. Mustafa Latif \quad Section: A\par}
+\vfill
+{\LARGE\bfseries SYSTEMATIC LITERATURE REVIEW (SLR) PROTOCOL\par}\vspace{0.5cm}
+{\Large GPU Sharing Mechanisms for Multi-Tenant Inference Serving:\par}
+{\Large Time-Slicing vs. MPS vs. MIG vs. API Remoting\par}\vspace{0.3cm}
+{A Study of Utilization, Latency, and Isolation in Operating Systems\par}
+\vfill
+\begin{tabular}{ll}\toprule Roll number & Name\\\midrule
+SE-24008 & ESHAAL FAISAL\\
+SE-24009 & RAAZIA IMRAN RESHAMWALA\\
+SE-24016 & RAMEEN SIDDIQUI\\\bottomrule
+\end{tabular}\par\vspace{0.65cm}
+{27 September 2026\par}
+\end{titlepage}
+\pagenumbering{arabic}
+
+\section{Background and Motivation}
+Modern machine-learning inference systems may serve multiple applications, models or customers on a shared GPU. In this protocol, a \emph{tenant} is a separately managed inference workload or process whose performance may be affected by co-tenants. A single physical GPU may be shared to improve use of capacity and support more tenants; the magnitude of any benefit depends on workload and configuration and is an empirical question. GPU resource management involves driver/runtime and device-level behavior as well as operating-system scheduling. Hardware support for preemption and isolation varies by GPU and software stack; it must not be generalized from one product generation to all GPUs.
+
+Table~\ref{tab:mechanisms} distinguishes the four assigned comparison families from related implementation labels. NVIDIA's documentation defines MPS as a service allowing multiple CUDA processes to share GPU resources, MIG as partitioning supported GPUs into instances, and time-slicing as a form of shared access with weaker memory/fault isolation than MIG in its GPU Operator setting \cite{nvidiaMPS,nvidiaMIG,nvidiaTime}. Vendor documentation establishes terminology and documented capabilities, not independent comparative inference results.
+
+\begin{longtable}{p{0.22\linewidth}p{0.45\linewidth}p{0.22\linewidth}}
+\caption{Mechanism framework and scope}\label{tab:mechanisms}\\\toprule
+Mechanism & Basic approach & Review role\\\midrule\endfirsthead
+\toprule Mechanism & Basic approach & Review role\\\midrule\endhead
+Time-slicing & Multiple tenants obtain GPU execution over different time intervals; configuration and actual preemption behavior are recorded. & Core temporal family\\
+NVIDIA MPS & CUDA processes share GPU execution resources through the MPS service; exact limits/settings depend on version. & Core MPS family\\
+NVIDIA MIG & A supported physical GPU is partitioned into hardware GPU instances with documented isolation properties and fixed profiles. & Core spatial family\\
+GPU virtualization & Virtual GPU environments expose GPU resources to tenants; classify by underlying temporal, spatial or API mechanism. & Context or remoting subtype\\
+API interception/remoting & GPU calls are intercepted or forwarded to a local/remote GPU service; record transport and whether the target is one node/device. & Core API family\\
+Custom GPU schedulers & Policies choose allocation or execution order; record the underlying sharing primitive. & Context or hybrid\\
+Hybrid approaches & Combine two or more primitives, such as partitions with time-slicing. & Cross-cutting category\\\bottomrule
+\end{longtable}
+
+The motivation is a possible trade-off between utilization/tenant density and predictable per-tenant performance/isolation. It is a review hypothesis, not a result: some workload mixes may benefit from partitioning or sharing without the expected penalty, while others may show contention or stranded capacity. The relevant operating-systems concerns include time-sharing versus partitioning, throughput versus fairness, utilization versus isolation, and performance versus predictability. Contention can occur for compute, memory capacity, bandwidth, cache and scheduling opportunities; the causal mechanism and magnitude must be supported by individual studies rather than assumed.
+
+Inference often has request-response behavior, so average latency may conceal slow requests. A reported p95 or p99 is the corresponding empirical latency quantile under a specified load, observation window and measurement method; it does not by itself prove a service-level objective (SLO) was met. Training-only behavior cannot be substituted for inference-serving evidence. GPU sharing should therefore be appraised under concurrent tenants, with workload, request rate, batching and baseline made explicit.
+
+\begin{longtable}{p{0.28\linewidth}p{0.65\linewidth}}
+\caption{Evaluation aspects and operational interpretation}\label{tab:metrics}\\\toprule Aspect & Purpose and evidence to record\\\midrule\endfirsthead
+\toprule Aspect & Purpose and evidence to record\\\midrule\endhead
+GPU utilization & Instrument, sampling interval, denominator and activity definition; do not equate device activity with useful work.\\
+Tenant density & Number of concurrent eligible workloads per physical GPU at a stated performance threshold and resource allocation.\\
+Throughput & Completed inference requests or tokens per time unit, with batching and input/output lengths when relevant.\\
+Latency & Defined response-time interval and mean/median statistic at a stated offered load.\\
+Tail latency & p95/p99 or other reported quantile, sample size/window and SLO condition.\\
+Predictability & Within-tenant variability or ability to sustain stated latency/throughput targets across co-tenant mixes.\\
+Resource isolation & Separate compute interference, memory/bandwidth partitioning and any security claim; record measurement versus specification.\\
+Fault isolation & Whether a fault in one tenant is contained from others, with the actual fault model and evidence.\\\bottomrule
+\end{longtable}
+
+This topic is relevant to inference-as-a-service, multi-model serving and edge systems. Existing studies can differ in hardware, model, batch size, baselines and metrics, so a percentage from one study cannot automatically be compared to a number from another. Examples identified for search-strategy validation include PipeSwitch (temporal switching), REEF (preemptive inference scheduling), gpulets (spatio-temporal partitioning), and ParvaGPU (MIG/MPS spatial sharing) \cite{pipeswitch,reef,gpulets,parvagpu}. Their publication identities were checked against conference or publisher records; they are \emph{candidate seeds}, not studies selected by this review. A prior survey covers the broader multi-tenant inference stack and informs an overlap check, but is not a primary study \cite{yusurvey}. The protocol-led method follows software-engineering review guidance \cite{kitchenham}; PRISMA 2020 informs transparent selection reporting \cite{prisma}.
+
+\section{Research Objective}
+The main objective is to systematically identify, classify and synthesize peer-reviewed primary evidence on sharing one physical GPU among concurrent machine-learning inference tenants. The core comparison concerns time-slicing, NVIDIA Multi-Process Service (MPS), Multi-Instance GPU (MIG) and GPU API interception/remoting. GPU virtualization, custom scheduling and hybrids are coded as implementation layers or combinations when their inference evidence can be attributed to a core family.
+
+The review will examine GPU utilization, tenant density, inference throughput, average/median and tail latency, predictability, cross-tenant interference, resource isolation and fault isolation. It will record the conditions in which each result was obtained, assess methodological strengths and limitations, and develop conditional guidance for engineers. A weak or absent comparison will be reported as a gap, not filled by presumed performance. The final primary-study target in the course guideline is approximately 15--20; this is a planning target, never a reason to relax eligibility or invent studies.
+
+\section{Scope and Boundaries}
+The unit of interest is sharing a single physical GPU for multiple inference tenants, even if the wider serving system uses several nodes or the GPU is accessed through an API proxy. A cluster paper can qualify only if separately reported same-GPU inference-sharing measurements can be extracted. API remoting is eligible only when the remoted endpoint is a shared GPU and its tenant-level effects are separable; mere remote execution is insufficient. Mixed training/inference work can qualify only if the inference subset is separable. GPU model serving, deep-learning inference, and related request-serving workloads qualify; training-only, non-GPU accelerators, pure CPU scheduling and cluster-only placement do not.
+
+Eligibility is \emph{conjunctive}: a paper must meet the publication, mechanism, concurrent-inference, single-GPU evidence, evaluability and date requirements in Section~\ref{sec:inclusion}. A study does not qualify merely because it mentions one keyword. Surveys, position papers, vendor manuals and preprints may help vocabulary, references and contextual explanation, but are logged outside the primary-study set. A preprint with a later peer-reviewed version is resolved to the final version.
+
+\section{Research Questions}
+Five questions cover mechanism classification, measurement, outcomes, isolation and conditional choice. The taxonomy is a mapping device within a full evidence review, informed by the systematic mapping distinction of Petersen \emph{et al.} \cite{petersen}.
+
+\begin{longtable}{p{0.07\linewidth}p{0.49\linewidth}p{0.32\linewidth}}
+\caption{Research questions and required evidence}\label{tab:rq}\\\toprule ID & Research question & Evidence/output\\\midrule\endfirsthead
+\toprule ID & Research question & Evidence/output\\\midrule\endhead
+RQ1 & What time-slicing, MPS, MIG and API remoting mechanisms are evaluated for concurrent inference on one GPU, and how do sharing granularity, layer and isolation boundary classify them? & Mechanism taxonomy and design/evidence table.\\
+RQ2 & How do studies measure utilization, throughput, density, average/tail latency, predictability and interference, and how comparable are their experimental methods? & Metric definitions, hardware/workload/baseline matrix and comparability flags.\\
+RQ3 & Under what GPU, workload, batch, tenant mix and configuration conditions are changes in utilization, throughput, density and latency reported? & Conditional outcome tables, direct contrasts and uncertainty.\\
+RQ4 & What resource and fault isolation properties, trade-offs, implementation costs and conflicting results are reported, and what limits the evidence? & Isolation evidence matrix, quality appraisal and methodological gaps.\\
+RQ5 & Which approach or combination is supported for specified inference-serving conditions and priorities, with what confidence and alternatives? & Conditional decision matrix; no universal winner presumed.\\\bottomrule
+\end{longtable}
+
+\section{Search Strategy}
+A predefined, reproducible strategy combines database searching and separately logged citation chasing. Its objective is reasonable coverage of peer-reviewed systems literature rather than an assertion that one index contains every paper. The expressions below are complete \emph{planned} inputs. Database-specific field settings, exact accepted strings, search dates and returned counts belong in the search log when the searches are run. PRISMA-S informs reporting of the full search method \cite{prismas}.
+
+\subsection{Selected academic databases}
+The course guideline prefers at least four suitable sources from NED's E-Databases section. NED's E-Resources and Research Guide pages are the selection basis \cite{nedResources,nedGuide}. Table~\ref{tab:databases} specifies four formal search interfaces. Institutional listing does not establish current individual entitlement; if one source is unavailable, the attempt and justified replacement must be documented by amendment.
+
+\begin{longtable}{p{0.21\linewidth}p{0.13\linewidth}p{0.54\linewidth}}
+\caption{Selected search resources and purpose}\label{tab:databases}\\\toprule Database/platform & Role & Rationale and handling\\\midrule\endfirsthead
+\toprule Database/platform & Role & Rationale and handling\\\midrule\endhead
+IEEE Xplore & Formal & Engineering, computing, architecture and conference/journal coverage; test metadata fields and export.\\
+ACM Digital Library & Formal & Computing and systems proceedings/journals; record Advanced Search scope and generated query.\\
+ScienceDirect & Formal & Elsevier journal/book-series coverage; log exact field scope and filter behavior, avoiding an unsupported claim of complete conference coverage.\\
+Springer Nature Link & Formal & Springer Nature computing/engineering coverage; document whether search targets metadata or full text.\\
+Scopus, Web of Science & Citation check & Cross-publisher indexing and citation checking if available; if promoted to formal searches, record full runs and amend protocol.\\
+Google Scholar; publisher references & Discovery & Backward/forward citation leads and access routes; not a substitute for formal runs. Record every discovered report's provenance.\\\bottomrule
+\end{longtable}
+
+\subsection{Search keyword framework}
+The two mandatory concept groups are sharing/mechanism and inference. Group C is \emph{not} mandatory in the main query, because papers can report outcomes without naming them in metadata. The planned inference block uses the broad term \term{inference} (which also matches phrases such as ``DNN inference'' when indexed literally) plus explicit serving phrases that need not contain that word. More specific inference phrases in the keyword framework are candidates for documented sensitivity refinements, rather than an assertion that every variation is separately pasted into each expression. Search sensitivity will be checked against independently identified candidate publications across the mechanism families; a seed is not an included primary study.
+
+\begin{longtable}{p{0.17\linewidth}p{0.19\linewidth}p{0.52\linewidth}}
+\caption{Concept groups and candidate terms}\label{tab:keywords}\\\toprule Group & Role & Terms and variations\\\midrule\endfirsthead
+\toprule Group & Role & Terms and variations\\\midrule\endhead
+A. GPU sharing & Mandatory & GPU sharing, multi-tenant/multitenant GPU, GPU virtualization, partitioning, isolation, consolidation, scheduling, time-slicing/time sharing; MPS/multi-process service; MIG/multi-instance GPU; API/CUDA remoting, interception and proxying. Pair ambiguous acronyms with GPU.\\
+B. Inference & Mandatory & Planned core block: inference, model serving, ML serving, LLM serving, DNN serving. Additional variants for pilot/seed checks: deep-learning inference, DNN inference and inference serving (covered by the unquoted \term{inference} term where indexed).\\
+C. Outcomes & Screen/extract & GPU utilization, throughput, tenant density, latency, p95/p99, SLO, interference, predictability, resource and fault isolation. Not required in core query.\\\bottomrule
+\end{longtable}
+
+\subsection{Search strings by database}
+Each core search combines sharing/mechanism terms with inference/serving terms using AND. Three core expressions per database cover broad sharing, named temporal/MPS/MIG mechanisms and API remoting. A fourth, narrowly targeted expression per database seeks pre-2020 MPS evidence for the documented older-study exception. Acronyms occur only with GPU context. Execution, any interface adaptation, field settings and actual results must be recorded verbatim in the later search log. Official IEEE, ACM, Elsevier and Springer search help informed the entry choices \cite{ieeeSearch,acmSearch,elsevierSearch,springerSearch}.
+
+\input{search_strings.tex}
+
+For each platform, merge its core and historical-lane exports, then deduplicate across sources. The validation seeds are PipeSwitch, REEF, gpulets and ParvaGPU, whose publication records are independently available \cite{pipeswitch,reef,gpulets,parvagpu}. Inspect approximately the first 20 pilot hits per expression for false matches and record whether each seed indexed in that platform is retrieved; a seed absent from a publisher-specific collection is not automatically a query failure. For broad full-text fields, record the proportion of clearly irrelevant pilot hits and the observed result volume; refine a noisy expression by narrower phrases or a logged supplementary Title-field search, while retaining a recall-oriented route for papers whose title omits the mechanism. If an expected indexed paper is missed, revise terms and log the original and revised accepted expressions, reason and coverage effect. Outcome terms remain optional. The \emph{search-run log} records platform, interface, exact accepted query, field, filters, access route, date/time, searcher, returned/exported counts, export filename/hash and notes. Citation chasing receives a separate source, date, direction and count. No numbers are inserted before real runs.
+
+\section{Publication Period}
+The formal main window begins 1 January 2020 and ends on each actual final search date in 2026, which will be recorded. This follows the guideline's recent-window preference and captures currently relevant MIG-era inference work without pretending that all foundational work began in 2020. To reduce historical bias for MPS, a prespecified targeted search (H1--H4) covers each database's indexed records before 1 January 2020, with no arbitrary lower year boundary; backward citation leads are logged separately. The historical lane is a discovery route, not automatic eligibility: an older peer-reviewed study may enter only through an individually logged exception if it introduces or establishes the evaluated mechanism, or supplies a directly relevant inference-sharing baseline that the main-window studies do not adequately document. Record discovery route, full-text evidence, specific need, decision by both reviewers and year. Apply IC1--IC5 and the same quality rubric. Tabulate older exceptions separately in the final study characteristics and sensitivity discussion. Older context-only references are not primary-study counts. An update near final submission should use the same protocol or a justified amendment. No study after a recorded cutoff is silently added.
+
+\section{Inclusion Criteria}\label{sec:inclusion}
+All conditions in Table~\ref{tab:ic} must be met at full text. Inference and mechanism evidence cannot be substituted by general claims in an abstract.
+
+\begin{longtable}{p{0.08\linewidth}p{0.82\linewidth}}
+\caption{Conjunctive inclusion criteria}\label{tab:ic}\\\toprule ID & Criterion\\\midrule\endfirsthead
+\toprule ID & Criterion\\\midrule\endhead
+IC1 & Final, English, peer-reviewed full conference or journal primary study. Verify venue/version; preprints and technical reports alone are context only.\\
+IC2 & Presents, evaluates or empirically measures one of the assigned local sharing families (or a classifiable virtualization/scheduler/hybrid) among distinct concurrent tenants/processes/models/applications on one physical GPU.\\
+IC3 & Includes ML/DL inference or model-serving workload. Mixed training/inference studies require separable inference results.\\
+IC4 & Reports at least one relevant inspectable utilization, density, throughput, latency/tail/predictability, interference, resource isolation or fault-isolation outcome under the sharing setup, with sufficient method and configuration detail to interpret it.\\
+IC5 & Provides an extractable within-one-physical-GPU result, comparison or per-GPU co-tenant measurement, even if the containing server or scheduler uses multiple GPUs; enough full text is available for appraisal and extraction. A dedicated single-GPU-only experiment is not required.\\
+IC6 & Falls in the main publication window or satisfies a documented seminal exception.\\\bottomrule
+\end{longtable}
+
+\section{Exclusion Criteria}
+At full-text assessment, assign one primary decisive reason in the order below, with secondary notes if useful. Duplicates and uncollected full texts are accounted for \emph{before} assessed-report exclusions in PRISMA 2020 \cite{prisma}.
+
+\begin{longtable}{p{0.09\linewidth}p{0.79\linewidth}}
+\caption{Full-text exclusion codes}\label{tab:ec}\\\toprule ID & Criterion\\\midrule\endfirsthead
+\toprule ID & Criterion\\\midrule\endhead
+EC1 & Non-primary or non-peer-reviewed version: survey, tutorial, editorial, position/vision paper, vendor document, preprint-only, poster or abstract-only item. Relevant reviews stay in a separate context/citation list.\\
+EC2 & Training-only or no concurrent inference tenants/evaluable inference-sharing outcome.\\
+EC3 & Hardware-only or microarchitecture-only work with no evaluated systems-level sharing mechanism.\\
+EC4 & Cluster/multiple-GPU scheduling or remote execution reporting only aggregate system results, with no extractable concurrent co-tenant evidence on one physical GPU. A multi-GPU paper is not excluded solely for its scale.\\
+EC5 & Non-GPU accelerator without a relevant evaluated GPU mechanism.\\
+EC6 & Insufficient full-text methods, workload/configuration or outcomes to answer any RQ.\\
+EC7 & Outside date window without accepted seminal exception, or non-English full text.\\\bottomrule
+\end{longtable}
+
+Identical imports are linked and removed before screening. Multiple reports of one study are linked and the most complete peer-reviewed report is prioritized; distinct results in companion reports remain traceable. For a report that cannot be obtained after documented library, repository and author-contact attempts, log ``report not retrieved,'' not EC6. Record whether a paper is inaccessible or merely unassessed; neither supplies a fabricated result.
+
+\section{Screening and Study Selection}
+Study selection will follow PRISMA 2020 reporting categories \cite{prisma}, retaining separate record, report and study identifiers, independent votes and reconciled counts.
+
+\subsection{Seven-step workflow}
+\begin{enumerate}[label=\textbf{Step \arabic*:},leftmargin=*]
+\item \textbf{Database searching.} Run each frozen string and record interface, exact query, filters, date/time and counts. Save raw exports untouched.
+\item \textbf{Result export.} Export title, author, venue, year, abstract, DOI/URL and source-query fields where available. Assign immutable imported record IDs (R001, etc.).
+\item \textbf{Deduplication.} First match normalized DOI; then review title, authors and year manually. Keep all source links, identify a canonical record, and record removed-before-screening counts. Do not conflate records with unique studies.
+\item \textbf{Title screening.} Two independent reviewers mark include, exclude or uncertain. Keep uncertain records if title alone cannot establish ineligibility.
+\item \textbf{Abstract screening.} Apply the same predeclared criteria independently to retained records. Record both initial votes and a short reason; resolve disagreement before full-text retrieval.
+\item \textbf{Full-text screening.} Assign report IDs (P001, etc.), log retrieval attempts and PRISMA reports not retrieved. Two reviewers independently apply all criteria to available reports. Record one decisive EC code with explanation and page/section if excluded.
+\item \textbf{Final selection.} Link eligible reports to unique study IDs (S001, etc.). Only eligible primary studies proceed to quality assessment, extraction and synthesis.
+\end{enumerate}
+
+\subsection{Decision register and reviewer agreement}
+The spreadsheet will store immutable R/P/S identifiers; title, DOI, source database(s), source query/run, year and version; stage and reviewer; each independent include/exclude/uncertain vote; criterion, short justification and timestamp; adjudicator decision and reason; retrieval status and attempts; primary full-text EC code; and version links. A criteria pilot on approximately ten diverse records will identify ambiguous interpretations before large-scale screening. Each record receives two independent votes at title/abstract and full text; the third group member adjudicates unresolved differences. Preserve initial and final decisions rather than overwriting them. Consultation with the supervisor can be logged for unresolved scope issues, not used to invent eligibility.
+
+\subsection{PRISMA count reconciliation}
+From the register compute records identified by each database/other source, duplicate and other pre-screen removals, unique records screened, records excluded, reports sought, reports not retrieved, reports assessed, reports excluded by primary reason, and unique included studies. Check that identified minus pre-screen removals equals screened; screened minus excluded equals reports sought (adjusting explicitly for record-to-report links); sought minus not retrieved equals assessed; assessed minus excluded equals included reports; then map included reports to studies. If a report maps to more than one record or a study has multiple reports, disclose the mapping and reconcile counts. Counts are reported from the later executed search, not estimated in this protocol.
+
+\section{Quality Assessment}
+Ten criteria use a 0--2 scale: score \textbf{0} when absent/unclear, \textbf{1} when partly addressed and \textbf{2} when sufficiently supported. Maximum is \textbf{20}. A score is an appraisal of reporting and internal validity relevant to this review; it is not a publication prestige measure or an automatic inclusion gate. For each criterion record a brief rationale and source page/table/figure. Two reviewers score independently and reconcile differences, preserving initial scores.
+
+\begin{longtable}{p{0.08\linewidth}p{0.28\linewidth}p{0.55\linewidth}}
+\caption{Ten-item study appraisal rubric; requirements for score 2}\label{tab:quality}\\\toprule ID & Criterion & Score 2 requires\\\midrule\endfirsthead
+\toprule ID & Criterion & Score 2 requires\\\midrule\endhead
+Q1 & Clarity of objective & The problem, proposed mechanism and evaluated questions are clear.\\
+Q2 & Technical description & Sharing primitive, configuration and relevant implementation layer are described sufficiently to classify it.\\
+Q3 & Experimental transparency & Setup, measurement procedure, repetitions or analytical method and result provenance are clear.\\
+Q4 & Hardware/workload description & GPU model/generation, software environment and concurrent inference workload/tenant characteristics are reported.\\
+Q5 & Baseline fairness & A relevant baseline is specified and comparable workload, resource allocation and measurement conditions are documented or justified.\\
+Q6 & Utilization/throughput & Any claimed utilization, throughput or density benefit uses a defined metric, unit and method; a paper without these claims explains its alternate outcome.\\
+Q7 & Latency measurement & Claimed latency results specify interval, load, statistic and measurement method; tail/SLO results include p95/p99 or stated quantile when claimed.\\
+Q8 & Multi-tenant interference & Multiple concurrent tenants/co-tenant conditions are tested and sufficient evidence supports interference conclusions.\\
+Q9 & Isolation evaluation & Any claimed resource, security or fault isolation has a defined boundary and direct test or appropriately delimited evidence.\\
+Q10 & Replication/limits & Details/artifacts permit informed replication and threats, limits or configuration dependence are discussed.\\\bottomrule
+\end{longtable}
+
+For criteria tied to a claim that a paper genuinely does not make, record a reasoned N/A instead of assigning an artificial failure; report the raw sum, applicable maximum and normalized percentage. The team will check whether this rule produces inconsistent scoring during a two-study calibration before freeze and amend it if needed. Eligible lower-quality studies remain in the synthesis. Report whether major conclusions change when studies below 60\% of applicable points are excluded in a sensitivity view; these thresholds guide interpretation, not study selection. Do not hide disagreement or aggregate dissimilar evidence mechanically.
+
+\section{Data Extraction Fields}
+Use a structured form consistently for every eligible study. Categories A--M include source anchors and comparator conditions. Use one row per \emph{study $\times$ mechanism/configuration $\times$ inference workload/contrast $\times$ outcome}; maintain a study-level identity sheet to avoid counting rows as independent studies. Enter \term{NR} (not reported) for absent values, not zero or an estimate. Mark an author's claim separately from a direct measurement. A second reviewer checks headline numerical outcomes against the source PDF.
+
+\begin{longtable}{p{0.29\linewidth}p{0.62\linewidth}}
+\caption{Extraction form categories}\label{tab:extract}\\\toprule Category & Fields\\\midrule\endfirsthead
+\toprule Category & Fields\\\midrule\endhead
+A. Bibliographic information & R/P/S IDs, title, authors, year, venue/type, DOI/publisher URL, peer-review/version state, search provenance, source PDF page/figure/table for each extracted claim.\\
+B. GPU/system environment & GPU vendor, model/generation, count and memory, OS, driver/CUDA/runtime/framework versions, node/virtualization environment.\\
+C. ML workload & Model/family/size, task, dataset/request traces, input/output characteristics, batch size, arrival rate, warm-up and inference mode.\\
+D. GPU sharing mechanism & Time-slicing, MPS, MIG, API remoting, virtualization, custom scheduler or hybrid; mechanism layer, capability assumptions and implementation version.\\
+E. Scheduling/partitioning & Policy, time slice, MIG profile/number of instances, MPS settings/caps, resource allocation, API intercept/transport and locality.\\
+F. Utilization/throughput & GPU utilization instrument/denominator/interval, completed requests/tokens per second, tenant density with threshold; raw value and units.\\
+G. Latency & Mean/median, p95/p99, variation, SLO/violation rate, clock interval, sample/window, load and exact unit.\\
+H. Multi-tenant interference & Concurrent tenant count and mix, co-tenant load, standalone versus shared baseline, slowdown or interference calculation.\\
+I. Isolation & Performance interference, resource/memory partitioning, security boundary, fault containment; measured/claimed/NR, fault model and evidence anchor.\\
+J. Experimental methodology & Baseline equality, repetitions, error bars/confidence intervals, statistical test, instrumentation, warm-up, threats and reported limitations.\\
+K. Findings/trade-offs & Exact result direction/magnitude and denominator, authors' interpretation, contrary/null results, implementation/operational costs and applicability.\\
+L. Reproducibility & Code, artifact, dataset, trace, setup and access location; availability claim and date checked.\\
+M. Quality assessment & Q1--Q10 initial/reconciled score, applicable maximum, rationales, anchors, reviewer and check status.\\\bottomrule
+\end{longtable}
+
+Numeric values remain attached to their specific baseline and configuration. Do not convert figures by visual approximation unless the method is stated and uncertainty recorded. If a paper reports both p95 and p99, keep them separate. For hybrid systems, code each underlying primitive plus the hybrid label. For a distributed serving system, extract only separable single-device effects. Preserve verbatim short quotations only when necessary, quoted and page-anchored; the final prose should paraphrase faithfully and cite the source.
+
+\section{Evidence Synthesis Strategy}
+A structured narrative and comparative table synthesis is planned. Studies will likely differ in hardware, workload, co-tenants, baseline and metrics, so a pooled statistical meta-analysis is not presumed. If genuinely compatible contrasts emerge, a later dated amendment must define effect measure, comparability rule and heterogeneity treatment before pooling.
+
+\begin{longtable}{p{0.27\linewidth}p{0.64\linewidth}}
+\caption{Synthesis areas and outputs}\label{tab:synthesis}\\\toprule Area & Analysis/output\\\midrule\endfirsthead
+\toprule Area & Analysis/output\\\midrule\endhead
+Mechanism comparison & Taxonomy of time-slicing, MPS, MIG, API remoting, contextual virtualization/schedulers and hybrids; map sharing granularity and implementation layer to RQ1.\\
+Utilization/throughput & Compare reported utilization, throughput and tenant density at stated load and baseline; map to RQ2/RQ3.\\
+Latency/predictability & Compare mean/median and p95/p99 with quantile definition, tenant mix and SLO, including negative or null results; map to RQ2/RQ3.\\
+Interference/isolation & Separate tested interference, partitioning, security and fault containment from undocumented vendor/product claims; map to RQ4.\\
+Trade-offs & Trace utilization/density against per-tenant latency and isolation with comparable baseline conditions; map to RQ3--RQ5.\\
+Research gaps & Report missing direct comparisons, weak baselines, unreported workloads/percentiles and limitations; map to RQ2/RQ4/RQ5.\\\bottomrule
+\end{longtable}
+
+\textbf{Comparison rule.} Separate within-paper head-to-head comparisons from cross-paper observations. Cross-study numbers are only juxtaposed in hardware, model, batch, concurrent-tenant count, load, metric and baseline strata sufficiently similar to interpret; otherwise describe qualitatively and explicitly state non-comparability. Explain conflicting findings with observed configurations and study limitations without speculating beyond evidence. Integrate the quality rubric and repeat key conclusions without low-quality studies to check robustness. A conditional decision matrix will list scenario/priorities, eligible mechanism, observed benefit, sacrifice, deployment constraint, alternative, evidence sources and confidence. It must permit ``insufficient evidence.'' No universal superior mechanism is assumed.
+
+\section{Protocol Changes and Governance}\label{sec:changes}
+Major changes after searching starts must be dated, justified and traceable. This includes changes to databases, search fields/terms, date range, eligibility, RQs, quality rubric, extraction or synthesis. Pilot refinements are also retained so the final query can be reconstructed. Editorial spelling and layout corrections do not constitute methodological changes. Search exports and earlier protocol versions must be preserved; changed eligibility requires re-screening of affected records and updated PRISMA counts.
+
+\begin{longtable}{p{0.18\linewidth}p{0.25\linewidth}p{0.45\linewidth}}
+\caption{Required amendment-register fields}\label{tab:amend}\\\toprule Field & Entry & Why recorded\\\midrule\endfirsthead
+\toprule Field & Entry & Why recorded\\\midrule\endhead
+Date and protocol version & UTC date/time, author and group decision & Establish order relative to search and selection.\\
+Old and new rule & Literal former and revised wording/query & Permit exact reconstruction.\\
+Rationale & Pilot evidence, feasibility or discovered ambiguity & Explain the methodological decision.\\
+Impact and remedy & Affected runs, records, counts, re-search or re-screen action & Keep study selection and PRISMA flow consistent.\\\bottomrule
+\end{longtable}
+
+\section{Protocol Summary}
+This protocol defines a systematic review of GPU sharing for multi-tenant inference on one physical GPU. Four selected academic database interfaces will be searched with twelve logged main-window expressions and four targeted older-MPS expressions. The main primary-study period is 2020 through the actual final search in 2026, with individually justified older seminal exceptions. Two reviewers will independently screen and appraise peer-reviewed primary studies, log retrieval and disagreements, and construct a PRISMA 2020 flow. Structured extraction with page-level evidence will support a condition-aware narrative synthesis of utilization, density, latency, interference and isolation. Major changes after searching will be documented and justified.
+
+\appendix
+\section{Operational Forms to Complete Before and During the Review}
+The review log will implement these field specifications electronically, with one row per event or decision and immutable identifiers. Values and counts will be entered from actual searches and screening.
+
+\subsection{Search-run and seed-recall form}
+\begin{longtable}{p{0.33\linewidth}p{0.55\linewidth}}
+\caption{Blank search-run field specification}\\\toprule Field & Entry rule\\\midrule\endfirsthead\toprule Field & Entry rule\\\midrule\endhead
+Run ID; operator; UTC/local date/time & Assign once per interface/query/filter combination.\\
+Database; URL; institutional access & Record exact platform, interface version if visible, entitlement or access route.\\
+Query ID; exact accepted query & Preserve literal text copied from interface and original pilot proposal separately.\\
+Field scope; filters & Title/abstract/keywords/full text, date, language, type; note unsupported filters.\\
+Returned and exported counts & Capture real numbers and explain any mismatch.\\
+Export filename/hash; source link & Save untouched RIS/BibTeX/CSV or screenshot, with provenance.\\
+Seed-study recall & List known candidate identifiers tested, retrieved/not retrieved, and why changes were made.\\
+Change and sign-off & Link amendment version and responsible reviewer; do not overwrite earlier run.\\\bottomrule
+\end{longtable}
+
+\subsection{Screening, appraisal and extraction check}
+At title/abstract and full text, Reviewer A and Reviewer B independently record their initial vote, code and rationale; Reviewer C records any adjudication. The full-text row also records retrieval attempts and the first decisive exclusion reason. A link table maps imported record IDs to reports and unique studies, preserving original source membership. For each included study, one reviewer extracts evidence and a second checks the mechanism classification, baseline and each headline number against a page, table or figure.
+
+\begin{longtable}{p{0.30\linewidth}p{0.58\linewidth}}
+\caption{Blank decision and extraction field specification}\\\toprule Entity & Required traceability\\\midrule\endfirsthead\toprule Entity & Required traceability\\\midrule\endhead
+Record R\# & Source run, DOI/title, duplicate linkage, two independent votes, reason and final decision.\\
+Report P\# & Full-text URL/version, retrieval status and attempts, two votes, exclusion reason and adjudication.\\
+Study S\# & Linked eligible reports, mechanism family, publication identity, peer-review verification and seminal-exception note if any.\\
+Appraisal Q1--Q10 & Reviewer scores, rationales, anchors, reconciliation, applicable maximum and sensitivity flag.\\
+Outcome row & Study/mechanism/workload/contrast, baseline, co-tenants, hardware, exact value/unit/statistic, source anchor and independent check.\\
+Interpretation row & RQ, direct or cross-study comparison, supporting and conflicting evidence, limitation and confidence.\\\bottomrule
+\end{longtable}
+
+\clearpage
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}

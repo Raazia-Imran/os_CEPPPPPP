@@ -1,0 +1,590 @@
+TY  - JOUR
+T1  - Toward reliable rapid morphological screening: A systematic benchmark of deep learning models for microplastic detection in mangrove filter images
+AU  - Cai, Yixuan
+AU  - Li, Jiawei
+AU  - Wang, Lijuan
+AU  - Wang, Zihao
+AU  - Yan, Ruoqun
+AU  - Zheng, Guomao
+AU  - Guo, Xiaoyuan
+AU  - Chen, J. Paul
+AU  - Sun, Wenjun
+AU  - Tang, Yuanyuan
+JO  - Marine Pollution Bulletin
+VL  - 233
+SP  - 120322
+PY  - 2026
+DA  - 2026/12/01/
+SN  - 0025-326X
+DO  - https://doi.org/10.1016/j.marpolbul.2026.120322
+UR  - https://www.sciencedirect.com/science/article/pii/S0025326X26011094
+KW  - Microplastics
+KW  - Deep learning
+KW  - Object detection
+KW  - Chemical validation
+KW  - Environmental monitoring
+AB  - Microplastics are a global concern, but reliable high-throughput morphological candidate screening remains constrained by labor-intensive visual inspection and the limited availability of chemically supported image benchmarks. Here, we constructed an FTIR-supported image dataset from mangrove water and sediment samples and benchmarked 11 deep-learning detector configurations. The dataset contained 2865 unique FTIR-confirmed particles assigned to fragment, fiber, and film categories, together with background-only image tiles representing heterogeneous membrane residues and non-plastic interference. Among the evaluated configurations, YOLOv5m achieved the highest performance (F1 = 0.906; mAP@0.5 = 0.910). Model-derived particle counts showed a strong linear association with FTIR-confirmed counts (R2 = 0.92). Across 45 membranes, automated complete-image screening and counting with YOLOv5m required an average of 6.57 s per membrane. Performance was higher for in-distribution mangrove samples than for out-of-distribution samples, indicating that environmental background and particle heterogeneity remain important determinants of model transferability. Class-specific analysis further showed that fiber-related errors were dominated by missed detections rather than confusion with other morphological categories. The framework is intended as a morphological screening and triage tool before FTIR or Raman confirmation, providing a quick solution for microplastic monitoring in complex field samples.
+ER  - 
+
+TY  - JOUR
+T1  - Advanced deep learning for digital holography: A review
+AU  - Zhang, Yunping
+AU  - Chen, Ni
+AU  - Zhu, Yanmin
+AU  - Chen, Jingyan
+AU  - Wang, Chutian
+AU  - Zeng, Tianjiao
+AU  - Lam, Edmund Y.
+JO  - Progress in Quantum Electronics
+VL  - 109
+SP  - 100638
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 0079-6727
+DO  - https://doi.org/10.1016/j.pquantelec.2026.100638
+UR  - https://www.sciencedirect.com/science/article/pii/S0079672726000261
+KW  - Digital holography
+KW  - Deep learning
+KW  - Transfer learning
+KW  - Physics-informed neural networks
+KW  - Computational imaging
+AB  - Deep learning (DL) has become an important tool in digital holography (DH), enabling data-driven learning of complex inverse mappings directly from holographic measurements. Early DL-assisted DH demonstrated the feasibility of this approach but often relied on large labeled datasets and lacked explicit physical interpretability. In recent years, advances in DL methodologies have begun to address these limitations. This review examines three major developments that are reshaping the field: innovative training strategies for data-efficient learning, the integration of physical priors for improved interpretability and physical consistency, and advanced network architectures capable of extracting richer representations from holographic data. By organizing recent progress from this methodological perspective, we provide an updated overview of how modern DL techniques are expanding the capabilities of DH. We conclude with a forward-looking perspective, identifying promising but underexplored DL directions expected to drive significant future advancements in DH applications.
+ER  - 
+
+TY  - JOUR
+T1  - NeuraMFs: A deep learning model for airborne microfiber identification in plant biomonitors
+AU  - Gaglione, Anna
+AU  - Fusco, Sabato
+AU  - Granata, Angelo
+AU  - Sorrentino, Maria Cristina
+AU  - Giordano, Simonetta
+AU  - Capozzi, Fiore
+AU  - Nardone, Roberto
+AU  - Spagnuolo, Valeria
+JO  - Journal of Hazardous Materials
+VL  - 513
+SP  - 142410
+PY  - 2026
+DA  - 2026/07/15/
+SN  - 0304-3894
+DO  - https://doi.org/10.1016/j.jhazmat.2026.142410
+UR  - https://www.sciencedirect.com/science/article/pii/S0304389426013889
+KW  - Microplastic pollution
+KW  - Plant biomonitoring
+KW  - Image processing
+KW  - Deep learning
+KW  - Cascade R-CNN
+KW  - Instance segmentation
+AB  - Airborne anthropogenic microfibers (A-MFs), including synthetic and industrially modified cellulosic fibers, are an emerging class of atmospheric contaminants of growing concern due to their persistence, inhalation exposure, and potential to transport associated chemicals. These particles are intercepted by plant biomonitors as mosses, lichens, and vascular plant leaves, but their reliable quantification remains a major methodological bottleneck because it relies on visual stereomicroscopic inspection of heterogeneous and organic-rich substrates. This paper introduces NeuraMFs, a deep-learning architecture based on a two-stage Cascade R-CNN (Region-based Convolutional Neural Network) with a ResNet-101 backbone, optimized for the identification, segmentation, and classification of microfibers extracted from plant biomonitors. A heterogeneous dataset of high-resolution stereomicroscope images, obtained from mosses, lichens, and vascular plants processed with multiple extraction protocols, was constructed to preserve fiber morphology and improve robustness across complex backgrounds. NeuraMFs showed high analytical performance, correctly identifying 109 out of the 110 microfibers in the adopted test set and achieving an AUC (Area Under Curve) of 0.978 with an color-classification accuracy of 0.895. By integrating test-time augmentation, the model enhanced recall for thin and low-contrast fibers and automatically extracted quantitative descriptors including color and length, enabling rapid screening and prioritization of samples for expert validation. In practical terms, NeuraMFs processes a typical sample in approximately 3 min, allowing analysts to quickly identify highly contaminated samples. These results demonstrate that deep learning can provide a rapid and scalable support tool for biomonitoring of airborne A-MFs, facilitating large-scale environmental exposure and risk assessment of hazardous atmospheric microfibers.
+ER  - 
+
+TY  - JOUR
+T1  - Server load and network-aware adaptive deep learning inference offloading for edge platforms
+AU  - Ahn, Jungmo
+AU  - Lee, Youngki
+AU  - Ahn, Jeongseob
+AU  - Ko, JeongGil
+JO  - Internet of Things
+VL  - 21
+SP  - 100644
+PY  - 2023
+DA  - 2023/04/01/
+SN  - 2542-6605
+DO  - https://doi.org/10.1016/j.iot.2022.100644
+UR  - https://www.sciencedirect.com/science/article/pii/S2542660522001251
+KW  - Computation offloading
+KW  - Deep neural networks
+KW  - Distributed systems
+KW  - Mobile/embedded computing
+AB  - This work presents DIAMOND, a deep neural network computation offloading scheme consisting of a lightweight client-to-server latency profiling component combined with a server inference time estimation module to accurately assess the expected latency of a deep learning model inference. Latency predictions for both the network and server are comprehensively used to make dynamic (partial) model offloading decisions at the client in run-time. Compared to previous work, DIAMOND targets to minimize network latency estimation overhead and considers the concurrent processing nature of state-of-the-art deep learning inference server designs. Our extensive evaluations with an NVIDIA Jetson Nano client connected to an NVIDIA Triton server shows that DIAMOND completes inference operations with noticeably reduced computational/energy overhead and latency compared to previously proposed model offloading approaches. Furthermore, our results show that DIAMOND well-adapts to practical server load and network dynamics.
+ER  - 
+
+TY  - JOUR
+T1  - Decoding the microplastic crisis: Machine learning and deep learning in transforming data into ecological insight
+AU  - Lee, Yoseop
+AU  - Park, Jordan Jun Chul
+AU  - Mo, Jiezhang
+AU  - Kim, Hyung Sik
+AU  - Lee, Jae-Seong
+JO  - Marine Pollution Bulletin
+VL  - 233
+SP  - 120378
+PY  - 2026
+DA  - 2026/12/01/
+SN  - 0025-326X
+DO  - https://doi.org/10.1016/j.marpolbul.2026.120378
+UR  - https://www.sciencedirect.com/science/article/pii/S0025326X26011653
+KW  - Microplastic
+KW  - Machine learning
+KW  - Deep learning
+KW  - Artificial intelligence
+AB  - The global prevalence of microplastics (MPs) presents a pressing environmental challenge, yet assessing their ecological impact is constrained by the labor-intensive and subjective nature of conventional analytical protocols. Artificial intelligence, encompassing machine learning (ML) and deep learning (DL), has emerged as a powerful computational paradigm to automate polymer identification from complex Raman and FTIR spectra, while advanced segmentation architectures (e.g., U-Net, Mask R-CNN) enable high-throughput morphological profiling from microscopy images. Beyond characterization, ML models increasingly serve as prognostic engines to predict spatiotemporal transport, contaminant adsorption kinetics, and ecotoxicological risk endpoints. Despite these notable advancements, critical methodological bottlenecks persist, including conditional algorithmic performance trade-offs, pervasive dataset biases toward pristine polymers, matrix-induced false positives, data leakage from improper validation, and the opacity of “black box” models. While explainable AI (XAI) tools like SHAP and LIME provide valuable diagnostic insights into influential features, their post-hoc surrogate approximations and current lack of uncertainty quantification require critical interpretation. Moving forward, integrating multimodal data fusion, unsupervised discovery architectures, and lightweight Edge AI systems holds substantial potential to bridge the lab-to-field gap and establish an evidence-based foundation for real-time environmental monitoring and regulatory policy.
+ER  - 
+
+TY  - JOUR
+T1  - Mind control attack: Undermining deep learning with GPU memory exploitation
+AU  - Park, Sang-Ok
+AU  - Kwon, Ohmin
+AU  - Kim, Yonggon
+AU  - Cha, Sang Kil
+AU  - Yoon, Hyunsoo
+JO  - Computers & Security
+VL  - 102
+SP  - 102115
+PY  - 2021
+DA  - 2021/03/01/
+SN  - 0167-4048
+DO  - https://doi.org/10.1016/j.cose.2020.102115
+UR  - https://www.sciencedirect.com/science/article/pii/S0167404820303886
+KW  - Graphics process unit security
+KW  - GPU memory exploit
+KW  - Deep learning security
+KW  - Reverse engineering
+KW  - Compute unified device architecture
+AB  - Modern deep learning frameworks rely heavily on GPUs to accelerate the computation. However, the security implication of GPU device memory exploitation on deep learning frameworks has been largely neglected. In this paper, we argue that GPU device memory manipulation is a novel attack vector against deep learning systems. We present a novel attack method leveraging the attack vector, which makes deep learning predictions no longer different from random guessing by degrading the accuracy of the predictions. To the best of our knowledge, we are the first to show a practical attack that directly exploits deep learning frameworks through GPU memory manipulation. We confirmed that our attack works on three popular deep learning frameworks, TensorFlow, CNTK, and Caffe, running on CUDA. Finally, we propose potential defense mechanisms against our attack, and discuss concerns of GPU memory safety.
+ER  - 
+
+TY  - JOUR
+T1  - Proof-of-concept: Differentiating upper trapezius muscle with myofascial trigger point using deep learning model on a small prospective sEMG dataset
+AU  - Lu, Hao-En
+AU  - Koivisto, David
+AU  - Zeng, Zixue
+AU  - Yu, Tong
+AU  - Wang, Jing
+AU  - Meng, Xin
+AU  - Wilson, Richard
+AU  - Kumbhare, Dinesh
+AU  - Pu, Jiantao
+JO  - Journal of Electromyography and Kinesiology
+VL  - 88
+SP  - 103132
+PY  - 2026
+DA  - 2026/06/01/
+SN  - 1050-6411
+DO  - https://doi.org/10.1016/j.jelekin.2026.103132
+UR  - https://www.sciencedirect.com/science/article/pii/S1050641126000283
+KW  - Myofascial pain syndrome
+KW  - Surface electromyography
+KW  - Deep learning
+KW  - Convolution neural network
+KW  - Limited samples
+AB  - Myofascial pain syndrome commonly arises from myofascial trigger points (MTrPs). While needle electromyography (iEMG) reveals spontaneous activity at trigger points, surface EMG (sEMG) has not been consistently validated. This study provides a proof-of-concept to investigate whether sEMG signals alone contain discriminative information for identifying myofascial trigger point. sEMG signals were recorded from healthy controls (n = 9) and patients with myofascial pain (n = 13). After preprocessing, the contraction segments from pre-intervention (N = 140) and post-intervention (N = 139) tests were extracted using an automated segmentation algorithm. A 1D convolution neural network (CNN) was trained with stratified five-fold cross-validation at the subject level. Binary cross-entropy, pairwise logistic, and their combined loss were compared, as well as the performance between pre-, post-, and combined pre/post-intervention signals. A latent-only sensitivity analysis was performed. Segment-level predictions were aggregated for subject-level analysis and evaluated with ROC-AUC and complementary metrics. Best subject-level performance was achieved using pairwise logistic loss on pre-intervention segments (AUC 0.940, 95% CI: 0.88–0.98; accuracy 0.96, 95% CI: 0.93–0.99). In latent-only analysis, combined pre- and post-intervention signals yielded the highest AUC (0.916, 95% CI: 0.86–0.96). This study suggests upper trapezius sEMG contain discriminative information for distinguishing primarily latent MTrPs subjects from healthy controls, motivating large-scale validation studies.
+ER  - 
+
+TY  - JOUR
+T1  - Hybrid deep learning framework for environmental microplastic classification: Integrating CNN-based spectral feature extraction and transformer models
+AU  - Li, Fang
+AU  - Tian, Jiayu
+AU  - Guo, Xuetao
+AU  - Xu, Li
+JO  - Environmental Pollution
+VL  - 384
+SP  - 126989
+PY  - 2025
+DA  - 2025/11/01/
+SN  - 0269-7491
+DO  - https://doi.org/10.1016/j.envpol.2025.126989
+UR  - https://www.sciencedirect.com/science/article/pii/S0269749125013624
+KW  - Microplastic
+KW  - Identification
+KW  - CNN
+KW  - Transformer
+KW  - Deep learning
+AB  - Accurate classification of environmental microplastics (MPs) from FTIR spectra remains challenging due to spectral variability, environmental weathering, and the limitations of existing models in capturing both local and global spectral features. This study proposes a hybrid deep learning framework that integrates convolutional neural networks (CNNs) and Transformer models to classify MPs based on Fourier-transform infrared (FTIR) spectroscopy. The CNN component efficiently captures local spectral patterns, while the Transformer module models long-range dependencies and global contextual relationships across the full spectral range. This sequential hybrid architecture combines the complementary strengths of CNN and Transformer, enhancing feature extraction and improving classification robustness. We constructed a diverse spectral dataset containing 17 polymer types derived from soil, air, sediment, and water matrices. The proposed model achieved a high classification accuracy of 95.77 % on the validation set, outperforming traditional machine learning methods. The model's robustness was further confirmed through 50 independent trials, demonstrating stable and reproducible performance. These results indicate that the CNN–Transformer architecture not only improves predictive performance but also ensures generalizability across diverse environmental conditions. This integrated approach offers a reliable and scalable solution for the rapid identification of MPs across diverse environmental contexts, with potential implications for pollution monitoring and regulatory assessment.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter Six - Deep learning with GPUs
+AU  - Jeon, Won
+AU  - Ko, Gun
+AU  - Lee, Jiwon
+AU  - Lee, Hyunwuk
+AU  - Ha, Dongho
+AU  - Ro, Won Woo
+A2  - Kim, Shiho
+A2  - Deka, Ganesh Chandra
+BT  - Advances in Computers
+PB  - Elsevier
+VL  - 122
+SP  - 167
+EP  - 215
+PY  - 2021
+DA  - 2021/01/01/
+T2  - Hardware Accelerator Systems for Artificial Intelligence and Machine Learning
+SN  - 0065-2458
+DO  - https://doi.org/10.1016/bs.adcom.2020.11.003
+UR  - https://www.sciencedirect.com/science/article/pii/S0065245820300905
+KW  - Graphics processing unit
+KW  - Deep learning
+KW  - Parallel processing
+KW  - CUDA
+KW  - Tensor operation
+KW  - Data center
+KW  - Edge computing
+AB  - Deep learning has been extensively researched in various areas and scales up very fast in the last decade. It has deeply permeated into our daily life, such as image classification, video synthesis, autonomous driving, voice recognition, and personalized recommendation systems. The main challenge for most deep learning models, including convolutional neural networks, recurrent neural networks, and recommendation models, is their large amount of computation. Fortunately, most computations in deep learning applications are parallelizable, therefore they can be effectively handled by throughput processors, such as Graphics Processing Units (GPUs). GPUs support high throughput, parallel processing performance, and high memory bandwidth and becomes the most popularly adopted device for deep learning. As a matter of fact, many deep learning workloads from mobile devices to data centers are performed by GPUs. In particular, modern GPU systems provide specialized hardware modules and software stacks for deep learning workloads. In this chapter, we present detailed analysis on the evolution of GPU architectures and the recent hardware and software supports for more efficient acceleration of deep learning in GPUs. Furthermore, we introduce leading-edge researches, challenges, and opportunities of running deep learning workloads on GPUs.
+ER  - 
+
+TY  - JOUR
+T1  - Deep learning-based phase segmentation of gas diffusion layers images for microstructure and hydrophobicity analysis
+AU  - Zhou, Xinran
+AU  - Cai, Xin
+AU  - Lu, Kai
+AU  - Lin, Rui
+JO  - Colloids and Surfaces A: Physicochemical and Engineering Aspects
+VL  - 746
+SP  - 140860
+PY  - 2026
+DA  - 2026/10/05/
+SN  - 0927-7757
+DO  - https://doi.org/10.1016/j.colsurfa.2026.140860
+UR  - https://www.sciencedirect.com/science/article/pii/S0927775726014007
+KW  - Deep learning
+KW  - Gas diffusion layer
+KW  - Microstructure descriptors
+KW  - Feature extraction
+KW  - Apparent hydrophobicity
+AB  - Proton exchange membrane fuel cells (PEMFCs) are promising energy conversion devices, and the gas diffusion layer (GDL) plays an important role in reactant transport and water management. Polytetrafluoroethylene (PTFE) is commonly applied to GDL as a hydrophobic treatment to regulate the water management capability. To investigate the relationship between GDL microstructure and surface hydrophobicity, this study developed a boundary-aware deep learning network for phase segmentation of scanning electron microscope (SEM) images, with enhanced capability for both feature extraction and boundary delineation. The model was first used to identify the main structural phases of the GDL and was then further extended to resolve the PTFE phase that is directly related to surface hydrophobicity. Based on the segmented PTFE masks, several microstructural descriptors were extracted to characterize PTFE coverage, continuity, and morphology. The segmented PTFE distribution was further interpreted in the framework of classical wetting theory to elucidate the microstructural basis of apparent hydrophobicity. The proposed framework achieved mean Dice coefficient (mDice) of 0.921 for fiber and binder segmentation. For the segmentation of PTFE phase, the Dice score reached 0.796, respectively. Overall, these results provide a useful route for relating GDL microstructure to hydrophobic behavior, and offer guidance for the microstructure design and hydrophobicity optimization of GDL in PEMFCs.
+ER  - 
+
+TY  - JOUR
+T1  - Navigating beyond the training set: A deep learning framework for inverse design of architected composite materials
+AU  - Quesada-Molina, José Pablo
+AU  - Mofatteh, Hossein
+AU  - Akbarzadeh, Abdolhamid
+AU  - Mariani, Stefano
+JO  - Engineering Applications of Artificial Intelligence
+VL  - 150
+SP  - 110473
+PY  - 2025
+DA  - 2025/06/15/
+SN  - 0952-1976
+DO  - https://doi.org/10.1016/j.engappai.2025.110473
+UR  - https://www.sciencedirect.com/science/article/pii/S0952197625004737
+KW  - Deep learning
+KW  - Inverse design
+KW  - Composite materials
+KW  - Material property space
+KW  - Deep convolutional generative adversarial networks
+KW  - Convolutional neural networks
+AB  - This study introduces a deep learning (DL)-based inverse design framework for two-phase composite materials. The artificial intelligence (AI) contribution lies in the integration of Deep Convolutional Generative Adversarial Networks (DCGAN) and Convolutional Neural Networks (CNN) into a framework that enhances material discovery and design, particularly for out-of-distribution (OOD) targets. The major contribution is the development of a strategy that balances latent space exploration and optimization, achieving low design errors – below 10% – for targeted properties located in near- and extreme-OOD regions of the material property space (MPS). The engineering application focuses on designing composites with tailored linear elastic properties, accelerating inverse design and reducing reliance on traditional simulation-based approaches. An image dataset of 12,000 Representative Unit Cells (RUCs) was assembled using a parametric Voronoi diagram generator, with elastic responses computed through finite element (FE) simulations. The DCGAN generated synthetic samples with novel features not present in the original dataset, demonstrating interpolation and extrapolation capabilities. A single round of Active Learning (AL) and Transfer Learning (TL) enhanced the CNN’s predictive accuracy on synthetic data. The framework offers significant computational efficiency, with optimization complexity O(m⋅n2), where m is the number of iterations and n the latent vector dimensionality. This complexity is considerably lower than that of direct FE-based topology optimization, which ranges from O(m⋅N4) to O(m⋅N6), where N×N represents the RUC grid size. These findings demonstrate the scalability and adaptability of the framework for advanced material design and engineering applications.
+ER  - 
+
+TY  - JOUR
+T1  - Deep learning-powered efficient characterization and quantification of microplastics
+AU  - Guo, Pengwei
+AU  - Wang, Yuhuan
+AU  - Wu, Shenghua
+AU  - Meng, Weina
+AU  - Bao, Yi
+JO  - Journal of Hazardous Materials
+VL  - 480
+SP  - 136241
+PY  - 2024
+DA  - 2024/12/05/
+SN  - 0304-3894
+DO  - https://doi.org/10.1016/j.jhazmat.2024.136241
+UR  - https://www.sciencedirect.com/science/article/pii/S0304389424028206
+KW  - Automatic assessment
+KW  - Artificial intelligence
+KW  - Image segmentation
+KW  - Spectroscopy analysis
+AB  - Characterizing and quantifying microplastics (MPs) are time-consuming and labor-intensive tasks traditionally. This paper presents an artificial intelligence (AI) framework aiming to automate these tasks by integrating computer vision and deep learning techniques. The approach leverages Fourier Transform Infrared (FTIR) spectra and visual images. Primary novelties of this research involve the development of: (1) an AI framework integrating efforts of data processing, analytics, visualization, and human-computer interaction; (2) a method for transforming FTIR data into contour images; (3) data augmentation strategies for resolving data scarcity and imbalance issues; (4) deep learning models for identifying MPs; (5) computer vision algorithms for quantifying MPs; and (6) an engineer-friendly graphic user interface (GUI) for enhancing data accessibility. The AI framework has been applied to polyethylene, polypropylene, polystyrene, polyamide, ethylene-vinyl acetate, and cellulose acetate. Results confirmed the efficacy of the framework, exhibiting high accuracy scores in classification (98 %), segmentation (99 %), and quantification (96 %) tasks. This research advances the capability of automatic assessment of MPs.
+ER  - 
+
+TY  - JOUR
+T1  - A real-time GPU-accelerated deep learning inference integration pipeline and its electron density profile reconstructor pilot project for control at ASDEX upgrade
+AU  - Illerhaus, Johannes
+AU  - Treutterer, Wolfgang
+AU  - Bock, Alexander
+AU  - Gehring, Matthias
+AU  - Fischer, Rainer
+AU  - Kudláček, Ondrej
+AU  - Sieglin, Bernhard
+AU  - Toussaint, Udo von
+AU  - Zehetbauer, Thomas
+AU  - Zohm, Hartmut
+AU  - Jenko, Frank
+JO  - Fusion Engineering and Design
+VL  - 220
+SP  - 115274
+PY  - 2025
+DA  - 2025/11/01/
+SN  - 0920-3796
+DO  - https://doi.org/10.1016/j.fusengdes.2025.115274
+UR  - https://www.sciencedirect.com/science/article/pii/S0920379625004703
+KW  - GPU
+KW  - Plasma control
+KW  - Machine Learning
+KW  - Deep Learning
+KW  - Real-time
+AB  - Controlling the plasma in fusion devices is made challenging by the latency required to react to changes in the plasma state in real time as well as by the limited amount and quality of data available to the plasma control system at discharge time. But precisely these limitations make Machine Learning (ML) and particularly Deep Learning (DL) a promising alternative to traditional approaches in some workflows in plasma control. DL models differentiate themselves by the fact that most of their computational expense is paid upfront during training, where pre-existing datasets are used to tune the models’ parameters to the intended task. Training can be computationally demanding. In contrast, inferring, or making predictions, on new data using previously trained DL models is computationally trivial. This fact can be exploited to enable using complex DL models in time sensitive and data constrained real-time applications, such as plasma control. DL particularly benefits from the use of hardware accelerators, like Graphics Processing Units (GPUs), but due to the added latency associated with their use, they are still largely absent from real-time applications, limiting the benefits of using DL. In this contribution we present the technical implementation of a pipeline for the standardized and streamlined training and deployment of real-time capable DL models as augmentations to the ASDEX Upgrade (AUG) Discharge Control System (DCS) Treutterer et al. (2014). A particular emphasis will be put on our simple real-time GPU-accelerated inference implementation based on commonly available tools like TensorRT NVIDIA (2019) and CUDA NVIDIA (2014). The models of our first application predict a high-fidelity electron density profile, based on the measurements of the interferometry diagnostic alone. They approximate the highly accurate Integrated Data Analysis (IDA) Fischer et al. (2010) profiles closely and are resilient to corruption in the input data. The complete latency of the inference process from the time of receiving data to the profile being available to the DCS is roughly 30–38 μs running on an NVIDIA RTX L4 GPU.
+ER  - 
+
+TY  - JOUR
+T1  - A deep learning framework combining windowed CNN and BiLSTM for accurate multi-class pathogenic variant classification in monogenic diseases
+AU  - Abdelrehim, Mohamed
+AU  - Mohamed, Azza
+JO  - Intelligent Systems with Applications
+VL  - 30
+SP  - 200654
+PY  - 2026
+DA  - 2026/05/01/
+SN  - 2667-3053
+DO  - https://doi.org/10.1016/j.iswa.2026.200654
+UR  - https://www.sciencedirect.com/science/article/pii/S2667305326000293
+KW  - Deep learning
+KW  - CNN–BiLSTM
+KW  - Genomic sequence analysis
+KW  - Variant effect prediction
+KW  - Data augmentation
+KW  - Genomic diagnostics
+KW  - Multi-class classification
+KW  - Neural networks in genomics
+AB  - In this work, a hybrid deep learning framework based on a combination of convolutional neural networks (CNNs) and bidirectional long short-term memory networks (BiLSTMs) was employed for the multiclass classification of pathogenic single-nucleotide variations (SNVs) and small insertions/deletions across twenty different monogenic disorders. Each mutation was represented as a 101-base-pair window, allowing for the preservation of the biologically relevant flanking sequence while keeping the problem computationally feasible. To account for the class imbalance, a set of augmentation strategies was employed. The framework utilizes a combination of multiscale convolutional 1D filters for motif extraction and bidirectional long short-term memory networks for the extraction of long-range contextual dependencies. This combination allows for robust classification across the heterogeneous set of disease classes. With the use of class-weighted loss and stratified cross-validation, the framework achieved an overall accuracy of 94.7 %, a mean class-weighted F1 score of 0.93, and a mean AUC-PR score of 0.98. Per-class ROC-AUC values approach 1.00. Rapid convergence was observed over the course of ∼12 epochs, and strong class-level separability was achieved. To further validate the framework’s potential for use in genomic interpretation, motif-level interpretability results highlight the importance of certain biologically meaningful patterns. Although the dataset composition was a controlled environment, the results demonstrate the potential for the use of the hybrid CNN-BiLSTM framework as a scalable and high-throughput solution for the classification of monogenic disease variants.
+ER  - 
+
+TY  - JOUR
+T1  - Deep-learning enabled rapid and low-cost detection of microplastics in consumer products following on-site extraction and image processing††Electronic supplementary information (ESI) available: Supplementary Text 1: Preparation of image dataset. Supplementary Text 2: COD analysis. Supplementary Fig. S1: Schematic representation of the workflow. Supplementary Fig. S2: Image thresholding. Supplementary Fig. S3: Image data processing and training. Supplementary Fig. S4: FE-SEM images of remaining two categories. Supplementary Fig. S5: Model evaluation with object loss and mAP@50. Supplementary Videos S1–S3: Detection of microplastics in teabag samples. See DOI: https://doi.org/10.1039/d4ra07991d
+AU  - Bin Zahir Arju, Md. Zayed
+AU  - Hridi, Nafisa Amin
+AU  - Dewan, Lamiya
+AU  - Suhaila, 
+AU  - Amin, Md. Nurul
+AU  - Rashid, Taslim Ur
+AU  - Azad, Abul Kalam
+AU  - Rahman, Sejuti
+AU  - Hossain, Mainul
+AU  - Habib, Ahsan
+JO  - RSC Advances
+VL  - 15
+IS  - 14
+SP  - 10473
+EP  - 10483
+PY  - 2025
+DA  - 2025/04/17/
+SN  - 2046-2069
+DO  - https://doi.org/10.1039/d4ra07991d
+UR  - https://www.sciencedirect.com/science/article/pii/S2046206925008307
+AB  - Microplastic (MP) contamination has become a major concern in recent times, posing a significant threat to the environment and human health. Existing techniques for MP detection require access to expensive and specialized microscopy setups and often demand long turnaround time and extensive labor. Herein, we propose a simple platform for MP detection, where MPs are extracted from salt, sugar, teabag, toothpaste and toothpowder samples, and imaged using a low-cost mobile phone-based microscopy setup. The extraction process involves the isolation of MPs from their matrices using the well-established density separation technique with ZnCl2 solution (1.7 g cm−3) and hydrogen peroxide (H2O2) to oxidize organic matter. A commercially available miniaturized microscopy attachment (TinyScope, $10) is fixed on top of an ordinary cell phone camera and is used to capture about 2490 images of MPs obtained from five different product categories. The YOLOv5 deep learning model was used to detect microplastics in images. It was trained on a dataset of 1990 images, validated with 250 images, and tested on a separate set of 250 images. The presence of plastic content in the detected samples was confirmed by performing attenuated total reflectance-Fourier transform infrared (ATR-FTIR) spectroscopy and the morphologies of the MPs were determined using the field-emission scanning electron microscopy (FE-SEM). Results show that the deep-learning enabled image processing approach can identify MPs with an accuracy of 98%. Overall, the fast, accurate, and affordable detection of MPs in low-resource settings can lead to the monitoring of MP content in consumer products on a more frequent basis.
+ER  - 
+
+TY  - JOUR
+T1  - Characterizing concurrency mechanisms for NVIDIA GPUs under deep learning workloads
+AU  - Gilman, Guin
+AU  - Walls, Robert J.
+JO  - Performance Evaluation
+VL  - 151
+SP  - 102234
+PY  - 2021
+DA  - 2021/11/01/
+SN  - 0166-5316
+DO  - https://doi.org/10.1016/j.peva.2021.102234
+UR  - https://www.sciencedirect.com/science/article/pii/S0166531621000511
+KW  - GPGPUs
+KW  - Concurrent deep learning
+KW  - GPGPU application scheduling
+AB  - We investigate the performance of the concurrency mechanisms available on NVIDIA’s new Ampere GPU microarchitecture under deep learning training and inference workloads. In contrast to previous studies that treat the GPU as a black box, we examine scheduling at the microarchitectural level. We find that the lack of fine-grained preemption mechanisms, robust task prioritization options, and contention-aware thread block placement policies limits the effectiveness of NVIDIA’s concurrency mechanisms. In summary, the sequential nature of deep learning workloads and their fluctuating resource requirements and kernel runtimes make executing such workloads while maintaining consistently high utilization and low, predictable turnaround times difficult on current NVIDIA hardware.
+ER  - 
+
+TY  - JOUR
+T1  - Hybrid deep learning with cross-attention fusion for autism spectrum disorder classification from facial images
+AU  - Revathi, M.
+AU  - Arunarani, S.
+JO  - Intelligence-Based Medicine
+VL  - 15
+SP  - 100421
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 2666-5212
+DO  - https://doi.org/10.1016/j.ibmed.2026.100421
+UR  - https://www.sciencedirect.com/science/article/pii/S2666521226000797
+KW  - Autism spectrum disorder
+KW  - Deep learning
+KW  - Vision transformer
+KW  - Convolutional neural networks
+KW  - ResNet-152
+KW  - Cross-attention fusion
+KW  - Facial image analysis
+KW  - Early diagnosis
+KW  - Medical artificial intelligence
+KW  - Ensemble learning
+KW  - Test-time augmentation
+AB  - Autism Spectrum Disorder (ASD) affects approximately 1 in 36 children globally, necessitating early diagnosis to enable timely interventions that significantly improve developmental outcomes. Current diagnostic protocols rely on time-intensive behavioral assessments requiring specialized expertise, resulting in substantial diagnostic delays. This study presents a hybrid deep learning framework integrating Convolutional Neural Networks (ResNet-152 with CBAM) and Vision Transformers (ViT-Large) through bidirectional cross-attention fusion for automated ASD classification from facial images. We systematically evaluate three complementary architectures (CNN-based, Transformer-based, and hybrid) along with a weighted ensemble approach enhanced by Test-Time Augmentation. Our ensemble model outperforms the previous best results by 0.67 percentage points (91.33% in Nature Scientific Reports) achieving results in accuracy (92.00% ± 0.42%), precision (93.15% ± 0.38%), recall (90.67% ± 0.51%), F1-score (0.9189 ± 0.0041) and AUC (0.9674 ± 0.0028) with mean ± standard deviation across 5-fold cross-validation. Gradient-weighted Class Activation Mapping reveals model focus on clinically relevant periocular regions, providing interpretable predictions aligned with established clinical observations. Ablation studies confirm Test-Time Augmentation contributes 2.34 percentage points accuracy improvement, while weighted ensemble optimization adds 1.33 percentage points over simple averaging. The cross-attention fusion mechanism enables dynamic information exchange between CNN and Transformer feature spaces, synergistically combining local spatial pattern recognition with global contextual understanding. Results establish that hybrid architectures with sophisticated fusion mechanisms outperform single-paradigm approaches for ASD classification. This research demonstrates AI-assisted screening tool potential to democratize early ASD identification, reduce diagnostic delays, and facilitate timely intervention, ultimately improving outcomes for children with ASD worldwide.
+ER  - 
+
+TY  - JOUR
+T1  - Optimum: Runtime optimization for multiple mixed model deployment deep learning inference
+AU  - Guo, Kaicheng
+AU  - Xu, Yixiao
+AU  - Qi, Zhengwei
+AU  - Guan, Haibing
+JO  - Journal of Systems Architecture
+VL  - 141
+SP  - 102901
+PY  - 2023
+DA  - 2023/08/01/
+SN  - 1383-7621
+DO  - https://doi.org/10.1016/j.sysarc.2023.102901
+UR  - https://www.sciencedirect.com/science/article/pii/S1383762123000802
+KW  - Inference system
+KW  - GPU inference serving
+KW  - Mixed deployment
+KW  - Performance prediction
+KW  - Co-location
+AB  - GPUs used in data centers to perform deep learning inference tasks are underutilized. Previous systems tended to deploy a single model on a GPU to ensure that inference tasks met throughput and latency requirements. The rapid increase in one GPU’s resources, as well as the emergence of scenarios such as small models and small batches, have exacerbated the issue of low GPU utilization. In this case, a mixed model deployment-based solution can significantly improve GPU utilization while also providing greater flexibility to the inference system’s upper layer. The selection of model combinations and optimization strategies in mixed model deployment, however, remain unresolved issues. This paper proposes Optimum, the first model-combination planning and runtime optimization framework for mixed model deployment. Facing enormous search spaces, Optimum uses performance prediction for model combination selection with low search overhead. The predictor is based on a multilayer perceptron. Its input features are the profiling results of the model engine, and the output is the performance degradation. The runtime optimization strategies allow Optimum to perform performance optimization and fine-grained tradeoff. The Optimum prototype is based on CUDA multi-stream and TensorRT. The test results show that we have a flat 10.3% performance improvement over mainstream single-model deployments. We have a performance improvement of up to 7.09% over the state-of-the-art with an order of magnitude reduction in search overhead.
+ER  - 
+
+TY  - JOUR
+T1  - Soft-computing framework for 3D subsurface geospatial modeling using point-cloud-driven ensemble machine learning and deep learning
+AU  - Kim, Han-Saem
+JO  - Applied Soft Computing
+VL  - 201
+SP  - 115498
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 1568-4946
+DO  - https://doi.org/10.1016/j.asoc.2026.115498
+UR  - https://www.sciencedirect.com/science/article/pii/S1568494626009464
+KW  - 3D geospatial modeling
+KW  - Underground visualization
+KW  - 3D deep learning
+KW  - Machine learning
+KW  - Ensemble-based optimization
+AB  - In modern geotechnical practice, high resolution 3D subsurface models are essential for understanding complex stratigraphy and supporting design of resilient infrastructure. We present a data-driven framework that converts sparse 2D borehole logs into detailed 3D voxel models via an ensemble learning approach. A large synthetic geotechnical dataset, generated by parametrically sampling layer thicknesses and lithologies from real borehole statistics, was used to assess model performance under varying borehole density and geological variability. Within this framework we compare machine learning (ML) models (ANN, RF, SVM, etc.) against 3D deep learning (DL) architectures (PointNet, VoxelNet, SECOND, PointPillars) for subsurface layer classification and property regression. Consistent with prior geotechnical ML studies, it was observed that among the ML models an artificial neural network achieved the highest accuracy. Among the 3D deep learners, a VoxelNet-style volumetric network was most effective particularly in cases of high spatial heterogeneity. These results highlight the value of volumetric deep learning; recent studies have suggested that deep-network approaches can complement, and in some settings outperform, classical geostatistical interpolation in 3D ground modeling. Finally, our high-fidelity 3D models have direct engineering relevance. Accurate voxelized stratigraphy aids site-specific analyses and hazard mapping—e.g. 3D depth-to-bedrock models inform tunnel and foundation design, risk assessment, and smart-city planning. Overall, this work demonstrates how integrating modern 3D DL into geospatial ground modeling can improve predictive accuracy relative to traditional ML, paving the way for advanced geotechnical decision support.
+ER  - 
+
+TY  - JOUR
+T1  - A comprehensive survey on multi-GPU systems
+AU  - Gheibi-Fetrat, Atiyeh
+AU  - Maleki, Arad
+AU  - Zoufan, Sahand
+AU  - Mohammadi-Lak, Masoud
+AU  - Ahmadi-Tonekaboni, Amirsaeed
+AU  - Alinejad, Mahdi
+AU  - Yahyazadeh, Komeil
+AU  - Alizadeh, Mohammad
+AU  - Akbarzadeh, Negar
+AU  - Darabi-moghaddam, Sina
+AU  - Hessabi, Shaahin
+AU  - Sarbazi-azad, Hamid
+JO  - Parallel Computing
+VL  - 129
+SP  - 103208
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 0167-8191
+DO  - https://doi.org/10.1016/j.parco.2026.103208
+UR  - https://www.sciencedirect.com/science/article/pii/S0167819126000268
+KW  - Parallel computer architecture
+KW  - Many-core processor
+KW  - GPU
+KW  - Multi-GPU system
+AB  - Graphics Processing Units (GPUs) play a critical role in contemporary applications that handle large data volumes. Nonetheless, the performance enhancement provided by GPUs is constrained by their memory capacity and bandwidth limitations, which can hinder their efficiency in processing extensive datasets. To address these limitations, multi-GPU architectures are increasingly recognized as an effective approach to meet the growing demands of modern parallel applications. These systems facilitate a scalable, high-performance computing environment by harnessing the processing capabilities of multiple GPUs. A multi-GPU configuration not only delivers remarkable computational throughput but also enhances memory bandwidth and capacity, which are crucial for efficiently managing extensive parallel data-intensive workloads. Multi-GPU systems provide substantial benefits for deep learning, scientific simulations, and large-scale data processing tasks that demand the efficient handling of terabytes of data. However, multi-GPU systems grapple with critical challenges, including inefficient memory management, communication bottlenecks, and uneven distribution of workloads. This paper presents a comprehensive review of recent software and hardware techniques addressing prevalent performance bottlenecks of multi-GPU systems. We specifically focus on methodologies optimizing cache management, improving load balancing, enhancing inter-GPU communication, and refining memory migration. Furthermore, the paper identifies emerging trends and unresolved challenges, offering insights into potential future directions for research and development. This comprehensive study is intended to serve as a foundational resource for both academics and industry professionals researching to advance the efficiency and scalability of multi-GPU systems.
+ER  - 
+
+TY  - JOUR
+T1  - Deep-learning-based 3D GPR densification using sequential 2D reconstructions and pseudo-GPR training data
+AU  - Zhang, Chongmin
+AU  - Irving, James
+JO  - Journal of Applied Geophysics
+VL  - 251
+SP  - 106318
+PY  - 2026
+DA  - 2026/08/01/
+SN  - 0926-9851
+DO  - https://doi.org/10.1016/j.jappgeo.2026.106318
+UR  - https://www.sciencedirect.com/science/article/pii/S0926985126002272
+KW  - Ground-penetrating radar (GPR)
+KW  - Deep-learning (DL)
+KW  - U-Net
+KW  - 3D
+KW  - Interpolation
+KW  - Reconstruction
+AB  - Three-dimensional (3D) ground-penetrating radar (GPR) surveys have gained significant attention for their ability to capture detailed subsurface structures. However, acquiring data along a series of densely spaced parallel survey lines is often impractical due to long acquisition times. As a result, many 3D GPR surveys involve the collection of high-density measurements along individual survey lines but maintain significantly wider gaps between the lines, creating a pronounced resolution bias in the across-line direction. To address this issue, current methods often rely on basic interpolation techniques such as linear interpolation and kriging. However, these approaches tend to produce overly smooth and unrealistic results, failing to accurately preserve intricate spatial patterns. This study introduces a deep-learning-based approach utilizing a U-Net architecture, specifically designed to enhance the density of sparse 3D GPR data in the across-line direction. Our method applies sequential 2D simulations along and across survey lines, leveraging existing GPR profiles as training data to retain fine spatial details. To enrich the training dataset, we incorporate pseudo-GPR data synthesized from natural images alongside field GPR measurements. We validate our U-Net-based approach on both a synthetic and a field GPR dataset, achieving superior reconstruction accuracy.
+ER  - 
+
+TY  - JOUR
+T1  - Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving
+AU  - Liang, Qianlin
+AU  - Wang, Haoliang
+AU  - Shenoy, Prashant
+JO  - Performance Evaluation
+VL  - 171
+SP  - 102539
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 0166-5316
+DO  - https://doi.org/10.1016/j.peva.2025.102539
+UR  - https://www.sciencedirect.com/science/article/pii/S0166531625000732
+KW  - GPU
+KW  - Performance
+KW  - Neural network
+KW  - Latency
+AB  - As deep learning has been widely used in various application domains, a diversity of GPUs are adopted to accelerate DNN inference workloads and ensure Quality of Service (QoS). Robust prediction of inference latency using GPUs within cloud environments facilitates enhanced efficiency and maintains QoS in resource management solutions, such as consolidation and autoscaling. However, latency prediction is challenging due to the vast heterogeneity in both DNN architectures and GPU capacities. In this work, we present Lilou, an efficient and accurate latency predicting system for a wide range of DNN inference tasks across diverse GPU resource allocations. Lilou employs two techniques. (i) Lilou represents DNNs as directed acyclic graphs (DAGs), and utilizes a novel graph neural network (GNN) model for edge classification to detect the fusion of operators, also known as kernels. (ii) Lilou identifies the GPU features that significantly impact inference latency and learns a predictor to estimate the latency and type of kernels, which are detected in the preceding step. To evaluate Lilou, we conduct comprehensive experiments across a variety of commercial GPUs commonly utilized in public cloud environments, employing a wide range of popular DNN architectures, including both convolutional neural networks and transformers. Our experiment results show that Lilou is robust to a wide range of DNN architectures and GPU resource allocations. Our novel learning-based method surpasses the state-of-the-art rule-based approach in fusion prediction with an accuracy of 98.26%, laying a solid foundation for end-to-end latency prediction that achieves a MAPE of 8.68%, also outperforming existing benchmarks.
+ER  - 
+
+TY  - JOUR
+T1  - WaveDL: A scalable deep learning framework for wave-based inverse problems
+AU  - Le, Ductho
+AU  - Phan, Haidang
+AU  - Sacchi, Mauricio D.
+AU  - Le, Lawrence H.
+JO  - Computer Physics Communications
+VL  - 329
+SP  - 110400
+PY  - 2026
+DA  - 2026/12/01/
+SN  - 0010-4655
+DO  - https://doi.org/10.1016/j.cpc.2026.110400
+UR  - https://www.sciencedirect.com/science/article/pii/S0010465526003826
+KW  - Deep learning
+KW  - Inverse problems
+KW  - Wave propagation
+KW  - Non-destructive evaluation
+KW  - Seismic inversion
+KW  - Physics-constrained learning
+AB  - Wave-based inverse problems, which determine material or structural parameters from measured wavefields, are fundamental to non-destructive evaluation (NDE), biomedical diagnostics, and geophysics. For repeated-query applications, deep learning shifts the computational effort from iterative inversion to offline training, enabling low-latency prediction, yet large-scale adoption remains limited by challenges in reproducibility, fair architecture comparison, large-dataset handling, and stable distributed training. This paper introduces WaveDL, an open-source Python framework that addresses these challenges through an integrated pipeline covering memory-efficient data streaming, a model zoo comprising 71 network variants adapted for multi-target regression, synchronized multi-GPU training, soft physics-constraint penalties, and automated deployment export via Open Neural Network Exchange (ONNX). Built on PyTorch and Hugging Face Accelerate, WaveDL enables a complete workflow from raw data to deployed model with a single command, lowering the barrier for domain scientists to apply deep learning without specialized machine learning expertise. The framework is demonstrated using a 120 GB Lamb wave dispersion curve dataset to evaluate out-of-core training and systematic cross-architecture benchmarking for finite-dimensional parameter inversion. WaveDL is freely installable via pip install wavedl.
+PROGRAM SUMMARY
+Program Title: WaveDL CPC Library link to program files: https://doi.org/10.17632/jvgw2cjh9c.1 Developer’s repository link: https://github.com/ductho-le/WaveDL Licensing provisions: MIT License Programming language: Python 3.11+ Nature of problem: Inferring material or structural parameters from measured wavefields poses a challenging inverse problem that can be time-consuming and computationally expensive to solve with classical iterative methods. Deep learning offers an appealing alternative, but practical adoption often requires separate tools for reproducible training, out-of-core data handling, coordinated multi-GPU execution, soft physics-constraint penalties, and export to industrial environments. Solution method: WaveDL addresses each challenge through a dedicated subsystem: large-scale datasets are handled via memory-mapped streaming with near-constant input-memory overhead independent of input dataset size (aside from compact target storage); multi-GPU training is coordinated through synchronization of early stopping and metric aggregation; physical-law violations are penalized through soft loss terms parsed from user-supplied expressions or Python files; and trained models are exported to ONNX with embedded denormalization for direct use in MATLAB, LabVIEW, and C++ toolchains. Restrictions:Training acceleration is supported on NVIDIA (CUDA) GPUs and Apple Silicon (MPS); CPU-only execution is available but substantially slower. Memory-mapped loading requires datasets in NPZ, HDF5, or MAT v7.3 format.
+ER  - 
+
+TY  - JOUR
+T1  - Hybrid strategy of deep learning and SPH method for accelerating Lagrangian free-surface flow simulations
+AU  - Matono, Gen
+AU  - Nishio, Mayuko
+JO  - Computational Particle Mechanics
+VL  - 15
+SP  - 168
+EP  - 182
+PY  - 2026
+DA  - 2026/06/01/
+SN  - 2196-4386
+DO  - https://doi.org/10.1016/j.cpms.2026.04.007
+UR  - https://www.sciencedirect.com/science/article/pii/S2196438626001683
+KW  - SPH method
+KW  - Particle-based method
+KW  - PointNet
+KW  - Hybrid strategy
+AB  - Smoothed particle hydrodynamics (SPH) is a Lagrangian, particle-based method that has demonstrated effectiveness in the analysis of free-surface flows. However, SPH requires neighbour searches to compute particle interactions using kernel functions, and this procedure constitutes a major computational bottleneck. This study introduces a deep learning model that predicts free-surface flows within a Lagrangian forms without relying on neighbour searches, enabling significant computational acceleration. However, a drawback of this approach is that by neglecting particle–particle interactions, numerical errors accumulate owing to particle clustering. To address this issue, we introduce a hybrid strategy that alternates between the deep learning model and conventional SPH updates. By combining the efficiency of the learning-based model with the accuracy of SPH, our method achieved both high speed and high fidelity in free-surface flow prediction. The proposed method is comprehensively and neutrally validated using the WaterDrop problem, which is a standard benchmark for free-surface flows. Under identical programming languages and computational environments, comparisons with both explicit and implicit schemes demonstrated that the proposed approach achieves an acceleration of up to approximately four times.
+ER  - 
+
+TY  - JOUR
+T1  - SUSAN: A deep learning-based architecture for violence detection against women in surveillance videos
+AU  - Andrade, João Pedro F.
+AU  - Si, Tapas
+AU  - Cavalcanti, Ana Paula
+AU  - Nascimento, André C.A.
+AU  - Miranda, Péricles B.C.
+JO  - Expert Systems with Applications
+VL  - 280
+SP  - 127337
+PY  - 2025
+DA  - 2025/06/25/
+SN  - 0957-4174
+DO  - https://doi.org/10.1016/j.eswa.2025.127337
+UR  - https://www.sciencedirect.com/science/article/pii/S0957417425009595
+KW  - Convolutional neural networks
+KW  - Gender classification
+KW  - Violence detection
+AB  - As surveillance cameras become commonly used, the demand for automatic violence detection technology increases. A significant number of works have been developed in the area of automatic violence detection, utilizing a diverse range of approaches in different scenarios. The scenarios explored by researchers usually revolve around violence detection in sports, movies, and outdoor spaces, but works that involve violence detection against women are still way too few. Violence against women is a pervasive global public health issue, with alarming statistics indicating an increasing trend over time. Domestic violence is a complex multifaceted problem, in which no single strategy can address the problem by itself. This work introduces a technological tool, SUSAN (Surveillance System Architecture based on deep neural Networks), an architecture designed for detecting violence against women in surveillance videos. SUSAN employs deep learning models for human detection, violence detection, and gender classification. In this work, one model for human detection was fixed, and four models of Convolutional Neural Networks were combined in pairs for the tasks of violence detection and gender classification and evaluated with four metrics: accuracy, precision, recall, and F1-score. This work utilized the AIRTLab and PA-100K datasets for training and the first for testing the architecture as it is composed of synthetic violent clips involving women. The proposal presented promising results, with the best combination of models reaching 73% of accuracy, 80% of F1-score, 78% of precision and 82% of recall, which demonstrates the viability of an algorithm for automatic violence detection against women, and contributed to a research area still in development.
+ER  - 

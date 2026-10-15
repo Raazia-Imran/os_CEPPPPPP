@@ -1,0 +1,614 @@
+TY  - JOUR
+T1  - A deep learning and finite element approach for exploration of inverse structure–property designs of lightweight hybrid composites
+AU  - Ferdousi, Sanjida
+AU  - Demchuk, Zoriana
+AU  - Choi, Wonbong
+AU  - Advincula, Rigoberto C.
+AU  - Jiang, Yijie
+JO  - Composite Structures
+VL  - 365
+SP  - 119179
+PY  - 2025
+DA  - 2025/08/01/
+SN  - 0263-8223
+DO  - https://doi.org/10.1016/j.compstruct.2025.119179
+UR  - https://www.sciencedirect.com/science/article/pii/S0263822325003447
+KW  - Hybrid composites
+KW  - Inverse structure–property (S-P) relationships
+KW  - cGAN
+KW  - Transfer learning
+KW  - Tailor-made composites design
+AB  - Hybrid composites have important applications, such as high-performance and lightweight materials in aerospace and automotive industries. Hybrid composites utilize the synergy of diverse fillers to achieve desired material properties, but usually have more complicated microstructures. While topology optimization can optimize a particular property, designing hybrid composites for customized mechanical performances, e.g. full-range stress–strain curve, remains challenging. Here, a computational framework that integrated finite element analysis (FEA) and artificial intelligence (AI) methods of Conditional Generative Adversarial Networks (cGAN) deep learning and transfer learning was developed to establish inverse structure–property relationships and design tailor-made hybrid composites. Based on FEA-generated datasets of hybrid fiber-particle–matrix microstructures and theircorresponding full-range stress–strain curves, a cGAN architecture was trained to generate tailored microstructures and establish structure–property relationships. Similarity in microstructural features and well-matched stress–strain curves based on the AI-generated composites were achieved. Transfer learning was used to expand the pre-trained model for designing different materials systems.
+ER  - 
+
+TY  - JOUR
+T1  - Solving the task scheduling and GPU reconfiguration problem on MIG devices via deep reinforcement learning
+AU  - Villarrubia, Jorge
+AU  - Costero, Luis
+AU  - Igual, Francisco D.
+AU  - Olcoz, Katzalin
+JO  - Future Generation Computer Systems
+VL  - 176
+SP  - 108145
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2025.108145
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X2500439X
+KW  - Multi-Instance GPU (MIG)
+KW  - Moldable resource management
+KW  - Deep reinforcement learning
+KW  - Task scheduling
+AB  - Recent advances in dynamic GPU partitioning, such as NVIDIA’s Multi-Instance GPU (MIG) technology, have enhanced resource utilization by enabling task co-execution without contention. However, existing MIG schedulers remain limited to static or task-agnostic methods that sacrifice optimality for tractability. This paper presents a Deep Reinforcement Learning framework that seeks to minimize the completion time of a task queue by holistically addressing the dimensions of the problem: task molding, GPU reconfiguration and execution order. To manage the vast solution space, we apply optimizations such as discrete and canonical representation of states, unification of equivalent configurations, action masking, or promoting the exploration of reconfigurations; this offers insights for similar resource management scenarios. The proposed models are extensively evaluated with widely used benchmarks of the Rodinia and Altis suites, and synthetic workloads generated to emulate a wide range of plausible real situations. The final model improves to the state-of-the-art, especially in workloads that clearly contradict the assumptions of previous proposals, achieving a difference of less than 20% to the optimum. Additionally, two different approaches to the problem are faced (offline vs. online), discussing their theoretical advantages and disadvantages, and evaluating them experimentally for the final model.
+ER  - 
+
+TY  - JOUR
+T1  - GPU-accelerated cloud computing services and performance evaluation
+AU  - Collins, Zakery
+AU  - De Luca, Gennaro
+AU  - Chen, Yinong
+JO  - Simulation Modelling Practice and Theory
+VL  - 144
+SP  - 103181
+PY  - 2025
+DA  - 2025/11/01/
+SN  - 1569-190X
+DO  - https://doi.org/10.1016/j.simpat.2025.103181
+UR  - https://www.sciencedirect.com/science/article/pii/S1569190X25001169
+KW  - Cloud computing
+KW  - High-performance simulation
+KW  - Cloud infrastructure
+KW  - CUDA
+KW  - GPU-accelerated services
+AB  - This paper explores the feasibility of replacing traditional CPU-based cloud computing with Graphic Processing Unit GPU-accelerated services. Using NVIDIA’s CUDA GPU-accelerated C/C++ and Python libraries, we benchmark the performance of GPU computing against multithreaded CPU computing across several domains, including machine learning and large-scale image processing. A novel contribution of this work is an intelligent autoscaling system that maximizes single-GPU resource utilization before scaling to additional GPUs, improving efficiency in cloud-based deployments. Our simulation experiments demonstrate significant performance gains for GPU-accelerated computing and highlight the impact of optimized resource allocation in cloud environments. For example, in a machine learning experiment, using a dataset with 8.790 entries, the execution of a GeForce 3060 ti GPU is 3.42 times faster than a 16-thread CPU computer. Compared with the same 16-thread CPU, Tesla K80 GPU is 4.17 times faster. Furthermore, we provide an analysis of GPU performance optimization strategies, including memory management, concurrency techniques, and workload distribution methodologies, offering insights into the long-term scalability and cost-effectiveness of GPU-accelerated cloud infrastructure.
+ER  - 
+
+TY  - JOUR
+T1  - Physics-informed neural networks for 3D transient thermal simulation of MIG welding
+AU  - Duarte, Carlos Antonio Ribeiro
+AU  - de Resende, André Alves
+AU  - de Souza, Francisco José
+AU  - Andrade, João Rodrigo
+AU  - Paes, Luiz Eduardo dos Santos
+AU  - da Silva, Leonardo Rosa Ribeiro
+AU  - Dias, João Marcos Souza
+AU  - Teloli, Rafael de Oliveira
+AU  - Jacob, Bruno
+JO  - Results in Engineering
+VL  - 29
+SP  - 109549
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 2590-1230
+DO  - https://doi.org/10.1016/j.rineng.2026.109549
+UR  - https://www.sciencedirect.com/science/article/pii/S259012302600589X
+KW  - GMAW
+KW  - Machine learning
+KW  - MIG/MAG
+KW  - Artificial intelligence
+KW  - Thermal cycle
+AB  - Accurate and fast prediction of transient temperature fields in MIG/MAG welding is essential for process qualification and weld integrity, yet high fidelity mesh-based simulations can become computationally expensive for fully transient 3D problems with moving heat sources. To circumvent these computational bottlenecks, this study delineates an advanced simulation architecture founded upon Physics-Informed Neural Networks (PINNs). This paradigm shifts the solution strategy from mesh-based integration to physics-constrained optimization, ensuring thermodynamic consistency while significantly accelerating time-to-solution. The proposed architecture directly assimilates the partial differential equation governing three-dimensional transient heat conduction, incorporating a dynamic Gaussian volumetric energy source, into the network’s objective function. Consequently, the training process minimizes the residuals of the governing physics, constraining the predicted manifold to satisfy Fourier’s law of conduction without the necessity for spatial discretization. Empirical validation against previously published bead-on-plate experiments on 6061-T6 aluminum alloy substrates confirms the model’s fidelity. The framework successfully reproduces complex transient thermal profiles, yielding a minimized l2 error metric of 2.28 K, demonstrating robust agreement with thermocouple telemetry. Furthermore, a systematic hyperparameter study was conducted, as PINN performance is highly sensitive to parameter choices. Finally, this study identified an optimal configuration that balances predictive accuracy with computational cost. Notably, the optimized hyperparameters facilitate model convergence in approximately 14 min utilizing a single consumer-grade graphics processing unit. This efficiency establishes the PINN framework as a viable engine for real-time digital twinning and rapid iterative design in high-throughput manufacturing environments.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter Six - Deep learning with GPUs
+AU  - Jeon, Won
+AU  - Ko, Gun
+AU  - Lee, Jiwon
+AU  - Lee, Hyunwuk
+AU  - Ha, Dongho
+AU  - Ro, Won Woo
+A2  - Kim, Shiho
+A2  - Deka, Ganesh Chandra
+BT  - Advances in Computers
+PB  - Elsevier
+VL  - 122
+SP  - 167
+EP  - 215
+PY  - 2021
+DA  - 2021/01/01/
+T2  - Hardware Accelerator Systems for Artificial Intelligence and Machine Learning
+SN  - 0065-2458
+DO  - https://doi.org/10.1016/bs.adcom.2020.11.003
+UR  - https://www.sciencedirect.com/science/article/pii/S0065245820300905
+KW  - Graphics processing unit
+KW  - Deep learning
+KW  - Parallel processing
+KW  - CUDA
+KW  - Tensor operation
+KW  - Data center
+KW  - Edge computing
+AB  - Deep learning has been extensively researched in various areas and scales up very fast in the last decade. It has deeply permeated into our daily life, such as image classification, video synthesis, autonomous driving, voice recognition, and personalized recommendation systems. The main challenge for most deep learning models, including convolutional neural networks, recurrent neural networks, and recommendation models, is their large amount of computation. Fortunately, most computations in deep learning applications are parallelizable, therefore they can be effectively handled by throughput processors, such as Graphics Processing Units (GPUs). GPUs support high throughput, parallel processing performance, and high memory bandwidth and becomes the most popularly adopted device for deep learning. As a matter of fact, many deep learning workloads from mobile devices to data centers are performed by GPUs. In particular, modern GPU systems provide specialized hardware modules and software stacks for deep learning workloads. In this chapter, we present detailed analysis on the evolution of GPU architectures and the recent hardware and software supports for more efficient acceleration of deep learning in GPUs. Furthermore, we introduce leading-edge researches, challenges, and opportunities of running deep learning workloads on GPUs.
+ER  - 
+
+TY  - JOUR
+T1  - Automatic surface roughness recognition system under different manufacturing processes based on deep learning
+AU  - Meng, Jiajian
+AU  - Yuan, Xiaolong
+AU  - Wang, Guan
+AU  - Li, Xianke
+AU  - Zhao, Enpei
+AU  - Li, Junrong
+AU  - Fang, Haomiao
+AU  - Li, Bo
+AU  - Li, Cong
+AU  - Zhao, Dejin
+AU  - Zhao, Hongwei
+AU  - Cheng, Lili
+AU  - Zhang, Jianhai
+JO  - Measurement
+VL  - 253
+SP  - 117473
+PY  - 2025
+DA  - 2025/09/01/
+SN  - 0263-2241
+DO  - https://doi.org/10.1016/j.measurement.2025.117473
+UR  - https://www.sciencedirect.com/science/article/pii/S0263224125008322
+KW  - Laser speckle image
+KW  - Relative maximum contrast ratio
+KW  - Spatial and channel attention module
+AB  - Automated high-precision online measurement of machined surface roughness for key parts holds significant importance in intelligent manufacturing processes. A deep learning-based system is developed for automatic surface roughness recognition, which is built upon a dual-source laser speckle imaging apparatus. The Relative Maximum Contrast Ratio (RMCR) method is proposed for the first time to determine the optimal measurement parameters, enabling the acquisition of high-quality speckle images. The precise recognition of surface roughness through datasets relies heavily on the performance of deep learning models. The Twins-SVT model excels in the field of image classification, leveraging a deep separable convolutional core architecture. To enhance the recognition precision of surface roughness, the Spatial and Channel Attention (SCA) module is integrated into the Twins-SVT model. This integration allows for comprehensive feature extraction by effectively combining spatial and channel information from speckle images. The outstanding recognition accuracy and generalization performance of the SCA-Twins-SVT model is validated using a substantial datasets of speckle images. Compared to mainstream deep learning models, the proposed SCA-Twins-SVT model demonstrates exceptional performance in recognizing surface roughness machined by horizontal and vertical milling.
+ER  - 
+
+TY  - JOUR
+T1  - SpaceFlow: Runtime enforcement of cloud-native GPU spatial partitioning
+AU  - Yeo, Sangho
+AU  - Kim, Jiheon
+AU  - Oh, Sangyoon
+JO  - Journal of Parallel and Distributed Computing
+VL  - 216
+SP  - 105311
+PY  - 2026
+DA  - 2026/10/01/
+SN  - 0743-7315
+DO  - https://doi.org/10.1016/j.jpdc.2026.105311
+UR  - https://www.sciencedirect.com/science/article/pii/S0743731526000894
+KW  - GPU
+KW  - Spatial partitioning
+KW  - Kubernetes
+KW  - Container
+AB  - As GPU capacity scales, a growing fraction of computing resources remains idle under single-tenant allocations. Spatial partitioning addresses this need by offering superior throughput. However, it lacks container-level enforcement, causing resource over-consumption in multi-tenant environments. We present SpaceFlow, a runtime enforcement mechanism that achieves container-level GPU spatial partitioning by transparently intercepting GPU runtime interface and unifying its contexts. To ensure secure deployment, SpaceFlow integrates with a cloud-native ecosystem and eliminates resource oversubscription by immutable resource configuration. For broad compatibility, SpaceFlow includes adaptive fallback mechanisms that maintain container partitioning on GPUs with the latest architecture features. We validate SpaceFlow across various GPU types in a cloud-native cluster, demonstrating significant reduction in cross-container interference compared with conventional process-level spatial partitioning. SpaceFlow achieves up to 11.34 ×  interference reduction in evaluated scenarios while maintaining  ≤ 3.0% overhead.
+ER  - 
+
+TY  - JOUR
+T1  - Deep Learning-Based Motion-Compensated Reconstruction for Accelerating 4-Dimensional Magnetic Resonance Fingerprinting
+AU  - Wang, Lu
+AU  - Liu, Chenyang
+AU  - Wang, Yinghui
+AU  - Wang, Xiang
+AU  - Wang, Peilin
+AU  - Liao, Weihang
+AU  - Teng, Xinzhi
+AU  - Cheung, Andy Lai-Yin
+AU  - Lee, Victor Ho-Fun
+AU  - Zhi, Shaohua
+AU  - Ren, Ge
+AU  - Qin, Jing
+AU  - Cao, Peng
+AU  - Li, Tian
+AU  - Cai, Jing
+JO  - International Journal of Radiation Oncology*Biology*Physics
+VL  - 124
+IS  - 4
+SP  - 1103
+EP  - 1114
+PY  - 2026
+DA  - 2026/03/15/
+SN  - 0360-3016
+DO  - https://doi.org/10.1016/j.ijrobp.2025.10.001
+UR  - https://www.sciencedirect.com/science/article/pii/S0360301625063849
+AB  - Purpose
+To develop and validate DeepMocor, a deep learning–based method for motion-compensated 4-dimensional magnetic resonance fingerprinting (4D-MRF) reconstruction to accelerate conventional 4D-MRF reconstruction, enabling more efficient clinical treatment planning.
+Methods and Materials
+This prospective study enrolled 19 hepatocellular carcinoma patients (mean age, 62 years; 14 males) between June 2021 and October 2024. Abdominal free-breathing raw k-space data were acquired using a 3T magnetic resonance imaging scanner. DeepMocor involves motion field initialization, motion field refinement, and final 4D-MRF reconstruction. A 3-fold cross-validation strategy was employed for training and testing. Performance was evaluated against 2 alternatives (stage-I&III-only; stage-III-only) in terms of image quality, tissue property accuracy, tumor-to-tissue contrast, and tumor motion measurement. Image quality was assessed by peak signal-to-noise ratio (PSNR) and structural similarity index (SSIM). Tissue property accuracy was evaluated by mean absolute percentage error (MAPE). Tumor-to-tissue contrast was quantified by contrast-to-noise ratio (CNR) of the tumor region and the surrounding area. Tumor motion tracking was assessed by average motion difference (AMD) and Pearson correlation coefficients (PCC) in the superior-inferior and anterior-posterior directions. The Wilcoxon signed rank test was used for comparison with P < .05.
+Results
+For T1 maps, DeepMocor demonstrates PSNR of 25.49 ± 1.30, SSIM of 0.84 ± 0.03, MAPE of 3.5% to 5.9%, and CNR of 6.14 ± 3.54. For T2 maps, DeepMocor achieves PSNR of 25.57 ± 1.24, SSIM of 0.88 ± 0.02, MAPE of 3.1% to 15.8%, and CNR of 8.42 ± 13.72. DeepMocor achieves AMD of 0.62 ± 0.86 mm with PCC of 0.96 ± 0.07 in the superior-inferior direction and AMD of 0.32 ± 0.37 mm with PCC of 0.94 ± 0.06 in the anterior-posterior direction. DeepMocor shows superior performance across most metrics compared to stage-III-only and a subset of metrics compared to stage-I&III-only significantly.
+Conclusions
+The proposed DeepMocor method enables a 24-fold acceleration compared to the conventional reference method, highlighting its potential for liver radiation therapy planning.
+ER  - 
+
+TY  - JOUR
+T1  - Precision agriculture through biochemical urease-aware crop yield prediction using enhanced fuzzy logic and deep learning
+AU  - Vemunuri, Jyothi
+AU  - Murthy, Dr G․Vishnu
+JO  - Smart Agricultural Technology
+VL  - 12
+SP  - 101340
+PY  - 2025
+DA  - 2025/12/01/
+SN  - 2772-3755
+DO  - https://doi.org/10.1016/j.atech.2025.101340
+UR  - https://www.sciencedirect.com/science/article/pii/S2772375525005714
+KW  - Crop Yield Prediction (CYP)
+KW  - Urease Activity (UA)
+KW  - Precision Agriculture (PA)
+KW  - Transfer Learning (TL)
+KW  - Model Interpretation (MI)
+KW  - Area vs Chemical Analysis (ACA)
+KW  - and Deep Learning (DL)
+AB  - Precise and early Crop Yield Prediction (CYP) is important to ensure food security. The prevailing Deep Learning (DL) schemes overlooked the Urease Activity (UA) analysis, limiting the prediction accuracy. Thus, a biochemical-aware CYP framework that integrates UA is proposed. Initially, the publicly available Crop Yield (CY) dataset is collected and pre-processed to improve the data quality. Next, the dimensionality of the data is reduced, followed by crop categorization. Further, the Area vs Chemical Analysis (ACA) and UA prediction are done using the Exponential Lorentzian-based Fuzzy (EL-Fuzzy). Meanwhile, the correlation heatmap is constructed, followed by feature extraction. Finally, the Transfer Learning-based Symexp Frobenius Gated Recurrent Units (TL-SFGRU) is utilized for CY prediction. Moreover, to ensure reliability, the model interpretation is carried out. The experimental outcomes demonstrate that the proposed model outperforms existing approaches by attaining an MSE of 0.1087, RMSE of 0.3296, and MAE of 0.1057. This confirms the incorporation of ACA for precise CYP.
+ER  - 
+
+TY  - JOUR
+T1  - MIG welding defect detection under Self-Supervised Learning: A method based on Local-MIM and HiLo attention mechanism
+AU  - Zhu, Yuxi
+AU  - Luo, Yi
+AU  - Liu, Lei
+AU  - Deng, Xiaojun
+AU  - Ma, Zhang
+AU  - Deng, Junxiao
+JO  - Measurement
+VL  - 276
+SP  - 121516
+PY  - 2026
+DA  - 2026/06/02/
+SN  - 0263-2241
+DO  - https://doi.org/10.1016/j.measurement.2026.121516
+UR  - https://www.sciencedirect.com/science/article/pii/S026322412601225X
+KW  - Weld defects
+KW  - Masked image modeling
+KW  - Deep learning
+KW  - Transfer learning
+AB  - Metal inert gas (MIG) weld defect detection is critical for ensuring safety and reliability in modern manufacturing. However, the complexity of industrial environments and the scarcity of labeled defect data present significant challenges. Traditional detection approaches, which heavily rely on supervised learning, often suffer performance degradation due to limited annotations. To address these limitations, this paper proposes a two-stage detection framework specifically designed for MIG weld defects. The method integrates masked image modeling with Local-MIM (local multi-scale reconstruction) for self-supervised feature learning, and utilizes the real-time detection transformer (RT-DETR) model for efficient object detection. In the pre-training stage, Local-MIM autonomously captures latent defect features from unlabeled weld images. These features are subsequently utilized by the RT-DETR model to achieve accurate and real-time defect localization. Experimental results demonstrate that the proposed approach attains exceptional detection accuracy under limited supervision, while exhibiting strong robustness and inference speed. Furthermore, the introduction of the High-Low attention mechanism significantly enhances the extraction of low-level features without incurring additional computational costs. This study presents a novel and practical solution for MIG weld quality control, with promising potential for industrial deployment.
+ER  - 
+
+TY  - JOUR
+T1  - Penetration depth monitoring of high-power laser–arc hybrid welding process with a digital twin multi-fidelity deep learning framework
+AU  - Qiu, Yue
+AU  - Song, Minjie
+AU  - Shu, Leshi
+AU  - Jiang, Ping
+AU  - Wang, Yilin
+AU  - Zhao, Jintian
+AU  - Zhou, Yifei
+JO  - Journal of Manufacturing Processes
+VL  - 178
+SP  - 36
+EP  - 60
+PY  - 2026
+DA  - 2026/11/30/
+SN  - 1526-6125
+DO  - https://doi.org/10.1016/j.jmapro.2026.09.070
+UR  - https://www.sciencedirect.com/science/article/pii/S1526612526009199
+KW  - High-power laser-arc hybrid welding
+KW  - Penetration depth monitoring
+KW  - Digital twin
+KW  - Multi-fidelity sensors
+KW  - Deep learning network
+AB  - High-power laser–arc hybrid welding (HPLAHW) is widely used for joining medium-thick plates. A challenging issue in HPLAHW is welding process penetration depth monitoring, because strong arc and laser interaction both hinders the application of internal information sensors such as optical coherence tomography (OCT) and disturbs external signals. To enable nondestructive, in-process penetration depth monitoring in HPLAHW, this research proposes a lightweight digital twin multi-fidelity and multi-sensor deep learning framework centered on the designed MFMSNet for real-time in-process penetration depth monitoring in HPLAHW. In the perception field, top-view welding images and plasma emission spectra are acquired to characterize arc fluctuation, keyhole visibility, droplet transfer, and radiation-related process responses. In the physical field, computational fluid dynamics (CFD)-derived keyhole depth is introduced to provide internal physical information associated with penetration formation. A digital twin dataset is constructed through image and spectral denoising, data resampling, and temporal alignment to reduce periodic pulsed arc-induced optical noise, arc–keyhole overlap, and periodic vapor plume ejection in HPLAHW. Furthermore, a lightweight multi-branch temporal fusion network is developed, in which compact modality-specific encoders equipped with attention-based feature selection and recurrent temporal modeling extract penetration-sensitive visual spatiotemporal patterns, spectral radiation dynamics, and CFD-derived keyhole evolution features from multi-sensor and multi-fidelity digital twin data. The fused temporal features are used to generate continuous, time-resolved penetration depth monitoring along the welding process, rather than a single weld-level scalar output. Experimental results show that the proposed method outperforms the other evaluated model structures and fusion configurations, achieving an MAE of 0.28 mm and an RMSE of 0.34 mm, which correspond to 2.8% and 3.4% of the 10 mm plate thickness, respectively, demonstrating that the proposed digital twin framework improves the stability and reliability of in-process penetration depth monitoring.
+ER  - 
+
+TY  - JOUR
+T1  - A novel photovoltaic cell defect detection method: A deep learning model based on multi-scale enhanced feature extraction
+AU  - Gao, Yu
+AU  - Li, Zhanying
+AU  - Zhang, Yinghao
+AU  - Zhang, Kangye
+AU  - Yu, Haoyang
+JO  - Engineering Applications of Artificial Intelligence
+VL  - 161
+SP  - 112083
+PY  - 2025
+DA  - 2025/12/01/
+SN  - 0952-1976
+DO  - https://doi.org/10.1016/j.engappai.2025.112083
+UR  - https://www.sciencedirect.com/science/article/pii/S0952197625020913
+KW  - Photovoltaic cells
+KW  - Defect detection
+KW  - You Only Look Once
+KW  - Bi-directional Feature Pyramid Network
+KW  - Multi-Head Self-Attention
+AB  - With the increasingly widespread application of clean energy technology, the global demand for photovoltaic cells is gradually increasing, and the status and defects of photovoltaic cells are also being taken seriously. However, there are various types of defects in photovoltaic cells, including those that are difficult to detect, making detection work somewhat challenging. This article proposes a novel improved model for defect detection in photovoltaic cells based on You Only Look Once (YOLO). Firstly, the Multi-Head Self-Attention (MHSA) mechanism is adopted to compensate for the shortcomings of the Cross Stage Partial Bottleneck with 2 Convolutions (C2f) module in channel feature extraction. Secondly, the Receptive-Field Coordinate Attention Convolutional (RFCAConv) operation module is utilized to expand the receptive field of defect detection in the model and increase the range of feature extraction. Finally, the Bi-directional Feature Pyramid Network (BiFPN) and Concat modules are integrated to enhance the feature relationships between the output connections of each module and strengthen the output results. The final experimental results demonstrate that the improved model achieves an accuracy of 90.3%, representing a 5.2% increase compared to the original model. Through experimental verification, the improved model proposed in this paper can not only detect defects in photovoltaic cells in electroluminescence (EL) images but also in infrared thermal images. The model has strong generalization ability.
+ER  - 
+
+TY  - JOUR
+T1  - Subset-based Smart-DIC vs. deep learning-based DIC: Which is better?
+AU  - Zhao, Jianhui
+AU  - Liu, Yanzhao
+AU  - Qian, Kemao
+AU  - Pan, Bing
+JO  - Optics and Lasers in Engineering
+VL  - 205
+SP  - 109896
+PY  - 2026
+DA  - 2026/10/01/
+SN  - 0143-8166
+DO  - https://doi.org/10.1016/j.optlaseng.2026.109896
+UR  - https://www.sciencedirect.com/science/article/pii/S0143816626003003
+KW  - Digital image correlation
+KW  - Subpixel displacement measurement
+KW  - Self-adaptive optimization
+KW  - Deep learning
+AB  - Digital Image Correlation (DIC) techniques rely on an image matching/registration/tracking algorithm to track corresponding physical points across different speckle images. Among various implementations, subset-based DIC algorithms have been extensively studied, continuously refined, and widely adopted in most commercial DIC software. Smart-DIC, representing the state-of-the-art in this category, achieves user-independent and accurate measurement via self-adaptive parameter selection. Recently, the rise of deep learning has opened a new frontier in the DIC community. Deep learning-based DIC (DL-DIC) methods enable pixel-wise and end-to-end displacement measurement. In some studies regarding DL-DIC, comparisons with subset-based DIC were limited to deformation accuracy and/or spatial resolution. Moreover, the subset-based methods in these studies require manual setting of key parameters, including subset size and shape function order, which introduces potential bias and limits the objectivity of the evaluation. Additionally, these DL-DIC networks are limited by accuracy, displacement range, and generalization capability. To address these limitations, G-RAFT was recently proposed to provide accurate DIC measurements with a large displacement range, representing the current state-of-the-art DL-DIC. In this work, we present the first systematic comparison of Smart-DIC and G-RAFT under controlled simulations and real-world experiments, benchmarking their performance in terms of noise robustness, speckle generalization, deformation accuracy, and computational efficiency. Experimental results demonstrate that Smart-DIC achieves higher accuracy when deformations are well approximated by shape functions and demonstrates stronger generalization to low-quality speckles, while G-RAFT excels in complex deformation scenarios and delivers significantly higher computational efficiency. These findings offer practical guidance for image matching algorithm selection in diverse applications and underscore the potential of hybrid approaches that combine the robustness of Smart-DIC with the modeling flexibility of G-RAFT.
+ER  - 
+
+TY  - JOUR
+T1  - Characterizing concurrency mechanisms for NVIDIA GPUs under deep learning workloads
+AU  - Gilman, Guin
+AU  - Walls, Robert J.
+JO  - Performance Evaluation
+VL  - 151
+SP  - 102234
+PY  - 2021
+DA  - 2021/11/01/
+SN  - 0166-5316
+DO  - https://doi.org/10.1016/j.peva.2021.102234
+UR  - https://www.sciencedirect.com/science/article/pii/S0166531621000511
+KW  - GPGPUs
+KW  - Concurrent deep learning
+KW  - GPGPU application scheduling
+AB  - We investigate the performance of the concurrency mechanisms available on NVIDIA’s new Ampere GPU microarchitecture under deep learning training and inference workloads. In contrast to previous studies that treat the GPU as a black box, we examine scheduling at the microarchitectural level. We find that the lack of fine-grained preemption mechanisms, robust task prioritization options, and contention-aware thread block placement policies limits the effectiveness of NVIDIA’s concurrency mechanisms. In summary, the sequential nature of deep learning workloads and their fluctuating resource requirements and kernel runtimes make executing such workloads while maintaining consistently high utilization and low, predictable turnaround times difficult on current NVIDIA hardware.
+ER  - 
+
+TY  - JOUR
+T1  - Nightjar: Dynamic adaptive speculative decoding for large language models serving
+AU  - Li, Rui
+AU  - Zhang, Zhaoning
+AU  - Zhang, Libo
+AU  - Wang, Huaimin
+AU  - Fu, Xiang
+AU  - Lai, Zhiquan
+JO  - Journal of Systems Architecture
+VL  - 178
+SP  - 103889
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 1383-7621
+DO  - https://doi.org/10.1016/j.sysarc.2026.103889
+UR  - https://www.sciencedirect.com/science/article/pii/S1383762126002079
+KW  - Speculative decoding
+KW  - Large language models serving
+KW  - Resource efficient inference
+KW  - Dynamic real-time request loads
+AB  - Speculative decoding (SD) accelerates LLM inference by verifying draft tokens in parallel. However, this method presents a critical trade-off: it improves throughput in low-load, memory-bound systems but degrades performance in high-load, compute-bound environments due to verification overhead. Existing speculative decoding methods use fixed lengths and cannot adapt to workload changes or decide when to stop speculation. The cost of restarting speculative inference also remains unquantified. Under high load, the benefit of speculation diminishes, while retaining the draft model reduces KV cache capacity, limiting batch size and degrading throughput. To overcome this, we propose Nightjar, a resource-aware adaptive speculative framework. It first adjusts to the request load by dynamically selecting the optimal speculative length for different batch sizes. Crucially, Nightjar proactively disables speculative decoding when the MAB planner determines that speculation is no longer beneficial, and during the disabled phase, offloads the draft model to the CPU only under GPU memory pressure. This reclaims memory for the KV cache, thereby facilitating larger batch sizes and maximizing overall system throughput. Experiments show that Nightjar achieves up to 14.76% higher throughput than standard speculative decoding and up to 20.18% lower latency in the main benchmark suite under dynamic request arrival rates for real-time LLM serving scenarios.
+ER  - 
+
+TY  - JOUR
+T1  - A certain examination on heterogeneous systolic array (HSA) design for deep learning accelerations with low power computations
+AU  - Jayaraman Rajanediran, Dinesh Kumar
+AU  - Ganesh Babu, C.
+AU  - Priyadharsini, K.
+JO  - Sustainable Computing: Informatics and Systems
+VL  - 44
+SP  - 101042
+PY  - 2024
+DA  - 2024/12/01/
+SN  - 2210-5379
+DO  - https://doi.org/10.1016/j.suscom.2024.101042
+UR  - https://www.sciencedirect.com/science/article/pii/S2210537924000878
+KW  - ADP- Area delay product
+KW  - CE- Computation element
+KW  - CNN- Convolution neural network
+KW  - GMMN- General matrix multiplication
+KW  - MHA- Modified hybrid kogge stone adder
+KW  - PSA- Proposed systolic array
+KW  - SA-Systolic array
+KW  - TPU- Tensor processing unit
+AB  - Acceleration techniques play a crucial role in enhancing the performance of modern high-speed computations, especially in Deep Learning (DL) applications where the speed is of utmost importance. One essential component in this context is the Systolic Array (SA), which effectively handles computational tasks and data processing in a rhythmic manner. Google's Tensor Processing Unit (TPU) leverages the power of SA for neural networks. The core SA's functionality and performance lies in the Computation Element (CE), which facilitates parallel data flow. In our article, we introduce a novel approach called Proposed Systolic Array (PSA), which is implemented on the CE and further enhanced with a modified Hybrid Kogge Stone adder (MHA). This design incorporates principles to expedite computations by rounding and extracting data model in SA as PSA-MHA. The PSA, utilizing a data flow model with MHA, significantly accelerates data shifts and control passes in execution cycles. We validated our approach through simulations on the Cadence Virtuoso platform using 65 nm process technology, comparing it to the General Matrix Multiplication (GMMN) benchmark. The results showed remarkable improvements in the CE, with a 30.29 % reduction in delay, a 23.07 % reduction in area, and an 11.87 % reduction in power consumption. The PSA outperformed these improvements, achieving a 46.38 % reduction in delay, a 7.58 % reduction in area, and an impressive 48.23 % decrease in Area Delay Product (ADP). To further substantiate our findings, we applied the PSA-based approach to pre-trained hybrid Convolutional and Recurrent (CNN-RNN) neural models. The PSA-based hybrid model incorporates 189 million Multiply-Accumulate (MAC) units, resulting in a weighted mean architecture value of 784.80 for the RNN component. We also explored variations in bit width, which led to delay reductions ranging from 20.17 % to 30.29 %, area variations between 13.08 % and 32.16 %, and power consumption changes spanning from 11.88 % to 20.42 %.
+ER  - 
+
+TY  - JOUR
+T1  - Optimum: Runtime optimization for multiple mixed model deployment deep learning inference
+AU  - Guo, Kaicheng
+AU  - Xu, Yixiao
+AU  - Qi, Zhengwei
+AU  - Guan, Haibing
+JO  - Journal of Systems Architecture
+VL  - 141
+SP  - 102901
+PY  - 2023
+DA  - 2023/08/01/
+SN  - 1383-7621
+DO  - https://doi.org/10.1016/j.sysarc.2023.102901
+UR  - https://www.sciencedirect.com/science/article/pii/S1383762123000802
+KW  - Inference system
+KW  - GPU inference serving
+KW  - Mixed deployment
+KW  - Performance prediction
+KW  - Co-location
+AB  - GPUs used in data centers to perform deep learning inference tasks are underutilized. Previous systems tended to deploy a single model on a GPU to ensure that inference tasks met throughput and latency requirements. The rapid increase in one GPU’s resources, as well as the emergence of scenarios such as small models and small batches, have exacerbated the issue of low GPU utilization. In this case, a mixed model deployment-based solution can significantly improve GPU utilization while also providing greater flexibility to the inference system’s upper layer. The selection of model combinations and optimization strategies in mixed model deployment, however, remain unresolved issues. This paper proposes Optimum, the first model-combination planning and runtime optimization framework for mixed model deployment. Facing enormous search spaces, Optimum uses performance prediction for model combination selection with low search overhead. The predictor is based on a multilayer perceptron. Its input features are the profiling results of the model engine, and the output is the performance degradation. The runtime optimization strategies allow Optimum to perform performance optimization and fine-grained tradeoff. The Optimum prototype is based on CUDA multi-stream and TensorRT. The test results show that we have a flat 10.3% performance improvement over mainstream single-model deployments. We have a performance improvement of up to 7.09% over the state-of-the-art with an order of magnitude reduction in search overhead.
+ER  - 
+
+TY  - JOUR
+T1  - WiAR : Wi-Fi-based human activity recognition using time-frequency analysis and lightweight deep learning for smart environments
+AU  - Puduru, Vamsi Krishna
+AU  - Yakkati, Rakesh Reddy
+AU  - Yeduri, Sreenivasa Reddy
+AU  - Koorapati, Sagar
+AU  - Cenkeramaddi, Linga Reddy
+JO  - Internet of Things
+VL  - 36
+SP  - 101881
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 2542-6605
+DO  - https://doi.org/10.1016/j.iot.2026.101881
+UR  - https://www.sciencedirect.com/science/article/pii/S2542660526000119
+KW  - Human activity recognition
+KW  - Wi-Fi
+KW  - Channel state information
+KW  - Continuous wavelet transform
+KW  - Convolutional neural networks
+AB  - Recognizing human activities in smart environments has significant usage in home automation, security, healthcare monitoring, etc. This paper proposes WiAR, which is a Wi-Fi-based human activity recognition method using Continuous Wavelet Transform (CWT) and lightweight Convolutional Neural Networks (CNNs). The proposed approach is evaluated on the IEEE 802.11ax Channel State Information (CSI) dataset. First, WiAR utilizes the CWT to generate the spectrogram images from the CSI extracted from Wi-Fi signals for different activities: walking, running, staying in place, and empty space. Then, these spectrogram images are processed with a CNN to classify these activities efficiently. Experimental results show that the proposed WiAR achieves an accuracy of approximately 91.1% when compared to various pre-trained models such as DenseNet, EfficientNet, MobileNet, ResNet, and VGGNet. Finally, the proposed CNN model is deployed on various edge computing devices, including Raspberry Pi 5, to validate its real-time implementation in terms of inference time.
+ER  - 
+
+TY  - JOUR
+T1  - Application and identification of aluminum alloy inclusions microstructures based on deep learning
+AU  - Wang, Tianlong
+AU  - Li, Ying
+AU  - Ding, Yushi
+AU  - Liu, Zhenwei
+AU  - Hao, Yunlong
+AU  - Zhuang, Chunsheng
+AU  - Zhang, Wei
+JO  - Materials Today Communications
+VL  - 47
+SP  - 113184
+PY  - 2025
+DA  - 2025/07/01/
+SN  - 2352-4928
+DO  - https://doi.org/10.1016/j.mtcomm.2025.113184
+UR  - https://www.sciencedirect.com/science/article/pii/S2352492825016964
+KW  - Microstructure analysis
+KW  - Deep learning
+KW  - Aluminum alloy dataset
+KW  - Object detection
+AB  - Aluminum alloys are essential materials for industrial development and national construction, and are widely used in metallurgy, machinery, and aerospace. The characteristics and types of inclusions in aluminum alloys significantly influence their performance. Developing a reliable system for the recognition and detection of microscopic inclusions in aluminum alloys presents significant challenges. In this study, we constructed an annotated dataset of aluminum alloy inclusions comprising six common types of inclusions. The dataset contains 3,260 images with a total of 69,374 bounding box annotations. We evaluate multiple advanced deep learning models for accurate multi-class detection of inclusion types and assess the performance of each model using various metrics. Experimental results show that the eleven models achieve mean average precision at 0.5 ranging from 72.6% to 90.5%. We further analyze detection accuracy for each inclusion type. Refractory materials and spinel inclusions are detected with over 90% accuracy across all models, while titanium diboride, oxide film, and nitride inclusions exceed 80% accuracy. This work improves the efficiency of microstructure characterization and offers potential for vision-based removal of inclusions, as well as broader applications of machine learning in materials science.
+ER  - 
+
+TY  - JOUR
+T1  - Prediction-based GPU sharing for distributed training
+AU  - Shin, Changyong
+AU  - Go, Younghun
+AU  - Yoo, Yeonho
+AU  - Jeong, Jinwoo
+AU  - Hwang, Jaehyun
+AU  - Yang, Gyeongsik
+AU  - Yoo, Chuck
+JO  - Future Generation Computer Systems
+VL  - 181
+SP  - 108413
+PY  - 2026
+DA  - 2026/08/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2026.108413
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X26000476
+KW  - Cloud computing
+KW  - GPU Sharing
+KW  - Service level agreement
+KW  - Performance prediction
+KW  - GPU Scheduling
+AB  - GPU sharing aims to enhance the efficiency of GPU utilization by running distributed deep learning training jobs concurrently. However, GPU sharing poses a significant challenge: the increase in job completion time (JCT) caused by interference between jobs is inconsistent, complicating job scheduling. Our experiments reveal that the degree of JCT increase varies by as much as  ∼ 3.7 × . While previous studies have analyzed this JCT inconsistency problem, none of them have been able to minimize the inconsistency. We propose TensorShare, a proactive GPU sharing technique that leverages a deep learning model to predict the extent of JCT increase. This study defines a new metric, called GPU SLA, which represents the upper threshold of JCT increase. TensorShare then introduces a novel scheduler that proactively identifies which jobs meet GPU SLA while minimizing the JCT increase. Our evaluation shows that TensorShare improves GPU SLA satisfaction rates by 26.1 × –47.3 ×  and reduces the JCT increase by 37%–60%. Furthermore, we evaluate TensorShare with large language models that are not included in training TensorShare’s prediction model, achieving  ∼ 7 ×  and  ∼ 10.3 ×  improvements in GPU SLA satisfaction and JCT inconsistency, respectively.
+ER  - 
+
+TY  - JOUR
+T1  - Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving
+AU  - Liang, Qianlin
+AU  - Wang, Haoliang
+AU  - Shenoy, Prashant
+JO  - Performance Evaluation
+VL  - 171
+SP  - 102539
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 0166-5316
+DO  - https://doi.org/10.1016/j.peva.2025.102539
+UR  - https://www.sciencedirect.com/science/article/pii/S0166531625000732
+KW  - GPU
+KW  - Performance
+KW  - Neural network
+KW  - Latency
+AB  - As deep learning has been widely used in various application domains, a diversity of GPUs are adopted to accelerate DNN inference workloads and ensure Quality of Service (QoS). Robust prediction of inference latency using GPUs within cloud environments facilitates enhanced efficiency and maintains QoS in resource management solutions, such as consolidation and autoscaling. However, latency prediction is challenging due to the vast heterogeneity in both DNN architectures and GPU capacities. In this work, we present Lilou, an efficient and accurate latency predicting system for a wide range of DNN inference tasks across diverse GPU resource allocations. Lilou employs two techniques. (i) Lilou represents DNNs as directed acyclic graphs (DAGs), and utilizes a novel graph neural network (GNN) model for edge classification to detect the fusion of operators, also known as kernels. (ii) Lilou identifies the GPU features that significantly impact inference latency and learns a predictor to estimate the latency and type of kernels, which are detected in the preceding step. To evaluate Lilou, we conduct comprehensive experiments across a variety of commercial GPUs commonly utilized in public cloud environments, employing a wide range of popular DNN architectures, including both convolutional neural networks and transformers. Our experiment results show that Lilou is robust to a wide range of DNN architectures and GPU resource allocations. Our novel learning-based method surpasses the state-of-the-art rule-based approach in fusion prediction with an accuracy of 98.26%, laying a solid foundation for end-to-end latency prediction that achieves a MAPE of 8.68%, also outperforming existing benchmarks.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter 9 - Introduction to GPU computing, OpenACC, and CUDA basics
+AU  - Diez, Oscar
+BT  - Foundations of High-Performance Computing
+PB  - Elsevier
+SP  - 277
+EP  - 322
+PY  - 2026
+DA  - 2026/01/01/
+SN  - 978-0-443-45574-2
+DO  - https://doi.org/10.1016/B978-0-443-45574-2.00011-3
+UR  - https://www.sciencedirect.com/science/article/pii/B9780443455742000113
+KW  - Programming languages
+KW  - hardware architecture
+KW  - high-performance computing
+KW  - computer hardware
+KW  - computer graphics
+KW  - computer science
+KW  - GPU architecture
+KW  - CUDA
+KW  - HIP
+KW  - OpenACC
+KW  - streaming multiprocessor
+KW  - hierarchical memory
+KW  - HSA
+KW  - kernel launch
+KW  - memory coalescing
+KW  - shared memory
+KW  - grid‑block‑thread
+KW  - unified memory
+KW  - MPI+OpenACC
+KW  - Heterogeneous System Architecture
+KW  - occupancy tuning
+KW  - Nsight Compute
+KW  - cuda‑gdb
+KW  - vector addition
+KW  - matrix multiplication
+KW  - directive‑based parallelism
+AB  - This chapter introduces graphics processing unit (GPU) computing fundamentals and parallel programming models (CUDA and OpenACC), highlighting their architectures, workflows, and use cases in HPC. It begins with a comparison of central processing unit versus GPU architectures and traces GPU evolution from graphics accelerators to general‑purpose processors with streaming multiprocessors and hierarchical memory. CUDA is presented in detail: its thread‑block‑grid execution model, memory management (cudaMalloc, cudaMemcpy), synchronization (__syncthreads, atomic operations), and kernel-launch configuration, illustrated by vector addition and matrix multiplication examples. OpenACC’s directive‑based approach is then explained, showing how simple pragmas (parallel loop, data, collapse) enable rapid code offload to accelerators with minimal code changes. The chapter compares CUDA’s fine‑grained control and peak performance against OpenACC’s ease of use and portability and explores hybrid Message Passing Interface+OpenACC and Heterogeneous System Architecture unified‑memory strategies. Finally, it covers GPU optimization techniques, coalesced accesses, shared memory, occupancy tuning, and profiling/debugging tools like Nsight Compute and cuda‑gdb, with real‑world examples in weather simulation and deep learning.
+ER  - 
+
+TY  - JOUR
+T1  - Deep learning approaches for weld defect detection: A comprehensive review of models, applications, and future directions
+AU  - Eren, Berkay
+JO  - Computers & Industrial Engineering
+VL  - 212
+SP  - 111725
+PY  - 2026
+DA  - 2026/02/01/
+SN  - 0360-8352
+DO  - https://doi.org/10.1016/j.cie.2025.111725
+UR  - https://www.sciencedirect.com/science/article/pii/S036083522500871X
+KW  - Weld defect detection
+KW  - Artificial intelligence
+KW  - Deep learning
+KW  - Convolutional neural networks
+KW  - Transformer-based models
+KW  - Attention mechanisms
+KW  - Real-time inspection
+AB  - This review provides a structured analysis of AI-based techniques for weld defect detection, covering model architectures, industrial deployment, and future directions. Conventional machine learning approaches are first outlined, followed by a detailed comparison of modern deep learning models. Convolutional neural networks (CNNs) remain widely applied, achieving over 95% accuracy in classification and mean IoU around 85–91% in segmentation, though their performance is often dataset-dependent. Detection-oriented architectures, especially YOLO derivatives, stand out by combining high accuracy (mAP above 95%) with real-time inference, making them the most practical for industrial use. Attention-augmented and transformer hybrids further improve small-defect recognition and multimodal learning, reaching up to 99% precision, but their computational demand limits deployment. Meta-analytical synthesis highlights that CNN classifiers are robust but sensitive to data bias, segmentation networks are effective yet variable, YOLO-based detectors consistently provide the best accuracy–speed balance, and Transformer hybrids achieve the highest precision at greater cost. Lightweight models such as MobileNet, YOLOv7-tiny, and EfficientNet-lite, often enhanced by quantization or pruning, enable deployment on resource-constrained hardware like Jetson Nano and Raspberry Pi. The adoption of Explainable AI (XAI) tools is also growing, particularly in safety–critical contexts requiring interpretability. Remaining challenges include the lack of standardized evaluation protocols, limited use of multimodal fusion and self-supervised learning, and uncertain benefits of GAN-based synthetic data. Overall, this review emphasizes that the most suitable approach depends on balancing accuracy, robustness, efficiency, and deployment feasibility, offering guidance toward reliable industrial solutions.
+ER  - 
+
+TY  - JOUR
+T1  - RWB-Net: A deep learning framework for automated weld bead segmentation and classification in nuclear reprocessing plants
+AU  - Zhang, Chuanwang
+AU  - Wang, Zhiyong
+AU  - Zhang, Bo
+AU  - Ma, Shihai
+AU  - Jia, Dongyao
+AU  - Ma, Jing
+JO  - Journal of Manufacturing Processes
+VL  - 153
+SP  - 113
+EP  - 137
+PY  - 2025
+DA  - 2025/11/15/
+SN  - 1526-6125
+DO  - https://doi.org/10.1016/j.jmapro.2025.08.080
+UR  - https://www.sciencedirect.com/science/article/pii/S1526612525009685
+KW  - Welding defects
+KW  - Quality management
+KW  - Non-destructive testing
+KW  - Deep learning
+KW  - Nuclear reprocessing plants
+AB  - Automated weld bead inspection in nuclear reprocessing plants is critical for ensuring structural integrity, yet has remained challenging due to extreme environmental conditions including complex geometries and significant noise interference. To address these challenges, this study proposed the Reprocessing Weld Bead Net (RWB-Net), a novel deep learning framework consisting of three methodological innovations. First, a light-robust deformed denoising neural network was proposed to suppress environmental noise while preserving essential defect features, yielding a 5.22 % performance improvement in controlled experiments. Second, for accurate weld bead localization, an attention U-Net enhanced with hidden Markov model optimization was developed, achieving a mean intersection over union of 91.43 % on intricate nuclear pipeline geometries—surpassing standard U-Net models by 12.6 %. Third, defect classification was performed using a multi-source feature fusion strategy that integrated 182 domain-specific handcrafted features with deep representations from VGG-19, resulting in a classification accuracy of 94.26 % across four defect types. Comparative evaluations demonstrated RWB-Net's superior performance, with a recall of 93.72 %, F1-score of 93.66 %, and efficient inference speed of 0.41 s per image. The primary contribution of this work lay in the synergistic integration of domain expertise with advanced data-driven approaches tailored to the nuclear context. Cross-dataset validation confirmed RWB-Net's robustness and real-time applicability for weld quality assessment in safety-critical environments, offering insights extendable to broader industrial inspection domains.
+ER  - 
+
+TY  - JOUR
+T1  - Deep learning-enhanced detection of road culverts in high-resolution digital elevation models: Improving stream network accuracy in Sweden
+AU  - Lidberg, William
+JO  - Journal of Hydrology: Regional Studies
+VL  - 57
+SP  - 102148
+PY  - 2025
+DA  - 2025/02/01/
+SN  - 2214-5818
+DO  - https://doi.org/10.1016/j.ejrh.2024.102148
+UR  - https://www.sciencedirect.com/science/article/pii/S221458182400497X
+KW  - Stream network
+KW  - UNet
+KW  - Machine learning
+KW  - LiDAR
+KW  - Culvert
+KW  - ALS
+AB  - Study region
+Sweden, a mostly forested country with many small forest roads obstructing topographical modelling of shallow groundwater and streams.
+Study focus
+Maps have traditionally been constructed from aerial photos, but dense forest canopies often obscure these streams from view. Topographical modelling is a widely adopted method for mapping small streams and has been proposed as a potential solution. However, road embankments can disrupt flow paths, acting like dams in the digital landscape. This study presents a novel method where a unique dataset of 28,512 culverts was used to develop a deep learning method to map road culverts, enabling the correction of digital elevation models and enhancing the accuracy of topographically derived stream networks.
+New hydrological insights for the region
+The deep learning model successfully mapped 87 % of all culverts in the test data, and integrating these predicted culverts into topographical models slightly improved the precision of stream networks extracted from high-resolution digital elevation models in the region. These findings demonstrate the possibility for UNet models to enhance hydrological modelling and stream network mapping but further research should focus on reducing the number of false positive culvert predictions.
+ER  - 

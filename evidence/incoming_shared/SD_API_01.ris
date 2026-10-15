@@ -1,0 +1,599 @@
+TY  - JOUR
+T1  - A Comparative Study of Cloud GPU Offerings for AI/ML Engineers
+AU  - Ahuja, Sanjay P.
+AU  - Golanakonda, Madhuri
+AU  - Reddivari, Sandeep
+JO  - International Journal of Cloud Applications and Computing
+VL  - 16
+IS  - 1
+PY  - 2026
+DA  - 2026/01/22/
+SN  - 2156-1834
+DO  - https://doi.org/10.4018/IJCAC.406737
+UR  - https://www.sciencedirect.com/science/article/pii/S2156183426000070
+KW  - Machine Learning
+KW  - Cloud Computing
+KW  - GPUs
+KW  - MLOps
+KW  - Performance Benchmarking
+KW  - CI/CD
+AB  - ABSTRACT
+The expanding role of machine learning (ML) and artificial intelligence has become a primary reason behind the demand for high-performance GPUs. Cloud platforms such as Google Cloud Platform, Amazon Web Services, and Microsoft Azure provide scalable access to NVIDIA accelerators. However, variations in GPUs, pricing, usability, and deployment pipelines can be challenging for ML engineers. This paper presents a comprehensive study of GPU platforms across the major cloud providers, covering hardware families (T4, L4, A100, H100, H200, and emerging B200), virtual machine configurations, interconnect technologies, and pricing, including on-demand, spot, and reserved options. Various ecosystem factors were evaluated, including documentation quality, community support, ease of provisioning, and managed ML operations services, such as Vertex AI, SageMaker, and Azure ML. A literature review is provided of MLPerf results and benchmarks to analyze cost, performance, and scalability. The findings provide practical recommendations to guide ML engineers in selecting a suitable cloud for training, inference, and production.
+ER  - 
+
+TY  - JOUR
+T1  - Emotion recognition at the edge with AI specific low power architectures
+AU  - Di Nardo, Emanuel
+AU  - Santopietro, Vincenzo
+AU  - Petrosino, Alfredo
+JO  - Microprocessors and Microsystems
+VL  - 85
+SP  - 104299
+PY  - 2021
+DA  - 2021/09/01/
+SN  - 0141-9331
+DO  - https://doi.org/10.1016/j.micpro.2021.104299
+UR  - https://www.sciencedirect.com/science/article/pii/S0141933121004609
+KW  - Embedded computing
+KW  - Edge computing
+KW  - Deep Learning
+KW  - Face detection
+KW  - Emotion recognition
+AB  - Nowadays Deep Learning is applied in almost every research field and helps getting amazing results in a great number of challenging tasks. The main problem is that this kind of learning and consequently Neural Networks that can be defined deep, are resource intensive. They need specialized hardware to perform computation in a reasonable time. Many tasks are mandatory to be as much real-time as possible . It is needed to optimize many components such as code, algorithms, numeric accuracy and hardware, to make them “efficient and usable”. All these optimizations can help us to produce incredibly accurate and fast learning models. The paper reports a study in this direction for the challenging face detection and emotion recognition tasks.
+ER  - 
+
+TY  - JOUR
+T1  - Space Computing: Architectures, Challenges, and Future Directions
+AU  - Xue, Erzhong
+AU  - Zhang, Zhuoran
+AU  - Xue, Junxiao
+AU  - Wang, Haitao
+AU  - Carvajal-Roca, Ivan E.
+AU  - He, Zhiwen
+AU  - Zhang, Hui
+AU  - Wang, Hua
+AU  - Wan, Zhiguo
+AU  - Li, Chao
+JO  - Intelligent Computing
+VL  - 4
+PY  - 2025
+DA  - 2025/01/01/
+SN  - 2771-5892
+DO  - https://doi.org/10.34133/icomputing.0134
+UR  - https://www.sciencedirect.com/science/article/pii/S2771589225000323
+AB  - In recent years, the rapid advancement of space technologies has given rise to sophisticated space computing systems, which have become crucial for various applications such as Earth observation, communication, and scientific research. This survey paper provides a comprehensive overview of the history, current state, and future trends in space computing systems. We discuss the evolution of these systems, highlighting important milestones from early satellite communication networks to modern space–air–ground integrated networks (SAGIN). Despite their advancements, space computing systems face numerous challenges, including resource constraints and unstable network links. To address these challenges, we explore key enabling technologies that are critical for the future of space computing. These include virtualization and resource pooling, which enhance resource utilization; distributed storage, which provides resilience and efficiency; advanced scheduling and orchestration techniques, which optimize task allocation across heterogeneous resources; collaborative AI training and inference, which leverage distributed satellite networks for real-time data processing; and robust security and privacy measures, which are vital for safeguarding sensitive information in space operations. By examining existing systems and identifying open research challenges, this paper aims to provide a road map for future research and development in the field of space computing systems. Our findings highlight the potential of emerging technologies to transform space operations and underscore the importance of continued innovation in overcoming current limitations.
+Image 
+ER  - 
+
+TY  - JOUR
+T1  - Mind control attack: Undermining deep learning with GPU memory exploitation
+AU  - Park, Sang-Ok
+AU  - Kwon, Ohmin
+AU  - Kim, Yonggon
+AU  - Cha, Sang Kil
+AU  - Yoon, Hyunsoo
+JO  - Computers & Security
+VL  - 102
+SP  - 102115
+PY  - 2021
+DA  - 2021/03/01/
+SN  - 0167-4048
+DO  - https://doi.org/10.1016/j.cose.2020.102115
+UR  - https://www.sciencedirect.com/science/article/pii/S0167404820303886
+KW  - Graphics process unit security
+KW  - GPU memory exploit
+KW  - Deep learning security
+KW  - Reverse engineering
+KW  - Compute unified device architecture
+AB  - Modern deep learning frameworks rely heavily on GPUs to accelerate the computation. However, the security implication of GPU device memory exploitation on deep learning frameworks has been largely neglected. In this paper, we argue that GPU device memory manipulation is a novel attack vector against deep learning systems. We present a novel attack method leveraging the attack vector, which makes deep learning predictions no longer different from random guessing by degrading the accuracy of the predictions. To the best of our knowledge, we are the first to show a practical attack that directly exploits deep learning frameworks through GPU memory manipulation. We confirmed that our attack works on three popular deep learning frameworks, TensorFlow, CNTK, and Caffe, running on CUDA. Finally, we propose potential defense mechanisms against our attack, and discuss concerns of GPU memory safety.
+ER  - 
+
+TY  - JOUR
+T1  - Efficient reconfigurable system for home monitoring of the elderly via action recognition
+AU  - Deniz, Daniel
+AU  - Isern, Juan
+AU  - Solanti, Jan
+AU  - Jääskeläinen, Pekka
+AU  - Hnětynka, Petr
+AU  - Bulej, Lubomír
+AU  - Ros, Eduardo
+AU  - Barranco, Francisco
+JO  - Engineering Applications of Artificial Intelligence
+VL  - 158
+SP  - 111383
+PY  - 2025
+DA  - 2025/10/22/
+SN  - 0952-1976
+DO  - https://doi.org/10.1016/j.engappai.2025.111383
+UR  - https://www.sciencedirect.com/science/article/pii/S0952197625013855
+KW  - Cyber–physical systems
+KW  - Artificial intelligence
+KW  - Action recognition
+KW  - Run-time adaptation
+AB  - The rapid growth of the aging population poses serious challenges for our society e.g. the increase of the healthcare costs. Smart-Health Cyber–Physical Systems (CPSs) offer innovative solutions to ease this burden. This work proposes a general framework adapted in run-time to optimize the system’s overall performance, continuously monitoring system working qualities such as response time, accuracy, or energy consumption. Adaptation is achieved through the automatic deployment of different artificial intelligence (AI) based models on local edges (particularly deep learning models (DL)). Local processing is performed in embedded devices that provide short latency and real-time processing despite their limited computation capacity compared to high-end cloud servers. The paper validates this reconfigurable CPS in a challenging scenario: indoor ambient assisted living for the elderly. Our system collects lifestyle user data in a non-invasive manner to promote healthy habits and triggers alarms in case of emergency. Local edge video processing nodes identify indoor activities powered by state-of-the-art deep-learning action recognition models. The optimized embedded nodes locally reduce cost and power consumption, but the system still needs to maximize the overall performance in a changing environment. To that end, our solution enables run-time reconfiguration to adapt in terms of functionality or resource availability, offloading computation when required. The experimental section shows a real setup performing run-time adaptation with different reconfiguration policies considering average times for different daily activities. For that example, the adaptation extends the working time in more than 60% and achieves a 3x confidence in recognition for critical actions.
+ER  - 
+
+TY  - CHAP
+T1  - Chapter 10 - GPU fundamentals and model inference
+AU  - Kumar, Rohit
+BT  - Fundamentals of Cost-Efficient AI
+PB  - Academic Press
+SP  - 321
+EP  - 352
+PY  - 2026
+DA  - 2026/01/01/
+SN  - 978-0-443-33362-0
+DO  - https://doi.org/10.1016/B978-0-443-33362-0.00008-4
+UR  - https://www.sciencedirect.com/science/article/pii/B9780443333620000084
+KW  - AI models
+KW  - Checkpointing
+KW  - Context parallelism
+KW  - CUDA kernels
+KW  - Data parallelism
+KW  - Flash attention
+KW  - GPUs
+KW  - Gradient checkpointing
+KW  - Hardware optimization
+KW  - Inference optimization
+KW  - Memory management
+KW  - Paged attention
+KW  - Parallelism
+KW  - Pipeline parallelism
+KW  - Prefill optimization
+KW  - Tensor parallelism
+KW  - Zero-inference
+AB  - The dramatic rise of artificial intelligence (AI) models has brought to the forefront the critical role of hardware-aware optimizations, particularly in leveraging the computational power of graphics processing units (GPUs). This chapter starts by tracing the evolution of GPUs from fixed-function graphics cards to generalized parallel processing units with specialized components like Tensor Cores and RT Cores, emphasizing the importance of FLOPS as a measure of compute power. It then delves into sophisticated memory management techniques, including in-place operations, memory sharing, and the strategic advantages of deep and thin network architectures. A significant portion of the chapter is dedicated to optimizing the attention mechanism through Flash Attention and addressing fault tolerance and memory constraints via Checkpointing and Gradient Checkpointing. Furthermore, the chapter explores various parallelism strategies essential for scaling large models, such as Data Parallelism with Ring All-Reduce and Gradient Compression, Tensor Parallelism, Pipeline Parallelism, and Context Parallelism. Finally, it covered a spectrum of inference speed optimizations, including model-level, architecture-level, inference-time, system-level, hardware-aware, and infrastructure-level accelerations like server-side batching, continuous batching with Paged Attention, prefill optimization, placement optimization, GPU virtualization, custom CUDA kernels, and Zero-Inference. This comprehensive discussion equips readers with the knowledge to efficiently train and deploy large AI models, overcoming the inherent challenges of memory, compute, and latency in modern hardware environments.
+ER  - 
+
+TY  - JOUR
+T1  - Mechanism model combined with deep learning models for accurate prediction of indoor air pollution in residential and commercial spaces
+AU  - Shi, Ting
+AU  - Wang, Kai
+AU  - Yang, Wu
+AU  - Wang, Peihao
+AU  - Ao, Yunpeng
+AU  - Zhang, Yuling
+AU  - Qiao, Junfei
+JO  - Journal of Building Engineering
+VL  - 103
+SP  - 112008
+PY  - 2025
+DA  - 2025/06/01/
+SN  - 2352-7102
+DO  - https://doi.org/10.1016/j.jobe.2025.112008
+UR  - https://www.sciencedirect.com/science/article/pii/S235271022500244X
+KW  - Indoor air quality
+KW  - Seasonal model
+KW  - Mechanism model
+KW  - Deep learning
+AB  - The risks associated with particulate matter on human body are not limited to outdoor environments only. Research showed that outdoor particulate matter can infiltrate inside spaces through various processes, such as window and door diffusion, as well as wall penetration. Majority of the neural network based existing methods for predicting indoor air quality are opaque models lacking clear physical interpretability. These models overlook the optimization of input samples as well as the seasonal spatial and temporal distribution of the concentration of particulate matter. As a result, the accuracy of predictions is compromised, and the computational load of the models is also increased. This paper presents a novel model for predicting the concentration of indoor particulate matter, called the Warped K-means - Osmotic Diffusion Mechanism - LASSO Attention Temporal Convolutional Network (WKM-ODM-LATCN). Firstly, redundant variables are eliminated using the LASSO regression algorithm. Then, sub-datasets are created with distinct seasonal characteristics using the warped K-means algorithm. Models of osmotic diffusion mechanism are constructed for each season based on the principle of particulate mass balance. Finally, based on the optimized dataset and predicted spatio-temporal information about the mechanism model as the input values of the multidimensional attention temporal convolutional network, the concentrations of indoor particulate matter in the future time periods are finally predicted. The obtained results demonstrate that WKM-ODM-LATCN has superior prediction accuracy in comparison to earlier approaches, hence confirming the practicality and dependability of the proposed approach. This study aims to effectively include spatial and temporal environmental data in order to accurately estimate the concentration of indoor particulate matter. Additionally, it demonstrates strong physical interpretability.
+ER  - 
+
+TY  - JOUR
+T1  - SpaceFlow: Runtime enforcement of cloud-native GPU spatial partitioning
+AU  - Yeo, Sangho
+AU  - Kim, Jiheon
+AU  - Oh, Sangyoon
+JO  - Journal of Parallel and Distributed Computing
+VL  - 216
+SP  - 105311
+PY  - 2026
+DA  - 2026/10/01/
+SN  - 0743-7315
+DO  - https://doi.org/10.1016/j.jpdc.2026.105311
+UR  - https://www.sciencedirect.com/science/article/pii/S0743731526000894
+KW  - GPU
+KW  - Spatial partitioning
+KW  - Kubernetes
+KW  - Container
+AB  - As GPU capacity scales, a growing fraction of computing resources remains idle under single-tenant allocations. Spatial partitioning addresses this need by offering superior throughput. However, it lacks container-level enforcement, causing resource over-consumption in multi-tenant environments. We present SpaceFlow, a runtime enforcement mechanism that achieves container-level GPU spatial partitioning by transparently intercepting GPU runtime interface and unifying its contexts. To ensure secure deployment, SpaceFlow integrates with a cloud-native ecosystem and eliminates resource oversubscription by immutable resource configuration. For broad compatibility, SpaceFlow includes adaptive fallback mechanisms that maintain container partitioning on GPUs with the latest architecture features. We validate SpaceFlow across various GPU types in a cloud-native cluster, demonstrating significant reduction in cross-container interference compared with conventional process-level spatial partitioning. SpaceFlow achieves up to 11.34 ×  interference reduction in evaluated scenarios while maintaining  ≤ 3.0% overhead.
+ER  - 
+
+TY  - JOUR
+T1  - Prediction of sloshing pressure using image-based deep learning
+AU  - Kim, Ki Jong
+AU  - Kim, Daegyoum
+JO  - Ocean Engineering
+VL  - 303
+SP  - 117718
+PY  - 2024
+DA  - 2024/07/01/
+SN  - 0029-8018
+DO  - https://doi.org/10.1016/j.oceaneng.2024.117718
+UR  - https://www.sciencedirect.com/science/article/pii/S0029801824010552
+KW  - Sloshing
+KW  - Deep learning
+KW  - Residual neural network
+KW  - Pressure
+KW  - Wave image
+AB  - This study investigates an image-based deep learning method for predicting various types of sloshing pressure, including regular, weak impulse, random, and peak pressures. The time series of pressure at a specific location on a tank wall are estimated from independent features of the sequential images of free-surface waves in sloshing flow. A dataset of wave images labeled with pressure is inserted into the residual neural network (ResNet) to enable the training of neural networks without encountering the problem of vanishing gradients. The hyperparameters of the ResNet algorithm are tuned to determine the optimal learning rate, mini-batch size, and strength of L1 regularization. Compared with experimental measurements, the prediction performance regarding the time history of pressure is remarkably good in the non-resonance regime, and the predictions exhibit reasonable agreement in the resonance regime. Notably, the method for pressure normalization has a significant impact on the prediction performance for peak pressure in the resonance regime, affecting both the magnitude and profile of the pressure. Furthermore, to enable practical applications of the proposed model, training is conducted using a comprehensive dataset of wave images including all pressure types. The model successfully estimates the time history for the different pressure types that occur sequentially.
+ER  - 
+
+TY  - JOUR
+T1  - PPS: Fair and efficient black-box scheduling for multi-tenant GPU clusters
+AU  - Ma, Kaihao
+AU  - Cai, Zhenkun
+AU  - Yan, Xiao
+AU  - Zhang, Yang
+AU  - Liu, Zhi
+AU  - Feng, Yihui
+AU  - Li, Chao
+AU  - Lin, Wei
+AU  - Cheng, James
+JO  - Parallel Computing
+VL  - 120
+SP  - 103082
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 0167-8191
+DO  - https://doi.org/10.1016/j.parco.2024.103082
+UR  - https://www.sciencedirect.com/science/article/pii/S0167819124000206
+KW  - Model training
+KW  - GPU cluster
+KW  - Cluster scheduling
+KW  - Multi-tenant
+KW  - Resource sharing
+KW  - Cloud computing
+AB  - Multi-tenant GPU clusters are common, where users purchase GPU quota to run their neural network training jobs. However, strict quota-based scheduling often leads to cluster under-utilization, while allowing quota groups to use excess GPUs improves utilization but results in fairness problems. We propose PPS, a probabilistic prediction based scheduler, which uses job history statistics to predict future cluster status for making good scheduling decisions. Different from existing schedulers that rely on deep learning frameworks to adjust bad scheduling decisions and/or require detailed job information, PPS treats jobs as black boxes in that PPS runs a job to completion without adjustment once scheduled and requires only aggregate job statistics. The black-box feature is favorable due to its good generality, compatibility and security, and made possible by the predictability of aggregate resource utilization statistics of large clusters. Extensive experiments show that PPS achieves high cluster utilization and good fairness simultaneously.
+ER  - 
+
+TY  - JOUR
+T1  - CloudX: A dual-layered cloud native architecture for GPU resource management using interactive notebook
+AU  - Shiddiqi, Ary Mazharuddin
+AU  - Ijtihadie, Royyana Muslim
+AU  - Kale, Timothy Girry
+AU  - Akbar, Rizky Januar
+AU  - Navastara, Dini Adni
+AU  - Fahriani, Nuniek
+AU  - Pepuho, Gloriyano Cristho Daniel
+AU  - Aptanagi, Urdhanaka
+AU  - De La Croix, Ntivuguruzwa Jean
+JO  - Array
+VL  - 31
+SP  - 101026
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 2590-0056
+DO  - https://doi.org/10.1016/j.array.2026.101026
+UR  - https://www.sciencedirect.com/science/article/pii/S2590005626003498
+KW  - Cloud-native architecture
+KW  - GPU-aware scheduling
+KW  - Container provisioning
+KW  - Jupyter Enterprise Gateway (JEG)
+KW  - Resource utilisation efficiency
+AB  - This study proposes CloudX, a two-layer framework that integrates Docker-based container provisioning with a GPU-aware scheduler embedded within Jupyter Enterprise Gateway (JEG) and dynamically allocates interactive notebook sessions using a weighted multi-resource scheduling policy. It extends JupyterHub and JupyterLab through a lightweight service discovery layer that monitors CPU, RAM, and GPU telemetry in real time. Experiments are conducted on an 8-node heterogeneous cluster consisting of three GPU-enabled (NVIDIA RTX A4000) and four non-GPU worker nodes using four workload types: GPU-intensive training (W1), memory-bandwidth-constrained inference (W2), CPU-based preprocessing (W3), and mixed heterogeneous sessions (W4). Baseline comparisons use Round Robin (RR), Least Connection (LC), and DRF-GPU, a multi-resource-aware scheduler. The evaluation showed that CloudX was able to provision new capacity in less than six minutes, increase average GPU utilisation by 25%–40%, reduce makespan by 18%–23%, and maintain efficient Efflb load balancing for >1.5 to 20 concurrent GPU sessions while consistently keeping startup latency below five seconds. On the Jain Fairness Index (JFI), CloudX achieved a score of 0.996, equal to DRF-GPU and higher than LC (0.981) and RR (0.956), indicating balanced workload distribution and GPU utilisation across all cluster nodes. From a tail latency perspective, CloudX maintained P95 and P99 startup latencies of 4.7 s under a peak load of 20 concurrent sessions, remaining below the 5-second interactivity threshold. Meanwhile, CloudX recorded P99 makespan of 309.6 s, compared to 411.9 s for RR. Overall, CloudX is efficient for multi-tenant GPU sharing in cloud-based AI environments.
+ER  - 
+
+TY  - JOUR
+T1  - Dynamic Scheduling Algorithm of Cloud Edge Collaborative Computing Power for Edge Intelligence: A Resource Demand Prediction Model Based on Deep Learning
+AU  - Wang, Qiaoli
+AU  - Mi, Haitao
+AU  - Hu, Yunhao
+AU  - Guo, Ning
+AU  - Gao, Kunheng
+JO  - Procedia Computer Science
+VL  - 279
+SP  - 1313
+EP  - 1320
+PY  - 2026
+DA  - 2026/01/01/
+T2  - The 6th International Conference on Machine Learning and Big Data Analytics for IoT Security and Privacy
+SN  - 1877-0509
+DO  - https://doi.org/10.1016/j.procs.2026.03.351
+UR  - https://www.sciencedirect.com/science/article/pii/S1877050926009749
+KW  - cloud edge collaboration
+KW  - resource demand forecasting
+KW  - long short-term memory
+KW  - dispatch plan
+AB  - The highly dynamic and heterogeneous edge computing power demand in cloud edge collaborative systems results in lack of foresight in scheduling of the resources. This study proposes a resource demand prediction model for the purpose of dynamic scheduling optimization of computing power. It built an input sequence that can integrate the heterogeneous features that are provided by the multiple sources, and designed long short-term memory (LSTM) model based on attention mechanism to capture the complex temporal dependencies in long sequences. The training process consists of the use of mean square error loss and Adam optimizer for end-to-end learning. Based on the predicted results, this article further designs a dynamic scheduling algorithm with a target to reduce the delay of tasks and wastes of resources. The proposed prediction model can still maintain the RMSE of 12.89% under the condition of 10 hour prediction duration which shows good prediction stability in the long term; The scheduling scheme based on the above prediction results in the average resource utilization rate of 85.13% and the average task delay time of 124.065 milliseconds in the simulation, which proves that the scheduling scheme can effectively improve the resource utilization efficiency and response performance of the scheduling system through forward-looking information.
+ER  - 
+
+TY  - JOUR
+T1  - AdaGap: An adaptive gap-aware resource allocation strategy for GPU sharing in heterogeneous clusters
+AU  - Wang, Sheng
+AU  - Chen, Shiping
+AU  - Shi, Yumei
+AU  - Yao, Guangshun
+AU  - Liu, Meng
+JO  - Future Generation Computer Systems
+VL  - 173
+SP  - 107883
+PY  - 2025
+DA  - 2025/12/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2025.107883
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X25001785
+KW  - Heterogeneous GPU clusters
+KW  - Resource allocation
+KW  - GPU sharing
+KW  - Deep Q-Network
+AB  - Heterogeneous GPU clusters are crucial for high-performance computing and deep learning tasks, offering a flexible and cost-effective platform. GPU sharing allows multiple containers to concurrently access the same physical GPU, improving overall GPU usage. However, underutilization of GPU resources remains a significant challenge, primarily due to inefficient resource allocation and fragmentation within GPU sharing environments. Existing GPU sharing solutions often overlook the importance of effective resource allocation strategies, leading to resource gaps. In this paper, we propose AdaGap, an adaptive gap-aware, Deep Q-Network-based resource allocation strategy designed to optimize GPU usage by minimizing underutilized gaps in heterogeneous clusters. We develop a dynamic, gap-aware resource allocation mechanism that adapts to changing task requirements and diverse GPU and CPU resources, formulating the allocation problem as a Markov Decision Process. We conduct experiments using real-world data from Alibaba cloud, and the results demonstrate AdaGap’s robust adaptability across various heterogeneous scenarios. The method improves allocation strategies by minimizing resource gaps and reducing job completion times compared to baseline methods.
+ER  - 
+
+TY  - JOUR
+T1  - Accelerated serverless computing based on GPU virtualization
+AU  - Naranjo, Diana M.
+AU  - Risco, Sebastián
+AU  - de Alfonso, Carlos
+AU  - Pérez, Alfonso
+AU  - Blanquer, Ignacio
+AU  - Moltó, Germán
+JO  - Journal of Parallel and Distributed Computing
+VL  - 139
+SP  - 32
+EP  - 42
+PY  - 2020
+DA  - 2020/05/01/
+SN  - 0743-7315
+DO  - https://doi.org/10.1016/j.jpdc.2020.01.004
+UR  - https://www.sciencedirect.com/science/article/pii/S0743731519303533
+KW  - Serverless computing
+KW  - GPUs
+KW  - GPU virtualization
+AB  - This paper introduces a platform to support serverless computing for scalable event-driven data processing that features a multi-level elasticity approach combined with virtualization of GPUs. The platform supports the execution of applications based on Docker containers in response to file uploads to a data storage in order to perform the data processing in parallel. This is managed by an elastic Kubernetes cluster whose size automatically grows and shrinks depending on the number of files to be processed. To accelerate the processing time of each file, several approaches involving virtualized access to GPUs, either locally or remote, have been evaluated. A use case that involves the inference based on deep learning techniques on transthoracic echocardiography imaging has been carried out to assess the benefits and limitations of the platform. The results indicate that the combination of serverless computing and GPU virtualization introduce an efficient and cost-effective event-driven accelerated computing approach that can be applied for a wide variety of scientific applications.
+ER  - 
+
+TY  - JOUR
+T1  - gShare: A centralized GPU memory management framework to enable GPU memory sharing for containers
+AU  - Lee, Munkyu
+AU  - Ahn, Hyunho
+AU  - Hong, Cheol-Ho
+AU  - Nikolopoulos, Dimitrios S.
+JO  - Future Generation Computer Systems
+VL  - 130
+SP  - 181
+EP  - 192
+PY  - 2022
+DA  - 2022/05/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2021.12.016
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X21004970
+KW  - Containers
+KW  - GPU memory
+KW  - Virtualization
+AB  - Owing to low overhead and rapid deployment, containers are increasingly becoming an attractive system software platform for deep learning and high performance computing (HPC) applications that leverage GPUs. Unfortunately, existing container software does not concern how each container allocates GPU memory. Therefore, if a certain container consumes the majority of GPU memory, other containers may not run their workloads because of insufficient memory. This paper presents gShare, a centralized GPU memory management framework to enable GPU memory sharing for containers. As with a modern operating system, gShare allocates the entire GPU memory inside the framework and manages the memory with sophisticated memory allocators. gShare is then able to enforce the GPU memory limit of each container by mediating the memory allocation calls. To achieve its objective, gShare introduces the API remoting components, the mediator, and the three-level memory allocator, which enable lightweight and efficient GPU memory management. Our prototype implementation achieves near-native performance with secure isolation and little memory waste in popular deep learning and HPC workloads.
+ER  - 
+
+TY  - JOUR
+T1  - Biom3d, a modular framework to host and develop 3D segmentation methods
+AU  - Mougeot, Guillaume
+AU  - Safarbati, Sami
+AU  - Alégot, Hervé
+AU  - Pouchin, Pierre
+AU  - Colmerauer, Clément
+AU  - Field, Nadine
+AU  - Almagro, Sébastien
+AU  - Péry, Émilie
+AU  - Probst, Aline V.
+AU  - Tatout, Christophe
+AU  - Evans, David E.
+AU  - Graumann, Katja
+AU  - Chausse, Frédéric
+AU  - Desset, Sophie
+JO  - Medical Image Analysis
+VL  - 113
+SP  - 104184
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 1361-8415
+DO  - https://doi.org/10.1016/j.media.2026.104184
+UR  - https://www.sciencedirect.com/science/article/pii/S1361841526002537
+KW  - Deep learning framework
+KW  - 3d segmentation
+KW  - FAIR
+KW  - OMERO
+AB  - Bioimage frameworks based on artificial intelligence (AI) offer powerful tools for image segmentation, but their technical overhead often creates a gap between developers and the broader bioimaging community. Biom3d addresses this challenge by providing a modular, PyTorch-based architecture designed to enable reproducible and interoperable 2D and 3D segmentation pipelines while maintaining strict adherence to FAIR principles. The framework’s engineering quality is demonstrated through low intra-module complexity, high modularity, and seamless interoperability, exemplified by the successful substitution of transformer-based MONAI models. Its architecture is organized around seven core module types, allowing fine-grained control over data handling, model configuration, optimization, and evaluation. Its default configuration, nnCore, autoconfigures optimal pipelines based on new datasets and competes with state-of-the-art 3D segmentation methods, outperforming classical tools such as NucleusJ/NODeJ and matching the robustness of nnU-Net across diverse modalities. Biom3d is accessible through multiple interfaces including a graphical user interface, a Jupyter Notebook, a command-line tool, a Docker image and as a Python library. Biom3d is compatible with OMERO (Open Microscopy Environment Remote Objects) for streamlined data management and reproducible computation, including execution on HPC servers. Collectively, these results position Biom3d as a sustainable and extensible framework for building, sharing, and reusing advanced bioimage analysis solutions.
+ER  - 
+
+TY  - JOUR
+T1  - A comprehensive survey on multi-GPU systems
+AU  - Gheibi-Fetrat, Atiyeh
+AU  - Maleki, Arad
+AU  - Zoufan, Sahand
+AU  - Mohammadi-Lak, Masoud
+AU  - Ahmadi-Tonekaboni, Amirsaeed
+AU  - Alinejad, Mahdi
+AU  - Yahyazadeh, Komeil
+AU  - Alizadeh, Mohammad
+AU  - Akbarzadeh, Negar
+AU  - Darabi-moghaddam, Sina
+AU  - Hessabi, Shaahin
+AU  - Sarbazi-azad, Hamid
+JO  - Parallel Computing
+VL  - 129
+SP  - 103208
+PY  - 2026
+DA  - 2026/09/01/
+SN  - 0167-8191
+DO  - https://doi.org/10.1016/j.parco.2026.103208
+UR  - https://www.sciencedirect.com/science/article/pii/S0167819126000268
+KW  - Parallel computer architecture
+KW  - Many-core processor
+KW  - GPU
+KW  - Multi-GPU system
+AB  - Graphics Processing Units (GPUs) play a critical role in contemporary applications that handle large data volumes. Nonetheless, the performance enhancement provided by GPUs is constrained by their memory capacity and bandwidth limitations, which can hinder their efficiency in processing extensive datasets. To address these limitations, multi-GPU architectures are increasingly recognized as an effective approach to meet the growing demands of modern parallel applications. These systems facilitate a scalable, high-performance computing environment by harnessing the processing capabilities of multiple GPUs. A multi-GPU configuration not only delivers remarkable computational throughput but also enhances memory bandwidth and capacity, which are crucial for efficiently managing extensive parallel data-intensive workloads. Multi-GPU systems provide substantial benefits for deep learning, scientific simulations, and large-scale data processing tasks that demand the efficient handling of terabytes of data. However, multi-GPU systems grapple with critical challenges, including inefficient memory management, communication bottlenecks, and uneven distribution of workloads. This paper presents a comprehensive review of recent software and hardware techniques addressing prevalent performance bottlenecks of multi-GPU systems. We specifically focus on methodologies optimizing cache management, improving load balancing, enhancing inter-GPU communication, and refining memory migration. Furthermore, the paper identifies emerging trends and unresolved challenges, offering insights into potential future directions for research and development. This comprehensive study is intended to serve as a foundational resource for both academics and industry professionals researching to advance the efficiency and scalability of multi-GPU systems.
+ER  - 
+
+TY  - JOUR
+T1  - ResNet and Yolov5-enabled non-invasive meat identification for high-accuracy box label verification
+AU  - Jarkas, Omar
+AU  - Hall, Josh
+AU  - Smith, Stuart
+AU  - Mahmud, Redowan
+AU  - Khojasteh, Parham
+AU  - Scarsbrook, Joshua
+AU  - Ko, Ryan K.L.
+JO  - Engineering Applications of Artificial Intelligence
+VL  - 125
+SP  - 106679
+PY  - 2023
+DA  - 2023/10/01/
+SN  - 0952-1976
+DO  - https://doi.org/10.1016/j.engappai.2023.106679
+UR  - https://www.sciencedirect.com/science/article/pii/S0952197623008631
+KW  - Red meat
+KW  - Non-destructive technology
+KW  - Artificial intelligence
+KW  - Computer vision
+KW  - Quality assurance
+KW  - Box label verification
+AB  - Compliance issues riddle the agricultural sector despite being an essential industry for the human race. Many factors contribute to compliance issues; however, meat cut label verification is one of the most critical concerns due to its erroneous nature. In addition, meat cut identification is complex for the human eye. Thus, access to a skilled labor force is challenging. Nevertheless, meat compliance is essential since it has export compliance ramifications. These factors, along with others, are pushing for a digital alternative. An alternative that can augment human decision-making in verifying meat cut box labels. Artificial Intelligence (AI) is a digital alternative that can boost quality assurance tasks. One of AI’s potential quality assurance solutions is a Meat Box Labeling Verification (BLV) solution that can verify the boxed meat type against the label to ensure no mismatch. Two major components make up the BLV solution: Meat Identification and Label Analysis. This work aims to solve the former component by exploring different meat-type identification techniques. It explores them by building, evaluating, and testing different computer vision solutions. Hence, the novel contribution of this work is three folds. We first build, test, and design computer vision solutions that detect meat boxes and pieces accurately. These solutions include deep learning methods in classification and object detection techniques. Following that, we evaluate these models and derive key insights. Such insights are valuable for prototyping such solutions in production environments. For example, classification models achieve a 99% testing accuracy in identifying box types. In contrast, object detection achieved 89% mAP@.5:.95 in identified individual meat cuts. Finally, we prototype an object detection model in a natural meat processing environment—the demonstration showed comparable object detection precision at 85% mAP@.5:.95.
+ER  - 
+
+TY  - JOUR
+T1  - Prediction-based GPU sharing for distributed training
+AU  - Shin, Changyong
+AU  - Go, Younghun
+AU  - Yoo, Yeonho
+AU  - Jeong, Jinwoo
+AU  - Hwang, Jaehyun
+AU  - Yang, Gyeongsik
+AU  - Yoo, Chuck
+JO  - Future Generation Computer Systems
+VL  - 181
+SP  - 108413
+PY  - 2026
+DA  - 2026/08/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2026.108413
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X26000476
+KW  - Cloud computing
+KW  - GPU Sharing
+KW  - Service level agreement
+KW  - Performance prediction
+KW  - GPU Scheduling
+AB  - GPU sharing aims to enhance the efficiency of GPU utilization by running distributed deep learning training jobs concurrently. However, GPU sharing poses a significant challenge: the increase in job completion time (JCT) caused by interference between jobs is inconsistent, complicating job scheduling. Our experiments reveal that the degree of JCT increase varies by as much as  ∼ 3.7 × . While previous studies have analyzed this JCT inconsistency problem, none of them have been able to minimize the inconsistency. We propose TensorShare, a proactive GPU sharing technique that leverages a deep learning model to predict the extent of JCT increase. This study defines a new metric, called GPU SLA, which represents the upper threshold of JCT increase. TensorShare then introduces a novel scheduler that proactively identifies which jobs meet GPU SLA while minimizing the JCT increase. Our evaluation shows that TensorShare improves GPU SLA satisfaction rates by 26.1 × –47.3 ×  and reduces the JCT increase by 37%–60%. Furthermore, we evaluate TensorShare with large language models that are not included in training TensorShare’s prediction model, achieving  ∼ 7 ×  and  ∼ 10.3 ×  improvements in GPU SLA satisfaction and JCT inconsistency, respectively.
+ER  - 
+
+TY  - JOUR
+T1  - Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving
+AU  - Liang, Qianlin
+AU  - Wang, Haoliang
+AU  - Shenoy, Prashant
+JO  - Performance Evaluation
+VL  - 171
+SP  - 102539
+PY  - 2026
+DA  - 2026/03/01/
+SN  - 0166-5316
+DO  - https://doi.org/10.1016/j.peva.2025.102539
+UR  - https://www.sciencedirect.com/science/article/pii/S0166531625000732
+KW  - GPU
+KW  - Performance
+KW  - Neural network
+KW  - Latency
+AB  - As deep learning has been widely used in various application domains, a diversity of GPUs are adopted to accelerate DNN inference workloads and ensure Quality of Service (QoS). Robust prediction of inference latency using GPUs within cloud environments facilitates enhanced efficiency and maintains QoS in resource management solutions, such as consolidation and autoscaling. However, latency prediction is challenging due to the vast heterogeneity in both DNN architectures and GPU capacities. In this work, we present Lilou, an efficient and accurate latency predicting system for a wide range of DNN inference tasks across diverse GPU resource allocations. Lilou employs two techniques. (i) Lilou represents DNNs as directed acyclic graphs (DAGs), and utilizes a novel graph neural network (GNN) model for edge classification to detect the fusion of operators, also known as kernels. (ii) Lilou identifies the GPU features that significantly impact inference latency and learns a predictor to estimate the latency and type of kernels, which are detected in the preceding step. To evaluate Lilou, we conduct comprehensive experiments across a variety of commercial GPUs commonly utilized in public cloud environments, employing a wide range of popular DNN architectures, including both convolutional neural networks and transformers. Our experiment results show that Lilou is robust to a wide range of DNN architectures and GPU resource allocations. Our novel learning-based method surpasses the state-of-the-art rule-based approach in fusion prediction with an accuracy of 98.26%, laying a solid foundation for end-to-end latency prediction that achieves a MAPE of 8.68%, also outperforming existing benchmarks.
+ER  - 
+
+TY  - JOUR
+T1  - Concord: A GPU cluster scheduler with enhanced interference profiling and asymmetric job packing
+AU  - Wang, Xinhua
+AU  - Lin, Weiwei
+AU  - Wu, Haijie
+AU  - Zhai, Jidong
+AU  - Li, Keqin
+JO  - Future Generation Computer Systems
+VL  - 183
+SP  - 108596
+PY  - 2026
+DA  - 2026/10/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2026.108596
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X2600230X
+KW  - DL workload
+KW  - GPU scheduling
+KW  - GPU utilization
+KW  - GPU-sharing
+KW  - Interference
+KW  - Cloud computing
+AB  - Due to the complex patterns of workload interference, consolidating multi-GPU (mGPU) and single-GPU (sGPU) jobs presents significant challenges in GPU sharing-enabled clusters. Existing workload schedulers struggle to effectively pack workloads with varied GPU requirements, which hinders overall system performance and efficiency. To address the challenges arising from the co-location of mGPU and sGPU workloads, we analyze job behaviors under various interference settings and propose Concord, a novel GPU sharing-enabled workload scheduler. First, we analyze the interference patterns resulting from the co-location of sGPU and mGPU jobs and propose lightweight interference prediction models. Subsequently, we derive a job placement policy with sharing incentives to ensure that average job completion time (JCT) is not degraded after packing. Unlike existing schedulers, Concord efficiently handles unpredictable DL workloads without relying on job duration estimation. Extensive evaluations using real-world cluster traces demonstrate that Concord outperforms state-of-the-art GPU sharing-enabled cluster schedulers across multiple metrics. Specifically, Concord outperforms state-of-the-art schedulers, achieving a 1.68× reduction in JCT and a 29% improvement in GPU utilization in high-load scenarios.
+ER  - 
+
+TY  - JOUR
+T1  - NGS: A network GPGPU system for orchestrating remote and virtual accelerators
+AU  - Prades, Javier
+AU  - Reaño, Carlos
+AU  - Silla, Federico
+JO  - Journal of Systems Architecture
+VL  - 151
+SP  - 103138
+PY  - 2024
+DA  - 2024/06/01/
+SN  - 1383-7621
+DO  - https://doi.org/10.1016/j.sysarc.2024.103138
+UR  - https://www.sciencedirect.com/science/article/pii/S1383762124000754
+KW  - Scheduling
+KW  - GPU
+KW  - CUDA
+KW  - Virtualization
+AB  - In General-Purpose computing on Graphics Processing Unit (GPGPU), the use of CPUs is combined with that of GPUs. CPUs are used for sequential code, while GPUs are used for parallel code. GPGPU has been enabled by two key factors: (i) the massively parallel architecture of GPUs, which allows thousands of single cores to run parallel code; and (ii) the development of platforms, such as CUDA, that simplify implementing code for GPUs. GPGPU has established itself as the standard computing system in most computing fields due to the great improvements it brings. However, its use is not without problems, such as GPU underutilization, high cost, power consumption, etc. In this paper we present NGS (Network GPGPU System) to address the underutilization of GPUs in computing centers. NGS orchestrates the concurrent access to GPGPU resources from different nodes of the cluster by leveraging the remote GPU virtualization mechanism and the NVML library by NVIDIA. In this way, NGS enables different nodes of the cluster to access remote GPUs as if they were local at the same time that this access is guaranteed to be carried out without collisions. The main novelty is that NGS offers a global and standard solution independent of the computing environment used. Experimental results show up to 4x improvements compared to popular approaches.
+ER  - 
+
+TY  - JOUR
+T1  - Highlights on Utilizing Machine Learning for High Performance Computing Systems
+AU  - Pathak, Ajeet Ram
+JO  - Procedia Computer Science
+VL  - 258
+SP  - 1242
+EP  - 1253
+PY  - 2025
+DA  - 2025/01/01/
+T2  - International Conference on Machine Learning and Data Engineering
+SN  - 1877-0509
+DO  - https://doi.org/10.1016/j.procs.2025.04.358
+UR  - https://www.sciencedirect.com/science/article/pii/S1877050925014607
+KW  - Machine Learning
+KW  - High Performance Computing
+KW  - Resource Management
+KW  - HPC Simulations
+AB  - Due to the emergence of data-driven Artificial Intelligence (AI) techniques in the domains of machine learning and deep learning, there is a growing trend of applying AI-based methods to address issues in high performance computing (HPC). AI techniques have demonstrated their potential to enhance HPC systems in various aspects, including power prediction, job scheduling, anomaly detection from HPC logs, and resource management. This paper explores how machine learning techniques are utilized to improve HPC systems. Specifically, it provides a comprehensive assessment of approaches that synergistically converge AI and HPC. The paper delves into the specific applications of machine learning in HPC, such as resource utilization, anomaly detection, job scheduling, performance variation detection, and HPC simulations. Additionally, it discusses the challenges associated with log data and the methods for online anomaly detection. By examining these areas, the paper highlights the significant impact of AI on enhancing the efficiency and reliability of HPC systems. The findings demonstrate that machine learning models can significantly improve prediction accuracy, optimize resource allocation, and enhance system reliability, leading to more efficient HPC operations.
+ER  - 
+
+TY  - JOUR
+T1  - Using remote GPU virtualization techniques to enhance edge computing devices
+AU  - Cecilia, José M.
+AU  - Morales-García, Juan
+AU  - Imbernón, Baldomero
+AU  - Prades, Javier
+AU  - Cano, Juan-Carlos
+AU  - Silla, Federico
+JO  - Future Generation Computer Systems
+VL  - 142
+SP  - 14
+EP  - 24
+PY  - 2023
+DA  - 2023/05/01/
+SN  - 0167-739X
+DO  - https://doi.org/10.1016/j.future.2022.12.038
+UR  - https://www.sciencedirect.com/science/article/pii/S0167739X22004423
+KW  - Machine learning
+KW  - Clustering algorithms
+KW  - Edge computing
+KW  - Remote virtualization
+KW  - Virtualized GPUs
+KW  - IoT
+AB  - The Internet of Things (IoT) is driving the next economic revolution where the main actors are both data and immediacy. The IoT ecosystem is increasingly generating large amounts of data that are created but never analyzed. Efficient big data analysis in IoT infrastructures is becoming mandatory to transform this data deluge into meaningful information. Edge computing is proving to be a compelling alternative for enabling computing capabilities at the edge of the network. These computing capabilities could help in transforming the generated data into useful information. However, the edge computing platforms available on the market are low-power devices with limited computing horsepower. In this paper, we present a novel approach to providing computing resources to edge devices without penalizing their power consumption by using remotely virtualized GPUs. We evaluate this hardware environment by executing a computational-intensive clustering algorithm called Fuzzy Minimals (FM). Our results show that using a remotely virtualized GPU on the edge device provides a 3.2x speed-up factor compared to the local counterpart version. Moreover, we report up to 30% reduction in power consumption and up to 80% of energy savings at the edge device, delegating the GPU workload to the backend, transparently to the programmer.
+ER  - 
+
+TY  - JOUR
+T1  - A Comprehensive Survey on Energy-Efficient Power Management Techniques
+AU  - Thakkar, Ankit
+AU  - Chaudhari, Kinjal
+AU  - Shah, Monika
+JO  - Procedia Computer Science
+VL  - 167
+SP  - 1189
+EP  - 1199
+PY  - 2020
+DA  - 2020/01/01/
+T2  - International Conference on Computational Intelligence and Data Science
+SN  - 1877-0509
+DO  - https://doi.org/10.1016/j.procs.2020.03.432
+UR  - https://www.sciencedirect.com/science/article/pii/S1877050920308991
+KW  - Energy-efficiency
+KW  - power management
+KW  - green computing
+KW  - machine learning
+KW  - deep learning
+AB  - In the current age of machine intelligence, computer literacy has been achieved in terms of its knowledge and ability of utilization at various stages. As compared to the urge of demanding for high computer functionalities as well as performance, the concern towards the cost in attaining such goals has been limited. The developers try to empower a large number of operations which may consume a large amount of energy. The power consumption has been perceived as an important aspect for the stability and growth of an economy of the country; it has also been recognized as one of the factors that impact the environment. This article has considered the prime implication of energy-efficient power management techniques; it discusses the necessity of adopting the energy-aware computer and reviews the existing works on relevant components. This article may be helpful to attain the essentials of green computing.
+ER  - 

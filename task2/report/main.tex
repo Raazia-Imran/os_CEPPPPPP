@@ -1,0 +1,69 @@
+% Task 2 working manuscript. Results placeholders must be replaced from the tracker.
+% The submitted Task 1 PDF dated 27 September 2026 remains the frozen protocol.
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,booktabs,longtable,array,enumitem,xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\newcommand{\pending}[1]{\textcolor{red!70!black}{\textbf{[EVIDENCE PENDING: #1]}}}
+\title{GPU Sharing Mechanisms for Multi-Tenant Inference Serving:\\Time-Slicing vs. MPS vs. MIG vs. API Remoting\\\large A Study of Utilization, Latency, and Isolation in Operating Systems}
+\author{Eshaal Faisal \quad Raazia Imran Reshamwala \quad Rameen Siddiqui}
+\date{Operating Systems CEP, Topic 23\\Task 2 working draft, \today}
+\begin{document}
+\maketitle
+\begin{abstract}
+This working draft carries forward the submitted systematic literature review protocol. Its results must be populated from the recorded database searches and independent screening before submission. \pending{Actual search counts, included studies, QA results and extracted evidence.}
+\end{abstract}
+
+\section{Introduction and engineering problem}
+Concurrent inference tenants can share a physical GPU through temporal access, Multi-Process Service (MPS), Multi-Instance GPU (MIG), and API interception or remoting. The engineering decision concerns attainable GPU utilization or tenant density alongside response-time predictability and isolation. The effects depend on hardware generation, runtime configuration, workload mix and baseline; this review will evaluate those conditions instead of presuming a universal winner. The full problem definition and four-family scope are in the frozen Task 1 protocol. \pending{Replace this short context with source-anchored literature and the actual Task 2 required length.}
+
+\section{Research objective and questions}
+The objective is to identify, classify and critically synthesize peer-reviewed primary evidence about concurrent inference sharing of one physical GPU, including separable per-device evidence from larger systems. The review examines utilization, tenant density, throughput, mean and tail latency, predictability, interference, resource/fault isolation, and implementation costs.
+\begin{enumerate}[label=RQ\arabic*.]
+\item What time-slicing, MPS, MIG and API remoting mechanisms are evaluated for concurrent inference on one GPU, and how do sharing granularity, layer and isolation boundary classify them?
+\item How do studies measure utilization, throughput, density, average/tail latency, predictability and interference, and how comparable are their experimental methods?
+\item Under what GPU, workload, batch, tenant mix and configuration conditions are changes in utilization, throughput, density and latency reported?
+\item What resource and fault isolation properties, trade-offs, implementation costs and conflicting results are reported, and what limits the evidence?
+\item Which approach or combination is supported for specified inference-serving conditions and priorities, with what confidence and alternatives?
+\end{enumerate}
+
+\section{Methodology and registered protocol}
+The submitted protocol, dated 27 September 2026, defines search strategy, IC1--IC6, EC1--EC7, dual independent screening, Q1--Q10 quality appraisal and categories A--M for extraction. Report search deviations in the accompanying amendment register and explain their effect. The methodology follows systematic-review guidance and PRISMA 2020 reporting \cite{kitchenham,prisma,prismas}. A protocol is a plan: present the actual procedures below in past tense only once documented in the log.
+
+\subsection{Databases, exact executed searches and search period}
+The four planned databases are IEEE Xplore, ACM Digital Library, ScienceDirect and Springer Nature Link, chosen from NED's relevant e-resources. Query IDs I1--I3, A1--A3, D1--D3 and S1--S3 target the 2020--run-date window; H1--H4 seek earlier MPS evidence. The planned verbatim expressions appear in the submitted protocol and the companion workbook. \pending{Access test, each accepted query, field, filters, search date/time, original export and hit count. Print exact executed strings in the appendix.}
+
+\subsection{Eligibility, deduplication and study selection}
+The final peer-reviewed primary study must address concurrent inference tenants on one GPU and supply extractable technical/outcome evidence. Multi-GPU systems can qualify through separable same-GPU results. Reviews, vendor manuals, unsupported versions and training-only evidence are not primary studies. Deduplicate records by DOI then manual title/author/year inspection; link multiple records and reports to unique studies. Two reviewers initially screen title/abstract and full texts independently; adjudicate disagreements while preserving original votes. For unavailable full texts record retrieval attempts separately from assessed-report exclusions. \pending{Actual pilot, reviewer assignments, dedup decisions, screening votes, retrieval attempts and full-text EC reasons.}
+
+\subsection{PRISMA 2020 study-selection results}
+Use the official PRISMA 2020 template for a new systematic review with databases and other sources if citation chasing contributes records \cite{prisma}. Enter only reconciled counts from the workbook. Keep the units records, reports and unique studies distinct.
+\begin{center}\begin{tabular}{p{0.7\linewidth}r}\toprule
+Flow category & Actual count\\\midrule
+Records identified in databases & pending\\
+Other-source records, if any & pending\\
+Duplicates removed before screening & pending\\
+Records screened / excluded & pending\\
+Reports sought / not retrieved / assessed & pending\\
+Reports excluded, by EC1--EC7 & pending\\
+Included reports / unique primary studies & pending\\\bottomrule
+\end{tabular}\end{center}
+\pending{Insert final PRISMA 2020 flow figure only after count reconciliation.}
+
+\subsection{Quality assessment}
+Each eligible study is rated against the submitted Q1--Q10 rubric (0 absent or unclear, 1 partial, 2 sufficient, or reasoned N/A). Preserve two independent scores, rationale, source anchors and reconciled scores. The normalized proportion uses the applicable maximum. Lower quality does not itself exclude a study. \pending{Two-study calibration, per-study QA table and sensitivity analysis if evidence is sufficiently complete.}
+
+\subsection{Data extraction}
+The prespecified A--M form covers bibliographic provenance; GPU, OS and runtime; inference model/workload and tenant mix; sharing mechanism and configuration; matching baseline; utilization, throughput, density, latency at the specified load and quantile; interference and isolation; methods, uncertainty and limitations; reproducibility and QA. An extraction row corresponds to a study $\times$ mechanism/configuration $\times$ workload/contrast $\times$ outcome. Record `NR' if a field is not reported and separate author claims from direct measurements. Retain a page, table or figure anchor for every substantial numerical claim. \pending{Pilot extraction, included-study inventory and checked row-level outcome evidence.}
+
+\section{Current Task 2 evidence status}
+\pending{Replace this section with actual search results, selection outcomes, QA and extraction status. Never submit it as completed empirical results while placeholders remain.}
+
+\section{Next-stage synthesis plan}
+Subsequent guideline Sections 15--22 require mechanism taxonomy, comparison under comparable baselines, trade-off and conflicting-evidence analysis, RQ-organized synthesis, conditional engineering recommendations, gaps and threats to validity. The final report must also satisfy all 25 deliverables in guideline Section 23. This plan does not predeclare review findings.
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+\end{document}

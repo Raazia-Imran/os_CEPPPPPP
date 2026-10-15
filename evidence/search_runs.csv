@@ -1,0 +1,1 @@
+run_id,query_id,platform,collection,interface_url,access_route,executed_at_local,timezone,exact_accepted_query,field_scope,date_range,language_filter,document_filter,displayed_hits,exported_occurrences,batch_or_page_range,export_file,sha256,operator,status,syntax_error_or_amendment,notes
