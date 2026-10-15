@@ -1,20 +1,18 @@
-# Task 2 current checklist: through guideline Section 14
+# Cycle1 checklist through guideline14
 
-Read `CONTINUE_HERE.md` for teammate instructions and `../STATUS.md` for measured counts.
-
-| Work | State | Closure condition |
+| Work | Current state | Closure condition |
 | --- | --- | --- |
-| Submitted protocol | Preserved | Keep original PDF unchanged |
-| Shared source acquisition | Imported and attributed | ACM query/field/date/hit/page mapping still missing; shared queries differ from Group B plan |
-| Record import | 2,291 occurrences with provenance | Keep raw originals/hash manifest unchanged |
-| Duplicate review | 44 linked repeats; 41 unresolved pairs | Check title/authors/venue/DOI relationships |
-| First screening pass | 800/2,247 recommendations (35.6%) | Review remaining 1,447, abstracts and independent second votes |
-| Full text | Five bounded source checks | Complete IC1-IC6 on all candidates and actual retrieval status |
-| PRISMA | Interim pending-stage flow | Derive final counts from resolved decisions and record/report/study links |
-| QA | Two fresh 0-2 first-review forms | Complete all eligible studies and independent calibration/reconciliation |
-| Extraction | Six fresh outcomes plus five older pilot rows | Complete fields and verify every headline outcome independently |
-| Snowballing | Four backward-reference checks | Complete remaining backward/forward route and log all records |
-| Report/workbook | Reviewable interim outputs | Close evidence gaps, reconcile counts and rebuild for submission |
-| ScienceDirect | Deferred by user | Add only when resumed, retaining provenance and rerunning linkage |
-
-The 15-20 study target applies to final eligible primary studies, not database hits. Automated priorities and first-pass recommendations are not final exclusions. Do not invent an included count or a second reviewer. Later final-CEP Sections 15-22 remain a separate synthesis stage.
+| Protocol/raw imports | Hash checks pass;originals unchanged | Keep original bytes |
+| Search provenance | Shared searches attributed;ACM log recovered | Reconcile79 numbered files,overlapping masters,and1600/1603 claims;historical lanes unresolved |
+| First recommendations |2247/2247 complete;1447 added | Preliminary only;human validation still required |
+| Preliminary recommendations |1181 exclude;1066 retain/uncertain | No final exclusions or included count |
+| Versions |41 audited:30container,3identity,3companion,5unresolved | Validate proposals;reconcile any applied linkage |
+| Human queue |1066 candidates+127 sampled exclusions | Actual independent decisions,criteria,dates and disagreements |
+| Full text |5 bounded checks;30IC1-IC6 validation rows | Validate each criterion;extend to remaining candidates |
+| Quality |5 forms/50items using0-2 rubric | Independent scores,anchors,reconciliation;no GroupA scale conversion |
+| Data extraction |26outcomes/5study forms | Verify all26numbers and fill unchecked fields;extend eligible reports |
+| Snowballing |10events:9backward/1forward | Continue remaining references and forward citation discovery |
+| PRISMA | Interim record accounting | Final reports sought/assessed/excluded/studies pending |
+| Report/workbook | Rebuilt through heading14 | Visual/count verification;remaining research is disclosed |
+| ScienceDirect | Deferred | Do not silently add incoming files |
+| Later CEP synthesis | Not written in Cycle1 | Prepare only after evidence/eligibility validation |

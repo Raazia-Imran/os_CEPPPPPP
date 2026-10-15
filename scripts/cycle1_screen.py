@@ -13,6 +13,10 @@ ROOT=Path(__file__).resolve().parents[1]; E=ROOT/'evidence'
 def read(n): return list(csv.DictReader((E/n).open(encoding='utf-8-sig')))
 def now():return datetime.now(timezone.utc).isoformat(timespec='seconds')
 def overlay():
+    if (E/'metadata_enrichment.csv').is_file() and (E/'incoming_shared/acm_master/reconciliation.json').is_file():
+        prior=json.loads((E/'incoming_shared/acm_master/reconciliation.json').read_text())
+        if all(hashlib.sha256((ROOT/a['file']).read_bytes()).hexdigest()==a['sha256'] for a in prior['files']):
+            return read('metadata_enrichment.csv')
     rows=[]; ix={}; tx={}
     old=read('records.csv'); oldkeys={doi_key(r['doi']) or title_key(r['title']) for r in old}
     extras=[]; audit=[]
@@ -85,6 +89,8 @@ def refresh():
     p['human_candidate_records']=len(queue);p['exclusion_sample_records']=len(sample)
     (E/'review_progress.json').write_text(json.dumps(p,indent=2)+'\n')
     paths=[('Screening','screening.csv'),('Records','records.csv'),('Duplicates','duplicates.csv'),('Version checks','possible_versions.csv'),('Source checks','fulltext_checks.csv'),('Quality','quality.csv'),('Extraction','extraction.csv'),('Snowballing','snowballing.csv'),('Shared candidates','shared_candidate_review.csv'),('Import manifest','import_manifest.csv'),('Version audit','version_review_audit.csv'),('Study extraction','study_extraction_form.csv'),('Human validation','human_validation_queue.csv'),('Exclusion sample','exclusion_validation_sample.csv'),('Metadata enrichment','metadata_enrichment.csv')]
+    for name,path in [('Report validation','report_validation_queue.csv'),('Full-text criteria','fulltext_criteria.csv')]:
+        if (E/path).is_file():paths.append((name,path))
     wb=dict(counts=json.loads((E/'prisma_counts.json').read_text()),progress=p,sheets={name:read(path) for name,path in paths})
     (ROOT/'task2/tracker/workbook_input.json').write_text(json.dumps(wb,ensure_ascii=False)+'\n')
     return p

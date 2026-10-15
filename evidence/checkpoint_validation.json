@@ -1,9 +1,9 @@
 {
-  "checked_at_utc": "2026-10-15T22:10:28+00:00",
+  "checked_at_utc": "2026-10-15T22:20:07+00:00",
   "record_rows": 2291,
   "canonical_queue_rows": 2247,
   "linked_duplicate_rows": 44,
-  "first_recommendations": 1600,
+  "first_recommendations": 2247,
   "raw_manifest_files_verified": 81,
   "original_protocol_unchanged": true,
   "original_imports_unchanged": true,

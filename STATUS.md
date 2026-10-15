@@ -1,3 +1,48 @@
+# Group B status: Cycle 1, 16 October 2026 (Pakistan time)
+
+Cycle 1 completes the active **preliminary recommendation pass**, version audit and bounded evidence-register expansion. Final human decisions, final inclusion and final PRISMA remain pending. Cycle 2 synthesis has not been written.
+
+| Item | Current measured state |
+| --- | --- |
+| Original imports | 2,291 occurrences: ACM1,582; IEEE102; Springer587; supplementary20 |
+| Applied linkage | 44 duplicate links; 2,247 canonical records; original hashes unchanged |
+| Preliminary screening | 2,247/2,247 recommendations; 1,447 added in this cycle;0 awaiting first recommendation |
+| Recommendations | 1,181 preliminary exclusions;1,066 retain/uncertain; no final exclusions |
+| Human validation | 1,066 candidate records +127 sampled exclusions;5 priority report tasks |
+| Version pairs | All41 audited:30container pairs;3verified identity proposals;3companion proposals;5unresolved paper pairs |
+| Linkage proposals | Not applied to counts; originals and earlier possible-pair register preserved |
+| Source checks | 5 bounded report checks;3 public conference PDFs rechecked this cycle |
+| QA | 5 preliminary0-2 forms;50 item rows;independent checks/reconciliation pending |
+| Extraction | 26 outcome rows,20 added this cycle;5 study forms expanded;unchecked fields remain not extracted |
+| Citation chasing | 10 targeted events:9backward,1forward;6 added;not exhaustive |
+| Recovered ACM | Search log recovered;829+1000 overlapping master entries;1387 distinct DOI/title keys;68 unmatched candidate identifiers staged separately |
+| Search reconciliation |1600 displayed/1603 exported are teammate-reported;79 numbered-file mapping and completeness unresolved |
+| Final included studies | Pending; no final count |
+
+Final interim PDF: **24 pages**;LaTeX/BibTeX PASS,no undefined citations or overfull boxes. Workbook: **18 sheets**,ZIP and formula checks PASS. All PDF pages and worksheet previews visually checked. Validation: `evidence/cycle1_validation.json`.
+
+Current report and workbook: `task2/report/report.pdf`, `task2/tracker/review_workbook.xlsx`. The report covers guideline headings1-14 with source anchors, QA rationales and all outcome rows. Read `task2/CONTINUE_HERE.md` for the continuation order.
+
+**Planning readiness: approximately50-55%**, with substantial uncertainty. First-recommendation coverage is100%, which is not final screening completion or a marks prediction. Independent validation, wider full-text assessment and final study-level linkage are still material work. ScienceDirect remains deferred. Its new files were inspected by folder listing/log but not added to active counts.
+
+The original800 recommendation events are retained. Rameen's reported ACM human work is existing work; no duplicate human screening is claimed. No verified record-keyed independent votes were found in the attached tracker copies. Missing abstracts include search-result snippets, even when the raw `abstract` cell is nonempty. Recovered metadata is a separately sourced overlay and does not rewrite raw imports.
+
+## Published checkpoint history
+
+- `8a9dc3dd116940747cff1b4a6f6f009f7b3f100f`: recovered search-log baseline; commit time2026-10-15T21:47:30UTC.
+- `324b7856d43f2828a0dd0bd92e97a7c87581d6a1`: first800 new recommendations,version audit,50QA items,26outcomes and10citation events; commit time2026-10-15T22:16:23UTC;remote main read back2026-10-15T22:17UTC.
+- Current local snapshot updated 2026-10-15T22:19:09+00:00; next commit publishes the completed preliminary pass and refreshed outputs. A commit cannot contain its own hash; the next checkpoint records its predecessor and the final response provides the final hash.
+
+Shell Git lacked push credentials. The connected GitHub app publishes checkpoints. One automatic disclosure rejection was followed by an exact-repository permission check and changed-file credential/private-URL scan; no sensitive matches were found. The authorized public bibliography/register upload then succeeded. No licensed source PDFs or private access URLs are included.
+
+## Exact next actions
+
+- **Eshaal:** import existing ACM human decisions keyed to record IDs; reconcile query/field/date/hit/export mapping; check the high-priority candidate queue and127stratified exclusions without copying first recommendations.
+- **Rameen:** independently verify5priority reports,26outcomes and50QA items. Preserve initial own votes/scores; resolve PipeSwitch mixed-workload eligibility and REEF conference/journal relationship.
+- **Raazia:** reconcile verified human decisions,apply justified identity links with revised counts,resolve5remaining paper pairs,and expand full-text QA/extraction beyond the5bounded reports before freezing eligibility for Cycle2.
+
+## Historical baseline (preserved; superseded by the current table)
+
 # Group B status: 15 October 2026 continuation
 
 Start with `task2/CONTINUE_HERE.md`. Current outputs are `task2/report/report.pdf`, its LaTeX/BibTeX sources, `task2/report/prisma_flow.pdf` and `task2/tracker/review_workbook.xlsx`.

@@ -1,0 +1,54 @@
+# Cycle1 changed files
+
+Compared with baseline main07085c4. Raw original imports and submitted protocol are unchanged. Public source PDFs were not committed.
+
+- `STATUS.md`
+- `evidence/CYCLE1_METHOD.md`
+- `evidence/checkpoint_validation.json`
+- `evidence/cycle1_source_receipts.csv`
+- `evidence/cycle1_validation.json`
+- `evidence/exclusion_validation_sample.csv`
+- `evidence/extraction.csv`
+- `evidence/fulltext_criteria.csv`
+- `evidence/human_validation_queue.csv`
+- `evidence/incoming_shared/acm_master/ACM_MASTER_01.bib`
+- `evidence/incoming_shared/acm_master/ACM_MASTER_02.bib`
+- `evidence/incoming_shared/acm_master/reconciliation.json`
+- `evidence/incoming_shared/acm_master/staged_new_candidates.csv`
+- `evidence/incoming_shared/search_log_2026-10-16.txt`
+- `evidence/metadata_checks/10.1007_978-3-031-92870-3_22.json`
+- `evidence/metadata_checks/10.1109_dac63849.2025.11132423.json`
+- `evidence/metadata_checks/10.1109_micro56248.2022.00019.json`
+- `evidence/metadata_checks/10.1145_3581784.3607054.json`
+- `evidence/metadata_checks/10.1145_3711699.json`
+- `evidence/metadata_checks/10.1145_3731599.3767396.json`
+- `evidence/metadata_checks/10.1145_3801489.3806868.json`
+- `evidence/metadata_checks/10.1145_3805638.json`
+- `evidence/metadata_checks/10.1145_3820171.3806868.json`
+- `evidence/metadata_enrichment.csv`
+- `evidence/prisma_counts.json`
+- `evidence/quality.csv`
+- `evidence/report_validation_queue.csv`
+- `evidence/review_progress.json`
+- `evidence/screening.csv`
+- `evidence/search_runs.csv`
+- `evidence/snowballing.csv`
+- `evidence/study_extraction_form.csv`
+- `evidence/title_votes.csv`
+- `evidence/version_review_audit.csv`
+- `scripts/build_cycle1_report.py`
+- `scripts/build_workbook.mjs`
+- `scripts/cycle1_evidence.py`
+- `scripts/cycle1_finalize.py`
+- `scripts/cycle1_screen.py`
+- `task2/CHECKLIST.md`
+- `task2/COMPLETION_AND_TEAM.md`
+- `task2/CONTINUE_HERE.md`
+- `task2/CYCLE1_CHANGED_FILES.md`
+- `task2/HEADING_14_AUDIT.csv`
+- `task2/report/heading14_audit.tex`
+- `task2/report/main.tex`
+- `task2/report/prisma.tex`
+- `task2/report/prisma_flow.pdf`
+- `task2/report/report.pdf`
+- `task2/tracker/review_workbook.xlsx`

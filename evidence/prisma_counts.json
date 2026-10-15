@@ -17,5 +17,16 @@
     "low": 1813
   },
   "final_screened": null,
-  "final_included": null
+  "final_included": null,
+  "preliminary_recommendations": 2247,
+  "preliminary_exclusion_recommendations": 1181,
+  "preliminary_retain_or_uncertain": 1066,
+  "first_recommendations_pending": 0,
+  "version_pair_dispositions": {
+    "companion_report_relationship_proposed": 3,
+    "container_pair_scope_classified": 30,
+    "identity_verified_linkage_proposed": 3,
+    "unresolved_paper_identity": 5
+  },
+  "proposed_duplicate_links_applied": false
 }

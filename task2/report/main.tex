@@ -4,252 +4,645 @@
 \usepackage{lmodern,microtype,booktabs,longtable,array,enumitem,xcolor,graphicx,tikz,fancyhdr}
 \usetikzlibrary{arrows.meta,positioning}
 \usepackage[hidelinks]{hyperref}
-\usepackage{seqsplit}
-\setlength{\emergencystretch}{3em}
-\setlength{\headheight}{15pt}
-\setlength{\parskip}{5pt}
-\setlength{\parindent}{0pt}
-\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Group B: GPU sharing review}\fancyhead[R]{Interim evidence checkpoint}\fancyfoot[C]{\thepage}
+\let\originalthebibliography\thebibliography
+\let\originalendthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{\originalthebibliography{#1}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}{\originalendthebibliography}
+\hypersetup{pdftitle={GPU Sharing for Multi-Tenant Inference: Task 2 Cycle 1},pdfauthor={OS CEP Group B}}
+\setcounter{tocdepth}{1}
+\setlength{\emergencystretch}{3em}\setlength{\headheight}{15pt}
+\setlength{\parskip}{5pt}\setlength{\parindent}{0pt}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Group B: GPU sharing review}\fancyhead[R]{Task 2, Cycle 1}\fancyfoot[C]{\thepage}
 \begin{document}
 \begin{titlepage}\centering
-{\large NED University of Engineering and Technology\\Department of Software Engineering\par}\vspace{1.5cm}
-{\LARGE\bfseries GPU Sharing for Multi-Tenant Inference\par}\vspace{0.5cm}
-{\Large Search, Screening and Extraction Checkpoint\par}\vspace{0.7cm}
-{\large Operating Systems CEP, Topic 23\\Work through guideline Section 14\par}\vspace{1cm}
-Eshaal Faisal\\Raazia Imran Reshamwala\\Rameen Siddiqui\vspace{1cm}
-\begin{quote}Status: interim research evidence. Selection, independent review and final inclusion remain open. The submitted 27 September 2026 protocol is preserved.\end{quote}
-\vfill 15 October 2026
-\end{titlepage}
-\tableofcontents\newpage
+{\large NED University of Engineering and Technology\\Department of Software Engineering\par}\vspace{1.1cm}
+{\LARGE\bfseries GPU Sharing Mechanisms for Multi-Tenant Inference Serving\par}\vspace{0.5cm}
+{\Large Search, Screening, Quality Assessment and Data Extraction\par}\vspace{0.5cm}
+{\large Operating Systems CEP, Topic 23\\Task 2: Working Evidence Report through Guideline Section 14\par}\vspace{0.8cm}
+Eshaal Faisal (SE-24008)\\Raazia Imran Reshamwala (SE-24009)\\Rameen Siddiqui (SE-24016)
+\vspace{1cm}\begin{quote}
+Interim evidence report. Preliminary recommendations are complete for the active record queue. Independent validation, final eligibility and the final included-study count remain pending. Later CEP synthesis is outside this cycle.
+\end{quote}\vfill 16 October 2026 (Pakistan time)
+\end{titlepage}\tableofcontents\newpage
 
-\section{Purpose and engineering problem}
-This checkpoint continues Group B's submitted protocol toward guideline Sections 7-14. The decision concerns how one physical GPU can support concurrent inference tenants through time-slicing, MPS, MIG and API interception/remoting while balancing utilization, latency and isolation. Multi-GPU papers qualify only when a within-device inference-sharing result is separable. This report documents actual imported data and bounded source checks; it does not claim a completed systematic review.
+\section{Background}
+Concurrent inference tenants can compete for compute, memory capacity, memory bandwidth and execution opportunities on one physical GPU. Sharing may increase useful work, but a change in throughput does not establish predictable request latency or resource and fault isolation. The review examines the assigned families: time-slicing, MPS, MIG and API interception/\allowbreak{}remoting. Mechanism definitions follow the cited documentation; numerical conclusions require experimental primary studies.
 
 
-The review method follows software-engineering SLR guidance and transparent PRISMA reporting \cite{kitchenham,prisma,prismas}.
-\section{Research questions}
-\begin{longtable}{p{0.08\linewidth}p{0.84\linewidth}}
+Context definitions: \cite{nvidiaMPS,nvidiaMIG,nvidiaTime}. The submitted 27 September protocol is preserved unchanged.
+\section{Engineering problem and scope}
+The engineering problem is to choose a sharing mechanism under specified inference-serving requirements, hardware constraints and latency/\allowbreak{}isolation priorities. The unit of interest is concurrent inference on one physical GPU. Distributed systems are eligible only where an extractable within-device inference-sharing result can be separated. Remote execution alone is insufficient: the remote endpoint must be shared and tenant effects evaluable. Mixed training/\allowbreak{}inference studies require separable inference outcomes.
+
+
+\section{Objective and research questions}
+Collect and appraise evidence that can support a conditional engineering decision. This cycle strengthens the evidence registers; it does not select a universal winner or answer the final CEP synthesis questions.
+
+
+\begin{longtable}{p{0.08\linewidth}p{0.83\linewidth}}
 \toprule
-RQ & Preserved focus\\\midrule
+ID & Preserved protocol question\\\midrule
 \endhead
-RQ1 & Mechanism families, sharing granularity, implementation layer and isolation boundary.\\
-RQ2 & Metric definitions and comparability of hardware, workload, baselines and methods.\\
-RQ3 & Conditions under which utilization, throughput, density and latency change.\\
-RQ4 & Resource/fault isolation, implementation costs, trade-offs and conflicting evidence.\\
-RQ5 & Conditional engineering choices, confidence and alternatives.\\
+RQ1 & Which evaluated sharing families, granularities, implementation layers and isolation boundaries can be classified?\\
+RQ2 & How are utilization, throughput, density, latency and interference measured, and how comparable are methods?\\
+RQ3 & Under which GPU, workload, batch, tenant mix and configuration conditions do outcomes change?\\
+RQ4 & What resource/\allowbreak{}fault isolation, costs, trade-offs and limitations are supported?\\
+RQ5 & Which conditional engineering choices are supported, with what confidence and alternatives?\\
 \bottomrule
 \end{longtable}
 
-\section{Sources and shared-data provenance}
-The user explicitly authorized reuse of Group A's searches and findings with attribution. We imported its committed IEEE/Springer metadata and preserved its assessments as prior assessments. Group B does not claim to have re-executed those searches. Group A source snapshot: adf4a1e827f71610eba21785fbf5cbac8793fbfc. The shared materials remain under evidence/imports/group-a. ACM bibliography exports supplied through Drive remain untouched under evidence/imports/acm. The import manifest records SHA-256 hashes and counts.
+\section{SLR methodology}
+The review follows the predefined Group B protocol, software-engineering review guidance and PRISMA reporting \cite{kitchenham,petersen,prisma,prismas}.
+Occurrence records retain their original database, run, file, position and hash. Deterministic duplicate links remain separate from possible versions. Preliminary title/\allowbreak{}abstract recommendations remain separate from final selection decisions. Relevant reports are assessed against all IC1-IC6 conditions. Study-level identity, report-level appraisal and individual outcome rows are distinct units.
 
 
-\begin{longtable}{p{0.15\linewidth}p{0.14\linewidth}p{0.62\linewidth}}
+The protocol plans independent screening and appraisal, with adjudication where needed. This checkpoint does not claim that those independent reviews have been completed. Existing human ACM work is preserved as existing work; it is not counted again as a new independent review. Only verified, record-keyed human votes can close the relevant validation fields.
+
+
+\section{Required review activities and current state}
+\begin{longtable}{p{0.29\linewidth}p{0.61\linewidth}}
 \toprule
-Source & Rows & Evidence status\\\midrule
+Activity & Measured state\\\midrule
 \endhead
-ACM & 1582 & 79 original BibTeX files; exact query-to-batch mapping unresolved\\
-Springer & 587 & Group A master search; broad full-text indexed scope\\
-IEEE & 102 & Group A executed metadata capture; five-run shared log includes four IEEE runs\\
-Other sources & 20 & 20 selected shared leads; not a systematic citation census\\
+Active imports & 2,291 occurrences; 2,247 canonical records\\
+First recommendations & 2,247; 0 not yet recommended\\
+Preliminary decisions & 1,181 exclusion recommendations; 1,066 retain/\allowbreak{}uncertain\\
+Version audit & 41 pairs audited; proposals remain separate from applied duplicate links\\
+Bounded source checks & 5 priority reports; final eligibility pending\\
+Quality assessment & 50 item rows across 5 preliminary forms\\
+Extraction & 26 outcome rows; 5 study-level forms\\
+Citation chasing & 10 targeted events; not exhaustive\\
+Final included studies & Pending; no final number established\\
 \bottomrule
 \end{longtable}
 
-Database occurrences total 2,271. The 20 supplementary leads are a separate route, giving 2,291 total imported occurrences. These counts are export/capture counts, not a claim that ACM displayed exactly 1,582 hits. ScienceDirect's earlier 100 incoming RIS occurrences remain preserved separately and are excluded from this active checkpoint by the user's instruction. No source was deleted.
+\section{Protocol and documented deviations}
+The submitted protocol dated 27 September 2026 is the governing baseline. Its 12 main-window database expressions, four older-MPS lanes, conjunctive eligibility criteria, Q1-Q10 rubric and extraction fields are preserved. Later execution differences are recorded separately.
 
 
-\section{Search strategy and deviations}
-Group B's submitted protocol specifies 12 main-window expressions and four older-MPS expressions. The imported Group A search design uses a different master/family vocabulary and broad Springer field. Reuse saves collection effort but does not establish equivalence to every Group B planned query. Appendix A preserves the exact shared executed expressions and settings. The ACM files do not establish their original query, field, date filters, displayed hits or pagination. Those unknowns remain unknown.
-
-
-\begin{longtable}{p{0.19\linewidth}p{0.13\linewidth}p{0.59\linewidth}}
+\begin{longtable}{p{0.25\linewidth}p{0.65\linewidth}}
 \toprule
-Run & Shared count & Field and coverage\\\midrule
+Deviation & Handling and remaining consequence\\\midrule
 \endhead
-IEEE-MPS & 25 & All metadata (Search by All); not field-qualified Command Search; Publication years2020-2026; date/language/type checked during screening\\
-IEEE-MIG & 23 & All metadata (Search by All); not field-qualified Command Search; Publication years2020-2026; date/language/type checked during screening\\
-IEEE-TEMPORAL & 45 & All metadata (Search by All); not field-qualified Command Search; Publication years2020-2026; date/language/type checked during screening\\
-IEEE-API & 9 & All metadata (Search by All); not field-qualified Command Search; Publication years2020-2026; date/language/type checked during screening\\
-SPR-MASTER & 587 & General search/full-text indexed collection; English; Research article OR Conference paper;2020-2026; manual cutoff\\
+Attributed shared searches & IEEE/\allowbreak{}Springer captures originated with Group A; they are reused by authorization, not claimed as newly executed Group B runs.\\
+Fourth database deferred & ScienceDirect originals remain preserved outside active counts; four-database completion is not claimed.\\
+ACM provenance partly recovered & Teammate log supplies an exact query, field, date and claimed counts; current exports do not reconcile those totals or the 79 numbered batches.\\
+Older-MPS lanes & Prespecified historical searches have not been demonstrated complete; older citation leads require individual exceptions.\\
+Independent validation incomplete & Initial recommendations and source checks do not establish independent consensus or final eligibility.\\
 \bottomrule
 \end{longtable}
 
-Search-coverage gaps: ACM run mapping and completeness; missing prespecified older-MPS lanes; unexecuted Group B expressions; broad Springer body-search noise; ScienceDirect deferred. The shared search cutoff is 11 October 2026; ACM export upload/modified times cannot substitute for search timestamps. Publication-date eligibility for ACM candidates must use the documented actual run date, or a clearly adopted and recorded common cutoff.
-
-
-\section{Eligibility and screening rules}
-\begin{longtable}{p{0.16\linewidth}p{0.76\linewidth}}
+\section{Academic database selection and provenance}
+Database selection follows the NED library resources specified in the protocol \cite{nedResources,nedGuide}.
+\begin{longtable}{p{0.16\linewidth}p{0.13\linewidth}p{0.6\linewidth}}
 \toprule
-Criterion & Operational rule\\\midrule
+Source & Occurrences & Source and coverage\\\midrule
 \endhead
-IC1 & Final English peer-reviewed full journal or conference primary study.\\
-IC2-IC3 & Distinct concurrent tenants share one physical GPU through an assigned mechanism, with separable inference evidence.\\
-IC4-IC5 & Inspectable relevant outcome and sufficient methods/configuration; separable local result permitted in larger systems.\\
-IC6 & Main date window or individually justified older seminal exception.\\
-EC1 & Non-primary/non-peer-reviewed, survey, poster, abstract-only or container item.\\
-EC2-EC5 & Training-only/no concurrent inference; hardware-only; aggregate cluster-only; non-GPU-only.\\
-EC6-EC7 & Insufficient assessed full-text detail; outside date/language criteria.\\
+ACM & 1582 & 79 numbered supplied BibTeX batches; original run-to-file mapping unresolved\\
+Springer & 587 & Attributed Group A full-text-indexed search captures\\
+IEEE & 102 & Attributed Group A executed metadata captures\\
+Supplementary & 20 & 20 shared selected leads, separately identified\\
 \bottomrule
 \end{longtable}
 
-Missing full text is a retrieval status, not EC6. Title uncertainty is retained. Multiple reports are linked to a study rather than counted as separate studies. The existing REEF conference/journal versions require a preferred-report decision. Original independent votes must be preserved; there is currently one Group B AI reviewer, not two human reviewers.
+The active database-source total is 2,271 and the separate supplementary total is 20. The original raw manifest verifies 81 payload files. File hashes establish unchanged bytes; they do not establish that every search page was exported. Group A acceptance and its different QA scale are prior assessments rather than Group B final decisions.
 
 
-\section{Duplicate linkage and payload}
-Deterministic linkage identifies 44 repeated occurrences, leaving 2247 canonical records for review. The keys use normalized DOI or exact publisher URL; identifier-free ACM copies additionally require identical normalized title, authors and year. Different DOIs are not silently collapsed. There are 41 title-match pairs still requiring identity/version review. These are not removed from the active counts.
+\section{Search strategy and executed queries}
+The exact Group B planned strings remain in the submitted protocol and query register. Imported executed queries are printed in Appendix A. Keyword overlap is not treated as proof of eligibility; the main search is intended to be sensitive, followed by criterion-based screening.
 
 
-The earlier pasted checkpoint reported 74 duplicates and 2,217 records. Those figures were not recovered as a committed row-level log. This reconstruction deliberately reports its own reproducible result instead of repeating an unverified total. Identity linkage remains subject to review of the 41 pairs. The imported ACM payload also contains 609 proceedings containers, seven books and one technical report; these explain many low-relevance hits and require distinct EC1 recommendations.
-
-
-\section{Current screening results}
-\begin{longtable}{p{0.57\linewidth}p{0.34\linewidth}}
-\toprule
-Measure & Observed state\\\midrule
-\endhead
-Canonical records & 2247\\
-Recorded first-review decisions & 800\\
-Exclude recommendations & 652\\
-Retain/uncertain recommendations & 148\\
-Awaiting first review & 1447\\
-Independent second-review and final decisions & Pending\\
-Source-checked priority reports & 5\\
-Final included primary-study count & Not established\\
-\bottomrule
-\end{longtable}
-
-The 800 first-review rows comprise 183 individually inspected high-priority titles and 617 explicit BibTeX container/book/report type checks. Recommendations are preliminary, with abstract verification where needed and independent checking still open. The remaining triage labels are automated prioritization signals, not exclusion decisions. No 1,813-record automated triage category is reported as a final exclusion.
-
-
-\section{Interim PRISMA 2020 accounting}
-The following diagram is a pending-stage accounting view using PRISMA categories, not a completed official PRISMA result. Final screening, reports sought/not retrieved, assessed exclusions and included-study totals require resolved record/report/study links and independent review. Four targeted backward-reference links are logged separately; three are unimported candidate leads and do not inflate current identification counts.
-
-
-\input{prisma.tex}
-\section{Citation chasing}
-A targeted backward pilot inspected four references from gpulets: Prophet [4], Baymax [5], Clipper [15] and GSLICE [17], on printed pages 210-211. GSLICE already occurs in the imported payload. The other three are candidate leads awaiting metadata/full-text eligibility checks; their older dates require individual justification if retained. This is a four-reference pilot, not exhaustive backward/forward snowballing. The remaining references and forward citations remain to be searched and logged.
-
-
-\section{Priority full-text checks}
-\begin{longtable}{p{0.16\linewidth}p{0.76\linewidth}}
-\toprule
-Report & Group B first-review finding\\\midrule
-\endhead
-VastPipe & Local A100 inference model pairs use tuned/default/no MPS; local GPU outcomes are separable from NPU cluster results. Remaining: Original chart check, second reviewer, exact quotas/batches, all source sections. Source: pp457-459, sections6.7-6.9, Figs14-16\\
-iGniter & Four inference models co-located on one V100, MPS quotas and local latency prediction are explicit; fleet costs kept distinct. Remaining: Second reviewer; OS/driver extraction; full-source verification of remaining fields. Source: pp820-824, sections4.2,5.1-5.4, Figs13-17\\
-gpulets & One-device paired inference interference and MPS partitioning are separable from multi-GPU scheduler results. Remaining: Second reviewer, complete outcome extraction and QA. Source: pp201-203,207; sections2,3,5.1; Figs4,7; Tables2-3\\
-PipeSwitch & Separable inference latency under local training/inference co-location; temporal switching and MPS comparator. Remaining: Second reviewer; mixed training/inference scope sensitivity; complete QA. Source: pp508-509, section6.1, Tables3-4\\
-REEF conference & Concurrent RT/BE inference tenants on MI50; later journal report must be linked as the same study. Remaining: Verify journal equivalence before preferred-report choice; second reviewer; no double counting. Source: p548 section7.1 Table2; pp539-542\\
-\bottomrule
-\end{longtable}
-
-\section{Quality appraisal and calibration}
-Group A's ten-item 0-1 scale has different criterion meanings from Group B's submitted Q1-Q10 0-2 rubric. Multiplying the totals would be invalid. Two fresh first-review appraisals are recorded with rationale and source anchors; the second reviewer and reconciliation columns remain blank. N/A is used only for an outcome claim genuinely outside the bounded evidence being appraised. The VastPipe appraisal is explicitly restricted to its local GPU evidence, not the NPU experiments.
-
-
-\begin{longtable}{p{0.2\linewidth}p{0.22\linewidth}p{0.22\linewidth}p{0.18\linewidth}}
-\toprule
-Report & First-review sum & Applicable max & Normalized\\\midrule
-\endhead
-GB-P001 & 13.0 & 18 & 72.2\%\\
-GB-P002 & 17.0 & 20 & 85.0\%\\
-\bottomrule
-\end{longtable}
-
-Scores do not establish final inclusion, nor do they replace the source check. No final synthesis sensitivity conclusion is yet supported. Each appraisal retains ten separate criterion rows so the team can challenge a score without losing its original rationale.
-
-
-\section{Data extraction through guideline Section 14}
-The active register contains six newly checked outcomes across four priority reports. Five older pilot rows remain in evidence/pilot/extraction.csv with their original manuscript/version caveats. They are not added to final included-study counts. The full extraction category specification A-M remains in the submitted protocol. Use not-extracted for fields not yet transcribed, NR only when the source was checked and does not report the item, and an empty checker field until an independent check occurs.
-
-
-\begin{longtable}{p{0.27\linewidth}p{0.65\linewidth}}
-\toprule
-Report / metric & Checked result and interpretation\\\midrule
-\endhead
-GB-P001 / Throughput ratio & 2.7 x; NVIDIA A100; VGG16+GoogLeNet. Baseline: No MPS. Anchor: pp457-458 Fig14 and accompanying prose. Batch/rate/quotas unresolved; not tail-latency evidence\\
-GB-P001 / Throughput ratio & 1.5 x; NVIDIA A100; VGG16+GoogLeNet. Baseline: Default MPS. Anchor: pp457-458 Fig14 and accompanying prose. Same comparison family; not a universal average\\
-GB-P002 / Prediction error range & 1.53-5.02 percent; NVIDIA V100; AlexNet/ResNet50/VGG19/SSD; batch3. Baseline: Measured local latency. Anchor: p822 section5.2 Fig13. Prediction accuracy, not utilization or latency speedup\\
-GB-P002 / Initial p99 latency & 15.6 ms; NVIDIA V100; W1 with W5 and W11. Baseline: W1 latency SLO10ms. Anchor: p823 section5.3 Fig17 prose. Transient violation precedes recovery; no unconditional guarantee\\
-GB-P004 / Additional end-to-end latency & 6.01 ms; NVIDIA V10016GB; ResNet152 inference batch8 + training batch32. Baseline: Ready-model latency subtracted; MPS overhead307.02ms. Anchor: p509 Table3; setup p508 section6. Mean100 runs; overhead, not total latency or p99; MPS uses unified-memory swapping\\
-GB-P003 / Distribution threshold:90\% of measured pairs & 17.66 percent overhead below threshold; RTX2080Ti11GB; Paired model inferences. Baseline: Solo-running latency. Anchor: p203 Fig7. Across-pair CDF, not request-p90/p99; no hostile-memory/fault test\\
-\bottomrule
-\end{longtable}
-
-Checked source reports are VastPipe, iGniter, gpulets and PipeSwitch \cite{vastpipe,igniter,gpulets,pipeswitch}. REEF\textquotesingle s conference report has a bounded configuration check \cite{reef}; a later journal extension is already a shared version lead.
-\section{Interpretation limits}
-The extracted quantities are deliberately kept distinct. Prediction error is not a utilization gain. A p99 recovery example does not prove an unconditional SLO guarantee. Additional end-to-end latency is not total response time. A CDF across model-pair overheads is not a request-latency percentile. Fleet cost/GPU-count benefits cannot be attributed to local GPU utilization without a valid denominator. Performance interference does not prove memory, security or fault containment.
-
-
-\section{Work to close before submission}
-\begin{longtable}{p{0.27\linewidth}p{0.65\linewidth}}
-\toprule
-Owner / task & Concrete output\\\midrule
-\endhead
-Eshaal: source and abstract review & Recover ACM query-to-file mapping from search history/screenshots: exact strings, field, date, hit count and exported pages. Then review assigned screening rows without seeing first-review votes initially.\\
-Rameen: priority paper checks & Independently check the five priority reports, six outcomes and 20 QA items. Enter own vote/score and exact page/table. Check the remaining 21 shared candidates in priority order.\\
-Raazia / AI: registers and report & Resolve version pairs, continue abstracts and full texts, complete citation chasing, reconcile PRISMA and rebuild report/workbook from the same logs.\\
-\bottomrule
-\end{longtable}
-
-Measured progress: 800/2247 (35.6\%) canonical records have a first-review recommendation. Five reports have bounded source checks; two have first-review appraisals. Final protocol-compliant screening and inclusion are pending. These are activity-specific measures, not a claim of 50\% or 100\% overall completion. The final CEP additionally needs Sections 15-22: taxonomy, comparison, trade-offs, conflicts, synthesis, recommendation, gaps and limitations.
-
-
-\appendix\section{Exact imported Group A executed searches}
-\subsection{IEEE-MPS}
-Database: IEEE Xplore. Date: 2026-10-11; time UTC: not\_recorded. Reviewer/operator: AI-CODEX. Collection: Xplore all metadata.
-
-
-{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND (MPS OR "multi-process service")\par}
-Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/language/type checked during screening. Displayed hits: 25. Captured occurrences: 25. Export method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
-
-
-\subsection{IEEE-MIG}
-Database: IEEE Xplore. Date: 2026-10-11; time UTC: not\_recorded. Reviewer/operator: AI-CODEX. Collection: Xplore all metadata.
-
-
-{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND (MIG OR "multi-instance GPU" OR "GPU partitioning")\par}
-Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/language/type checked during screening. Displayed hits: 23. Captured occurrences: 23. Export method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
-
-
-\subsection{IEEE-TEMPORAL}
-Database: IEEE Xplore. Date: 2026-10-11; time UTC: not\_recorded. Reviewer/operator: AI-CODEX. Collection: Xplore all metadata.
-
-
-{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("time slicing" OR "time sharing" OR "context switching")\par}
-Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/language/type checked during screening. Displayed hits: 45. Captured occurrences: 45. Export method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
-
-
-\subsection{IEEE-API}
-Database: IEEE Xplore. Date: 2026-10-11; time UTC: not\_recorded. Reviewer/operator: AI-CODEX. Collection: Xplore all metadata.
-
-
-{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("API remoting" OR "CUDA remoting" OR "GPU proxy" OR "GPU virtualization")\par}
-Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/language/type checked during screening. Displayed hits: 9. Captured occurrences: 9. Export method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
-
-
-\subsection{SPR-MASTER}
-Database: Springer Nature Link. Date: 2026-10-11; time UTC: not\_recorded. Reviewer/operator: AI-CODEX. Collection: Springer Nature Link.
+\subsection{Recovered ACM search log}
+The teammate log reports: ACM Full-Text Collection; All Fields; 2020-2026; 14 October 2026 at 22:30 Pakistan time (UTC+05:00); 1,600 displayed hits and 1,603 claimed exported records. These are source-reported historical details, not a search re-executed in this cycle. The full-year filter can include publications after the actual search date, so publication date still needs verification.
 
 
 {\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("time slicing" OR "time sharing" OR "context switching" OR MPS OR "multi-process service" OR MIG OR "multi-instance GPU" OR "GPU partitioning" OR "API remoting" OR "CUDA remoting" OR "GPU proxy" OR "GPU virtualization")\par}
-Field: General search/full-text indexed collection. Filters: English; Research article OR Conference paper;2020-2026; manual cutoff. Displayed hits: 587. Captured occurrences: 587. Export method: Rendered metadata from all30 pages; publisher CSV routes to sign-in.
-
-
-\section{Evidence-file guide}
-\begin{longtable}{p{0.38\linewidth}p{0.54\linewidth}}
+\begin{longtable}{p{0.28\linewidth}p{0.12\linewidth}p{0.49\linewidth}}
 \toprule
-File & Purpose\\\midrule
+Recovered file & Parsed entries & SHA-256\\\midrule
 \endhead
-records.csv & One immutable occurrence per row; source hash and original identity.\\
-duplicates.csv / possible\_versions.csv & Resolved deterministic repeats / unresolved title pairs.\\
-screening.csv / title\_votes.csv & Editable review queue / preserved first-review events.\\
-fulltext\_checks.csv & Five source checks with outstanding criteria/version work.\\
-quality.csv / extraction.csv & Fresh Group B first-review appraisal / six outcome records.\\
-snowballing.csv & Four backward-reference events; no invented citation census.\\
-imports/group-a & Original attributed search data and prior assessments.\\
-imports/acm / import\_manifest.csv & Untouched bibliography batches and hash inventory.\\
+ACM\_MASTER\_01.bib & 829 & a879137e9541e94e4e83ba6b90b330a7 /\allowbreak{} 05e902f7a7d6d2de783f62f23b5128a9\\
+ACM\_MASTER\_02.bib & 1000 & 54bfb9f1e1ac2b60e7fa2469135b0810 /\allowbreak{} 6593457f59cf7711cc5924fb125c137f\\
 \bottomrule
 \end{longtable}
 
-\input{heading14_audit.tex}\clearpage\bibliographystyle{ieeetr}\bibliography{references}\end{document}
+The recovered masters contain 1,829 overlapping occurrences. They yield 68 unmatched DOI/\allowbreak{}title candidate identifiers relative to the active payload. They are staged separately and not added to active identification counts. Existing numbered files are not automatically assigned to the recovered run. The claimed 1,603 total is not reproduced by these files. Full hashes and exact reconciliation are retained in the evidence registers.
+
+
+\section{Literature period and cutoff}
+The protocol main window is 1 January 2020 through the actual final run date in 2026, with individually justified older seminal exceptions. Shared IEEE/\allowbreak{}Springer captures use their documented 11 October 2026 search cutoff. The recovered ACM log reports 14 October 2026. These different dates are disclosed. Upload dates are not substituted for search dates, and an unverified publication year does not establish eligibility.
+
+
+An older primary study requires a specific mechanism/\allowbreak{}baseline need, the same IC1-IC5 and QA checks, and a recorded exception decision. Older context-only papers remain separate. No studies outside a verified cutoff are silently treated as included.
+
+
+\section{Inclusion, exclusion and screening}
+\begin{longtable}{p{0.1\linewidth}p{0.79\linewidth}}
+\toprule
+Code & Rule\\\midrule
+\endhead
+IC1 & Final English peer-reviewed full conference/\allowbreak{}journal primary report.\\
+IC2 & Evaluated classifiable local sharing mechanism among concurrent tenants on one physical GPU.\\
+IC3 & Inference/\allowbreak{}model-serving workload; mixed training/\allowbreak{}inference results must be separable.\\
+IC4 & Inspectable relevant outcome with sufficient method/\allowbreak{}configuration for interpretation.\\
+IC5 & Extractable within-device result and sufficient available full text for appraisal/\allowbreak{}extraction.\\
+IC6 & Main window or documented seminal exception.\\
+EC1 & Secondary, non-primary/\allowbreak{}non-peer-reviewed, poster/\allowbreak{}abstract-only, preprint-only or container.\\
+EC2 & Training-only or no evaluable concurrent inference-sharing outcome.\\
+EC3 & Hardware/\allowbreak{}microarchitecture only without evaluated systems sharing mechanism.\\
+EC4 & Only aggregate cluster/\allowbreak{}remote outcomes, with no extractable within-GPU co-tenant result.\\
+EC5 & Non-GPU platform without relevant evaluated GPU mechanism.\\
+EC6 & Insufficient assessed full-text methods/\allowbreak{}configuration/\allowbreak{}outcomes.\\
+EC7 & Outside window without accepted exception, or non-English.\\
+\bottomrule
+\end{longtable}
+
+Title/\allowbreak{}abstract recommendations are preliminary. Ambiguity is retained; missing abstracts are recorded as abstract unavailable. Search-result snippets are not full abstracts. Recovered abstracts are connected through a DOI or a separately flagged title match. Missing full text is a retrieval status rather than EC6. Final exclusions require the applicable completed decision workflow.
+
+
+\begin{longtable}{p{0.65\linewidth}p{0.24\linewidth}}
+\toprule
+Screening measure & Count\\\midrule
+\endhead
+Existing preliminary recommendations preserved & 800\\
+New Cycle 1 recommendations & 1447\\
+Total first recommendations & 2247\\
+Preliminary exclusions & 1181\\
+Retain/\allowbreak{}uncertain & 1066\\
+Not yet recommended & 0\\
+Final independent exclusions & Pending\\
+\bottomrule
+\end{longtable}
+
+\section{PRISMA 2020 record accounting}
+The flow distinguishes identified occurrences, deterministic duplicate links, the current canonical queue and incomplete final selection stages. Preliminary recommendations do not populate final records-excluded or final included-study boxes. Proposed version/\allowbreak{}identity links have not changed active counts.
+
+
+\input{prisma.tex}
+\begin{longtable}{p{0.7\linewidth}p{0.16\linewidth}}
+\toprule
+Possible-pair audit disposition & Pairs\\\midrule
+\endhead
+companion\_report\_relationship\_proposed & 3\\
+container\_pair\_scope\_classified & 30\\
+identity\_verified\_linkage\_proposed & 3\\
+unresolved\_paper\_identity & 5\\
+\bottomrule
+\end{longtable}
+
+Three primary-metadata identity proposals and three companion-report proposals await reconciliation in the linkage register. Five paper-pair identities remain unresolved. Thirty whole-container pairs are scope-classified; they are not eligible study reports. No additional duplicate removal is applied in this cycle.
+
+
+\section{Search and screening logs}
+Each original occurrence retains an immutable record identifier and source membership. Recommendation events preserve stage, criterion, short reason, reviewer label, actual date/\allowbreak{}time when recorded and pending final state. Original historical timestamps are not reconstructed. Full-text access, quality and extraction checks retain separate source anchors.
+
+
+\begin{longtable}{p{0.43\linewidth}p{0.47\linewidth}}
+\toprule
+Register & Traceability\\\midrule
+\endhead
+records.csv /\allowbreak{} import\_manifest.csv & Original occurrence metadata and original raw hashes.\\
+screening.csv /\allowbreak{} title\_votes.csv & Current preliminary queue and preserved recommendation events.\\
+metadata\_enrichment.csv & Recovered abstract metadata and match basis; raw records unchanged.\\
+duplicates.csv /\allowbreak{} version\_review\_audit.csv & Applied duplicate links versus proposed identities and unresolved cases.\\
+fulltext\_checks.csv /\allowbreak{} cycle1\_source\_receipts.csv & Bounded eligibility checks and source PDF identities.\\
+human\_validation\_queue.csv & All active retained/\allowbreak{}uncertain records, assigned for validation.\\
+exclusion\_validation\_sample.csv & 127 exclusions selected by source/\allowbreak{}criterion strata for checking.\\
+snowballing.csv & 10 citation events; no automatic new database count.\\
+\bottomrule
+\end{longtable}
+
+The exclusion sample uses deterministic record-ID ordering within source/\allowbreak{}criterion strata, taking 10\% rounded up and at least two where available. It has not been marked checked. A false exclusion found during validation must trigger review of the relevant recommendation stratum.
+
+
+\subsection{Targeted citation events}
+\begin{longtable}{p{0.28\linewidth}p{0.62\linewidth}}
+\toprule
+Seed /\allowbreak{} direction & Candidate /\allowbreak{} evidence anchor\\\midrule
+\endhead
+GB-P003 gpulets /\allowbreak{} backward & Prophet: Precise QoS Prediction on Non-Preemptive Accelerators; pp210-211 References [4]\\
+GB-P003 gpulets /\allowbreak{} backward & Baymax: QoS Awareness and Increased Utilization for Non-Preemptive Accelerators; pp210-211 References [5]\\
+GB-P003 gpulets /\allowbreak{} backward & Clipper: A Low-Latency Online Prediction Serving System; pp210-211 References [15]\\
+GB-P003 gpulets /\allowbreak{} backward & GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform; pp210-211 References [17]\\
+GB-P003 gpulets /\allowbreak{} backward & Serving DNNs like Clockwork: Performance Predictability from the Bottom Up; p211 references[21]\\
+GB-P003 gpulets /\allowbreak{} backward & Cocktail: A Multidimensional Optimization for Model Serving in Cloud; p211 references[22]\\
+GB-P003 gpulets /\allowbreak{} backward & INFaaS: Automated Model-less Inference Serving; p212 references[36]\\
+GB-P003 gpulets /\allowbreak{} backward & Nexus: A GPU Cluster Engine for Accelerating DNN-Based Video Analysis; p212 references[38]\\
+GB-P005 REEF /\allowbreak{} backward & PipeSwitch: Fast Pipelined Context Switching for Deep Learning Applications; p555 references[6]\\
+GB-P004 PipeSwitch /\allowbreak{} forward & Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inferences; REEF p555 references[6] verifies later paper cites PipeSwitch; bounded forward edge, not index census\\
+\bottomrule
+\end{longtable}
+
+A bounded forward edge from PipeSwitch to REEF is verified by REEF citing PipeSwitch in its bibliography. This proves that citation edge, not an exhaustive forward-citation search. Candidate occurrences already present are linked rather than counted again.
+
+
+\section{Quality assessment}
+The submitted Group B Q1-Q10 rubric scores 0 for absent/\allowbreak{}unclear, 1 for partial and 2 for sufficiently supported reporting. A justified N/\allowbreak{}A removes that item from the applicable maximum. Scores characterize reporting/\allowbreak{}internal validity, not venue prestige or an automatic inclusion gate. The below-60\% sensitivity rule is retained for later synthesis; it is not applied to create a final study set.
+
+
+\begin{longtable}{p{0.1\linewidth}p{0.79\linewidth}}
+\toprule
+Item & Meaning\\\midrule
+\endhead
+Q1 & Clarity of problem/\allowbreak{}objective\\
+Q2 & Mechanism and technical description\\
+Q3 & Experimental transparency and result provenance\\
+Q4 & Hardware/\allowbreak{}software/\allowbreak{}workload detail\\
+Q5 & Baseline fairness and comparability\\
+Q6 & Defined utilization/\allowbreak{}throughput/\allowbreak{}density metrics\\
+Q7 & Latency statistic, interval, load and method\\
+Q8 & Direct multi-tenant interference conditions\\
+Q9 & Defined and appropriately tested isolation boundary\\
+Q10 & Replication detail and reported limitations\\
+\bottomrule
+\end{longtable}
+
+\begin{longtable}{p{0.15\linewidth}p{0.19\linewidth}p{0.16\linewidth}p{0.38\linewidth}}
+\toprule
+Report & Raw/\allowbreak{}applicable & Normalized & Status\\\midrule
+\endhead
+GB-P001 & 13 /\allowbreak{} 18 & 72.2\% & Independent check pending\\
+GB-P002 & 17 /\allowbreak{} 20 & 85.0\% & Independent check pending\\
+GB-P003 & 18 /\allowbreak{} 20 & 90.0\% & Independent check pending\\
+GB-P004 & 17 /\allowbreak{} 20 & 85.0\% & Independent check pending\\
+GB-P005 & 17 /\allowbreak{} 20 & 85.0\% & Independent check pending\\
+\bottomrule
+\end{longtable}
+
+Five preliminary forms are available. The older VastPipe and iGniter calibration forms are preserved; gpulets, PipeSwitch and REEF conference appraisals are fresh source-anchored additions. The 0-1 Group A scores are not copied or doubled. No independent checker or reconciled score has been invented.
+
+
+\subsection{GB-P001 appraisal detail}
+\begin{longtable}{p{0.13\linewidth}p{0.48\linewidth}p{0.28\linewidth}}
+\toprule
+Item/\allowbreak{}score & Rationale & Source anchor\\\midrule
+\endhead
+Q1 /\allowbreak{} 2 & Objective and local GPU portability question explicit & sections1,6.7\\
+Q2 /\allowbreak{} 2 & Tuned MPS quotas and CU masking described & sections6.7-6.8\\
+Q3 /\allowbreak{} 1 & GPU-specific repeats and variance unresolved in conversion & sections6.7-6.9\\
+Q4 /\allowbreak{} 1 & GPU/\allowbreak{}backend named; precise GPU loads and versions incomplete & sections6.7-6.8\\
+Q5 /\allowbreak{} 1 & Same hardware and no/\allowbreak{}default/\allowbreak{}tuned MPS; quotas incomplete & Fig14\\
+Q6 /\allowbreak{} 2 & Throughput ratios and baseline named in prose & Fig14 and prose\\
+Q7 /\allowbreak{} NA & GPU-portability extraction makes no latency claim; do not score NPU latency as GPU evidence & sections6.7-6.8\\
+Q8 /\allowbreak{} 2 & Multiple named co-located inference pairs evaluated & Figs14-16\\
+Q9 /\allowbreak{} 1 & Performance interference considered; no separate security/\allowbreak{}fault validation extracted & sections6.7-6.8\\
+Q10 /\allowbreak{} 1 & Stable-mix Q-table constraint; GPU replication settings incomplete & section6.9\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P002 appraisal detail}
+\begin{longtable}{p{0.13\linewidth}p{0.48\linewidth}p{0.28\linewidth}}
+\toprule
+Item/\allowbreak{}score & Rationale & Source anchor\\\midrule
+\endhead
+Q1 /\allowbreak{} 2 & Interference-aware inference provisioning objective explicit & abstract, section1\\
+Q2 /\allowbreak{} 2 & MPS allocation and shadow implementation described & section4.2\\
+Q3 /\allowbreak{} 2 & Model checks repeated three times with SD; metric windows specified & sections5.1-5.3\\
+Q4 /\allowbreak{} 1 & GPU/\allowbreak{}workloads/\allowbreak{}backend detailed; OS/\allowbreak{}driver unresolved & sections4.2,5.1\\
+Q5 /\allowbreak{} 1 & Adapted baselines and allocation/\allowbreak{}batch differences disclosed & section5.1\\
+Q6 /\allowbreak{} 2 & Cost, throughput, resource-allocation metrics distinguished & sections5.1,5.3\\
+Q7 /\allowbreak{} 2 & P99 windows, SLO and recovery timing explicit & section5.3 Fig17\\
+Q8 /\allowbreak{} 2 & Four co-located models and quota configuration specified & section5.2 Fig13\\
+Q9 /\allowbreak{} 1 & Performance interference measured; security/\allowbreak{}fault boundaries not tested in checked portion & sections5.2-5.3\\
+Q10 /\allowbreak{} 2 & Code, prediction limitations and PCIe caveat explicit & sections4.2,5.2\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P003 appraisal detail}
+\begin{longtable}{p{0.13\linewidth}p{0.48\linewidth}p{0.28\linewidth}}
+\toprule
+Item/\allowbreak{}score & Rationale & Source anchor\\\midrule
+\endhead
+Q1 /\allowbreak{} 2 & Clear SLO-aware co-location objective & p199 abstract; section1\\
+Q2 /\allowbreak{} 2 & MPS partitions and temporal batching described & pp201-207 sections2-4\\
+Q3 /\allowbreak{} 2 & Poisson requests; median of3 repeats; throughput/\allowbreak{}SLO procedure & pp207-208 section5.1-5.2\\
+Q4 /\allowbreak{} 2 & Full GPU/\allowbreak{}CPU/\allowbreak{}OS/\allowbreak{}driver/\allowbreak{}runtime and model tables & p207 Tables2-3\\
+Q5 /\allowbreak{} 2 & Ported SBP comparator and Nexus incompatibility justified & p207 section5.1\\
+Q6 /\allowbreak{} 2 & Maximum throughput with99\%SLO definition; system scale explicit & p208 section5.2\\
+Q7 /\allowbreak{} 2 & SLO99\% procedure; local overhead CDF population explicit & p203 Fig7; p208 section5.2\\
+Q8 /\allowbreak{} 2 & Paired model interference and scheduler interference comparison & p203 Fig7; p208 Fig14\\
+Q9 /\allowbreak{} 1 & Performance interference checked; security/\allowbreak{}fault boundary not extracted & p203 Fig7; section5.2\\
+Q10 /\allowbreak{} 1 & Prototype and appendix setup available; replication not attempted & p207 Table2; appendixA\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P004 appraisal detail}
+\begin{longtable}{p{0.13\linewidth}p{0.48\linewidth}p{0.28\linewidth}}
+\toprule
+Item/\allowbreak{}score & Rationale & Source anchor\\\midrule
+\endhead
+Q1 /\allowbreak{} 2 & Fine-grained task-switching problem and design explicit & p499 abstract; section1\\
+Q2 /\allowbreak{} 2 & Controller, memory daemon, workers and pipeline described & pp504-508 sections4-5\\
+Q3 /\allowbreak{} 2 & 100-run mean; min/\allowbreak{}max forFig6; setup described & p508 section6\\
+Q4 /\allowbreak{} 1 & Hardware/\allowbreak{}software specified; OS/\allowbreak{}kernel/\allowbreak{}driver not extracted & p508 section6\\
+Q5 /\allowbreak{} 2 & Same modified PyTorch; ready-model and swapping conditions explicit & p508 section6.1\\
+Q6 /\allowbreak{} 2 & Inference throughput and utilization denominator defined & p509 section6.1 Fig6\\
+Q7 /\allowbreak{} 2 & End-to-end overhead defined; mean and extrema identified & pp508-509 Table3\\
+Q8 /\allowbreak{} 2 & Training/\allowbreak{}inference co-location; inference metric separated & pp508-509 section6.1\\
+Q9 /\allowbreak{} 1 & Process/\allowbreak{}memory control described; security/\allowbreak{}fault testing not extracted & pp507-508 implementation\\
+Q10 /\allowbreak{} 1 & Versioned stack described; limitations documented; replication not attempted & p508 section6; section7\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P005 appraisal detail}
+\begin{longtable}{p{0.13\linewidth}p{0.48\linewidth}p{0.28\linewidth}}
+\toprule
+Item/\allowbreak{}score & Rationale & Source anchor\\\midrule
+\endhead
+Q1 /\allowbreak{} 2 & Concurrent real-time/\allowbreak{}best-effort inference objective explicit & p539 abstract; section1\\
+Q2 /\allowbreak{} 2 & Reset preemption, queues and padding implementation described & sections3-6; pp547-548\\
+Q3 /\allowbreak{} 1 & Benchmark arrivals and baseline methods detailed; repeat/\allowbreak{}variance protocol not extracted & p548 section7.1\\
+Q4 /\allowbreak{} 2 & CPU, GPU, host RAM, OS, runtime, models andclients specified & p548 section7.1 Table2\\
+Q5 /\allowbreak{} 2 & RT-only and GPUStreams/\allowbreak{}SEQ conditions; extensions disclosed & p548 section7.1; p549 section7.3\\
+Q6 /\allowbreak{} 2 & Total RT+BE throughput and denominator explicit & p549 section7.2 Fig11\\
+Q7 /\allowbreak{} 1 & End-to-end latency and load specified; request percentile not extracted & pp548-549 Table2/\allowbreak{}Fig11\\
+Q8 /\allowbreak{} 2 & MultipleRT/\allowbreak{}BE clients and multiple mixes directly tested & p548 Table2; p549 section7.2\\
+Q9 /\allowbreak{} 1 & Performance isolation tested; no extracted memory/\allowbreak{}security/\allowbreak{}fault boundary test & pp548-549 section7.2\\
+Q10 /\allowbreak{} 2 & Artifact and idempotence/\allowbreak{}platform limitations explicit & p540 repository; section8; appendixA\\
+\bottomrule
+\end{longtable}
+
+\section{Data extraction}
+The extraction register keeps each outcome attached to a report, mechanism, hardware, workload, baseline, metric, value/\allowbreak{}unit, source anchor and caveat. Study forms preserve author/\allowbreak{}year/\allowbreak{}venue, CPU/\allowbreak{}memory/\allowbreak{}software, OS/\allowbreak{}driver/\allowbreak{}runtime, model/\allowbreak{}tenant mix, load/\allowbreak{}SLO, resource use, scalability, energy, isolation, overhead, advantages, limitations and trade-offs. Rows are observations, not independent studies.
+
+
+Use not extracted for an unchecked field. Use not reported only after checking the source sufficiently to establish absence. No zero is substituted for missing data. Exact author-reported values are transcribed; no graph digitization or numerical interpolation was performed. All headline values remain assigned for independent verification.
+
+
+Metric safeguards: additional latency is not total latency; an across-model-pair CDF is not a request-latency percentile; prediction error is not speedup; total RT-plus-BE throughput is not real-time-only throughput; and performance interference does not establish security or fault containment. Multi-GPU scheduling benefits are separated from local GPU outcomes.
+
+
+Primary source identities for the checked reports: \cite{vastpipe,igniter,gpulets,pipeswitch,reef}.
+\subsection{GB-P001 VastPipe}
+\begin{longtable}{p{0.24\linewidth}p{0.65\linewidth}}
+\toprule
+Field & Source-checked entry /\allowbreak{} remaining field\\\midrule
+\endhead
+Bibliographic identity & Li-Xian Ma and Le-Ping Wang and En Shao and Rong-Yu Cao and Guang-Ming Tan; 2025; Journal of Computer Science and Technology; 10.1007/\allowbreak{}s11390-024-3773-5\\
+Mechanism & tuned/\allowbreak{}default MPS comparison; prior source check only\\
+GPU & NVIDIA A100 (existing source-check register)\\
+CPU and memory & not extracted\\
+OS /\allowbreak{} kernel & not extracted\\
+Driver /\allowbreak{} runtime & not extracted\\
+Models and workload & VGG16+GoogLeNet (existing extraction rows)\\
+Tenants & not extracted\\
+Batch /\allowbreak{} load /\allowbreak{} SLO & not extracted\\
+Baseline & No MPS /\allowbreak{} default MPS; exact quotas not extracted\\
+Throughput & not extracted\\
+Latency & not extracted\\
+Resource usage & not extracted\\
+Scalability & not extracted\\
+Energy & not extracted\\
+Reliability & not extracted\\
+Security /\allowbreak{} fault isolation & not extracted\\
+Overhead & not extracted\\
+Advantages & not extracted\\
+Limitations & not extracted\\
+Trade-offs & not extracted\\
+Source anchor & pp457-459, sections6.7-6.9, Figs14-16\\
+\bottomrule
+\end{longtable}
+
+\subsubsection*{Outcome observations}
+\begin{longtable}{p{0.24\linewidth}p{0.19\linewidth}p{0.2\linewidth}p{0.25\linewidth}}
+\toprule
+Workload /\allowbreak{} mechanism & Metric /\allowbreak{} value & Baseline /\allowbreak{} hardware & Anchor /\allowbreak{} caveat\\\midrule
+\endhead
+VGG16+GoogLeNet; MPS tuned quotas & Throughput ratio: 2.7 x & No MPS; NVIDIA A100 & pp457-458 Fig14 and accompanying prose; Batch/\allowbreak{}rate/\allowbreak{}quotas unresolved; not tail-latency evidence\\
+VGG16+GoogLeNet; MPS tuned quotas & Throughput ratio: 1.5 x & Default MPS; NVIDIA A100 & pp457-458 Fig14 and accompanying prose; Same comparison family; not a universal average\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P002 iGniter}
+\begin{longtable}{p{0.24\linewidth}p{0.65\linewidth}}
+\toprule
+Field & Source-checked entry /\allowbreak{} remaining field\\\midrule
+\endhead
+Bibliographic identity & Fei Xu and Jianian Xu and Jiabin Chen and Li Chen and Ruitao Shang and Zhi Zhou and Fangming Liu; 2023; IEEE Transactions on Parallel and Distributed Systems; 10.1109/\allowbreak{}TPDS.2022.3232715\\
+Mechanism & MPS quota allocation and shadow process recovery; prior source check\\
+GPU & NVIDIA V100 (existing source-check register)\\
+CPU and memory & not extracted\\
+OS /\allowbreak{} kernel & not extracted\\
+Driver /\allowbreak{} runtime & not extracted\\
+Models and workload & AlexNet; ResNet50; VGG19; SSD\\
+Tenants & not extracted\\
+Batch /\allowbreak{} load /\allowbreak{} SLO & batch3 for prediction check; W1 SLO10ms for recovery example\\
+Baseline & Measured latency for prediction error;10ms SLO for recovery\\
+Throughput & not extracted\\
+Latency & not extracted\\
+Resource usage & not extracted\\
+Scalability & not extracted\\
+Energy & not extracted\\
+Reliability & not extracted\\
+Security /\allowbreak{} fault isolation & not extracted\\
+Overhead & not extracted\\
+Advantages & not extracted\\
+Limitations & not extracted\\
+Trade-offs & not extracted\\
+Source anchor & pp820-824, sections4.2,5.1-5.4, Figs13-17\\
+\bottomrule
+\end{longtable}
+
+\subsubsection*{Outcome observations}
+\begin{longtable}{p{0.24\linewidth}p{0.19\linewidth}p{0.2\linewidth}p{0.25\linewidth}}
+\toprule
+Workload /\allowbreak{} mechanism & Metric /\allowbreak{} value & Baseline /\allowbreak{} hardware & Anchor /\allowbreak{} caveat\\\midrule
+\endhead
+AlexNet/\allowbreak{}ResNet50/\allowbreak{}VGG19/\allowbreak{}SSD; batch3; MPS 25\% per model & Prediction error range: 1.53-5.02 percent & Measured local latency; NVIDIA V100 & p822 section5.2 Fig13; Prediction accuracy, not utilization or latency speedup\\
+W1 with W5 and W11; MPS shadow-process recovery & Initial p99 latency: 15.6 ms & W1 latency SLO10ms; NVIDIA V100 & p823 section5.3 Fig17 prose; Transient violation precedes recovery; no unconditional guarantee\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P003 gpulets}
+\begin{longtable}{p{0.24\linewidth}p{0.65\linewidth}}
+\toprule
+Field & Source-checked entry /\allowbreak{} remaining field\\\midrule
+\endhead
+Bibliographic identity & Seungbeom Choi et al.; 2022; USENIX ATC22; not resolved\\
+Mechanism & MPS spatial partitions plus temporal batching; interference-aware gpulet scheduler\\
+GPU & RTX2080Ti11GB; two GPUs/\allowbreak{}server, two servers; local pair measurements separated\\
+CPU and memory & 20-core Xeon E5-2630v4;192GB DRAM (Table2)\\
+OS /\allowbreak{} kernel & Ubuntu18.04; kernel not extracted\\
+Driver /\allowbreak{} runtime & NVIDIA440.64; CUDA10.2; PyTorch1.10 (p207 Table2)\\
+Models and workload & GoogLeNet, LeNet, ResNet50, SSD-MobileNet, VGG16, MnasNet, MobileNetv2, DenseNet, BaseBERT (Table3)\\
+Tenants & paired local inferences; system scenarios contain several models\\
+Batch /\allowbreak{} load /\allowbreak{} SLO & Poisson inter-arrivals; model SLO5-202ms;99\% requests within SLO; median of3 runs (pp207-208)\\
+Baseline & Solo latency for local Fig7; SBP and greedy best-fit for system scheduling\\
+Throughput & not extracted\\
+Latency & Fig7 across-pair CDF threshold17.66\%; not request-p90\\
+Resource usage & not extracted\\
+Scalability & 8 logical backend servers with additional GPUs; system-level result (pp208-209)\\
+Energy & not extracted\\
+Reliability & not extracted\\
+Security /\allowbreak{} fault isolation & not extracted\\
+Overhead & 20-second reorganization interval; overlap new proxy preparation with active serving (p207 Fig11)\\
+Advantages & not extracted\\
+Limitations & Original Nexus not directly comparable; SBP ported; cross-model interference remains; no extracted security/\allowbreak{}fault test\\
+Trade-offs & Partition and batch jointly selected; throughput numbers at system scale cannot be assigned to one GPU\\
+Source anchor & pp201-203 local mechanism/\allowbreak{}Fig7; p207 Tables2-3; pp208-209 system methodology\\
+\bottomrule
+\end{longtable}
+
+\subsubsection*{Outcome observations}
+\begin{longtable}{p{0.24\linewidth}p{0.19\linewidth}p{0.2\linewidth}p{0.25\linewidth}}
+\toprule
+Workload /\allowbreak{} mechanism & Metric /\allowbreak{} value & Baseline /\allowbreak{} hardware & Anchor /\allowbreak{} caveat\\\midrule
+\endhead
+Paired model inferences; MPS spatial co-location & Distribution threshold:90\% of measured pairs: 17.66 percent overhead below threshold & Solo-running latency; RTX2080Ti11GB & p203 Fig7; Across-pair CDF, not request-p90/\allowbreak{}p99; no hostile-memory/\allowbreak{}fault test\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P004 PipeSwitch}
+\begin{longtable}{p{0.24\linewidth}p{0.65\linewidth}}
+\toprule
+Field & Source-checked entry /\allowbreak{} remaining field\\\midrule
+\endhead
+Bibliographic identity & Zhihao Bai; Zhen Zhang; Yibo Zhu; Xin Jin; 2020; USENIX OSDI20; not resolved\\
+Mechanism & Temporal task switching; pipelined model transfer; active/\allowbreak{}standby workers and shared memory daemon\\
+GPU & V10016GB PCIe3x16; T416GB PCIe3x8\\
+CPU and memory & V100 instance:8vCPU Xeon E5-2686v4/\allowbreak{}61GB; T4 instance:8vCPU Platinum8259CL/\allowbreak{}32GB (p508)\\
+OS /\allowbreak{} kernel & not extracted\\
+Driver /\allowbreak{} runtime & CUDA10.1; PyTorch1.3.0; torchvision0.4.2; scipy1.3.2; driver not extracted\\
+Models and workload & ResNet152; Inception\_v3; Bert\_base\\
+Tenants & one training task preempted for one inference task; separable inference latency\\
+Batch /\allowbreak{} load /\allowbreak{} SLO & training32; inference8;100-run averages; Fig6 reports minimum/\allowbreak{}maximum (p508)\\
+Baseline & Ready model; stop-and-start; MPS using unified memory\\
+Throughput & not extracted\\
+Latency & Additional total latency versus ready model; Table3; not p99\\
+Resource usage & not extracted\\
+Scalability & not extracted\\
+Energy & not extracted\\
+Reliability & not extracted\\
+Security /\allowbreak{} fault isolation & not extracted\\
+Overhead & Table3 total extra latency; Table4 first-layer startup overhead; kept separate\\
+Advantages & Reduced switching overhead for checked workloads; see extraction.csv\\
+Limitations & Mixed training/\allowbreak{}inference applicability; MPS benchmark swaps memory; modified PyTorch for all comparators; no extracted OS/\allowbreak{}driver/\allowbreak{}security/\allowbreak{}fault evidence\\
+Trade-offs & Pipelined transfers and registered resident host models require runtime integration; inference-only multi-tenant relevance needs human eligibility check\\
+Source anchor & p508 section6/\allowbreak{}6.1; p509 Tables3-4\\
+\bottomrule
+\end{longtable}
+
+\subsubsection*{Outcome observations}
+\begin{longtable}{p{0.24\linewidth}p{0.19\linewidth}p{0.2\linewidth}p{0.25\linewidth}}
+\toprule
+Workload /\allowbreak{} mechanism & Metric /\allowbreak{} value & Baseline /\allowbreak{} hardware & Anchor /\allowbreak{} caveat\\\midrule
+\endhead
+ResNet152 inference batch8 + training batch32; Temporal switching & Additional end-to-end latency: 6.01 ms & Ready-model latency subtracted; MPS overhead307.02ms; NVIDIA V10016GB & p509 Table3; setup p508 section6; Mean100 runs; overhead, not total latency or p99; MPS uses unified-memory swapping\\
+ResNet152 inference batch8 + training batch32; NVIDIA MPS with unified-memory swapping & Additional end-to-end latency: 307.02 ms & Ready-model latency subtracted; NVIDIA V10016GB & p509 Table3; setup p508 section6; Training task occupies GPU memory and continues. Baseline condition matters; not a universal MPS comparison.\\
+Inception\_v3 inference batch8 + training batch32; Temporal switching & Additional end-to-end latency: 5.40 ms & Ready-model latency subtracted; NVIDIA V10016GB & p509 Table3; setup p508 section6; Mean of100 runs; overhead not total latency or tail statistic; mixed training/\allowbreak{}inference workload.\\
+Inception\_v3 inference batch8 + training batch32; NVIDIA MPS with unified-memory swapping & Additional end-to-end latency: 232.25 ms & Ready-model latency subtracted; NVIDIA V10016GB & p509 Table3; setup p508 section6; Training task occupies GPU memory and continues. Baseline condition matters; not a universal MPS comparison.\\
+Bert\_base inference batch8 + training batch32; Temporal switching & Additional end-to-end latency: 10.27 ms & Ready-model latency subtracted; NVIDIA V10016GB & p509 Table3; setup p508 section6; Mean of100 runs; overhead not total latency or tail statistic; mixed training/\allowbreak{}inference workload.\\
+Bert\_base inference batch8 + training batch32; NVIDIA MPS with unified-memory swapping & Additional end-to-end latency: 204.52 ms & Ready-model latency subtracted; NVIDIA V10016GB & p509 Table3; setup p508 section6; Training task occupies GPU memory and continues. Baseline condition matters; not a universal MPS comparison.\\
+ResNet152 inference batch8 + training batch32; Temporal switching & Additional end-to-end latency: 5.57 ms & Ready-model latency subtracted; NVIDIA T416GB & p509 Table3; setup p508 section6; Mean of100 runs; overhead not total latency or tail statistic; mixed training/\allowbreak{}inference workload.\\
+ResNet152 inference batch8 + training batch32; NVIDIA MPS with unified-memory swapping & Additional end-to-end latency: 259.20 ms & Ready-model latency subtracted; NVIDIA T416GB & p509 Table3; setup p508 section6; Training task occupies GPU memory and continues. Baseline condition matters; not a universal MPS comparison.\\
+Inception\_v3 inference batch8 + training batch32; Temporal switching & Additional end-to-end latency: 7.66 ms & Ready-model latency subtracted; NVIDIA T416GB & p509 Table3; setup p508 section6; Mean of100 runs; overhead not total latency or tail statistic; mixed training/\allowbreak{}inference workload.\\
+Inception\_v3 inference batch8 + training batch32; NVIDIA MPS with unified-memory swapping & Additional end-to-end latency: 193.05 ms & Ready-model latency subtracted; NVIDIA T416GB & p509 Table3; setup p508 section6; Training task occupies GPU memory and continues. Baseline condition matters; not a universal MPS comparison.\\
+Bert\_base inference batch8 + training batch32; Temporal switching & Additional end-to-end latency: 34.56 ms & Ready-model latency subtracted; NVIDIA T416GB & p509 Table3; setup p508 section6; Mean of100 runs; overhead not total latency or tail statistic; mixed training/\allowbreak{}inference workload.\\
+Bert\_base inference batch8 + training batch32; NVIDIA MPS with unified-memory swapping & Additional end-to-end latency: 338.25 ms & Ready-model latency subtracted; NVIDIA T416GB & p509 Table3; setup p508 section6; Training task occupies GPU memory and continues. Baseline condition matters; not a universal MPS comparison.\\
+\bottomrule
+\end{longtable}
+
+\subsection{GB-P005 REEF conference}
+\begin{longtable}{p{0.24\linewidth}p{0.65\linewidth}}
+\toprule
+Field & Source-checked entry /\allowbreak{} remaining field\\\midrule
+\endhead
+Bibliographic identity & Mingcong Han; Hanze Zhang; Rong Chen; Haibo Chen; 2022; USENIX OSDI22; not resolved\\
+Mechanism & Reset-based preemption; idempotent inference kernels; dynamic kernel padding; runtime/\allowbreak{}driver changes\\
+GPU & AMD Radeon Instinct MI50:60CUs/\allowbreak{}16GB; REEF-N extension NVIDIA V100\\
+CPU and memory & Intel Corei7-10700:8cores;16GB host DRAM (p548)\\
+OS /\allowbreak{} kernel & Ubuntu18.04; kernel not extracted\\
+Driver /\allowbreak{} runtime & ROCm4.3.0; ApacheTVM0.8.0; NVIDIA extension CUDA10.2\\
+Models and workload & ResNet152; DenseNet201; VGG19; Inceptionv3; DistilBERT\\
+Tenants & DISB A/\allowbreak{}B:1RT+1BE; C:1RT+5BE; D/\allowbreak{}E:5RT+5BE\\
+Batch /\allowbreak{} load /\allowbreak{} SLO & Table2 RT100/\allowbreak{}220/\allowbreak{}100/\allowbreak{}20/\allowbreak{}20req/\allowbreak{}s; D uniform, E Poisson; BE closed-loop; batch not extracted\\
+Baseline & RT-Only; SEQ; GPUStreams; separate wait-based preemption microbenchmark\\
+Throughput & RT+BE total normalized to RT-Only; not RT-only throughput\\
+Latency & RT end-to-end overhead below2\% in REAL; no request percentile extracted\\
+Resource usage & not extracted\\
+Scalability & not extracted\\
+Energy & not extracted\\
+Reliability & not extracted\\
+Security /\allowbreak{} fault isolation & not extracted\\
+Overhead & not extracted\\
+Advantages & Checked workloads retain near RT-only latency while using idle capacity for BE inference\\
+Limitations & Reset requires idempotent kernels; model-pair padding incompatibilities; conference/\allowbreak{}journal report linkage open; not security/\allowbreak{}fault isolation\\
+Trade-offs & DISB D/\allowbreak{}E throughput about25\% below GPUStreams while limiting RT latency; implementation differs on closed-source GPUs\\
+Source anchor & p548 section7.1 Table2; p549 section7.2 Fig11; section8 idempotence limitation\\
+\bottomrule
+\end{longtable}
+
+\subsubsection*{Outcome observations}
+\begin{longtable}{p{0.24\linewidth}p{0.19\linewidth}p{0.2\linewidth}p{0.25\linewidth}}
+\toprule
+Workload /\allowbreak{} mechanism & Metric /\allowbreak{} value & Baseline /\allowbreak{} hardware & Anchor /\allowbreak{} caveat\\\midrule
+\endhead
+DISB A:1 VGG19 RT client100req/\allowbreak{}s uniform +1 ResNet152 BE; Reset-based kernel preemption + dynamic kernel padding & Overall throughput ratio: 1.60 x & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; Includes RT and BE requests; RT-only reference dedicates GPU to RT tasks.\\
+DISB A:1 VGG19 RT client100req/\allowbreak{}s uniform +1 ResNet152 BE; Reset-based kernel preemption + dynamic kernel padding & RT end-to-end latency overhead: 0.5 percent & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; Described as negligible; not a p99 value or worst-case guarantee.\\
+DISB B:1 VGG19 RT client220req/\allowbreak{}s uniform +1 ResNet152 BE; Reset-based kernel preemption + dynamic kernel padding & Overall throughput ratio: 1.14 x & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; High RT load; differs from low-load DISB A.\\
+DISB B:1 VGG19 RT client220req/\allowbreak{}s uniform +1 ResNet152 BE; Reset-based kernel preemption + dynamic kernel padding & RT end-to-end latency overhead: 1 percent & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; About60 microseconds in prose; not a tail percentile.\\
+DISB C-E:multiple BE clients; Reset-based kernel preemption + dynamic kernel padding & RT end-to-end latency overhead: <1.5 percent & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; Authors also state0.1ms; keep inequality and scenario range.\\
+DISB D:5 RT model clients20req/\allowbreak{}s uniform +5 BE model clients; Reset-based kernel preemption + dynamic kernel padding & Overall throughput ratio: 3.00 x & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; About25\% lower throughput than GPUStreams; latency trade-off preserved.\\
+DISB E:5 RT model clients20req/\allowbreak{}s Poisson +5 BE model clients; Reset-based kernel preemption + dynamic kernel padding & Overall throughput ratio: 2.96 x & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; About25\% lower throughput than GPUStreams; latency trade-off preserved.\\
+Apollo REAL trace about43 RTreq/\allowbreak{}s +5 BE model clients; Reset-based kernel preemption + dynamic kernel padding & Overall throughput ratio: 7.7 x & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; Real-world trace mapped to representative DNN models; not production deployment measurement.\\
+Apollo REAL trace about43 RTreq/\allowbreak{}s +5 BE model clients; Reset-based kernel preemption + dynamic kernel padding & RT end-to-end latency overhead: <2 percent & RT-Only dedicated GPU; AMD MI5016GB & p549 section7.2 Fig11 prose; setup p548 Table2; Not a p99 latency claim or security/\allowbreak{}fault isolation test.\\
+\bottomrule
+\end{longtable}
+
+\appendix\section{Exact attributed shared executed searches}
+\subsection{IEEE-MPS}
+Database: IEEE Xplore. Date: 2026-10-11; recorded UTC time: not\_recorded. Originating operator: AI-CODEX. Collection: Xplore all metadata.
+
+
+{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND (MPS OR "multi-process service")\par}
+Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/\allowbreak{}language/\allowbreak{}type checked during screening. Displayed hits: 25. Captured occurrences: 25. Method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
+
+
+\subsection{IEEE-MIG}
+Database: IEEE Xplore. Date: 2026-10-11; recorded UTC time: not\_recorded. Originating operator: AI-CODEX. Collection: Xplore all metadata.
+
+
+{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND (MIG OR "multi-instance GPU" OR "GPU partitioning")\par}
+Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/\allowbreak{}language/\allowbreak{}type checked during screening. Displayed hits: 23. Captured occurrences: 23. Method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
+
+
+\subsection{IEEE-TEMPORAL}
+Database: IEEE Xplore. Date: 2026-10-11; recorded UTC time: not\_recorded. Originating operator: AI-CODEX. Collection: Xplore all metadata.
+
+
+{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("time slicing" OR "time sharing" OR "context switching")\par}
+Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/\allowbreak{}language/\allowbreak{}type checked during screening. Displayed hits: 45. Captured occurrences: 45. Method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
+
+
+\subsection{IEEE-API}
+Database: IEEE Xplore. Date: 2026-10-11; recorded UTC time: not\_recorded. Originating operator: AI-CODEX. Collection: Xplore all metadata.
+
+
+{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("API remoting" OR "CUDA remoting" OR "GPU proxy" OR "GPU virtualization")\par}
+Field: All metadata (Search by All); not field-qualified Command Search. Filters: Publication years2020-2026; date/\allowbreak{}language/\allowbreak{}type checked during screening. Displayed hits: 9. Captured occurrences: 9. Method: Public rendered-result metadata; all pages captured; publisher CSV requires personal sign-in; BibTeX export timed out.
+
+
+\subsection{SPR-MASTER}
+Database: Springer Nature Link. Date: 2026-10-11; recorded UTC time: not\_recorded. Originating operator: AI-CODEX. Collection: Springer Nature Link.
+
+
+{\small\ttfamily\raggedright (GPU OR "graphics processing unit") AND (inference OR "model serving" OR "deep learning" OR DNN OR LLM) AND ("time slicing" OR "time sharing" OR "context switching" OR MPS OR "multi-process service" OR MIG OR "multi-instance GPU" OR "GPU partitioning" OR "API remoting" OR "CUDA remoting" OR "GPU proxy" OR "GPU virtualization")\par}
+Field: General search/\allowbreak{}full-text indexed collection. Filters: English; Research article OR Conference paper;2020-2026; manual cutoff. Displayed hits: 587. Captured occurrences: 587. Method: Rendered metadata from all30 pages; publisher CSV routes to sign-in.
+
+
+\section{Validation and continuation}
+Register snapshot generated 2026-10-15T22:22:20+00:00. Original 81-file import hashes and submitted protocol bytes pass consistency checks. Final included-study count remains pending. First-recommendation coverage is 100.0\%; this is not final screening completion.
+
+
+\begin{longtable}{p{0.16\linewidth}p{0.74\linewidth}}
+\toprule
+Assigned person & Exact next action\\\midrule
+\endhead
+Eshaal & Reuse existing ACM human work; supply record-keyed decisions. Reconcile recovered query log to79 numbered exports and explain1600/\allowbreak{}1603 claims against829+1000 recovered entries. Check assigned uncertain records and the exclusion sample.\\
+Rameen & Independently verify all5 priority reports,26 outcome rows and50 Q1-Q10 items using exact anchors. Preserve own scores/\allowbreak{}votes before comparing. Resolve mixed-workload eligibility and preferred REEF report.\\
+Raazia & Import verified human decisions, reconcile3 identity proposals and3 companion relationships, resolve5 remaining paper pairs, then expand full-text eligibility/\allowbreak{}QA/\allowbreak{}extraction beyond the5 bounded reports.\\
+\bottomrule
+\end{longtable}
+
+Planning readiness is approximately 50-55\%, with substantial uncertainty. Collection, a complete preliminary pass and traceable first-review evidence are established; independent validation, broader full-text extraction, search reconciliation and final PRISMA remain open. This is not a verified completion percentage or marks prediction. Later CEP taxonomy, synthesis, comparisons and engineering recommendation are reserved for Cycle 2.
+
+
+\clearpage\bibliographystyle{ieeetr}\bibliography{references}\end{document}
