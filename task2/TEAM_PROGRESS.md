@@ -3,7 +3,7 @@
 ## Completed or saved
 
 - Submitted Task 1 protocol preserved with editable LaTeX and bibliography.
-- Group B repository organized; 43 project files available on draft PR #1 for review.
+- Group B repository organized; protocol, logs, source metadata, pilot evidence and report scaffold available on draft PR #1 for review.
 - Sixteen planned searches prepared for IEEE, ACM, ScienceDirect and Springer.
 - One hundred incoming ScienceDirect RIS occurrences preserved unchanged; ten repeated DOI/title keys flagged.
 - Twenty-one Group A paper leads recorded with their origin and no borrowed inclusion decisions.
