@@ -27,4 +27,14 @@ ScienceDirect is deferred by user instruction. Its earlier 100 RIS occurrences r
 
 Next: recover ACM provenance; resolve version pairs; finish abstracts and genuinely independent votes; complete retrieval/eligibility, QA and extraction; complete citation chasing; reconcile final PRISMA; revise the submission through Section 14. Final CEP Sections 15-22 still need taxonomy, fair comparisons, trade-offs, conflicts, RQ synthesis, recommendations, gaps and validity.
 
-35.6% measures first-review coverage, not overall Task 2 completion or marks. Final inclusion is not established and a 50% overall completion claim is not verified. Continue on the existing feature branch and draft PR; do not auto-merge.
+35.6% measures first-review coverage, not overall Task 2 completion or marks. Final inclusion is not established and a 50% overall completion claim is not verified. The user explicitly authorized publication and merge of the recovered checkpoints into main on 15 October 2026. GitHub PR #2 preserves the recovery route.
+
+## Recovery audit additions
+
+- New uploaded guideline, Group A checklist/workbook and screenshot preserved under archive/received-2026-10-15 with SHA-256 manifest.
+- Instructor headings 1-14 crosswalk: task2/HEADING_14_AUDIT.csv.
+- Full study-level extraction scaffold: evidence/study_extraction_form.csv. Fields not yet read are not_extracted.
+- Count checks pass: evidence/checkpoint_validation.json. 485 occurrence rows have no abstract.
+- Version audit: 30 of 41 pairs are whole-container pairs; 11 are paper identity/version pairs. No additional duplicates removed.
+- Approximate planning readiness: 40%, not a verified completion measure; first-review coverage remains 35.6%.
+- Simple team handoff: task2/COMPLETION_AND_TEAM.md.

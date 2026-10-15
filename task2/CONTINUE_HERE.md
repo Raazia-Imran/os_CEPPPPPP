@@ -33,3 +33,7 @@ Continue the 1,447 records without first-review recommendations; recover ACM sea
 ## What remains after Section 14
 
 The final CEP additionally needs taxonomy, comparable evidence matrices, engineering trade-offs, conflicting findings, RQ answers, conditional recommendations, research gaps and threats to validity. The current checkpoint is useful work toward Task 2, not the final 20-30 page CEP.
+
+## Recovery continuation
+
+See HEADING_14_AUDIT.csv and COMPLETION_AND_TEAM.md. Version-review audit separates 30 container pairs from 11 paper-version pairs; no counts changed. The expanded study form is evidence/study_extraction_form.csv. User requests checkpoints to be committed/published at least every seven minutes during active work and merged into main. Do not describe local-only commits as pushed.
