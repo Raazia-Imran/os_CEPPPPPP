@@ -1,3 +1,5 @@
+> Historical checkpoint. Current counts and builds are in STATUS.md and task2/CONTINUE_HERE.md.
+
 # Deadline plan: finish traceable evidence, then freeze the report
 
 Cycle 4 can proceed for accessible, assessed candidates while Cycle 3 remains open. Do not declare Cycle 3 finished or infer a percentage of final completion from preliminary calls. The incoming handoff has 1,831 separate AI opinions, not independent human validation; 50 overlapping calls disagree.

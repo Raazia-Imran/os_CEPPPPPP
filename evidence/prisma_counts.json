@@ -14,9 +14,9 @@
   "possible_version_pairs": 41,
   "triage": {
     "uncertain": 251,
-    "high": 183,
-    "low": 1813,
-    "not_prioritized_new_import": 1831
+    "high": 252,
+    "low": 1981,
+    "not_prioritized": 1591
   },
   "final_screened": null,
   "final_included": null,
@@ -30,7 +30,7 @@
     "identity_verified_linkage_proposed": 3,
     "unresolved_paper_identity": 5
   },
-  "proposed_duplicate_links_applied": false,
+  "proposed_duplicate_links_applied": true,
   "four_database_completeness": "not established; supplied exports from four platforms represented",
   "new_sciencedirect_occurrences": 1898,
   "possible_version_pairs_note": "41 legacy pairs retained; new pairs listed separately in new_version_candidates.csv",
@@ -38,5 +38,22 @@
   "cycle3_provisionally_eligible_reports": 13,
   "cycle3_note": "Bounded first-review assessments; source-version uncertainty is not provisional eligibility; no final PRISMA completion inferred",
   "cycle5_new_identity_links": 3,
-  "duplicate_note": "111 earlier exact links plus3 publisher-verified identity links; original export occurrences unchanged"
+  "duplicate_note": "111 earlier exact links plus3 publisher-verified identity links; original export occurrences unchanged",
+  "historical_import_triage_snapshot": {
+    "uncertain": 251,
+    "high": 183,
+    "low": 1813,
+    "not_prioritized_new_import": 1831
+  },
+  "historical_version_pair_dispositions": {
+    "companion_report_relationship_proposed": 3,
+    "container_pair_scope_classified": 30,
+    "identity_verified_linkage_proposed": 3,
+    "unresolved_paper_identity": 5
+  },
+  "version_pair_dispositions_note": "Legacy 41-pair audit snapshot retained; three verified identity proposals are now applied. Other proposals remain unapplied.",
+  "applied_proposed_identity_links": 3,
+  "assessed_fulltext_exclusions": 2,
+  "complete_fulltext_exclusion_census": null,
+  "unassessed_canonical_candidate_records": 2617
 }

@@ -14,5 +14,5 @@
   "duplicate_links_changed": true,
   "independent_human_votes_created": false,
   "final_included_studies": null,
-  "limitations": "Selected source sections assessed; no complete systematic retrieval census. Three publisher-verified identity links applied; other version/companion proposals remain unapplied. Existing PDF historical."
+  "limitations": "Selected source sections assessed; no complete retrieval census or final included-study count. Three verified identity links applied; other version/companion proposals remain unapplied. Current PDFs and workbooks are verified separately in cycle5_package_validation.json."
 }

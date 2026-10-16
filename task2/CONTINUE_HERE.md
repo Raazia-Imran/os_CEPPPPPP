@@ -2,7 +2,7 @@
 
 Read STATUS.md, task2/CHECKLIST.md, task2/HEADING_14_AUDIT.csv, evidence/protocol_amendments.md and current validation receipts. Instructor guideline and unchanged Task 1 control. Do not rerun legacy import/screening initialization scripts.
 
-1. Verify remote main before editing. Latest recorded source checkpoint: 4882fa2af376fe994217841f03bbecde3456418c. Preserve newer valid work.
+1. Verify remote main before editing. Latest recorded artifact predecessor: af1c8965e7798aaf9456c2063d872713d6bf428a; later package/receipt publication may follow. Preserve newer valid work.
 2. Resume `evidence/source_assessment_queue.csv` (2,617 unassessed canonical retain/uncertain records). This queue is not an eligible-study list. Use accessible original abstract/full text, exact IC/EC, source/version, actual assessor/date and decision status. Existing opinions remain intact.
 3. Preserve two source-based EC2 exclusions and all 15 QA/extraction forms. Resolve ParvaGPU final source, REEF companion identity and QA page-mapping/N/A follow-ups. Apply only verified duplicate identity links; retain record/report/study distinctions.
 4. For each newly assessed eligible candidate append IC1–IC6, ten Q1–Q10 items and full extraction with conditions, units, baselines and exact anchors. No quota-filling and no invented independent reviewer.

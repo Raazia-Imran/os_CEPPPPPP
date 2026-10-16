@@ -9,9 +9,9 @@
   "appraised_reports": 15,
   "quality_item_rows": 150,
   "snowballing_events": 10,
-  "final_decisions": "pending",
+  "final_decisions": "Two source-assessed AI EC2 exclusions; remaining final screening/inclusion pending",
   "final_included_studies": "pending",
-  "updated_at_utc": "2026-10-16T15:37:20+00:00",
+  "updated_at_utc": "2026-10-16T15:57:51+00:00",
   "cycle1_new_recommendations": 1447,
   "human_candidate_records": 1137,
   "exclusion_sample_records": 127,
@@ -23,5 +23,10 @@
   "cycle2_new_canonical_records": 1831,
   "cycle3_new_recommendations": 240,
   "cycle3_new_report_assessments": 4,
-  "cycle3_status": "Batches1-2 saved; remaining screening and independent validation open"
+  "cycle3_status": "Batches1-2 saved; remaining screening and independent validation open",
+  "current_report_status": "Current 28-page evidence checkpoint; final selection/PRISMA pending",
+  "current_synthesis_rows": 105,
+  "assessed_fulltext_exclusions": 2,
+  "unassessed_canonical_candidate_records": 2617,
+  "human_candidate_records_note": "Historical human-return queue size; not the active candidate or completed-review count"
 }

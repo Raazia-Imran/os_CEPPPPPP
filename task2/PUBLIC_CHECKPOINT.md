@@ -1,3 +1,5 @@
+> Historical checkpoint. Current counts and builds are in STATUS.md and task2/CONTINUE_HERE.md.
+
 # Cycle 3 update
 
 Current source coverage:9 provisional report forms,90 Q1-Q10 rows and34 outcomes. First recommendations2487;1591 remain pending. Counts4189 occurrences,111 duplicate links,4078 canonical records unchanged. The workbook is refreshed to43 sheets; both copies passed count, formula-cache and ZIP checks. Read CYCLE3_PROGRESS.md and cycle3_validation.json for the current checkpoint. The abstract-bearing workbook remains in the existing private Drive file; the public version omits abstract text.

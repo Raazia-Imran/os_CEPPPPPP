@@ -10,7 +10,7 @@
 | QA | 15 forms;150 Q1–Q10 items;all totals derived;3 justified provisional N/A | Page/calibration/source gaps in QA follow-up;no human validation claimed |
 | Extraction | 15 forms;45 reported outcomes;2 calculations separate | Expand to every eligible report and check missing fields |
 | Synthesis | 105 source-linked rows;taxonomy/comparisons/trade-offs/RQs/recommendations | Reassess against final eligible set |
-| Current artifacts | Report,compact workbook,separate QA/extraction tables and logs | Final artifact publication/Drive receipt;selection remains interim |
+| Current artifacts | Report,compact workbook,separate QA/extraction tables and logs | Current artifacts and formulas verified;selection remains interim |
 | Final inclusion/PRISMA | Explicitly pending | Actual completed selection and study-level mapping |
 
 Read task2/submission/README.md for navigation. Historical handoffs remain under archive/cycle5-prior-handoffs.

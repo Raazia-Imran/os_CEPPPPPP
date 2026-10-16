@@ -62,6 +62,8 @@ for label,path in workbook_paths:
    assert float(b['Study summary']['M'+str(i)])==float(x['applicable_max'])
  else:
   assert int(b['Summary']['B11'])==17 and int(b['Summary']['B13'])==15
+  assert any('4189 occurrences minus114' in str(v) for v in b['Requirements audit'].values()),label
+  assert any('4075 initial triage' in str(v) for v in b['Requirements audit'].values()),label
   abstract_col=next(k[:-1] for k,v in b['Records'].items() if k.endswith('1') and k[:-1].isalpha() and v=='abstract')
   abstracts=sum(k.startswith(abstract_col) and k[len(abstract_col):].isdigit() and int(k[len(abstract_col):])>1 for k in b['Records'])
   assert abstracts==(3658 if label=='private_detailed' else 0),(label,abstracts)

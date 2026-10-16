@@ -1,0 +1,74 @@
+{
+  "occurrences": 4189,
+  "applied_duplicate_links": 114,
+  "canonical_records": 4075,
+  "initial_exclusion_proposals": 1441,
+  "initial_retain_or_uncertain": 2634,
+  "source_assessed_reports": 17,
+  "assessed_EC2_exclusions": 2,
+  "QA_extraction_forms": 15,
+  "QA_items": 150,
+  "reported_outcomes": 45,
+  "separate_calculations": 2,
+  "unassessed_canonical_candidate_queue": 2617,
+  "independent_human_votes": 0,
+  "final_included_studies": null,
+  "baseline_preservation": {
+    "quality.csv": {
+      "rows": 90,
+      "all_original_cells_preserved": true
+    },
+    "extraction.csv": {
+      "rows": 34,
+      "all_original_cells_preserved": true
+    },
+    "study_extraction_form.csv": {
+      "rows": 9,
+      "all_original_cells_preserved": true
+    }
+  },
+  "submitted_protocol_preserved": true,
+  "workbooks": {
+    "compact": {
+      "sheets": 13,
+      "formula_errors": 0,
+      "sha256": "3ce8e9d42efe4b7fb918ed0292872821d2b3f40764e1e984b916b746b8e4fdc6",
+      "bytes": 859088
+    },
+    "public_detailed": {
+      "sheets": 47,
+      "formula_errors": 0,
+      "sha256": "892e7c54f3a34682969f0eb5012a624b6d6e147ec504565ffc81e8c83a1f91ec",
+      "bytes": 4036256
+    },
+    "private_detailed": {
+      "sheets": 47,
+      "formula_errors": 0,
+      "sha256": "e11c7772e935a0163dd489fa98fe5d40e6c20d6fa13f13edee564a2705159d2c",
+      "bytes": 5694788
+    }
+  },
+  "pdfs": {
+    "GroupB_Review_Report.pdf": {
+      "pages": 28,
+      "sha256": "a62cbb1fe12aa0c804f247b5dcfebce91d95003fe77b223532ef503e7b125d7c",
+      "bytes": 241968
+    },
+    "GroupB_QA_Tables.pdf": {
+      "pages": 17,
+      "sha256": "ef731414fb6327dfeed3f4e0a3464755f639be4d97dce50965b9d2c4cd2e8305",
+      "bytes": 78932
+    },
+    "GroupB_Data_Extraction.pdf": {
+      "pages": 37,
+      "sha256": "5dbcfb26256be1708323a32d6f1f02e9190eb82a82515175f66822c7e808e537",
+      "bytes": 116907
+    }
+  },
+  "limits": [
+    "Automated triage is not complete verified abstract screening.",
+    "15 forms are not 15 final included studies.",
+    "Final selection and PRISMA remain pending.",
+    "Visual previews inspected for changed workbook views and all PDF pages."
+  ]
+}

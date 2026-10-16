@@ -1,0 +1,21 @@
+{
+  "artifact_predecessor_verified_main": "af1c8965e7798aaf9456c2063d872713d6bf428a",
+  "source_exclusion_checkpoint": "4882fa2af376fe994217841f03bbecde3456418c",
+  "drive_replacement": {
+    "same_existing_file": true,
+    "metadata_readback_verified": true,
+    "bytes": 5694788,
+    "modified_time": "2026-10-16T16:01:54.667Z",
+    "sha256": "e11c7772e935a0163dd489fa98fe5d40e6c20d6fa13f13edee564a2705159d2c",
+    "abstract_occurrences_preserved": 3658
+  },
+  "package": {
+    "path": "task2/submission/GroupB_Submission_Package.zip",
+    "organized_files": 42,
+    "zip_test": "PASS",
+    "all_manifest_hashes": "PASS"
+  },
+  "publication_note": "Current bundle/corrections publication follows predecessor; verify remote main. A commit cannot contain its own hash.",
+  "final_selection_complete": false,
+  "next_work": "Continue Cycle5 source eligibility,QA/extraction and study identity reconciliation; no automatic claim of final PRISMA."
+}

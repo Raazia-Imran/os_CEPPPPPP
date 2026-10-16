@@ -22,3 +22,5 @@ task2/report/main.pdf
 /task2/submission/*.toc
 /task2/submission/submission_input.json
 /task2/qa/active_views_input.json
+
+/task2/qa/requirements_update.json
