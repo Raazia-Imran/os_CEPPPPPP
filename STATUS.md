@@ -1,3 +1,7 @@
+# Cycle 4 initial QA outputs and workbook synchronized
+
+Published QA-table checkpoint: 1e75a465d922a66cca2ff0bdf17f04f6abe0d2b4. Current artifacts: 47-sheet public/private review workbooks and 35-page interim QA/extraction appendix; 9 provisional reports, 90 initial QA items, 34 outcomes. All original workbook cells/formulas preserved; all QA totals and saved caches checked. Drive workbook replacement verified. No new final eligibility or human validation. Twenty QA page mappings, two N/A calibrations, independent checks and wider source coverage remain open. Active first recommendations remain 2,487/4,078; 1,591 pending. Continue with task2/qa/CONTINUATION.md and task2/NEXT_24_HOURS.md. Final SLR report/PRISMA remain historical/pending.
+
 # Cycle 4 QA tables prepared; source checks remain open
 
 Nine assessed provisional reports have 90 Q1-Q10 rows and 34 outcomes. Derived QA matrix, totals, checklist, rationales and follow-up tasks reconcile to unchanged source registers. Twenty legacy QA items need printed PDF-page mapping; two N/A judgments require calibration; independent scoring remains pending for all reports. Incoming Claude opinions preserved separately: 1,831 rows; 50 disagreements among 240 overlaps. Active screening remains 2,487/4,078 preliminary recommendations (61.0%), with 1,591 awaiting first recommendation. See task2/qa and task2/NEXT_24_HOURS.md. Current QA/extraction appendix and workbook synchronization are being verified; final SLR PDF/PRISMA remain historical/pending.

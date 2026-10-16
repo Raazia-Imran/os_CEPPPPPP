@@ -89,4 +89,9 @@ qa_followup.csv assigns the remaining source/independent checks for every report
 
 For an independent check: hide initial score/rationale columns; open the exact source version; score each Q with a page/table/figure and your rationale; enter your name and actual date. Preserve your scores before comparing. Log disagreements as proposed corrections, then record the actual adjudicator and reconciled score. Leave final decisions pending until the review process genuinely resolves them.
 ''')
+incoming=read(R/'task2/reconciliation/claude_ai_opinions.csv')
+comparison={x['record_id']:x for x in read(R/'task2/reconciliation/ai_comparison.csv')}
+opinions=[dict(x,**{k:comparison[x['record_id']][k] for k in ['current_ai_vote','comparison','action']}) for x in incoming]
+(O/'workbook_update.json').write_text(json.dumps(dict(matrix=matrix,quality=qa,followup=followup,
+    checklist=read(O/'qa_checklist.csv'),opinions=opinions))+'\n')
 print(json.dumps(summary,indent=2))

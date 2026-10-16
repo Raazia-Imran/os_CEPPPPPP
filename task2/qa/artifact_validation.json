@@ -1,0 +1,29 @@
+{
+  "public_workbook": {
+    "sheets": 47,
+    "preserved_original_sheets": 43,
+    "original_cell_differences": 0,
+    "saved_error_cells": 0,
+    "qa_formula_totals": "matched all nine source totals",
+    "abstract_cells": 0,
+    "sha256": "6a9bbf4ff4e38ecc8471a938ac72c7dc7ad4805464a6e5a27ecd52fd8c736817"
+  },
+  "private_workbook": {
+    "sheets": 47,
+    "preserved_original_sheets": 43,
+    "original_cell_differences": 0,
+    "saved_error_cells": 0,
+    "qa_formula_totals": "matched all nine source totals",
+    "abstract_cells": 3658,
+    "sha256": "52a17f15d0574cf44728d0e14eefd95409e78ac835721054ed8ab51baafb8e63"
+  },
+  "pdf": {
+    "pages": 35,
+    "all_9_report_ids": true,
+    "all_34_outcome_ids": true,
+    "sha256": "e642d9460d185d98c183ada67d0ddfc3104828a330c020811aed46974b3abc28"
+  },
+  "recalculation": "Artifact Tool test: changed first score 2 to 1, total decreased by 1, original restored and totals rechecked",
+  "native_excel_opening": "not performed",
+  "independent_human_checks_added": 0
+}
