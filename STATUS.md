@@ -1,3 +1,9 @@
+# Cycle 2 workbook and handoff refresh complete
+
+Current verified counts: 4,189 occurrences, 111 duplicate links, 4,078 canonical records; 2,247 preserved preliminary recommendations and 1,831 awaiting first recommendation. The 33-sheet workbook and seven-page detailed team guide are refreshed. QA remains 50 items and extraction 26 outcomes across five reports. Final decisions remain pending. Report PDF remains historical. Read task2/PUBLIC_CHECKPOINT.md for public versus private source preservation and evidence gaps. Cycle 1 recovery/audit completed; Cycle 2 import/workbook preparation completed with gaps; Cycle 3 not started.
+
+## Preserved published recovery audit
+
 # Latest: Cycle 1 recovery audit, 16 October 2026
 
 Inspected main cb8251a. Published cd3f1e0/014b14c confirmed. Counts independently reconcile: 2291 occurrences, 44 applied links, 2247 canonical; 1181 preliminary exclude and 1066 retain/uncertain. All final decisions pending. Published PDF is 24 pages and workbook has 18 sheets; the recent 19-sheet checklist statement is incorrect. Local recovery 1aa970c has 38-page/27-sheet artifacts and cycle2_validation.json, still unpublished. Preserve both checkpoints. See task2/recovery_audit/README.md and receipt.json for the 14-heading crosswalk, file checks and unresolved work. No research decisions changed. Next cycle: queries/imports/four-database audit; not started.

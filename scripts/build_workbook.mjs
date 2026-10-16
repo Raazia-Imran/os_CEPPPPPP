@@ -3,6 +3,9 @@ import { Workbook, SpreadsheetFile } from '@oai/artifact-tool';
 const root=process.env.OS_CEP_ROOT;
 if(!root)throw new Error('Set OS_CEP_ROOT to the absolute repository root');
 const d=JSON.parse(await fs.readFile(root+'/task2/tracker/workbook_input.json','utf8'));
+if(process.env.OS_CEP_PUBLIC_VIEW==='1'){
+ for(const row of d.sheets.Records)row.abstract='';
+}
 const wb=Workbook.create();const summary=wb.worksheets.add('Summary');
 function col(n){let s='';for(n++;n;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;}
 summary.showGridLines=false;
@@ -20,7 +23,7 @@ summary.getRange('A5:C16').values=[
 ['Checked outcome rows',d.progress.new_outcome_rows,'Independent numerical checks pending'],
 ['First-review QA reports',d.progress.appraised_reports,'Group B 0-2 rubric; no copied scores'],
 ['Original possible version pairs',41,'See Version audit for current dispositions'],
-['ScienceDirect','Deferred','Earlier RIS originals preserved outside active counts'],
+['ScienceDirect',1898,'21 supplied RIS files; completeness unresolved'],
 ['ACM run mapping','Partly recovered','Search log recovered; 79-file mapping and counts unresolved']];
 summary.getRange('A19:C19').values=[['First-review quality forms','Raw score','Applicable maximum']];
 summary.getRange('A20:A24').values=[['GB-P001 VastPipe'],['GB-P002 iGniter'],['GB-P003 gpulets'],['GB-P004 PipeSwitch'],['GB-P005 REEF conference']];
@@ -78,13 +81,15 @@ summary.getRange('A5:C16').format.wrapText=true;
 summary.getRange('A20:D24').format.rowHeight=28;
 summary.getRange('A26:C26').values=[['Cycle 2 analysis',41,'Derived statements; final validation pending']];
 summary.getRange('A27:C27').values=[['Final included studies','Pending','No new primary outcomes or human votes in Cycle 2']];
+summary.getRange('A28:C29').values=[['Awaiting first recommendation',d.progress.unreviewed,'New imports; no Cycle 3 screening performed'],['Current report PDF','Historical snapshot','Predates import reconciliation; rebuild before submission']];
+summary.getRange('A28:C29').format.wrapText=true;summary.getRange('A28:C29').format.rowHeight=42;
 summary.getRange('A26:C27').format.wrapText=true;summary.getRange('A26:C27').format.rowHeight=36;
 wb.recalculate();
 console.log((await wb.inspect({kind:'table',range:'Summary!A4:D24',include:'values,formulas',tableMaxRows:24,tableMaxCols:4,maxChars:4500})).ndjson);
 console.log((await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#NUM!',options:{useRegex:true,maxResults:10},summary:'formula errors'})).ndjson);
 for(const name of ['Summary',...Object.keys(d.sheets)]){
- const preview=await wb.render({sheetName:name,range:name==='Summary'?'A2:D27':'A1:D5',scale:1.2,format:'png'});
+ const preview=await wb.render({sheetName:name,range:name==='Summary'?'A2:D29':'A1:D5',scale:1.2,format:'png'});
  await fs.writeFile((process.env.OS_CEP_PREVIEW_DIR || '/tmp/oscep-wb')+'/'+name.replaceAll(' ','_')+'.png',new Uint8Array(await preview.arrayBuffer()));
 }
-const out=await SpreadsheetFile.exportXlsx(wb);await out.save(root+'/task2/tracker/review_workbook.xlsx');
+const out=await SpreadsheetFile.exportXlsx(wb);await out.save(process.env.OS_CEP_OUTPUT || root+'/task2/tracker/review_workbook.xlsx');
 console.log('Workbook exported');

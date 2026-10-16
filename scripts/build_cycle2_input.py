@@ -11,6 +11,10 @@ def read(name):
         return list(csv.DictReader(stream))
 
 paths = [
+    ("Query audit", "database_query_audit.csv"), ("Export audit", "query_export_audit.csv"),
+    ("Date audit", "publication_date_audit.csv"), ("New import queue", "new_import_queue.csv"), ("New version proposals", "new_version_candidates.csv"),
+    ("Requirements audit", "../task2/HEADING_14_AUDIT.csv"),
+
     ('Screening', 'screening.csv'), ('Records', 'records.csv'),
     ('Duplicates', 'duplicates.csv'), ('Version checks', 'possible_versions.csv'),
     ('Source checks', 'fulltext_checks.csv'), ('Quality', 'quality.csv'),

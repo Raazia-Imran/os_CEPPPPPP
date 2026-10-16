@@ -1,3 +1,7 @@
+# Current Cycle 2 checkpoint
+
+Database import audit and 33-sheet workbook refresh completed with documented evidence gaps. 4189 occurrences;111 duplicate links;4078 canonical records;1831 await first recommendation. Detailed guide created; final decisions and report regeneration pending. See PUBLIC_CHECKPOINT.md. Cycle 3 not started.
+
 # Recovery audit Cycle 1
 
 Completed: 14-heading requirements/table/diagram/evidence crosswalk; dynamic register counts; 81 raw hashes; submitted-protocol integrity; published PDF/workbook opening; remote versus local recovery comparison. Published workbook has 18 sheets (not the recent checklist's 19). Missing: publish/synchronize the newer artifacts, reproducible fourth-database coverage, independent screening/QA/extraction and final inclusion/PRISMA. See recovery_audit/README.md. Cycle 2 and Cycle 3 have not started in this audit.

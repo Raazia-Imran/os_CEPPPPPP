@@ -1,9 +1,9 @@
 {
   "first_reviewer_records": 2247,
-  "first_reviewer_fraction": 1.0,
+  "first_reviewer_fraction": 0.5510053948013732,
   "exclude_recommendations": 1181,
   "retained_or_uncertain": 1066,
-  "unreviewed": 0,
+  "unreviewed": 1831,
   "source_checked_reports": 5,
   "new_outcome_rows": 26,
   "appraised_reports": 5,
@@ -17,6 +17,8 @@
   "exclusion_sample_records": 127,
   "cycle2_records_screened": 0,
   "cycle2_analysis_statements": 41,
-  "cycle2_report_status": "Interim guideline1-22 draft; compilation and visual checks in progress",
-  "cycle2_updated_at_utc": "2026-10-16T04:57:25+00:00"
+  "cycle2_report_status": "Existing PDF predates database reconciliation; rebuild required before submission",
+  "cycle2_updated_at_utc": "2026-10-16T06:15:14+00:00",
+  "cycle2_new_import_occurrences": 1898,
+  "cycle2_new_canonical_records": 1831
 }

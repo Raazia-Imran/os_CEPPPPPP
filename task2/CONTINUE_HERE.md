@@ -1,3 +1,9 @@
+# Next: Cycle 3, only on request
+
+Read task2/PUBLIC_CHECKPOINT.md and evidence/workbook_refresh_validation.json first. The workbook is current for the reconciled queue; the report PDF is not. Original new RIS sources and the full abstract-bearing workbook are private in supplied Drive. Public records/workbook omit abstracts intentionally. Retrieve and hash-check originals before raw-source validation. Do not rerun old frozen-baseline report validators against expanded counts. Preserve all existing recommendations and real reviewer work.
+
+## Preserved published recovery audit
+
 # Continue after recovery/audit Cycle 1
 
 Start with task2/recovery_audit/README.md and receipt.json. Inspected main cb8251a has a 24-page report and 18-sheet workbook; do not confuse these with local recovery 1aa970c (38 pages/27 sheets). cycle2_validation.json is absent from inspected main. Source Sections 1-22 do not prove the compiled report is current. All 2247 final decisions remain pending. Next, when requested, perform Cycle 2 queries/imports/four-database coverage; do not start Cycle 3 automatically. Older build commands below are historical and must not overwrite the recovery. Preserve the new cb8251a team checklist and submitted protocol.

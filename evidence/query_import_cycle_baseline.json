@@ -1,0 +1,46 @@
+{
+  "time_utc": "2026-10-16T06:15:14+00:00",
+  "base_commit": "cb8251a1413da77b57a3df894e904c2f9f11bdd0",
+  "hashes": {
+    "records.csv": "a192f9460c5fb66b4b713946a99ff8022eea0f48ae8cf0dfc994513ea62e1f2d",
+    "screening.csv": "8dc4af1a45155602d9db5b1f6dffbc7a48fbc509ecb3b54b70e761f30bbc2340",
+    "title_votes.csv": "2239e07a0731aeea8156ab400e41b3865582e9cd44b261dbe7276086fc6c9668",
+    "quality.csv": "9c2c9938647ec425ce42a02089b6cd18832f52045bd356780f7094846539f318",
+    "extraction.csv": "99a7762246eb6d0472ef40c6aa79675c9ee7bef3922f54163e01ca1c933a8e02",
+    "study_extraction_form.csv": "f223bc288c2aac0b5bfb7ca1d1dd03d85bc2631e449217647d871f603810a7c1",
+    "duplicates.csv": "f540054b98fe4426e27fb8b953003256b67840a7c0115b389856cce538fafdcd",
+    "import_manifest.csv": "14900d608a3e9d0ac550c8aa60a1788b02fc34d543706581e0fc5f07d2520083"
+  },
+  "counts": {
+    "occurrences": 2291,
+    "database_occurrences": 2271,
+    "supplementary_occurrences": 20,
+    "by_source": {
+      "ACM": 1582,
+      "Springer": 587,
+      "IEEE": 102,
+      "Supplementary": 20
+    },
+    "exact_duplicate_occurrences": 44,
+    "records_after_exact_linkage": 2247,
+    "possible_version_pairs": 41,
+    "triage": {
+      "uncertain": 251,
+      "high": 183,
+      "low": 1813
+    },
+    "final_screened": null,
+    "final_included": null,
+    "preliminary_recommendations": 2247,
+    "preliminary_exclusion_recommendations": 1181,
+    "preliminary_retain_or_uncertain": 1066,
+    "first_recommendations_pending": 0,
+    "version_pair_dispositions": {
+      "companion_report_relationship_proposed": 3,
+      "container_pair_scope_classified": 30,
+      "identity_verified_linkage_proposed": 3,
+      "unresolved_paper_identity": 5
+    },
+    "proposed_duplicate_links_applied": false
+  }
+}
