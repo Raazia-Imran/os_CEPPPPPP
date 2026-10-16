@@ -17,5 +17,22 @@
   },
   "publication_note": "Current bundle/corrections publication follows predecessor; verify remote main. A commit cannot contain its own hash.",
   "final_selection_complete": false,
-  "next_work": "Continue Cycle5 source eligibility,QA/extraction and study identity reconciliation; no automatic claim of final PRISMA."
+  "next_work": "Continue Cycle5 source eligibility,QA/extraction and study identity reconciliation; no automatic claim of final PRISMA.",
+  "bundle_predecessor_verified_main": "a2ee650dd464f15b7b5131020ab4344657f28b07",
+  "publication_register_serialization": {
+    "files": [
+      "evidence/cycle3_version_audit.csv",
+      "evidence/cycle5_applied_identity_links.csv",
+      "evidence/duplicates.csv",
+      "evidence/extraction.csv",
+      "evidence/new_import_queue.csv",
+      "evidence/provisional_studies.csv",
+      "evidence/quality.csv",
+      "evidence/report_validation_queue.csv",
+      "evidence/screening_merged_history.csv",
+      "evidence/study_extraction_form.csv"
+    ],
+    "change": "Restore saved register bytes after text-upload line-ending normalization; zero field-value changes",
+    "reason": "Published source SHA-256 values must match source registers"
+  }
 }
