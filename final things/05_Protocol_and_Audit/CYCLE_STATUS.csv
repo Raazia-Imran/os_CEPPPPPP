@@ -1,0 +1,7 @@
+cycle,name,status,remaining
+1,Recovery and requirements audit,Closed audit scope,Research gaps tracked separately
+2,Queries/imports/four-database audit,Closed audit scope with documented gaps,ACM run mapping; historical hit/export discrepancies; search completeness
+3,Screening/full-text selection,Partial,2617 canonical candidates lack source assessment; final selection pending
+4,Quality assessment,Partial overall; current15forms covered,23section/figure anchors;3provisional N/A calibrations; future eligible candidates
+5,Data extraction,Partial overall; current15forms covered,Unchecked fields and new eligible candidates; version reconciliation
+6,PRISMA and references,Interim outputs,Final selection and report/study linkage needed for final flow

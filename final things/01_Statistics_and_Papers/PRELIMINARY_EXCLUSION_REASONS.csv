@@ -1,0 +1,5 @@
+criterion,proposal_count,stage
+EC1,851,initial_automated_triage;not_final_exclusion
+EC2,453,initial_automated_triage;not_final_exclusion
+EC3,6,initial_automated_triage;not_final_exclusion
+EC5,131,initial_automated_triage;not_final_exclusion

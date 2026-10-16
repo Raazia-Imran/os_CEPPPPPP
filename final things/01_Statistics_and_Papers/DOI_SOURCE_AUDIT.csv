@@ -1,0 +1,16 @@
+report_id,doi,identity_url,verification_method,checked_at_utc,version_boundary
+GB-P001,10.1007/s11390-024-3773-5,https://doi.org/10.1007/s11390-024-3773-5,Crossref live metadata; title matched,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P002,10.1109/TPDS.2022.3232715,https://doi.org/10.1109/TPDS.2022.3232715,Crossref live metadata; title matched,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P003,,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P004,,https://www.usenix.org/system/files/osdi20-bai.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P005,,https://www.usenix.org/system/files/osdi22-han.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,REEF conference versus journal companion unresolved
+GB-P006,10.1145/3600006.3613163,https://doi.org/10.1145/3600006.3613163,Crossref live metadata; title matched,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P007,10.1145/3627703.3629578,https://doi.org/10.1145/3627703.3629578,Publisher DOI/title search matched; Crossref retry429,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P008,10.1145/3419111.3421284,https://doi.org/10.1145/3419111.3421284,Crossref live metadata; title matched,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P009,,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P010,,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P011,10.1109/SC41406.2024.00048,https://doi.org/10.1109/SC41406.2024.00048,Crossref live metadata; title matched,2026-10-16T16:17:14+00:00,Accessed arXiv preprint; final-publication equivalence unverified
+GB-P012,,https://www.usenix.org/system/files/atc25-yu.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P013,,https://www.usenix.org/system/files/atc24-wu-hao.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P014,,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form
+GB-P015,,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,Official accessed report URL retained; no DOI invented,2026-10-16T16:17:14+00:00,Source version recorded in extraction form

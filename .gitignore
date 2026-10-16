@@ -24,3 +24,6 @@ task2/report/main.pdf
 /task2/qa/active_views_input.json
 
 /task2/qa/requirements_update.json
+
+/task2/qa/final_things_input.json
+/task2/qa/final_report_build/
