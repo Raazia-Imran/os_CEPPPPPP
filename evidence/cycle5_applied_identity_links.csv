@@ -1,0 +1,4 @@
+removed_canonical_id,surviving_canonical_id,metadata_url,basis,applied_at_utc,assessor
+GB-R01568,GB-R01567,https://api.crossref.org/works/10.1145/3820171.3806868,Crossref is-identical-to relation,2026-10-16T12:44:16+00:00,Codex-GroupB
+GB-R02190,GB-R01536,https://api.crossref.org/works/10.1109/dac63849.2025.11132423,Exact publisher primary URL matches DOI-less occurrence,2026-10-16T12:44:16+00:00,Codex-GroupB
+GB-R02256,GB-R00350,https://api.crossref.org/works/10.1109/micro56248.2022.00019,Exact publisher primary URL matches DOI-less occurrence,2026-10-16T12:44:16+00:00,Codex-GroupB

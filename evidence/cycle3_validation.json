@@ -1,18 +1,18 @@
 {
-  "checked_at_utc": "2026-10-16T12:41:06+00:00",
+  "checked_at_utc": "2026-10-16T12:44:42+00:00",
   "occurrences": 4189,
-  "duplicate_links": 111,
-  "canonical_records": 4078,
-  "recommendations": 4078,
+  "duplicate_links": 114,
+  "canonical_records": 4075,
+  "recommendations": 4075,
   "exclude_recommendations": 1441,
-  "retain_or_uncertain": 2637,
+  "retain_or_uncertain": 2634,
   "first_recommendations_pending": 0,
   "source_checked_reports": 15,
   "quality_items": 150,
   "outcome_rows": 45,
   "preserved_baseline_reviews": true,
-  "duplicate_links_changed": false,
+  "duplicate_links_changed": true,
   "independent_human_votes_created": false,
   "final_included_studies": null,
-  "limitations": "Selected source sections assessed; no complete systematic retrieval census. 41 legacy and219 newer version proposals remain unapplied;3 legacy identity proposals rechecked. Existing PDF historical."
+  "limitations": "Selected source sections assessed; no complete systematic retrieval census. Three publisher-verified identity links applied; other version/companion proposals remain unapplied. Existing PDF historical."
 }

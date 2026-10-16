@@ -9,8 +9,8 @@
     "Supplementary": 20,
     "ScienceDirect": 1898
   },
-  "exact_duplicate_occurrences": 111,
-  "records_after_exact_linkage": 4078,
+  "exact_duplicate_occurrences": 114,
+  "records_after_exact_linkage": 4075,
   "possible_version_pairs": 41,
   "triage": {
     "uncertain": 251,
@@ -20,9 +20,9 @@
   },
   "final_screened": null,
   "final_included": null,
-  "preliminary_recommendations": 4078,
+  "preliminary_recommendations": 4075,
   "preliminary_exclusion_recommendations": 1441,
-  "preliminary_retain_or_uncertain": 2637,
+  "preliminary_retain_or_uncertain": 2634,
   "first_recommendations_pending": 0,
   "version_pair_dispositions": {
     "companion_report_relationship_proposed": 3,
@@ -36,5 +36,7 @@
   "possible_version_pairs_note": "41 legacy pairs retained; new pairs listed separately in new_version_candidates.csv",
   "cycle3_assessed_reports": 15,
   "cycle3_provisionally_eligible_reports": 13,
-  "cycle3_note": "Bounded first-review assessments; source-version uncertainty is not provisional eligibility; no final PRISMA completion inferred"
+  "cycle3_note": "Bounded first-review assessments; source-version uncertainty is not provisional eligibility; no final PRISMA completion inferred",
+  "cycle5_new_identity_links": 3,
+  "duplicate_note": "111 earlier exact links plus3 publisher-verified identity links; original export occurrences unchanged"
 }

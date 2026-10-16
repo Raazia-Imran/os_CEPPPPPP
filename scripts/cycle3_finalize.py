@@ -8,13 +8,14 @@ def write(n,rs,fields=None):
  with (E/n).open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=fields or list(dict.fromkeys(k for r in rs for k in r)));w.writeheader();w.writerows(rs)
 records=read('records.csv');screen=read('screening.csv');du=read('duplicates.csv');forms=read('study_extraction_form.csv');checks=read('fulltext_checks.csv');by={r['record_id']:r for r in records}
-assert len(records)-len(du)==len(screen)==4078
+assert len(records)-len(du)==len(screen)==len({x['canonical_record_id'] for x in records})
 # Preserve earlier actual field values. Newly added DOI/source columns are enrichment only.
 import io
 for name,key in [('title_votes.csv',None),('quality.csv',None),('extraction.csv','outcome_id'),('screening.csv','record_id')]:
  old=list(csv.DictReader(io.StringIO(subprocess.check_output(['git','show','aa20346:evidence/'+name],cwd=R,text=True))));new=read(name)
  if name=='screening.csv':
   now={x['record_id']:x for x in new}
+  if (E/'screening_merged_history.csv').exists():now.update({x['record_id']:x for x in read('screening_merged_history.csv')})
   for x in old:
    if x['reviewer_1_vote']:assert all(now[x['record_id']].get(k,'')==v for k,v in x.items()),x['record_id']
  else:
@@ -60,6 +61,6 @@ c=json.loads((E/'prisma_counts.json').read_text());c.update(preliminary_recommen
 (E/'prisma_counts.json').write_text(json.dumps(c,indent=2)+'\n')
 p=json.loads((E/'review_progress.json').read_text());p.update(first_reviewer_records=ex+retain,first_reviewer_fraction=(ex+retain)/len(screen),exclude_recommendations=ex,retained_or_uncertain=retain,unreviewed=pending,source_checked_reports=len(checks),appraised_reports=len(forms),quality_item_rows=len(read('quality.csv')),new_outcome_rows=len(read('extraction.csv')),human_candidate_records=len(read('human_validation_queue.csv')),cycle3_new_recommendations=sum(v.get('batch_id')=='C3-METADATA-01' for v in read('title_votes.csv')),cycle3_new_report_assessments=4,updated_at_utc=TS,cycle3_status='Batches1-2 saved; remaining screening and independent validation open',cycle2_report_status='Historical PDF predates expanded Cycle3 evidence')
 (E/'review_progress.json').write_text(json.dumps(p,indent=2)+'\n')
-validation=dict(checked_at_utc=TS,occurrences=len(records),duplicate_links=len(du),canonical_records=len(screen),recommendations=ex+retain,exclude_recommendations=ex,retain_or_uncertain=retain,first_recommendations_pending=pending,source_checked_reports=len(checks),quality_items=len(read('quality.csv')),outcome_rows=len(read('extraction.csv')),preserved_baseline_reviews=True,duplicate_links_changed=False,independent_human_votes_created=False,final_included_studies=None,limitations='Selected source sections assessed; no complete systematic retrieval census. 41 legacy and219 newer version proposals remain unapplied;3 legacy identity proposals rechecked. Existing PDF historical.')
+validation=dict(checked_at_utc=TS,occurrences=len(records),duplicate_links=len(du),canonical_records=len(screen),recommendations=ex+retain,exclude_recommendations=ex,retain_or_uncertain=retain,first_recommendations_pending=pending,source_checked_reports=len(checks),quality_items=len(read('quality.csv')),outcome_rows=len(read('extraction.csv')),preserved_baseline_reviews=True,duplicate_links_changed=len(du)!=111,independent_human_votes_created=False,final_included_studies=None,limitations='Selected source sections assessed; no complete systematic retrieval census. Three publisher-verified identity links applied; other version/companion proposals remain unapplied. Existing PDF historical.')
 assert validation['quality_items']==10*len(forms) and len({x['outcome_id'] for x in read('extraction.csv')})==validation['outcome_rows'] and ex+retain+pending==len(screen)
 (E/'cycle3_validation.json').write_text(json.dumps(validation,indent=2)+'\n');print(json.dumps(validation,indent=2))

@@ -1566,7 +1566,7 @@ GB-R01564,GB-R01564,10.1145/3712285.3759768,evidence/imports/acm/acm (9).bib,can
 GB-R01565,GB-R01565,10.1145/3760250.3762230,evidence/imports/acm/acm (9).bib,canonical,
 GB-R01566,GB-R01566,10.1145/3772052.3772271,evidence/imports/acm/acm (9).bib,canonical,
 GB-R01567,GB-R01567,10.1145/3801489.3806868,evidence/imports/acm/acm (9).bib,canonical,
-GB-R01568,GB-R01568,10.1145/3820171.3806868,evidence/imports/acm/acm (9).bib,canonical,
+GB-R01568,GB-R01567,10.1145/3820171.3806868,evidence/imports/acm/acm (9).bib,linked_repeat,Crossref is-identical-to relation; https://api.crossref.org/works/10.1145/3820171.3806868
 GB-R01569,GB-R01569,10.1145/3721145.3725774,evidence/imports/acm/acm (9).bib,canonical,
 GB-R01570,GB-R01570,10.1145/3805638,evidence/imports/acm/acm (9).bib,canonical,
 GB-R01571,GB-R01571,10.1145/3777373,evidence/imports/acm/acm (9).bib,canonical,
@@ -2188,7 +2188,7 @@ GB-R02186,GB-R02186,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02187,GB-R02187,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02188,GB-R02188,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02189,GB-R02189,,evidence/imports/group-a/imported_records.json,canonical,
-GB-R02190,GB-R02190,,evidence/imports/group-a/imported_records.json,canonical,
+GB-R02190,GB-R01536,,evidence/imports/group-a/imported_records.json,linked_repeat,Exact publisher primary URL matches DOI-less occurrence; https://api.crossref.org/works/10.1109/dac63849.2025.11132423
 GB-R02191,GB-R02191,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02192,GB-R02192,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02193,GB-R02193,,evidence/imports/group-a/imported_records.json,canonical,
@@ -2254,7 +2254,7 @@ GB-R02252,GB-R02252,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02253,GB-R02253,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02254,GB-R02254,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02255,GB-R02213,,evidence/imports/group-a/imported_records.json,linked_repeat,Exact DOI/URL or exact title+authors+year without identifiers
-GB-R02256,GB-R02256,,evidence/imports/group-a/imported_records.json,canonical,
+GB-R02256,GB-R00350,,evidence/imports/group-a/imported_records.json,linked_repeat,Exact publisher primary URL matches DOI-less occurrence; https://api.crossref.org/works/10.1109/micro56248.2022.00019
 GB-R02257,GB-R02257,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02258,GB-R02258,,evidence/imports/group-a/imported_records.json,canonical,
 GB-R02259,GB-R02259,,evidence/imports/group-a/imported_records.json,canonical,
