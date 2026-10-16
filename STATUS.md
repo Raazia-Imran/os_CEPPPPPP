@@ -1,3 +1,7 @@
+# Cycle 3 batch 1 assessed
+
+Paella (GB-P006) and Orion (GB-P007) added with anchored first-review eligibility, QA and extraction. Current coverage:7 reports,70 QA items,30 outcome rows. Inclusion remains provisional; independent checks pending. Counts remain4189 occurrences,111 duplicate links,4078 canonical records;1831 await first recommendation. Paella Q9 uses justified provisional N/A rather than an artificial failure. Next batch:GSLICE and Clockwork, plus conservative screening and version checks.
+
 # Cycle 3 started: source-retrieval checkpoint
 
 Resumed published main aa20346. Three new source PDFs retrieved privately (Paella, Orion, GSLICE); eligibility/QA/extraction assessment in progress. Baseline remains 4189 occurrences,111 links,4078 canonical records,2247 preliminary recommendations,1831 awaiting first recommendation,50 QA items,26 outcomes and5 checked reports. No new decisions yet. Original protocol preserved. See evidence/cycle3_baseline.json and cycle3_retrieval.csv.

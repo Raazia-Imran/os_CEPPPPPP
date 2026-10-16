@@ -49,3 +49,23 @@ GB-P005,Q7,1,2,End-to-end latency and load specified;request percentile not extr
 GB-P005,Q8,2,2,MultipleRT/BE clients and multiple mixes directly tested,p548 Table2;p549 section7.2,Codex-GroupB,,,first_review_only,2026-10-15T22:10:27+00:00,,pending
 GB-P005,Q9,1,2,Performance isolation tested;no extracted memory/security/fault boundary test,pp548-549 section7.2,Codex-GroupB,,,first_review_only,2026-10-15T22:10:27+00:00,,pending
 GB-P005,Q10,2,2,Artifact and idempotence/platform limitations explicit,p540 repository;section8;appendixA,Codex-GroupB,,,first_review_only,2026-10-15T22:10:27+00:00,,pending
+GB-P006,Q1,2,2,Explicit goal,p595 section1,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q2,2,2,Mechanism classifiable,pp599-603 sections4-6,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q3,1,2,Repetition count unclear,p604 methodology,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q4,2,2,Versioned setup,p604 methodology,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q5,1,2,Wrapper caveat,p604 Table3/baselines,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q6,2,2,Defined throughput,pp604-605 Figs11-12,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q7,2,2,p99 specified,pp604-605 Figs11-12,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q8,2,2,Mixed jobs tested,p605 Figs12-13,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q9,NA,0,No security/fault or resource-isolation guarantee appraised; fairness is assessed under Q8; N/A provisional,pp606-607 discussion;scope provisional,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P006,Q10,2,2,Artifact and limits,pp606-607 section8,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q1,2,2,Explicit goal,p1075 section1,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q2,2,2,Interception specified,pp1079-1082 sections4-5,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q3,2,2,Three repetitions,p1082 section6.1,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q4,2,2,Versioned setup,p1082 section6.1,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q5,1,2,Reimplemented comparator,p1083 baselines,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q6,2,2,Defined aggregate metric,p1086 section6.2.3,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q7,2,2,p99 and arrivals,p1086 section6.2.3,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q8,2,2,Collocations tested,p1086 section6.3,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q9,2,2,Trust boundary explicit,p1087 section7 Security,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending
+GB-P007,Q10,2,2,Artifact and limitations,p1087 section7;artifact appendix,Codex-GroupB,,,first_review_only,2026-10-16T10:00:46+00:00,,pending

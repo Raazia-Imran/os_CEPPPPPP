@@ -1,4 +1,4 @@
 candidate,source_url,checked_at_utc,assessor,retrieval_status,sha256,method,assessment_status,licensed_source_in_git
-paella,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,2026-10-16T09:58:32.471757+00:00,Codex-GroupB,retrieved,f2c25ae541a555862bd397e9564bf5145cc096e38efe83f8f6a2eb11a6323e8d,public author or repository PDF,assessment_in_progress,no
-orion,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,2026-10-16T09:58:32.471757+00:00,Codex-GroupB,retrieved,cb79cf45613e82726c3654ffb9ed06789713c577deca890c345c3d63c69a635c,public author or repository PDF,assessment_in_progress,no
 gslice,https://par.nsf.gov/servlets/purl/10299299,2026-10-16T09:58:32.471757+00:00,Codex-GroupB,retrieved,2aed6d608c029aefd0395b219121bc8db8869de53fa96af037eb989a9ad2a408,public author or repository PDF,assessment_in_progress,no
+paella,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,2026-10-16T10:00:46+00:00,Codex-GroupB,retrieved,f2c25ae541a555862bd397e9564bf5145cc096e38efe83f8f6a2eb11a6323e8d,public author or repository PDF,selected_sections_assessed;independent_pending,no
+orion,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,2026-10-16T10:00:46+00:00,Codex-GroupB,retrieved,cb79cf45613e82726c3654ffb9ed06789713c577deca890c345c3d63c69a635c,public author or repository PDF,selected_sections_assessed;independent_pending,no

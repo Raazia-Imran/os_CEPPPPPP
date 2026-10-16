@@ -1,0 +1,5 @@
+report_id,record_id,canonical_record_id,provisional_study_id,doi,study_linkage_status
+GB-P006,GB-R00017,GB-R00017,GB-PS006,10.1145/3600006.3613163,provisional;not_final_inclusion
+GB-P006,GB-R02284,GB-R00017,GB-PS006,10.1145/3600006.3613163,provisional;not_final_inclusion
+GB-P007,GB-R00088,GB-R00088,GB-PS007,10.1145/3627703.3629578,provisional;not_final_inclusion
+GB-P007,GB-R02281,GB-R00088,GB-PS007,10.1145/3627703.3629578,provisional;not_final_inclusion
