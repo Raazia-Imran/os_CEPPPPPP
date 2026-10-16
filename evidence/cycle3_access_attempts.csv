@@ -1,0 +1,2 @@
+record_id,doi,source_url,status,checked_at_utc,decision,assessor,report_status
+GB-R00002,10.1145/3832810.3832898,https://dl.acm.org/doi/pdf/10.1145/3832810.3832898,HTTP Error 403: Forbidden,2026-10-16T10:03:06.089150+00:00,not_assessed;not_an_exclusion,Codex-GroupB,not_retrieved_this_attempt;alternate_routes_not_exhausted

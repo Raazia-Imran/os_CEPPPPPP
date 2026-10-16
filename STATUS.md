@@ -1,3 +1,7 @@
+# Cycle 3 source batch 2 assessed
+
+GSLICE (GB-P008) and Clockwork (GB-P009) added. Source coverage now9 provisional report assessments,90 Q1-Q10 items,34 outcomes. Independent verification and final inclusion pending. Three legacy identity proposals rechecked without application. Metadata-screening batch saved locally and will be published with refreshed log/workbook; do not infer final screening. See cycle3_validation.json for local expanded progress; source PDFs remain private.
+
 # Cycle 3 batch 1 assessed
 
 Paella (GB-P006) and Orion (GB-P007) added with anchored first-review eligibility, QA and extraction. Current coverage:7 reports,70 QA items,30 outcome rows. Inclusion remains provisional; independent checks pending. Counts remain4189 occurrences,111 duplicate links,4078 canonical records;1831 await first recommendation. Paella Q9 uses justified provisional N/A rather than an artificial failure. Next batch:GSLICE and Clockwork, plus conservative screening and version checks.

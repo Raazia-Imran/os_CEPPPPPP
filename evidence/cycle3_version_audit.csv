@@ -1,0 +1,4 @@
+record_id,possible_match,left_doi,right_doi,metadata_url,verified_basis,checked_at_utc,assessor,applied,remaining
+GB-R01568,GB-R01567,10.1145/3820171.3806868,10.1145/3801489.3806868,https://api.crossref.org/works/10.1145/3820171.3806868,Crossref is-identical-to relation,2026-10-16T10:05:04+00:00,Codex-GroupB,no,Independent reconciliation/application pending; no counts changed
+GB-R02190,GB-R01536,,10.1109/dac63849.2025.11132423,https://api.crossref.org/works/10.1109/dac63849.2025.11132423,Exact publisher primary URL matches DOI-less occurrence,2026-10-16T10:05:04+00:00,Codex-GroupB,no,Independent reconciliation/application pending; no counts changed
+GB-R02256,GB-R00350,,10.1109/micro56248.2022.00019,https://api.crossref.org/works/10.1109/micro56248.2022.00019,Exact publisher primary URL matches DOI-less occurrence,2026-10-16T10:05:04+00:00,Codex-GroupB,no,Independent reconciliation/application pending; no counts changed
