@@ -1,3 +1,10 @@
+# Latest: Cycle 1 recovery audit, 16 October 2026
+
+Inspected main cb8251a. Published cd3f1e0/014b14c confirmed. Counts independently reconcile: 2291 occurrences, 44 applied links, 2247 canonical; 1181 preliminary exclude and 1066 retain/uncertain. All final decisions pending. Published PDF is 24 pages and workbook has 18 sheets; the recent 19-sheet checklist statement is incorrect. Local recovery 1aa970c has 38-page/27-sheet artifacts and cycle2_validation.json, still unpublished. Preserve both checkpoints. See task2/recovery_audit/README.md and receipt.json for the 14-heading crosswalk, file checks and unresolved work. No research decisions changed. Next cycle: queries/imports/four-database audit; not started.
+
+---
+Historical notes follow; the latest audit above controls publication status.
+
 Recovery checkpoint: interrupted Cycle 2 files recovered on 16 October 2026. Draft PDF/workbook and analysis sources preserved; final PDF provenance wording, topic-specific summary and PRISMA stage labels are being checked. Counts unchanged.
 
 # Current checkpoint: Cycle 2 interim report

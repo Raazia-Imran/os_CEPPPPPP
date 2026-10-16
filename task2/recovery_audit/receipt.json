@@ -1,0 +1,99 @@
+{
+  "checked_at_utc": "2026-10-16T06:22:50+00:00",
+  "inspected_main": "cb8251a1413da77b57a3df894e904c2f9f11bdd0",
+  "scope": "Cycle 1 recovery audit only; no import, screening, QA or extraction decisions changed",
+  "occurrences": 2291,
+  "database_split": {
+    "ACM": 1582,
+    "Springer": 587,
+    "IEEE": 102,
+    "Supplementary": 20
+  },
+  "manifest_files": 81,
+  "manifest_occurrences": 2291,
+  "applied_duplicate_links": 44,
+  "canonical_records": 2247,
+  "accounting_identity": true,
+  "recommendations": {
+    "retain_or_uncertain": 1066,
+    "exclude_recommendation": 1181
+  },
+  "final_decisions": {
+    "pending": 2247
+  },
+  "independent_title_votes_present": 0,
+  "quality_forms": 5,
+  "quality_items": 50,
+  "quality_criteria": [
+    "Q1",
+    "Q10",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9"
+  ],
+  "study_forms": 5,
+  "outcomes": 26,
+  "citation_events": 10,
+  "version_pairs": 41,
+  "version_dispositions": {
+    "companion_report_relationship_proposed": 3,
+    "container_pair_scope_classified": 30,
+    "identity_verified_linkage_proposed": 3,
+    "unresolved_paper_identity": 5
+  },
+  "submitted_protocol_unchanged": true,
+  "cycle2_validation_exists_on_inspected_main": false,
+  "published_report": {
+    "pages": 24,
+    "all_pages_text_readable": true,
+    "sha256": "fc4dc1acb1922100612f3d0031de05c4ba94420d8a60630514ce71796019839a",
+    "contains_cycle2_taxonomy_heading": false
+  },
+  "published_workbook": {
+    "sheets": 18,
+    "names": [
+      "Summary",
+      "Screening",
+      "Records",
+      "Duplicates",
+      "Version checks",
+      "Source checks",
+      "Quality",
+      "Extraction",
+      "Snowballing",
+      "Shared candidates",
+      "Import manifest",
+      "Version audit",
+      "Study extraction",
+      "Human validation",
+      "Exclusion sample",
+      "Metadata enrichment",
+      "Report validation",
+      "Full-text criteria"
+    ],
+    "zip_integrity": true,
+    "stored_error_cells": [],
+    "sha256": "e82f0ff98e62056fa5336cf83b942981224dfe62eda9ed9d5831e21b3a25fbba"
+  },
+  "problems": [],
+  "limitations": "File parsing verifies opening/structure, not a fresh Excel recalculation or complete visual QA. Missing final decisions remain pending.",
+  "recovery_checkpoint": {
+    "commit": "1aa970ccc5f6712b63f8c3c2bec4e8667f8411d0",
+    "on_inspected_main": false,
+    "report_pages": 38,
+    "workbook_sheets": 27,
+    "validation_exists_locally": true,
+    "validation_on_main": false,
+    "status": "Local recovered files preserved; not substituted for published artifacts in this audit",
+    "artifacts": {
+      "task2/report/report.pdf": "d7adebdb3665ef77ef730a1be13be53dfadbe56b319ef322a439c1d2a7c94426",
+      "task2/tracker/review_workbook.xlsx": "425f6a837af3a13dc79ff3045884d3e5263c8b6014870cdda315cc86c084cb08",
+      "evidence/cycle2_validation.json": "8cade702130ab4a2d4fb43fcd7576b7f39fe5751a99daeab300a0dcbad899737"
+    }
+  }
+}

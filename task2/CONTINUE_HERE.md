@@ -1,3 +1,10 @@
+# Continue after recovery/audit Cycle 1
+
+Start with task2/recovery_audit/README.md and receipt.json. Inspected main cb8251a has a 24-page report and 18-sheet workbook; do not confuse these with local recovery 1aa970c (38 pages/27 sheets). cycle2_validation.json is absent from inspected main. Source Sections 1-22 do not prove the compiled report is current. All 2247 final decisions remain pending. Next, when requested, perform Cycle 2 queries/imports/four-database coverage; do not start Cycle 3 automatically. Older build commands below are historical and must not overwrite the recovery. Preserve the new cb8251a team checklist and submitted protocol.
+
+---
+Historical notes follow; the latest audit above controls publication status.
+
 # Continue after Cycle 2
 
 Use the newest STATUS.md checkpoint and evidence/cycle2_validation.json. The report through22is an interim draft; do not restart screening or treat recommendations as final decisions. Cycle1 canonical counts remain frozen. First recommendations:2,247complete;1,181exclude;1,066retain/uncertain. Final included studies:pending.

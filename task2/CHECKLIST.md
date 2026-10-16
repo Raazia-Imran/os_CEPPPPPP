@@ -1,3 +1,10 @@
+# Recovery audit Cycle 1
+
+Completed: 14-heading requirements/table/diagram/evidence crosswalk; dynamic register counts; 81 raw hashes; submitted-protocol integrity; published PDF/workbook opening; remote versus local recovery comparison. Published workbook has 18 sheets (not the recent checklist's 19). Missing: publish/synchronize the newer artifacts, reproducible fourth-database coverage, independent screening/QA/extraction and final inclusion/PRISMA. See recovery_audit/README.md. Cycle 2 and Cycle 3 have not started in this audit.
+
+---
+Historical notes follow; the latest audit above controls publication status.
+
 # Cycle 2 checklist
 
 | Work | Current state | Remaining closure |
