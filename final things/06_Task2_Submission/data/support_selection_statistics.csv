@@ -1,0 +1,20 @@
+stage,count,meaning
+Imported occurrences,4189,Four databases4169 plus supplementary20
+Applied duplicate links,114,Occurrences remain preserved
+Canonical records,4075,4189-114
+Initial automated recommendations,4075,Not complete abstract verification
+Preliminary exclusion proposals,1441,Not final screened exclusions
+Retain or uncertain after initial triage,2634,Not all eligible
+Awaiting first automated recommendation,0,Does not imply completed screening
+Source-assessed reports,17,Bounded source-assessment slice
+Provisionally eligible reports,13,Not final unique studies
+Companion candidate reports,1,REEF study/report relationship open
+Publication-version-uncertain reports,1,ParvaGPU accessed arXiv version
+Assessed full-text EC2 exclusions,2,TGS and HiveD; incomplete exclusion census
+QA and extraction forms,15,13provisional plus2unresolved cases
+Q1-Q10 item rows,150,Ten items per form
+Reported outcome rows,45,Not45papers
+Separate calculated outcomes,2,Not author-reported measurements
+Unassessed canonical retain/uncertain records,2617,No linked source assessment
+Independent human votes recorded,0,AI-only deviation disclosed
+Final included reports/studies,Pending,Not established; do not substitute15forms

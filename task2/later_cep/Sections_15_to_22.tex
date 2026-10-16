@@ -1,0 +1,149 @@
+\section{Taxonomy and integration layers}
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[box/.style={draw,rounded corners,align=left,text width=5.8cm,inner sep=7pt},>=Latex]
+\node[box,text width=11.8cm,align=center](root) at(0,0){GPU sharing for multi-tenant inference};
+\node[box](t) at(-3.2,-2.0){\textbf{Temporal scheduling}\\Runtime/kernel scheduling.\\Time quotas or preemption.};
+\node[box](m) at(3.2,-2.0){\textbf{MPS concurrency}\\Driver-level concurrency.\\Multiple processes and quotas.};
+\node[box](g) at(-3.2,-4.5){\textbf{MIG partitioning}\\Hardware GPU instances.\\Profile-dependent partitions.};
+\node[box](a) at(3.2,-4.5){\textbf{API remoting/interception}\\Runtime/API forwarding.\\Endpoint and trust boundaries.};
+\node[box,text width=11.8cm](h) at(0,-6.8){\textbf{Hybrid designs}\\Combine primitives; retain each component and the measured configuration.};
+\draw(root.south)--(0,-5.7);
+\draw[->](0,-1.0)-|(t.north);\draw[->](0,-1.0)-|(m.north);
+\draw[->](0,-3.5)-|(g.north);\draw[->](0,-3.5)-|(a.north);
+\draw[->](0,-5.7)--(h.north);
+\end{tikzpicture}
+\caption{Group B mechanism taxonomy. Categories describe designs, not counts of finally included studies.}
+\end{figure}
+
+
+{\small\begin{longtable}{>{\raggedright\arraybackslash}p{0.24\linewidth}>{\raggedright\arraybackslash}p{0.68\linewidth}}
+\toprule
+Family & Assessed evidence /\allowbreak{} boundary\\\midrule
+\endhead
+Temporal/\allowbreak{}preemptive & PipeSwitch,REEF,Clockwork,Paella,Orion,XSched andTorpor contain different scheduling mechanisms; their priority, switching and batching costs are not interchangeable.\\
+MPS concurrency & VastPipe,iGniter,gpulets andGSLICE use or compare local spatial concurrency; allocation and model mix change interference.\\
+MIG /\allowbreak{} hybrid & KRYPTON integrates MIG with time quotas;ParvaGPU characterizes MIG+MPS but accessed version remains uncertain. No pooled hardware-isolation gain is inferred.\\
+API interception/\allowbreak{}remoting & Torpor redirects APIs with model swapping;StreamBox forwards APIs into workflow runtimes;KRYPTON intercepts command buffers in kernel space. Those boundaries have different trust and integration costs.\\
+Memory-sharing hybrids & SIRIUS uses VMM handover and SM masks across inference/\allowbreak{}training;StreamBox shares runtime/\allowbreak{}memory within a workflow.\\
+\bottomrule
+\end{longtable}}
+
+
+\section{Comparative evidence}
+
+Numerical comparisons are within-paper contrasts. They are not ranked across unmatched GPUs, models, batches, load generators, memory capacities or baselines. Each row retains a representative outcome; the complete 45-row register is separate.
+
+
+
+{\small\begin{longtable}{>{\raggedright\arraybackslash}p{0.1\linewidth}>{\raggedright\arraybackslash}p{0.24\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.33\linewidth}}
+\toprule
+Report & Representative result & Comparator & Anchor /\allowbreak{} interpretation limit\\\midrule
+\endhead
+GB-P001 & Throughput ratio:\allowbreak{} 2.7 x & No MPS & pp457-458 Fig14 and accompanying prose; Batch/\allowbreak{}rate/\allowbreak{}quotas unresolved; not tail-latency evidence\\
+GB-P002 & Prediction error range:\allowbreak{} 1.53-5.02 percent & Measured local latency & p822 section5.2 Fig13; Prediction accuracy, not utilization or latency speedup\\
+GB-P003 & Distribution threshold:\allowbreak{}90\% of measured pairs:\allowbreak{} 17.66 percent overhead below threshold & Solo-running latency & p203 Fig7; Across-pair CDF, not request-p90/\allowbreak{}p99; no hostile-memory/\allowbreak{}fault test\\
+GB-P004 & Additional end-to-end latency:\allowbreak{} 6.01 ms & Ready-model latency subtracted; MPS overhead307.02ms & p509 Table3; setup p508 section6; Mean100 runs; overhead, not total latency or p99; MPS uses unified-memory swapping\\
+GB-P005 & Overall throughput ratio:\allowbreak{} 1.60 x & RT-Only dedicated GPU & p549 section7.2 Fig11 prose; setup p548 Table2; Includes RT and BE requests; RT-only reference dedicates GPU to RT tasks.\\
+GB-P006 & ResNet18 p99 reduction factor:\allowbreak{} up to3 x & CUDA-MS & printed p604 section7.1/\allowbreak{}Fig12; PDF pp10-11; Author-reported approximate maximum; not uniform across loads\\
+GB-P007 & Aggregate throughput ratio:\allowbreak{} up to7.3 x & Dedicated high-priority inference & printed p1086 section6.2.3/\allowbreak{}Fig12; PDF p12; Maximum; includes best-effort work\\
+GB-P008 & GPU utilization efficacy GUE:\allowbreak{} 94.04 composite score & Default MPS GUE38.82 & printed p500 Table3; PDF p9; Not percent GPU utilization\\
+GB-P009 & Clockwork goodput:\allowbreak{} approximately800 requests/\allowbreak{}second & INFaaS on nonidentical EC2 setup & printed p452 section6.1/\allowbreak{}Fig5; author PDF p10; Within-SLO successes; comparator qualitative; not total throughput\\
+GB-P010 & Average P99 inference latency improvement factor, as reported:\allowbreak{} 12.6 x & TaskSwitch (authors' adapted temporal-switch baseline) & printed p1666, section6.1/\allowbreak{}Figure10 discussion; PDF p11; Author-reported average across tested workloads; not a uniform per-model speedup, and not a comparison to unmodified PipeSwitch.\\
+GB-P011 & Reported throughput:\allowbreak{} 446 requests/\allowbreak{}s & same configuration with1 process (354requests/\allowbreak{}s) & author preprint PDF p5, sectionIII-B prose; Figure3 p4; One local configuration, not fleet savings. Source is arXivv1; final published version not verified.\\
+GB-P012 & Reported single-GPU throughput factor:\allowbreak{} >10 x & Native early binding at same offered function rate & p606 section7.2; Figure8 p605; PDF pp10-11; Lower bound reported by authors, not an exact10x; function count varies to saturate memory. No fleet cost claim.\\
+GB-P013 & Author-reported average throughput factor:\allowbreak{} 6.7 x & INFless with documented warm-up/\allowbreak{}pipelined loading/\allowbreak{}model sharing & p68 section9.1/\allowbreak{}Figure13; PDF p11; Aggregate within-paper result across tested workflows; not universal or a matched cross-paper speedup. Batch/\allowbreak{}concurrency optimizations contribute.\\
+GB-P014 & Reported average QoS violation rate:\allowbreak{} 1.23 percent of requests & original soloP99 threshold (1\%baseline violations by definition) & p1014 section5.5/\allowbreak{}Figure17; PDF p13; Average across tested configurations; no claim that worst-case violation is1.23\%. Threshold-relative metric, not latency in milliseconds.\\
+GB-P015 & Reported high-priorityP99 latency ratio:\allowbreak{} 1.07 x standalone & standalone high-priorityBert-large execution & p683 section7.4 case3/\allowbreak{}Figure15a; PDF p14; Triton+XSched;not a rawmillisecond value. NativeTriton ratio1.53x;noNPUresultincluded.\\
+\bottomrule
+\end{longtable}}
+
+
+\section{Engineering trade-offs}
+
+
+{\small\begin{longtable}{>{\raggedright\arraybackslash}p{0.26\linewidth}>{\raggedright\arraybackslash}p{0.66\linewidth}}
+\toprule
+Choice & Observed benefit /\allowbreak{} required sacrifice\\\midrule
+\endhead
+Tuned MPS & VastPipe throughput contrasts do not establish tail-latency or fault isolation; iGniter recovery traces retain transient SLO violation.\\
+Preemptive priority & XSched high-priorityTritonP99 is1.07xstandalone versus1.53xnativeTriton, with a continuously busy background client; background throughput remains a separate objective.\\
+Memory handover & SIRIUS improves local inference tails versus an adapted switch baseline while opportunistic training uses residual resources; training gains are not inference throughput.\\
+Workflow runtime sharing & StreamBox eliminates runtime redundancy but cross-user concurrency can cause queuing and SLO violations; within-workflow address-space sharing limits isolation.\\
+Remoting/\allowbreak{}model swapping & Torpor increases low-rate function density; heavy model transfers can increase latency sharply and add CPU/\allowbreak{}bandwidth demand.\\
+Temporal quota granularity & KRYPTON token lengths trade scheduling overhead against wait time, differently for different batches.\\
+MIG+MPS configuration & ParvaGPU preprint example changes throughput354to446requests/\allowbreak{}s while latency11to27ms; this is version-qualified local evidence, not a final included-study claim.\\
+\bottomrule
+\end{longtable}}
+
+
+\section{Conflicting evidence and comparability}
+
+Different results are not automatically contradictory. GSLICE reports a negative latency contrast against TensorRT in one configuration, while other outcomes evaluate different baselines and statistics. Torpor model swapping can hurt a heavy model even when function density improves. These within-paper differences support condition-aware choices rather than an averaged universal speedup.
+
+
+The ParvaGPU local example illustrates a concrete tension:\allowbreak{} at1-GPC MIG size and batch4, moving from one to three MPS processes changes throughput354to446requests/\allowbreak{}s and latency11to27ms. The separately calculated increase is25.99percent throughput and2.4545xlatency, with explicit inputs retained. Latency percentile is unspecified and final publication equivalence is unresolved. These values are not pooled with P99/\allowbreak{}P98 request tails from other systems.
+
+
+Cross-study comparisons remain qualitative where hardware, tenant mix, batching, load, runtime sharing or measurement intervals differ. No matched, controlled study-to-study contradiction or universal winning mechanism has been established by this checkpoint.
+
+
+
+\section{Answers to the research questions}
+
+
+{\small\begin{longtable}{>{\raggedright\arraybackslash}p{0.08\linewidth}>{\raggedright\arraybackslash}p{0.84\linewidth}}
+\toprule
+RQ & Evidence-based checkpoint answer\\\midrule
+\endhead
+RQ1 & The assessed slice covers temporal scheduling,MPS,API interception/\allowbreak{}remoting,memory-sharing hybrids and MIG-integrating designs. Prevalence across the literature cannot be inferred from the incomplete selected set.\\
+RQ2 & The register distinguishes requests/\allowbreak{}s,throughput ratios,P99/\allowbreak{}P98,SLO-violation rate,API overhead and host/\allowbreak{}GPU memory. These are not interchangeable measures of utilization.\\
+RQ3 & Batch,process count,arrival pattern,model size,runtime redundancy,hardware capability and memory/\allowbreak{}PCIe pressure alter outcomes. Local example settings accompany every metric.\\
+RQ4 & Scheduling fairness and resource quotas have more direct evidence than general security/\allowbreak{}fault guarantees. Compiler transformation,kernel modules,model swapping and CPU-side API handling impose different costs.\\
+RQ5 & Select a candidate mechanism by service priority and constraints, then validate it under the intended model mix and load. Final recommendation confidence is limited by incomplete eligibility,source versions and single-AI assessment.\\
+\bottomrule
+\end{longtable}}
+
+
+\section{Conditional engineering recommendations}
+
+
+{\small\begin{longtable}{>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.35\linewidth}>{\raggedright\arraybackslash}p{0.32\linewidth}}
+\toprule
+Scenario & Candidate /\allowbreak{} evidence & Cost and alternative\\\midrule
+\endhead
+Trusted multi-model inference with configurable quotas & Test MPS allocation approaches against native sharing on the targetGPU; VastPipe/\allowbreak{}iGniter/\allowbreak{}gpulets/\allowbreak{}GSLICE supply condition-specific leads. & Check tail latency and memory interference. Use stronger partitioning where trust boundaries require it; do not infer security from throughput.\\
+Foreground request-tail priority & Test preemptive scheduling;XSchedTriton case andREEF/\allowbreak{}Orion/\allowbreak{}Paella offer different integration choices. & Account for hardware preemption support and background slowdown; use batching/\allowbreak{}dedication when isolation/\allowbreak{}integration demands dominate.\\
+Workflow-local function density & TestStreamBox-style runtime/\allowbreak{}memory sharing where workflow functions share a trust boundary. & Requires compilation/\allowbreak{}profiling and controlled concurrency; separate runtimes/\allowbreak{}partitions suit stronger isolation requirements.\\
+Many low-rate model functions & TestTorpor late binding against residentNative baselines under target model sizes. & Host memory,CPU andPCIe traffic increase; keep heavy/\allowbreak{}high-rate models resident when transfer cost dominates.\\
+Mixed inference and opportunistic training & TestSIRIUS-type memory handover using separable inferenceSLO metrics. & Requires runtime integration and controlled memory reclamation;dedicate resources where interference risk is unacceptable.\\
+MIG-aware deployments & TreatKRYPTON/\allowbreak{}ParvaGPU as design leads with different source/\allowbreak{}validation status. & Verify supportedprofiles,reconfiguration limits and finalsource;hardware partitions alone do not establish a measured end-to-endsecurity guarantee.\\
+\bottomrule
+\end{longtable}}
+
+
+\section{Research gaps}
+
+The checked set does not establish matched comparisons across all mechanisms on one common workload and hardware stack. Energy,security/\allowbreak{}fault tests,uncertainty intervals and software-version detail are uneven. The final report-to-study map,source-version checks and fullcandidate coverage remain incomplete. These gaps limit confidence before any deployment recommendation is generalized.
+
+
+
+\section{Threats to validity and limitations}
+
+
+{\small\begin{longtable}{>{\raggedright\arraybackslash}p{0.25\linewidth}>{\raggedright\arraybackslash}p{0.67\linewidth}}
+\toprule
+Threat & Handling /\allowbreak{} residual limitation\\\midrule
+\endhead
+Search reproducibility & Executed versus planned queries remain distinct; unresolved ACM/\allowbreak{}ScienceDirect totals and field/\allowbreak{}filter deviations are disclosed.\\
+Selection bias & All records have initial automated triage, but 2,634 retain/\allowbreak{}uncertain records are not fully assessed. Accessible sources are a biased slice.\\
+Reviewer judgment & AI-only continuation is disclosed. TwoAIopinions are not independent human validation; original scores/\allowbreak{}votes are preserved.\\
+Source/\allowbreak{}version identity & ParvaGPUpreprint andREEFcompanion identity remain explicit. No inferred DOI substitution or automatic version merge.\\
+Measurement interpretation & P99,P98,mean/\allowbreak{}unqualifiedlatency,model-pairpercentiles,training throughput and host-memory overhead remain separate.\\
+Incomplete extraction & Not-extracted fields and section-scoped absence reporting remain visible; missing values are not zeros.\\
+Final accounting & The final included-study count and final PRISMA stages remain pending; 15 forms do not meet the final-study target by themselves.\\
+\bottomrule
+\end{longtable}}
+
+The submitted Task 1 protocol is byte-for-byte preserved. The current workbook, PDFs and supporting CSV files describe the same current register checkpoint. This is an updated evidence report with explicit unfinished review work, not a claim that every candidate has completed full-text eligibility.
+
+

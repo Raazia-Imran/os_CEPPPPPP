@@ -1,0 +1,16 @@
+report_id,short_name,title,year,doi,official_or_accessed_source,assessment_status,final_included,qa_items,outcome_rows
+GB-P001,VastPipe,VastPipe: A High-Throughput Inference System via Adaptive Space-Division Multiplexing for Diverse Accelerators,2025,10.1007/s11390-024-3773-5,https://doi.org/10.1007/s11390-024-3773-5,provisional,Pending,10,2
+GB-P002,iGniter,iGniter: Interference-Aware GPU Resource Provisioning for Predictable DNN Inference in the Cloud,2023,10.1109/TPDS.2022.3232715,https://doi.org/10.1109/TPDS.2022.3232715,provisional,Pending,10,2
+GB-P003,gpulets,Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing,2022,Not verified; official URL supplied,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,provisional,Pending,10,1
+GB-P004,PipeSwitch,PipeSwitch: Fast Pipelined Context Switching for Deep Learning Applications,2020,Not verified; official URL supplied,https://www.usenix.org/system/files/osdi20-bai.pdf,provisional,Pending,10,12
+GB-P005,REEF,Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inferences,2022,Not verified; official URL supplied,https://www.usenix.org/system/files/osdi22-han.pdf,companion_candidate,Pending,10,9
+GB-P006,Paella,Paella: Low-latency Model Serving with Software-defined GPU Scheduling,2023,10.1145/3600006.3613163,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,provisional,Pending,10,2
+GB-P007,Orion,"Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",2024,10.1145/3627703.3629578,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,provisional,Pending,10,2
+GB-P008,GSLICE,GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform,2020,10.1145/3419111.3421284,https://par.nsf.gov/servlets/purl/10299299,provisional,Pending,10,2
+GB-P009,Clockwork,Serving DNNs like Clockwork: Performance Predictability from the Bottom Up,2020,Not verified; official URL supplied,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,provisional,Pending,10,2
+GB-P010,SIRIUS,Colocating ML Inference and Training with Fast GPU Memory Handover (SIRIUS),2025,Not verified; official URL supplied,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,provisional,Pending,10,1
+GB-P011,ParvaGPU,ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments,2024,10.1109/SC41406.2024.00048,https://arxiv.org/pdf/2409.14447,publication_version_uncertain,Pending,10,2
+GB-P012,Torpor,"Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference",2025,Not verified; official URL supplied,https://www.usenix.org/system/files/atc25-yu.pdf,provisional,Pending,10,2
+GB-P013,StreamBox,StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow,2024,Not verified; official URL supplied,https://www.usenix.org/system/files/atc24-wu-hao.pdf,provisional,Pending,10,2
+GB-P014,KRYPTON,Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception (KRYPTON),2025,Not verified; official URL supplied,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,provisional,Pending,10,2
+GB-P015,XSched,XSched: Preemptive Scheduling for Diverse XPUs,2025,Not verified; official URL supplied,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,provisional,Pending,10,2

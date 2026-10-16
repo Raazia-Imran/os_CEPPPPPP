@@ -1,0 +1,115 @@
+record_id,canonical_record_id,match_basis,resolution
+GB-R00061,GB-R00060,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00081,GB-R00080,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00121,GB-R00120,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00162,GB-R00159,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00202,GB-R00201,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00282,GB-R00281,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00343,GB-R00341,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00484,GB-R00478,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00502,GB-R00501,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00542,GB-R00540,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00566,GB-R00561,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00662,GB-R00641,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00745,GB-R00741,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00822,GB-R00818,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00883,GB-R00858,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R00926,GB-R00921,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01044,GB-R01040,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01063,GB-R01060,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01124,GB-R01119,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01132,GB-R01118,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01202,GB-R01200,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01250,GB-R01240,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01263,GB-R01261,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01284,GB-R01280,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01364,GB-R01361,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01482,GB-R01481,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01542,GB-R01521,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01562,GB-R01540,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01582,GB-R00021,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01783,GB-R01782,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R01923,GB-R01922,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02003,GB-R02002,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02197,GB-R02173,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02198,GB-R02171,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02201,GB-R02176,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02207,GB-R02183,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02231,GB-R02173,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02255,GB-R02213,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02265,GB-R02249,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02280,GB-R00241,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02281,GB-R00088,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02282,GB-R00077,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02284,GB-R00017,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02288,GB-R00067,Exact DOI/URL or exact title+authors+year without identifiers,Deterministic linkage; different DOI versions remain separate
+GB-R02337,GB-R02105,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02344,GB-R01951,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02353,GB-R02323,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02365,GB-R02302,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02373,GB-R02325,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02388,GB-R02313,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02395,GB-R02324,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02414,GB-R02310,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02427,GB-R02326,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02589,GB-R02348,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02595,GB-R02323,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02600,GB-R02290,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02613,GB-R02302,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02625,GB-R02325,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02631,GB-R02297,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02635,GB-R02383,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02637,GB-R02384,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02644,GB-R02313,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02645,GB-R02389,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02648,GB-R02320,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02649,GB-R02324,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02655,GB-R02407,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02656,GB-R02410,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02667,GB-R02420,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02672,GB-R02326,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02680,GB-R02581,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02723,GB-R02332,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02798,GB-R02696,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R02849,GB-R02499,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03080,GB-R02348,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03092,GB-R02290,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03102,GB-R02617,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03115,GB-R02621,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03124,GB-R02297,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03147,GB-R02320,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03161,GB-R02410,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03165,GB-R02312,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03170,GB-R02420,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03171,GB-R02423,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03216,GB-R02311,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03341,GB-R02307,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03363,GB-R02302,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03372,GB-R02314,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03376,GB-R02325,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03383,GB-R02730,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03389,GB-R02639,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03391,GB-R02387,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03393,GB-R02313,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03405,GB-R02404,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03416,GB-R02310,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03446,GB-R02329,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03530,GB-R02294,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03571,GB-R02817,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03582,GB-R02332,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03596,GB-R02495,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03611,GB-R03508,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03617,GB-R02308,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03696,GB-R02331,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03729,GB-R02775,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03745,GB-R02801,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03767,GB-R02919,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03843,GB-R02886,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03904,GB-R03802,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03962,GB-R02300,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R03975,GB-R02470,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R04173,GB-R03212,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R04189,GB-R03225,Exact DOI,Deterministic append-only linkage to preserved canonical ID
+GB-R01568,GB-R01567,Crossref is-identical-to relation; https://api.crossref.org/works/10.1145/3820171.3806868,Applied by AI after explicit user authorization for autonomous reconciliation; preserve initial votes in screening_merged_history.csv
+GB-R02190,GB-R01536,Exact publisher primary URL matches DOI-less occurrence; https://api.crossref.org/works/10.1109/dac63849.2025.11132423,Applied by AI after explicit user authorization for autonomous reconciliation; preserve initial votes in screening_merged_history.csv
+GB-R02256,GB-R00350,Exact publisher primary URL matches DOI-less occurrence; https://api.crossref.org/works/10.1109/micro56248.2022.00019,Applied by AI after explicit user authorization for autonomous reconciliation; preserve initial votes in screening_merged_history.csv

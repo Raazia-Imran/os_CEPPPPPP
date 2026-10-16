@@ -1,0 +1,257 @@
+{
+  "tables": [
+    {
+      "table": "Workbook summary",
+      "rows": 14,
+      "fields": 2,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Paper list",
+      "rows": 17,
+      "fields": 16,
+      "panels": 4,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Search runs",
+      "rows": 14,
+      "fields": 15,
+      "panels": 4,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Screening log",
+      "rows": 4075,
+      "fields": 21,
+      "panels": 5,
+      "all_cells_represented": true,
+      "glossary_compression": true
+    },
+    {
+      "table": "Duplicates",
+      "rows": 4189,
+      "fields": 6,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": true
+    },
+    {
+      "table": "Fulltext criteria",
+      "rows": 102,
+      "fields": 13,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "FT exclusions",
+      "rows": 2,
+      "fields": 10,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "QA items",
+      "rows": 150,
+      "fields": 15,
+      "panels": 4,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Study extraction",
+      "rows": 15,
+      "fields": 35,
+      "panels": 9,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Outcomes",
+      "rows": 45,
+      "fields": 20,
+      "panels": 5,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Calculations",
+      "rows": 2,
+      "fields": 9,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Review issues",
+      "rows": 8,
+      "fields": 4,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Reference audit",
+      "rows": 23,
+      "fields": 10,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Abstract normalization audit (previous workbook tab)",
+      "rows": 4189,
+      "fields": 9,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": true
+    },
+    {
+      "table": "Database statistics",
+      "rows": 5,
+      "fields": 4,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Selection statistics",
+      "rows": 19,
+      "fields": 3,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Discrepancy ledger",
+      "rows": 8,
+      "fields": 5,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "PRISMA accounting",
+      "rows": 15,
+      "fields": 3,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Current paper catalogue",
+      "rows": 15,
+      "fields": 10,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "QA checklist",
+      "rows": 10,
+      "fields": 6,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "QA matrix",
+      "rows": 15,
+      "fields": 20,
+      "panels": 5,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "QA totals",
+      "rows": 15,
+      "fields": 9,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "QA follow-up",
+      "rows": 15,
+      "fields": 12,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "QA rationales",
+      "rows": 150,
+      "fields": 18,
+      "panels": 5,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Fulltext checks",
+      "rows": 17,
+      "fields": 12,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Duplicate links",
+      "rows": 114,
+      "fields": 4,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Fulltext decision history",
+      "rows": 2,
+      "fields": 11,
+      "panels": 3,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Import manifest",
+      "rows": 102,
+      "fields": 6,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Export audit",
+      "rows": 21,
+      "fields": 9,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Protocol requirements audit",
+      "rows": 14,
+      "fields": 9,
+      "panels": 2,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    },
+    {
+      "table": "Cycle status",
+      "rows": 6,
+      "fields": 4,
+      "panels": 1,
+      "all_cells_represented": true,
+      "glossary_compression": false
+    }
+  ],
+  "source_cells_represented": 159541,
+  "printed_panels": 86,
+  "glossary_values": 2300,
+  "bib_entries": 23,
+  "scientific_data_changed": false
+}

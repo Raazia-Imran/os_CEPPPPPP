@@ -1,0 +1,9 @@
+issue_id,scope,evidence,handling,status
+D01,ACM totals,1600 displayed;1603 claimed exports;1582 parsed numbered-export occurrences,Historical cause unknown; use1582active parsed occurrences; preserve all reported counts,open/disclosed
+D02,ACM export mapping,79numbered exports lack complete per-run mapping,Keep query/field/filter/time gaps explicit; do not reconstruct operator actions,open/disclosed
+D03,ScienceDirect MPS,517displayed versus563exported/parsed,Cause unresolved; retain both numbers and parsed active import,open/disclosed
+D04,ParvaGPU version,Conference DOI identified; accessed arXiv report used for extraction,Final-publication text equivalence pending; do not mark final included,open/disclosed
+D05,REEF identity,Conference report versus journal companion,Reconcile report-to-study relationship; no DOI substitution,open/disclosed
+D06,Selection census,2634initial retain/uncertain versus17source-assessed reports,2617canonical candidates lack linked source assessment; final flow pending,open/disclosed
+D07,Screening event times,798missing exact event timestamps; all4075dates recoverable from existing events,Keep exact times Not recorded; metadata-check timestamps are not review timestamps,open/disclosed
+D08,QA follow-up,23section/figure-only anchors and3provisional N/A judgments,Keep limitations/calibration pending; no automatic below60% exclusion,open/disclosed
