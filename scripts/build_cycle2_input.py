@@ -11,6 +11,11 @@ def read(name):
         return list(csv.DictReader(stream))
 
 paths = [
+    ("Screening log","cycle3_screening_log.csv"),("Title votes","title_votes.csv"),
+    ("Duplicate ledger","cycle3_duplicate_ledger.csv"),("Metadata audit","cycle3_metadata_audit.csv"),
+    ("Retrieval log","cycle3_retrieval.csv"),("Access attempts","cycle3_access_attempts.csv"),
+    ("Identity rechecks","cycle3_version_audit.csv"),("Provisional studies","provisional_studies.csv"),
+    ("Validated studies","validated_studies.csv"),("FT exclusions","fulltext_exclusions.csv"),
     ("Query audit", "database_query_audit.csv"), ("Export audit", "query_export_audit.csv"),
     ("Date audit", "publication_date_audit.csv"), ("New import queue", "new_import_queue.csv"), ("New version proposals", "new_version_candidates.csv"),
     ("Requirements audit", "../task2/HEADING_14_AUDIT.csv"),
@@ -34,6 +39,7 @@ payload = {
     'counts': json.loads((E / 'prisma_counts.json').read_text()),
     'progress': json.loads((E / 'review_progress.json').read_text()),
     'sheets': {name: read(path) for name, path in paths},
+    'fields': {name: next(csv.reader((E/path).open())) for name,path in paths},
 }
 (ROOT / 'task2/tracker/workbook_input.json').write_text(json.dumps(payload, ensure_ascii=False) + '\n')
-print('Workbook input: 26 register views plus Summary; no evidence registers modified.')
+print(f'Workbook input: {len(paths)} register views plus Summary; no evidence registers modified.')

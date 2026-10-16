@@ -1,0 +1,31 @@
+record_id,doi,title,status,priority
+GB-R00002,10.1145/3832810.3832898,MIGServe: Layout-Aware Multi-Instance GPU Management for Efficient LLM Serving,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00006,10.1145/3631311.3632401,Towards Optimal Preemptive GPU Time-Sharing for Edge Model Serving,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00007,10.1145/3767295.3769392,Automated End-to-End Model Serving with Cooperative Compilation and Scheduling,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00008,10.1145/3803800,Real-Time Task Mapping for CPU-GPU Heterogeneous Platforms: Spatial GPU Partitioning and Utilization Bound,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00011,10.1145/3832810.3832827,ReliefServe: Relieving GPU Pressure in Multi-Model Serving via Selective CPU Escape,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00013,10.1145/3805802,PctoDL: Adaptive GPU Throughput Optimization for Deep Learning Inference with Power Constraints,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00014,10.1145/3772052.3772261,CIS: Checkpointed Inference for Data Drift-Resilient Model Serving at Edge Servers,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00015,10.1145/3712285.3759857,BOER: Enhancing Resource Utilization for Deep Learning Inference with Hybrid Spatial GPU Sharing,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00016,10.1145/3830418.3843911,Sandhi: Fine-Grained Merging for Memory Efficient Multi-Model Serving,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00018,10.1145/3805621.3807628,Reducing Language Model Inference Latency using CPU-Assisted Serving,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00019,10.1145/3786697,SG-Serve: Efficient Model Serving for Subgraph-based Graph Representation Learning,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00020,10.1145/3712285.3759846,Compile-Time QoS Scheme for Deep Learning Inferences,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00021,10.1145/3625549.3658657,ESG: Pipeline-Conscious Efficient Scheduling of DNN Workflows on Serverless Platforms with Shareable GPUs,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00024,10.1145/3807775,FlePo: GPU Multitask Scheduling Optimization Framework for Dynamic Scenes,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00026,10.1145/3721145.3728490,SortingHat: System Topology-aware Scheduling of Deep Neural Network Models on Multi-GPU Systems,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00029,10.1145/3830418.3843893,Linux AGX: An Adaptive GPU eXtension to Linux Fair Scheduling for Physical AI and Robotic Systems,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00030,10.1145/3721145.3735113,ConCo: Optimizing Compilation of Concurrent Tensor Programs on Shared GPU,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00032,10.1145/3669940.3707251,Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00033,10.1145/3534056.3534935,Overflowing emerging neural network inference tasks from the GPU to the CPU on heterogeneous servers,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00035,10.1145/3698038.3698555,KACE: Kernel-Aware Colocation for Efficient GPU Spatial Sharing,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00037,,GPU-Watch: An Autonomous Node-Level GPU Utilization Enforcement Framework for Slurm Clusters,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00038,10.1145/3757892.3757903,The Utilization Fallacy and the Real Drivers of Carbon-Efficient Inference Serving,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00047,10.1145/3676641.3715983,Aqua: Network-Accelerated Memory Offloading for LLMs in Scale-Up GPU Domains,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00054,10.1145/3721146.3721956,Priority-Aware Preemptive Scheduling for Mixed-Priority Workloads in MoE Inference,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00057,10.1145/3789240.3829130,TurboBus: Pooling PCIe Bandwidth for LLM Workloads via Scale-Up Fabrics,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00059,10.1145/3603269.3604830,AdaInf: Data Drift Adaptive Scheduling for Accurate and SLO-guaranteed Multiple-Model Inference Serving at Edge Servers,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00060,10.1145/3789240.3829120,Efficient Remote KV Cache Reuse with GPU-native Video Codec,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00063,10.1145/3712031.3712324,PCIe Bandwidth-Aware Scheduling for Multi-Instance GPUs,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00070,10.1145/3711699,Exploring Function Granularity for Serverless Machine Learning Application with GPU Sharing,fulltext_retrieval_and_IC_assessment_pending,high
+GB-R00073,10.1145/3581784.3607034,Clover: Toward Sustainable AI with Carbon-Aware Machine Learning Inference Service,fulltext_retrieval_and_IC_assessment_pending,high

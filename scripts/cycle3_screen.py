@@ -9,7 +9,7 @@ def write(p,rows,fields=None):
   w=csv.DictWriter(f,fieldnames=fields or list(dict.fromkeys(k for r in rows for k in r)));w.writeheader();w.writerows(rows)
 private=Path(os.environ['OS_CEP_PRIVATE_RECORDS']);raw=read(private);public=read(E/'records.csv')
 assert [(r['record_id'],r['canonical_record_id']) for r in raw]==[(r['record_id'],r['canonical_record_id']) for r in public]
-by={r['record_id']:r for r in raw};screen=read(E/'screening.csv');votes=read(E/'title_votes.csv');human=read(E/'human_validation_queue.csv');audit=[];added=0
+by={r['record_id']:r for r in raw};screen=read(E/'screening.csv');votes=read(E/'title_votes.csv');human=read(E/'human_validation_queue.csv');audit=read(E/'cycle3_metadata_audit.csv') if (E/'cycle3_metadata_audit.csv').exists() else [];added=0
 gpu=re.compile(r'\bgpus?\b|graphics processing|cuda|nvidia|rocm',re.I)
 inf=re.compile(r'inferen|model.serv|deep.learn|neural.network|\bdnn\b|\bllm\b',re.I)
 review=re.compile(r'\bsurvey\b|systematic (?:literature )?review|\breview of\b|\ba review\b|bibliometric',re.I)
@@ -31,6 +31,6 @@ for s in screen:
  if not criterion and not any(x['record_id']==s['record_id'] for x in human):human.append(dict(record_id=s['record_id'],priority=2,title=r['title'],doi=r['doi'],recommendation='',abstract_status='publisher RIS abstract' if r['abstract'] else 'unavailable',fulltext_status='not_sought',reason=reason,assigned_role='human screening checker',independent_vote='',criterion='',checked_at_utc='',final_decision='pending'))
  added+=1
 write(E/'screening.csv',screen);write(E/'title_votes.csv',votes);write(E/'human_validation_queue.csv',human)
-write(E/'cycle3_metadata_audit.csv',audit)
+write(E/'cycle3_metadata_audit.csv',list({x['record_id']:x for x in audit}.values()))
 write(E/'new_import_queue.csv',[s for s in screen if not s['reviewer_1_vote']],list(screen[0]))
 print(json.dumps(dict(new_recommendations=added,remaining_first_recommendations=sum(not s['reviewer_1_vote'] for s in screen),existing_recommendations_untouched=True)))

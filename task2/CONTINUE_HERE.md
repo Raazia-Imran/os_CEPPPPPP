@@ -1,3 +1,7 @@
+# Continue Cycle 3 from the saved batches
+
+Read task2/CYCLE3_PROGRESS.md and evidence/cycle3_validation.json. Preserve2487 preliminary recommendations,90 QA rows,34 outcomes and9 report forms. First recommendations still pending for1591 records. Next candidate IDs/DOIs are in evidence/cycle3_next_batch.csv;1137 retain/uncertain records need the remaining retrieval/eligibility work. Do not rerun import scripts or overwrite real human returns. Source PDFs stay private. Final inclusion/PRISMA remain pending; the existing report PDF is historical. Continue Cycle 3 only when requested; do not begin Cycle4 automatically.
+
 # Cycle 3 in progress
 
 Resume source assessments for Paella, Orion, GSLICE and Clockwork. Do not rerun imports or overwrite baseline votes. Raw sources stay private. Save each batch; update registers and full/private and public workbook views at the end. All independent human votes remain pending.

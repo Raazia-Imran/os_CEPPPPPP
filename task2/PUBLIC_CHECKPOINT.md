@@ -1,3 +1,9 @@
+# Cycle 3 update
+
+Current source coverage:9 provisional report forms,90 Q1-Q10 rows and34 outcomes. First recommendations2487;1591 remain pending. Counts4189 occurrences,111 duplicate links,4078 canonical records unchanged. The workbook is being refreshed to43 sheets. Read CYCLE3_PROGRESS.md and cycle3_validation.json for the current checkpoint. The abstract-bearing workbook remains in the existing private Drive file; the public version omits abstract text.
+
+## Historical Cycle 2 publication scope
+
 # Cycle 2 publication scope
 
 The full workbook and original 21 ScienceDirect citation exports are preserved privately in the user-provided Drive folders. The full workbook is named `GroupB_Task2_Updated_Review_Workbook_2026-10-16.xlsx` in the second folder. The new detailed PDF and Word guide are there too.

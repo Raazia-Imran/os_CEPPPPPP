@@ -21,7 +21,7 @@ def assess(selected):
   if p['key'] not in selected or any(x['report_id']==p['id'] for x in checks):continue
   rid=p['id'];assert p['record'] in by
   # The downloaded author manuscript is checked against the venue/DOI shown in its first page.
-  pdf=Path('/tmp/c3-sources')/(p['key']+'.pdf');assert pdf.exists()
+  pdf=Path(os.environ.get('OS_CEP_SOURCE_DIR','/tmp/c3-sources'))/(p['key']+'.pdf');assert pdf.exists()
   checks.append(dict(report_id=rid,short_name=p['key'],doi=p['doi'],source=p['url'],anchor=p['anchor'],first_reviewer_recommendation='provisionally_eligible',criterion_rationale='IC1-IC6 supported in checked source sections; eligible recommendation only.',remaining_checks='Independent eligibility, numeric and QA verification; complete remaining fields.',reviewer='Codex-GroupB',date=TS[:10],second_vote='',final_decision='pending'))
   form=dict.fromkeys(forms[0],'not_extracted');form.update(report_id=rid,study_id='GB-PS'+rid[-3:],title=p['title'],doi=p['doi'],source=p['url'],source_anchor=p['anchor'],mechanism=p['mechanism'],gpu_hardware=p['gpu'],driver_runtime=p['software'],models=p['workload'],tenant_mix=p['workload'],baseline=p['baseline'],metric_outcomes_register='extraction.csv:'+rid,limitations=p['limit'],tradeoffs=p['tradeoff'],eligibility_status='provisionally_eligible;study_identity_provisional',reviewer='Codex-GroupB',independent_checker='',field_status='Selected fields checked; other fields not_extracted',checked_at_utc=TS,authors=p['authors'],year=p['year'],venue=p['venue']);forms.append(form)
   qa_anchors={
@@ -46,7 +46,7 @@ def assess(selected):
   retr.append(dict(candidate=p['key'],source_url=p['url'],checked_at_utc=TS,assessor='Codex-GroupB',retrieval_status='retrieved',sha256=hashlib.sha256(pdf.read_bytes()).hexdigest(),method='public author or repository PDF',assessment_status='selected_sections_assessed;independent_pending',licensed_source_in_git='no'))
  for n,rs in [('fulltext_checks.csv',checks),('study_extraction_form.csv',forms),('quality.csv',qa),('extraction.csv',ex),('fulltext_criteria.csv',criteria),('report_validation_queue.csv',tasks),('report_record_links.csv',links),('cycle3_retrieval.csv',retr)]:write(n,rs)
  # Empty outputs are deliberate: pending review is never converted to a false zero-study finding.
- write('validated_studies.csv',[],['study_id','report_id','validation_evidence','reviewer_1','reviewer_2','final_decision'])
+ if not (E/'validated_studies.csv').exists():write('validated_studies.csv',[],['study_id','report_id','validation_evidence','reviewer_1','reviewer_2','final_decision'])
  write('fulltext_exclusions.csv',[dict(report_id=x['report_id'],criterion=x.get('primary_exclusion',''),reason=x['criterion_rationale'],assessor=x['reviewer'],decision_status='first_review_proposal;independent_pending') for x in checks if x['first_reviewer_recommendation']=='exclude_recommendation'],['report_id','criterion','reason','assessor','decision_status'])
  write('provisional_studies.csv',[dict(report_id=x['report_id'],title=x['title'],doi=x['doi'],study_id=x['study_id'],eligibility_status=x['eligibility_status'],final_decision='pending',source=x['source'],source_anchor=x['source_anchor']) for x in forms])
  print(json.dumps(dict(reports=len(checks),qa_items=len(qa),outcomes=len(ex))))
