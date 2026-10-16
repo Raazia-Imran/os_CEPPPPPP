@@ -1,0 +1,45 @@
+{
+  "attached_qa_report_ids": [
+    "GB-P001",
+    "GB-P002",
+    "GB-P003",
+    "GB-P004",
+    "GB-P005",
+    "GB-P006",
+    "GB-P007",
+    "GB-P008",
+    "GB-P009",
+    "GB-P010",
+    "GB-P011",
+    "GB-P012",
+    "GB-P013",
+    "GB-P014",
+    "GB-P015"
+  ],
+  "attached_extraction_report_ids": [
+    "GB-P001",
+    "GB-P002",
+    "GB-P003",
+    "GB-P004",
+    "GB-P005",
+    "GB-P006",
+    "GB-P007",
+    "GB-P008",
+    "GB-P009",
+    "GB-P010",
+    "GB-P011",
+    "GB-P012",
+    "GB-P013",
+    "GB-P014",
+    "GB-P015"
+  ],
+  "sets_equal": true,
+  "assessed_exclusions": [
+    "GB-P016",
+    "GB-P017"
+  ],
+  "prior_bibliography_entries": 21,
+  "prior_paper_references": 15,
+  "prior_context_method_references": 6,
+  "final_unique_studies": null
+}
