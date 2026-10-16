@@ -34,7 +34,7 @@
   "four_database_completeness": "not established; supplied exports from four platforms represented",
   "new_sciencedirect_occurrences": 1898,
   "possible_version_pairs_note": "41 legacy pairs retained; new pairs listed separately in new_version_candidates.csv",
-  "cycle3_assessed_reports": 9,
+  "cycle3_assessed_reports": 11,
   "cycle3_provisionally_eligible_reports": 9,
-  "cycle3_note": "Bounded first-review assessments; no final PRISMA completion inferred"
+  "cycle3_note": "Bounded first-review assessments; source-version uncertainty is not provisional eligibility; no final PRISMA completion inferred"
 }

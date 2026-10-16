@@ -20,6 +20,7 @@ for name,key in [('title_votes.csv',None),('quality.csv',None),('extraction.csv'
  else:
   assert all(all(new[i].get(k,'')==v for k,v in x.items()) for i,x in enumerate(old)),name
 lookup={r['report_id']:r for r in forms}
+assessment={r['report_id']:r['first_reviewer_recommendation'] for r in checks}
 for name in ['quality.csv','extraction.csv','fulltext_criteria.csv','report_validation_queue.csv']:
  rs=read(name)
  for r in rs:r.update(doi=lookup[r['report_id']]['doi'],source_url=lookup[r['report_id']]['source'])
@@ -38,7 +39,7 @@ for x in links:mapped.setdefault(x['canonical_record_id'],[]).append(x['report_i
 log=[]
 for s in screen:
  r=by[s['record_id']];pids=mapped.get(s['record_id'],[])
- log.append(dict(record_id=s['record_id'],database=r['database'],title=r['title'],year=r['year'],doi=r['doi'],duplicate_status='canonical',title_abstract_recommendation=s['reviewer_1_vote'] or 'awaiting_first_recommendation',title_abstract_reason=s['reason'],report_ids=';'.join(pids),fulltext_first_assessment='provisionally_eligible' if pids else s['fulltext_status'],fulltext_assessor='Codex-GroupB' if pids else '',fulltext_source=';'.join(lookup[p]['source'] for p in pids),fulltext_anchor=';'.join(lookup[p]['source_anchor'] for p in pids),independent_vote=s['reviewer_2_vote'],final_status=s['final_decision']))
+ log.append(dict(record_id=s['record_id'],database=r['database'],title=r['title'],year=r['year'],doi=r['doi'],duplicate_status='canonical',title_abstract_recommendation=s['reviewer_1_vote'] or 'awaiting_first_recommendation',title_abstract_reason=s['reason'],report_ids=';'.join(pids),fulltext_first_assessment=';'.join(assessment[p] for p in pids) if pids else s['fulltext_status'],fulltext_assessor='Codex-GroupB' if pids else '',fulltext_source=';'.join(lookup[p]['source'] for p in pids),fulltext_anchor=';'.join(lookup[p]['source_anchor'] for p in pids),independent_vote=s['reviewer_2_vote'],final_status=s['final_decision']))
 write('cycle3_screening_log.csv',log)
 ledger=[dict(record_id=r['record_id'],canonical_record_id=r['canonical_record_id'],doi=r['doi'],source_file=r['source_file'],duplicate_status='linked_repeat' if r['record_id']!=r['canonical_record_id'] else 'canonical',link_basis=next((d['match_basis'] for d in du if d['record_id']==r['record_id']),'')) for r in records]
 write('cycle3_duplicate_ledger.csv',ledger)
@@ -51,13 +52,14 @@ for v in read('version_review_audit.csv'):
  verified=any(x['id'].lower()==b['doi'].lower() for x in relation) if v['left_doi'] else a['url'].lower().rstrip('/')==u.lower().rstrip('/')
  assert verified
  versions.append(dict(record_id=v['record_id'],possible_match=v['possible_match'],left_doi=v['left_doi'],right_doi=v['right_doi'],metadata_url='https://api.crossref.org/works/'+doi,verified_basis='Crossref is-identical-to relation' if v['left_doi'] else 'Exact publisher primary URL matches DOI-less occurrence',checked_at_utc=TS,assessor='Codex-GroupB',applied='no',remaining='Independent reconciliation/application pending; no counts changed'))
-write('cycle3_version_audit.csv',versions)
-failure=json.loads((private/'failed_attempt.json').read_text());write('cycle3_access_attempts.csv',[dict(failure,assessor='Codex-GroupB',report_status='not_retrieved_this_attempt;alternate_routes_not_exhausted')])
+if not (E/'cycle3_version_audit.csv').exists():write('cycle3_version_audit.csv',versions)
+if not (E/'cycle3_access_attempts.csv').exists():
+ failure=json.loads((private/'failed_attempt.json').read_text());write('cycle3_access_attempts.csv',[dict(failure,assessor='Codex-GroupB',report_status='not_retrieved_this_attempt;alternate_routes_not_exhausted')])
 ex=sum(x['reviewer_1_vote']=='exclude_recommendation' for x in screen);retain=sum(x['reviewer_1_vote']=='retain_or_uncertain' for x in screen);pending=sum(not x['reviewer_1_vote'] for x in screen)
-c=json.loads((E/'prisma_counts.json').read_text());c.update(preliminary_recommendations=ex+retain,preliminary_exclusion_recommendations=ex,preliminary_retain_or_uncertain=retain,first_recommendations_pending=pending,cycle3_assessed_reports=len(checks),cycle3_provisionally_eligible_reports=len(forms),final_screened=None,final_included=None,cycle3_note='Bounded first-review assessments; no final PRISMA completion inferred')
+c=json.loads((E/'prisma_counts.json').read_text());c.update(preliminary_recommendations=ex+retain,preliminary_exclusion_recommendations=ex,preliminary_retain_or_uncertain=retain,first_recommendations_pending=pending,cycle3_assessed_reports=len(checks),cycle3_provisionally_eligible_reports=sum(x['first_reviewer_recommendation'].startswith('provisionally_eligible') for x in checks),final_screened=None,final_included=None,cycle3_note='Bounded first-review assessments; source-version uncertainty is not provisional eligibility; no final PRISMA completion inferred')
 (E/'prisma_counts.json').write_text(json.dumps(c,indent=2)+'\n')
 p=json.loads((E/'review_progress.json').read_text());p.update(first_reviewer_records=ex+retain,first_reviewer_fraction=(ex+retain)/len(screen),exclude_recommendations=ex,retained_or_uncertain=retain,unreviewed=pending,source_checked_reports=len(checks),appraised_reports=len(forms),quality_item_rows=len(read('quality.csv')),new_outcome_rows=len(read('extraction.csv')),human_candidate_records=len(read('human_validation_queue.csv')),cycle3_new_recommendations=sum(v.get('batch_id')=='C3-METADATA-01' for v in read('title_votes.csv')),cycle3_new_report_assessments=4,updated_at_utc=TS,cycle3_status='Batches1-2 saved; remaining screening and independent validation open',cycle2_report_status='Historical PDF predates expanded Cycle3 evidence')
 (E/'review_progress.json').write_text(json.dumps(p,indent=2)+'\n')
 validation=dict(checked_at_utc=TS,occurrences=len(records),duplicate_links=len(du),canonical_records=len(screen),recommendations=ex+retain,exclude_recommendations=ex,retain_or_uncertain=retain,first_recommendations_pending=pending,source_checked_reports=len(checks),quality_items=len(read('quality.csv')),outcome_rows=len(read('extraction.csv')),preserved_baseline_reviews=True,duplicate_links_changed=False,independent_human_votes_created=False,final_included_studies=None,limitations='Selected source sections assessed; no complete systematic retrieval census. 41 legacy and219 newer version proposals remain unapplied;3 legacy identity proposals rechecked. Existing PDF historical.')
-assert validation['quality_items']==90 and validation['outcome_rows']==34 and ex+retain+pending==len(screen)
+assert validation['quality_items']==10*len(forms) and len({x['outcome_id'] for x in read('extraction.csv')})==validation['outcome_rows'] and ex+retain+pending==len(screen)
 (E/'cycle3_validation.json').write_text(json.dumps(validation,indent=2)+'\n');print(json.dumps(validation,indent=2))
