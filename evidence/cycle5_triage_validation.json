@@ -1,0 +1,13 @@
+{
+  "new_automated_triage_rows": 1591,
+  "baseline_screening_sha256": "a7ef988b9ea878386a30c016506ad23b3621661cbd74149210125c8aeb6bb283",
+  "total_records": 4078,
+  "recommendations": {
+    "retain_or_uncertain": 2637,
+    "exclude_recommendation": 1441
+  },
+  "final_decisions": {
+    "pending": 4078
+  },
+  "note": "100% first automated triage coverage is not 100% abstract verification or final screening."
+}

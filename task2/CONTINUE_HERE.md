@@ -1,3 +1,7 @@
+# Cycle 5 screening batch: first automated triage covers all 4,078 records
+
+Added1,591 automated recommendations:91 explicit exclusion proposals and1,500 uncertain. Current first-pass split1,441 exclude and2,637 retain/uncertain. This is not complete abstract verification or final selection; all final decisions remain pending. Original2,487 recommendations preserved. Nine assessed reports,90 QA items and34 outcomes unchanged while new full texts are assessed. User authorizes AI-only continuation; see protocol_amendments.md. Workbook/report rebuilding follows source batches.
+
 # Cycle 4 initial QA outputs and workbook synchronized
 
 Published QA-table checkpoint: 1e75a465d922a66cca2ff0bdf17f04f6abe0d2b4. Current artifacts: 47-sheet public/private review workbooks and 35-page interim QA/extraction appendix; 9 provisional reports, 90 initial QA items, 34 outcomes. All original workbook cells/formulas preserved; all QA totals and saved caches checked. Drive workbook replacement verified. No new final eligibility or human validation. Twenty QA page mappings, two N/A calibrations, independent checks and wider source coverage remain open. Active first recommendations remain 2,487/4,078; 1,591 pending. Continue with task2/qa/CONTINUATION.md and task2/NEXT_24_HOURS.md. Final SLR report/PRISMA remain historical/pending.
