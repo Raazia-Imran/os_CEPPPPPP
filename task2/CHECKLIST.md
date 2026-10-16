@@ -1,3 +1,19 @@
+# Task 2 consolidation verification
+
+- [x] Headings 1–14 compiled with complete references and research-table appendices.
+- [x] Same 15 report IDs reconciled across QA and extraction; two assessed exclusions separate.
+- [x] All 4,075 canonical record IDs present in printed screening logs.
+- [x] Compact 13-tab workbook formula caches and 15 QA totals checked.
+- [x] All PDF pages rendered and inspected for layout; no overfull boxes or unresolved references.
+- [x] Submitted Task 1 unchanged; later CEP Sections 15–22 preserved separately.
+- [ ] Final title/abstract, eligibility census and report-to-study selection complete.
+- [ ] Final included-study list and final PRISMA accounting established.
+
+This checklist distinguishes completed document preparation from incomplete research selection. See final things/06_Task2_Submission/VALIDATION.json and README.md.
+
+---
+Previous requirements evidence follows.
+
 # Current requirements checkpoint
 
 | Requirement | Current evidence | Remaining |

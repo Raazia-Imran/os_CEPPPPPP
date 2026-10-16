@@ -1,3 +1,18 @@
+# Latest: consolidated Task 2 through Heading 14
+
+Use `final things/06_Task2_Submission/README.md`. The complete electronic report contains a 25-page core (including cover/contents/references) followed by complete research tables, a reversible value glossary, amendments and unchanged submitted Task 1: 1,272 PDF pages total. One main.tex and references.bib build it locally with the supplied protocol PDF. The 13-tab workbook, standalone QA/extraction PDFs and unabridged CSVs accompany it. Later CEP Sections 15–22 remain separately preserved in task2/later_cep.
+
+Technical validation passed: no overfull boxes, missing characters or unresolved references; all pages rendered and inspected for layout; all 4,075 canonical IDs present in the PDF; workbook formulas/counts and all 15 QA totals reconciled. QA and extraction use the identical GB-P001–GB-P015 set. The old 21-reference bibliography did not mean 21 included papers; this build has 23 references including the two assessed exclusions and six context/method sources.
+
+Research counts are unchanged: 4,189 occurrences − 114 applied duplicate links = 4,075 canonical records; 1,441 initial exclude proposals and 2,634 retain/uncertain; 17 source assessments, 15 QA/extraction forms, 150 QA items, 45 reported outcomes and two calculations. There are 2,617 canonical retain/uncertain candidates without a linked source assessment. Final included reports/studies remain unestablished; the adapted PRISMA 2020 flow is explicitly interim. Do not remove those boundaries or label unperformed reviewer work complete.
+
+Cycle 1 and Cycle 2 audit scopes are closed (Cycle 2 retains documented gaps). Cycles 3–5 are partial overall. Cycle 6 has interim accounting/reference outputs. Cycle 7 has a technically verified consolidated interim package. No overall assignment-completion or grading percentage is supported. Source decisions and submitted Task 1 remain preserved.
+
+Latest published preparation checkpoint: b4fd10640e543fab2c7bd5b406b5ce4d688b0e34; the validated PDF and ZIP publication follows. Verify remote main before resuming.
+
+---
+Historical checkpoint follows.
+
 # Latest: organized final things folder and interim Cycle6 accounting
 
 Verified predecessor main:ef52a35e218c4b19425ab21c924aaac029aed2e0. Presentation/catalogue checkpoint5cb05fef5983707b79c25631c1e23105909debc7 and validated-workbook checkpoint0f0ae0299adc85a0829ec487701a1b395483d63a are published. Final ZIP publication follows. The folder `final things` collects current statistics,paper/DOI catalogue,28-page report with two diagrams,LaTeX,QA/extraction and a13-tab workbook with actual dated screening provenance. There are798 missing exact screening-event timestamps; no metadata-check time was substituted. Existing vote dates recover dates for all4075rows.
