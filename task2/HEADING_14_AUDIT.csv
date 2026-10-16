@@ -1,15 +1,15 @@
 guideline_heading,requirement,state,evidence,remaining
-1,Background,Prepared,Submitted protocol section 1; report purpose,Final evidence-based discussion belongs to final CEP
-2,Engineering problem,Prepared,docs/topics.md; report purpose,Bound at within-device inference sharing
-3,Objective,Prepared,Submitted protocol; report RQs,Preserve utilization/latency/isolation focus
-4,SLR methodology,Prepared,Submitted protocol; amendments,Executed deviations must remain explicit
-5,Required activities / RQs,Prepared,Five protocol RQs; report RQ table,Do not count later synthesis as completed
-6,SLR protocol,Prepared,task1/submitted_protocol.pdf,Original preserved; amendments separate
-7,Database selection,Partial,Shared IEEE/Springer; ACM exports,ScienceDirect deferred; coverage deviation
-8,Search strategy,Partial,planned_queries.csv; shared search_runs.csv,"Recovered ACM log;79-file mapping,claimed counts and historical lanes still unresolved"
-9,Literature period,Partial,Protocol; imported runs,Shared11Oct/ACM-reported14Oct cutoffs disclosed;publication dates require checking
-10,Inclusion/exclusion,Partial,Protocol; screening.csv; title_votes.csv,All2247 first recommendations complete;1066candidate and127sampled exclusion checks pending
-11,PRISMA 2020,Partial,prisma_counts.json; prisma_flow.pdf,44applied duplicates unchanged;identity proposals not applied;final study count pending
-12,Search/screening log,Partial,Search runs; import manifest; records and votes,New events timestamped;original timestamps preserved;independent decisions pending
-13,Quality assessment,Partial,quality.csv; protocol Q1-Q10,5first-review forms/50items;independent scores and wider candidate QA pending
-14,Data extraction,Partial,extraction.csv; pilot/extraction.csv,26outcomes/5study forms;independent numerical verification and wider extraction pending
+1,Background,Prepared,Submitted protocol section 1; report purpose; Cycle2 report section1,Final evidence-based discussion belongs to final CEP
+2,Engineering problem,Prepared,docs/topics.md; report purpose; Cycle2 report section2,Bound at within-device inference sharing
+3,Objective,Prepared,Submitted protocol; report RQs; Cycle2 report section3,Preserve utilization/latency/isolation focus
+4,SLR methodology,Prepared,Submitted protocol; amendments; Cycle2 report section4,Executed deviations must remain explicit
+5,Required activities / RQs,Prepared,Five protocol RQs; report RQ table; Cycle2 report section5,RQ1-RQ5 interim answers drafted in section19; final validation and synthesis pending
+6,SLR protocol,Prepared,task1/submitted_protocol.pdf; Cycle2 report section6,Original preserved; amendments separate
+7,Database selection,Partial,Shared IEEE/Springer; ACM exports; Cycle2 report section7,ScienceDirect deferred; coverage deviation
+8,Search strategy,Partial,planned_queries.csv; shared search_runs.csv; Cycle2 report section8,"Recovered ACM log;79-file mapping,claimed counts and historical lanes still unresolved"
+9,Literature period,Partial,Protocol; imported runs; Cycle2 report section9,Shared11Oct/ACM-reported14Oct cutoffs disclosed;publication dates require checking
+10,Inclusion/exclusion,Partial,Protocol; screening.csv; title_votes.csv; Cycle2 report section10,All2247 first recommendations complete;1066candidate and127sampled exclusion checks pending
+11,PRISMA 2020,Partial,prisma_counts.json; prisma_flow.pdf; Cycle2 report section11,44applied duplicates unchanged;identity proposals not applied;final study count pending
+12,Search/screening log,Partial,Search runs; import manifest; records and votes; Cycle2 report section12,New events timestamped;original timestamps preserved;independent decisions pending
+13,Quality assessment,Partial,quality.csv; protocol Q1-Q10; Cycle2 report section13,5first-review forms/50items;independent scores and wider candidate QA pending
+14,Data extraction,Partial,extraction.csv; study_extraction_form.csv; report section14 and AppendixC,26outcomes/5forms preserved; independently verify and expand final eligible studies

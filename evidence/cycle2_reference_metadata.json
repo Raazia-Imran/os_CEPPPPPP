@@ -1,0 +1,129 @@
+{
+  "checked_at_utc": "2026-10-16T04:56:01+00:00",
+  "scope": "Bibliographic verification only; no new experimental outcome added",
+  "crossref_records": [
+    {
+      "DOI": "10.14236/ewic/ease2008.8",
+      "title": [
+        "Systematic Mapping Studies in Software Engineering"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2008,
+            6
+          ]
+        ]
+      },
+      "type": "proceedings-article",
+      "container_title": [
+        "Electronic Workshops in Computing"
+      ],
+      "source": "https://api.crossref.org/works/10.14236/ewic/EASE2008.8",
+      "checked_at_utc": "2026-10-16T04:52:20+00:00"
+    },
+    {
+      "DOI": "10.1136/bmj.n71",
+      "title": [
+        "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            29
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "container_title": [
+        "BMJ"
+      ],
+      "source": "https://api.crossref.org/works/10.1136/bmj.n71",
+      "checked_at_utc": "2026-10-16T04:52:20+00:00"
+    },
+    {
+      "DOI": "10.1186/s13643-020-01542-z",
+      "title": [
+        "PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            26
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "container_title": [
+        "Systematic Reviews"
+      ],
+      "source": "https://api.crossref.org/works/10.1186/s13643-020-01542-z",
+      "checked_at_utc": "2026-10-16T04:52:29+00:00"
+    },
+    {
+      "DOI": "10.1007/s11390-024-3773-5",
+      "title": [
+        "VastPipe: A High-Throughput Inference System via Adaptive Space-Division Multiplexing for Diverse Accelerators"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2025,
+            3
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "container_title": [
+        "Journal of Computer Science and Technology"
+      ],
+      "source": "https://api.crossref.org/works/10.1007/s11390-024-3773-5",
+      "checked_at_utc": "2026-10-16T04:52:12+00:00"
+    },
+    {
+      "DOI": "10.1109/tpds.2022.3232715",
+      "title": [
+        "<i>iGniter:</i>\n                    Interference-Aware GPU Resource Provisioning for Predictable DNN Inference in the Cloud"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            1
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "container_title": [
+        "IEEE Transactions on Parallel and Distributed Systems"
+      ],
+      "source": "https://api.crossref.org/works/10.1109/TPDS.2022.3232715",
+      "checked_at_utc": "2026-10-16T04:52:11+00:00"
+    }
+  ],
+  "usenix_citation_checks": [
+    {
+      "key": "pipeswitch",
+      "url": "https://www.usenix.org/conference/osdi20/presentation/bai",
+      "observation": "Official BibTeX lists publisher URL and no DOI field",
+      "checked_at_utc": "2026-10-16T04:56:01+00:00"
+    },
+    {
+      "key": "reef",
+      "url": "https://www.usenix.org/conference/osdi22/presentation/han",
+      "observation": "Official BibTeX lists publisher URL and no DOI field",
+      "checked_at_utc": "2026-10-16T04:56:01+00:00"
+    },
+    {
+      "key": "gpulets",
+      "url": "https://www.usenix.org/conference/atc22/presentation/choi-seungbeom",
+      "observation": "Official BibTeX lists publisher URL and no DOI field",
+      "checked_at_utc": "2026-10-16T04:56:01+00:00"
+    }
+  ]
+}

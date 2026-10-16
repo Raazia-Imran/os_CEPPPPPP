@@ -1,3 +1,26 @@
+Recovery checkpoint: interrupted Cycle 2 files recovered on 16 October 2026. Draft PDF/workbook and analysis sources preserved; final PDF provenance wording, topic-specific summary and PRISMA stage labels are being checked. Counts unchanged.
+
+# Current checkpoint: Cycle 2 interim report
+
+Cycle 2 uses the committed Cycle 1 results only. All 2,247 canonical records have preliminary recommendations: 1,181 exclude and 1,066 retain/uncertain; zero first recommendations remain. **Final screening and final inclusion remain pending.** No new record was screened in Cycle 2, and no new primary outcome, QA vote or citation event was invented.
+
+The report now addresses guideline1-14 and drafts15-22: taxonomy, comparative evidence, trade-offs, conflicts, RQ1-RQ5, conditional recommendations, gaps and validity. The41analysis statements map to registered report/outcome IDs. All50QA items and26outcome rows remain printed in detailed appendices. A14-source DOI/official-source catalogue ends the report; five cited works have Crossref-verified DOIs. USENIX conference citations without DOI fields retain official URLs; REEF's journal DOI is not substituted.
+
+Unchanged evidence:2,291occurrences (ACM1,582;IEEE102;Springer587;supplementary20),44applied duplicate links,41audited version pairs (30containers/3identity proposals/3companion proposals/5unresolved),5bounded source checks,5QA forms/50items,5study forms/26outcomes,10citation events (9backward/1forward). Human work:1,066candidate records including148priority;127sampled exclusions;30IC1-IC6 rows;all26outcomes and50QA scores;query/version reconciliation. The68staged identifiers remain outside active counts.
+
+**Planning readiness: approximately60-65%, not a verified completion score.** The report is substantially drafted; the final15-20eligible-study target, independent validation, broader full-text extraction, search completeness and final PRISMA are not established. ScienceDirect remains deferred.
+
+Publication history for Cycle2:
+- `3ca84230b4f6c651887e4acbb9dbbf6fe5354491`: baseline and pre-report manual document; committed2026-10-16T09:48:36+05:00; published and verified on main.
+- `8cfffc51ee78c1ee360511d8e8dc10d9ac1fb2e0`: interim accounting and traced analysis; committed2026-10-16T09:53:53+05:00; published and verified on main.
+
+Current build: 38-page PDF (20 pages including title/contents/main text;18 pages of detailed appendices/references/catalogue). LaTeX and BibTeX pass without undefined citations or overfull boxes. Workbook refresh/visual checks in progress; final verification receipt follows. Analysis source-anchor correction: iGniter outcomes are p822 section5.2 Fig13 and p823 section5.3 Fig17, copied from the Cycle1 extraction register. Initial draft figure labels were corrected before report publication. New outcome-linked analysis anchors are resolved directly from the frozen register.
+
+See task2/MANUAL_WORK_AND_NEXT_STEPS.docx and task2/COMPLETION_AND_TEAM.md for exact assignments. Continue from this checkpoint; do not re-run legacy screening or import scripts.
+
+---
+## Historical checkpoint record (superseded by current state above)
+
 Cycle 2 analysis checkpoint prepared 2026-10-16T04:52:06+00:00: PRISMA independently recalculated with unchanged totals; 41 source-linked interim analysis rows cover taxonomy, comparison, trade-offs, conflicts, RQ1-RQ5, conditional choices, gaps and validity. No new screening/source outcomes/QA votes. Report and workbook rendering follow next.
 
 Cycle 2 checkpoint 1 published: `3ca84230b4f6c651887e4acbb9dbbf6fe5354491`. Evidence baseline and manual handoff saved; no final review decisions changed.

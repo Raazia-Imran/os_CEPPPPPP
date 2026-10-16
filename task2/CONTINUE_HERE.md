@@ -1,3 +1,11 @@
+# Continue after Cycle 2
+
+Use the newest STATUS.md checkpoint and evidence/cycle2_validation.json. The report through22is an interim draft; do not restart screening or treat recommendations as final decisions. Cycle1 canonical counts remain frozen. First recommendations:2,247complete;1,181exclude;1,066retain/uncertain. Final included studies:pending.
+
+Next: follow COMPLETION_AND_TEAM.md for actual human screening/source/QA validation, expand full-text extraction beyond5reports, reconcile search/version gaps and only then finalize studies and PRISMA. Rebuild Cycle2 using build_cycle2_evidence.py,build_cycle2_references.py andbuild_cycle2_report.py after justified evidence updates. The references builder uses evidence/cycle2_reference_metadata.json as its durable verification cache; reverify metadata if citation identities change. Do not run cycle1_finalize.py or legacy import/checkpoint scripts on the completed queue.
+
+## Historical Cycle1 continuation
+
 # Continue after Cycle 1
 
 Use STATUS.md for current measured counts. The source CSV/JSON registers are authoritative; regenerate workbook/report after any decision changes. Run `python3 scripts/cycle1_screen.py --refresh`, then rebuild outputs with the scripts saved in this repository. Do not rerun the older import/advance_review builders over the current registers: they initialize or overwrite earlier state.

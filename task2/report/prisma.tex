@@ -1,13 +1,13 @@
 \begin{center}\begin{tikzpicture}[box/.style={draw=blue!55!black,rounded corners,align=center,text width=5.0cm,minimum height=1.0cm,font=\small},side/.style={box,draw=orange!70!black,text width=4.0cm},>=Latex,node distance=0.8cm]
-\node[box] (db) {Database occurrences: 2,271\\ACM1,582; Springer587; IEEE102};
-\node[side,right=0.5cm of db] (other) {Other-source occurrences:20\\Recovered masters staged separately};
-\node[box,below=of db] (all) {Active imported occurrences:2,291};
-\node[side,right=0.5cm of all] (dup) {Applied duplicate links:44\\Additional identity proposals:3};
-\node[box,below=of all] (queue) {Canonical record queue:2,247};
-\node[box,below=of queue] (first) {First recommendations:2247\\Not yet recommended:0};
-\node[side,right=0.5cm of first] (votes) {Preliminary exclude:1181\\Retain/uncertain:1066\\Human validation pending};
-\node[box,below=1.4cm of first] (ft) {Bounded priority source checks:5\\Final assessed-report count pending};
+\node[box] (db) {Database occurrences: 2,271\\ACM 1,582; Springer 587; IEEE 102};
+\node[side,right=0.5cm of db] (other) {Other-source occurrences: 20\\Recovered masters staged separately};
+\node[box,below=of db] (all) {Active imported occurrences: 2,291};
+\node[side,right=0.5cm of all] (dup) {Applied duplicate links: 44\\Additional identity proposals: 3};
+\node[box,below=of all] (queue) {Canonical record queue: 2,247};
+\node[box,below=of queue] (first) {First recommendations: 2,247\\Not yet recommended: 0};
+\node[side,right=0.5cm of first] (votes) {Preliminary exclude: 1,181\\Retain/uncertain: 1,066\\Human validation pending};
+\node[box,below=1.4cm of first] (ft) {Bounded priority source checks: 5\\Final assessed-report count pending};
 \node[side,right=0.5cm of ft] (retr) {Reports sought/not retrieved\\Final exclusions/reasons\\Counts pending};
-\node[box,below=of ft] (inc) {Final included studies:pending\\26 outcomes;5 preliminary appraisals};
+\node[box,below=of ft] (inc) {Final included studies: pending\\26 outcomes; 5 preliminary appraisals};
 \draw[->](db)--(all);\draw[->](other)--(all);\draw[->](all)--(dup);\draw[->](all)--(queue);\draw[->](queue)--(first);\draw[->](first)--(votes);\draw[->](first)--(ft);\draw[->](ft)--(retr);\draw[->](ft)--(inc);
 \end{tikzpicture}\end{center}
