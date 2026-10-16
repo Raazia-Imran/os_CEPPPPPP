@@ -1,0 +1,13 @@
+{
+  "verified_at_utc": "2026-10-16T17:17:10.140406+00:00",
+  "artifact_commit": "2152b62f3642be939e12ce73b75e9cc39804dd11",
+  "remote_main_at_verification": "2152b62f3642be939e12ce73b75e9cc39804dd11",
+  "local_artifact_tree": "d0193b85881c581874b6593c73b16246f5bc6af5",
+  "remote_artifact_tree": "d0193b85881c581874b6593c73b16246f5bc6af5",
+  "trees_match": true,
+  "zip_sha256": "6022c1c650e6b8f67f88cac72f7ea85417f975703e4d835b25769fc6738e3f28",
+  "pdf_sha256": "1abc2d8520a310e1e93f63bf7f8ff088237af8777bdee291f64be92d122e66b4",
+  "package": "final things/06_Task2_Submission",
+  "next_work": "Resume existing selection only when requested; do not start another cycle automatically",
+  "final_selection_complete": false
+}

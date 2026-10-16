@@ -1,7 +1,11 @@
-# Publication and continuation
+# Latest Task 2 consolidated publication
 
-Inspected main ef52a35e218c4b19425ab21c924aaac029aed2e0 before editing. Entry-point checkpoint f49119d8ee4b5cf71a737f1fe0394823c491f835; current catalogue/report checkpoint5cb05fef5983707b79c25631c1e23105909debc7; validated-workbook/log checkpoint0f0ae0299adc85a0829ec487701a1b395483d63a. The final ZIP/manifest publication follows those predecessors; its hash is reported in the conversation because a commit cannot record its own hash.
+Artifact checkpoint: 2152b62f3642be939e12ce73b75e9cc39804dd11 (remote fetched; artifact trees match).
 
-Validation:13tabs; old cells/formulas preserved;4075recorded screening dates;798exact times not recorded;28-page main.tex compiles cleanly withBibTeX;two diagrams;21resolved citations;unchanged source scores/outcomes/Task1;all package hashes checked. No new source-screening or human action claimed. Existing private Drive47-tab copy was not replaced in this presentation pass.
+Use ../06_Task2_Submission/README.md and the root GroupB_Task2_Consolidated.zip. The 1,272-page electronic PDF has a 25-page core through Heading 14 and complete research-table appendices. The 13-tab workbook, one main.tex, references.bib, unchanged Task 1 protocol, separate QA/extraction PDFs, unabridged CSVs and validation receipts are included.
 
-Cycle1 and2audit scopes closed,with Cycle2gaps disclosed. Cycles3-5partial overall;Cycle6interim. Final included reports/studies remain pending. Next:continue only the requested cycle, using current registers and preserving uncertainty. Do not invent missing times or merge source versions by DOI alone.
+QA and extraction cover the same 15 IDs. There are 17 source assessments including two exclusions, not 21 final studies. Counts remain 4,189 occurrences, 114 links, 4,075 canonical records; 2,617 retain/uncertain candidates have no linked source assessment. Final selection/PRISMA remain pending. No new scientific decisions, human votes or Drive workbook replacement are claimed.
+
+Cycles 1–2 audit scopes closed (documented gaps retained); 3–5 partial overall; 6 interim accounting/reference outputs; 7 consolidated interim package technically verified. Next: existing selection/identity/provenance/QA follow-ups, only when requested.
+
+The later CEP Sections 15–22 remain separate under task2/later_cep. Preserve newer commits and original evidence.

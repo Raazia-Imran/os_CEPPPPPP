@@ -8,7 +8,7 @@ Research counts are unchanged: 4,189 occurrences − 114 applied duplicate links
 
 Cycle 1 and Cycle 2 audit scopes are closed (Cycle 2 retains documented gaps). Cycles 3–5 are partial overall. Cycle 6 has interim accounting/reference outputs. Cycle 7 has a technically verified consolidated interim package. No overall assignment-completion or grading percentage is supported. Source decisions and submitted Task 1 remain preserved.
 
-Latest published preparation checkpoint: b4fd10640e543fab2c7bd5b406b5ce4d688b0e34; the validated PDF and ZIP publication follows. Verify remote main before resuming.
+Validated PDF, source and ZIP published and remote-verified at 2152b62f3642be939e12ce73b75e9cc39804dd11. The fetched remote content tree matches the local artifact checkpoint. Verify newer remote commits before resuming.
 
 ---
 Historical checkpoint follows.

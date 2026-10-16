@@ -1,12 +1,12 @@
 # Current continuation: Task 2 consolidated interim package
 
-Open `final things/06_Task2_Submission/README.md` and `VALIDATION.json`. Current public checkpoint before final artifact publication is b4fd10640e543fab2c7bd5b406b5ce4d688b0e34. Inspect newer commits before editing. Do not reinitialize imports, votes or QA.
+Open `final things/06_Task2_Submission/README.md` and `VALIDATION.json`. The validated PDF, source and ZIP artifact checkpoint is 2152b62f3642be939e12ce73b75e9cc39804dd11, fetched and tree-verified. Inspect newer commits before editing. Do not reinitialize imports, votes or QA.
 
 This cycle consolidated Headings 1–14, every research-table row, references, unchanged Task 1 and the compact workbook. It did not perform new scientific screening or establish final inclusion. Existing QA and extraction cover the same 15 IDs; 17 reports have source assessments including two exclusions. The current candidate queue is 2,617 unassessed canonical records.
 
 Next research work, only when requested: resume the existing source-assessment queue; resolve REEF/ParvaGPU identity, search-provenance and QA-anchor/N/A follow-ups; then derive final selection and PRISMA from actual decisions. Do not automatically begin another cycle. Later CEP Sections 15–22 remain separate under task2/later_cep.
 
-Source PDFs and full imported abstracts remain private. Do not claim a new Drive replacement: this cycle publishes repository/download files only. Preserve recorded methods and missing event times. Final publication receipt will identify the verified artifact checkpoint.
+Source PDFs and full imported abstracts remain private. Do not claim a new Drive replacement: this cycle publishes repository/download files only. Preserve recorded methods and missing event times. Publication verification is recorded in task2/qa/task2_consolidated_publication.json.
 
 ---
 Historical continuation follows.
