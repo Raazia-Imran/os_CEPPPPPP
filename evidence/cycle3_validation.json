@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-16T10:12:11+00:00",
+  "occurrences": 4189,
+  "duplicate_links": 111,
+  "canonical_records": 4078,
+  "recommendations": 2487,
+  "exclude_recommendations": 1350,
+  "retain_or_uncertain": 1137,
+  "first_recommendations_pending": 1591,
+  "source_checked_reports": 9,
+  "quality_items": 90,
+  "outcome_rows": 34,
+  "preserved_baseline_reviews": true,
+  "duplicate_links_changed": false,
+  "independent_human_votes_created": false,
+  "final_included_studies": null,
+  "limitations": "Selected source sections assessed; no complete systematic retrieval census. 41 legacy and219 newer version proposals remain unapplied;3 legacy identity proposals rechecked. Existing PDF historical."
+}

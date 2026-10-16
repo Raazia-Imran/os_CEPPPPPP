@@ -1,3 +1,7 @@
+# Cycle 3 screening batch checkpoint
+
+240 new conservative metadata recommendations saved:169 preliminary exclusions and71 retain/uncertain. Totals:2487 recommendations=1350 exclude+1137 retain/uncertain;1591 await first recommendation. Raw counts unchanged:4189 occurrences,111 links,4078 canonical. Nine provisional report forms,90 QA items,34 outcomes; final inclusion and independent validation pending. Workbook rebuilding after an export memory limit; current committed workbook remains historical until final refresh.
+
 # Cycle 3 source batch 2 assessed
 
 GSLICE (GB-P008) and Clockwork (GB-P009) added. Source coverage now9 provisional report assessments,90 Q1-Q10 items,34 outcomes. Independent verification and final inclusion pending. Three legacy identity proposals rechecked without application. Metadata-screening batch saved locally and will be published with refreshed log/workbook; do not infer final screening. See cycle3_validation.json for local expanded progress; source PDFs remain private.

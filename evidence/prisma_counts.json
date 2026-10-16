@@ -20,10 +20,10 @@
   },
   "final_screened": null,
   "final_included": null,
-  "preliminary_recommendations": 2247,
-  "preliminary_exclusion_recommendations": 1181,
-  "preliminary_retain_or_uncertain": 1066,
-  "first_recommendations_pending": 1831,
+  "preliminary_recommendations": 2487,
+  "preliminary_exclusion_recommendations": 1350,
+  "preliminary_retain_or_uncertain": 1137,
+  "first_recommendations_pending": 1591,
   "version_pair_dispositions": {
     "companion_report_relationship_proposed": 3,
     "container_pair_scope_classified": 30,
@@ -33,5 +33,8 @@
   "proposed_duplicate_links_applied": false,
   "four_database_completeness": "not established; supplied exports from four platforms represented",
   "new_sciencedirect_occurrences": 1898,
-  "possible_version_pairs_note": "41 legacy pairs retained; new pairs listed separately in new_version_candidates.csv"
+  "possible_version_pairs_note": "41 legacy pairs retained; new pairs listed separately in new_version_candidates.csv",
+  "cycle3_assessed_reports": 9,
+  "cycle3_provisionally_eligible_reports": 9,
+  "cycle3_note": "Bounded first-review assessments; no final PRISMA completion inferred"
 }
