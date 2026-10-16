@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-10-16T06:05:24.664514+00:00",
+  "inspected_main": "014b14c26cc5d099b890992c3dc4829a7abad9c2",
+  "scope": "read-only research audit; no import, screening or rebuild",
+  "occurrences": 2291,
+  "manifest_occurrences": 2291,
+  "raw_hashes_match": true,
+  "canonical_records": 2247,
+  "duplicate_links": 44,
+  "recommendations": {
+    "retain_or_uncertain": 1066,
+    "exclude_recommendation": 1181
+  },
+  "all_final_decisions_pending": true,
+  "cycle2_validation_exists": false,
+  "committed_report_pages": 24,
+  "committed_workbook_sheets": 19,
+  "quality_items": 50,
+  "outcomes": 26,
+  "study_forms": 5,
+  "workbook_zip_integrity": true
+}
