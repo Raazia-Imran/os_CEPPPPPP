@@ -1,83 +1,693 @@
 [
   {
-    "report_id":"GB-P010","record_id":"GB-R02279","pdf_file":"sirius.pdf","doi":"",
-    "title":"Colocating ML Inference and Training with Fast GPU Memory Handover (SIRIUS)",
-    "source_url":"https://www.usenix.org/system/files/atc25-wang-jiali.pdf",
-    "anchor":"printed pp1665-1666, section6/6.1, Table3, Figure10; PDF pp10-11 (includes cover)",
-    "eligibility":"provisionally_eligible_AI_source_assessment",
-    "remaining":"Independent check unperformed; retain mixed-training scope restriction; extract only separable inference evidence, not training gains as inference gains.",
-    "ic":["Official USENIX ATC2025 proceedings PDF is an English primary conference report.","Section6.1 explicitly evaluates concurrent inference/training on one physical GPU.","Inference P99 and SLO outcomes are separated from training samples/s.","Figure10 and section6.1 identify baseline, metric and configuration.","Single-GPU section6.1 is separable from section6.2 multi-GPU results.","2025 publication is within the main window."],
-    "form":{
-      "authors":"Jiali Wang; Yankui Wang; Mingcong Han; Rong Chen","year":"2025","venue":"USENIX ATC2025, pp1657-1675",
-      "mechanism":"hybrid spatial sharing; CUDA VMM memory handover and dynamic SM masking; separate inference/training runtimes",
-      "gpu_hardware":"single NVIDIA Tesla V100 16GB in section6.1; four-V100 host; separate section6.6 single A100 80GB LLM experiment",
-      "cpu_memory":"two Intel Xeon Gold6138, 80 total cores, 503GB DRAM; PCIe3.0 x16; V100s linked with NVLink",
-      "os_kernel":"Ubuntu20.04; kernel version not_extracted","driver_runtime":"Python3.10; CUDA11.6; PyTorch2.1.2; TVM0.14; NVIDIA driver not_extracted",
-      "models":"ResNet152 319MB; DenseNet169 84MB; EfficientNetV2-s86MB; EfficientViT-b2 109MB; DistilBERT254MB; DistilGPT2 317MB; Swin-T training; section6.6 Llama2-13B26GB with Qwen2-0.5B training",
-      "tenant_mix":"six inference models duplicated round-robin to56 instances; co-located Swin-T training, batch72",
-      "batch_load_slo":"Light/Heavy/Burst/Skewed and compressed Azure Functions traces; 300s runs; SLO=4x standalone inference execution; Tidle5s, watermark1GB",
-      "baseline":"TaskSwitch implemented by authors, not vanilla PipeSwitch; SP-50/SP-75 static memory; UM+MPS; Infer-Only",
-      "latency":"P99 request latency and request-level SLO compliance; LLM TTFT/TBT evaluated separately",
-      "throughput":"training throughput in samples/s kept separate from inference metrics",
-      "resource_usage":"explicit dynamic shared GPU-memory pool; model sizes from Table3; no invented GPU utilization percentage",
-      "scalability":"multi-GPU training evaluated separately in section6.2; excluded from local inference effect row",
-      "energy":"not_extracted","reliability":"Memory reclamation design is described; independent fault-injection result not_extracted",
-      "security_fault_isolation":"resource handover and inference priority evaluated; no security/fault-containment guarantee inferred",
-      "overhead":"memory adjustment/allocation and batch discard evaluated in section6.3; exact overhead values not_extracted",
-      "advantages":"supports separable inference latency objectives while opportunistically admitting training",
-      "limitations":"adapted baselines and model/training mix affect applicability; independent replication and repeated-run uncertainty remain open",
-      "tradeoffs":"inference memory/SLO priority versus training throughput; hysteresis retains capacity to reduce thrashing"
-    },
-    "quality":[
-      [2,"Inference/training colocation objective and scope explicit.","p1657 section1"],
-      [2,"VMM pool, memory handover and SM-mask control described.","pp1660-1665 sections3-5"],
-      [1,"Trace distributions and300s windows described; repeated-run uncertainty not established in checked evaluation.","pp1665-1666 section6"],
-      [2,"GPU, CPU/RAM, software and model sizes specified.","p1665 testbed; p1666 Table3"],
-      [1,"TaskSwitch is an adapted implementation; baseline choices explicit but implementation equivalence remains limited.","p1665 comparing targets"],
-      [2,"Training samples/s is defined; inference latency/SLO are kept distinct.","p1666 metrics/Figure10"],
-      [2,"P99, request arrivals, window and SLO definition supplied.","p1666 section6.1/Figure10"],
-      [2,"Co-located inference/training traces tested on one GPU.","p1666 section6.1/Figure10"],
-      [1,"Memory-reclamation boundary described; stronger fault/security validation not established.","pp1661-1665 sections4-5"],
-      [2,"Detailed implementation and evaluated artifact supplied; scope limitations discussed.","p1665 section5; p1669 section7; artifact appendix"]
+    "report_id": "GB-P010",
+    "record_id": "GB-R02279",
+    "pdf_file": "sirius.pdf",
+    "doi": "",
+    "title": "Colocating ML Inference and Training with Fast GPU Memory Handover (SIRIUS)",
+    "source_url": "https://www.usenix.org/system/files/atc25-wang-jiali.pdf",
+    "anchor": "printed pp1665-1666, section6/6.1, Table3, Figure10; PDF pp10-11 (includes cover)",
+    "eligibility": "provisionally_eligible_AI_source_assessment",
+    "remaining": "Independent check unperformed; retain mixed-training scope restriction; extract only separable inference evidence, not training gains as inference gains.",
+    "ic": [
+      "Official USENIX ATC2025 proceedings PDF is an English primary conference report.",
+      "Section6.1 explicitly evaluates concurrent inference/training on one physical GPU.",
+      "Inference P99 and SLO outcomes are separated from training samples/s.",
+      "Figure10 and section6.1 identify baseline, metric and configuration.",
+      "Single-GPU section6.1 is separable from section6.2 multi-GPU results.",
+      "2025 publication is within the main window."
     ],
-    "outcomes":[
-      {"workload":"section6.1 single-V100 DNN inference+Swin-T; Light/Heavy/Burst/Skewed/MAF traces;300s","baseline":"TaskSwitch (authors' adapted temporal-switch baseline)","metric":"Average P99 inference latency improvement factor, as reported","value":"12.6","units":"x","source_anchor":"printed p1666, section6.1/Figure10 discussion; PDF p11","caveat":"Author-reported average across tested workloads; not a uniform per-model speedup, and not a comparison to unmodified PipeSwitch."}
+    "form": {
+      "authors": "Jiali Wang; Yankui Wang; Mingcong Han; Rong Chen",
+      "year": "2025",
+      "venue": "USENIX ATC2025, pp1657-1675",
+      "mechanism": "hybrid spatial sharing; CUDA VMM memory handover and dynamic SM masking; separate inference/training runtimes",
+      "gpu_hardware": "single NVIDIA Tesla V100 16GB in section6.1; four-V100 host; separate section6.6 single A100 80GB LLM experiment",
+      "cpu_memory": "two Intel Xeon Gold6138, 80 total cores, 503GB DRAM; PCIe3.0 x16; V100s linked with NVLink",
+      "os_kernel": "Ubuntu20.04; kernel version not_extracted",
+      "driver_runtime": "Python3.10; CUDA11.6; PyTorch2.1.2; TVM0.14; NVIDIA driver not_extracted",
+      "models": "ResNet152 319MB; DenseNet169 84MB; EfficientNetV2-s86MB; EfficientViT-b2 109MB; DistilBERT254MB; DistilGPT2 317MB; Swin-T training; section6.6 Llama2-13B26GB with Qwen2-0.5B training",
+      "tenant_mix": "six inference models duplicated round-robin to56 instances; co-located Swin-T training, batch72",
+      "batch_load_slo": "Light/Heavy/Burst/Skewed and compressed Azure Functions traces; 300s runs; SLO=4x standalone inference execution; Tidle5s, watermark1GB",
+      "baseline": "TaskSwitch implemented by authors, not vanilla PipeSwitch; SP-50/SP-75 static memory; UM+MPS; Infer-Only",
+      "latency": "P99 request latency and request-level SLO compliance; LLM TTFT/TBT evaluated separately",
+      "throughput": "training throughput in samples/s kept separate from inference metrics",
+      "resource_usage": "explicit dynamic shared GPU-memory pool; model sizes from Table3; no invented GPU utilization percentage",
+      "scalability": "multi-GPU training evaluated separately in section6.2; excluded from local inference effect row",
+      "energy": "not_extracted",
+      "reliability": "Memory reclamation design is described; independent fault-injection result not_extracted",
+      "security_fault_isolation": "resource handover and inference priority evaluated; no security/fault-containment guarantee inferred",
+      "overhead": "memory adjustment/allocation and batch discard evaluated in section6.3; exact overhead values not_extracted",
+      "advantages": "supports separable inference latency objectives while opportunistically admitting training",
+      "limitations": "adapted baselines and model/training mix affect applicability; independent replication and repeated-run uncertainty remain open",
+      "tradeoffs": "inference memory/SLO priority versus training throughput; hysteresis retains capacity to reduce thrashing"
+    },
+    "quality": [
+      [
+        2,
+        "Inference/training colocation objective and scope explicit.",
+        "p1657 section1"
+      ],
+      [
+        2,
+        "VMM pool, memory handover and SM-mask control described.",
+        "pp1660-1665 sections3-5"
+      ],
+      [
+        1,
+        "Trace distributions and300s windows described; repeated-run uncertainty not established in checked evaluation.",
+        "pp1665-1666 section6"
+      ],
+      [
+        2,
+        "GPU, CPU/RAM, software and model sizes specified.",
+        "p1665 testbed; p1666 Table3"
+      ],
+      [
+        1,
+        "TaskSwitch is an adapted implementation; baseline choices explicit but implementation equivalence remains limited.",
+        "p1665 comparing targets"
+      ],
+      [
+        2,
+        "Training samples/s is defined; inference latency/SLO are kept distinct.",
+        "p1666 metrics/Figure10"
+      ],
+      [
+        2,
+        "P99, request arrivals, window and SLO definition supplied.",
+        "p1666 section6.1/Figure10"
+      ],
+      [
+        2,
+        "Co-located inference/training traces tested on one GPU.",
+        "p1666 section6.1/Figure10"
+      ],
+      [
+        1,
+        "Memory-reclamation boundary described; stronger fault/security validation not established.",
+        "pp1661-1665 sections4-5"
+      ],
+      [
+        2,
+        "Detailed implementation and evaluated artifact supplied; scope limitations discussed.",
+        "p1665 section5; p1669 section7; artifact appendix"
+      ]
+    ],
+    "outcomes": [
+      {
+        "workload": "section6.1 single-V100 DNN inference+Swin-T; Light/Heavy/Burst/Skewed/MAF traces;300s",
+        "baseline": "TaskSwitch (authors' adapted temporal-switch baseline)",
+        "metric": "Average P99 inference latency improvement factor, as reported",
+        "value": "12.6",
+        "units": "x",
+        "source_anchor": "printed p1666, section6.1/Figure10 discussion; PDF p11",
+        "caveat": "Author-reported average across tested workloads; not a uniform per-model speedup, and not a comparison to unmodified PipeSwitch."
+      }
     ]
   },
   {
-    "report_id":"GB-P011","record_id":"GB-R02171","pdf_file":"parva.pdf","doi":"10.1109/SC41406.2024.00048",
-    "title":"ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments",
-    "source_url":"https://arxiv.org/pdf/2409.14447","anchor":"author preprint PDF pp4-5 Figures3-4; p8 experimental environment",
-    "eligibility":"uncertain_publication_version;technical_scope_supported",
-    "remaining":"Accessible source is arXivv1, not established as final conference text. Verify SC24 version before treating as included primary report; preserve source-version distinction.",
-    "ic":["SC24 publication identity has DOI, but accessed PDF is arXivv1; final-version equivalence unresolved.","MIG partition plus same-workload MPS processes runs within one physical GPU.","DNN inference explicit.","Local InceptionV3 profiler throughput/latency values and settings reported.","Local characterization in Figures3-4 separated from multi-GPU fleet results.","2024 source and conference year within window."],
-    "form":{
-      "authors":"Munkyu Lee; Sihoon Seong; Minki Kang; Jihyuk Lee; Gap-Joo Na; In-Geol Chun; Dimitrios Nikolopoulos; Cheol-Ho Hong","year":"2024","venue":"SC2024 identity; extracted text is arXiv2409.14447v1",
-      "mechanism":"hybrid MIG+MPS; MPS processes within a MIG segment; profiler/configurator plus fleet allocator",
-      "gpu_hardware":"A10080GB; Amazon p4de.24xlarge hosts with8 GPUs; extracted profiler point concerns one MIG segment",
-      "cpu_memory":"96vCPUs and1152GB main memory per cloud instance",
-      "os_kernel":"Ubuntu20.04; kernel not_extracted","driver_runtime":"CUDA12.0.1; PyTorch1.14.0 as printed in source (unverified version string); NVIDIA driver not_extracted",
-      "models":"11 DNN workloads overall; local extracted example InceptionV3","tenant_mix":"one to three homogeneous MPS processes within a MIG instance; other models can occupy separate segments",
-      "batch_load_slo":"extracted example:1-GPC MIG instance; batch4;1/2/3 MPS processes; no tail quantile identified for local latency",
-      "baseline":"same InceptionV3/MIG/batch at1 MPS process versus2/3; fleet baselines not used for local effect",
-      "latency":"reported latency in ms; percentile not identified for profiler point","throughput":"requests/s; values354/444/446 at1/2/3 processes",
-      "resource_usage":"MIG GPC allocation; no GPU utilization percentage inferred from number of GPUs used",
-      "scalability":"fleet allocator results remain separate from local measurement","energy":"not_extracted","reliability":"not_extracted",
-      "security_fault_isolation":"MIG isolation is an architectural rationale; direct security/fault test not established",
-      "overhead":"scheduling/profiling discussed; exact local overhead not_extracted","advantages":"joint choice of MIG size, MPS process count and batch size exposes throughput/latency trade-off",
-      "limitations":"preprint-version eligibility unresolved; some plotted instance sizes5/6 are interpolated, not real MIG profiles; local latency percentile unspecified",
-      "tradeoffs":"additional MPS processes improve local throughput modestly while increasing latency under saturated small MIG instances"
-    },
-    "quality":[
-      [2,"Clear inference resource-sharing objective.","PDF pp1-2 introduction"],[2,"MIG/MPS segments and algorithms explained.","PDF pp4-7 sectionIII"],
-      [1,"Profiling procedure and fleet scenarios described; repetition/uncertainty reporting unclear.","PDF pp5,8 sectionIV"],[1,"Hardware/workload described; runtime version1.14.0 is printed but needs verification.","PDF p8 sectionIV-A"],
-      [1,"Local process comparison interpretable; fleet baselines adapted and no final-version equivalence established.","PDF pp5,8"],[2,"Throughput axes specify requests/s and exact local values are given.","PDF pp4-5 Figure3"],
-      [1,"Latency milliseconds and settings stated; profiler quantile unclear.","PDF pp4-5 Figure4"],[2,"Concurrent MPS process counts evaluated inside one MIG segment.","PDF pp4-5 Figures3-4"],
-      [1,"MIG boundary described; no direct security/fault validation established.","PDF pp2-4 background/design"],[1,"Algorithms/settings detailed; accessed version remains preprint and replication verification incomplete.","PDF pp5-10"]
+    "report_id": "GB-P011",
+    "record_id": "GB-R02171",
+    "pdf_file": "parva.pdf",
+    "doi": "10.1109/SC41406.2024.00048",
+    "title": "ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments",
+    "source_url": "https://arxiv.org/pdf/2409.14447",
+    "anchor": "author preprint PDF pp4-5 Figures3-4; p8 experimental environment",
+    "eligibility": "uncertain_publication_version;technical_scope_supported",
+    "remaining": "Accessible source is arXivv1, not established as final conference text. Verify SC24 version before treating as included primary report; preserve source-version distinction.",
+    "ic": [
+      "SC24 publication identity has DOI, but accessed PDF is arXivv1; final-version equivalence unresolved.",
+      "MIG partition plus same-workload MPS processes runs within one physical GPU.",
+      "DNN inference explicit.",
+      "Local InceptionV3 profiler throughput/latency values and settings reported.",
+      "Local characterization in Figures3-4 separated from multi-GPU fleet results.",
+      "2024 source and conference year within window."
     ],
-    "outcomes":[
-      {"workload":"InceptionV3,1-GPC MIG instance,batch4;3 MPS processes","baseline":"same configuration with1 process (354requests/s)","metric":"Reported throughput","value":"446","units":"requests/s","source_anchor":"author preprint PDF p5, sectionIII-B prose; Figure3 p4","caveat":"One local configuration, not fleet savings. Source is arXivv1; final published version not verified."},
-      {"workload":"InceptionV3,1-GPC MIG instance,batch4;3 MPS processes","baseline":"same configuration with1 process (11ms)","metric":"Reported inference latency; quantile unspecified","value":"27","units":"ms","source_anchor":"author preprint PDF p5, sectionIII-B prose; Figure4 p4","caveat":"Quantile/arrival model not established for this profiler point; do not label p99. Publication-version check pending."}
+    "form": {
+      "authors": "Munkyu Lee; Sihoon Seong; Minki Kang; Jihyuk Lee; Gap-Joo Na; In-Geol Chun; Dimitrios Nikolopoulos; Cheol-Ho Hong",
+      "year": "2024",
+      "venue": "SC2024 identity; extracted text is arXiv2409.14447v1",
+      "mechanism": "hybrid MIG+MPS; MPS processes within a MIG segment; profiler/configurator plus fleet allocator",
+      "gpu_hardware": "A10080GB; Amazon p4de.24xlarge hosts with8 GPUs; extracted profiler point concerns one MIG segment",
+      "cpu_memory": "96vCPUs and1152GB main memory per cloud instance",
+      "os_kernel": "Ubuntu20.04; kernel not_extracted",
+      "driver_runtime": "CUDA12.0.1; PyTorch1.14.0 as printed in source (unverified version string); NVIDIA driver not_extracted",
+      "models": "11 DNN workloads overall; local extracted example InceptionV3",
+      "tenant_mix": "one to three homogeneous MPS processes within a MIG instance; other models can occupy separate segments",
+      "batch_load_slo": "extracted example:1-GPC MIG instance; batch4;1/2/3 MPS processes; no tail quantile identified for local latency",
+      "baseline": "same InceptionV3/MIG/batch at1 MPS process versus2/3; fleet baselines not used for local effect",
+      "latency": "reported latency in ms; percentile not identified for profiler point",
+      "throughput": "requests/s; values354/444/446 at1/2/3 processes",
+      "resource_usage": "MIG GPC allocation; no GPU utilization percentage inferred from number of GPUs used",
+      "scalability": "fleet allocator results remain separate from local measurement",
+      "energy": "not_extracted",
+      "reliability": "not_extracted",
+      "security_fault_isolation": "MIG isolation is an architectural rationale; direct security/fault test not established",
+      "overhead": "scheduling/profiling discussed; exact local overhead not_extracted",
+      "advantages": "joint choice of MIG size, MPS process count and batch size exposes throughput/latency trade-off",
+      "limitations": "preprint-version eligibility unresolved; some plotted instance sizes5/6 are interpolated, not real MIG profiles; local latency percentile unspecified",
+      "tradeoffs": "additional MPS processes improve local throughput modestly while increasing latency under saturated small MIG instances"
+    },
+    "quality": [
+      [
+        2,
+        "Clear inference resource-sharing objective.",
+        "PDF pp1-2 introduction"
+      ],
+      [
+        2,
+        "MIG/MPS segments and algorithms explained.",
+        "PDF pp4-7 sectionIII"
+      ],
+      [
+        1,
+        "Profiling procedure and fleet scenarios described; repetition/uncertainty reporting unclear.",
+        "PDF pp5,8 sectionIV"
+      ],
+      [
+        1,
+        "Hardware/workload described; runtime version1.14.0 is printed but needs verification.",
+        "PDF p8 sectionIV-A"
+      ],
+      [
+        1,
+        "Local process comparison interpretable; fleet baselines adapted and no final-version equivalence established.",
+        "PDF pp5,8"
+      ],
+      [
+        2,
+        "Throughput axes specify requests/s and exact local values are given.",
+        "PDF pp4-5 Figure3"
+      ],
+      [
+        1,
+        "Latency milliseconds and settings stated; profiler quantile unclear.",
+        "PDF pp4-5 Figure4"
+      ],
+      [
+        2,
+        "Concurrent MPS process counts evaluated inside one MIG segment.",
+        "PDF pp4-5 Figures3-4"
+      ],
+      [
+        1,
+        "MIG boundary described; no direct security/fault validation established.",
+        "PDF pp2-4 background/design"
+      ],
+      [
+        1,
+        "Algorithms/settings detailed; accessed version remains preprint and replication verification incomplete.",
+        "PDF pp5-10"
+      ]
+    ],
+    "outcomes": [
+      {
+        "workload": "InceptionV3,1-GPC MIG instance,batch4;3 MPS processes",
+        "baseline": "same configuration with1 process (354requests/s)",
+        "metric": "Reported throughput",
+        "value": "446",
+        "units": "requests/s",
+        "source_anchor": "author preprint PDF p5, sectionIII-B prose; Figure3 p4",
+        "caveat": "One local configuration, not fleet savings. Source is arXivv1; final published version not verified."
+      },
+      {
+        "workload": "InceptionV3,1-GPC MIG instance,batch4;3 MPS processes",
+        "baseline": "same configuration with1 process (11ms)",
+        "metric": "Reported inference latency; quantile unspecified",
+        "value": "27",
+        "units": "ms",
+        "source_anchor": "author preprint PDF p5, sectionIII-B prose; Figure4 p4",
+        "caveat": "Quantile/arrival model not established for this profiler point; do not label p99. Publication-version check pending."
+      }
+    ]
+  },
+  {
+    "report_id": "GB-P012",
+    "record_id": "GB-R02276",
+    "pdf_file": "torpor.pdf",
+    "title": "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference",
+    "authors": "Minchen Yu; Ao Wang; Dong Chen; Haoxuan Yu; Xiaonan Luo; Zhuohao Li; Wei Wang; Ruichuan Chen; Dapeng Nie; Haoran Yang; Yu Ding",
+    "doi": "",
+    "source_url": "https://www.usenix.org/system/files/atc25-yu.pdf",
+    "anchor": "pp604-606 sections7.1-7.2, Table4, Figure8; PDF pp9-11",
+    "eligibility": "provisionally_eligible_AI_source_assessment",
+    "remaining": "AI source assessment only; independent check unperformed; preserve local GPU scope and exact metric caveats.",
+    "ic": [
+      "English primary report in official peer-reviewed USENIX proceedings.",
+      "Local GPU sharing/concurrent clients explicitly evaluated in the cited case.",
+      "Inference outcome is identifiable separately from training/rendering/NPU results.",
+      "Defined metric, comparator and configuration recorded in outcome rows.",
+      "A separable single-GPU experiment is identified; fleet-only gains not substituted.",
+      "2025 publication within main review window."
+    ],
+    "form": {
+      "mechanism": "API redirection/remoting plus temporal request-level sharing and host/GPU model swapping; GPU runtime sharing mode",
+      "gpu_hardware": "single V10032GB in local Figure8; evaluation worker has4 V10032GB GPUs",
+      "cpu_memory": "48vCPUs;384GB RAM per worker",
+      "os_kernel": "not reported in section7 settings",
+      "driver_runtime": "PyTorch-based clients replace CUDA libraries; exact OS/driver/CUDA versions not reported in section7 settings",
+      "models": "ResNet152 local sharing test;8 models in Table4 including DenseNet169/201,InceptionV3,EfficientNet,ResNet50/101/152,Bert-qa",
+      "tenant_mix": "multiple low-frequency ResNet152 functions share one GPU; sufficient functions to saturate device memory",
+      "batch_load_slo": "10-80 requests/minute/function; global defaultP98; CV deadline80ms and Bert-qa200ms",
+      "baseline": "Native early binding; local remoting microbenchmark also compares GVirtuS; cluster INFless-KA results kept separate",
+      "latency": "P98 under shared-GPU Figure8; Table4 isolated latency has no explicitly stated quantile",
+      "throughput": "single-GPU throughput normalized to Native, request rates varied",
+      "resource_usage": "GPU load=time processing inference / observation time; host memory retains unloaded models",
+      "scalability": "up to6 workers/4GPUs per worker evaluated separately; local outcome rows do not claim fleet effects",
+      "energy": "not reported as measured outcome in checked sections7-8",
+      "reliability": "not_extracted",
+      "security_fault_isolation": "runtime sharing and runtime isolation modes differ; section7 measures sharing mode, not security guarantee",
+      "overhead": "API redirection, swapping and extra CPU activity evaluated; ResNet152 remoting17ms versus Native25ms, Table4",
+      "advantages": "more low-rate functions can share GPU memory capacity through late binding",
+      "limitations": "PCIe swapping can hurt heavy models: Bert-qa144ms versus Native42ms in Table4; cluster data not a single-GPU speedup",
+      "tradeoffs": "device-memory density versus transfer traffic, CPU work and tail latency",
+      "authors": "Minchen Yu; Ao Wang; Dong Chen; Haoxuan Yu; Xiaonan Luo; Zhuohao Li; Wei Wang; Ruichuan Chen; Dapeng Nie; Haoran Yang; Yu Ding",
+      "year": "2025",
+      "venue": "USENIX ATC2025 pp597-612"
+    },
+    "quality": [
+      [
+        2,
+        "Inference memory/density objective explicit.",
+        "p597 section1"
+      ],
+      [
+        2,
+        "API redirection, pooling and scheduling described.",
+        "pp600-604 sections4-6"
+      ],
+      [
+        1,
+        "Production trace and request rates given; repeated-run uncertainty not established.",
+        "pp604-606 section7"
+      ],
+      [
+        1,
+        "GPU/CPU/RAM supplied; exact software version matrix missing in checked setup.",
+        "p604 settings"
+      ],
+      [
+        1,
+        "Native and adapted INFless-KA comparison described; resource/CPU paths differ.",
+        "pp605-606 sections7.1-7.3"
+      ],
+      [
+        2,
+        "Throughput/load definitions and local normalization supplied.",
+        "pp605-606 Figure8"
+      ],
+      [
+        2,
+        "P98 and per-function load/SLO explicit.",
+        "pp605-606 metrics/Figure8"
+      ],
+      [
+        2,
+        "Multiple functions share a single GPU in Figure8.",
+        "pp605-606 Figure8"
+      ],
+      [
+        1,
+        "Sharing/isolation modes separated; strong security/fault tests not established for evaluated mode.",
+        "sections4,7-8"
+      ],
+      [
+        1,
+        "Implementation detail and limitations supplied; independent artifact reproduction unperformed.",
+        "sections6-8"
+      ]
+    ],
+    "outcomes": [
+      {
+        "workload": "multiple ResNet152 functions on one V10032GB;10requests/minute/function",
+        "baseline": "Native early binding at same offered function rate",
+        "metric": "Reported single-GPU throughput factor",
+        "value": ">10",
+        "units": "x",
+        "source_anchor": "p606 section7.2; Figure8 p605; PDF pp10-11",
+        "caveat": "Lower bound reported by authors, not an exact10x; function count varies to saturate memory. No fleet cost claim."
+      },
+      {
+        "workload": "same single-GPU low-rate ResNet152 test,10-80requests/minute/function",
+        "baseline": "Native under matched request-rate setting",
+        "metric": "Reported P98 latency upper bound",
+        "value": "<50",
+        "units": "ms",
+        "source_anchor": "p606 section7.2; Figure8 p605; PDF pp10-11",
+        "caveat": "Bound from text, not a digitized point; default98th percentile from section7 metrics. Applies to this workload."
+      }
+    ]
+  },
+  {
+    "report_id": "GB-P013",
+    "record_id": "GB-R02277",
+    "pdf_file": "streambox.pdf",
+    "title": "StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow",
+    "authors": "Hao Wu; Yue Yu; Junxiao Deng; Shadi Ibrahim; Song Wu; Hao Fan; Ziyue Cheng; Hai Jin",
+    "doi": "",
+    "source_url": "https://www.usenix.org/system/files/atc24-wu-hao.pdf",
+    "anchor": "pp67-70 sections9.1-9.4; Figures12-14,19; PDF pp10-13",
+    "eligibility": "provisionally_eligible_AI_source_assessment",
+    "remaining": "AI source assessment only; independent check unperformed; preserve local GPU scope and exact metric caveats.",
+    "ic": [
+      "English primary report in official peer-reviewed USENIX proceedings.",
+      "Local GPU sharing/concurrent clients explicitly evaluated in the cited case.",
+      "Inference outcome is identifiable separately from training/rendering/NPU results.",
+      "Defined metric, comparator and configuration recorded in outcome rows.",
+      "A separable single-GPU experiment is identified; fleet-only gains not substituted.",
+      "2024 publication within main review window."
+    ],
+    "form": {
+      "mechanism": "API forwarding into workflow-shared CUDA runtime/streams; PTB software spatial partitioning and fine-grained memory pool",
+      "gpu_hardware": "V10016GB,80CUs; host has4 GPUs; single-GPU multi-user test in section9.4",
+      "cpu_memory": "two Xeon Gold5117,28total cores,128GB DRAM",
+      "os_kernel": "not reported in section9 setup",
+      "driver_runtime": "PyTorch1.3.0,TensorFlow2.12,CUDA10.1 as reported; driver/OS version not reported in section9 setup",
+      "models": "Image Processing,Traffic,Social Media workflows: SSD300,FSRCNN,ResNet152/50/18,VGG16,AlexNet,LSTM,BERT",
+      "tenant_mix": "concurrent functions within workflow share runtime; separate3/6-user Traffic test on one GPU",
+      "batch_load_slo": "Azure Functions7-day invocation trace; sporadic/periodic/bursty; Traffic SLO200ms; up to3 workflows/runtime contexts per GPU in evaluated setup",
+      "baseline": "INFless and Astraea with MPS; Stream-only; all warm-up/model-sharing/pipelined-loading settings disclosed in section9",
+      "latency": "end-to-end CDF and SLO violations; no invented p99 scalar",
+      "throughput": "average requests/s and within-experiment ratios",
+      "resource_usage": "runtime memory redundancy, automatic pool sizing and direct intra-GPU data sharing",
+      "scalability": "single-GPU3/6-user limits versus separate4/8-node scaling tests",
+      "energy": "not reported as measured outcome in checked section9",
+      "reliability": "not_extracted",
+      "security_fault_isolation": "functions within one workflow share CUDA address space; secure cross-workflow isolation is orthogonal; do not claim strong per-function isolation",
+      "overhead": "API forwarding1-3microseconds;3-5microseconds at48functions; one-time profiling36s and transformation4s, p70",
+      "advantages": "reduces redundant runtime memory and inter-function data copies",
+      "limitations": "benefit diminishes across users; concurrency beyond3users caused queuing/SLO violations in evaluated setup",
+      "tradeoffs": "workflow-local sharing and compiler/profiling preparation versus runtime density and startup latency",
+      "authors": "Hao Wu; Yue Yu; Junxiao Deng; Shadi Ibrahim; Song Wu; Hao Fan; Ziyue Cheng; Hai Jin",
+      "year": "2024",
+      "venue": "USENIX ATC2024 pp59-73"
+    },
+    "quality": [
+      [
+        2,
+        "Workflow-local runtime sharing objective explicit.",
+        "p59 section1"
+      ],
+      [
+        2,
+        "Streams,PTB compiler and memory management explained.",
+        "pp62-67 sections3-8"
+      ],
+      [
+        1,
+        "Production-style traces and ablations provided; repeated-run uncertainty unclear.",
+        "pp67-70 section9"
+      ],
+      [
+        1,
+        "Hardware/frameworks named; OS/driver and version compatibility need checking.",
+        "p67 setup"
+      ],
+      [
+        1,
+        "Common optimizations enabled, but baselines adapted and batch choices affect ratios.",
+        "p67 Table2/comparing targets"
+      ],
+      [
+        2,
+        "Memory and throughput units/ratios defined.",
+        "p68 Figures12-13"
+      ],
+      [
+        1,
+        "CDF/SLO reported; no precise tail scalar extracted.",
+        "p68 Figure14"
+      ],
+      [
+        2,
+        "Explicit3/6-user single-GPU test.",
+        "p70 Figure19"
+      ],
+      [
+        1,
+        "Same-runtime sharing weakens function isolation; security boundary is deliberately scoped.",
+        "pp62-63; p70 related-work boundary"
+      ],
+      [
+        2,
+        "Detailed implementation, preparation overhead and multi-user limits supplied.",
+        "p70 sections9.3-9.4"
+      ]
+    ],
+    "outcomes": [
+      {
+        "workload": "three workflow types,PyTorch/TensorFlow,Azure-derived invocation patterns; evaluated V100 setup",
+        "baseline": "INFless with documented warm-up/pipelined loading/model sharing",
+        "metric": "Author-reported average throughput factor",
+        "value": "6.7",
+        "units": "x",
+        "source_anchor": "p68 section9.1/Figure13; PDF p11",
+        "caveat": "Aggregate within-paper result across tested workflows; not universal or a matched cross-paper speedup. Batch/concurrency optimizations contribute."
+      },
+      {
+        "workload": "GPU API forwarding with48concurrent functions on one GPU",
+        "baseline": "direct API path; instrumentation overhead measurement",
+        "metric": "Reported API-forwarding overhead range",
+        "value": "3-5",
+        "units": "microseconds",
+        "source_anchor": "p70 section9.3/Figure18; PDF p13",
+        "caveat": "Per-API overhead, not end-to-end inference latency; many APIs asynchronous."
+      }
+    ]
+  },
+  {
+    "report_id": "GB-P014",
+    "record_id": "GB-R02278",
+    "pdf_file": "krypton.pdf",
+    "title": "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception (KRYPTON)",
+    "authors": "Shulai Zhang; Ao Xu; Quan Chen; Han Zhao; Weihao Cui; Zhen Wang; Yan Li; Limin Xiao; Minyi Guo",
+    "doi": "",
+    "source_url": "https://www.usenix.org/system/files/atc25-zhang-shulai.pdf",
+    "anchor": "pp1011-1015 sections5.1,5.5-5.7,7; PDF pp10-14",
+    "eligibility": "provisionally_eligible_AI_source_assessment",
+    "remaining": "AI source assessment only; independent check unperformed; preserve local GPU scope and exact metric caveats.",
+    "ic": [
+      "English primary report in official peer-reviewed USENIX proceedings.",
+      "Local GPU sharing/concurrent clients explicitly evaluated in the cited case.",
+      "Inference outcome is identifiable separately from training/rendering/NPU results.",
+      "Defined metric, comparator and configuration recorded in outcome rows.",
+      "A separable single-GPU experiment is identified; fleet-only gains not substituted.",
+      "2025 publication within main review window."
+    ],
+    "form": {
+      "mechanism": "kernel-command-buffer interception; feedback-controlled temporal quotas and MIG spatial orchestration; Linux loadable module",
+      "gpu_hardware": "A10040GB for local quota/QoS tests; twoRTX4090 used for separate distributed-training test",
+      "cpu_memory": "Xeon Silver4216,64cores as source reports; RAM not reported in Table1",
+      "os_kernel": "Ubuntu20.04; Linux5.15.0-91-generic",
+      "driver_runtime": "NVIDIA550.90.07;Docker24.0.7;CUDA12.1;Vulkan1.3;PyTorch2.2.1",
+      "models": "local Transformer-XL inference batch8/16/32;ResNet50/MobileNetV2/BERT-Large also benchmarked",
+      "tenant_mix": "inference with co-running applications; separate training/rendering results not substituted",
+      "batch_load_slo": "QoS:Poisson arrivals at half maximum throughput;50%temporal allocation;5/10/20/40/80ms tokens; target original soloP99",
+      "baseline": "original soloP99 QoS target; fixed temporal quotas; adapted MIG baselines used separately for fleet packing",
+      "latency": "fraction of requests exceeding originalP99 threshold",
+      "throughput": "local normalized-throughput target errors separated from total GPU-count savings",
+      "resource_usage": "4.8MB host memory for kernel module;one CPU monitoring thread;NVML/DCGM monitoring",
+      "scalability": "fleet packing evaluated separately; no local32.1%GPU-count claim",
+      "energy": "not reported as measured outcome in checked section5",
+      "reliability": "production reliability claimed in discussion; not independent fault-testing evidence",
+      "security_fault_isolation": "separate virtual-device/application boundary; kernel module trust remains; security discussion is not proof of no vulnerabilities",
+      "overhead": "token-length trade-off and4.8MBhost-memory module overhead",
+      "advantages": "multi-runtime support and feedback-controlled quotas without application rewrites",
+      "limitations": "MIG spatial partitions cannot be elastically reconfigured live; Linux kernel integration and trust required",
+      "tradeoffs": "shorter scheduling tokens increase overhead; longer tokens increase waiting for larger batches",
+      "authors": "Shulai Zhang; Ao Xu; Quan Chen; Han Zhao; Weihao Cui; Zhen Wang; Yan Li; Limin Xiao; Minyi Guo",
+      "year": "2025",
+      "venue": "USENIX ATC2025 pp1003-1019"
+    },
+    "quality": [
+      [
+        2,
+        "Sharing/isolation/compatibility objectives explicit.",
+        "p1003 section1"
+      ],
+      [
+        2,
+        "Kernel interception,token control and MIG orchestration described.",
+        "pp1006-1011 sections3-4"
+      ],
+      [
+        1,
+        "Setup and workload matrix supplied; repeated-run uncertainty unclear.",
+        "p1011 section5.1"
+      ],
+      [
+        2,
+        "Hardware,OS,kernel,driver and frameworks specified.",
+        "p1011 Tables1-2"
+      ],
+      [
+        1,
+        "Isolation-capable baselines and adapters disclosed; equivalence limited.",
+        "pp1011-1012 comparing targets"
+      ],
+      [
+        2,
+        "Quota/throughput metrics explicitly normalized.",
+        "pp1013-1014 sections5.4-5.6"
+      ],
+      [
+        2,
+        "QoS uses originalP99 and defined Poisson load/token lengths.",
+        "p1014 Figure17/section5.5"
+      ],
+      [
+        2,
+        "Local co-running inference error measured.",
+        "p1014 section5.6"
+      ],
+      [
+        1,
+        "Boundary/security rationale described; direct fault/security validation not established in checked evaluation.",
+        "p1015 section7"
+      ],
+      [
+        1,
+        "Implementation andMIGlimitations supplied; independent artifact reproduction unperformed.",
+        "pp1011,1015 sections4,7"
+      ]
+    ],
+    "outcomes": [
+      {
+        "workload": "Transformer-XL inference,batch8/16/32;50%GPUtime;Poisson arrivals;tokens5-80ms",
+        "baseline": "original soloP99 threshold (1%baseline violations by definition)",
+        "metric": "Reported average QoS violation rate",
+        "value": "1.23",
+        "units": "percent of requests",
+        "source_anchor": "p1014 section5.5/Figure17; PDF p13",
+        "caveat": "Average across tested configurations; no claim that worst-case violation is1.23%. Threshold-relative metric, not latency in milliseconds."
+      },
+      {
+        "workload": "kernel-space GPU sharing module on evaluated Linux host",
+        "baseline": "no module; additional host memory cost",
+        "metric": "Reported kernel module host-memory footprint",
+        "value": "4.8",
+        "units": "MB",
+        "source_anchor": "p1014 section5.7; PDF p13",
+        "caveat": "Host memory, not GPU VRAM; separate monitoring thread also required."
+      }
+    ]
+  },
+  {
+    "report_id": "GB-P015",
+    "record_id": "GB-R02283",
+    "pdf_file": "xsched.pdf",
+    "title": "XSched: Preemptive Scheduling for Diverse XPUs",
+    "authors": "Weihang Shen; Mingcong Han; Jialong Liu; Rong Chen; Haibo Chen",
+    "doi": "",
+    "source_url": "https://www.usenix.org/system/files/osdi25-shen-weihang.pdf",
+    "anchor": "p683 section7.4 case3/Figure15; PDF p14",
+    "eligibility": "provisionally_eligible_AI_source_assessment",
+    "remaining": "AI source assessment only; independent check unperformed; preserve local GPU scope and exact metric caveats.",
+    "ic": [
+      "English primary report in official peer-reviewed USENIX proceedings.",
+      "Local GPU sharing/concurrent clients explicitly evaluated in the cited case.",
+      "Inference outcome is identifiable separately from training/rendering/NPU results.",
+      "Defined metric, comparator and configuration recorded in outcome rows.",
+      "A separable single-GPU experiment is identified; fleet-only gains not substituted.",
+      "2025 publication within main review window."
+    ],
+    "form": {
+      "mechanism": "temporal/preemptive runtime interposition via XQueue/XShim; hardware-specific preemption levels",
+      "gpu_hardware": "single NVIDIA GV100 for extracted Triton/Paella case; NPU/ASIC/FPGA results outside extracted GPU outcomes",
+      "cpu_memory": "not reported in extracted section7.4 case3",
+      "os_kernel": "not reported in extracted section7.4 case3",
+      "driver_runtime": "CUDA/Triton and Paella artifact; exact version numbers not reported in extracted case3",
+      "models": "two Bert-large model clients for Triton; Paella mixed-model request workload for second case",
+      "tenant_mix": "one high-priority client at10requests/s;low-priority client continuous on sameGV100",
+      "batch_load_slo": "Triton client rates as above;Paella workload lognormal sigma2.0;K-EDF K16; exact batch sizes not reported in extracted case3",
+      "baseline": "vanilla Triton;Triton priority setting;standalone high-priority execution;separate comparison to Paella",
+      "latency": "high-priorityP99 normalized to standalone;latency-throughput curve",
+      "throughput": "requests/s in Paella curve;no aggregate cross-XPU overhead used as GPU inference result",
+      "resource_usage": "preemption enables foreground service priority; no invented GPU utilization percentage",
+      "scalability": "ten-XPU portability evaluation distinguished from one-GPU case",
+      "energy": "not reported as measured outcome in checked section7",
+      "reliability": "not_extracted",
+      "security_fault_isolation": "scheduling/performance priority, not a security or fault-containment guarantee",
+      "overhead": "10lines Triton integration and15lines Paella-baseline integration;preemption overhead measured separately",
+      "advantages": "adds priority policy to existing serving frameworks with small integration changes",
+      "limitations": "preemption capability depends on vendor/hardware level;NPU latency gains do not transfer to GPU results",
+      "tradeoffs": "foreground predictability versus background throughput and hardware-specific adaptation",
+      "authors": "Weihang Shen; Mingcong Han; Jialong Liu; Rong Chen; Haibo Chen",
+      "year": "2025",
+      "venue": "USENIX OSDI2025 pp671-692"
+    },
+    "quality": [
+      [
+        2,
+        "Portable scheduling objective andGPUcase clear.",
+        "pp671-672 section1"
+      ],
+      [
+        2,
+        "XQueue abstraction andmulti-level preemption described.",
+        "pp674-679 sections3-6"
+      ],
+      [
+        1,
+        "Workload rates and policies explicit; repeat uncertainty not established.",
+        "pp680-683 section7"
+      ],
+      [
+        1,
+        "GPU/model/rates explicit;host/software versions incomplete in extracted case.",
+        "p683 case3"
+      ],
+      [
+        2,
+        "Same-GPU standalone/native priority comparisons supplied.",
+        "p683 Figure15"
+      ],
+      [
+        2,
+        "Throughput-latency curves defined forGPUinferencecase.",
+        "p683 Figure15b"
+      ],
+      [
+        2,
+        "P99 and offered rates explicit.",
+        "p683 Figure15a"
+      ],
+      [
+        2,
+        "Two concurrentBertclients ononeGV100.",
+        "p683 case3"
+      ],
+      [
+        "NA",
+        "No claimed security/fault-containment guarantee in extracted scheduling claim;N/A provisional for claim-specificQ9.",
+        "pp671-672 scope; p683 case3"
+      ],
+      [
+        2,
+        "Implementation/interfaces,artifact andhardware-dependence detailed.",
+        "sections6-8;artifact appendix"
+      ]
+    ],
+    "outcomes": [
+      {
+        "workload": "twoBert-large clients ononeGV100;high-priority10req/s,backgroundcontinuous",
+        "baseline": "standalone high-priorityBert-large execution",
+        "metric": "Reported high-priorityP99 latency ratio",
+        "value": "1.07",
+        "units": "x standalone",
+        "source_anchor": "p683 section7.4 case3/Figure15a; PDF p14",
+        "caveat": "Triton+XSched;not a rawmillisecond value. NativeTriton ratio1.53x;noNPUresultincluded."
+      },
+      {
+        "workload": "same two-clientTriton/GV100case",
+        "baseline": "vanillaTriton (P99=1.53xstandalone)",
+        "metric": "Author-reported P99 latency reduction",
+        "value": "30.0",
+        "units": "percent",
+        "source_anchor": "p683 section7.4 case3/Figure15a; PDF p14",
+        "caveat": "Within-paper comparison only;author-rounded30.0%,not a universal bound."
+      }
     ]
   }
 ]

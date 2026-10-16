@@ -1,0 +1,96 @@
+"""Recorded assessments from primary PDFs retrieved in private_cycle5."""
+import json
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];P=R/'evidence/cycle5_source_assessments.json'
+papers=json.loads(P.read_text())
+def make(num,record,key,title,authors,year,venue,url,anchor,form,scores,reasons,anchors,outcomes):
+ return dict(report_id=f'GB-P{num:03}',record_id=record,pdf_file=key+'.pdf',title=title,authors=authors,doi='',source_url=url,anchor=anchor,
+  eligibility='provisionally_eligible_AI_source_assessment',remaining='AI source assessment only; independent check unperformed; preserve local GPU scope and exact metric caveats.',
+  ic=['English primary report in official peer-reviewed USENIX proceedings.',
+      'Local GPU sharing/concurrent clients explicitly evaluated in the cited case.',
+      'Inference outcome is identifiable separately from training/rendering/NPU results.',
+      'Defined metric, comparator and configuration recorded in outcome rows.',
+      'A separable single-GPU experiment is identified; fleet-only gains not substituted.',
+      str(year)+' publication within main review window.'],
+  form=dict(form,authors=authors,year=str(year),venue=venue),
+  quality=[[s,r,a] for s,r,a in zip(scores,reasons,anchors)],outcomes=outcomes)
+def o(workload,baseline,metric,value,units,anchor,caveat):
+ return dict(workload=workload,baseline=baseline,metric=metric,value=str(value),units=units,source_anchor=anchor,caveat=caveat)
+papers.append(make(12,'GB-R02276','torpor','Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference',
+ 'Minchen Yu; Ao Wang; Dong Chen; Haoxuan Yu; Xiaonan Luo; Zhuohao Li; Wei Wang; Ruichuan Chen; Dapeng Nie; Haoran Yang; Yu Ding',2025,'USENIX ATC2025 pp597-612',
+ 'https://www.usenix.org/system/files/atc25-yu.pdf','pp604-606 sections7.1-7.2, Table4, Figure8; PDF pp9-11',
+ dict(mechanism='API redirection/remoting plus temporal request-level sharing and host/GPU model swapping; GPU runtime sharing mode',
+ gpu_hardware='single V10032GB in local Figure8; evaluation worker has4 V10032GB GPUs',cpu_memory='48vCPUs;384GB RAM per worker',
+ os_kernel='not reported in section7 settings',driver_runtime='PyTorch-based clients replace CUDA libraries; exact OS/driver/CUDA versions not reported in section7 settings',
+ models='ResNet152 local sharing test;8 models in Table4 including DenseNet169/201,InceptionV3,EfficientNet,ResNet50/101/152,Bert-qa',
+ tenant_mix='multiple low-frequency ResNet152 functions share one GPU; sufficient functions to saturate device memory',
+ batch_load_slo='10-80 requests/minute/function; global defaultP98; CV deadline80ms and Bert-qa200ms',
+ baseline='Native early binding; local remoting microbenchmark also compares GVirtuS; cluster INFless-KA results kept separate',
+ latency='P98 under shared-GPU Figure8; Table4 isolated latency has no explicitly stated quantile',throughput='single-GPU throughput normalized to Native, request rates varied',
+ resource_usage='GPU load=time processing inference / observation time; host memory retains unloaded models',scalability='up to6 workers/4GPUs per worker evaluated separately; local outcome rows do not claim fleet effects',
+ energy='not reported as measured outcome in checked sections7-8',reliability='not_extracted',security_fault_isolation='runtime sharing and runtime isolation modes differ; section7 measures sharing mode, not security guarantee',
+ overhead='API redirection, swapping and extra CPU activity evaluated; ResNet152 remoting17ms versus Native25ms, Table4',
+ advantages='more low-rate functions can share GPU memory capacity through late binding',limitations='PCIe swapping can hurt heavy models: Bert-qa144ms versus Native42ms in Table4; cluster data not a single-GPU speedup',tradeoffs='device-memory density versus transfer traffic, CPU work and tail latency'),
+ [2,2,1,1,1,2,2,2,1,1],
+ ['Inference memory/density objective explicit.','API redirection, pooling and scheduling described.','Production trace and request rates given; repeated-run uncertainty not established.','GPU/CPU/RAM supplied; exact software version matrix missing in checked setup.','Native and adapted INFless-KA comparison described; resource/CPU paths differ.','Throughput/load definitions and local normalization supplied.','P98 and per-function load/SLO explicit.','Multiple functions share a single GPU in Figure8.','Sharing/isolation modes separated; strong security/fault tests not established for evaluated mode.','Implementation detail and limitations supplied; independent artifact reproduction unperformed.'],
+ ['p597 section1','pp600-604 sections4-6','pp604-606 section7','p604 settings','pp605-606 sections7.1-7.3','pp605-606 Figure8','pp605-606 metrics/Figure8','pp605-606 Figure8','sections4,7-8','sections6-8'],
+ [o('multiple ResNet152 functions on one V10032GB;10requests/minute/function','Native early binding at same offered function rate','Reported single-GPU throughput factor','>10','x','p606 section7.2; Figure8 p605; PDF pp10-11','Lower bound reported by authors, not an exact10x; function count varies to saturate memory. No fleet cost claim.'),
+  o('same single-GPU low-rate ResNet152 test,10-80requests/minute/function','Native under matched request-rate setting','Reported P98 latency upper bound','<50','ms','p606 section7.2; Figure8 p605; PDF pp10-11','Bound from text, not a digitized point; default98th percentile from section7 metrics. Applies to this workload.')]))
+papers.append(make(13,'GB-R02277','streambox','StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow',
+ 'Hao Wu; Yue Yu; Junxiao Deng; Shadi Ibrahim; Song Wu; Hao Fan; Ziyue Cheng; Hai Jin',2024,'USENIX ATC2024 pp59-73',
+ 'https://www.usenix.org/system/files/atc24-wu-hao.pdf','pp67-70 sections9.1-9.4; Figures12-14,19; PDF pp10-13',
+ dict(mechanism='API forwarding into workflow-shared CUDA runtime/streams; PTB software spatial partitioning and fine-grained memory pool',
+ gpu_hardware='V10016GB,80CUs; host has4 GPUs; single-GPU multi-user test in section9.4',cpu_memory='two Xeon Gold5117,28total cores,128GB DRAM',
+ os_kernel='not reported in section9 setup',driver_runtime='PyTorch1.3.0,TensorFlow2.12,CUDA10.1 as reported; driver/OS version not reported in section9 setup',
+ models='Image Processing,Traffic,Social Media workflows: SSD300,FSRCNN,ResNet152/50/18,VGG16,AlexNet,LSTM,BERT',
+ tenant_mix='concurrent functions within workflow share runtime; separate3/6-user Traffic test on one GPU',batch_load_slo='Azure Functions7-day invocation trace; sporadic/periodic/bursty; Traffic SLO200ms; up to3 workflows/runtime contexts per GPU in evaluated setup',
+ baseline='INFless and Astraea with MPS; Stream-only; all warm-up/model-sharing/pipelined-loading settings disclosed in section9',
+ latency='end-to-end CDF and SLO violations; no invented p99 scalar',throughput='average requests/s and within-experiment ratios',
+ resource_usage='runtime memory redundancy, automatic pool sizing and direct intra-GPU data sharing',scalability='single-GPU3/6-user limits versus separate4/8-node scaling tests',
+ energy='not reported as measured outcome in checked section9',reliability='not_extracted',security_fault_isolation='functions within one workflow share CUDA address space; secure cross-workflow isolation is orthogonal; do not claim strong per-function isolation',
+ overhead='API forwarding1-3microseconds;3-5microseconds at48functions; one-time profiling36s and transformation4s, p70',
+ advantages='reduces redundant runtime memory and inter-function data copies',limitations='benefit diminishes across users; concurrency beyond3users caused queuing/SLO violations in evaluated setup',tradeoffs='workflow-local sharing and compiler/profiling preparation versus runtime density and startup latency'),
+ [2,2,1,1,1,2,1,2,1,2],
+ ['Workflow-local runtime sharing objective explicit.','Streams,PTB compiler and memory management explained.','Production-style traces and ablations provided; repeated-run uncertainty unclear.','Hardware/frameworks named; OS/driver and version compatibility need checking.','Common optimizations enabled, but baselines adapted and batch choices affect ratios.','Memory and throughput units/ratios defined.','CDF/SLO reported; no precise tail scalar extracted.','Explicit3/6-user single-GPU test.','Same-runtime sharing weakens function isolation; security boundary is deliberately scoped.','Detailed implementation, preparation overhead and multi-user limits supplied.'],
+ ['p59 section1','pp62-67 sections3-8','pp67-70 section9','p67 setup','p67 Table2/comparing targets','p68 Figures12-13','p68 Figure14','p70 Figure19','pp62-63; p70 related-work boundary','p70 sections9.3-9.4'],
+ [o('three workflow types,PyTorch/TensorFlow,Azure-derived invocation patterns; evaluated V100 setup','INFless with documented warm-up/pipelined loading/model sharing','Author-reported average throughput factor',6.7,'x','p68 section9.1/Figure13; PDF p11','Aggregate within-paper result across tested workflows; not universal or a matched cross-paper speedup. Batch/concurrency optimizations contribute.'),
+  o('GPU API forwarding with48concurrent functions on one GPU','direct API path; instrumentation overhead measurement','Reported API-forwarding overhead range','3-5','microseconds','p70 section9.3/Figure18; PDF p13','Per-API overhead, not end-to-end inference latency; many APIs asynchronous.')]))
+papers.append(make(14,'GB-R02278','krypton','Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception (KRYPTON)',
+ 'Shulai Zhang; Ao Xu; Quan Chen; Han Zhao; Weihao Cui; Zhen Wang; Yan Li; Limin Xiao; Minyi Guo',2025,'USENIX ATC2025 pp1003-1019',
+ 'https://www.usenix.org/system/files/atc25-zhang-shulai.pdf','pp1011-1015 sections5.1,5.5-5.7,7; PDF pp10-14',
+ dict(mechanism='kernel-command-buffer interception; feedback-controlled temporal quotas and MIG spatial orchestration; Linux loadable module',
+ gpu_hardware='A10040GB for local quota/QoS tests; twoRTX4090 used for separate distributed-training test',cpu_memory='Xeon Silver4216,64cores as source reports; RAM not reported in Table1',
+ os_kernel='Ubuntu20.04; Linux5.15.0-91-generic',driver_runtime='NVIDIA550.90.07;Docker24.0.7;CUDA12.1;Vulkan1.3;PyTorch2.2.1',
+ models='local Transformer-XL inference batch8/16/32;ResNet50/MobileNetV2/BERT-Large also benchmarked',tenant_mix='inference with co-running applications; separate training/rendering results not substituted',
+ batch_load_slo='QoS:Poisson arrivals at half maximum throughput;50%temporal allocation;5/10/20/40/80ms tokens; target original soloP99',
+ baseline='original soloP99 QoS target; fixed temporal quotas; adapted MIG baselines used separately for fleet packing',latency='fraction of requests exceeding originalP99 threshold',throughput='local normalized-throughput target errors separated from total GPU-count savings',
+ resource_usage='4.8MB host memory for kernel module;one CPU monitoring thread;NVML/DCGM monitoring',scalability='fleet packing evaluated separately; no local32.1%GPU-count claim',
+ energy='not reported as measured outcome in checked section5',reliability='production reliability claimed in discussion; not independent fault-testing evidence',security_fault_isolation='separate virtual-device/application boundary; kernel module trust remains; security discussion is not proof of no vulnerabilities',
+ overhead='token-length trade-off and4.8MBhost-memory module overhead',advantages='multi-runtime support and feedback-controlled quotas without application rewrites',limitations='MIG spatial partitions cannot be elastically reconfigured live; Linux kernel integration and trust required',tradeoffs='shorter scheduling tokens increase overhead; longer tokens increase waiting for larger batches'),
+ [2,2,1,2,1,2,2,2,1,1],
+ ['Sharing/isolation/compatibility objectives explicit.','Kernel interception,token control and MIG orchestration described.','Setup and workload matrix supplied; repeated-run uncertainty unclear.','Hardware,OS,kernel,driver and frameworks specified.','Isolation-capable baselines and adapters disclosed; equivalence limited.','Quota/throughput metrics explicitly normalized.','QoS uses originalP99 and defined Poisson load/token lengths.','Local co-running inference error measured.','Boundary/security rationale described; direct fault/security validation not established in checked evaluation.','Implementation andMIGlimitations supplied; independent artifact reproduction unperformed.'],
+ ['p1003 section1','pp1006-1011 sections3-4','p1011 section5.1','p1011 Tables1-2','pp1011-1012 comparing targets','pp1013-1014 sections5.4-5.6','p1014 Figure17/section5.5','p1014 section5.6','p1015 section7','pp1011,1015 sections4,7'],
+ [o('Transformer-XL inference,batch8/16/32;50%GPUtime;Poisson arrivals;tokens5-80ms','original soloP99 threshold (1%baseline violations by definition)','Reported average QoS violation rate',1.23,'percent of requests','p1014 section5.5/Figure17; PDF p13','Average across tested configurations; no claim that worst-case violation is1.23%. Threshold-relative metric, not latency in milliseconds.'),
+  o('kernel-space GPU sharing module on evaluated Linux host','no module; additional host memory cost','Reported kernel module host-memory footprint',4.8,'MB','p1014 section5.7; PDF p13','Host memory, not GPU VRAM; separate monitoring thread also required.')]))
+papers.append(make(15,'GB-R02283','xsched','XSched: Preemptive Scheduling for Diverse XPUs',
+ 'Weihang Shen; Mingcong Han; Jialong Liu; Rong Chen; Haibo Chen',2025,'USENIX OSDI2025 pp671-692',
+ 'https://www.usenix.org/system/files/osdi25-shen-weihang.pdf','p683 section7.4 case3/Figure15; PDF p14',
+ dict(mechanism='temporal/preemptive runtime interposition via XQueue/XShim; hardware-specific preemption levels',
+ gpu_hardware='single NVIDIA GV100 for extracted Triton/Paella case; NPU/ASIC/FPGA results outside extracted GPU outcomes',cpu_memory='not reported in extracted section7.4 case3',
+ os_kernel='not reported in extracted section7.4 case3',driver_runtime='CUDA/Triton and Paella artifact; exact version numbers not reported in extracted case3',
+ models='two Bert-large model clients for Triton; Paella mixed-model request workload for second case',tenant_mix='one high-priority client at10requests/s;low-priority client continuous on sameGV100',
+ batch_load_slo='Triton client rates as above;Paella workload lognormal sigma2.0;K-EDF K16; exact batch sizes not reported in extracted case3',
+ baseline='vanilla Triton;Triton priority setting;standalone high-priority execution;separate comparison to Paella',latency='high-priorityP99 normalized to standalone;latency-throughput curve',throughput='requests/s in Paella curve;no aggregate cross-XPU overhead used as GPU inference result',
+ resource_usage='preemption enables foreground service priority; no invented GPU utilization percentage',scalability='ten-XPU portability evaluation distinguished from one-GPU case',
+ energy='not reported as measured outcome in checked section7',reliability='not_extracted',security_fault_isolation='scheduling/performance priority, not a security or fault-containment guarantee',
+ overhead='10lines Triton integration and15lines Paella-baseline integration;preemption overhead measured separately',advantages='adds priority policy to existing serving frameworks with small integration changes',limitations='preemption capability depends on vendor/hardware level;NPU latency gains do not transfer to GPU results',tradeoffs='foreground predictability versus background throughput and hardware-specific adaptation'),
+ [2,2,1,1,2,2,2,2,'NA',2],
+ ['Portable scheduling objective andGPUcase clear.','XQueue abstraction andmulti-level preemption described.','Workload rates and policies explicit; repeat uncertainty not established.','GPU/model/rates explicit;host/software versions incomplete in extracted case.','Same-GPU standalone/native priority comparisons supplied.','Throughput-latency curves defined forGPUinferencecase.','P99 and offered rates explicit.','Two concurrentBertclients ononeGV100.','No claimed security/fault-containment guarantee in extracted scheduling claim;N/A provisional for claim-specificQ9.','Implementation/interfaces,artifact andhardware-dependence detailed.'],
+ ['pp671-672 section1','pp674-679 sections3-6','pp680-683 section7','p683 case3','p683 Figure15','p683 Figure15b','p683 Figure15a','p683 case3','pp671-672 scope; p683 case3','sections6-8;artifact appendix'],
+ [o('twoBert-large clients ononeGV100;high-priority10req/s,backgroundcontinuous','standalone high-priorityBert-large execution','Reported high-priorityP99 latency ratio',1.07,'x standalone','p683 section7.4 case3/Figure15a; PDF p14','Triton+XSched;not a rawmillisecond value. NativeTriton ratio1.53x;noNPUresultincluded.'),
+  o('same two-clientTriton/GV100case','vanillaTriton (P99=1.53xstandalone)','Author-reported P99 latency reduction',30.0,'percent','p683 section7.4 case3/Figure15a; PDF p14','Within-paper comparison only;author-rounded30.0%,not a universal bound.')]))
+seen=set();unique=[]
+for p in papers:
+ if p['report_id'] not in seen:unique.append(p);seen.add(p['report_id'])
+P.write_text(json.dumps(unique,indent=2)+'\n')
+print('Saved source definitions for',len(unique),'reports')
