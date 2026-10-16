@@ -1,3 +1,7 @@
+# Cycle 3 started: source-retrieval checkpoint
+
+Resumed published main aa20346. Three new source PDFs retrieved privately (Paella, Orion, GSLICE); eligibility/QA/extraction assessment in progress. Baseline remains 4189 occurrences,111 links,4078 canonical records,2247 preliminary recommendations,1831 awaiting first recommendation,50 QA items,26 outcomes and5 checked reports. No new decisions yet. Original protocol preserved. See evidence/cycle3_baseline.json and cycle3_retrieval.csv.
+
 # Cycle 2 workbook and handoff refresh complete
 
 Current verified counts: 4,189 occurrences, 111 duplicate links, 4,078 canonical records; 2,247 preserved preliminary recommendations and 1,831 awaiting first recommendation. The 33-sheet workbook and seven-page detailed team guide are refreshed. QA remains 50 items and extraction 26 outcomes across five reports. Final decisions remain pending. Report PDF remains historical. Read task2/PUBLIC_CHECKPOINT.md for public versus private source preservation and evidence gaps. Cycle 1 recovery/audit completed; Cycle 2 import/workbook preparation completed with gaps; Cycle 3 not started.

@@ -1,3 +1,7 @@
+# Cycle 3 in progress
+
+Resume source assessments for Paella, Orion, GSLICE and Clockwork. Do not rerun imports or overwrite baseline votes. Raw sources stay private. Save each batch; update registers and full/private and public workbook views at the end. All independent human votes remain pending.
+
 # Next: Cycle 3, only on request
 
 Read task2/PUBLIC_CHECKPOINT.md and evidence/workbook_refresh_validation.json first. The workbook is current for the reconciled queue; the report PDF is not. Original new RIS sources and the full abstract-bearing workbook are private in supplied Drive. Public records/workbook omit abstracts intentionally. Retrieve and hash-check originals before raw-source validation. Do not rerun old frozen-baseline report validators against expanded counts. Preserve all existing recommendations and real reviewer work.

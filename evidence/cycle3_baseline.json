@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "aa2034627fa87e32bbd229fff0a73aff57bd3963",
+  "started_at_utc": "2026-10-16T09:58:32.471757+00:00",
+  "hashes": {
+    "records.csv": "c355544c5c49bb8ac615977e6bdb6082cbb919693616d8bc36438265529217b2",
+    "screening.csv": "dd19e595261f2c86c60e4a1f9e451bf028bd412560cb505168447ebce393ce37",
+    "duplicates.csv": "b36aa9e54e1b2e624cb8219d232a9dc72cda3974ba97d795a709c4f259782a43",
+    "title_votes.csv": "2239e07a0731aeea8156ab400e41b3865582e9cd44b261dbe7276086fc6c9668",
+    "quality.csv": "9c2c9938647ec425ce42a02089b6cd18832f52045bd356780f7094846539f318",
+    "extraction.csv": "99a7762246eb6d0472ef40c6aa79675c9ee7bef3922f54163e01ca1c933a8e02",
+    "fulltext_checks.csv": "dd7e2f56fe6f1adad681b5867d80276f012e38ae64bac8858f571a68074066d7",
+    "study_extraction_form.csv": "f223bc288c2aac0b5bfb7ca1d1dd03d85bc2631e449217647d871f603810a7c1"
+  },
+  "counts": {
+    "occurrences": 4189,
+    "duplicates": 111,
+    "canonical": 4078,
+    "recommendations": 2247,
+    "unreviewed": 1831,
+    "qa_items": 50,
+    "outcomes": 26,
+    "reports": 5
+  }
+}
