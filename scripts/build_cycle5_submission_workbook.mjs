@@ -43,6 +43,9 @@ overview.getRange('A21:C22').values=[['Source-assessed reports',d.counts.source_
 overview.getRange('A21:C22').format={font:{name:'Arial',size:11},wrapText:true,rowHeight:50};
 overview.getRange('A16:C19').values=[['How to read','Start with Study summary','Report IDs link full-text criteria, QA, extraction and outcomes'],['Search / selection','Search runs, Screening log, Duplicates','All rows retain provenance and current decision status'],['Paper-by-paper evidence','QA items, Study extraction, Outcomes','Do not mix percentile/mean, training/inference, GPU/NPU or local/fleet results'],['Remaining work','Review issues and Abstract audit','Uncertain fields/cases remain explicit; original detailed audit workbook retained']];
 overview.getRange('A3:C19').format={font:{name:'Arial',size:11},rowHeight:48,wrapText:true};overview.getRange('A3:C3').format={fill:'#243B53',font:{color:'#FFFFFF',bold:true},rowHeight:34};overview.getRange('A1:A19').format.columnWidth=34;overview.getRange('B1:B19').format.columnWidth=32;overview.getRange('C1:C19').format.columnWidth=83;
+overview.getRange('B4:B11').format.horizontalAlignment='center';
+overview.getRange('B4:B11').setNumberFormat('#,##0');
+overview.getRange('B21:B22').format.horizontalAlignment='center';
 wb.recalculate();
 if(overview.getRange('B4:B11').values.map(r=>r[0]).join(',')!==[4189,114,4075,1441,2634,15,150,45].join(','))throw Error('Overview/source count mismatch');
 for(let i=0;i<d.qa_matrix.length;i++){

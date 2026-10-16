@@ -1,0 +1,42 @@
+{
+  "occurrences": 4189,
+  "database_occurrences": 4169,
+  "supplementary_occurrences": 20,
+  "by_source": {
+    "ACM": 1582,
+    "Springer": 587,
+    "IEEE": 102,
+    "Supplementary": 20,
+    "ScienceDirect": 1898
+  },
+  "exact_duplicate_occurrences": 114,
+  "records_after_exact_linkage": 4075,
+  "possible_version_pairs": 41,
+  "triage": {
+    "uncertain": 251,
+    "high": 183,
+    "low": 1813,
+    "not_prioritized_new_import": 1831
+  },
+  "final_screened": null,
+  "final_included": null,
+  "preliminary_recommendations": 4075,
+  "preliminary_exclusion_recommendations": 1441,
+  "preliminary_retain_or_uncertain": 2634,
+  "first_recommendations_pending": 0,
+  "version_pair_dispositions": {
+    "companion_report_relationship_proposed": 3,
+    "container_pair_scope_classified": 30,
+    "identity_verified_linkage_proposed": 3,
+    "unresolved_paper_identity": 5
+  },
+  "proposed_duplicate_links_applied": false,
+  "four_database_completeness": "not established; supplied exports from four platforms represented",
+  "new_sciencedirect_occurrences": 1898,
+  "possible_version_pairs_note": "41 legacy pairs retained; new pairs listed separately in new_version_candidates.csv",
+  "cycle3_assessed_reports": 17,
+  "cycle3_provisionally_eligible_reports": 13,
+  "cycle3_note": "Bounded first-review assessments; source-version uncertainty is not provisional eligibility; no final PRISMA completion inferred",
+  "cycle5_new_identity_links": 3,
+  "duplicate_note": "111 earlier exact links plus3 publisher-verified identity links; original export occurrences unchanged"
+}

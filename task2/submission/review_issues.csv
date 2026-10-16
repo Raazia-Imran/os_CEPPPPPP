@@ -1,0 +1,9 @@
+issue,status,scope,action
+Selection coverage,open,"2634 initial retain/uncertain records; 17 source-assessed reports, including 2 EC2 exclusions; final included studies pending",Complete source eligibility assessment; do not infer final study count from report forms.
+Reviewer method,documented deviation,AI-only continuation authorized; human second fields blank,Disclose method and avoid claiming independent consensus.
+ParvaGPU version,open,GB-P011 uses arXivv1; conference DOI identity recorded,Verify final publication text before included-study designation.
+REEF identity,open,GB-P005 conference versus later journal companion,Map reports to study; do not substitute journal DOI.
+Missingness,explicit,Unknown fields labelled not_extracted; absent reporting scoped to checked sections,Do not turn missing values into zeros or unqualified not_reported.
+Search gaps,open,ACM79-file mapping;1600/1603 reported versus1582 imported;ScienceDirect MPS517displayed versus563exported,Keep both operator-reported and parsed counts; do not force agreement.
+Duplicate reconciliation,applied,111 earlier links plus3 publisher-verified identity links=114,Preserve removed canonical screening rows and all vote events.
+Abstract cleaning,normalization audit complete; completeness not verified,3658/4189 occurrences have some abstract text,Originals preserved; whitespace/entity normalization does not establish complete abstracts.
