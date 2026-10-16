@@ -23,3 +23,11 @@ The supplied example studies GPU memory oversubscription and lists22 screened pa
 Cycle1 recovery/audit is closed. Cycle2 import/query audit is closed with documented historical/search gaps. Cycles3-5 have substantial outputs but remain partial while eligibility/source coverage is unfinished. Cycle6 provides interim accounting and reference audit; it cannot honestly finalize unfinished stages. Thus two cycle scopes are closed; all six cycles are not complete.
 
 Preserve original evidence, real dates and source status. This folder name is a navigation label, not certification that all research is finished.
+
+## Quick answers
+
+- **Has screening finished?** Initial automated triage has finished. Complete verified abstract/full-text selection has not.
+- **Which papers are we considering now?** The15reports in CURRENT_ASSESSED_PAPERS_AND_DOIS.csv carry QA/extraction.13are provisional;REEF andParvaGPU retain specific unresolved boundaries. TGS/HiveD are separate assessed exclusions.
+- **Why separate PDFs?** The28-page main report explains cross-study findings and recommendations. QA and data-extraction PDFs are detailed supporting appendices,not separate reviews.
+- **Where are timestamps?** The simple workbook and SCREENING_LOG_WITH_RECORDED_DATES.csv preserve actual recorded dates/time provenance.798exact event times remain unknown.
+- **What is uploaded?** This public folder contains the report,LaTeX,workbook,logs and evidence tables. Licensed source PDFs and full exported abstracts stay in the existing private evidence locations.

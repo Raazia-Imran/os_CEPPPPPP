@@ -1,3 +1,14 @@
+# Current navigation / next work
+
+Read `final things/README.md`, `final things/01_Statistics_and_Papers/statistics.json` and `final things/05_Protocol_and_Audit/CYCLE_STATUS.csv` first. Scientific screening/source decisions are unchanged by the presentation pass. Resume latest main; inspect commits newer than5cb05fef5983707b79c25631c1e23105909debc7.
+
+Next authorized cycle scope:continue Cycle6 reference and interim-accounting checks,with final stages pending actual Cycle3selection and report/study identity reconciliation. Do not invent final counts or event timestamps. Continue source assessment only when requested; do not start a new cycle automatically. Current queue2617.
+
+Current simple workbook is under final things/04_Workbook_and_Logs; existing private Drive workbook remains the detailed47-tab copy. No new Drive replacement is claimed in this presentation pass.
+
+---
+Previous continuation details follow.
+
 # Continue from current Cycle 5 evidence
 
 Read STATUS.md, task2/CHECKLIST.md, task2/HEADING_14_AUDIT.csv, evidence/protocol_amendments.md and current validation receipts. Instructor guideline and unchanged Task 1 control. Do not rerun legacy import/screening initialization scripts.

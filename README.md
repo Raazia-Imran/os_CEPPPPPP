@@ -1,3 +1,7 @@
+## Current files
+
+Open **[final things](final%20things/README.md)** for the statistics, current paper/DOI list, report and LaTeX, simple dated workbook, QA, extraction and supporting logs. Final selection remains pending; the folder preserves current status.
+
 # Group B: Operating Systems CEP, Topic 23
 
 Team: Eshaal Faisal, Raazia Imran Reshamwala and Rameen Siddiqui.

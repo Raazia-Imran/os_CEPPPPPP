@@ -1,0 +1,22 @@
+citation_key,bibtex_entry_present,bibtex_type,doi_if_recorded,source_url_if_recorded,identity_check,status
+GB-P001,True,misc,10.1007/s11390-024-3773-5,https://doi.org/10.1007/s11390-024-3773-5,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P002,True,misc,10.1109/TPDS.2022.3232715,https://doi.org/10.1109/TPDS.2022.3232715,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P003,True,misc,,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P004,True,misc,,https://www.usenix.org/system/files/osdi20-bai.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P005,True,misc,,https://www.usenix.org/system/files/osdi22-han.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P006,True,misc,10.1145/3600006.3613163,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P007,True,misc,10.1145/3627703.3629578,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P008,True,misc,10.1145/3419111.3421284,https://par.nsf.gov/servlets/purl/10299299,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P009,True,misc,,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P010,True,misc,,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P011,True,misc,10.1109/SC41406.2024.00048;,https://arxiv.org/pdf/2409.14447,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P012,True,misc,,https://www.usenix.org/system/files/atc25-yu.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P013,True,misc,,https://www.usenix.org/system/files/atc24-wu-hao.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P014,True,misc,,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+GB-P015,True,misc,,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,Current paper DOI/source catalogue,Bibliography compilation resolved; no undefined citation
+kitchenham,True,techreport,,https://ebse.webspace.durham.ac.uk/wp-content/uploads/sites/49/2022/08/Systematic-reviews-5-8.pdf,Preserved protocol/context reference; no fresh metadata claim,Bibliography compilation resolved; no undefined citation
+nvidiaMIG,True,misc,,https://docs.nvidia.com/datacenter/tesla/mig-user-guide/latest/index.html,Preserved protocol/context reference; no fresh metadata claim,Bibliography compilation resolved; no undefined citation
+nvidiaMPS,True,misc,,https://docs.nvidia.com/deploy/mps/latest/index.html,Preserved protocol/context reference; no fresh metadata claim,Bibliography compilation resolved; no undefined citation
+nvidiaTime,True,misc,,https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html,Preserved protocol/context reference; no fresh metadata claim,Bibliography compilation resolved; no undefined citation
+prisma,True,article,10.1136/bmj.n71,,Preserved protocol/context reference; no fresh metadata claim,Bibliography compilation resolved; no undefined citation
+prismas,True,article,10.1186/s13643-020-01542-z,,Preserved protocol/context reference; no fresh metadata claim,Bibliography compilation resolved; no undefined citation

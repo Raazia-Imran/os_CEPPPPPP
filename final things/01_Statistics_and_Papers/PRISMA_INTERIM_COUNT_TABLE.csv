@@ -1,0 +1,16 @@
+stage,count,interpretation
+Database occurrences,4169,Parsed occurrence count
+Supplementary occurrences,20,Separate discovery routes
+All occurrences,4189,Identification occurrences; not studies
+Applied duplicate links,114,Ledger-applied occurrences
+Canonical records,4075,Record screening queue
+Initial automated triage,4075,Not completed verified abstract screening
+Initial exclude proposals,1441,Not final screened exclusions
+Initial retain/uncertain,2634,Not eligible-study count
+Reports sought,Pending,No complete retrieval census
+Reports not retrieved,Pending,Do not infer from access-attempt count
+Known source-assessed reports,17,Bounded assessed slice; incomplete retrieval census
+Assessed EC2 exclusions,2,Known source decisions; complete exclusion census pending
+QA/extraction report forms,15,Includes13provisional plus2unresolved source/companion cases
+Final included reports,Pending,Selection unfinished
+Final unique studies,Pending,Report/study mapping unfinished

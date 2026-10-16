@@ -1,0 +1,37 @@
+{
+  "predecessor_main": "5cb05fef5983707b79c25631c1e23105909debc7",
+  "scientific_registers_changed": false,
+  "existing_workbook_cells_and_formulas_preserved": true,
+  "workbook_tabs": 13,
+  "missing_exact_event_times": 798,
+  "paper_forms": 15,
+  "provisional_reports": 13,
+  "unresolved_companion_or_version": 2,
+  "assessed_exclusions": 2,
+  "identified_dois": 6,
+  "final_included_studies": null,
+  "source_qa_rows": 150,
+  "reported_outcomes": 45,
+  "separate_calculations": 2,
+  "latex_undefined_citations": 0,
+  "diagrams": 2,
+  "pdfs": {
+    "01_Statistics_and_Papers/START_HERE_Statistics_and_Papers.pdf": {
+      "pages": 3,
+      "sha256": "557dca3e34f121fd97bd6c63f66ba52471fffe1ec9277c0fe567bd24326275a2"
+    },
+    "02_Report_LaTeX/GroupB_Review_Report.pdf": {
+      "pages": 28,
+      "sha256": "7a3013c6ff5a818873607bdbcfd8c20bf45a75055538f3e7d8c7869c21d7e509"
+    },
+    "03_QA_and_Extraction/GroupB_QA_Tables.pdf": {
+      "pages": 17,
+      "sha256": "ef731414fb6327dfeed3f4e0a3464755f639be4d97dce50965b9d2c4cd2e8305"
+    },
+    "03_QA_and_Extraction/GroupB_Data_Extraction.pdf": {
+      "pages": 37,
+      "sha256": "5dbcfb26256be1708323a32d6f1f02e9190eb82a82515175f66822c7e808e537"
+    }
+  },
+  "all_final_selection_stages_complete": false
+}
