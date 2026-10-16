@@ -13,3 +13,12 @@ task2/report/main.pdf
 *.inspect.ndjson
 
 /task2/qa/workbook_update.json
+
+/task2/submission/*.aux
+/task2/submission/*.bbl
+/task2/submission/*.blg
+/task2/submission/*.log
+/task2/submission/*.out
+/task2/submission/*.toc
+/task2/submission/submission_input.json
+/task2/qa/active_views_input.json

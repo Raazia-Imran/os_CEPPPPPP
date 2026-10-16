@@ -35,6 +35,10 @@ paths = [
     ('Evidence gaps', 'cycle2_gap.csv'), ('Validity', 'cycle2_validity.csv'),
     ('Reference catalogue', 'cycle2_reference_catalog.csv'),
 ]
+active_path = E/'cycle5_view_paths.json'
+if active_path.exists():
+    active=json.loads(active_path.read_text())
+    paths=[(name,active.get(name,path)) for name,path in paths]
 payload = {
     'counts': json.loads((E / 'prisma_counts.json').read_text()),
     'progress': json.loads((E / 'review_progress.json').read_text()),

@@ -1,11 +1,12 @@
 {
-  "report_forms": 9,
-  "reports_with_all_10_items": 9,
-  "qa_items": 90,
-  "outcomes": 34,
+  "report_forms": 15,
+  "reports_with_all_10_items": 15,
+  "qa_items": 150,
+  "outcomes": 45,
   "na_items": [
     "GB-P001:Q7",
-    "GB-P006:Q9"
+    "GB-P006:Q9",
+    "GB-P015:Q9"
   ],
   "below_60_reports": [],
   "source_scores_changed": 0,
@@ -13,15 +14,19 @@
   "second_score_populated": 0,
   "reconciled_score_populated": 0,
   "assessed_reports_without_qa": [],
+  "excluded_reports_without_qa_by_design": [
+    "GB-P016",
+    "GB-P017"
+  ],
   "anchor_precision": {
-    "section_or_figure_only;PDF_page_mapping_pending": 20,
-    "printed_page_and_section_or_figure": 70
+    "section_or_figure_only;PDF_page_mapping_pending": 23,
+    "printed_page_and_section_or_figure": 127
   },
   "source_sha256": {
-    "quality.csv": "50c244fdfe79df0563579c44670f63b1ad92b1f28d236e5578f68721f1229c5a",
-    "extraction.csv": "aa6022b6219e09a7fc47876d9e1f627934e4f5909b10ec2c36a7c97910bfcd5f",
-    "study_extraction_form.csv": "7d3914ed32427ef8f61acc65a64f902acabf77c840d611fa3ba3746c6ce036f4",
-    "screening.csv": "a7ef988b9ea878386a30c016506ad23b3621661cbd74149210125c8aeb6bb283"
+    "quality.csv": "498e7b0eb9b027e23a457af11021f9a5744899a1a33398520e3c3e40d8e024ad",
+    "extraction.csv": "76511dcc70e7532e5e3953edb0011413287b75501c3e6dae4d621f7f701afb60",
+    "study_extraction_form.csv": "ec25180533eed9ef45898d2ffb67f42d400db31d83b459572f3917e1c168cd4c",
+    "screening.csv": "44319664ba35f2fc14572fabc0bc130f8095231c07293972c0bc89e753be65c7"
   },
   "limitations": [
     "Register audit and derivation, not a new full-source reappraisal.",

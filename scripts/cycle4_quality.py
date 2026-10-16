@@ -42,6 +42,8 @@ for form in forms:
         'GB-P004':'Resolve mixed training/inference scope using separable local inference measurements.',
         'GB-P005':'Resolve conference/journal report relationship before study counting; do not substitute journal DOI.',
         'GB-P006':'Independently calibrate Q9 N/A: distinguish performance fairness from claimed resource/security/fault isolation.'}.get(rid,'Recheck all criterion rationales against the exact source version.')
+    if rid=='GB-P011':special='Accessed source is arXivv1; establish equivalence to final SC24 report before inclusion.'
+    if rid=='GB-P015':special='Check claim-specific Q9 N/A; GPU case only, not NPU/ASIC/FPGA gains.'
     followup.append(dict(report_id=rid,title=form['title'],doi=form['doi'],qa_rows=len(rows),
         outcome_rows=sum(x['report_id']==rid for x in outcomes),
         items_without_printed_page=missing_pages,calibration_or_scope_task=special,
@@ -70,7 +72,8 @@ summary=dict(report_forms=len(forms),reports_with_all_10_items=len(matrix),qa_it
     source_scores_changed=0,new_independent_human_checks=0,
     second_score_populated=sum(bool(x['second_score']) for x in qa),
     reconciled_score_populated=sum(bool(x['reconciled_score']) for x in qa),
-    assessed_reports_without_qa=sorted(set(checks)-{x['report_id'] for x in matrix}),
+    assessed_reports_without_qa=sorted({rid for rid,x in checks.items() if x['first_reviewer_recommendation']!='exclude_recommendation'}-{x['report_id'] for x in matrix}),
+    excluded_reports_without_qa_by_design=sorted(rid for rid,x in checks.items() if x['first_reviewer_recommendation']=='exclude_recommendation'),
     anchor_precision=dict(Counter(x['anchor_precision'] for x in details)),
     source_sha256={n:hashlib.sha256((E/n).read_bytes()).hexdigest() for n in ['quality.csv','extraction.csv','study_extraction_form.csv','screening.csv']},
     limitations=['Register audit and derivation, not a new full-source reappraisal.','N/A calibration and human independent scoring pending.','No final included-study count or overall completion percentage inferred.'])
@@ -94,4 +97,14 @@ comparison={x['record_id']:x for x in read(R/'task2/reconciliation/ai_comparison
 opinions=[dict(x,**{k:comparison[x['record_id']][k] for k in ['current_ai_vote','comparison','action']}) for x in incoming]
 (O/'workbook_update.json').write_text(json.dumps(dict(matrix=matrix,quality=qa,followup=followup,
     checklist=read(O/'qa_checklist.csv'),opinions=opinions))+'\n')
+(O/'QA_CHECKLIST_AND_SCORING.md').write_text(f'''# Current Group B Q1-Q10 assessment
+
+Authority: submitted protocol section10/Table8, printed pp11-12. Score0 absent/unclear;1 partial;2 supported. Full maximum20. Justified N/A excludes its maximum from the denominator; missing reporting is not N/A. Below60% is sensitivity analysis, not exclusion.
+
+There are {len(matrix)} assessed report forms and {len(qa)} item rows. Original scores and fields were preserved; Cycle5 adds source-based AI assessments. None is claimed to be independent human review. Second/reconciled fields remain blank unless genuinely supplied. Source-version uncertainty is not eligibility: ParvaGPU is explicitly uncertain; REEF companion identity remains open.
+
+Provisional N/A items: {', '.join(summary['na_items'])}. Required calibration remains unperformed. Items without printed-page precision: {sum(x['items_without_printed_page'] for x in followup)}. Detailed anchors and rationales are in qa_rationale_table.csv; remaining checks in qa_followup.csv. Section-only anchors are not fabricated PDF pages. Source pointers naming supplied Markdown are provenance rather than downloadable URLs.
+
+All matrix totals are recalculated from source rows. No score changes to the earlier reports are claimed in this batch. Empty correction tables are not evidence of independent agreement. No report falls below60% on current first scores; this does not establish robustness to incomplete selection, source versions or missing evidence. Study/report/outcome counts remain distinct.
+''')
 print(json.dumps(summary,indent=2))
