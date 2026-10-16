@@ -1,3 +1,7 @@
+# Cycle 3 batches saved; workbook synchronized
+
+Current measured state:4189 occurrences,111 duplicate links,4078 canonical records. Preliminary recommendations2487=1350 exclude+1137 retain/uncertain;1591 await first recommendation. Source coverage9 provisional reports,90 Q1-Q10 items,34 outcomes. The43-sheet workbook is refreshed, recalculated and checked; full abstract-bearing copy replaces the existing private Drive workbook, public copy omits abstracts. Original reviews and submitted protocol preserved. No final/independent decisions invented. Full-text exclusion/validated-study tables remain unpopulated pending actual decisions. The report PDF/PRISMA diagram are historical. Continue Cycle3, notCycle4; see task2/CYCLE3_PROGRESS.md and evidence/cycle3_next_batch.csv.
+
 # Cycle 3 screening batch checkpoint
 
 240 new conservative metadata recommendations saved:169 preliminary exclusions and71 retain/uncertain. Totals:2487 recommendations=1350 exclude+1137 retain/uncertain;1591 await first recommendation. Raw counts unchanged:4189 occurrences,111 links,4078 canonical. Nine provisional report forms,90 QA items,34 outcomes; final inclusion and independent validation pending. Workbook rebuilding after an export memory limit; current committed workbook remains historical until final refresh.

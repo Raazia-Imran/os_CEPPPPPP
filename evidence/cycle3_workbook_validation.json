@@ -1,0 +1,23 @@
+{
+  "public": {
+    "sha256": "a8848da8ec94abd411e2804732f5f49ea78cc100be13c5190be51a4130812630",
+    "sheets": 43,
+    "formula_errors": [],
+    "summary_checks": "PASS",
+    "abstract_cells": 0,
+    "requirements_audit_current": true
+  },
+  "private": {
+    "sha256": "a85d2a7eadca7135fe551993b05b5eb8fd3bf5d1c8a02d8ec1b5e5d1edd5e563",
+    "sheets": 43,
+    "formula_errors": [],
+    "summary_checks": "PASS",
+    "abstract_cells": 3658,
+    "requirements_audit_current": true
+  },
+  "checked_at_utc": "2026-10-16T10:28:03.576699+00:00",
+  "private_drive_replacement_confirmed": true,
+  "private_drive_file_size": 5392906,
+  "formula_engine": "Artifact Tool recalculation; native Excel not opened",
+  "source_protocol_unchanged": true
+}

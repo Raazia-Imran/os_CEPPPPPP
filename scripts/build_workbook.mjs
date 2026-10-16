@@ -27,7 +27,7 @@ summary.getRange('A5:C16').values=[
 ['ScienceDirect',1898,'21 supplied RIS files; completeness unresolved'],
 ['ACM run mapping','Partly recovered','Search log recovered; 79-file mapping and counts unresolved']];
 summary.getRange('A19:C19').values=[['First-review quality forms','Raw score','Applicable maximum']];
-const reports=d.sheets['Study extraction'];const lastQA=19+reports.length;
+const reports=d.sheets['Study extraction'];const lastQA=19+reports.length;const noteStart=lastQA+3;
 summary.getRange(`A20:A${lastQA}`).values=reports.map(r=>[r.report_id+' '+({'GB-P006':'Paella','GB-P007':'Orion','GB-P008':'GSLICE','GB-P009':'Clockwork'}[r.report_id]||r.title)]);
 summary.getRange('D19').values=[['Normalized']];
 for(const [name,rows] of Object.entries(d.sheets)){
@@ -76,7 +76,7 @@ for(let i=0;i<reports.length;i++){
 }summary.getRange(`D20:D${lastQA}`).setNumberFormat('0.0%');
 summary.getRange('A4:C4').format={fill:'#243B53',font:{name:'Arial',size:10,color:'#FFFFFF',bold:true},rowHeight:30};
 summary.getRange('A19:D19').format={fill:'#243B53',font:{name:'Arial',size:10,color:'#FFFFFF',bold:true},rowHeight:40,wrapText:true};
-summary.getRange('A5:D34').format.font={name:'Arial',size:11};
+summary.getRange(`A5:D${noteStart+3}`).format.font={name:'Arial',size:11};
 summary.getRange('A5:C16').format.rowHeight=36;
 summary.getRange('A1:A24').format.columnWidth=51;
 summary.getRange('B1:B24').format.columnWidth=20;
@@ -84,16 +84,16 @@ summary.getRange('C1:C24').format.columnWidth=65;
 summary.getRange('D1:D24').format.columnWidth=18;
 summary.getRange('A5:C16').format.wrapText=true;
 summary.getRange(`A20:D${lastQA}`).format.rowHeight=28;
-summary.getRange('A31:C31').values=[['Earlier synthesis statements',41,'Derived statements; final validation pending']];
-summary.getRange('A32:C32').values=[['Final included studies','Pending','Independent human review pending']];
-summary.getRange('A33:C34').values=[['Awaiting first recommendation',d.progress.unreviewed,'Unassessed records in expanded queue'],['Current report PDF','Historical snapshot','Predates import reconciliation; rebuild before submission']];
-summary.getRange('A33:C34').format.wrapText=true;summary.getRange('A33:C34').format.rowHeight=42;
-summary.getRange('A31:C32').format.wrapText=true;summary.getRange('A31:C32').format.rowHeight=36;
+summary.getRange(`A${noteStart}:C${noteStart}`).values=[['Earlier synthesis statements',41,'Derived statements; final validation pending']];
+summary.getRange(`A${noteStart+1}:C${noteStart+1}`).values=[['Final included studies','Pending','Independent human review pending']];
+summary.getRange(`A${noteStart+2}:C${noteStart+3}`).values=[['Awaiting first recommendation',d.progress.unreviewed,'Unassessed records in expanded queue'],['Current report PDF','Historical snapshot','Predates import reconciliation; rebuild before submission']];
+summary.getRange(`A${noteStart+2}:C${noteStart+3}`).format.wrapText=true;summary.getRange(`A${noteStart+2}:C${noteStart+3}`).format.rowHeight=42;
+summary.getRange(`A${noteStart}:C${noteStart+1}`).format.wrapText=true;summary.getRange(`A${noteStart}:C${noteStart+1}`).format.rowHeight=36;
 wb.recalculate();
 console.log((await wb.inspect({kind:'table',range:'Summary!A4:D34',include:'values,formulas',tableMaxRows:34,tableMaxCols:4,maxChars:4500})).ndjson);
 console.log((await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#NUM!',options:{useRegex:true,maxResults:10},summary:'formula errors'})).ndjson);
 for(const name of ['Summary',...Object.keys(d.sheets)]){
- const preview=await wb.render({sheetName:name,range:name==='Summary'?'A2:D34':'A1:D5',scale:1.2,format:'png'});
+ const preview=await wb.render({sheetName:name,range:name==='Summary'?`A2:D${noteStart+3}`:'A1:D5',scale:1.2,format:'png'});
  await fs.writeFile((process.env.OS_CEP_PREVIEW_DIR || '/tmp/oscep-wb')+'/'+name.replaceAll(' ','_')+'.png',new Uint8Array(await preview.arrayBuffer()));
 }
 const out=await SpreadsheetFile.exportXlsx(wb);await out.save(process.env.OS_CEP_OUTPUT || root+'/task2/tracker/review_workbook.xlsx');

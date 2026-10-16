@@ -1,3 +1,7 @@
+# Current Cycle 3 batch checkpoint
+
+Saved:240 new preliminary recommendations;4 new source assessments;40 new QA rows;8 new outcomes;43-sheet workbook;record/report linkage;duplicate ledger;access-attempt log;provisional/validated/exclusion views. Remaining:1591 first recommendations,remaining retrieval/eligibility across1137 retain/uncertain records,real independent review,version reconciliation,final PRISMA and report regeneration. No final study count is claimed. See CYCLE3_PROGRESS.md.
+
 # Current Cycle 2 checkpoint
 
 Database import audit and 33-sheet workbook refresh completed with documented evidence gaps. 4189 occurrences;111 duplicate links;4078 canonical records;1831 await first recommendation. Detailed guide created; final decisions and report regeneration pending. See PUBLIC_CHECKPOINT.md. Cycle 3 not started.
