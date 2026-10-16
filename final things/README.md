@@ -1,0 +1,25 @@
+# Group B - start here
+
+This folder collects the current review files in one place. It does not declare the unfinished selection final.
+
+1. **01_Statistics_and_Papers:** exact narrowing statistics and the currently assessed paper/DOI catalogue. No final included-study count is established.
+2. **02_Report_LaTeX:** current report PDF and compilable LaTeX/BibTeX. The report includes an interim selection diagram, tables and cross-study analysis.
+3. **03_QA_and_Extraction:** Group B Q1-Q10 checklist, scores, reasons and paper-by-paper extraction. Keep the submitted 0-2 rubric; below60% is sensitivity analysis, not an automatic exclusion.
+4. **04_Workbook_and_Logs:** simple review workbook, actual dated screening log and source registers. Unknown historical dates remain unknown.
+5. **05_Protocol_and_Audit:** unchanged submitted Task1, amendments, requirements crosswalk and cycle status.
+
+## Current position
+
+4,189 imported occurrences from four databases and supplementary sources, minus114 applied duplicate links, give4,075 canonical records. All have initial automated triage:1,441 preliminary exclusion proposals and2,634 retain/uncertain. This is not completed abstract screening.
+
+17 reports have source assessments:13 provisionally eligible,one REEF companion candidate,one ParvaGPU source-version-uncertain case,and two EC2 exclusions(TGS,HiveD). Fifteen reports have150 QA items and45 reported outcomes; two calculations are separate. Final eligible studies and final PRISMA stages remain pending.2,617 canonical retain/uncertain records have no linked report assessment.
+
+## Why the classmate example differs
+
+The supplied example studies GPU memory oversubscription and lists22 screened papers,20 included after its eight-item rubric. Group B studies concurrent inference sharing and uses the submitted ten-item rubric. Different scope and scoring produce different tables. Neither paper count alone establishes completeness. The attached older Group B PDF had nine reports; use this repository checkpoint instead.
+
+## Cycle status
+
+Cycle1 recovery/audit is closed. Cycle2 import/query audit is closed with documented historical/search gaps. Cycles3-5 have substantial outputs but remain partial while eligibility/source coverage is unfinished. Cycle6 provides interim accounting and reference audit; it cannot honestly finalize unfinished stages. Thus two cycle scopes are closed; all six cycles are not complete.
+
+Preserve original evidence, real dates and source status. This folder name is a navigation label, not certification that all research is finished.
