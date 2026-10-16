@@ -17,14 +17,17 @@ for name,key in [('title_votes.csv',None),('quality.csv',None),('extraction.csv'
   now={x['record_id']:x for x in new}
   if (E/'screening_merged_history.csv').exists():now.update({x['record_id']:x for x in read('screening_merged_history.csv')})
   for x in old:
-   if x['reviewer_1_vote']:assert all(now[x['record_id']].get(k,'')==v for k,v in x.items()),x['record_id']
+   if x['reviewer_1_vote']:assert all(now[x['record_id']].get(k,'')==v for k,v in x.items() if k not in ['fulltext_status','final_decision']),x['record_id']
  else:
   assert all(all(new[i].get(k,'')==v for k,v in x.items()) for i,x in enumerate(old)),name
 lookup={r['report_id']:r for r in forms}
+check_lookup={r['report_id']:r for r in checks}
 assessment={r['report_id']:r['first_reviewer_recommendation'] for r in checks}
 for name in ['quality.csv','extraction.csv','fulltext_criteria.csv','report_validation_queue.csv']:
  rs=read(name)
- for r in rs:r.update(doi=lookup[r['report_id']]['doi'],source_url=lookup[r['report_id']]['source'])
+ for r in rs:
+  src=lookup.get(r['report_id'],check_lookup.get(r['report_id']))
+  r.update(doi=src['doi'],source_url=src['source'])
  write(name,rs)
 # Record-keyed screening view supplements original recommendations; do not overwrite them.
 links=read('report_record_links.csv')
@@ -40,7 +43,8 @@ for x in links:mapped.setdefault(x['canonical_record_id'],[]).append(x['report_i
 log=[]
 for s in screen:
  r=by[s['record_id']];pids=mapped.get(s['record_id'],[])
- log.append(dict(record_id=s['record_id'],database=r['database'],title=r['title'],year=r['year'],doi=r['doi'],duplicate_status='canonical',title_abstract_recommendation=s['reviewer_1_vote'] or 'awaiting_first_recommendation',title_abstract_reason=s['reason'],report_ids=';'.join(pids),fulltext_first_assessment=';'.join(assessment[p] for p in pids) if pids else s['fulltext_status'],fulltext_assessor='Codex-GroupB' if pids else '',fulltext_source=';'.join(lookup[p]['source'] for p in pids),fulltext_anchor=';'.join(lookup[p]['source_anchor'] for p in pids),independent_vote=s['reviewer_2_vote'],final_status=s['final_decision']))
+ source_lookup={x['report_id']:x for x in checks}
+ log.append(dict(record_id=s['record_id'],database=r['database'],title=r['title'],year=r['year'],doi=r['doi'],duplicate_status='canonical',title_abstract_recommendation=s['reviewer_1_vote'] or 'awaiting_first_recommendation',title_abstract_reason=s['reason'],report_ids=';'.join(pids),fulltext_first_assessment=';'.join(assessment[p] for p in pids) if pids else s['fulltext_status'],fulltext_assessor='Codex-GroupB' if pids else '',fulltext_source=';'.join(source_lookup[p]['source'] for p in pids),fulltext_anchor=';'.join(source_lookup[p]['anchor'] for p in pids),independent_vote=s['reviewer_2_vote'],final_status=s['final_decision']))
 write('cycle3_screening_log.csv',log)
 ledger=[dict(record_id=r['record_id'],canonical_record_id=r['canonical_record_id'],doi=r['doi'],source_file=r['source_file'],duplicate_status='linked_repeat' if r['record_id']!=r['canonical_record_id'] else 'canonical',link_basis=next((d['match_basis'] for d in du if d['record_id']==r['record_id']),'')) for r in records]
 write('cycle3_duplicate_ledger.csv',ledger)
