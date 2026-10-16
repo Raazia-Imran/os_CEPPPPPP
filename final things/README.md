@@ -1,5 +1,9 @@
 # Group B - start here
 
+**[Download everything](../GroupB_Final_Things.zip)** | **[LaTeX report ZIP](../GroupB_LaTeX_Report.zip)**
+
+Read **[statistics and paper list](01_Statistics_and_Papers/START_HERE_Statistics_and_Papers.pdf)** first. The **[current paper/DOI catalogue](01_Statistics_and_Papers/CURRENT_ASSESSED_PAPERS_AND_DOIS.csv)** contains all15assessed forms with actual eligibility status.
+
 This folder collects the current review files in one place. It does not declare the unfinished selection final.
 
 1. **01_Statistics_and_Papers:** exact narrowing statistics and the currently assessed paper/DOI catalogue. No final included-study count is established.

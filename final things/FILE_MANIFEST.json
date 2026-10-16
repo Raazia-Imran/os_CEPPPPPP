@@ -1,0 +1,182 @@
+{
+  "01_Statistics_and_Papers/ASSESSED_EXCLUSIONS.csv": {
+    "bytes": 1203,
+    "sha256": "dbab6dbe74f429c97336e742cfe9b2dcdd03a67ac1006b96c0ee62a9681a8264"
+  },
+  "01_Statistics_and_Papers/CURRENT_ASSESSED_PAPERS_AND_DOIS.csv": {
+    "bytes": 3350,
+    "sha256": "ab4c248b209b7c660a4b96afca996a53d79d83d6c4bcdadbbb93ecfe9cfe1969"
+  },
+  "01_Statistics_and_Papers/DATABASE_STATISTICS.csv": {
+    "bytes": 179,
+    "sha256": "bdaf176662776c5d8311e0cd1d8efc7a90d95d5ae34fce73298687cce5cf9f03"
+  },
+  "01_Statistics_and_Papers/DISCREPANCY_LEDGER.csv": {
+    "bytes": 1400,
+    "sha256": "8941d64d690ec581a8111587794e22d2bbc593ff6cb596ede9e715931e38dc73"
+  },
+  "01_Statistics_and_Papers/DOI_SOURCE_AUDIT.csv": {
+    "bytes": 2937,
+    "sha256": "51ab9ae6e02b36306a9d44c6aa8dbeed909b1abaa54853ae6749071b1f16dce9"
+  },
+  "01_Statistics_and_Papers/PRELIMINARY_EXCLUSION_REASONS.csv": {
+    "bytes": 246,
+    "sha256": "e37eb2d88ba631b18f0d7dbf0c42183a7ba85d42dc135c9527df343426364d99"
+  },
+  "01_Statistics_and_Papers/PRISMA_INTERIM_COUNT_TABLE.csv": {
+    "bytes": 992,
+    "sha256": "92ebd70f5cb400e9b6132f1db1705cae6a53e0797ca1562d4db174041177d2f2"
+  },
+  "01_Statistics_and_Papers/SELECTION_STATISTICS.csv": {
+    "bytes": 1238,
+    "sha256": "1781a78df44b11c780b05db3588bc7a21ef6a868c47102525df89009ed7cdea5"
+  },
+  "01_Statistics_and_Papers/START_HERE_Statistics_and_Papers.pdf": {
+    "bytes": 50419,
+    "sha256": "557dca3e34f121fd97bd6c63f66ba52471fffe1ec9277c0fe567bd24326275a2"
+  },
+  "01_Statistics_and_Papers/statistics.json": {
+    "bytes": 1398,
+    "sha256": "e9bf14acd2320375ff323b52351c3c2db0dac349b56d36cf8303ae5228c1eafe"
+  },
+  "02_Report_LaTeX/BUILD.md": {
+    "bytes": 652,
+    "sha256": "001a0ed8317ccb8d459b684cf3bc1f1d39af2bea78f8275b258d4b10236efe70"
+  },
+  "02_Report_LaTeX/GroupB_Review_Report.pdf": {
+    "bytes": 243887,
+    "sha256": "7a3013c6ff5a818873607bdbcfd8c20bf45a75055538f3e7d8c7869c21d7e509"
+  },
+  "02_Report_LaTeX/PRISMA_Interim_Flow.tex": {
+    "bytes": 1226,
+    "sha256": "8dd362ff1d8573dbf20a901ada05e2d42d800e70397b26b28e0942f58663a0d5"
+  },
+  "02_Report_LaTeX/main.tex": {
+    "bytes": 71247,
+    "sha256": "ece624679c14fb355beb8e5160c13ef2a190894b495ba031f78dda42c6e2ed89"
+  },
+  "02_Report_LaTeX/references.bib": {
+    "bytes": 12142,
+    "sha256": "8d26e7643f077e2222f367c9b0c69a7b62053b91f85de6299a0cd4658eea2382"
+  },
+  "03_QA_and_Extraction/GroupB_Data_Extraction.pdf": {
+    "bytes": 116907,
+    "sha256": "5dbcfb26256be1708323a32d6f1f02e9190eb82a82515175f66822c7e808e537"
+  },
+  "03_QA_and_Extraction/GroupB_QA_Tables.pdf": {
+    "bytes": 78932,
+    "sha256": "ef731414fb6327dfeed3f4e0a3464755f639be4d97dce50965b9d2c4cd2e8305"
+  },
+  "03_QA_and_Extraction/QA_CHECKLIST_AND_SCORING.md": {
+    "bytes": 1432,
+    "sha256": "77719c0a916950524d21dc1a450e700a22acc805bb70ca6e0318dda380266f92"
+  },
+  "03_QA_and_Extraction/calculated_outcomes.csv": {
+    "bytes": 598,
+    "sha256": "c4b225dc4915e05799473fdd94768665c7c1e9ccc199d7def3e1e7a2ed61513c"
+  },
+  "03_QA_and_Extraction/extraction.csv": {
+    "bytes": 24914,
+    "sha256": "76511dcc70e7532e5e3953edb0011413287b75501c3e6dae4d621f7f701afb60"
+  },
+  "03_QA_and_Extraction/qa_followup.csv": {
+    "bytes": 5036,
+    "sha256": "4cb21309ebf41f7dbf4225c66091c28be5f73fb7fdcf20bf3d85aa8bd3108c8e"
+  },
+  "03_QA_and_Extraction/qa_rationale_table.csv": {
+    "bytes": 53545,
+    "sha256": "38729017d53ee81a9e4e24c73c152d4997577965d2c57eef4f9a38cc0ca04662"
+  },
+  "03_QA_and_Extraction/qa_score_matrix.csv": {
+    "bytes": 3135,
+    "sha256": "839a3b7b29bceb9080bf0b0f5163d922f123ea0d2ea56feacba36436b6281ad6"
+  },
+  "03_QA_and_Extraction/qa_totals_summary.csv": {
+    "bytes": 2601,
+    "sha256": "fc283a2c024498cebf9f863e6a7754635ed4020345acc6643d25d8fc4b9edf02"
+  },
+  "03_QA_and_Extraction/quality.csv": {
+    "bytes": 35190,
+    "sha256": "498e7b0eb9b027e23a457af11021f9a5744899a1a33398520e3c3e40d8e024ad"
+  },
+  "03_QA_and_Extraction/study_extraction_form.csv": {
+    "bytes": 24319,
+    "sha256": "ec25180533eed9ef45898d2ffb67f42d400db31d83b459572f3917e1c168cd4c"
+  },
+  "04_Workbook_and_Logs/GroupB_Review_Workbook.xlsx": {
+    "bytes": 959692,
+    "sha256": "6313dfa2f713f3d358a49beb2903a95ea2029a4dbba9776363a7740d31889841"
+  },
+  "04_Workbook_and_Logs/SCREENING_LOG_WITH_RECORDED_DATES.csv": {
+    "bytes": 2375079,
+    "sha256": "3e2dca4eceddc972e1cd446ccb9f4db8ec01d511ca73c7f7393ab91878359685"
+  },
+  "04_Workbook_and_Logs/cycle3_duplicate_ledger.csv": {
+    "bytes": 444673,
+    "sha256": "b738c8ff78bbff57e2328b8341ce70a08ff526873cd580e52cfbad1f9e39bfed"
+  },
+  "04_Workbook_and_Logs/database_query_audit.csv": {
+    "bytes": 10328,
+    "sha256": "94a99a5d817eaf1a4ff08678e0a432e782b7594320986b2dd3bef59e9939fd82"
+  },
+  "04_Workbook_and_Logs/duplicates.csv": {
+    "bytes": 13323,
+    "sha256": "06744138a2199ce5a7d14939d146fd572fc094d36accbe68cec782af000e80e5"
+  },
+  "04_Workbook_and_Logs/fulltext_checks.csv": {
+    "bytes": 9686,
+    "sha256": "5c682153059197dc591e83fd1b5b45243bb9abc615e5d1e56f6c68c9185bb564"
+  },
+  "04_Workbook_and_Logs/fulltext_criteria.csv": {
+    "bytes": 40034,
+    "sha256": "e7adc9eae905a815e56e7c768b848660ecab1f4522948976d968e6cc6d2b83b7"
+  },
+  "04_Workbook_and_Logs/fulltext_decision_log.csv": {
+    "bytes": 1114,
+    "sha256": "c12e2ac63c6faab5896b7da846b47dd32ba3ce457de9246c3eb4a30b5b0534b4"
+  },
+  "04_Workbook_and_Logs/fulltext_exclusions.csv": {
+    "bytes": 1203,
+    "sha256": "dbab6dbe74f429c97336e742cfe9b2dcdd03a67ac1006b96c0ee62a9681a8264"
+  },
+  "04_Workbook_and_Logs/import_manifest.csv": {
+    "bytes": 17614,
+    "sha256": "eafde3badda89d07b85b0a90a99ffdcb398fe13c79fd1e05f8c3d6a4cc8c3e8c"
+  },
+  "04_Workbook_and_Logs/query_export_audit.csv": {
+    "bytes": 7259,
+    "sha256": "9042a2e6f0991fea2e0e38bfbe01baa1f2c19554357b2f20b5433068fefa0eef"
+  },
+  "05_Protocol_and_Audit/CITATION_CROSSWALK.csv": {
+    "bytes": 3922,
+    "sha256": "933587829442ef45ecd68a568d1c8c2373258fb85617e79d7d4c18c6f95ba81f"
+  },
+  "05_Protocol_and_Audit/CYCLE_STATUS.csv": {
+    "bytes": 761,
+    "sha256": "b5152a27e7e925e882974ace34f9776013808635ab0869d39da3549cc37b6559"
+  },
+  "05_Protocol_and_Audit/PUBLICATION_AND_CONTINUATION.md": {
+    "bytes": 1154,
+    "sha256": "a0f13e134dd6b82e52ad8e5735fc8200a3ff88ee64161f894fa8fad711fab969"
+  },
+  "05_Protocol_and_Audit/Protocol_amendments.md": {
+    "bytes": 3753,
+    "sha256": "43226457699842bcc3c6648e419ddbb93ca4e17914dc6a1859012d1705332d33"
+  },
+  "05_Protocol_and_Audit/Requirements_1_to_14.csv": {
+    "bytes": 7058,
+    "sha256": "aa173510ae968e06e2fe9b6f85532c7c095cbf4867b422b7ad94f84e56705acf"
+  },
+  "05_Protocol_and_Audit/Submitted_Task1_Protocol.pdf": {
+    "bytes": 251252,
+    "sha256": "cc1179c8f0e6656075e9d7e3f2b8da5d86e84f853af89a48f8dc7b87c39ac44d"
+  },
+  "05_Protocol_and_Audit/VALIDATION.json": {
+    "bytes": 1264,
+    "sha256": "c3cd9701820305ddbf5e3da45372d3cd43f57b78c33d4d216c8381af749214ed"
+  },
+  "README.md": {
+    "bytes": 3898,
+    "sha256": "d9ad1d08e064eb5d496fed98fcf72403c9cadc7fdef5614caf27c7de3ed2e35d"
+  }
+}

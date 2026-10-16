@@ -1,6 +1,6 @@
 # Latest: organized final things folder and interim Cycle6 accounting
 
-Verified predecessor main:ef52a35e218c4b19425ab21c924aaac029aed2e0. Presentation/catalogue checkpoint5cb05fef5983707b79c25631c1e23105909debc7 is published. The folder `final things` collects current statistics,paper/DOI catalogue,28-page report with two diagrams,LaTeX,QA/extraction and a13-tab workbook with actual dated screening provenance. There are798 missing exact screening-event timestamps; no metadata-check time was substituted. Existing vote dates recover dates for all4075rows.
+Verified predecessor main:ef52a35e218c4b19425ab21c924aaac029aed2e0. Presentation/catalogue checkpoint5cb05fef5983707b79c25631c1e23105909debc7 and validated-workbook checkpoint0f0ae0299adc85a0829ec487701a1b395483d63a are published. Final ZIP publication follows. The folder `final things` collects current statistics,paper/DOI catalogue,28-page report with two diagrams,LaTeX,QA/extraction and a13-tab workbook with actual dated screening provenance. There are798 missing exact screening-event timestamps; no metadata-check time was substituted. Existing vote dates recover dates for all4075rows.
 
 Scientific counts/decisions unchanged:4189occurrences,114links,4075canonical;1441preliminary exclusion proposals,2634retain/uncertain;17source assessments=13provisional+REEFcompanion+ParvaGPUversionuncertain+2EC2exclusions.15QA/extraction forms,150items,45reported outcomes,2calculations;2617canonical candidates remain unassessed. Final included reports/studies and final PRISMA remain pending.
 
