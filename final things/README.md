@@ -1,3 +1,8 @@
+# Current Task 2 consolidated package
+
+Use [06_Task2_Submission](06_Task2_Submission/README.md) for the complete report through Heading 14, all research-table appendices, TeX/BibTeX and the 13-tab workbook. Earlier numbered folders remain preserved as historical/current source outputs; the 28-page report in folder 02 also contains later CEP sections and is not the new Task 2-only build. Final study selection remains incomplete.
+
+---
 # Group B - start here
 
 **[Download everything](../GroupB_Final_Things.zip)** | **[LaTeX report ZIP](../GroupB_LaTeX_Report.zip)**

@@ -242,14 +242,14 @@
     },
     {
       "table": "Cycle status",
-      "rows": 6,
+      "rows": 7,
       "fields": 4,
       "panels": 1,
       "all_cells_represented": true,
       "glossary_compression": false
     }
   ],
-  "source_cells_represented": 159541,
+  "source_cells_represented": 159545,
   "printed_panels": 86,
   "glossary_values": 2300,
   "bib_entries": 23,
