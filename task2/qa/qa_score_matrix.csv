@@ -1,0 +1,10 @@
+report_id,title,doi,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,raw_sum,applicable_max,normalized_pct,below_60_sensitivity_flag,na_criteria,qa_status,eligibility_status
+GB-P001,VastPipe,10.1007/s11390-024-3773-5,2,2,1,1,1,2,NA,2,1,1,13,18,72.22,no,Q7,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P002,iGniter,10.1109/TPDS.2022.3232715,2,2,2,1,1,2,2,2,1,2,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P003,gpulets,not resolved,2,2,2,2,2,2,2,2,1,1,18,20,90.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P004,PipeSwitch,not resolved,2,2,2,1,2,2,2,2,1,1,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P005,REEF conference,not resolved,2,2,1,2,2,2,1,2,1,2,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,eligible_companion_candidate
+GB-P006,Paella: Low-latency Model Serving with Software-defined GPU Scheduling,10.1145/3600006.3613163,2,2,1,2,1,2,2,2,NA,2,16,18,88.89,no,Q9,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P007,"Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",10.1145/3627703.3629578,2,2,2,2,1,2,2,2,2,2,19,20,95.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P008,GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform,10.1145/3419111.3421284,2,2,1,2,2,2,1,2,2,1,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P009,Serving DNNs like Clockwork: Performance Predictability from the Bottom Up,,2,2,1,1,1,2,2,2,1,2,16,20,80.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible

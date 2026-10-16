@@ -1,3 +1,7 @@
+# Cycle 4 QA tables prepared; source checks remain open
+
+Nine assessed provisional reports have 90 Q1-Q10 rows and 34 outcomes. Derived QA matrix, totals, checklist, rationales and follow-up tasks reconcile to unchanged source registers. Twenty legacy QA items need printed PDF-page mapping; two N/A judgments require calibration; independent scoring remains pending for all reports. Incoming Claude opinions preserved separately: 1,831 rows; 50 disagreements among 240 overlaps. Active screening remains 2,487/4,078 preliminary recommendations (61.0%), with 1,591 awaiting first recommendation. See task2/qa and task2/NEXT_24_HOURS.md. Current QA/extraction appendix and workbook synchronization are being verified; final SLR PDF/PRISMA remain historical/pending.
+
 # Cycle 3 batches saved; workbook synchronized
 
 Current measured state:4189 occurrences,111 duplicate links,4078 canonical records. Preliminary recommendations2487=1350 exclude+1137 retain/uncertain;1591 await first recommendation. Source coverage9 provisional reports,90 Q1-Q10 items,34 outcomes. The43-sheet workbook is refreshed, recalculated and checked; full abstract-bearing copy replaces the existing private Drive workbook, public copy omits abstracts. Original reviews and submitted protocol preserved. No final/independent decisions invented. Full-text exclusion/validated-study tables remain unpopulated pending actual decisions. The report PDF/PRISMA diagram are historical. Continue Cycle3, notCycle4; see task2/CYCLE3_PROGRESS.md and evidence/cycle3_next_batch.csv.

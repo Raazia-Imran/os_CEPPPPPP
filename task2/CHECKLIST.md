@@ -1,3 +1,7 @@
+# Cycle 4 QA tables prepared; source checks remain open
+
+Nine assessed provisional reports have 90 Q1-Q10 rows and 34 outcomes. Derived QA matrix, totals, checklist, rationales and follow-up tasks reconcile to unchanged source registers. Twenty legacy QA items need printed PDF-page mapping; two N/A judgments require calibration; independent scoring remains pending for all reports. Incoming Claude opinions preserved separately: 1,831 rows; 50 disagreements among 240 overlaps. Active screening remains 2,487/4,078 preliminary recommendations (61.0%), with 1,591 awaiting first recommendation. See task2/qa and task2/NEXT_24_HOURS.md. Current QA/extraction appendix and workbook synchronization are being verified; final SLR PDF/PRISMA remain historical/pending.
+
 # Current Cycle 3 batch checkpoint
 
 Saved:240 new preliminary recommendations;4 new source assessments;40 new QA rows;8 new outcomes;43-sheet workbook;record/report linkage;duplicate ledger;access-attempt log;provisional/validated/exclusion views. Remaining:1591 first recommendations,remaining retrieval/eligibility across1137 retain/uncertain records,real independent review,version reconciliation,final PRISMA and report regeneration. No final study count is claimed. See CYCLE3_PROGRESS.md.

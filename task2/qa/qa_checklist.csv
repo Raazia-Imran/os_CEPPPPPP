@@ -1,0 +1,11 @@
+criterion,label,score_2_requires,score_1,score_0,protocol_anchor
+Q1,Clarity of objective,"Problem, proposed mechanism and evaluated questions are clear.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q2,Technical description,"Sharing primitive, configuration and implementation layer permit classification.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q3,Experimental transparency,"Setup, measurement procedure, repetitions or analytical method and result provenance are clear.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q4,Hardware/workload description,"GPU model/generation, software and concurrent inference workload/tenant characteristics are reported.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q5,Baseline fairness,"Relevant baseline and comparable workload, resources and measurements are documented or justified.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q6,Utilization/throughput,"Claimed benefit has defined metric, unit and method; otherwise alternate outcome is explained.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q7,Latency measurement,"Claimed latency specifies interval, load, statistic and method; claimed tail/SLO results state a quantile.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q8,Multi-tenant interference,Concurrent tenants/co-tenants are tested and evidence supports interference conclusions.,Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q9,Isolation evaluation,"Claimed resource, security or fault isolation has a defined boundary and direct test or delimited evidence.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"
+Q10,Replication/limits,"Details/artifacts support informed replication; threats, limits or configuration dependence are discussed.",Partly addressed,Absent or unclear,"Submitted protocol section 10, Table 8, printed pp11-12"

@@ -11,3 +11,5 @@ tmp/
 
 task2/report/main.pdf
 *.inspect.ndjson
+
+/task2/qa/workbook_update.json

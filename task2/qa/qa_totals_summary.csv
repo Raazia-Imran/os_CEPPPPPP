@@ -1,0 +1,10 @@
+report_id,title,raw_sum,applicable_max,normalized_pct,below_60_sensitivity_flag,na_criteria,qa_status,eligibility_status
+GB-P001,VastPipe,13,18,72.22,no,Q7,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P002,iGniter,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P003,gpulets,18,20,90.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P004,PipeSwitch,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P005,REEF conference,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,eligible_companion_candidate
+GB-P006,Paella: Low-latency Model Serving with Software-defined GPU Scheduling,16,18,88.89,no,Q9,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P007,"Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",19,20,95.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P008,GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform,17,20,85.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
+GB-P009,Serving DNNs like Clockwork: Performance Predictability from the Bottom Up,16,20,80.0,no,,AI_first_review;independent_check_pending;not_final,provisionally_eligible
