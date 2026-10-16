@@ -1,0 +1,1444 @@
+{
+  "baseline_commit": "1c321d229bced4e2802bdc48b8568210db3b4415",
+  "captured_at_utc": "2026-10-16T04:44:53+00:00",
+  "source_files": [
+    {
+      "file": "evidence/access_tests.csv",
+      "sha256": "913fc6b5e9ec55627420d76b9ca9742a467d1efab67cd2454b94ce4473e7b54b",
+      "rows_or_items": 5,
+      "fields": [
+        "date_utc",
+        "platform",
+        "route",
+        "tested_url",
+        "observed_outcome",
+        "can_search_browser",
+        "can_export",
+        "formal_query_executed",
+        "notes"
+      ]
+    },
+    {
+      "file": "evidence/attachment_comparison.json",
+      "sha256": "ad8af35057c47b9774b58efeb0c8c725a52e0530d83672dd91fbe599c2e7c95d",
+      "rows_or_items": 6,
+      "fields": [
+        "checked_at_utc",
+        "attached_protocol_sha256",
+        "repository_submitted_protocol_sha256",
+        "difference",
+        "effect",
+        "guideline_attachment_matches_preserved_bytes"
+      ]
+    },
+    {
+      "file": "evidence/checkpoint_validation.json",
+      "sha256": "799b69233eec962699dadda8122975e2858903331abc2a2f807366d5dd13f4a2",
+      "rows_or_items": 10,
+      "fields": [
+        "checked_at_utc",
+        "record_rows",
+        "canonical_queue_rows",
+        "linked_duplicate_rows",
+        "first_recommendations",
+        "raw_manifest_files_verified",
+        "original_protocol_unchanged",
+        "original_imports_unchanged",
+        "all_final_votes_pending",
+        "checks"
+      ]
+    },
+    {
+      "file": "evidence/cycle1_source_receipts.csv",
+      "sha256": "8633dfeb0d08cb2b0cd345c1d51f9295d21408966fcad220f211823326fd9220",
+      "rows_or_items": 3,
+      "fields": [
+        "report_id",
+        "source_url",
+        "bytes",
+        "sha256",
+        "pdf_pages",
+        "retrieved_date_utc",
+        "receipt_checked_at_utc",
+        "version",
+        "local_only",
+        "reviewer"
+      ]
+    },
+    {
+      "file": "evidence/cycle1_validation.json",
+      "sha256": "6c62a423435c2a0512b6124a91800ec148393349f8fb03b57c95c08c5a66e88f",
+      "rows_or_items": 30,
+      "fields": [
+        "checked_at_utc",
+        "original800_votes_unchanged",
+        "raw_import_manifest_files_verified",
+        "raw_imports_and_submitted_protocol_unchanged",
+        "active_occurrences",
+        "duplicate_links_applied",
+        "canonical_records",
+        "new_recommendations",
+        "preliminary_exclusions",
+        "retain_uncertain",
+        "first_pending",
+        "quality_item_rows",
+        "quality_reports",
+        "outcome_rows",
+        "study_forms",
+        "snowballing_events",
+        "human_candidate_queue",
+        "exclusion_sample",
+        "priority_report_queue",
+        "criterion_check_rows",
+        "report_pages",
+        "workbook_sheets",
+        "latex",
+        "pdf_visual",
+        "workbook_integrity",
+        "final_studies",
+        "readiness",
+        "published_data_commit",
+        "published_data_commit_time",
+        "workbook_layout"
+      ]
+    },
+    {
+      "file": "evidence/duplicates.csv",
+      "sha256": "f540054b98fe4426e27fb8b953003256b67840a7c0115b389856cce538fafdcd",
+      "rows_or_items": 44,
+      "fields": [
+        "record_id",
+        "canonical_record_id",
+        "match_basis",
+        "resolution"
+      ]
+    },
+    {
+      "file": "evidence/exclusion_validation_sample.csv",
+      "sha256": "7d05e160f8dd279e16c7c6daf7b43877f79afbe54e07850adc4ea62eb21b0b6e",
+      "rows_or_items": 127,
+      "fields": [
+        "record_id",
+        "database",
+        "criterion",
+        "title",
+        "first_reason",
+        "sampling",
+        "independent_vote",
+        "checker",
+        "checked_at_utc",
+        "final_decision"
+      ]
+    },
+    {
+      "file": "evidence/extraction.csv",
+      "sha256": "99a7762246eb6d0472ef40c6aa79675c9ee7bef3922f54163e01ca1c933a8e02",
+      "rows_or_items": 26,
+      "fields": [
+        "report_id",
+        "mechanism",
+        "hardware",
+        "workload",
+        "baseline",
+        "metric",
+        "value",
+        "units",
+        "source_anchor",
+        "caveat",
+        "reviewer",
+        "check_status",
+        "checked_at_utc",
+        "independent_checker",
+        "final_decision",
+        "evidence_scope",
+        "outcome_id",
+        "independent_checked_at_utc"
+      ]
+    },
+    {
+      "file": "evidence/fulltext_checks.csv",
+      "sha256": "dd7e2f56fe6f1adad681b5867d80276f012e38ae64bac8858f571a68074066d7",
+      "rows_or_items": 5,
+      "fields": [
+        "report_id",
+        "short_name",
+        "doi",
+        "source",
+        "anchor",
+        "first_reviewer_recommendation",
+        "criterion_rationale",
+        "remaining_checks",
+        "reviewer",
+        "date",
+        "second_vote",
+        "final_decision"
+      ]
+    },
+    {
+      "file": "evidence/fulltext_criteria.csv",
+      "sha256": "f46342c7100c22ab084fa93e935e48908987b28e3f9248377b7f6beaa934307e",
+      "rows_or_items": 30,
+      "fields": [
+        "report_id",
+        "criterion",
+        "source_anchor",
+        "first_review_basis",
+        "criterion_check_required",
+        "reviewer",
+        "status",
+        "independent_vote",
+        "checker",
+        "checked_at_utc",
+        "final_decision"
+      ]
+    },
+    {
+      "file": "evidence/human_validation_queue.csv",
+      "sha256": "6eaa511b45cb3f9d2d44532914c23fe833e244ded65f80ff3cba216357773914",
+      "rows_or_items": 1066,
+      "fields": [
+        "record_id",
+        "priority",
+        "title",
+        "doi",
+        "recommendation",
+        "abstract_status",
+        "fulltext_status",
+        "reason",
+        "assigned_role",
+        "independent_vote",
+        "criterion",
+        "checked_at_utc",
+        "final_decision"
+      ]
+    },
+    {
+      "file": "evidence/import_manifest.csv",
+      "sha256": "14900d608a3e9d0ac550c8aa60a1788b02fc34d543706581e0fc5f07d2520083",
+      "rows_or_items": 81,
+      "fields": [
+        "source_file",
+        "sha256",
+        "bytes",
+        "occurrences",
+        "origin",
+        "query_mapping"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/accepted.csv",
+      "sha256": "0aa0db09f8609f8960dfaf3a35e19dd9dac116011e35f7efa87e22edd8e617c9",
+      "rows_or_items": 21,
+      "fields": [
+        "record_id",
+        "database",
+        "run_id",
+        "page",
+        "title",
+        "url",
+        "doi",
+        "publication_date",
+        "record_route",
+        "report_id",
+        "study_id",
+        "decision",
+        "stage",
+        "reason_code",
+        "reason",
+        "access",
+        "reviewer",
+        "decision_date",
+        "duplicate_of"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/companion_report_extraction.csv",
+      "sha256": "05423ff5d1f40203ae625acee100762678d27e0a29c33521a3115de39235335d",
+      "rows_or_items": 1,
+      "fields": [
+        "key",
+        "title",
+        "authors",
+        "year",
+        "venue",
+        "doi",
+        "publisher_url",
+        "fulltext_url",
+        "mechanism",
+        "environment",
+        "workload",
+        "comparator",
+        "finding",
+        "limitation",
+        "anchor",
+        "study_id",
+        "report_id",
+        "record_id",
+        "retrieved_date",
+        "peer_review",
+        "version",
+        "eligibility",
+        "performance_isolation",
+        "resource_memory",
+        "security",
+        "fault_containment",
+        "untranscribed_fields",
+        "qa",
+        "evidence_strength"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/companion_report_quality.csv",
+      "sha256": "80de85da26eae9b7aa8add18162587062c7e0b03aa8a83425c6e3421ff0f03e8",
+      "rows_or_items": 1,
+      "fields": [
+        "study_id",
+        "report_id",
+        "reviewer",
+        "date",
+        "total",
+        "band",
+        "anchor",
+        "source_url",
+        "Q1",
+        "Q1_rationale",
+        "Q2",
+        "Q2_rationale",
+        "Q3",
+        "Q3_rationale",
+        "Q4",
+        "Q4_rationale",
+        "Q5",
+        "Q5_rationale",
+        "Q6",
+        "Q6_rationale",
+        "Q7",
+        "Q7_rationale",
+        "Q8",
+        "Q8_rationale",
+        "Q9",
+        "Q9_rationale",
+        "Q10",
+        "Q10_rationale"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/download_requests.csv",
+      "sha256": "9ef2637ca904fd67400a7263a86eeb3ce45d10ea87b934cb8eb70d694919568c",
+      "rows_or_items": 96,
+      "fields": [
+        "priority",
+        "record_id",
+        "title",
+        "platform",
+        "url",
+        "reason",
+        "ned_platform_listing",
+        "listing_checked",
+        "individual_entitlement"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/duplicates.csv",
+      "sha256": "9b912efbd6ca54f95b322dc29119fca32daaff1baa83b8a293aeaac1bbaaaba9",
+      "rows_or_items": 10,
+      "fields": [
+        "record_id",
+        "canonical_record_id",
+        "relation",
+        "rule"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/extraction.csv",
+      "sha256": "199cc8c777c477c01d3eb390d806d47b4e50e8670236cbde6df74abcf19fb2d6",
+      "rows_or_items": 21,
+      "fields": [
+        "key",
+        "title",
+        "authors",
+        "year",
+        "venue",
+        "doi",
+        "publisher_url",
+        "fulltext_url",
+        "mechanism",
+        "environment",
+        "workload",
+        "comparator",
+        "finding",
+        "limitation",
+        "anchor",
+        "study_id",
+        "report_id",
+        "record_id",
+        "filename",
+        "publication_date",
+        "volume",
+        "number",
+        "article_number",
+        "eligibility",
+        "performance_isolation",
+        "resource_memory",
+        "security",
+        "fault_containment",
+        "source_type",
+        "journal",
+        "retrieved_date",
+        "peer_review",
+        "version",
+        "untranscribed_fields",
+        "qa",
+        "evidence_strength"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/imported_records.json",
+      "sha256": "d003604faef1d67a946daa18aa345a93410f7e78638bce257b7f3ac9097f024b",
+      "rows_or_items": 689,
+      "fields": [
+        "record_id",
+        "database",
+        "run_id",
+        "page",
+        "title",
+        "url",
+        "doi",
+        "publication_date",
+        "metadata"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/included_studies.json",
+      "sha256": "f57666e568a451d9d2566dddcfbadc141018f6863b81674d1183a8d15195df32",
+      "rows_or_items": 21,
+      "fields": [
+        "key",
+        "title",
+        "authors",
+        "year",
+        "venue",
+        "pages",
+        "doi",
+        "publisher_url",
+        "fulltext_url",
+        "mechanism",
+        "environment",
+        "workload",
+        "comparator",
+        "finding",
+        "limitation",
+        "anchor",
+        "formal",
+        "study_id",
+        "report_id",
+        "record_id",
+        "filename",
+        "publication_date",
+        "volume",
+        "number",
+        "article_number",
+        "eligibility",
+        "performance_isolation",
+        "resource_memory",
+        "security",
+        "fault_containment",
+        "qa_rationales",
+        "source_type",
+        "journal"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/original_download_batch.csv",
+      "sha256": "815f24a01fd1f36fc3d7c446e42d67602f097160df8e028b498051cb4729f3f8",
+      "rows_or_items": 10,
+      "fields": [
+        "original_priority",
+        "record_id",
+        "title",
+        "url",
+        "receipt_status",
+        "active_request"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/pending.csv",
+      "sha256": "cf10fa7f5a76ad20b116024f8efa476437e7feb89a3b1b02a99ab8341dfa0dda",
+      "rows_or_items": 96,
+      "fields": [
+        "record_id",
+        "database",
+        "run_id",
+        "page",
+        "title",
+        "url",
+        "doi",
+        "publication_date",
+        "record_route",
+        "report_id",
+        "study_id",
+        "decision",
+        "stage",
+        "reason_code",
+        "reason",
+        "access",
+        "reviewer",
+        "decision_date",
+        "duplicate_of"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/prisma_counts.json",
+      "sha256": "c75832ded2aec0c4f81f7d64fe559c7f1ed26a80991f7eafd7e857bd08cb993f",
+      "rows_or_items": 15,
+      "fields": [
+        "date",
+        "status",
+        "formal_occurrences",
+        "formal_duplicates",
+        "formal_unique",
+        "supplementary_selected",
+        "accepted_unique_studies",
+        "fulltext_assessed",
+        "fulltext_excluded",
+        "excluded_before_fulltext",
+        "pending",
+        "not_retrieved",
+        "pending_not_yet_sought",
+        "acm_hits",
+        "sciencedirect_hits"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/quality.csv",
+      "sha256": "a79e54d0483fe6c6c3cfdb0b6e1c77a7bbd5b0cc354e3e1525cea8427774ecb3",
+      "rows_or_items": 21,
+      "fields": [
+        "study_id",
+        "report_id",
+        "reviewer",
+        "date",
+        "total",
+        "band",
+        "anchor",
+        "source_url",
+        "Q1",
+        "Q1_rationale",
+        "Q2",
+        "Q2_rationale",
+        "Q3",
+        "Q3_rationale",
+        "Q4",
+        "Q4_rationale",
+        "Q5",
+        "Q5_rationale",
+        "Q6",
+        "Q6_rationale",
+        "Q7",
+        "Q7_rationale",
+        "Q8",
+        "Q8_rationale",
+        "Q9",
+        "Q9_rationale",
+        "Q10",
+        "Q10_rationale"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/rejected.csv",
+      "sha256": "3e6fd474b6342a789ffdaf2f180a20658c9350c4b26ff4900a6427088ee67f9e",
+      "rows_or_items": 582,
+      "fields": [
+        "record_id",
+        "database",
+        "run_id",
+        "page",
+        "title",
+        "url",
+        "doi",
+        "publication_date",
+        "record_route",
+        "report_id",
+        "study_id",
+        "decision",
+        "stage",
+        "reason_code",
+        "reason",
+        "access",
+        "reviewer",
+        "decision_date",
+        "duplicate_of"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/retrieval_lookups.json",
+      "sha256": "a6b4d06f11fca9a55a5081031bbd927ab266de641e1f73412862e5d0290e6bca",
+      "rows_or_items": 119,
+      "fields": [
+        "record_id",
+        "url",
+        "source_ref",
+        "response_lines",
+        "outcome",
+        "attempt_date",
+        "method"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/search_runs.csv",
+      "sha256": "a63015a15a896fbdfce5901940209650c2a9db99d05553de626a5891ae007ff0",
+      "rows_or_items": 8,
+      "fields": [
+        "run_id",
+        "database",
+        "date",
+        "time_utc",
+        "status",
+        "collection",
+        "query",
+        "fields",
+        "filters",
+        "hits",
+        "imported_occurrences",
+        "export",
+        "export_method",
+        "url",
+        "reviewer"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/studies.csv",
+      "sha256": "bddb232bcdcd434d1b56aa493f47f406c6d5de88b3323541cd6c7053ac93ea6a",
+      "rows_or_items": 709,
+      "fields": [
+        "record_id",
+        "database",
+        "run_id",
+        "page",
+        "title",
+        "url",
+        "doi",
+        "publication_date",
+        "record_route",
+        "report_id",
+        "study_id",
+        "decision",
+        "stage",
+        "reason_code",
+        "reason",
+        "access",
+        "reviewer",
+        "decision_date",
+        "duplicate_of"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/supplementary_discovery.csv",
+      "sha256": "9da1537fdf57703e026387f28f725b66a3cb2dac8fd1c4138bdd7431761f7cc0",
+      "rows_or_items": 20,
+      "fields": [
+        "record_id",
+        "method",
+        "query",
+        "seed",
+        "direction",
+        "date",
+        "source_url",
+        "selected_for_register",
+        "note"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/uploaded_paper_receipts.csv",
+      "sha256": "e82e230e3a0ce99d9d0b5b38c8afc653af28e98a85b25e54a683da183477a600",
+      "rows_or_items": 6,
+      "fields": [
+        "record_id",
+        "study_id",
+        "filename",
+        "received_date",
+        "sha256",
+        "bytes",
+        "decision",
+        "qa_total",
+        "source_format",
+        "plot_status"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/uploaded_review_assessments.json",
+      "sha256": "df5dbc62ed5718c7b81c177d9624906916fe5923f96df0694a45195342abf112",
+      "rows_or_items": 6,
+      "fields": [
+        "record_id",
+        "study_id",
+        "key",
+        "filename",
+        "title",
+        "authors",
+        "year",
+        "publication_date",
+        "venue",
+        "volume",
+        "number",
+        "pages",
+        "doi",
+        "publisher_url",
+        "mechanism",
+        "environment",
+        "workload",
+        "comparator",
+        "finding",
+        "limitation",
+        "anchor",
+        "eligibility",
+        "performance_isolation",
+        "resource_memory",
+        "security",
+        "fault_containment",
+        "scores",
+        "qa_rationales"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/version_links.csv",
+      "sha256": "9efa5266f3490733946eab90f6d4926674ecacdf82bfeaf2ca6683c956712790",
+      "rows_or_items": 3,
+      "fields": [
+        "record_id",
+        "related_record_id",
+        "relation",
+        "decision"
+      ]
+    },
+    {
+      "file": "evidence/imports/group-a/workbook_source.json",
+      "sha256": "227f3b62a906fb067286fec7e40082c68c613dc8a5ddec7d3553f0093c1831d9",
+      "rows_or_items": 7,
+      "fields": [
+        "Summary",
+        "Decisions",
+        "Included",
+        "Quality",
+        "Downloads",
+        "Searches",
+        "Received"
+      ]
+    },
+    {
+      "file": "evidence/incoming_shared/acm_master/reconciliation.json",
+      "sha256": "3d5c087269e1be057cab00c23db81771e09d32559293aee9a4575473f900debe",
+      "rows_or_items": 9,
+      "fields": [
+        "files",
+        "claimed_displayed",
+        "claimed_exported",
+        "actual_combined_occurrences",
+        "actual_distinct_doi_or_title",
+        "new_distinct_candidates",
+        "metadata_enriched_occurrences",
+        "active_counts_changed",
+        "conclusion"
+      ]
+    },
+    {
+      "file": "evidence/incoming_shared/acm_master/staged_new_candidates.csv",
+      "sha256": "68517e7f43c3ecb79f33a93a7a80349701194701b34540bccece8cdd9b87bb8e",
+      "rows_or_items": 68,
+      "fields": [
+        "title",
+        "doi",
+        "year",
+        "venue",
+        "source",
+        "status",
+        "final_decision"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1007_978-3-031-92870-3_22.json",
+      "sha256": "34d2b688040731b050263975025d13b87c8ae252c7f3416d30ee761ecf979f5e",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1109_dac63849.2025.11132423.json",
+      "sha256": "8ab4e8c687614ec9e17096e3f4952fe1c5cb6d0b93cff98ffb9aaf1aa0cd5620",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1109_micro56248.2022.00019.json",
+      "sha256": "889aeff1b5144bd5b175652fd8bd211dac088e65da65476969093e35dc0de004",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1145_3581784.3607054.json",
+      "sha256": "f8473929c7902a1e6e41cdaf9ec2146ef5e0f8146e6573ceabe07ff459a2805b",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1145_3711699.json",
+      "sha256": "2313ae0c64197922235786170dd6e8d96b96ce310089c6e577b46c12f2094fbf",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1145_3731599.3767396.json",
+      "sha256": "a46025ca34e52c52c3843f55de4342088a4fa49523708e4fb04ffe7b87511690",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1145_3801489.3806868.json",
+      "sha256": "5e898360018ad6fcd3d985346c5bc030ab45a27d98740bd110af920490a054d3",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1145_3805638.json",
+      "sha256": "0d0ed05a8b09d278c3d717e1299be7d72a8b3e429a6d9249fc0af9e5a443e036",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_checks/10.1145_3820171.3806868.json",
+      "sha256": "7b7b1f19779d8085707cca090e0d936b2936135b5365e8ac112b5c3b9a12fa54",
+      "rows_or_items": 10,
+      "fields": [
+        "DOI",
+        "title",
+        "author",
+        "container-title",
+        "type",
+        "published",
+        "relation",
+        "resource",
+        "checked_at_utc",
+        "metadata_source"
+      ]
+    },
+    {
+      "file": "evidence/metadata_enrichment.csv",
+      "sha256": "a0126460b8dc3d2ff82ee5e15234b00bdd6e2273ecf11caaf856924eeba1fd29",
+      "rows_or_items": 1014,
+      "fields": [
+        "record_id",
+        "match_basis",
+        "title",
+        "doi",
+        "authors",
+        "year",
+        "venue",
+        "entry_type",
+        "abstract",
+        "source_file",
+        "source_sha256",
+        "checked_at_utc"
+      ]
+    },
+    {
+      "file": "evidence/pilot/eligibility_checks.csv",
+      "sha256": "81f87e6c709ffedc66f721e3ccf6551069fad4f030a4de6845b7b80352ea637b",
+      "rows_or_items": 3,
+      "fields": [
+        "lead_id",
+        "reviewer",
+        "recommendation",
+        "criterion",
+        "source_anchor",
+        "reason",
+        "pending",
+        "final_included"
+      ]
+    },
+    {
+      "file": "evidence/pilot/extraction.csv",
+      "sha256": "dd987ae8669bbf8cd7fe6bc2259c2a4799005476ff58fae178af06effdd0da3f",
+      "rows_or_items": 5,
+      "fields": [
+        "lead_id",
+        "source_version",
+        "anchor",
+        "mechanism",
+        "hardware",
+        "workload",
+        "comparator",
+        "metric",
+        "candidate_value",
+        "comparator_value",
+        "units",
+        "limitations",
+        "reviewer",
+        "check_status"
+      ]
+    },
+    {
+      "file": "evidence/pilot/fulltext_receipts.csv",
+      "sha256": "30394e06e39dcf304676aa9ef389de7a1f6d7606c3ed359f77a4176e24e47dda",
+      "rows_or_items": 3,
+      "fields": [
+        "lead_id",
+        "source_url",
+        "source_version",
+        "source_pages",
+        "file_bytes",
+        "sha256",
+        "retrieved_date_utc",
+        "repository_pdf_uploaded",
+        "screening_status"
+      ]
+    },
+    {
+      "file": "evidence/pilot/metadata/gilman2021_crossref.json",
+      "sha256": "24526c4e3c61aa0a8030b183c519912daa35af74e1707100e4c2c8cdc29f0b07",
+      "rows_or_items": 4,
+      "fields": [
+        "status",
+        "message-type",
+        "message-version",
+        "message"
+      ]
+    },
+    {
+      "file": "evidence/pilot/metadata/lilou_crossref.json",
+      "sha256": "dfcb6e64bc7590742cd2e10f76e6840588dccecbfca31013d5192760e7b82b41",
+      "rows_or_items": 4,
+      "fields": [
+        "status",
+        "message-type",
+        "message-version",
+        "message"
+      ]
+    },
+    {
+      "file": "evidence/pilot/metadata/naranjo2020_crossref.json",
+      "sha256": "eb73f7f8406f54c0ab37273d1f5777d3d6cec1f3db1870265e32a156b29a53c2",
+      "rows_or_items": 4,
+      "fields": [
+        "status",
+        "message-type",
+        "message-version",
+        "message"
+      ]
+    },
+    {
+      "file": "evidence/pilot/publication_checks.csv",
+      "sha256": "838f9cf1416b44b1866e262212ea0a0c2af7d48417eb5acdf98e4e4dc2aaa2a8",
+      "rows_or_items": 3,
+      "fields": [
+        "lead_id",
+        "doi",
+        "title",
+        "journal",
+        "volume",
+        "pages_or_article",
+        "issue_date",
+        "metadata_source",
+        "metadata_sha256",
+        "checked_date_utc",
+        "final_text_version_compared"
+      ]
+    },
+    {
+      "file": "evidence/planned_queries.csv",
+      "sha256": "1cbe5161fbcc14e62893aa99beee3be6fc7e44d2c5566968a8229eef10c5f581",
+      "rows_or_items": 16,
+      "fields": [
+        "query_id",
+        "platform",
+        "lane",
+        "submitted_expression"
+      ]
+    },
+    {
+      "file": "evidence/possible_versions.csv",
+      "sha256": "2cd1ec5f2e35be942f10c1489c3c539032e33af86436e5b792abe04d15744829",
+      "rows_or_items": 41,
+      "fields": [
+        "record_id",
+        "possible_match",
+        "title",
+        "status"
+      ]
+    },
+    {
+      "file": "evidence/preliminary_triage.csv",
+      "sha256": "231b3ca3942c3247b2e07b30879884e2148159595813205db64a2af80c9f5be4",
+      "rows_or_items": 100,
+      "fields": [
+        "lead_id",
+        "source_file",
+        "source_position",
+        "title",
+        "doi",
+        "exact_key_canonical",
+        "preliminary_disposition",
+        "reason",
+        "basis",
+        "reviewed_date_utc",
+        "formal_group_b_screening"
+      ]
+    },
+    {
+      "file": "evidence/prisma_counts.json",
+      "sha256": "b83d95d71dfd98df2346578bc728432321631637d88f32290fe00d34c92bfa14",
+      "rows_or_items": 16,
+      "fields": [
+        "occurrences",
+        "database_occurrences",
+        "supplementary_occurrences",
+        "by_source",
+        "exact_duplicate_occurrences",
+        "records_after_exact_linkage",
+        "possible_version_pairs",
+        "triage",
+        "final_screened",
+        "final_included",
+        "preliminary_recommendations",
+        "preliminary_exclusion_recommendations",
+        "preliminary_retain_or_uncertain",
+        "first_recommendations_pending",
+        "version_pair_dispositions",
+        "proposed_duplicate_links_applied"
+      ]
+    },
+    {
+      "file": "evidence/quality.csv",
+      "sha256": "9c2c9938647ec425ce42a02089b6cd18832f52045bd356780f7094846539f318",
+      "rows_or_items": 50,
+      "fields": [
+        "report_id",
+        "criterion",
+        "score",
+        "maximum",
+        "rationale",
+        "anchor",
+        "reviewer",
+        "second_score",
+        "reconciled_score",
+        "status",
+        "checked_at_utc",
+        "independent_checker",
+        "reconciliation_status"
+      ]
+    },
+    {
+      "file": "evidence/records.csv",
+      "sha256": "a192f9460c5fb66b4b713946a99ff8022eea0f48ae8cf0dfc994513ea62e1f2d",
+      "rows_or_items": 2291,
+      "fields": [
+        "record_id",
+        "source_record_id",
+        "database",
+        "source_run",
+        "source_file",
+        "source_position",
+        "title",
+        "authors",
+        "year",
+        "venue",
+        "doi",
+        "url",
+        "abstract",
+        "source_hash",
+        "route",
+        "entry_type",
+        "canonical_record_id"
+      ]
+    },
+    {
+      "file": "evidence/report_validation_queue.csv",
+      "sha256": "fd847c62501f515143a44a7a71958211a0fa6a27923253843c878c23e3a3130a",
+      "rows_or_items": 5,
+      "fields": [
+        "report_id",
+        "title",
+        "source",
+        "eligibility_task",
+        "outcome_task",
+        "quality_task",
+        "checker",
+        "checked_at_utc",
+        "reconciliation_status",
+        "final_decision"
+      ]
+    },
+    {
+      "file": "evidence/review_progress.json",
+      "sha256": "145b5eb7898785ee19161fc3a37e9da096a9b80f14648b56baffa425b84ee78a",
+      "rows_or_items": 16,
+      "fields": [
+        "first_reviewer_records",
+        "first_reviewer_fraction",
+        "exclude_recommendations",
+        "retained_or_uncertain",
+        "unreviewed",
+        "source_checked_reports",
+        "new_outcome_rows",
+        "appraised_reports",
+        "quality_item_rows",
+        "snowballing_events",
+        "final_decisions",
+        "final_included_studies",
+        "updated_at_utc",
+        "cycle1_new_recommendations",
+        "human_candidate_records",
+        "exclusion_sample_records"
+      ]
+    },
+    {
+      "file": "evidence/screening.csv",
+      "sha256": "8dc4af1a45155602d9db5b1f6dffbc7a48fbc509ecb3b54b70e761f30bbc2340",
+      "rows_or_items": 2247,
+      "fields": [
+        "record_id",
+        "database",
+        "title",
+        "doi",
+        "priority",
+        "triage_basis",
+        "screening_decision",
+        "reviewer_1_vote",
+        "reviewer_2_vote",
+        "criterion",
+        "reason",
+        "fulltext_status",
+        "recommendation",
+        "reviewer",
+        "date",
+        "timestamp_utc",
+        "abstract_status",
+        "publication_type_checked",
+        "venue_checked",
+        "final_decision",
+        "batch_id",
+        "method",
+        "evidence_excerpt",
+        "doi_metadata"
+      ]
+    },
+    {
+      "file": "evidence/search_runs.csv",
+      "sha256": "4a04578ecbe8c35f7d6910131bfe8a0567b5038780e09fd4b7a386b80e4e6fe8",
+      "rows_or_items": 1,
+      "fields": [
+        "run_id",
+        "query_id",
+        "platform",
+        "collection",
+        "interface_url",
+        "access_route",
+        "executed_at_local",
+        "timezone",
+        "exact_accepted_query",
+        "field_scope",
+        "date_range",
+        "language_filter",
+        "document_filter",
+        "displayed_hits",
+        "exported_occurrences",
+        "batch_or_page_range",
+        "export_file",
+        "sha256",
+        "operator",
+        "status",
+        "syntax_error_or_amendment",
+        "notes"
+      ]
+    },
+    {
+      "file": "evidence/shared_candidate_review.csv",
+      "sha256": "83bfd8aeece2a8abf037bf132c75f544d673190d777f4b1d1897a20201c80a87",
+      "rows_or_items": 21,
+      "fields": [
+        "group_a_study_id",
+        "title",
+        "doi",
+        "group_b_record_ids",
+        "mechanism_prior",
+        "group_a_acceptance",
+        "group_b_final_decision",
+        "next_action"
+      ]
+    },
+    {
+      "file": "evidence/shared_leads.csv",
+      "sha256": "f915993a76843dfe84e264d5fc2ded67b3042387fdc8dee32c53ec02189d484b",
+      "rows_or_items": 121,
+      "fields": [
+        "lead_id",
+        "source_kind",
+        "source_id",
+        "title",
+        "doi",
+        "year",
+        "url",
+        "group_b_decision",
+        "review_status"
+      ]
+    },
+    {
+      "file": "evidence/snowballing.csv",
+      "sha256": "dfa1ba8978da8e88f911d7d69d672b5a9c877dd3d88a66770e1d4901861dab1d",
+      "rows_or_items": 10,
+      "fields": [
+        "event_id",
+        "date",
+        "seed_report",
+        "direction",
+        "source",
+        "anchor",
+        "candidate_title",
+        "existing_record_ids",
+        "status",
+        "coverage",
+        "reviewer",
+        "checked_at_utc",
+        "doi",
+        "final_decision",
+        "screening_status",
+        "counted_as_new_database_record"
+      ]
+    },
+    {
+      "file": "evidence/source_recheck_2026-10-15.json",
+      "sha256": "91d2ddd476d8f48e7f623724685b169c6195b7dc9cfbc20a5aeb3806c56f604c",
+      "rows_or_items": 8,
+      "fields": [
+        "checked_at_utc",
+        "ACM_drive_folder",
+        "ACM_files_previously_imported",
+        "current_folder_listing_checked",
+        "run_mapping_found",
+        "laptop_group_a_head",
+        "shared_group_a_source_snapshot",
+        "note"
+      ]
+    },
+    {
+      "file": "evidence/study_extraction_form.csv",
+      "sha256": "f223bc288c2aac0b5bfb7ca1d1dd03d85bc2631e449217647d871f603810a7c1",
+      "rows_or_items": 5,
+      "fields": [
+        "report_id",
+        "study_id",
+        "title",
+        "doi",
+        "source",
+        "source_anchor",
+        "mechanism",
+        "gpu_hardware",
+        "cpu_memory",
+        "os_kernel",
+        "driver_runtime",
+        "models",
+        "tenant_mix",
+        "batch_load_slo",
+        "baseline",
+        "metric_outcomes_register",
+        "resource_usage",
+        "scalability",
+        "energy",
+        "reliability",
+        "security_fault_isolation",
+        "overhead",
+        "advantages",
+        "limitations",
+        "tradeoffs",
+        "eligibility_status",
+        "reviewer",
+        "independent_checker",
+        "field_status",
+        "checked_at_utc",
+        "authors",
+        "year",
+        "venue",
+        "latency",
+        "throughput"
+      ]
+    },
+    {
+      "file": "evidence/templates/duplicates.csv",
+      "sha256": "c60a041cdb7e440d1a2c58f8710492310a059137acb8684db2f5d7b92ab52a3d",
+      "rows_or_items": 0,
+      "fields": []
+    },
+    {
+      "file": "evidence/templates/extraction.csv",
+      "sha256": "e968266566befd63f27d854cd5339e6b55b3cda914e70c0cae7378422c59ea91",
+      "rows_or_items": 0,
+      "fields": []
+    },
+    {
+      "file": "evidence/templates/quality.csv",
+      "sha256": "9a38cf95c15bda2a97a5f56b0feef982e18ec507dcb8d7ee654ba7be0c3a997d",
+      "rows_or_items": 0,
+      "fields": []
+    },
+    {
+      "file": "evidence/templates/records.csv",
+      "sha256": "d11402b5735daa046df6cd70123377b20316a24d541130205968652419cd9d0c",
+      "rows_or_items": 0,
+      "fields": []
+    },
+    {
+      "file": "evidence/templates/reports.csv",
+      "sha256": "173944374bc92305cda33712aab6cf40384b3d83cac95ce1153fb5e20beb2ce1",
+      "rows_or_items": 0,
+      "fields": []
+    },
+    {
+      "file": "evidence/templates/screening.csv",
+      "sha256": "d701941e04edf535458f7269f48fe943492267b8e24044ed2b35e8a646170e74",
+      "rows_or_items": 0,
+      "fields": []
+    },
+    {
+      "file": "evidence/title_votes.csv",
+      "sha256": "2239e07a0731aeea8156ab400e41b3865582e9cd44b261dbe7276086fc6c9668",
+      "rows_or_items": 2247,
+      "fields": [
+        "record_id",
+        "stage",
+        "reviewer",
+        "date",
+        "vote",
+        "criterion",
+        "reason",
+        "source",
+        "second_vote",
+        "final_decision",
+        "recommendation",
+        "timestamp_utc",
+        "abstract_status",
+        "fulltext_status",
+        "batch_id",
+        "method",
+        "metadata_status_checked_at_utc"
+      ]
+    },
+    {
+      "file": "evidence/version_review_audit.csv",
+      "sha256": "d41d649edbbba80479398230b773bb13103f9ad8f48a134db2436230f8f439db",
+      "rows_or_items": 41,
+      "fields": [
+        "record_id",
+        "possible_match",
+        "title",
+        "status",
+        "left_doi",
+        "right_doi",
+        "left_type",
+        "right_type",
+        "review_priority",
+        "assessment",
+        "count_change",
+        "checked_date",
+        "left_authors",
+        "right_authors",
+        "left_venue",
+        "right_venue",
+        "left_year",
+        "right_year",
+        "reviewer",
+        "checked_at_utc",
+        "independent_checker",
+        "linkage_applied",
+        "audit_disposition",
+        "remaining_action"
+      ]
+    }
+  ],
+  "policy": "Cycle2 may add derived analysis and bibliographic metadata;original Cycle1 screening,QA,extraction and raw import results remain unchanged."
+}

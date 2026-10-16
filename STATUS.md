@@ -1,3 +1,7 @@
+# Cycle 2 started
+
+Latest main verified at1c321d229bced4e2802bdc48b8568210db3b4415. The pre-report manual-work document is task2/MANUAL_WORK_AND_NEXT_STEPS.docx. Cycle1 counts are frozen in evidence/cycle2_baseline.json. No new screening or final decisions are being claimed.
+
 # Group B status: Cycle 1, 16 October 2026 (Pakistan time)
 
 Cycle 1 completes the active **preliminary recommendation pass**, version audit and bounded evidence-register expansion. Final human decisions, final inclusion and final PRISMA remain pending. Cycle 2 synthesis has not been written.
