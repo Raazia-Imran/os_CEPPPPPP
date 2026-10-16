@@ -1,11 +1,13 @@
-# Build current outputs
+# Resume and build Cycle 2
 
-From the repository root:
+Read STATUS.md and task2/CONTINUE_HERE.md first. CSV/JSON registers control outputs; preserve Task 1 and raw imports.
 
-1. `python scripts/import_shared.py` rebuilds the original import and resets the work queue. Do not run this over unsaved reviewer edits. Preserve independent vote files separately and reapply them by record ID.
-2. `python scripts/advance_review.py` reproduces this checkpoint's bounded first-review events, source checks and extraction/QA drafts. It is not a general automated full-text screener.
-3. `python scripts/build_checkpoint.py` rebuilds report sources and workbook input from registers.
-4. In `task2/report`, run `pdflatex main.tex`, `bibtex main`, then `pdflatex main.tex` twice; copy main.pdf to report.pdf. Run `pdflatex prisma_flow.tex` for the standalone flow.
-5. The saved `scripts/build_workbook.mjs` uses the Codex bundled artifact runtime and `task2/tracker/workbook_input.json`. Set `OS_CEP_ROOT` to this repository root before running it from a temporary directory linked to the bundled node modules. Preserve the required artifact-tool dependency.
+1. Run `python3 scripts/build_cycle2_input.py` from the repository root. It recreates the ignored workbook input without screening, importing or resetting evidence.
+2. Run `python3 scripts/build_cycle2_report.py` to regenerate the interim report and accounting flow.
+3. From `task2/report`, run `pdflatex -interaction=nonstopmode -halt-on-error -jobname=report main.tex`, `bibtex report`, then the same LaTeX command twice. Compile `prisma_flow.tex` separately.
+4. Run `scripts/build_workbook.mjs` with the bundled artifact runtime from a temporary directory linked to its node modules. Set `OS_CEP_ROOT` to the absolute repository path and create `OS_CEP_PREVIEW_DIR` first.
+5. Run `python3 scripts/validate_cycle2.py`. Inspect rendered PDF pages and worksheet previews, then record actual visual results before publishing.
 
-After changes, verify counts, source anchors, references, PDF layout, workbook formulas and image previews. The report is explicitly interim until final screening and independent review are closed.
+Analysis and references are already recovered. Rerun `build_cycle2_evidence.py` only after justified evidence changes, and `build_cycle2_references.py` only when bibliographic metadata needs regeneration. Cached historical checks must retain their verification dates.
+
+Do not run legacy import, screening, finalize or checkpoint scripts merely to rebuild outputs: they can replace current state. Final screening, independent Q1-Q10 appraisal/extraction and inclusion remain pending.
