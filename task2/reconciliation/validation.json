@@ -1,0 +1,28 @@
+{
+  "source_bundle_head": "53d558faa73ebedc8cec67e349f49e98c38b6b1b",
+  "compared_main": "f45c72bb5ccf2afb865fb77a1ecad14900ecd14e",
+  "incoming_rows": 1831,
+  "comparison_counts": {
+    "disagree": 50,
+    "not_previously_recommended": 1591,
+    "agree_broad_recommendation": 190
+  },
+  "incoming_basis": {
+    "title_only": 1780,
+    "no_title": 2,
+    "abstract_partial_local_ris_first_600_chars": 19,
+    "title_only_abstract_check_needed": 30
+  },
+  "incoming_votes": {
+    "exclude": 1787,
+    "uncertain": 40,
+    "retain": 4
+  },
+  "screening_register_modified": false,
+  "independent_human_reviews_added": 0,
+  "attachments_sha256": {
+    "groupB(1).bundle": "add170d2736cf7404ca6de46bf93ba46102b81c90ef22ba09260ce3640083836",
+    "cycle3_new_import_ai_prelim(1).csv": "32ca154c733502c08e3885de38fa6fa4c5a233a22f03dfa118774e25cfc99f98",
+    "all_groupB_changes(1).patch": "a3e6397540f78e03926a5abddbbe10620f629818a0dc320e65ad39a5dab455b5"
+  }
+}
