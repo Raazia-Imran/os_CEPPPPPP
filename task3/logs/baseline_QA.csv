@@ -1,0 +1,201 @@
+Report ID,Criterion,Score,Maximum,Rationale,Evidence location,Source,Entry / workbook-build time (UTC)
+P001,Q1,2,2,Objective and local GPU portability question explicit,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q2,2,2,Tuned MPS quotas and CU masking described,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q3,1,2,GPU-specific repeats and variance unresolved in conversion,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q4,1,2,GPU/backend named; precise GPU loads and versions incomplete,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q5,1,2,Same hardware and no/default/tuned MPS; quotas incomplete,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q6,2,2,Throughput ratios and baseline named in prose,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q7,NA,0,GPU-portability extraction makes no latency claim; do not score NPU latency as GPU evidence,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q8,2,2,Multiple named co-located inference pairs evaluated,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q9,1,2,Performance interference considered; no separate security/fault validation extracted,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P001,Q10,1,2,Stable-mix Q-table constraint; GPU replication settings incomplete,Published pp. 458-459; PDF pp. 16-17; Sections 6.7-6.9; Figures 14-16,s11390-024-3773-5.md,2026-10-16 21:57:39
+P002,Q1,2,2,Interference-aware inference provisioning objective explicit,"abstract,section1",iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q2,2,2,MPS allocation and shadow implementation described,section4.2,iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q3,2,2,Model checks repeated three times with SD; metric windows specified,sections5.1-5.3,iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q4,1,2,GPU/workloads/backend detailed; OS/driver unresolved,"sections4.2,5.1",iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q5,1,2,Adapted baselines and allocation/batch differences disclosed,section5.1,iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q6,2,2,"Cost, throughput, resource-allocation metrics distinguished","sections5.1,5.3",iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q7,2,2,"P99 windows, SLO and recovery timing explicit",section5.3 Fig17,iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q8,2,2,Four co-located models and quota configuration specified,section5.2 Fig13,iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q9,1,2,Performance interference measured; security/fault boundaries not tested in checked portion,sections5.2-5.3,iGniter user-supplied Markdown,2026-10-16 21:57:39
+P002,Q10,2,2,"Code, prediction limitations and PCIe caveat explicit","sections4.2,5.2",iGniter user-supplied Markdown,2026-10-16 21:57:39
+P003,Q1,2,2,Clear SLO-aware co-location objective,p199 abstract;section1,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q2,2,2,MPS partitions and temporal batching described,pp201-207 sections2-4,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q3,2,2,Poisson requests;median of3 repeats;throughput/SLO procedure,pp207-208 section5.1-5.2,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q4,2,2,Full GPU/CPU/OS/driver/runtime and model tables,p207 Tables2-3,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q5,2,2,Ported SBP comparator and Nexus incompatibility justified,p207 section5.1,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q6,2,2,Maximum throughput with99%SLO definition;system scale explicit,p208 section5.2,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q7,2,2,SLO99% procedure;local overhead CDF population explicit,p203 Fig7;p208 section5.2,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q8,2,2,Paired model interference and scheduler interference comparison,p203 Fig7;p208 Fig14,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q9,1,2,Performance interference checked;security/fault boundary not established in the checked source evidence,p203 Fig7;section5.2,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P003,Q10,1,2,Prototype and appendix setup available;replication not attempted,p207 Table2;appendixA,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf,46310.9239236111
+P004,Q1,2,2,Fine-grained task-switching problem and design explicit,p499 abstract;section1,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q2,2,2,"Controller,memory daemon,workers and pipeline described",pp504-508 sections4-5,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q3,2,2,100-run mean;min/max forFig6;setup described,p508 section6,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q4,1,2,Hardware/software specified;OS/kernel/driver not established in the checked source evidence,p508 section6,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q5,2,2,Same modified PyTorch;ready-model and swapping conditions explicit,p508 section6.1,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q6,2,2,Inference throughput and utilization denominator defined,p509 section6.1 Fig6,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q7,2,2,End-to-end overhead defined;mean and extrema identified,pp508-509 Table3,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q8,2,2,Training/inference co-location;inference metric separated,pp508-509 section6.1,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q9,1,2,Process/memory control described;security/fault testing not established in the checked source evidence,pp507-508 implementation,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P004,Q10,1,2,Versioned stack described;limitations documented;replication not attempted,p508 section6;section7,https://www.usenix.org/system/files/osdi20-bai.pdf,46310.9239236111
+P005,Q1,2,2,Concurrent real-time/best-effort inference objective explicit,p539 abstract;section1,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q2,2,2,"Reset preemption,queues and padding implementation described",sections3-6;pp547-548,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q3,1,2,Benchmark arrivals and baseline methods detailed;repeat/variance protocol not established in the checked source evidence,p548 section7.1,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q4,2,2,"CPU,GPU,host RAM,OS,runtime,models andclients specified",p548 section7.1 Table2,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q5,2,2,RT-only and GPUStreams/SEQ conditions;extensions disclosed,p548 section7.1;p549 section7.3,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q6,2,2,Total RT+BE throughput and denominator explicit,p549 section7.2 Fig11,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q7,1,2,End-to-end latency and load specified;request percentile not established in the checked source evidence,pp548-549 Table2/Fig11,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q8,2,2,MultipleRT/BE clients and multiple mixes directly tested,p548 Table2;p549 section7.2,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q9,1,2,Performance isolation tested;no extracted memory/security/fault boundary test,pp548-549 section7.2,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P005,Q10,2,2,Artifact and idempotence/platform limitations explicit,p540 repository;section8;appendixA,https://www.usenix.org/system/files/osdi22-han.pdf,46310.9239236111
+P006,Q1,2,2,Explicit goal,p595 section1,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q2,2,2,Mechanism classifiable,pp599-603 sections4-6,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q3,1,2,Repetition count unclear,p604 methodology,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q4,2,2,Versioned setup,p604 methodology,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q5,1,2,Wrapper caveat,p604 Table3/baselines,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q6,2,2,Defined throughput,pp604-605 Figs11-12,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q7,2,2,p99 specified,pp604-605 Figs11-12,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q8,2,2,Mixed jobs tested,p605 Figs12-13,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q9,NA,0,No security/fault or resource-isolation guarantee appraised; fairness is assessed under Q8; N/A with stated rationale,pp606-607 discussion;scope-specific rationale,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P006,Q10,2,2,Artifact and limits,pp606-607 section8,https://kelvin-ng.github.io/assets/sosp2023-final224.pdf,46311.4171990741
+P007,Q1,2,2,Explicit goal,p1075 section1,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q2,2,2,Interception specified,pp1079-1082 sections4-5,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q3,2,2,Three repetitions,p1082 section6.1,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q4,2,2,Versioned setup,p1082 section6.1,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q5,1,2,Reimplemented comparator,p1083 baselines,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q6,2,2,Defined aggregate metric,p1086 section6.2.3,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q7,2,2,p99 and arrivals,p1086 section6.2.3,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q8,2,2,Collocations tested,p1086 section6.3,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q9,2,2,Trust boundary explicit,p1087 section7 Security,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P007,Q10,2,2,Artifact and limitations,p1087 section7;artifact appendix,https://anakli.inf.ethz.ch/papers/orion_eurosys24.pdf,46311.4171990741
+P008,Q1,2,2,Explicit goal,p492 introduction,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q2,2,2,Sharing described,pp495-499 section3,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q3,1,2,Confidence intervals; counts unclear,p500 error bars;section4,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q4,2,2,Hardware and OS,pp499-500 testbed,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q5,2,2,Comparator scope stated,p501 section4.3,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q6,2,2,GUE defined,p494 GUE definition;p500 Table3,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q7,1,2,Tail statistic unclear,pp500-501 latency plots,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q8,2,2,Concurrent functions,p500 section4.2,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q9,2,2,Fixed quotas and performance-isolation tests; no stronger security claim inferred,pp496-498 resource controls;p502 performance isolation,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P008,Q10,1,2,Reproduction incomplete,pp499-504 implementation/evaluation/limits,https://par.nsf.gov/servlets/purl/10299299,46311.4187152778
+P009,Q1,2,2,Explicit goal,p443 introduction,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q2,2,2,Scheduling described,pp448-451 sections4-5,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q3,1,2,Repetition count unclear,p451 section6 setup,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q4,1,2,Versions not established in the checked source evidence,p451 section6 setup,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q5,1,2,Hardware mismatch disclosed,p451 section6.1 mismatch,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q6,2,2,Goodput defined,p452 goodput definition,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q7,2,2,SLO and CDF,pp451-452 Fig5,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q8,2,2,Contending models,p451 section6.1,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q9,1,2,No fault guarantee,pp455-456 discussion,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P009,Q10,2,2,Artifact and limits,pp455-456 discussion;artifact appendix,https://people.mpi-sws.org/~antoinek/documents/20osdi_clockwork.pdf,46311.4187152778
+P010,Q1,2,2,Inference/training colocation objective and scope explicit.,p1657 section1,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q2,2,2,"VMM pool, memory handover and SM-mask control described.",pp1660-1665 sections3-5,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q3,1,2,Trace distributions and300s windows described; repeated-run uncertainty not established in checked evaluation.,pp1665-1666 section6,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q4,2,2,"GPU, CPU/RAM, software and model sizes specified.",p1665 testbed; p1666 Table3,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q5,1,2,TaskSwitch is an adapted implementation; baseline choices explicit but implementation equivalence remains limited.,p1665 comparing targets,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q6,2,2,Training samples/s is defined; inference latency/SLO are kept distinct.,p1666 metrics/Figure10,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q7,2,2,"P99, request arrivals, window and SLO definition supplied.",p1666 section6.1/Figure10,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q8,2,2,Co-located inference/training traces tested on one GPU.,p1666 section6.1/Figure10,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q9,1,2,Memory-reclamation boundary described; stronger fault/security validation not established.,pp1661-1665 sections4-5,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P010,Q10,2,2,Detailed implementation and evaluated artifact supplied; scope limitations discussed.,p1665 section5; p1669 section7; artifact appendix,https://www.usenix.org/system/files/atc25-wang-jiali.pdf,46311.5248842593
+P011,Q1,2,2,Clear inference resource-sharing objective.,PDF pp1-2 introduction,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q2,2,2,MIG/MPS segments and algorithms explained.,PDF pp4-7 sectionIII,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q3,1,2,Profiling procedure and fleet scenarios described; repetition/uncertainty reporting unclear.,"PDF pp5,8 sectionIV",https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q4,1,2,Hardware/workload described; runtime version1.14.0 is printed but needs verification.,PDF p8 sectionIV-A,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q5,1,2,Local process comparison interpretable; fleet baselines adapted and no final-version equivalence established.,"PDF pp5,8",https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q6,2,2,Throughput axes specify requests/s and exact local values are given.,PDF pp4-5 Figure3,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q7,1,2,Latency milliseconds and settings stated; profiler quantile unclear.,PDF pp4-5 Figure4,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q8,2,2,Concurrent MPS process counts evaluated inside one MIG segment.,PDF pp4-5 Figures3-4,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q9,1,2,MIG boundary described; no direct security/fault validation established.,PDF pp2-4 background/design,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P011,Q10,1,2,Algorithms/settings detailed; accessed version remains preprint and replication verification incomplete.,PDF pp5-10,https://arxiv.org/pdf/2409.14447,46311.5248842593
+P012,Q1,2,2,Inference memory/density objective explicit.,p597 section1,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q2,2,2,"API redirection, pooling and scheduling described.",pp600-604 sections4-6,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q3,1,2,Production trace and request rates given; repeated-run uncertainty not established.,pp604-606 section7,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q4,1,2,GPU/CPU/RAM supplied; exact software version matrix missing in checked setup.,p604 settings,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q5,1,2,Native and adapted INFless-KA comparison described; resource/CPU paths differ.,pp605-606 sections7.1-7.3,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q6,2,2,Throughput/load definitions and local normalization supplied.,pp605-606 Figure8,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q7,2,2,P98 and per-function load/SLO explicit.,pp605-606 metrics/Figure8,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q8,2,2,Multiple functions share a single GPU in Figure8.,pp605-606 Figure8,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q9,1,2,Sharing/isolation modes separated; strong security/fault tests not established for evaluated mode.,"sections4,7-8",https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P012,Q10,1,2,Implementation detail and limitations supplied; independent artifact reproduction unperformed.,sections6-8,https://www.usenix.org/system/files/atc25-yu.pdf,46311.5285416667
+P013,Q1,2,2,Workflow-local runtime sharing objective explicit.,p59 section1,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q2,2,2,"Streams,PTB compiler and memory management explained.",pp62-67 sections3-8,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q3,1,2,Production-style traces and ablations provided; repeated-run uncertainty unclear.,pp67-70 section9,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q4,1,2,Hardware/frameworks named; OS/driver and version compatibility need checking.,p67 setup,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q5,1,2,"Common optimizations enabled, but baselines adapted and batch choices affect ratios.",p67 Table2/comparing targets,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q6,2,2,Memory and throughput units/ratios defined.,p68 Figures12-13,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q7,1,2,CDF/SLO reported; no precise tail scalar extracted.,p68 Figure14,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q8,2,2,Explicit3/6-user single-GPU test.,p70 Figure19,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q9,1,2,Same-runtime sharing weakens function isolation; security boundary is deliberately scoped.,pp62-63; p70 related-work boundary,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P013,Q10,2,2,"Detailed implementation, preparation overhead and multi-user limits supplied.",p70 sections9.3-9.4,https://www.usenix.org/system/files/atc24-wu-hao.pdf,46311.5285416667
+P014,Q1,2,2,Sharing/isolation/compatibility objectives explicit.,p1003 section1,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q2,2,2,"Kernel interception,token control and MIG orchestration described.",pp1006-1011 sections3-4,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q3,1,2,Setup and workload matrix supplied; repeated-run uncertainty unclear.,p1011 section5.1,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q4,2,2,"Hardware,OS,kernel,driver and frameworks specified.",p1011 Tables1-2,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q5,1,2,Isolation-capable baselines and adapters disclosed; equivalence limited.,pp1011-1012 comparing targets,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q6,2,2,Quota/throughput metrics explicitly normalized.,pp1013-1014 sections5.4-5.6,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q7,2,2,QoS uses originalP99 and defined Poisson load/token lengths.,p1014 Figure17/section5.5,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q8,2,2,Local co-running inference error measured.,p1014 section5.6,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q9,1,2,Boundary/security rationale described; direct fault/security validation not established in checked evaluation.,p1015 section7,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P014,Q10,1,2,Implementation andMIGlimitations supplied; independent artifact reproduction unperformed.,"pp1011,1015 sections4,7",https://www.usenix.org/system/files/atc25-zhang-shulai.pdf,46311.5285416667
+P015,Q1,2,2,Portable scheduling objective andGPUcase clear.,pp671-672 section1,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q2,2,2,XQueue abstraction andmulti-level preemption described.,pp674-679 sections3-6,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q3,1,2,Workload rates and policies explicit; repeat uncertainty not established.,pp680-683 section7,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q4,1,2,GPU/model/rates explicit;host/software versions incomplete in extracted case.,p683 case3,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q5,2,2,Same-GPU standalone/native priority comparisons supplied.,p683 Figure15,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q6,2,2,Throughput-latency curves defined forGPUinferencecase.,p683 Figure15b,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q7,2,2,P99 and offered rates explicit.,p683 Figure15a,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q8,2,2,Two concurrentBertclients ononeGV100.,p683 case3,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q9,NA,0,No claimed security/fault-containment guarantee in extracted scheduling claim;N/A with stated rationale for claim-specificQ9.,pp671-672 scope; p683 case3,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P015,Q10,2,2,"Implementation/interfaces,artifact andhardware-dependence detailed.",sections6-8;artifact appendix,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf,46311.5285416667
+P018,Q1,2,2,Heterogeneous inference fairness is explicit,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q2,2,2,Temporal scheduler and feedback controller are described,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q3,1,2,Configuration/control details are incomplete in accessible extraction,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q4,2,2,"Models, arrival rates and SLOs are explicit",Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q5,1,2,EDF lacks batching and is not a matched baseline,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q6,2,2,Goodput and unfairness retain separate definitions,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q7,1,2,Service SLOs are given; request-tail quantile evidence is limited,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q8,2,2,Multiple concurrent inference models are evaluated,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q9,1,2,Performance fairness does not establish security/fault separation,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P018,Q10,1,2,Algorithms and limits are interpretable; software-version coverage is incomplete,Published pp17-18; sections5.1-5.4; Table3; Eq2; Markdown lines718-899,https://www.sciencedirect.com/science/article/pii/S0167739X23003187,46311.9150347222
+P019,Q1,2,2,Latency-critical inference under co-location is explicit,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q2,2,2,"Interception, NVML and throttling are specified","Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q3,1,2,Repeated-run precision is not established by the available source assessment,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q4,2,2,"GPU, software and thirty model pairs are described","Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q5,1,2,Exact comparator MPS quotas are not established,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q6,2,2,QPS and goodput are distinguished,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q7,2,2,p99 criterion is twice solo latency,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q8,2,2,Thirty inference/training pairs are tested,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q9,1,2,No adversarial or cross-tenant fault test is established,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P019,Q10,1,2,Overhead and low-contention regression are discussed; replication gaps remain,"Published pp313-319; sections4.3,5.1-5.4; Table3; Figs14-21; Markdown lines920-1360",https://doi.org/10.1007/s42514-023-00154-y,46311.9150347222
+P020,Q1,2,2,Fragmentation and concurrent inference are explicit,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q2,2,2,MIG placement and merge/split policies are described,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q3,1,2,Repetition/variance detail is limited in accessible evidence,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q4,2,2,GPU profiles and local inference job ranges are specified,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q5,1,2,MISO adaptation and privileged ORACLE require caveats,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q6,2,2,Makespan and STP are separate metrics,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q7,1,2,JCT is not online request p99,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q8,2,2,Local concurrent inference job strata are identifiable,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q9,1,2,Architectural MIG descriptions do not constitute adversarial tests,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P020,Q10,1,2,Reconfiguration and prediction limits are explicit; software coverage is incomplete,PDF pp11-16; sections4.1-4.3.2; Table2; Figs8-13; Markdown lines700-865,https://doi.org/10.1007/s10586-025-05284-2,46311.9150347222
+P021,Q1,2,2,Kernel-level right-sizing objective is explicit,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q2,2,2,API control and spatial sizing are classifiable,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q3,1,2,Feature emulation limits direct experimental transfer,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q4,2,2,MI50 and tested inference workers/batches are specified,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q5,1,2,"MPSDefault is AMD unrestricted concurrency, not NVIDIA MPS",PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q6,2,2,Throughput is defined for the tested worker configuration,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q7,2,2,p95 inference latency is evaluated,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q8,2,2,Concurrent inference workers and heterogeneous pairs are tested,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q9,1,2,Resource sizing is not a validated security/fault boundary,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P021,Q10,1,2,Emulation and subtracted overhead limit deployability,PDF pp9-10; sectionsV-VI; TableIII,https://danielwong.org/files/KRISP-HPCA2023.pdf,46311.9150347222
+P022,Q1,2,2,Performance isolation during co-location is explicit,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q2,2,2,CUDA interception and priority control are described,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q3,1,2,Repeated-run precision is not established in the checked source summary,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q4,2,2,GPU and principal software versions are specified,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q5,1,2,TGS and scheduling policies trade different background yields,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q6,2,2,Foreground protection and background throughput remain distinct,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q7,2,2,High-priority p99 is an evaluated outcome,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q8,2,2,Same-GPU co-tenant pairs and production-style traces are used,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q9,1,2,Priority control does not establish hostile memory/fault isolation,PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222
+P022,Q10,2,2,"Artifact, implementation and throughput sacrifice support interpretation",PDF pp9-11; sections5-5.3; Fig6,https://arxiv.org/pdf/2410.07381,46311.9150347222

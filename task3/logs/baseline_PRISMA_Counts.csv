@@ -1,0 +1,11 @@
+Stage,Count,Accounting note
+Records identified,4189,"4,169 database records + 20 supplementary records"
+Duplicate links applied,114,"4,189 - 114 = 4,075 canonical records"
+Canonical records screened,4075,"3,493 + 559 + 21 + 2 = 4,075"
+Excluded at record screening,3493,Criterion and reason are recorded in Screening Log
+Retained after screening,582,559 stopping-rule branch + 23 source-assessed report versions
+Not advanced under stopping rule,559,Reported separately from technical exclusions
+Report versions assessed,23,21 included + 2 excluded
+Excluded after source assessment,2,Training-focused scope
+Included report versions,21,REEF conference and journal companion are linked
+Included unique studies,20,Final comparative corpus

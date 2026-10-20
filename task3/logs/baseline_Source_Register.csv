@@ -1,0 +1,26 @@
+Type,Report ID,Study ID,Title,Relationship or decision,Source
+Report version,P001,S001,VastPipe,primary assessment card,https://doi.org/10.1007/s11390-024-3773-5
+Report version,P002,S002,iGniter,primary assessment card,https://doi.org/10.1109/TPDS.2022.3232715
+Report version,P003,S003,gpulets,primary assessment card,https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf
+Report version,P004,S004,PipeSwitch,primary assessment card,https://www.usenix.org/system/files/osdi20-bai.pdf
+Report version,P005,S005,REEF conference,primary assessment card,https://www.usenix.org/system/files/osdi22-han.pdf
+Report version,P006,S006,Paella: Low-latency Model Serving with Software-defined GPU Scheduling,primary assessment card,https://vincen.tl/files/ng23paella.pdf
+Report version,P007,S007,"Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",primary assessment card,https://fotstrt.github.io/files/2024-orion.pdf
+Report version,P008,S008,GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform,primary assessment card,https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf
+Report version,P009,S009,Serving DNNs like Clockwork: Performance Predictability from the Bottom Up,primary assessment card,https://www.usenix.org/system/files/osdi20-gujarati.pdf
+Report version,P010,S010,Colocating ML Inference and Training with Fast GPU Memory Handover (SIRIUS),primary assessment card,https://www.usenix.org/system/files/atc25-wang-jiali.pdf
+Report version,P011,S011,ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments,primary assessment card,https://arxiv.org/pdf/2409.14447
+Report version,P012,S012,"Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference",primary assessment card,https://www.usenix.org/system/files/atc25-yu.pdf
+Report version,P013,S013,StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow,primary assessment card,https://www.usenix.org/system/files/atc24-wu-hao.pdf
+Report version,P014,S014,Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception (KRYPTON),primary assessment card,https://www.usenix.org/system/files/atc25-zhang-shulai.pdf
+Report version,P015,S015,XSched: Preemptive Scheduling for Diverse XPUs,primary assessment card,https://www.usenix.org/system/files/osdi25-shen-weihang.pdf
+Report version,P018,S016,InferFair: Towards QoS-aware scheduling for performance isolation guarantee in heterogeneous model serving systems,primary assessment card,https://www.sciencedirect.com/science/article/pii/S0167739X23003187
+Report version,P019,S017,ArkGPU: enabling applications' high-goodput co-location execution on multitasking GPUs,primary assessment card,https://doi.org/10.1007/s42514-023-00154-y
+Report version,P020,S018,Dyna-P: placement-aware dynamic partitioning for lightweight applications with modern GPUs,primary assessment card,https://doi.org/10.1007/s10586-025-05284-2
+Report version,P021,S019,KRISP: Enabling Kernel-wise RIght-sizing for Spatial Partitioned GPU Inference Servers,primary assessment card,https://danielwong.org/files/KRISP-HPCA2023.pdf
+Report version,P022,S020,Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads,primary assessment card,https://arxiv.org/pdf/2410.07381
+Report version,P023,S005,"Real-time, Work-conserving GPU Scheduling for Concurrent DNN Inference","journal extension of P005; same study, not a new study",https://doi.org/10.1145/3768622
+Report version,P016,n/a,TGS: Transparent GPU Sharing in Container Clouds for Deep Learning Workloads,source assessed exclusion EC2,https://www.usenix.org/system/files/nsdi23-wu.pdf
+Report version,P017,n/a,HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees,source assessed exclusion EC2,https://www.usenix.org/system/files/osdi20-zhao_hanyu.pdf
+Source exclusion,P016,n/a,TGS: Transparent GPU Sharing in Container Clouds for Deep Learning Workloads,Training-focused GPU container sharing; evaluation concerns production/opportunistic training jobs. Discussion explicitly places inference optimization outside this paper; no separable inference-sharing result identified.,https://www.usenix.org/system/files/nsdi23-wu.pdf
+Source exclusion,P017,n/a,HiveD: Sharing a GPU Cluster for Deep Learning with Guarantees,GPU-cluster resource reservation and affinity for deep-learning training; evaluated queueing/completion-time behavior is not concurrent local inference serving. EC2 decisive; aggregate cluster scope is a secondary limitation.,https://www.usenix.org/system/files/osdi20-zhao_hanyu.pdf

@@ -1,0 +1,3 @@
+Calculation ID,Report ID,Metric,Formula,Inputs,Calculated value,Unit,Evidence location,Status
+C001,P011,Local throughput increase,(446/354-1)*100,"446requests/s at3processes;354requests/s at1process;InceptionV3,1-GPC,batch4",25.988700564971758,percent,ParvaGPU arXivv1 PDF p5 sectionIII-B/Figure3,"calculated,not reported;based on accessed author manuscript"
+C002,P011,Local latency factor,27/11,27ms at3processes;11ms at1process;same1-GPC/batch4configuration,2.4545454545454546,x,ParvaGPU arXivv1 PDF p5 sectionIII-B/Figure4,"calculated,not reported;quantile unspecified;based on accessed author manuscript"

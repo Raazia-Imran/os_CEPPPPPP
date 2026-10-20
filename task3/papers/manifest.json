@@ -1,0 +1,170 @@
+[
+  {
+    "type": "Report version",
+    "report_id": "P001",
+    "study_id": "S001",
+    "title": "VastPipe",
+    "relationship": "primary assessment card",
+    "source_url": "https://doi.org/10.1007/s11390-024-3773-5"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P002",
+    "study_id": "S002",
+    "title": "iGniter",
+    "relationship": "primary assessment card",
+    "source_url": "https://doi.org/10.1109/TPDS.2022.3232715"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P003",
+    "study_id": "S003",
+    "title": "gpulets",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P004",
+    "study_id": "S004",
+    "title": "PipeSwitch",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/osdi20-bai.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P005",
+    "study_id": "S005",
+    "title": "REEF conference",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/osdi22-han.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P006",
+    "study_id": "S006",
+    "title": "Paella: Low-latency Model Serving with Software-defined GPU Scheduling",
+    "relationship": "primary assessment card",
+    "source_url": "https://vincen.tl/files/ng23paella.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P007",
+    "study_id": "S007",
+    "title": "Orion: Interference-aware, Fine-grained GPU Sharing for ML Applications",
+    "relationship": "primary assessment card",
+    "source_url": "https://fotstrt.github.io/files/2024-orion.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P008",
+    "study_id": "S008",
+    "title": "GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P009",
+    "study_id": "S009",
+    "title": "Serving DNNs like Clockwork: Performance Predictability from the Bottom Up",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/osdi20-gujarati.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P010",
+    "study_id": "S010",
+    "title": "Colocating ML Inference and Training with Fast GPU Memory Handover (SIRIUS)",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/atc25-wang-jiali.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P011",
+    "study_id": "S011",
+    "title": "ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments",
+    "relationship": "primary assessment card",
+    "source_url": "https://arxiv.org/pdf/2409.14447"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P012",
+    "study_id": "S012",
+    "title": "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/atc25-yu.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P013",
+    "study_id": "S013",
+    "title": "StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/atc24-wu-hao.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P014",
+    "study_id": "S014",
+    "title": "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception (KRYPTON)",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/atc25-zhang-shulai.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P015",
+    "study_id": "S015",
+    "title": "XSched: Preemptive Scheduling for Diverse XPUs",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.usenix.org/system/files/osdi25-shen-weihang.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P018",
+    "study_id": "S016",
+    "title": "InferFair: Towards QoS-aware scheduling for performance isolation guarantee in heterogeneous model serving systems",
+    "relationship": "primary assessment card",
+    "source_url": "https://www.sciencedirect.com/science/article/pii/S0167739X23003187"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P019",
+    "study_id": "S017",
+    "title": "ArkGPU: enabling applications' high-goodput co-location execution on multitasking GPUs",
+    "relationship": "primary assessment card",
+    "source_url": "https://doi.org/10.1007/s42514-023-00154-y"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P020",
+    "study_id": "S018",
+    "title": "Dyna-P: placement-aware dynamic partitioning for lightweight applications with modern GPUs",
+    "relationship": "primary assessment card",
+    "source_url": "https://doi.org/10.1007/s10586-025-05284-2"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P021",
+    "study_id": "S019",
+    "title": "KRISP: Enabling Kernel-wise RIght-sizing for Spatial Partitioned GPU Inference Servers",
+    "relationship": "primary assessment card",
+    "source_url": "https://danielwong.org/files/KRISP-HPCA2023.pdf"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P022",
+    "study_id": "S020",
+    "title": "Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads",
+    "relationship": "primary assessment card",
+    "source_url": "https://arxiv.org/pdf/2410.07381"
+  },
+  {
+    "type": "Report version",
+    "report_id": "P023",
+    "study_id": "S005",
+    "title": "Real-time, Work-conserving GPU Scheduling for Concurrent DNN Inference",
+    "relationship": "journal extension of P005; same study, not a new study",
+    "source_url": "https://doi.org/10.1145/3768622"
+  }
+]
