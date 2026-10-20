@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-10-20T20:35:30.093Z",
+  "actor": "AI assistant under user direction",
+  "action": "Verify published Task 3 baseline and preserve recovery catalogue",
+  "verified_remote_parent": "177fcd057cfa6618d8a34d11e654a695cedb30ca",
+  "workspace_status": "unavailable",
+  "draft_publication": "not published at verified parent",
+  "timestamp_meaning": "actual recovery checkpoint recording time; not historical screening time"
+}
