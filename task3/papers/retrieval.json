@@ -144,8 +144,9 @@
     "sha256": "f8e67a94189a3db224886768bd197e020f30a26572caf7f88cbb28efd35631c9",
     "bytes": 1620155,
     "note": "",
-    "version_note": "Public proceedings or author-hosted copy; retain original copyright notice",
-    "identity_check_utc": "2026-10-20T15:46:23.554102+00:00"
+    "version_note": "Readable15-page academic-mirror copy installed during source review; retrieved_utc remains original historical retrieval time. Current file identity verified at identity_check_utc.",
+    "identity_check_utc": "2026-10-21T09:43:49.697614+00:00",
+    "prior_copy_sha256": "f8e67a94189a3db224886768bd197e020f30a26572caf7f88cbb28efd35631c9"
   },
   {
     "type": "Report version",

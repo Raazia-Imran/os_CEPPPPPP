@@ -1,0 +1,13 @@
+Change ID,Scope,Field,Original,Reviewed treatment,Evidence
+R01,P008,Reading copy,Saved local PDF unreadable,Recovered a readable 15-page academic-mirror copy; kept old bytes separately,File parsing and title/DOI checks
+R02,P009 E033/E034,Evidence anchor,Author-copy page10 inherited,"Use accessed USENIX PDF pp10-11, printed451-452",Figure5 and section6.1
+R03,P009,Runtime extraction,Software versions not assessed,TVMv0.7 reported; preserve missing OS/driver distinctions,"PDF pp4,7; Table1; section5"
+R04,P009 Q3,QA rationale,Repetition count unclear,Scaling experiment has three repetitions; retained local Figure5 repetitions unspecified,PDF p14 section6.6; pp10-11 section6.1
+R05,P009 Q4/Q9,QA reappraisal,1/2 for both,2/2 for both: hardware/compiler/workload documented; performance isolation evaluated within explicit boundary,Submitted rubric Table8; source anchors in QA review
+R06,P013 Q4/Q9,QA reappraisal,1/2 for both,2/2 for both: hardware/framework/workload documented; trust assumptions and scope explicitly delimited,Submitted rubric Table8; source anchors in QA review
+R07,P012,Isolation/fault extraction,Not assessed in retained extract,"Section4.5 describes two runtime modes and recovery; section7 uses sharing mode, section8 isolation mode; direct fault-test evidence not established","PDF pp7,9; sections4.5,7-8"
+R08,P014 E042,Offered-load context,Poisson rate half maximum in shared test,Initial rate half solo maximum; shared test halves it again for50% allocation,PDF pp12-13 section5.5
+R09,P009/P012/P014 Q10,QA rationale,Artifact/reproduction wording used inconsistently,Appraise source replication information; do not penalize a paper merely because this review did not rerun it,Protocol Q10; revised QA rationales
+R10,P008-P014,Bibliography,Generic misc entries and abbreviated authors,Create full-author conference entries; label ParvaGPU accessed manuscript separately,Accessed PDF title pages and SC24/author record
+R11,P011,Version record,Published/preprint relationship uncertain,Publication identity confirmed; numerical check remains explicitly scoped to arXivv1,SC24 official record and accessed arXivv1
+R12,Review attribution,Reviewer identity,User requested assistant to do assigned work,Record AI assistant under Raazia direction; independent human vote left blank,Actual review method

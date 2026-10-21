@@ -1,3 +1,7 @@
+# Latest work: Raazia assigned source review
+
+See task3/raazia/README.md. Seven-study AI source review and integration prepared for a research-review branch; source qualifications retained. Earlier published main checkpoint remains recorded below.
+
 # Latest: Task 3 published and team handoff prepared
 
 Task 3 recovered draft published and file-tree verified at 0df84ec66ecbead7662744c468fc05236ccd3d37. See task3/CONTINUE_HERE.md and task3/TEAM_WORK_DIVISION.md. Scientific verification gaps remain; no overall completion percentage is claimed. Earlier publication-block notes are historical.

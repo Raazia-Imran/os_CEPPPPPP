@@ -284,7 +284,7 @@ Provenance & Original user-supplied numbered ACM exports; repository manifest su
 
 \section{Complete study appraisal and extraction cards}
 
-These cards preserve the 20 supplied study forms. They are an audit appendix; the main text is organized by mechanism and RQ. Scores are not a claim of independent verification.
+These cards use the supplied study forms with the documented AI source-review overlay for S008--S014. Original forms remain in the frozen baseline. They are an audit appendix; the main text is organized by mechanism and RQ. Scores are not a claim of independent verification.
 
 \clearpage\subsection{S001 / P001 VastPipe}
 
@@ -586,16 +586,16 @@ Evidence location & PDF pp8-12; section4; Table3; Fig15\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & Explicit goal. p492 introduction\\\addlinespace
-Q2 & 2 / 2 & Sharing described. pp495-499 section3\\\addlinespace
-Q3 & 1 / 2 & Confidence intervals; counts unclear. p500 error bars;section4\\\addlinespace
-Q4 & 2 / 2 & Hardware and OS. pp499-500 testbed\\\addlinespace
-Q5 & 2 / 2 & Comparator scope stated. p501 section4.3\\\addlinespace
-Q6 & 2 / 2 & GUE defined. p494 GUE definition;p500 Table3\\\addlinespace
-Q7 & 1 / 2 & Tail statistic unclear. pp500-501 latency plots\\\addlinespace
-Q8 & 2 / 2 & Concurrent functions. p500 section4.2\\\addlinespace
-Q9 & 2 / 2 & Fixed quotas and performance-isolation tests; no stronger security claim inferred. pp496-498 resource controls;p502 performance isolation\\\addlinespace
-Q10 & 1 / 2 & Reproduction incomplete. pp499-504 \nolinkurl{implementation/evaluation/limits}\\\addlinespace
+Q1 & 2 / 2 & Inference sharing objective explicit.. PDF p1; printed p492; abstract/introduction\\\addlinespace
+Q2 & 2 / 2 & MPS allocation and adaptive batching described.. PDF pp4-8; section3\\\addlinespace
+Q3 & 1 / 2 & Confidence intervals shown; repeated-run count not specified for retained results.. PDF p9; printed p500; section4.1\\\addlinespace
+Q4 & 2 / 2 & V100 testbed, kernel, frameworks and concurrent models specified.. PDF pp8-9; section4 setup\\\addlinespace
+Q5 & 2 / 2 & TensorRT comparison matches GPU-ready batch execution and states excluded transport costs.. PDF p10; printed p501; section4.3\\\addlinespace
+Q6 & 2 / 2 & GUE defined as an efficacy metric; table values are not busy percentages.. PDF p3; printed p494; PDF p9 Table3\\\addlinespace
+Q7 & 1 / 2 & Median latency and SLO shown; request-tail quantile not established.. PDF p10; section4.4; Figures12a-12b\\\addlinespace
+Q8 & 2 / 2 & Two-to-four-function combinations evaluated.. PDF p9; section4.2; Figure10\\\addlinespace
+Q9 & 2 / 2 & Performance boundary evaluated under allocated GPU shares; no adversarial guarantee inferred.. PDF pp5-7,10-11; sections3.2,4.5\\\addlinespace
+Q10 & 1 / 2 & Implementation and sensitivity described; full reproduction package not established in accessed copy.. PDF pp8-13; sections4-6\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S009 / P009 Serving DNNs like Clockwork: Performance Predictability from the Bottom Up}
@@ -607,7 +607,7 @@ Q10 & 1 / 2 & Reproduction incomplete. pp499-504 \nolinkurl{implementation/evalu
 \textbf{Field} & \textbf{Extracted content}\\\midrule\endhead
 Mechanism & Temporal exclusive scheduling\\\addlinespace
 Hardware and environment & V10032GB; DellR740; worker32cores/768GB; two GPUs/host\\\addlinespace
-Runtime & Not assessed in the retained source extract; hardware details alone do not establish OS, CUDA or serving-runtime versions.\\\addlinespace
+Runtime & TVM v0.7 compiler and custom managed runtime reported (PDF pp4,7-8); exact OS/driver versions not established in setup.\\\addlinespace
 Workload & Local experiment: one GPU; 15 RN50 copies; 16 clients/model; SLO10-500ms\\\addlinespace
 Tenants & 15 ResNet50 instances;16 closed-loop clients/model\\\addlinespace
 Load and SLO & One-GPU local experiment: 15 ResNet50 instances, 16 closed-loop clients per model, SLO range 10-500 ms; Fig. 5 reports SLO-compliant goodput.\\\addlinespace
@@ -625,16 +625,16 @@ Evidence location & PDF p10; section6.1; Fig5\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & Explicit goal. p443 introduction\\\addlinespace
-Q2 & 2 / 2 & Scheduling described. pp448-451 sections4-5\\\addlinespace
-Q3 & 1 / 2 & Repetition count unclear. p451 section6 setup\\\addlinespace
-Q4 & 1 / 2 & Versions not established in the checked source evidence. p451 section6 setup\\\addlinespace
-Q5 & 1 / 2 & Hardware mismatch disclosed. p451 section6.1 mismatch\\\addlinespace
-Q6 & 2 / 2 & Goodput defined. p452 goodput definition\\\addlinespace
-Q7 & 2 / 2 & SLO and CDF. pp451-452 Fig5\\\addlinespace
-Q8 & 2 / 2 & Contending models. p451 section6.1\\\addlinespace
-Q9 & 1 / 2 & No fault guarantee. pp455-456 discussion\\\addlinespace
-Q10 & 2 / 2 & Artifact and limits. pp455-456 discussion;artifact appendix\\\addlinespace
+Q1 & 2 / 2 & Predictable multi-model inference objective and target behavior explicit.. PDF p2; printed p443; section1\\\addlinespace
+Q2 & 2 / 2 & Controller scheduling, worker actions and managed model runtime described.. PDF pp6-10; sections4-5\\\addlinespace
+Q3 & 1 / 2 & Section6.6 reports three scaling repetitions; repeated-run count for retained Figure5 is not specified.. PDF pp10-11,14; sections6.1,6.6\\\addlinespace
+Q4 & 2 / 2 & V100 hardware, TVM v0.7 compiler, model set and client configuration are reported.. PDF pp4,7,10; Table1; sections2,6\\\addlinespace
+Q5 & 1 / 2 & INFaaS uses different EC2 machines; authors restrict that contrast to qualitative interpretation.. PDF p10; printed p451; section6.1\\\addlinespace
+Q6 & 2 / 2 & Goodput counts successful requests within their deadline and excludes late requests.. PDF p11; printed p452; section6.1\\\addlinespace
+Q7 & 2 / 2 & SLO range, closed-loop load, latency CDF and batch scheduling explanation are explicit.. PDF pp10-11; Figure5; section6.1\\\addlinespace
+Q8 & 2 / 2 & Concurrent model demand and a protected minor workload tested.. PDF pp10-12; sections6.1-6.3; Figures5-7\\\addlinespace
+Q9 & 2 / 2 & Performance-isolation boundary is measured; dedicated-worker assumptions and security exclusions are explicit.. PDF pp11-12,14-15; sections6.2,7\\\addlinespace
+Q10 & 2 / 2 & Runtime, scheduling, model details and limitations support informed implementation appraisal; no local reproduction claimed.. PDF pp7-10,14-15; sections5,7\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S010 / P010 Colocating ML Inference and Training with Fast GPU Memory Handover (SIRIUS)}
@@ -664,16 +664,16 @@ Evidence location & Section6.1 Fig10; section6.6\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & Inference/training colocation objective and scope explicit.. p1657 section1\\\addlinespace
-Q2 & 2 / 2 & VMM pool, memory handover and SM-mask control described.. pp1660-1665 sections3-5\\\addlinespace
-Q3 & 1 / 2 & Trace distributions and300s windows described; repeated-run uncertainty not established in checked evaluation.. pp1665-1666 section6\\\addlinespace
-Q4 & 2 / 2 & GPU, CPU/RAM, software and model sizes specified.. p1665 testbed; p1666 Table3\\\addlinespace
-Q5 & 1 / 2 & TaskSwitch is an adapted implementation; baseline choices explicit but implementation equivalence remains limited.. p1665 comparing targets\\\addlinespace
-Q6 & 2 / 2 & Training samples/s is defined; inference latency/SLO are kept distinct.. p1666 metrics/Figure10\\\addlinespace
-Q7 & 2 / 2 & P99, request arrivals, window and SLO definition supplied.. p1666 section6.1/Figure10\\\addlinespace
-Q8 & 2 / 2 & Co-located inference/training traces tested on one GPU.. p1666 section6.1/Figure10\\\addlinespace
-Q9 & 1 / 2 & Memory-reclamation boundary described; stronger fault/security validation not established.. pp1661-1665 sections4-5\\\addlinespace
-Q10 & 2 / 2 & Detailed implementation and evaluated artifact supplied; scope limitations discussed.. p1665 section5; p1669 section7; artifact appendix\\\addlinespace
+Q1 & 2 / 2 & Inference-priority co-location objective and training progress goal explicit.. PDF p2; printed p1657; abstract/introduction\\\addlinespace
+Q2 & 2 / 2 & VMM pool, handover, memory mapping and SM allocation described.. PDF pp5-10; sections3-5\\\addlinespace
+Q3 & 1 / 2 & Trace distributions and 300-second window specified; repeated-run uncertainty not specified for Figure10.. PDF pp10-11; section6; Figure10\\\addlinespace
+Q4 & 2 / 2 & V100/A100 cases, CPU/RAM, software versions and model/batch table supplied.. PDF pp10-11,14; Table3; sections6,6.6\\\addlinespace
+Q5 & 1 / 2 & TaskSwitch is an adapted implementation; equivalence to unmodified PipeSwitch is not established.. PDF p10; comparing targets\\\addlinespace
+Q6 & 2 / 2 & Training samples/second and inference SLO compliance are defined separately.. PDF p11; metrics; Figure10\\\addlinespace
+Q7 & 2 / 2 & P99, arrivals, duration and four-times-solo SLO definition stated.. PDF p11; section6.1\\\addlinespace
+Q8 & 2 / 2 & Inference plus Swin-T training co-location evaluated on a single GPU.. PDF p11; Figure10\\\addlinespace
+Q9 & 1 / 2 & Handover correctness and priority boundary described; direct fault-injection validation not established.. PDF pp6-10; sections4-5\\\addlinespace
+Q10 & 2 / 2 & Artifact appendix reports availability, functionality and reproduction badges with artifact DOI.. PDF p20; artifact appendix; \nolinkurl{DOI10.5281/zenodo.15581800}\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S011 / P011 ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments}
@@ -703,16 +703,16 @@ Evidence location & PDF p8 onward; sectionIV; TableIV; Figs5/7\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & Clear inference resource-sharing objective.. PDF pp1-2 introduction\\\addlinespace
-Q2 & 2 / 2 & MIG/MPS segments and algorithms explained.. PDF pp4-7 sectionIII\\\addlinespace
-Q3 & 1 / 2 & Profiling procedure and fleet scenarios described; repetition/uncertainty reporting unclear.. PDF pp5,8 sectionIV\\\addlinespace
-Q4 & 1 / 2 & Hardware/workload described; runtime version1.14.0 is printed but needs verification.. PDF p8 sectionIV-A\\\addlinespace
-Q5 & 1 / 2 & Local process comparison interpretable; fleet baselines adapted and no final-version equivalence established.. PDF pp5,8\\\addlinespace
-Q6 & 2 / 2 & Throughput axes specify requests/s and exact local values are given.. PDF pp4-5 Figure3\\\addlinespace
-Q7 & 1 / 2 & Latency milliseconds and settings stated; profiler quantile unclear.. PDF pp4-5 Figure4\\\addlinespace
-Q8 & 2 / 2 & Concurrent MPS process counts evaluated inside one MIG segment.. PDF pp4-5 Figures3-4\\\addlinespace
-Q9 & 1 / 2 & MIG boundary described; no direct security/fault validation established.. PDF pp2-4 background/design\\\addlinespace
-Q10 & 1 / 2 & Algorithms/settings detailed; accessed version remains preprint and replication verification incomplete.. PDF pp5-10\\\addlinespace
+Q1 & 2 / 2 & SLO-constrained inference resource objective explicit.. arXiv v1 PDF pp1-2\\\addlinespace
+Q2 & 2 / 2 & MIG/MPS profiling, segment configuration and allocation algorithms described.. arXiv v1 PDF pp4-8; sectionIII\\\addlinespace
+Q3 & 1 / 2 & Profiler and six scenarios specified; repeated-run uncertainty not established.. arXiv v1 PDF pp5,8-10; sectionsIII-C,IV\\\addlinespace
+Q4 & 1 / 2 & A100, Ubuntu and CUDA reported; printed PyTorch1.14.0 string is an unresolved environment ambiguity.. arXiv v1 PDF p8; sectionIV-A\\\addlinespace
+Q5 & 1 / 2 & Local process-count contrast interpretable; fleet baseline variants and manuscript scope constrain comparison.. arXiv v1 PDF pp5,8; sectionsIII-B,IV-A\\\addlinespace
+Q6 & 2 / 2 & Local throughput values and metric units given.. arXiv v1 PDF pp4-5; Figure3; sectionIII-B\\\addlinespace
+Q7 & 1 / 2 & Local latency values given without a named tail quantile.. arXiv v1 PDF pp4-5; Figure4; sectionIII-B\\\addlinespace
+Q8 & 2 / 2 & One-to-three MPS processes measured inside a MIG segment.. arXiv v1 PDF pp4-5; Figures3-4\\\addlinespace
+Q9 & 1 / 2 & MIG/MPS boundary described; no dedicated fault or adversarial experiment established in reviewed manuscript.. arXiv v1 PDF pp2-4,8-10\\\addlinespace
+Q10 & 1 / 2 & Algorithms and reconfiguration limitation described; accessed manuscript has no verified final-version equivalence.. arXiv v1 PDF pp5-10; sectionIII-F; source/version record\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S012 / P012 Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference}
@@ -731,8 +731,8 @@ Load and SLO & 10-80 \nolinkurl{requests/minute/function;} global defaultP98; CV
 Comparator & Native; remote GPU; PCIe/NVLink swap\\\addlinespace
 Finding & BERT Table4: native42ms, remote43ms, PCIe swap144ms, NVLink swap45ms.\\\addlinespace
 Performance isolation & P98 response-time/SLO results evaluated under low-frequency serverless inference, with CV 80 ms and BERT-QA 200 ms deadlines; remoting and swapping conditions remain separate.\\\addlinespace
-Security boundary & Not assessed for adversarial security in the retained source evidence; performance-sharing results do not establish memory/security isolation.\\\addlinespace
-Fault boundary & Not assessed for cross-tenant fault containment in the retained source evidence; scheduling/performance results do not establish it.\\\addlinespace
+Security boundary & Section4.5 describes shared and isolated GPU runtimes; section7 evaluates runtime sharing, while section8 deployment uses isolation mode. No universal adversarial-security guarantee inferred.\\\addlinespace
+Fault boundary & Section4.5 describes restart, migration and persisted-state recovery. Direct fault-injection validation is not established by the retained performance results.\\\addlinespace
 Overhead & API redirection, swapping and extra CPU activity evaluated; ResNet152 remoting17ms versus Native25ms, Table4\\\addlinespace
 Limitations & p98 tail; busy time is not SM occupancy; node scaling separate.\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc25-yu.pdf}\\\addlinespace
@@ -742,16 +742,16 @@ Evidence location & PDF pp10-11; Table4; sections7.2-7.3\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & Inference memory/density objective explicit.. p597 section1\\\addlinespace
-Q2 & 2 / 2 & API redirection, pooling and scheduling described.. pp600-604 sections4-6\\\addlinespace
-Q3 & 1 / 2 & Production trace and request rates given; repeated-run uncertainty not established.. pp604-606 section7\\\addlinespace
-Q4 & 1 / 2 & GPU/CPU/RAM supplied; exact software version matrix missing in checked setup.. p604 settings\\\addlinespace
-Q5 & 1 / 2 & Native and adapted INFless-KA comparison described; resource/CPU paths differ.. pp605-606 sections7.1-7.3\\\addlinespace
-Q6 & 2 / 2 & Throughput/load definitions and local normalization supplied.. pp605-606 Figure8\\\addlinespace
-Q7 & 2 / 2 & P98 and per-function load/SLO explicit.. pp605-606 metrics/Figure8\\\addlinespace
-Q8 & 2 / 2 & Multiple functions share a single GPU in Figure8.. pp605-606 Figure8\\\addlinespace
-Q9 & 1 / 2 & Sharing/isolation modes separated; strong security/fault tests not established for evaluated mode.. sections4,7-8\\\addlinespace
-Q10 & 1 / 2 & Implementation detail and limitations supplied; independent artifact reproduction unperformed.. sections6-8\\\addlinespace
+Q1 & 2 / 2 & Low-frequency serverless inference density and latency objectives explicit.. PDF p2; printed p597; section1\\\addlinespace
+Q2 & 2 / 2 & Remoting, swapping, memory manager, scheduler and two runtime modes described.. PDF pp5-9; sections4-6\\\addlinespace
+Q3 & 1 / 2 & Trace, rates and warm-up specified; repeated-run uncertainty not specified for retained Figure8.. PDF pp9-11; section7\\\addlinespace
+Q4 & 1 / 2 & Worker and model configuration supplied; exact OS/driver/framework version matrix not specified in setup.. PDF p9; printed p604; settings\\\addlinespace
+Q5 & 1 / 2 & Native and adapted INFless-KA baselines described; CPU execution paths and adaptations affect equality.. PDF pp10-11; sections7.1-7.3\\\addlinespace
+Q6 & 2 / 2 & Normalized single-GPU throughput and GPU busy-time definition supplied.. PDF pp10-11; metrics; Figure8\\\addlinespace
+Q7 & 2 / 2 & Default P98, per-function rates and deadlines stated.. PDF pp10-11; metrics; section7.2\\\addlinespace
+Q8 & 2 / 2 & Many low-frequency functions share one GPU; node-level results identified separately.. PDF pp10-11; Figure8; section7.2\\\addlinespace
+Q9 & 1 / 2 & Runtime-sharing and runtime-isolation modes plus recovery design stated; dedicated fault-injection evaluation not established.. PDF p7; section4.5; PDF p9 evaluation mode\\\addlinespace
+Q10 & 1 / 2 & Implementation and mode trade-offs explained; complete public replication recipe not established in paper.. PDF pp7-9,13; sections4.5,6,8\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S013 / P013 StreamBox: A Lightweight GPU SandBox for Serverless Inference Workflow}
@@ -781,16 +781,16 @@ Evidence location & PDF p10 onward; section9; Table2\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & Workflow-local runtime sharing objective explicit.. p59 section1\\\addlinespace
-Q2 & 2 / 2 & Streams,PTB compiler and memory management explained.. pp62-67 sections3-8\\\addlinespace
-Q3 & 1 / 2 & Production-style traces and ablations provided; repeated-run uncertainty unclear.. pp67-70 section9\\\addlinespace
-Q4 & 1 / 2 & Hardware/frameworks named; OS/driver and version compatibility need checking.. p67 setup\\\addlinespace
-Q5 & 1 / 2 & Common optimizations enabled, but baselines adapted and batch choices affect ratios.. p67 Table2/comparing targets\\\addlinespace
-Q6 & 2 / 2 & Memory and throughput units/ratios defined.. p68 Figures12-13\\\addlinespace
-Q7 & 1 / 2 & CDF/SLO reported; no precise tail scalar extracted.. p68 Figure14\\\addlinespace
-Q8 & 2 / 2 & Explicit3/6-user single-GPU test.. p70 Figure19\\\addlinespace
-Q9 & 1 / 2 & Same-runtime sharing weakens function isolation; security boundary is deliberately scoped.. pp62-63; p70 related-work boundary\\\addlinespace
-Q10 & 2 / 2 & Detailed implementation, preparation overhead and multi-user limits supplied.. p70 sections9.3-9.4\\\addlinespace
+Q1 & 2 / 2 & Workflow runtime-redundancy and spatial-sharing objective explicit.. PDF p2; printed p59; section1\\\addlinespace
+Q2 & 2 / 2 & API proxy, PTB transformation, stream sharing and memory pool described.. PDF pp5-10; sections3-8\\\addlinespace
+Q3 & 1 / 2 & Trace types, ablations and workloads stated; repeated-run uncertainty not specified for Figure13.. PDF pp10-13; section9\\\addlinespace
+Q4 & 2 / 2 & V100 hardware, CPU/RAM, framework versions, CUDA version and workflow descriptions reported.. PDF p10; printed p67; setup; Table2\\\addlinespace
+Q5 & 1 / 2 & Warm-up and common optimizations disclosed; adapted baselines and batch/concurrency choices constrain causal attribution.. PDF pp10-11; comparing targets; Figure13\\\addlinespace
+Q6 & 2 / 2 & Throughput, memory metrics and comparator-specific factors explicitly reported.. PDF p11; printed p68; Figures12-13\\\addlinespace
+Q7 & 1 / 2 & Traffic SLO and CDF supplied; exact scalar request-tail quantile not supplied for retained throughput result.. PDF p11; Figure14\\\addlinespace
+Q8 & 2 / 2 & Separate three- and six-user single-GPU tests supplied.. PDF p13; section9.4; Figure19\\\addlinespace
+Q9 & 2 / 2 & Mutual trust within workflow is explicit; separate proxies for users are distinguished from untested strong security.. PDF pp5-6,13; sections3-4,9.4,10\\\addlinespace
+Q10 & 2 / 2 & Implementation, preparation costs and multi-user limitations sufficiently detailed for informed appraisal.. PDF pp6-10,13; sections4-9\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S014 / P014 Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception (KRYPTON)}
@@ -805,7 +805,7 @@ Hardware and environment & A10040GB/RTX4090; Ubuntu20.04; kernel5.15.0-91; drive
 Runtime & \nolinkurl{NVIDIA550.90.07;Docker24.0.7;CUDA12.1;Vulkan1.3;PyTorch2.2.1}\\\addlinespace
 Workload & \nolinkurl{Inference/training/rendering} in separate containers; solo-throughput targets\\\addlinespace
 Tenants & inference with co-running applications; separate training/rendering results not substituted\\\addlinespace
-Load and SLO & QoS:Poisson arrivals at half maximum throughput;50\%temporal \nolinkurl{allocation;5/10/20/40/80ms} tokens; target original soloP99\\\addlinespace
+Load and SLO & QoS: initial Poisson rate is half solo maximum; shared setting halves the input again and assigns50\%time; tokens5/10/20/40/80ms; target original soloP99.\\\addlinespace
 Comparator & Temporal; MIG; adapted gpulet\\\addlinespace
 Finding & Inference-specific sharing comparisons; section2.2 tests fault propagation.\\\addlinespace
 Performance isolation & Inference QoS uses solo-p99 targets under Poisson load at half maximum throughput; temporal allocation/token settings and adapted baselines are retained.\\\addlinespace
@@ -820,16 +820,16 @@ Evidence location & PDF p10 Tables1-2; section5; section2.2 Fig3\\\addlinespace
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{QA} & \textbf{Score / maximum} & \textbf{Rationale and anchor}\\\midrule\endhead
-Q1 & 2 / 2 & \nolinkurl{Sharing/isolation/compatibility} objectives explicit.. p1003 section1\\\addlinespace
-Q2 & 2 / 2 & Kernel interception,token control and MIG orchestration described.. pp1006-1011 sections3-4\\\addlinespace
-Q3 & 1 / 2 & Setup and workload matrix supplied; repeated-run uncertainty unclear.. p1011 section5.1\\\addlinespace
-Q4 & 2 / 2 & \nolinkurl{Hardware,OS,kernel,driver} and frameworks specified.. p1011 Tables1-2\\\addlinespace
-Q5 & 1 / 2 & Isolation-capable baselines and adapters disclosed; equivalence limited.. pp1011-1012 comparing targets\\\addlinespace
-Q6 & 2 / 2 & Quota/throughput metrics explicitly normalized.. pp1013-1014 sections5.4-5.6\\\addlinespace
-Q7 & 2 / 2 & QoS uses originalP99 and defined Poisson load/token lengths.. p1014 Figure17/section5.5\\\addlinespace
-Q8 & 2 / 2 & Local co-running inference error measured.. p1014 section5.6\\\addlinespace
-Q9 & 1 / 2 & Boundary/security rationale described; direct fault/security validation not established in checked evaluation.. p1015 section7\\\addlinespace
-Q10 & 1 / 2 & Implementation andMIGlimitations supplied; independent artifact reproduction unperformed.. pp1011,1015 sections4,7\\\addlinespace
+Q1 & 2 / 2 & Compatibility, isolation and performance-control objectives explicit.. PDF p2; printed p1003; section1\\\addlinespace
+Q2 & 2 / 2 & Kernel interception, token control and MIG orchestration explained.. PDF pp5-10; sections3-4\\\addlinespace
+Q3 & 1 / 2 & Setup and workloads detailed; repeated-run uncertainty not specified for retained QoS result.. PDF pp10-13; section5\\\addlinespace
+Q4 & 2 / 2 & OS, kernel, driver, runtimes, GPUs and workloads explicitly tabulated.. PDF p10; printed p1011; Tables1-2\\\addlinespace
+Q5 & 1 / 2 & Isolation-capable baselines and MIG adaptations described; policy and allocation differences limit equivalence.. PDF pp10-11; section5.1\\\addlinespace
+Q6 & 2 / 2 & Throughput targets are solo-normalized and QoS violation is a request fraction.. PDF pp10,12-13; sections5.1,5.4-5.6\\\addlinespace
+Q7 & 2 / 2 & Solo-P99 threshold, Poisson load, subsequent rate halving and token sizes stated.. PDF pp12-13; section5.5; Figure17\\\addlinespace
+Q8 & 2 / 2 & Co-running inference relative-error and QoS experiments supplied.. PDF p13; sections5.5-5.6\\\addlinespace
+Q9 & 1 / 2 & Baseline fault propagation is tested; design/security argument does not directly establish universal KRYPTON containment.. PDF p4 Figure3; PDF p14 section7\\\addlinespace
+Q10 & 1 / 2 & Implementation and MIG limitation detailed; complete end-to-end replication package not established.. PDF pp10,14; sections4,7\\\addlinespace
 \bottomrule\end{longtable}
 
 \clearpage\subsection{S015 / P015 XSched: Preemptive Scheduling for Diverse XPUs}
@@ -1531,8 +1531,8 @@ Baseline & Default MPS GUE38.82\\\addlinespace
 Hardware & One V10016GB\\\addlinespace
 Workload & Alexnet+ResNet50;25ms target\\\addlinespace
 Interpretation & Not percent GPU utilization\\\addlinespace
-Evidence location & printed p500 Table3; PDF p9\\\addlinespace
-Source & \nolinkurl{https://par.nsf.gov/servlets/purl/10299299}\\\addlinespace
+Evidence location & GSLICE PDF p9; printed p500; Table3\\\addlinespace
+Source & \nolinkurl{https://www.cse.iitb.ac.in/\textasciitilde{}puru/courses/spring2024-25/downloads/gslice.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
 \subsection*{E032 / P008 Signed latency improvement}
@@ -1546,8 +1546,8 @@ Baseline & TensorRT server19.02\\\addlinespace
 Hardware & One V10016GB\\\addlinespace
 Workload & \nolinkurl{ResNet50;batch1;GPU-ready} batch execution\\\addlinespace
 Interpretation & Negative means worse latency; excludes transport overhead; single-model comparison\\\addlinespace
-Evidence location & printed p501 Table4; PDF p10\\\addlinespace
-Source & \nolinkurl{https://par.nsf.gov/servlets/purl/10299299}\\\addlinespace
+Evidence location & GSLICE PDF p10; printed p501; Table4 and section4.3\\\addlinespace
+Source & \nolinkurl{https://www.cse.iitb.ac.in/\textasciitilde{}puru/courses/spring2024-25/downloads/gslice.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
 \subsection*{E033 / P009 Clockwork goodput}
@@ -1561,7 +1561,7 @@ Baseline & INFaaS on nonidentical EC2 setup\\\addlinespace
 Hardware & One V10032GB in section6.1\\\addlinespace
 Workload & 15 ResNet50 instances;16 clients/model;500ms SLO\\\addlinespace
 Interpretation & Within-SLO successes; comparator qualitative; not total throughput\\\addlinespace
-Evidence location & printed p452 section6.1/Fig5; author PDF p10\\\addlinespace
+Evidence location & USENIX PDF pp10-11; printed pp451-452; Figure5 and section6.1\\\addlinespace
 Source & \nolinkurl{https://people.mpi-sws.org/\textasciitilde{}antoinek/documents/20osdi_clockwork.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1576,7 +1576,7 @@ Baseline & No comparative ratio\\\addlinespace
 Hardware & One V10032GB in section6.1\\\addlinespace
 Workload & 15 ResNet50 instances;16 clients/model;500ms SLO\\\addlinespace
 Interpretation & Batch16 scheduling explanation; not a p99 value\\\addlinespace
-Evidence location & printed p452 section6.1/Fig5; author PDF p10\\\addlinespace
+Evidence location & USENIX PDF pp10-11; printed pp451-452; Figure5 and section6.1\\\addlinespace
 Source & \nolinkurl{https://people.mpi-sws.org/\textasciitilde{}antoinek/documents/20osdi_clockwork.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1591,7 +1591,7 @@ Baseline & TaskSwitch (authors' adapted temporal-switch baseline)\\\addlinespace
 Hardware & single NVIDIA Tesla V100 16GB in section6.1; four-V100 host; separate section6.6 single A100 80GB LLM experiment\\\addlinespace
 Workload & section6.1 single-V100 DNN inference+Swin-T; \nolinkurl{Light/Heavy/Burst/Skewed/MAF} traces;300s\\\addlinespace
 Interpretation & Author-reported average across tested workloads; not a uniform per-model speedup, and not a comparison to unmodified PipeSwitch.\\\addlinespace
-Evidence location & printed p1666, section6.1/Figure10 discussion; PDF p11\\\addlinespace
+Evidence location & USENIX PDF p11; printed p1666; Figure10 discussion\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc25-wang-jiali.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1606,7 +1606,7 @@ Baseline & same configuration with1 process (354requests/s)\\\addlinespace
 Hardware & A10080GB; Amazon p4de.24xlarge hosts with8 GPUs; extracted profiler point concerns one MIG segment\\\addlinespace
 Workload & InceptionV3,1-GPC MIG instance,batch4;3 MPS processes\\\addlinespace
 Interpretation & One local configuration, not fleet savings. Source is arXivv1; final published version not verified.\\\addlinespace
-Evidence location & author preprint PDF p5, sectionIII-B prose; Figure3 p4\\\addlinespace
+Evidence location & arXiv v1 PDF p5; sectionIII-B; Figures3-4 on p4\\\addlinespace
 Source & \nolinkurl{https://arxiv.org/pdf/2409.14447}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1621,7 +1621,7 @@ Baseline & same configuration with1 process (11ms)\\\addlinespace
 Hardware & A10080GB; Amazon p4de.24xlarge hosts with8 GPUs; extracted profiler point concerns one MIG segment\\\addlinespace
 Workload & InceptionV3,1-GPC MIG instance,batch4;3 MPS processes\\\addlinespace
 Interpretation & Quantile/arrival model not established for this profiler point; do not label p99. Value is specific to the accessed author manuscript.\\\addlinespace
-Evidence location & author preprint PDF p5, sectionIII-B prose; Figure4 p4\\\addlinespace
+Evidence location & arXiv v1 PDF p5; sectionIII-B; Figures3-4 on p4\\\addlinespace
 Source & \nolinkurl{https://arxiv.org/pdf/2409.14447}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1636,7 +1636,7 @@ Baseline & Native early binding at same offered function rate\\\addlinespace
 Hardware & single V10032GB in local Figure8; evaluation worker has4 V10032GB GPUs\\\addlinespace
 Workload & multiple ResNet152 functions on one \nolinkurl{V10032GB;10requests/minute/function}\\\addlinespace
 Interpretation & Lower bound reported by authors, not an exact10x; function count varies to saturate memory. No fleet cost claim.\\\addlinespace
-Evidence location & p606 section7.2; Figure8 p605; PDF pp10-11\\\addlinespace
+Evidence location & USENIX PDF pp10-11; printed pp605-606; Figure8 and section7.2\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc25-yu.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1651,7 +1651,7 @@ Baseline & Native under matched request-rate setting\\\addlinespace
 Hardware & single V10032GB in local Figure8; evaluation worker has4 V10032GB GPUs\\\addlinespace
 Workload & same single-GPU low-rate ResNet152 \nolinkurl{test,10-80requests/minute/function}\\\addlinespace
 Interpretation & Bound from text, not a digitized point; default98th percentile from section7 metrics. Applies to this workload.\\\addlinespace
-Evidence location & p606 section7.2; Figure8 p605; PDF pp10-11\\\addlinespace
+Evidence location & USENIX PDF pp10-11; printed pp605-606; default P98 metrics and section7.2\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc25-yu.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1666,7 +1666,7 @@ Baseline & INFless with documented warm-up/pipelined loading/model sharing\\\add
 Hardware & V10016GB,80CUs; host has4 GPUs; single-GPU multi-user test in section9.4\\\addlinespace
 Workload & three workflow \nolinkurl{types,PyTorch/TensorFlow,Azure-derived} invocation patterns; evaluated V100 setup\\\addlinespace
 Interpretation & Aggregate within-paper result across tested workflows; not universal or a matched cross-paper speedup. Batch/concurrency optimizations contribute.\\\addlinespace
-Evidence location & p68 section9.1/Figure13; PDF p11\\\addlinespace
+Evidence location & USENIX PDF p11; printed p68; section9.1; Figure13\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc24-wu-hao.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1681,7 +1681,7 @@ Baseline & direct API path; instrumentation overhead measurement\\\addlinespace
 Hardware & V10016GB,80CUs; host has4 GPUs; single-GPU multi-user test in section9.4\\\addlinespace
 Workload & GPU API forwarding with48concurrent functions on one GPU\\\addlinespace
 Interpretation & Per-API overhead, not end-to-end inference latency; many APIs asynchronous.\\\addlinespace
-Evidence location & p70 section9.3/Figure18; PDF p13\\\addlinespace
+Evidence location & USENIX PDF p13; printed p70; section9.3; Figure18\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc24-wu-hao.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1694,9 +1694,9 @@ Value & 1.23\\\addlinespace
 Units & percent of requests\\\addlinespace
 Baseline & original soloP99 threshold (1\%baseline violations by definition)\\\addlinespace
 Hardware & A10040GB for local quota/QoS tests; twoRTX4090 used for separate distributed-training test\\\addlinespace
-Workload & Transformer-XL \nolinkurl{inference,batch8/16/32;50%GPUtime;Poisson} arrivals;tokens5-80ms\\\addlinespace
+Workload & Transformer-XL inference; batch8/16/32. Original rate is half solo maximum; shared test halves that rate again and assigns 50\% time; tokens5-80ms.\\\addlinespace
 Interpretation & Average across tested configurations; no claim that worst-case violation is1.23\%. Threshold-relative metric, not latency in milliseconds.\\\addlinespace
-Evidence location & p1014 section5.5/Figure17; PDF p13\\\addlinespace
+Evidence location & USENIX PDF pp12-13; printed pp1013-1014; section5.5; Figure17\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc25-zhang-shulai.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 
@@ -1711,7 +1711,7 @@ Baseline & no module; additional host memory cost\\\addlinespace
 Hardware & A10040GB for local quota/QoS tests; twoRTX4090 used for separate distributed-training test\\\addlinespace
 Workload & kernel-space GPU sharing module on evaluated Linux host\\\addlinespace
 Interpretation & Host memory, not GPU VRAM; separate monitoring thread also required.\\\addlinespace
-Evidence location & p1014 section5.7; PDF p13\\\addlinespace
+Evidence location & USENIX PDF p13; printed p1014; section5.7\\\addlinespace
 Source & \nolinkurl{https://www.usenix.org/system/files/atc25-zhang-shulai.pdf}\\\addlinespace
 \bottomrule\end{longtable}
 

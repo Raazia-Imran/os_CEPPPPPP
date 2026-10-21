@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,re
-root=Path(__file__).resolve().parents[1]; out=root/'report';d=json.loads((root/'logs/baseline_data.json').read_text());a=json.loads((root/'logs/analysis.json').read_text())
+root=Path(__file__).resolve().parents[1]; out=root/'report';d=json.loads((root/('logs/reviewed_data.json' if (root/'logs/reviewed_data.json').exists() else 'logs/baseline_data.json')).read_text());a=json.loads((root/'logs/analysis.json').read_text())
 def esc(v):
  s=str(v or '').replace('≥','>=').replace('≤','<=').replace('×','x').replace('–','-').replace('—','-').replace('’',"'").replace('“','"').replace('”','"')
  escaped = ''.join({'&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}','\\':r'\textbackslash{}'}.get(x,x) for x in s)
@@ -29,11 +29,15 @@ for i,r in enumerate(d['Studies'][1:]):
  title=full.get(r[1],r[2]);bib.append('@misc{'+r[1]+',\n author={'+authors[i].replace(', and ',' and ').replace(', ',' and ').replace(' et al.',' and others')+'},\n title={{'+title+'}},\n year={'+str(r[3])+'},\n howpublished={'+r[4]+'},\n note={Report '+r[1]+', study '+r[0]+'. Source: \\url{'+r[9]+'}}\n}')
 bib.append('@article{P023,author={Mingcong Han and Rong Chen and Weihang Shen and Hanze Zhang and Jinrong Yang and Haibo Chen},title={Real-time, Work-conserving GPU Scheduling for Concurrent DNN Inference},journal={ACM Transactions on Computer Systems},volume={44},number={1},year={2025},note={Article 1, pp. 1--42. Online publication 2025; issue indexed 2026. Companion of P005},doi={10.1145/3768622}}')
 bib+=['@article{prisma,author={Matthew J. Page and others},title={The PRISMA 2020 statement: An updated guideline for reporting systematic reviews},journal={BMJ},volume={372},pages={n71},year={2021},doi={10.1136/bmj.n71}}','@article{prismas,author={Melissa L. Rethlefsen and others},title={PRISMA-S: An extension to the PRISMA statement for reporting literature searches in systematic reviews},journal={Systematic Reviews},volume={10},pages={39},year={2021},doi={10.1186/s13643-020-01542-z}}','@techreport{kitchenham,author={Barbara Kitchenham and Stuart Charters},title={Guidelines for performing systematic literature reviews in software engineering},institution={Keele University and University of Durham},number={EBSE-2007-01},year={2007},note={Version 2.3}}','@article{benchmark,author={Cheol-Ho Hong and Ivor Spence and Dimitrios S. Nikolopoulos},title={GPU Virtualization and Scheduling Methods: A Comprehensive Survey},journal={ACM Computing Surveys},volume={50},number={3},year={2017},note={Article 35},doi={10.1145/3068281}}']
+overrides_path=root/'raazia/bibliography_overrides.json'
+if overrides_path.exists():
+ overrides=json.loads(overrides_path.read_text())
+ bib=[overrides.get(re.search(r'@\w+\{([^,]+)',entry).group(1),entry) for entry in bib]
 (out/'references.bib').write_text('\n\n'.join(bib))
 append=[r'\appendix\section{Exact search register}\label{app:search}','The following entries are preserved from the supplied workbook. Date precision, provenance and count discrepancies remain as recorded.']
 for r in d['Search Log'][1:]:
  append += [r'\subsection{'+esc(r[0])+'}',table(['Field','Recorded value'],list(zip(d['Search Log'][0][1:],r[1:])),[.25,.65])]
-append += [r'\section{Complete study appraisal and extraction cards}', 'These cards preserve the 20 supplied study forms. They are an audit appendix; the main text is organized by mechanism and RQ. Scores are not a claim of independent verification.']
+append += [r'\section{Complete study appraisal and extraction cards}', 'These cards use the supplied study forms with the documented AI source-review overlay for S008--S014. Original forms remain in the frozen baseline. They are an audit appendix; the main text is organized by mechanism and RQ. Scores are not a claim of independent verification.']
 for r in d['Extraction'][1:]:
  append += [r'\clearpage\subsection{'+esc(r[0]+' / '+r[1]+' '+r[2])+'}',r'\cite{'+r[1]+'}',table(['Field','Extracted content'],list(zip(d['Extraction'][0][3:18],r[3:18])),[.23,.67])]
  qr=[x for x in d['QA'][1:] if x[0]==r[1]]

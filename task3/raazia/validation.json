@@ -1,0 +1,1597 @@
+{
+  "scope": "Technical validation; source appraisal attribution in review records",
+  "sources": 7,
+  "qa_items": 70,
+  "outcomes": 13,
+  "eligibility_items": 42,
+  "original_qa_sum": 110,
+  "reviewed_qa_sum": 114,
+  "master_tabs": 31,
+  "personal_tabs": 7,
+  "changed_original_cells": [
+    [
+      "Studies",
+      "G10",
+      "16",
+      "18"
+    ],
+    [
+      "Studies",
+      "I10",
+      "0.8",
+      "0.9"
+    ],
+    [
+      "Studies",
+      "G14",
+      "15",
+      "17"
+    ],
+    [
+      "Studies",
+      "I14",
+      "0.75",
+      "0.85"
+    ],
+    [
+      "QA",
+      "E72",
+      "Explicit goal",
+      "Inference sharing objective explicit."
+    ],
+    [
+      "QA",
+      "F72",
+      "p492 introduction",
+      "PDF p1; printed p492; abstract/introduction"
+    ],
+    [
+      "QA",
+      "G72",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E73",
+      "Sharing described",
+      "MPS allocation and adaptive batching described."
+    ],
+    [
+      "QA",
+      "F73",
+      "pp495-499 section3",
+      "PDF pp4-8; section3"
+    ],
+    [
+      "QA",
+      "G73",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E74",
+      "Confidence intervals; counts unclear",
+      "Confidence intervals shown; repeated-run count not specified for retained results."
+    ],
+    [
+      "QA",
+      "F74",
+      "p500 error bars;section4",
+      "PDF p9; printed p500; section4.1"
+    ],
+    [
+      "QA",
+      "G74",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E75",
+      "Hardware and OS",
+      "V100 testbed, kernel, frameworks and concurrent models specified."
+    ],
+    [
+      "QA",
+      "F75",
+      "pp499-500 testbed",
+      "PDF pp8-9; section4 setup"
+    ],
+    [
+      "QA",
+      "G75",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E76",
+      "Comparator scope stated",
+      "TensorRT comparison matches GPU-ready batch execution and states excluded transport costs."
+    ],
+    [
+      "QA",
+      "F76",
+      "p501 section4.3",
+      "PDF p10; printed p501; section4.3"
+    ],
+    [
+      "QA",
+      "G76",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E77",
+      "GUE defined",
+      "GUE defined as an efficacy metric; table values are not busy percentages."
+    ],
+    [
+      "QA",
+      "F77",
+      "p494 GUE definition;p500 Table3",
+      "PDF p3; printed p494; PDF p9 Table3"
+    ],
+    [
+      "QA",
+      "G77",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E78",
+      "Tail statistic unclear",
+      "Median latency and SLO shown; request-tail quantile not established."
+    ],
+    [
+      "QA",
+      "F78",
+      "pp500-501 latency plots",
+      "PDF p10; section4.4; Figures12a-12b"
+    ],
+    [
+      "QA",
+      "G78",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E79",
+      "Concurrent functions",
+      "Two-to-four-function combinations evaluated."
+    ],
+    [
+      "QA",
+      "F79",
+      "p500 section4.2",
+      "PDF p9; section4.2; Figure10"
+    ],
+    [
+      "QA",
+      "G79",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E80",
+      "Fixed quotas and performance-isolation tests; no stronger security claim inferred",
+      "Performance boundary evaluated under allocated GPU shares; no adversarial guarantee inferred."
+    ],
+    [
+      "QA",
+      "F80",
+      "pp496-498 resource controls;p502 performance isolation",
+      "PDF pp5-7,10-11; sections3.2,4.5"
+    ],
+    [
+      "QA",
+      "G80",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E81",
+      "Reproduction incomplete",
+      "Implementation and sensitivity described; full reproduction package not established in accessed copy"
+    ],
+    [
+      "QA",
+      "F81",
+      "pp499-504 implementation/evaluation/limits",
+      "PDF pp8-13; sections4-6"
+    ],
+    [
+      "QA",
+      "G81",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "QA",
+      "E82",
+      "Explicit goal",
+      "Predictable multi-model inference objective and target behavior explicit."
+    ],
+    [
+      "QA",
+      "F82",
+      "p443 introduction",
+      "PDF p2; printed p443; section1"
+    ],
+    [
+      "QA",
+      "E83",
+      "Scheduling described",
+      "Controller scheduling, worker actions and managed model runtime described."
+    ],
+    [
+      "QA",
+      "F83",
+      "pp448-451 sections4-5",
+      "PDF pp6-10; sections4-5"
+    ],
+    [
+      "QA",
+      "E84",
+      "Repetition count unclear",
+      "Section6.6 reports three scaling repetitions; repeated-run count for retained Figure5 is not specifi"
+    ],
+    [
+      "QA",
+      "F84",
+      "p451 section6 setup",
+      "PDF pp10-11,14; sections6.1,6.6"
+    ],
+    [
+      "QA",
+      "C85",
+      "1",
+      "2"
+    ],
+    [
+      "QA",
+      "E85",
+      "Versions not established in the checked source evidence",
+      "V100 hardware, TVM v0.7 compiler, model set and client configuration are reported."
+    ],
+    [
+      "QA",
+      "F85",
+      "p451 section6 setup",
+      "PDF pp4,7,10; Table1; sections2,6"
+    ],
+    [
+      "QA",
+      "E86",
+      "Hardware mismatch disclosed",
+      "INFaaS uses different EC2 machines; authors restrict that contrast to qualitative interpretation."
+    ],
+    [
+      "QA",
+      "F86",
+      "p451 section6.1 mismatch",
+      "PDF p10; printed p451; section6.1"
+    ],
+    [
+      "QA",
+      "E87",
+      "Goodput defined",
+      "Goodput counts successful requests within their deadline and excludes late requests."
+    ],
+    [
+      "QA",
+      "F87",
+      "p452 goodput definition",
+      "PDF p11; printed p452; section6.1"
+    ],
+    [
+      "QA",
+      "E88",
+      "SLO and CDF",
+      "SLO range, closed-loop load, latency CDF and batch scheduling explanation are explicit."
+    ],
+    [
+      "QA",
+      "F88",
+      "pp451-452 Fig5",
+      "PDF pp10-11; Figure5; section6.1"
+    ],
+    [
+      "QA",
+      "E89",
+      "Contending models",
+      "Concurrent model demand and a protected minor workload tested."
+    ],
+    [
+      "QA",
+      "F89",
+      "p451 section6.1",
+      "PDF pp10-12; sections6.1-6.3; Figures5-7"
+    ],
+    [
+      "QA",
+      "C90",
+      "1",
+      "2"
+    ],
+    [
+      "QA",
+      "E90",
+      "No fault guarantee",
+      "Performance-isolation boundary is measured; dedicated-worker assumptions and security exclusions are"
+    ],
+    [
+      "QA",
+      "F90",
+      "pp455-456 discussion",
+      "PDF pp11-12,14-15; sections6.2,7"
+    ],
+    [
+      "QA",
+      "E91",
+      "Artifact and limits",
+      "Runtime, scheduling, model details and limitations support informed implementation appraisal; no loc"
+    ],
+    [
+      "QA",
+      "F91",
+      "pp455-456 discussion;artifact appendix",
+      "PDF pp7-10,14-15; sections5,7"
+    ],
+    [
+      "QA",
+      "E92",
+      "Inference/training colocation objective and scope explicit.",
+      "Inference-priority co-location objective and training progress goal explicit."
+    ],
+    [
+      "QA",
+      "F92",
+      "p1657 section1",
+      "PDF p2; printed p1657; abstract/introduction"
+    ],
+    [
+      "QA",
+      "E93",
+      "VMM pool, memory handover and SM-mask control described.",
+      "VMM pool, handover, memory mapping and SM allocation described."
+    ],
+    [
+      "QA",
+      "F93",
+      "pp1660-1665 sections3-5",
+      "PDF pp5-10; sections3-5"
+    ],
+    [
+      "QA",
+      "E94",
+      "Trace distributions and300s windows described; repeated-run uncertainty not established in checked e",
+      "Trace distributions and 300-second window specified; repeated-run uncertainty not specified for Figu"
+    ],
+    [
+      "QA",
+      "F94",
+      "pp1665-1666 section6",
+      "PDF pp10-11; section6; Figure10"
+    ],
+    [
+      "QA",
+      "E95",
+      "GPU, CPU/RAM, software and model sizes specified.",
+      "V100/A100 cases, CPU/RAM, software versions and model/batch table supplied."
+    ],
+    [
+      "QA",
+      "F95",
+      "p1665 testbed; p1666 Table3",
+      "PDF pp10-11,14; Table3; sections6,6.6"
+    ],
+    [
+      "QA",
+      "E96",
+      "TaskSwitch is an adapted implementation; baseline choices explicit but implementation equivalence re",
+      "TaskSwitch is an adapted implementation; equivalence to unmodified PipeSwitch is not established."
+    ],
+    [
+      "QA",
+      "F96",
+      "p1665 comparing targets",
+      "PDF p10; comparing targets"
+    ],
+    [
+      "QA",
+      "E97",
+      "Training samples/s is defined; inference latency/SLO are kept distinct.",
+      "Training samples/second and inference SLO compliance are defined separately."
+    ],
+    [
+      "QA",
+      "F97",
+      "p1666 metrics/Figure10",
+      "PDF p11; metrics; Figure10"
+    ],
+    [
+      "QA",
+      "E98",
+      "P99, request arrivals, window and SLO definition supplied.",
+      "P99, arrivals, duration and four-times-solo SLO definition stated."
+    ],
+    [
+      "QA",
+      "F98",
+      "p1666 section6.1/Figure10",
+      "PDF p11; section6.1"
+    ],
+    [
+      "QA",
+      "E99",
+      "Co-located inference/training traces tested on one GPU.",
+      "Inference plus Swin-T training co-location evaluated on a single GPU."
+    ],
+    [
+      "QA",
+      "F99",
+      "p1666 section6.1/Figure10",
+      "PDF p11; Figure10"
+    ],
+    [
+      "QA",
+      "E100",
+      "Memory-reclamation boundary described; stronger fault/security validation not established.",
+      "Handover correctness and priority boundary described; direct fault-injection validation not establis"
+    ],
+    [
+      "QA",
+      "F100",
+      "pp1661-1665 sections4-5",
+      "PDF pp6-10; sections4-5"
+    ],
+    [
+      "QA",
+      "E101",
+      "Detailed implementation and evaluated artifact supplied; scope limitations discussed.",
+      "Artifact appendix reports availability, functionality and reproduction badges with artifact DOI."
+    ],
+    [
+      "QA",
+      "F101",
+      "p1665 section5; p1669 section7; artifact appendix",
+      "PDF p20; artifact appendix; DOI10.5281/zenodo.15581800"
+    ],
+    [
+      "QA",
+      "E102",
+      "Clear inference resource-sharing objective.",
+      "SLO-constrained inference resource objective explicit."
+    ],
+    [
+      "QA",
+      "F102",
+      "PDF pp1-2 introduction",
+      "arXiv v1 PDF pp1-2"
+    ],
+    [
+      "QA",
+      "E103",
+      "MIG/MPS segments and algorithms explained.",
+      "MIG/MPS profiling, segment configuration and allocation algorithms described."
+    ],
+    [
+      "QA",
+      "F103",
+      "PDF pp4-7 sectionIII",
+      "arXiv v1 PDF pp4-8; sectionIII"
+    ],
+    [
+      "QA",
+      "E104",
+      "Profiling procedure and fleet scenarios described; repetition/uncertainty reporting unclear.",
+      "Profiler and six scenarios specified; repeated-run uncertainty not established."
+    ],
+    [
+      "QA",
+      "F104",
+      "PDF pp5,8 sectionIV",
+      "arXiv v1 PDF pp5,8-10; sectionsIII-C,IV"
+    ],
+    [
+      "QA",
+      "E105",
+      "Hardware/workload described; runtime version1.14.0 is printed but needs verification.",
+      "A100, Ubuntu and CUDA reported; printed PyTorch1.14.0 string is an unresolved environment ambiguity."
+    ],
+    [
+      "QA",
+      "F105",
+      "PDF p8 sectionIV-A",
+      "arXiv v1 PDF p8; sectionIV-A"
+    ],
+    [
+      "QA",
+      "E106",
+      "Local process comparison interpretable; fleet baselines adapted and no final-version equivalence est",
+      "Local process-count contrast interpretable; fleet baseline variants and manuscript scope constrain c"
+    ],
+    [
+      "QA",
+      "F106",
+      "PDF pp5,8",
+      "arXiv v1 PDF pp5,8; sectionsIII-B,IV-A"
+    ],
+    [
+      "QA",
+      "E107",
+      "Throughput axes specify requests/s and exact local values are given.",
+      "Local throughput values and metric units given."
+    ],
+    [
+      "QA",
+      "F107",
+      "PDF pp4-5 Figure3",
+      "arXiv v1 PDF pp4-5; Figure3; sectionIII-B"
+    ],
+    [
+      "QA",
+      "E108",
+      "Latency milliseconds and settings stated; profiler quantile unclear.",
+      "Local latency values given without a named tail quantile."
+    ],
+    [
+      "QA",
+      "F108",
+      "PDF pp4-5 Figure4",
+      "arXiv v1 PDF pp4-5; Figure4; sectionIII-B"
+    ],
+    [
+      "QA",
+      "E109",
+      "Concurrent MPS process counts evaluated inside one MIG segment.",
+      "One-to-three MPS processes measured inside a MIG segment."
+    ],
+    [
+      "QA",
+      "F109",
+      "PDF pp4-5 Figures3-4",
+      "arXiv v1 PDF pp4-5; Figures3-4"
+    ],
+    [
+      "QA",
+      "E110",
+      "MIG boundary described; no direct security/fault validation established.",
+      "MIG/MPS boundary described; no dedicated fault or adversarial experiment established in reviewed man"
+    ],
+    [
+      "QA",
+      "F110",
+      "PDF pp2-4 background/design",
+      "arXiv v1 PDF pp2-4,8-10"
+    ],
+    [
+      "QA",
+      "E111",
+      "Algorithms/settings detailed; accessed version remains preprint and replication verification incompl",
+      "Algorithms and reconfiguration limitation described; accessed manuscript has no verified final-versi"
+    ],
+    [
+      "QA",
+      "F111",
+      "PDF pp5-10",
+      "arXiv v1 PDF pp5-10; sectionIII-F; source/version record"
+    ],
+    [
+      "QA",
+      "E112",
+      "Inference memory/density objective explicit.",
+      "Low-frequency serverless inference density and latency objectives explicit."
+    ],
+    [
+      "QA",
+      "F112",
+      "p597 section1",
+      "PDF p2; printed p597; section1"
+    ],
+    [
+      "QA",
+      "E113",
+      "API redirection, pooling and scheduling described.",
+      "Remoting, swapping, memory manager, scheduler and two runtime modes described."
+    ],
+    [
+      "QA",
+      "F113",
+      "pp600-604 sections4-6",
+      "PDF pp5-9; sections4-6"
+    ],
+    [
+      "QA",
+      "E114",
+      "Production trace and request rates given; repeated-run uncertainty not established.",
+      "Trace, rates and warm-up specified; repeated-run uncertainty not specified for retained Figure8."
+    ],
+    [
+      "QA",
+      "F114",
+      "pp604-606 section7",
+      "PDF pp9-11; section7"
+    ],
+    [
+      "QA",
+      "E115",
+      "GPU/CPU/RAM supplied; exact software version matrix missing in checked setup.",
+      "Worker and model configuration supplied; exact OS/driver/framework version matrix not specified in s"
+    ],
+    [
+      "QA",
+      "F115",
+      "p604 settings",
+      "PDF p9; printed p604; settings"
+    ],
+    [
+      "QA",
+      "E116",
+      "Native and adapted INFless-KA comparison described; resource/CPU paths differ.",
+      "Native and adapted INFless-KA baselines described; CPU execution paths and adaptations affect equali"
+    ],
+    [
+      "QA",
+      "F116",
+      "pp605-606 sections7.1-7.3",
+      "PDF pp10-11; sections7.1-7.3"
+    ],
+    [
+      "QA",
+      "E117",
+      "Throughput/load definitions and local normalization supplied.",
+      "Normalized single-GPU throughput and GPU busy-time definition supplied."
+    ],
+    [
+      "QA",
+      "F117",
+      "pp605-606 Figure8",
+      "PDF pp10-11; metrics; Figure8"
+    ],
+    [
+      "QA",
+      "E118",
+      "P98 and per-function load/SLO explicit.",
+      "Default P98, per-function rates and deadlines stated."
+    ],
+    [
+      "QA",
+      "F118",
+      "pp605-606 metrics/Figure8",
+      "PDF pp10-11; metrics; section7.2"
+    ],
+    [
+      "QA",
+      "E119",
+      "Multiple functions share a single GPU in Figure8.",
+      "Many low-frequency functions share one GPU; node-level results identified separately."
+    ],
+    [
+      "QA",
+      "F119",
+      "pp605-606 Figure8",
+      "PDF pp10-11; Figure8; section7.2"
+    ],
+    [
+      "QA",
+      "E120",
+      "Sharing/isolation modes separated; strong security/fault tests not established for evaluated mode.",
+      "Runtime-sharing and runtime-isolation modes plus recovery design stated; dedicated fault-injection e"
+    ],
+    [
+      "QA",
+      "F120",
+      "sections4,7-8",
+      "PDF p7; section4.5; PDF p9 evaluation mode"
+    ],
+    [
+      "QA",
+      "E121",
+      "Implementation detail and limitations supplied; independent artifact reproduction unperformed.",
+      "Implementation and mode trade-offs explained; complete public replication recipe not established in "
+    ],
+    [
+      "QA",
+      "F121",
+      "sections6-8",
+      "PDF pp7-9,13; sections4.5,6,8"
+    ],
+    [
+      "QA",
+      "E122",
+      "Workflow-local runtime sharing objective explicit.",
+      "Workflow runtime-redundancy and spatial-sharing objective explicit."
+    ],
+    [
+      "QA",
+      "F122",
+      "p59 section1",
+      "PDF p2; printed p59; section1"
+    ],
+    [
+      "QA",
+      "E123",
+      "Streams,PTB compiler and memory management explained.",
+      "API proxy, PTB transformation, stream sharing and memory pool described."
+    ],
+    [
+      "QA",
+      "F123",
+      "pp62-67 sections3-8",
+      "PDF pp5-10; sections3-8"
+    ],
+    [
+      "QA",
+      "E124",
+      "Production-style traces and ablations provided; repeated-run uncertainty unclear.",
+      "Trace types, ablations and workloads stated; repeated-run uncertainty not specified for Figure13."
+    ],
+    [
+      "QA",
+      "F124",
+      "pp67-70 section9",
+      "PDF pp10-13; section9"
+    ],
+    [
+      "QA",
+      "C125",
+      "1",
+      "2"
+    ],
+    [
+      "QA",
+      "E125",
+      "Hardware/frameworks named; OS/driver and version compatibility need checking.",
+      "V100 hardware, CPU/RAM, framework versions, CUDA version and workflow descriptions reported."
+    ],
+    [
+      "QA",
+      "F125",
+      "p67 setup",
+      "PDF p10; printed p67; setup; Table2"
+    ],
+    [
+      "QA",
+      "E126",
+      "Common optimizations enabled, but baselines adapted and batch choices affect ratios.",
+      "Warm-up and common optimizations disclosed; adapted baselines and batch/concurrency choices constrai"
+    ],
+    [
+      "QA",
+      "F126",
+      "p67 Table2/comparing targets",
+      "PDF pp10-11; comparing targets; Figure13"
+    ],
+    [
+      "QA",
+      "E127",
+      "Memory and throughput units/ratios defined.",
+      "Throughput, memory metrics and comparator-specific factors explicitly reported."
+    ],
+    [
+      "QA",
+      "F127",
+      "p68 Figures12-13",
+      "PDF p11; printed p68; Figures12-13"
+    ],
+    [
+      "QA",
+      "E128",
+      "CDF/SLO reported; no precise tail scalar extracted.",
+      "Traffic SLO and CDF supplied; exact scalar request-tail quantile not supplied for retained throughpu"
+    ],
+    [
+      "QA",
+      "F128",
+      "p68 Figure14",
+      "PDF p11; Figure14"
+    ],
+    [
+      "QA",
+      "E129",
+      "Explicit3/6-user single-GPU test.",
+      "Separate three- and six-user single-GPU tests supplied."
+    ],
+    [
+      "QA",
+      "F129",
+      "p70 Figure19",
+      "PDF p13; section9.4; Figure19"
+    ],
+    [
+      "QA",
+      "C130",
+      "1",
+      "2"
+    ],
+    [
+      "QA",
+      "E130",
+      "Same-runtime sharing weakens function isolation; security boundary is deliberately scoped.",
+      "Mutual trust within workflow is explicit; separate proxies for users are distinguished from untested"
+    ],
+    [
+      "QA",
+      "F130",
+      "pp62-63; p70 related-work boundary",
+      "PDF pp5-6,13; sections3-4,9.4,10"
+    ],
+    [
+      "QA",
+      "E131",
+      "Detailed implementation, preparation overhead and multi-user limits supplied.",
+      "Implementation, preparation costs and multi-user limitations sufficiently detailed for informed appr"
+    ],
+    [
+      "QA",
+      "F131",
+      "p70 sections9.3-9.4",
+      "PDF pp6-10,13; sections4-9"
+    ],
+    [
+      "QA",
+      "E132",
+      "Sharing/isolation/compatibility objectives explicit.",
+      "Compatibility, isolation and performance-control objectives explicit."
+    ],
+    [
+      "QA",
+      "F132",
+      "p1003 section1",
+      "PDF p2; printed p1003; section1"
+    ],
+    [
+      "QA",
+      "E133",
+      "Kernel interception,token control and MIG orchestration described.",
+      "Kernel interception, token control and MIG orchestration explained."
+    ],
+    [
+      "QA",
+      "F133",
+      "pp1006-1011 sections3-4",
+      "PDF pp5-10; sections3-4"
+    ],
+    [
+      "QA",
+      "E134",
+      "Setup and workload matrix supplied; repeated-run uncertainty unclear.",
+      "Setup and workloads detailed; repeated-run uncertainty not specified for retained QoS result."
+    ],
+    [
+      "QA",
+      "F134",
+      "p1011 section5.1",
+      "PDF pp10-13; section5"
+    ],
+    [
+      "QA",
+      "E135",
+      "Hardware,OS,kernel,driver and frameworks specified.",
+      "OS, kernel, driver, runtimes, GPUs and workloads explicitly tabulated."
+    ],
+    [
+      "QA",
+      "F135",
+      "p1011 Tables1-2",
+      "PDF p10; printed p1011; Tables1-2"
+    ],
+    [
+      "QA",
+      "E136",
+      "Isolation-capable baselines and adapters disclosed; equivalence limited.",
+      "Isolation-capable baselines and MIG adaptations described; policy and allocation differences limit e"
+    ],
+    [
+      "QA",
+      "F136",
+      "pp1011-1012 comparing targets",
+      "PDF pp10-11; section5.1"
+    ],
+    [
+      "QA",
+      "E137",
+      "Quota/throughput metrics explicitly normalized.",
+      "Throughput targets are solo-normalized and QoS violation is a request fraction."
+    ],
+    [
+      "QA",
+      "F137",
+      "pp1013-1014 sections5.4-5.6",
+      "PDF pp10,12-13; sections5.1,5.4-5.6"
+    ],
+    [
+      "QA",
+      "E138",
+      "QoS uses originalP99 and defined Poisson load/token lengths.",
+      "Solo-P99 threshold, Poisson load, subsequent rate halving and token sizes stated."
+    ],
+    [
+      "QA",
+      "F138",
+      "p1014 Figure17/section5.5",
+      "PDF pp12-13; section5.5; Figure17"
+    ],
+    [
+      "QA",
+      "E139",
+      "Local co-running inference error measured.",
+      "Co-running inference relative-error and QoS experiments supplied."
+    ],
+    [
+      "QA",
+      "F139",
+      "p1014 section5.6",
+      "PDF p13; sections5.5-5.6"
+    ],
+    [
+      "QA",
+      "E140",
+      "Boundary/security rationale described; direct fault/security validation not established in checked e",
+      "Baseline fault propagation is tested; design/security argument does not directly establish universal"
+    ],
+    [
+      "QA",
+      "F140",
+      "p1015 section7",
+      "PDF p4 Figure3; PDF p14 section7"
+    ],
+    [
+      "QA",
+      "E141",
+      "Implementation andMIGlimitations supplied; independent artifact reproduction unperformed.",
+      "Implementation and MIG limitation detailed; complete end-to-end replication package not established."
+    ],
+    [
+      "QA",
+      "F141",
+      "pp1011,1015 sections4,7",
+      "PDF pp10,14; sections4,7"
+    ],
+    [
+      "Extraction",
+      "F10",
+      "Not assessed in the retained source extract; hardware details alone do not establish OS, CUDA or ser",
+      "TVM v0.7 compiler and custom managed runtime reported (PDF pp4,7-8); exact OS/driver versions not es"
+    ],
+    [
+      "Extraction",
+      "M13",
+      "Not assessed for adversarial security in the retained source evidence; performance-sharing results d",
+      "Section4.5 describes shared and isolated GPU runtimes; section7 evaluates runtime sharing, while sec"
+    ],
+    [
+      "Extraction",
+      "N13",
+      "Not assessed for cross-tenant fault containment in the retained source evidence; scheduling/performa",
+      "Section4.5 describes restart, migration and persisted-state recovery. Direct fault-injection validat"
+    ],
+    [
+      "Extraction",
+      "I15",
+      "QoS:Poisson arrivals at half maximum throughput;50%temporal allocation;5/10/20/40/80ms tokens; targe",
+      "QoS: initial Poisson rate is half solo maximum; shared setting halves the input again and assigns50%"
+    ],
+    [
+      "Evidence",
+      "J32",
+      "printed p500 Table3; PDF p9",
+      "GSLICE PDF p9; printed p500; Table3"
+    ],
+    [
+      "Evidence",
+      "K32",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "Evidence",
+      "J33",
+      "printed p501 Table4; PDF p10",
+      "GSLICE PDF p10; printed p501; Table4 and section4.3"
+    ],
+    [
+      "Evidence",
+      "K33",
+      "https://par.nsf.gov/servlets/purl/10299299",
+      "https://www.cse.iitb.ac.in/~puru/courses/spring2024-25/downloads/gslice.pdf"
+    ],
+    [
+      "Evidence",
+      "J34",
+      "printed p452 section6.1/Fig5; author PDF p10",
+      "USENIX PDF pp10-11; printed pp451-452; Figure5 and section6.1"
+    ],
+    [
+      "Evidence",
+      "J35",
+      "printed p452 section6.1/Fig5; author PDF p10",
+      "USENIX PDF pp10-11; printed pp451-452; Figure5 and section6.1"
+    ],
+    [
+      "Evidence",
+      "J36",
+      "printed p1666, section6.1/Figure10 discussion; PDF p11",
+      "USENIX PDF p11; printed p1666; Figure10 discussion"
+    ],
+    [
+      "Evidence",
+      "J37",
+      "author preprint PDF p5, sectionIII-B prose; Figure3 p4",
+      "arXiv v1 PDF p5; sectionIII-B; Figures3-4 on p4"
+    ],
+    [
+      "Evidence",
+      "J38",
+      "author preprint PDF p5, sectionIII-B prose; Figure4 p4",
+      "arXiv v1 PDF p5; sectionIII-B; Figures3-4 on p4"
+    ],
+    [
+      "Evidence",
+      "J39",
+      "p606 section7.2; Figure8 p605; PDF pp10-11",
+      "USENIX PDF pp10-11; printed pp605-606; Figure8 and section7.2"
+    ],
+    [
+      "Evidence",
+      "J40",
+      "p606 section7.2; Figure8 p605; PDF pp10-11",
+      "USENIX PDF pp10-11; printed pp605-606; default P98 metrics and section7.2"
+    ],
+    [
+      "Evidence",
+      "J41",
+      "p68 section9.1/Figure13; PDF p11",
+      "USENIX PDF p11; printed p68; section9.1; Figure13"
+    ],
+    [
+      "Evidence",
+      "J42",
+      "p70 section9.3/Figure18; PDF p13",
+      "USENIX PDF p13; printed p70; section9.3; Figure18"
+    ],
+    [
+      "Evidence",
+      "H43",
+      "Transformer-XL inference,batch8/16/32;50%GPUtime;Poisson arrivals;tokens5-80ms",
+      "Transformer-XL inference; batch8/16/32. Original rate is half solo maximum; shared test halves that "
+    ],
+    [
+      "Evidence",
+      "J43",
+      "p1014 section5.5/Figure17; PDF p13",
+      "USENIX PDF pp12-13; printed pp1013-1014; section5.5; Figure17"
+    ],
+    [
+      "Evidence",
+      "J44",
+      "p1014 section5.7; PDF p13",
+      "USENIX PDF p13; printed p1014; section5.7"
+    ],
+    [
+      "Eligibility",
+      "E44",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "Conference title/authors/year matched in full text."
+    ],
+    [
+      "Eligibility",
+      "F44",
+      "PDF pp8-12; section4; Table3; Fig15",
+      "PDF title/cover page"
+    ],
+    [
+      "Eligibility",
+      "E45",
+      "Classifiable local GPU-sharing mechanism. MPS adaptive provisioning",
+      "MPS allocation among concurrent inference functions"
+    ],
+    [
+      "Eligibility",
+      "F45",
+      "PDF pp8-12; section4; Table3; Fig15",
+      "PDF pp4-8; section3"
+    ],
+    [
+      "Eligibility",
+      "E46",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F46",
+      "PDF pp8-12; section4; Table3; Fig15",
+      "PDF p9; section4.2; Figure10"
+    ],
+    [
+      "Eligibility",
+      "E47",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F47",
+      "PDF pp8-12; section4; Table3; Fig15",
+      "GSLICE PDF p9; printed p500; Table3; GSLICE PDF p10; printed p501; Table4 and section4.3"
+    ],
+    [
+      "Eligibility",
+      "E48",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F48",
+      "PDF pp8-12; section4; Table3; Fig15",
+      "PDF p9; section4.2; Figure10"
+    ],
+    [
+      "Eligibility",
+      "E49",
+      "Published year lies within the 2020-2026 main window. 2020",
+      "2020 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F49",
+      "PDF pp8-12; section4; Table3; Fig15",
+      "Conference title page / source identity"
+    ],
+    [
+      "Eligibility",
+      "E50",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "Conference title/authors/year matched in full text."
+    ],
+    [
+      "Eligibility",
+      "F50",
+      "PDF p10; section6.1; Fig5",
+      "PDF title/cover page"
+    ],
+    [
+      "Eligibility",
+      "E51",
+      "Classifiable local GPU-sharing mechanism. Temporal exclusive scheduling",
+      "Temporal scheduling of multiple inference models on one GPU"
+    ],
+    [
+      "Eligibility",
+      "F51",
+      "PDF p10; section6.1; Fig5",
+      "PDF pp6-10; sections4-5"
+    ],
+    [
+      "Eligibility",
+      "E52",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F52",
+      "PDF p10; section6.1; Fig5",
+      "PDF pp10-12; sections6.1-6.3; Figures5-7"
+    ],
+    [
+      "Eligibility",
+      "E53",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F53",
+      "PDF p10; section6.1; Fig5",
+      "USENIX PDF pp10-11; printed pp451-452; Figure5 and section6.1; USENIX PDF pp10-11; printed pp451-452"
+    ],
+    [
+      "Eligibility",
+      "E54",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F54",
+      "PDF p10; section6.1; Fig5",
+      "PDF pp10-12; sections6.1-6.3; Figures5-7"
+    ],
+    [
+      "Eligibility",
+      "E55",
+      "Published year lies within the 2020-2026 main window. 2020",
+      "2020 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F55",
+      "PDF p10; section6.1; Fig5",
+      "Conference title page / source identity"
+    ],
+    [
+      "Eligibility",
+      "E56",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "Conference title/authors/year matched in full text."
+    ],
+    [
+      "Eligibility",
+      "F56",
+      "Section6.1 Fig10; section6.6",
+      "PDF title/cover page"
+    ],
+    [
+      "Eligibility",
+      "E57",
+      "Classifiable local GPU-sharing mechanism. Temporal + MPS memory handover",
+      "Single-GPU inference/training co-location with separable inference P99"
+    ],
+    [
+      "Eligibility",
+      "F57",
+      "Section6.1 Fig10; section6.6",
+      "PDF pp5-10; sections3-5"
+    ],
+    [
+      "Eligibility",
+      "E58",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F58",
+      "Section6.1 Fig10; section6.6",
+      "PDF p11; Figure10"
+    ],
+    [
+      "Eligibility",
+      "E59",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F59",
+      "Section6.1 Fig10; section6.6",
+      "USENIX PDF p11; printed p1666; Figure10 discussion"
+    ],
+    [
+      "Eligibility",
+      "E60",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F60",
+      "Section6.1 Fig10; section6.6",
+      "PDF p11; Figure10"
+    ],
+    [
+      "Eligibility",
+      "E61",
+      "Published year lies within the 2020-2026 main window. 2025",
+      "2025 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F61",
+      "Section6.1 Fig10; section6.6",
+      "Conference title page / source identity"
+    ],
+    [
+      "Eligibility",
+      "D62",
+      "eligible",
+      "version_condition_open"
+    ],
+    [
+      "Eligibility",
+      "E62",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "SC24/author records confirm peer-reviewed publication, but numerical source is arXivv1 and final-tex"
+    ],
+    [
+      "Eligibility",
+      "F62",
+      "PDF p8 onward; sectionIV; TableIV; Figs5/7",
+      "SC24 official record; author publication page; arXivv1 title page"
+    ],
+    [
+      "Eligibility",
+      "E63",
+      "Classifiable local GPU-sharing mechanism. MIG + MPS",
+      "MPS processes within a MIG instance"
+    ],
+    [
+      "Eligibility",
+      "F63",
+      "PDF p8 onward; sectionIV; TableIV; Figs5/7",
+      "arXiv v1 PDF pp4-8; sectionIII"
+    ],
+    [
+      "Eligibility",
+      "E64",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F64",
+      "PDF p8 onward; sectionIV; TableIV; Figs5/7",
+      "arXiv v1 PDF pp4-5; Figures3-4"
+    ],
+    [
+      "Eligibility",
+      "E65",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F65",
+      "PDF p8 onward; sectionIV; TableIV; Figs5/7",
+      "arXiv v1 PDF p5; sectionIII-B; Figures3-4 on p4; arXiv v1 PDF p5; sectionIII-B; Figures3-4 on p4"
+    ],
+    [
+      "Eligibility",
+      "E66",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F66",
+      "PDF p8 onward; sectionIV; TableIV; Figs5/7",
+      "arXiv v1 PDF pp4-5; Figures3-4"
+    ],
+    [
+      "Eligibility",
+      "E67",
+      "Published year lies within the 2020-2026 main window. 2024",
+      "2024 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F67",
+      "PDF p8 onward; sectionIV; TableIV; Figs5/7",
+      "Conference title page / source identity"
+    ],
+    [
+      "Eligibility",
+      "E68",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "Conference title/authors/year matched in full text."
+    ],
+    [
+      "Eligibility",
+      "F68",
+      "PDF pp10-11; Table4; sections7.2-7.3",
+      "PDF title/cover page"
+    ],
+    [
+      "Eligibility",
+      "E69",
+      "Classifiable local GPU-sharing mechanism. API remoting + temporal swapping",
+      "Many low-rate inference functions temporally share one GPU"
+    ],
+    [
+      "Eligibility",
+      "F69",
+      "PDF pp10-11; Table4; sections7.2-7.3",
+      "PDF pp5-9; sections4-6"
+    ],
+    [
+      "Eligibility",
+      "E70",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F70",
+      "PDF pp10-11; Table4; sections7.2-7.3",
+      "PDF pp10-11; Figure8; section7.2"
+    ],
+    [
+      "Eligibility",
+      "E71",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F71",
+      "PDF pp10-11; Table4; sections7.2-7.3",
+      "USENIX PDF pp10-11; printed pp605-606; Figure8 and section7.2; USENIX PDF pp10-11; printed pp605-606"
+    ],
+    [
+      "Eligibility",
+      "E72",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F72",
+      "PDF pp10-11; Table4; sections7.2-7.3",
+      "PDF pp10-11; Figure8; section7.2"
+    ],
+    [
+      "Eligibility",
+      "E73",
+      "Published year lies within the 2020-2026 main window. 2025",
+      "2025 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F73",
+      "PDF pp10-11; Table4; sections7.2-7.3",
+      "Conference title page / source identity"
+    ],
+    [
+      "Eligibility",
+      "E74",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "Conference title/authors/year matched in full text."
+    ],
+    [
+      "Eligibility",
+      "F74",
+      "PDF p10 onward; section9; Table2",
+      "PDF title/cover page"
+    ],
+    [
+      "Eligibility",
+      "E75",
+      "Classifiable local GPU-sharing mechanism. API/runtime sandbox virtualization",
+      "Streams and runtime/API sharing across inference workflows"
+    ],
+    [
+      "Eligibility",
+      "F75",
+      "PDF p10 onward; section9; Table2",
+      "PDF pp5-10; sections3-8"
+    ],
+    [
+      "Eligibility",
+      "E76",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F76",
+      "PDF p10 onward; section9; Table2",
+      "PDF p13; section9.4; Figure19"
+    ],
+    [
+      "Eligibility",
+      "E77",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F77",
+      "PDF p10 onward; section9; Table2",
+      "USENIX PDF p11; printed p68; section9.1; Figure13; USENIX PDF p13; printed p70; section9.3; Figure18"
+    ],
+    [
+      "Eligibility",
+      "E78",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F78",
+      "PDF p10 onward; section9; Table2",
+      "PDF p13; section9.4; Figure19"
+    ],
+    [
+      "Eligibility",
+      "E79",
+      "Published year lies within the 2020-2026 main window. 2024",
+      "2024 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F79",
+      "PDF p10 onward; section9; Table2",
+      "Conference title page / source identity"
+    ],
+    [
+      "Eligibility",
+      "E80",
+      "Peer-reviewed venue and report identity recorded in study catalogue; manuscript access/version bound",
+      "Conference title/authors/year matched in full text."
+    ],
+    [
+      "Eligibility",
+      "F80",
+      "PDF p10 Tables1-2; section5; section2.2 Fig3",
+      "PDF title/cover page"
+    ],
+    [
+      "Eligibility",
+      "E81",
+      "Classifiable local GPU-sharing mechanism. Kernel API virtualization + hybrid",
+      "Kernel interception and temporal/MIG sharing with separate inference measurements"
+    ],
+    [
+      "Eligibility",
+      "F81",
+      "PDF p10 Tables1-2; section5; section2.2 Fig3",
+      "PDF pp5-10; sections3-4"
+    ],
+    [
+      "Eligibility",
+      "E82",
+      "Inference/model-serving workload identifiable; mixed training/inference interpreted only through sep",
+      "Inference workload is explicit; training/rendering outcomes are kept separate where present."
+    ],
+    [
+      "Eligibility",
+      "F82",
+      "PDF p10 Tables1-2; section5; section2.2 Fig3",
+      "PDF p13; sections5.5-5.6"
+    ],
+    [
+      "Eligibility",
+      "E83",
+      "Inspectable local metric or interference/control result with comparator and interpretation boundary.",
+      "Retained outcome values and methods are inspectable in the accessed source."
+    ],
+    [
+      "Eligibility",
+      "F83",
+      "PDF p10 Tables1-2; section5; section2.2 Fig3",
+      "USENIX PDF pp12-13; printed pp1013-1014; section5.5; Figure17; USENIX PDF p13; printed p1014; sectio"
+    ],
+    [
+      "Eligibility",
+      "E84",
+      "Within-one-physical-GPU co-tenant evidence is the eligible stratum; aggregate results are kept separ",
+      "Extracted evidence concerns co-tenancy or control on one physical GPU; fleet-only outcomes not subst"
+    ],
+    [
+      "Eligibility",
+      "F84",
+      "PDF p10 Tables1-2; section5; section2.2 Fig3",
+      "PDF p13; sections5.5-5.6"
+    ],
+    [
+      "Eligibility",
+      "E85",
+      "Published year lies within the 2020-2026 main window. 2025",
+      "2025 is within the submitted2020-2026 window."
+    ],
+    [
+      "Eligibility",
+      "F85",
+      "PDF p10 Tables1-2; section5; section2.2 Fig3",
+      "Conference title page / source identity"
+    ]
+  ],
+  "excel_formula_errors": [],
+  "reconciliation_differences": [],
+  "pdf_pages": 109,
+  "independent_human_vote_claimed": false,
+  "eligibility_supported": 41,
+  "eligibility_version_conditions": 1
+}

@@ -38,3 +38,7 @@ task2/report/main.pdf
 /task3/report/*.toc
 /task3/report/*.blg
 /task3/report/*.bbl
+
+/task3/papers/*.corrupt
+/task3/raazia/node_modules
+*inspect.ndjson*
