@@ -1,0 +1,367 @@
+[
+  [
+    "Task 3 setup and recovery",
+    [
+      [
+        "green",
+        "Create the separate task3 folder",
+        "Baseline, logs, papers, benchmark, report, workbook and scripts folders exist."
+      ],
+      [
+        "green",
+        "Preserve the supplied Task 2 package",
+        "Report, 14-tab workbook and PRISMA files retained in baseline."
+      ],
+      [
+        "green",
+        "Preserve the submitted Task 1 protocol",
+        "Original protocol remains unchanged."
+      ],
+      [
+        "green",
+        "Separate old Task 2 counts from the later Task 3 baseline",
+        "Current corpus and limitations stated in Task 3 README and report."
+      ],
+      [
+        "green",
+        "Recover the interrupted workspace",
+        "Recovered report source, analytical records, workbook and 18 reading PDFs."
+      ],
+      [
+        "green",
+        "Keep stable report and study identifiers",
+        "21 report versions map to 20 studies; REEF companions linked."
+      ],
+      [
+        "green",
+        "Create the heading-by-heading checklist",
+        "HEADING_BY_HEADING.md and Requirements.csv exist."
+      ],
+      [
+        "green",
+        "Retain activity and retrieval records",
+        "Actual checkpoint times, source URLs, hashes and retrieval statuses recorded."
+      ],
+      [
+        "green",
+        "Keep third-party reading copies out of public Git",
+        "Catalogue and metadata may be published; full texts remain separate."
+      ],
+      [
+        "yellow",
+        "Publish the recovered deliverables to GitHub",
+        "Earlier Task 3 baseline is remote; recovered draft push previously blocked by automatic approval review."
+      ]
+    ]
+  ],
+  [
+    "Paper access and evidence verification",
+    [
+      [
+        "green",
+        "Catalogue all 21 report versions",
+        "Manifest contains report ID, study ID, title and source."
+      ],
+      [
+        "green",
+        "Recover 18 valid reading PDFs",
+        "18 copies available locally; this does not mean all source claims were checked."
+      ],
+      [
+        "red",
+        "Obtain InferFair P018 reading copy",
+        "DOI 10.1016/j.future.2023.08.020; valid PDF not recovered."
+      ],
+      [
+        "red",
+        "Obtain ArkGPU P019 reading copy",
+        "DOI 10.1007/s42514-023-00154-y; valid PDF not recovered."
+      ],
+      [
+        "red",
+        "Obtain Dyna-P P020 reading copy",
+        "DOI 10.1007/s10586-025-05284-2; valid PDF not recovered."
+      ],
+      [
+        "green",
+        "Provide a separate journal benchmark PDF",
+        "Hong et al., ACM Computing Surveys, DOI 10.1145/3068281; structural benchmark, not a primary study."
+      ],
+      [
+        "yellow",
+        "Verify all report versions and bibliographic fields",
+        "Companion/version checks and full bibliographic audit remain."
+      ],
+      [
+        "yellow",
+        "Verify all 52 outcome anchors against full text",
+        "Inherited extraction is preserved; complete source-by-source recheck is not evidenced."
+      ],
+      [
+        "yellow",
+        "Verify all 200 QA judgments",
+        "Scores and arithmetic exist; independent item-level verification remains."
+      ],
+      [
+        "red",
+        "Complete independent reviewer signoff",
+        "No signed independent item-level verification is supplied."
+      ],
+      [
+        "red",
+        "Resolve 559 retained records or obtain scope acceptance",
+        "These are not technical exclusions; bounded selection must remain disclosed."
+      ],
+      [
+        "yellow",
+        "Verify completeness of historical search provenance",
+        "Queries/logs preserved; missing event details cannot be reconstructed as performed searches."
+      ],
+      [
+        "red",
+        "Complete a current survey novelty check",
+        "Benchmark selection does not establish novelty against recent surveys."
+      ]
+    ]
+  ],
+  [
+    "Heading 23 mandatory deliverables",
+    [
+      [
+        "yellow",
+        "01 SLR report",
+        "Complete first-draft text exists; scientific verification and final closure remain."
+      ],
+      [
+        "green",
+        "02 Defined engineering problem",
+        "Report section 1 states the decision, constraints and competing requirements."
+      ],
+      [
+        "green",
+        "03 Research objectives",
+        "Report section 1 contains the objectives."
+      ],
+      [
+        "green",
+        "04 Three to five research questions",
+        "Five protocol RQs retained in section 2."
+      ],
+      [
+        "green",
+        "05 SLR protocol",
+        "Submitted Task 1 protocol preserved and included in the first-draft package."
+      ],
+      [
+        "green",
+        "06 Databases and justification",
+        "Draft methodology explains the database coverage."
+      ],
+      [
+        "yellow",
+        "07 Complete search strings",
+        "Recorded queries are reproduced; reproducibility/provenance gaps remain."
+      ],
+      [
+        "green",
+        "08 Inclusion and exclusion criteria",
+        "Criteria and implementation deviations described."
+      ],
+      [
+        "yellow",
+        "09 Database-wise results",
+        "Recorded counts available; historical search audit remains qualified."
+      ],
+      [
+        "yellow",
+        "10 Search and screening log",
+        "All baseline records retained; 559 retained records unassessed and many lack abstracts."
+      ],
+      [
+        "green",
+        "11 Duplicate-removal record",
+        "114 links retained; current count arithmetic reconciles."
+      ],
+      [
+        "yellow",
+        "12 PRISMA 2020 flow diagram",
+        "Supplied bounded-review flow reproduced; exhaustive final screening is not established."
+      ],
+      [
+        "yellow",
+        "13 QA checklist and scores",
+        "200 items and reconciliation present; judgment verification remains."
+      ],
+      [
+        "yellow",
+        "14 Included primary-study list",
+        "20 studies / 21 reports listed under the supplied bounded scope; version and scope checks remain."
+      ],
+      [
+        "yellow",
+        "15 Data-extraction sheet",
+        "52 reported outcomes and two calculations preserved; source verification remains."
+      ],
+      [
+        "green",
+        "16 Taxonomy",
+        "Mechanism taxonomy drafted in report and workbook."
+      ],
+      [
+        "green",
+        "17 Comparative evidence matrix",
+        "Context-aware comparison matrix drafted; source-check limitation remains global."
+      ],
+      [
+        "green",
+        "18 Engineering trade-off analysis",
+        "Utilization, latency, fairness, isolation and implementation costs discussed."
+      ],
+      [
+        "yellow",
+        "19 Conflicting-evidence analysis",
+        "Draft distinguishes contextual contrasts from direct disagreement; deeper matched comparisons remain."
+      ],
+      [
+        "green",
+        "20 Answers to all research questions",
+        "All five RQs have draft synthesis answers."
+      ],
+      [
+        "green",
+        "21 Evidence-based engineering recommendation",
+        "Conditional recommendation table includes benefit, sacrifice and alternative."
+      ],
+      [
+        "green",
+        "22 Research gaps",
+        "Gaps linked to limitations of the reviewed corpus."
+      ],
+      [
+        "green",
+        "23 Threats to validity",
+        "Bounded scope, abstracts, access, reviewer and comparability limitations disclosed."
+      ],
+      [
+        "yellow",
+        "24 Complete references",
+        "BibTeX and numbered references exist; final author/title/venue/version audit remains."
+      ],
+      [
+        "green",
+        "25 Supporting verification files",
+        "Baseline, CSVs, matrices, build scripts and technical validation included."
+      ]
+    ]
+  ],
+  [
+    "Heading 24 report structure and draft files",
+    [
+      [
+        "green",
+        "Introduction",
+        "Background, problem, motivation, objective and contribution present."
+      ],
+      [
+        "green",
+        "Research questions",
+        "Five RQs present."
+      ],
+      [
+        "green",
+        "Research methodology",
+        "Protocol, databases, search, criteria, selection, QA, extraction and synthesis present."
+      ],
+      [
+        "green",
+        "PRISMA selection section",
+        "Counts, corpus table and supplied flow present with scope caveat."
+      ],
+      [
+        "green",
+        "Taxonomy section",
+        "Technical categories and assumptions present."
+      ],
+      [
+        "green",
+        "Results and synthesis section",
+        "Organized by RQ rather than only paper summaries."
+      ],
+      [
+        "green",
+        "Comparative analysis section",
+        "Matrix with metric/context interpretation present."
+      ],
+      [
+        "green",
+        "Engineering trade-offs section",
+        "Benefits and sacrifices present."
+      ],
+      [
+        "green",
+        "Discussion section",
+        "Context, conflicts and uncertainty discussed."
+      ],
+      [
+        "green",
+        "Recommendation section",
+        "Condition-specific choices and alternatives present."
+      ],
+      [
+        "green",
+        "Research gaps section",
+        "Evidence-limited future research directions present."
+      ],
+      [
+        "green",
+        "Threats to validity section",
+        "Review limitations and remaining checks present."
+      ],
+      [
+        "green",
+        "Conclusion section",
+        "Conditional conclusion present."
+      ],
+      [
+        "green",
+        "References and appendices",
+        "Search register, study cards, QA, outcomes, calculations and deliverable crosswalk present."
+      ],
+      [
+        "green",
+        "Compile the PDF",
+        "107-page first draft compiled without material LaTeX warnings."
+      ],
+      [
+        "green",
+        "Supply editable LaTeX and bibliography",
+        "main.tex, included TeX files and references.bib present."
+      ],
+      [
+        "green",
+        "Supply editable Excel workbook",
+        "27 tabs; original 14 tabs preserved apart from equivalent QA numeric conversion."
+      ],
+      [
+        "green",
+        "Check workbook arithmetic",
+        "Count and QA reconciliation differences are zero."
+      ],
+      [
+        "green",
+        "Supply Word companion",
+        "Generated from the same TeX; fixed dropped numeric cells in conversion."
+      ],
+      [
+        "yellow",
+        "Complete detailed visual and editorial review",
+        "Rendered overview checks and selected full-size checks performed; final page-by-page editorial review remains."
+      ],
+      [
+        "green",
+        "Assemble portable first-draft ZIP",
+        "Includes report sources, outputs, workbook, logs, protocol, guidelines and build instructions."
+      ]
+    ]
+  ]
+]

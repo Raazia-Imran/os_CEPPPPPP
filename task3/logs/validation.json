@@ -1,0 +1,106 @@
+{
+  "original_sheet_value_differences_excluding_numeric_QA_conversion": [],
+  "sheet_count": 27,
+  "count_reconciliation_differences": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "QA_reconciliation_differences": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "source_scores_below_60_percent": 0,
+  "pdf_info": "Title:           \nSubject:         \nKeywords:        \nAuthor:          \nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.25\nCreationDate:    Wed Oct 21 05:07:49 2026 CEST\nModDate:         Wed Oct 21 05:07:49 2026 CEST\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           107\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       441449 bytes\nOptimized:       no\nPDF version:     1.5\n",
+  "pdf_sha256": "11c0ccf83642cf444fd59085909d112a900d287da9234d779bce80a1150075a7",
+  "workbook_sha256": "2fe7335ec72ebb20a2caafd619ce743d7a580e85079af47f45cb8762570c2023",
+  "latex_material_warnings": [],
+  "checked_utc": "2026-10-21T09:06:02.155351+00:00",
+  "scope": "Technical preservation and arithmetic checks; not independent scientific verification"
+}

@@ -1,0 +1,7 @@
+Family,Control boundary,Reports,Assumption,Primary benefit,Cost / limit
+Temporal / priority,"Request, model, kernel or launch order",P004 P005 P006 P007 P009 P015 P022,A suitable interception/preemption boundary exists,Protect foreground response while admitting background work,"Switch cost, profiling and background slowdown"
+Software spatial sharing,MPS quota or AMD CU-mask control,P001 P002 P003 P008 P021,Concurrent jobs fit memory and selected compute allocation,Use otherwise idle capacity,Residual interference; quotas are not proof of security
+Hardware partition and hybrid,MIG profiles plus temporal/MPS policy,P011 P014 P020,Supported partition profiles fit model memory,Explicit resource allocation and controlled co-location,"Fragmentation, placement and reconfiguration cost"
+API / runtime mediation,"User API, shared runtime or kernel interface",P006 P012 P013 P014 P019 P022,Required APIs and integration hooks are supported,"Scheduling control, runtime or memory efficiency","Compatibility, CPU/transfer cost and trust boundary"
+Memory handover,Inference/training memory ownership,P010,Training can yield memory without breaking inference,Exploit residual resources,Reclamation and integration overhead
+Fairness policy,Relative model slowdown and SLO goodput,P018,Comparable per-model service objectives,Balance useful service across models,Not equivalent to request-tail or hostile-tenant isolation

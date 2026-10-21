@@ -1,3 +1,5 @@
+> Recovery update 2026-10-21T03:11:02.902345+00:00: the draft, analytical matrices and 27-tab workbook below are now recovered. See CONTINUE_HERE.md and report Appendix E for current artifact coverage. The following detailed entries preserve the earlier checkpoint; unavailable-file wording is historical.
+
 # Task 3: guideline-by-guideline execution record
 
 Updated UTC: 2026-10-20T20:47:14.776Z. Actor: AI assistant under user direction.

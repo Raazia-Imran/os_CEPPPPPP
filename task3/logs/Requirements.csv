@@ -1,0 +1,26 @@
+Guideline 23 item,Requirement,Artifact,Status / qualification
+1,Final SLR report,report/main.pdf (draft),Draft present; verify before final submission
+2,Engineering problem,report section 1,Draft present; verify before final submission
+3,Research objectives,report section 1,Draft present; verify before final submission
+4,Research questions,report section 2,Draft present; verify before final submission
+5,SLR protocol,../task1/submitted_protocol.pdf,Existing evidence preserved; limits documented
+6,Database justification,report section 3,Draft present; verify before final submission
+7,Complete search strings,Search Log / appendix,Draft present; verify before final submission
+8,Inclusion/exclusion criteria,report section 3,Draft present; verify before final submission
+9,Database-wise results,report section 4,Existing evidence preserved; limits documented
+10,Search and screening log,Screening Log / Search Log,Existing evidence preserved; limits documented
+11,Duplicate record,Duplicate Removal,Existing evidence preserved; limits documented
+12,PRISMA flow,baseline/PRISMA_2020_FLOW_DIAGRAM.pdf,Draft present; verify before final submission
+13,Quality checklist/scores,QA / QA Reconciliation,Existing evidence preserved; limits documented
+14,Included primary studies,Studies / Source Register,Draft present; verify before final submission
+15,Extraction sheet,Extraction / Evidence,Existing evidence preserved; limits documented
+16,Taxonomy,Taxonomy / report section 5,Draft present; verify before final submission
+17,Comparative matrix,Comparability / report section 7,Draft present; verify before final submission
+18,Trade-offs,report section 8,Draft present; verify before final submission
+19,Conflicting evidence,Comparability / report section 9,Draft present; verify before final submission
+20,All RQ answers,report section 6,Draft present; verify before final submission
+21,Engineering recommendation,Recommendations / report section 10,Draft present; verify before final submission
+22,Research gaps,Research Gaps / report section 11,Draft present; verify before final submission
+23,Threats to validity,Validity / report section 12,Draft present; verify before final submission
+24,References,report references,Draft present; verify before final submission
+25,Supporting verification files,logs / baseline / scripts,Draft present; verify before final submission

@@ -1,0 +1,12 @@
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.26\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}}
+\toprule
+\textbf{Evidence / class} & \textbf{Observation} & \textbf{Interpretation and missing control}\\\midrule\endhead
+CMP01 P011 E036 E037 C001 C002. Within-source trade-off & 354 to 446 requests/s; 11 to 27 ms & 25.99\% throughput increase accompanies 2.4545x latency. Missing: Latency quantile; final version equivalence\\\addlinespace
+CMP02 P001 E001; P011 E036. Unmatched cross-study & 2.7x versus 25.99\% increase & Different baseline and GPU/model context prevent ranking. Missing: Matched workload, batch and resource budget\\\addlinespace
+CMP03 P007 E029 E030; P015 E044. Different objectives & Up to 7.3x aggregate work versus 1.07x foreground P99 & Foreground delay and total completed work must be assessed together. Missing: Common model mix and background progress metric\\\addlinespace
+CMP04 P008 E031 E032. Within-source metric tension & GUE 94.04 and negative signed latency improvement & Composite efficacy is not utilization percent; preserve adverse latency. Missing: Metric definitions and baseline stratum\\\addlinespace
+CMP05 P012 E038 E039. Condition-dependent trade-off & Density benefit with model-transfer sensitivity & Late binding suits low-rate functions only if transfer fits SLO. Missing: Heavy-model transfer and host CPU budget\\\addlinespace
+CMP06 P019 E048 E049; P022 E052. Different experiments, consistent cost & QoS protection with low-contention or background throughput loss & Protecting foreground work can sacrifice co-tenant work. Missing: Matched slowdown definitions\\\addlinespace
+CMP07 P005 P023. Companion study, not replication & REEF engines and report versions differ & Retain source-version strata; do not double-count corroboration. Missing: Outcome-to-version mapping for every combined REEF row\\\addlinespace
+CMP08 P018 E046 E047; P020 E050. Different metrics & Goodput/fairness versus makespan & Job-level efficiency cannot establish request-tail service. Missing: Request arrival process and latency distribution\\\addlinespace
+\bottomrule\end{longtable}

@@ -1,24 +1,17 @@
-# Task 3 recovery checkpoint
+# Recovered Task 3 draft checkpoint
 
-## Verified on resumption
-The remote baseline commit is `177fcd057cfa6618d8a34d11e654a695cedb30ca`. The uploaded Task 2 baseline and initial logs are published under task3. The requested task3/report/main.tex returned 404 at resumption; the later draft was not published.
+Recovered and rebuilt on 2026-10-21T03:11:02.902345+00:00. Previous local execution blocker is resolved.
 
-## Work completed locally in the previous session, not yet recovered
-- A 107-page LaTeX draft covering the guideline's analytical requirements through Section 22, following Section 24's report sequence, with a Section 23 deliverable crosswalk.
-- An expanded 27-tab workbook preserving the original 14 tabs and adding analytical and audit records.
-- 18 PDF reading copies. Missing: P018 InferFair, P019 ArkGPU, P020 Dyna-P.
-- Draft paths: `/workspace/scratch/c8625892f6af/repo/task3/report/main.pdf` and `main.tex`; workbook: `/workspace/scratch/c8625892f6af/repo/task3/workbook/CEP_Task3_Evidence_Workbook.xlsx`.
-- Latest LaTeX run reported no overfull boxes, undefined references or missing characters after repairs. Full visual inspection and the final preservation-validation result were still pending. Do not describe these artifacts as fully verified or delivered.
+- PDF: report/main.pdf, 107 pages rebuilt from the recovered sources.
+- Editable Word: report/CEP_Task3_First_Draft.docx generated from the same TeX and bibliography. Braced leading numeric cell values before Pandoc conversion to prevent dropped counts and scores.
+- Workbook: workbook/CEP_Task3_Evidence_Workbook.xlsx, 27 tabs. All original 14-sheet values preserved except equivalent numeric QA conversions; zero other differences.
+- LaTeX source, BibTeX, analysis matrices, complete baseline screening register and retrieval metadata are included.
+- 18 reading PDFs recovered locally. Per AGENTS.md, full-text PDFs and extracted full text are excluded from public Git; source URLs and hashes are published.
+- InferFair, ArkGPU and Dyna-P reading copies remain unavailable. No new retrieval or source verification is claimed for them.
 
-## Resume in order
-1. Restore access to the existing workspace and inspect current files before rebuilding.
-2. Read logs/validation.json if present and inspect the pending validation output. Verify all original sheet values, allowing only the documented numeric conversion of QA score strings.
-3. Complete visual checks, then publish the draft, source, workbook, retrieval records and analytical matrices. Verify remote content hashes. Do not claim publication from a local commit alone.
-4. Retrieve the remaining three PDFs from legitimate sources or the user's existing downloaded copies. Retain report-version distinctions.
-5. Update root STATUS.md and continuation notes only when publication is verified.
+This remains a first draft. The supplied bounded corpus comprises 21 reports / 20 studies; 559 retained records were not assessed. Independent review and source/version checks remain pending. The guideline crosswalk is in report Appendix E and logs/Requirements.csv. Report organization follows heading 24; analyses address headings 15–22. Page count does not establish scientific completeness.
 
-## Research boundaries
-21 reports represent 20 studies because REEF has two linked reports. The supplied bounded review leaves 559 retained records unassessed. Independent item-level human verification is not evidenced. Preserve old timestamps as batch/build times where applicable; never replace them with new action times. The journal benchmark is Hong, Spence and Nikolopoulos, GPU Virtualization and Scheduling Methods: A Comprehensive Survey, ACM Computing Surveys, DOI 10.1145/3068281. Its organization is a benchmark, not certification of this draft's quality.
+Next: verify source anchors and bibliographic metadata, assess novelty against recent surveys, complete item-level checks, and refine the recommendation argument. Preserve Task 1 and the supplied baseline.
 
-## Current blocker
-The execution environment is unavailable. GitHub connector operations remain available. This note preserves the recovery state without claiming access to unavailable local files.
+## Publication blocker
+Automatic approval review rejected the push to Raazia-Imran/os_CEPPPPPP main because it did not recognize explicit authorization for the exact destination and payload. No remote publication is claimed. Request confirmation for the recovered draft PDF, Word, LaTeX/BibTeX, 27-tab workbook and research logs; exclude third-party full text.

@@ -29,3 +29,12 @@ task2/report/main.pdf
 /task2/qa/final_report_build/
 
 /task2/qa/task2_consolidated_input.json
+
+/task3/papers/P*.pdf
+/task3/papers/P*.txt
+/task3/report/*.aux
+/task3/report/*.log
+/task3/report/*.out
+/task3/report/*.toc
+/task3/report/*.blg
+/task3/report/*.bbl

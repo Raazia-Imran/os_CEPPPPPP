@@ -1,0 +1,558 @@
+{
+  "Taxonomy": [
+    [
+      "Family",
+      "Control boundary",
+      "Reports",
+      "Assumption",
+      "Primary benefit",
+      "Cost / limit"
+    ],
+    [
+      "Temporal / priority",
+      "Request, model, kernel or launch order",
+      "P004 P005 P006 P007 P009 P015 P022",
+      "A suitable interception/preemption boundary exists",
+      "Protect foreground response while admitting background work",
+      "Switch cost, profiling and background slowdown"
+    ],
+    [
+      "Software spatial sharing",
+      "MPS quota or AMD CU-mask control",
+      "P001 P002 P003 P008 P021",
+      "Concurrent jobs fit memory and selected compute allocation",
+      "Use otherwise idle capacity",
+      "Residual interference; quotas are not proof of security"
+    ],
+    [
+      "Hardware partition and hybrid",
+      "MIG profiles plus temporal/MPS policy",
+      "P011 P014 P020",
+      "Supported partition profiles fit model memory",
+      "Explicit resource allocation and controlled co-location",
+      "Fragmentation, placement and reconfiguration cost"
+    ],
+    [
+      "API / runtime mediation",
+      "User API, shared runtime or kernel interface",
+      "P006 P012 P013 P014 P019 P022",
+      "Required APIs and integration hooks are supported",
+      "Scheduling control, runtime or memory efficiency",
+      "Compatibility, CPU/transfer cost and trust boundary"
+    ],
+    [
+      "Memory handover",
+      "Inference/training memory ownership",
+      "P010",
+      "Training can yield memory without breaking inference",
+      "Exploit residual resources",
+      "Reclamation and integration overhead"
+    ],
+    [
+      "Fairness policy",
+      "Relative model slowdown and SLO goodput",
+      "P018",
+      "Comparable per-model service objectives",
+      "Balance useful service across models",
+      "Not equivalent to request-tail or hostile-tenant isolation"
+    ]
+  ],
+  "Comparability": [
+    [
+      "Comparison ID",
+      "Reports / evidence",
+      "Observation",
+      "Comparison class",
+      "Interpretation",
+      "Missing control"
+    ],
+    [
+      "CMP01",
+      "P011 E036 E037 C001 C002",
+      "354 to 446 requests/s; 11 to 27 ms",
+      "Within-source trade-off",
+      "25.99% throughput increase accompanies 2.4545x latency",
+      "Latency quantile; final version equivalence"
+    ],
+    [
+      "CMP02",
+      "P001 E001; P011 E036",
+      "2.7x versus 25.99% increase",
+      "Unmatched cross-study",
+      "Different baseline and GPU/model context prevent ranking",
+      "Matched workload, batch and resource budget"
+    ],
+    [
+      "CMP03",
+      "P007 E029 E030; P015 E044",
+      "Up to 7.3x aggregate work versus 1.07x foreground P99",
+      "Different objectives",
+      "Foreground delay and total completed work must be assessed together",
+      "Common model mix and background progress metric"
+    ],
+    [
+      "CMP04",
+      "P008 E031 E032",
+      "GUE 94.04 and negative signed latency improvement",
+      "Within-source metric tension",
+      "Composite efficacy is not utilization percent; preserve adverse latency",
+      "Metric definitions and baseline stratum"
+    ],
+    [
+      "CMP05",
+      "P012 E038 E039",
+      "Density benefit with model-transfer sensitivity",
+      "Condition-dependent trade-off",
+      "Late binding suits low-rate functions only if transfer fits SLO",
+      "Heavy-model transfer and host CPU budget"
+    ],
+    [
+      "CMP06",
+      "P019 E048 E049; P022 E052",
+      "QoS protection with low-contention or background throughput loss",
+      "Different experiments, consistent cost",
+      "Protecting foreground work can sacrifice co-tenant work",
+      "Matched slowdown definitions"
+    ],
+    [
+      "CMP07",
+      "P005 P023",
+      "REEF engines and report versions differ",
+      "Companion study, not replication",
+      "Retain source-version strata; do not double-count corroboration",
+      "Outcome-to-version mapping for every combined REEF row"
+    ],
+    [
+      "CMP08",
+      "P018 E046 E047; P020 E050",
+      "Goodput/fairness versus makespan",
+      "Different metrics",
+      "Job-level efficiency cannot establish request-tail service",
+      "Request arrival process and latency distribution"
+    ]
+  ],
+  "Recommendations": [
+    [
+      "ID",
+      "Scenario",
+      "Candidate",
+      "Evidence",
+      "Expected benefit",
+      "Sacrifice",
+      "Alternative / trigger",
+      "Validation needed"
+    ],
+    [
+      "REC01",
+      "Trusted resident models; utilization priority",
+      "Tuned MPS / software spatial controls",
+      "P001 P002 P003 P008 E001-E004 E006 E031-E032",
+      "Higher useful co-location under tested allocations",
+      "Interference, quota tuning and memory pressure",
+      "Partitions or dedication when trust/isolation dominates",
+      "Measure each model P99 and SLO goodput under bursts"
+    ],
+    [
+      "REC02",
+      "Foreground tail-latency priority",
+      "Priority/preemptive scheduling",
+      "P005 P006 P007 P015 P022 E018-E030 E044-E045 E052",
+      "Lower foreground interference",
+      "Background slowdown, profiling and runtime integration",
+      "Dedicated GPU when supported control cannot meet deadline",
+      "Check foreground tails and background progress jointly"
+    ],
+    [
+      "REC03",
+      "Low-rate serverless functions",
+      "Late binding / controlled runtime sharing",
+      "P012 P013 E038-E041",
+      "Higher function or workflow density",
+      "Host CPU, memory transfer and shared-runtime trust",
+      "Keep large or high-rate models resident if swaps dominate",
+      "Sweep model sizes, cold starts, offered rate and concurrency"
+    ],
+    [
+      "REC04",
+      "Mixed inference with opportunistic training",
+      "Memory handover / controlled co-location",
+      "P010 P019 E035 E048-E049",
+      "Protect inference while using residual capacity",
+      "Reclamation overhead and reduced training progress",
+      "Separate resources for intolerable interference",
+      "Measure inference tails separately from training throughput"
+    ],
+    [
+      "REC05",
+      "Supported partition hardware; stable memory fit",
+      "MIG-aware hybrid policy",
+      "P011 P014 P020 E036-E037 E042-E043 E050",
+      "Resource allocation with configurable co-location",
+      "Fragmentation and reconfiguration overhead",
+      "Software sharing when partition granularity wastes capacity",
+      "Validate profile fit and reconfiguration effects; security needs separate tests"
+    ],
+    [
+      "REC06",
+      "Several models with unequal service pressure",
+      "Fairness-aware admission / scheduling",
+      "P018 E046-E047",
+      "Balance normalized slowdown and SLO goodput",
+      "May give up aggregate throughput to improve fairness",
+      "Priority scheduling when one foreground SLA dominates",
+      "Agree fairness objective and per-model SLO before deployment"
+    ]
+  ],
+  "Research Gaps": [
+    [
+      "Gap ID",
+      "Observation in corpus",
+      "Reports / basis",
+      "Research question",
+      "Needed experiment"
+    ],
+    [
+      "G01",
+      "No matched all-family comparison",
+      "Comparability CMP01-CMP08",
+      "Which gains survive matched conditions?",
+      "Same GPU, model mix, memory budget, arrivals and SLO across families"
+    ],
+    [
+      "G02",
+      "Security/fault boundaries often unestablished",
+      "Extraction Security boundary / Fault boundary",
+      "Does performance control protect hostile tenants?",
+      "Separate adversarial access, fault injection and performance tests"
+    ],
+    [
+      "G03",
+      "Metrics emphasize different units",
+      "E001-E052",
+      "Can foreground protection preserve useful background work?",
+      "Report per-model goodput, tails and background progress jointly"
+    ],
+    [
+      "G04",
+      "Partition prediction affects makespan",
+      "P020 E050",
+      "How does reconfiguration affect online service?",
+      "Bursty arrivals plus placement changes and request-tail measurement"
+    ],
+    [
+      "G05",
+      "Version and method details remain incomplete",
+      "P002 P011 P022; QA Q3/Q4/Q10",
+      "How reproducible are the comparisons?",
+      "Publish exact version, driver/runtime, warmup, repetitions and uncertainty"
+    ],
+    [
+      "G06",
+      "Energy and cost evidence not harmonized",
+      "Extraction schema and heterogeneous outcomes",
+      "Do measured utilization gains reduce energy per useful request?",
+      "Measure GPU and host energy per SLO-compliant request"
+    ]
+  ],
+  "Validity": [
+    [
+      "Threat",
+      "Evidence",
+      "Effect on conclusion",
+      "Mitigation applied",
+      "Remaining work"
+    ],
+    [
+      "Selection/stopping",
+      "559 retained records not assessed",
+      "No exhaustive recall or prevalence claim",
+      "Stopping branch remains visible",
+      "Instructor/team decision on bounded scope; extend if required"
+    ],
+    [
+      "Title-only decisions",
+      "2933 records without exported abstract",
+      "Relevant work may be missed",
+      "Abstract-availability column retained",
+      "Prioritize uncertain/relevant records for abstract checks"
+    ],
+    [
+      "Single review",
+      "No item-level independent checks",
+      "Correlated screening/QA/extraction errors possible",
+      "Original rationale and source anchors retained",
+      "Record real named checks if performed"
+    ],
+    [
+      "Search provenance",
+      "Displayed/exported discrepancies and broad fields",
+      "Search cannot be fully reconstructed from totals",
+      "Exact preserved query/log values retained",
+      "Supply missing original exports, facets and receipts"
+    ],
+    [
+      "Source version",
+      "Author manuscripts and combined REEF anchors",
+      "Page/result mappings may differ",
+      "Separate source-version and retrieval records",
+      "Compare final published text and map companion outcomes"
+    ],
+    [
+      "Measurement heterogeneity",
+      "Different GPU/model/baseline/statistic",
+      "Cross-study speedup ranking is invalid",
+      "No pooled effect size or universal winner",
+      "Matched comparisons needed"
+    ],
+    [
+      "Reporting bias",
+      "Uneven repetitions and uncertainty",
+      "Headlines may overstate robustness",
+      "Adverse and null findings retained",
+      "Recheck high-impact claims at exact source locations"
+    ]
+  ],
+  "Human Checks": [
+    [
+      "Check ID",
+      "Priority",
+      "Task",
+      "Evidence to return",
+      "Status",
+      "Reviewer",
+      "Checked UTC",
+      "Notes"
+    ],
+    [
+      "H01",
+      "High",
+      "Confirm whether bounded review with 559 unassessed retained records is acceptable",
+      "Instructor direction / dated team scope decision",
+      "Pending",
+      "",
+      "",
+      "Do not infer approval from general permission to use AI"
+    ],
+    [
+      "H02",
+      "High",
+      "Supply InferFair, ArkGPU and Dyna-P PDFs already downloaded",
+      "Original PDFs or legitimate accessible source",
+      "Pending",
+      "",
+      "",
+      "These three publisher copies were not retrieved"
+    ],
+    [
+      "H03",
+      "High",
+      "Check headline outcomes against source figures/tables",
+      "Report ID, evidence ID, source version, page, correction and actual time",
+      "Pending",
+      "",
+      "",
+      "Use 52 evidence rows; do not sign unseen rows"
+    ],
+    [
+      "H04",
+      "Medium",
+      "Check companion/version mapping",
+      "P005/P023 outcomes and P002/P011/P022 manuscript comparisons",
+      "Pending",
+      "",
+      "",
+      "Separate report count from study count"
+    ],
+    [
+      "H05",
+      "Medium",
+      "Confirm original search artifacts and group provenance",
+      "Exact original exports, search fields/facets and times",
+      "Pending",
+      "",
+      "",
+      "Do not reconstruct missing event times from file dates"
+    ]
+  ],
+  "Requirements": [
+    [
+      "Guideline 23 item",
+      "Requirement",
+      "Artifact",
+      "Status / qualification"
+    ],
+    [
+      1,
+      "Final SLR report",
+      "report/main.pdf (draft)",
+      "Draft present; verify before final submission"
+    ],
+    [
+      2,
+      "Engineering problem",
+      "report section 1",
+      "Draft present; verify before final submission"
+    ],
+    [
+      3,
+      "Research objectives",
+      "report section 1",
+      "Draft present; verify before final submission"
+    ],
+    [
+      4,
+      "Research questions",
+      "report section 2",
+      "Draft present; verify before final submission"
+    ],
+    [
+      5,
+      "SLR protocol",
+      "../task1/submitted_protocol.pdf",
+      "Existing evidence preserved; limits documented"
+    ],
+    [
+      6,
+      "Database justification",
+      "report section 3",
+      "Draft present; verify before final submission"
+    ],
+    [
+      7,
+      "Complete search strings",
+      "Search Log / appendix",
+      "Draft present; verify before final submission"
+    ],
+    [
+      8,
+      "Inclusion/exclusion criteria",
+      "report section 3",
+      "Draft present; verify before final submission"
+    ],
+    [
+      9,
+      "Database-wise results",
+      "report section 4",
+      "Existing evidence preserved; limits documented"
+    ],
+    [
+      10,
+      "Search and screening log",
+      "Screening Log / Search Log",
+      "Existing evidence preserved; limits documented"
+    ],
+    [
+      11,
+      "Duplicate record",
+      "Duplicate Removal",
+      "Existing evidence preserved; limits documented"
+    ],
+    [
+      12,
+      "PRISMA flow",
+      "baseline/PRISMA_2020_FLOW_DIAGRAM.pdf",
+      "Draft present; verify before final submission"
+    ],
+    [
+      13,
+      "Quality checklist/scores",
+      "QA / QA Reconciliation",
+      "Existing evidence preserved; limits documented"
+    ],
+    [
+      14,
+      "Included primary studies",
+      "Studies / Source Register",
+      "Draft present; verify before final submission"
+    ],
+    [
+      15,
+      "Extraction sheet",
+      "Extraction / Evidence",
+      "Existing evidence preserved; limits documented"
+    ],
+    [
+      16,
+      "Taxonomy",
+      "Taxonomy / report section 5",
+      "Draft present; verify before final submission"
+    ],
+    [
+      17,
+      "Comparative matrix",
+      "Comparability / report section 7",
+      "Draft present; verify before final submission"
+    ],
+    [
+      18,
+      "Trade-offs",
+      "report section 8",
+      "Draft present; verify before final submission"
+    ],
+    [
+      19,
+      "Conflicting evidence",
+      "Comparability / report section 9",
+      "Draft present; verify before final submission"
+    ],
+    [
+      20,
+      "All RQ answers",
+      "report section 6",
+      "Draft present; verify before final submission"
+    ],
+    [
+      21,
+      "Engineering recommendation",
+      "Recommendations / report section 10",
+      "Draft present; verify before final submission"
+    ],
+    [
+      22,
+      "Research gaps",
+      "Research Gaps / report section 11",
+      "Draft present; verify before final submission"
+    ],
+    [
+      23,
+      "Threats to validity",
+      "Validity / report section 12",
+      "Draft present; verify before final submission"
+    ],
+    [
+      24,
+      "References",
+      "report references",
+      "Draft present; verify before final submission"
+    ],
+    [
+      25,
+      "Supporting verification files",
+      "logs / baseline / scripts",
+      "Draft present; verify before final submission"
+    ]
+  ],
+  "Benchmark": [
+    [
+      "Benchmark",
+      "Source",
+      "Observed practice",
+      "Application to this draft",
+      "Limit"
+    ],
+    [
+      "Hong, Spence and Nikolopoulos, ACM Computing Surveys 50(3), article 35, 2017",
+      "https://doi.org/10.1145/3068281",
+      "Classify by implementation layer; compare mechanisms; discuss scheduling and unresolved constraints",
+      "Separate taxonomy from outcomes and condition recommendations on control boundary",
+      "A survey organization benchmark, not proof of PRISMA compliance"
+    ],
+    [
+      "Journal standing, checked 20 Oct 2026",
+      "https://dl.acm.org/journal/CSUR",
+      "Publisher search result: 2025 impact factor 30.4; rank 1/146 in Computer Science Theory & Methods",
+      "Q1 standing inferred from top rank; journal-level measure only",
+      "Does not certify this student draft as journal-ready"
+    ]
+  ]
+}

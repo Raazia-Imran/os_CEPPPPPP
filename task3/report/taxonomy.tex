@@ -1,0 +1,10 @@
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.35\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}}
+\toprule
+\textbf{Family / reports} & \textbf{Control and condition} & \textbf{Cost}\\\midrule\endhead
+Temporal / priority; P004 P005 P006 P007 P009 P015 P022 & Request, model, kernel or launch order. A suitable interception/preemption boundary exists & Switch cost, profiling and background slowdown\\\addlinespace
+Software spatial sharing; P001 P002 P003 P008 P021 & MPS quota or AMD CU-mask control. Concurrent jobs fit memory and selected compute allocation & Residual interference; quotas are not proof of security\\\addlinespace
+Hardware partition and hybrid; P011 P014 P020 & MIG profiles plus temporal/MPS policy. Supported partition profiles fit model memory & Fragmentation, placement and reconfiguration cost\\\addlinespace
+API / runtime mediation; P006 P012 P013 P014 P019 P022 & User API, shared runtime or kernel interface. Required APIs and integration hooks are supported & Compatibility, CPU/transfer cost and trust boundary\\\addlinespace
+Memory handover; P010 & Inference/training memory ownership. Training can yield memory without breaking inference & Reclamation and integration overhead\\\addlinespace
+Fairness policy; P018 & Relative model slowdown and SLO goodput. Comparable per-model service objectives & Not equivalent to request-tail or hostile-tenant isolation\\\addlinespace
+\bottomrule\end{longtable}

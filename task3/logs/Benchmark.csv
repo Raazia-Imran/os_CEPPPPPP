@@ -1,0 +1,3 @@
+Benchmark,Source,Observed practice,Application to this draft,Limit
+"Hong, Spence and Nikolopoulos, ACM Computing Surveys 50(3), article 35, 2017",https://doi.org/10.1145/3068281,Classify by implementation layer; compare mechanisms; discuss scheduling and unresolved constraints,Separate taxonomy from outcomes and condition recommendations on control boundary,"A survey organization benchmark, not proof of PRISMA compliance"
+"Journal standing, checked 20 Oct 2026",https://dl.acm.org/journal/CSUR,Publisher search result: 2025 impact factor 30.4; rank 1/146 in Computer Science Theory & Methods,Q1 standing inferred from top rank; journal-level measure only,Does not certify this student draft as journal-ready

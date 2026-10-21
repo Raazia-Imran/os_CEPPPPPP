@@ -25,6 +25,8 @@ s=s.replace('../baseline/PRISMA_2020_FLOW_DIAGRAM.pdf',str(root/'baseline/PRISMA
 aux=(report/'main.aux').read_text()
 labels=dict(re.findall(r'\\newlabel\{([^}]+)\}\{\{([^}]+)\}',aux))
 s=re.sub(r'\\ref\{([^}]+)\}',lambda m:labels.get(m[1],m[1]),s)
+s=s.replace(r'\addlinespace','')
+s=re.sub(r'(&\s*)([0-9]+(?:\.[0-9]+)?)',r'\1{\2}',s)
 (tmp/'expanded.tex').write_text(s)
 subprocess.run(['pandoc',str(tmp/'expanded.tex'),'-f','latex','-t','docx','-o',str(tmp/'converted.docx')],check=True,cwd=report)
 doc=Document(tmp/'converted.docx')

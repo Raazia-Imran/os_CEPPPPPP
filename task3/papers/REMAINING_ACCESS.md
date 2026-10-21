@@ -15,9 +15,4 @@ Sources:
 
 The earlier download attempts did not produce valid PDF files. Current publisher access observations do not reconstruct the exact historical HTTP failures. An accessible abstract or DOI page is not proof that the full PDF was retrieved.
 
-The previous session recorded 18 local reading copies. They have not been recovered or uploaded. The repository catalogue links all 21 report versions; it does not contain all 21 PDF files.
-
-If the team already downloaded these three papers through university access, supply those copies for source checking. Do not provide passwords or cookies. Repository AGENTS.md prohibits committing licensed full-text PDFs; retain restricted reading copies privately and publish bibliographic records and permitted links.
-
-## Current infrastructure limitation
-The assistant's temporary command-execution environment returns “No usable execution environment is available.” GitHub and web access still function. This is not a problem with the user's computer or repository. The expanded Excel workbook, compiled PDF draft and local downloaded papers cannot currently be inspected or published from that environment.
+The 18 local reading copies have now been recovered. The temporary execution environment works. The three PDFs above remain missing. Their metadata and inherited extraction are not substitutes for source verification. Full-text files remain outside public Git per AGENTS.md.

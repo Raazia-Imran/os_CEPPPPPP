@@ -1,0 +1,66 @@
+\subsubsection*{REC01: Trusted resident models; utilization priority}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
+Candidate & Tuned MPS / software spatial controls\\\addlinespace
+Evidence & P001 P002 P003 P008 E001-E004 E006 E031-E032\\\addlinespace
+Expected benefit & Higher useful co-location under tested allocations\\\addlinespace
+Sacrifice & Interference, quota tuning and memory pressure\\\addlinespace
+Alternative / trigger & Partitions or dedication when trust/isolation dominates\\\addlinespace
+Validation needed & Measure each model P99 and SLO goodput under bursts\\\addlinespace
+\bottomrule\end{longtable}
+\subsubsection*{REC02: Foreground tail-latency priority}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
+Candidate & Priority/preemptive scheduling\\\addlinespace
+Evidence & P005 P006 P007 P015 P022 E018-E030 E044-E045 E052\\\addlinespace
+Expected benefit & Lower foreground interference\\\addlinespace
+Sacrifice & Background slowdown, profiling and runtime integration\\\addlinespace
+Alternative / trigger & Dedicated GPU when supported control cannot meet deadline\\\addlinespace
+Validation needed & Check foreground tails and background progress jointly\\\addlinespace
+\bottomrule\end{longtable}
+\subsubsection*{REC03: Low-rate serverless functions}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
+Candidate & Late binding / controlled runtime sharing\\\addlinespace
+Evidence & P012 P013 E038-E041\\\addlinespace
+Expected benefit & Higher function or workflow density\\\addlinespace
+Sacrifice & Host CPU, memory transfer and shared-runtime trust\\\addlinespace
+Alternative / trigger & Keep large or high-rate models resident if swaps dominate\\\addlinespace
+Validation needed & Sweep model sizes, cold starts, offered rate and concurrency\\\addlinespace
+\bottomrule\end{longtable}
+\subsubsection*{REC04: Mixed inference with opportunistic training}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
+Candidate & Memory handover / controlled co-location\\\addlinespace
+Evidence & P010 P019 E035 E048-E049\\\addlinespace
+Expected benefit & Protect inference while using residual capacity\\\addlinespace
+Sacrifice & Reclamation overhead and reduced training progress\\\addlinespace
+Alternative / trigger & Separate resources for intolerable interference\\\addlinespace
+Validation needed & Measure inference tails separately from training throughput\\\addlinespace
+\bottomrule\end{longtable}
+\subsubsection*{REC05: Supported partition hardware; stable memory fit}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
+Candidate & MIG-aware hybrid policy\\\addlinespace
+Evidence & P011 P014 P020 E036-E037 E042-E043 E050\\\addlinespace
+Expected benefit & Resource allocation with configurable co-location\\\addlinespace
+Sacrifice & Fragmentation and reconfiguration overhead\\\addlinespace
+Alternative / trigger & Software sharing when partition granularity wastes capacity\\\addlinespace
+Validation needed & Validate profile fit and reconfiguration effects; security needs separate tests\\\addlinespace
+\bottomrule\end{longtable}
+\subsubsection*{REC06: Several models with unequal service pressure}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
+Candidate & Fairness-aware admission / scheduling\\\addlinespace
+Evidence & P018 E046-E047\\\addlinespace
+Expected benefit & Balance normalized slowdown and SLO goodput\\\addlinespace
+Sacrifice & May give up aggregate throughput to improve fairness\\\addlinespace
+Alternative / trigger & Priority scheduling when one foreground SLA dominates\\\addlinespace
+Validation needed & Agree fairness objective and per-model SLO before deployment\\\addlinespace
+\bottomrule\end{longtable}

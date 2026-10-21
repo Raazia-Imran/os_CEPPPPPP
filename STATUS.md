@@ -1,3 +1,7 @@
+# Latest: Task 3 recovered draft
+
+See task3/CONTINUE_HERE.md for the current Task 3 checkpoint and its separate supplied baseline. Older Task 2 counts below are historical and must not replace Task 3 counts.
+
 # Latest: consolidated Task 2 through Heading 14
 
 Use `final things/06_Task2_Submission/README.md`. The complete electronic report contains a 25-page core (including cover/contents/references) followed by complete research tables, a reversible value glossary, amendments and unchanged submitted Task 1: 1,272 PDF pages total. One main.tex and references.bib build it locally with the supplied protocol PDF. The 13-tab workbook, standalone QA/extraction PDFs and unabridged CSVs accompany it. Later CEP Sections 15–22 remain separately preserved in task2/later_cep.

@@ -1,0 +1,6 @@
+Check ID,Priority,Task,Evidence to return,Status,Reviewer,Checked UTC,Notes
+H01,High,Confirm whether bounded review with 559 unassessed retained records is acceptable,Instructor direction / dated team scope decision,Pending,,,Do not infer approval from general permission to use AI
+H02,High,"Supply InferFair, ArkGPU and Dyna-P PDFs already downloaded",Original PDFs or legitimate accessible source,Pending,,,These three publisher copies were not retrieved
+H03,High,Check headline outcomes against source figures/tables,"Report ID, evidence ID, source version, page, correction and actual time",Pending,,,Use 52 evidence rows; do not sign unseen rows
+H04,Medium,Check companion/version mapping,P005/P023 outcomes and P002/P011/P022 manuscript comparisons,Pending,,,Separate report count from study count
+H05,Medium,Confirm original search artifacts and group provenance,"Exact original exports, search fields/facets and times",Pending,,,Do not reconstruct missing event times from file dates

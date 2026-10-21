@@ -1,0 +1,9 @@
+Comparison ID,Reports / evidence,Observation,Comparison class,Interpretation,Missing control
+CMP01,P011 E036 E037 C001 C002,354 to 446 requests/s; 11 to 27 ms,Within-source trade-off,25.99% throughput increase accompanies 2.4545x latency,Latency quantile; final version equivalence
+CMP02,P001 E001; P011 E036,2.7x versus 25.99% increase,Unmatched cross-study,Different baseline and GPU/model context prevent ranking,"Matched workload, batch and resource budget"
+CMP03,P007 E029 E030; P015 E044,Up to 7.3x aggregate work versus 1.07x foreground P99,Different objectives,Foreground delay and total completed work must be assessed together,Common model mix and background progress metric
+CMP04,P008 E031 E032,GUE 94.04 and negative signed latency improvement,Within-source metric tension,Composite efficacy is not utilization percent; preserve adverse latency,Metric definitions and baseline stratum
+CMP05,P012 E038 E039,Density benefit with model-transfer sensitivity,Condition-dependent trade-off,Late binding suits low-rate functions only if transfer fits SLO,Heavy-model transfer and host CPU budget
+CMP06,P019 E048 E049; P022 E052,QoS protection with low-contention or background throughput loss,"Different experiments, consistent cost",Protecting foreground work can sacrifice co-tenant work,Matched slowdown definitions
+CMP07,P005 P023,REEF engines and report versions differ,"Companion study, not replication",Retain source-version strata; do not double-count corroboration,Outcome-to-version mapping for every combined REEF row
+CMP08,P018 E046 E047; P020 E050,Goodput/fairness versus makespan,Different metrics,Job-level efficiency cannot establish request-tail service,Request arrival process and latency distribution
