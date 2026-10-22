@@ -1,0 +1,11 @@
+{
+  "records_screened": 559,
+  "excluded_at_screening": 225,
+  "advanced_to_report_retrieval": 334,
+  "earlier_proposed_exclusions_reopened": 56,
+  "title_only_exclusions": 108,
+  "missing_abstract_exclusions": 0,
+  "duplicate_report_linkage_pending": true,
+  "meaning": "Branch stage accounting only; not a reconciled whole-review PRISMA flow",
+  "checked_utc": "2026-10-22T20:38:27.618287+00:00"
+}

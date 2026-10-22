@@ -11,10 +11,15 @@
   "human_votes_unchanged_and_empty": true,
   "frozen_hashes_unchanged": true,
   "final_eligibility_closed": false,
-  "final_inclusion_changes": 4,
-  "final_source_based_inclusions": 4,
-  "working_unique_studies": 24,
-  "working_reports": 25,
+  "final_inclusion_changes": 5,
+  "final_source_based_inclusions": 5,
+  "working_unique_studies": 25,
+  "working_reports": 26,
   "frozen_inclusion_changes": 0,
-  "review_amendment": "M2026-10-23"
+  "review_amendment": "M2026-10-23",
+  "final_screening_decisions": 559,
+  "final_screening_excluded": 225,
+  "final_screening_advanced": 334,
+  "new_QA_rows": 50,
+  "new_outcome_rows": 11
 }

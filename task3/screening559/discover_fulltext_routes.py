@@ -6,6 +6,10 @@ cache = Path('/workspace/scratch/8d52181bc639/research_metadata/fulltext_routes'
 cache.mkdir(parents=True, exist_ok=True)
 q = [x for x in csv.DictReader((d/'Working_559_Queue.csv').open(newline=''))
      if x['Preparation recommendation'] != 'propose_exclusion']
+if (d/'Final_Screening_Decisions.csv').exists():
+    advanced={x['Record ID'] for x in csv.DictReader((d/'Final_Screening_Decisions.csv').open(newline=''))
+              if x['Final screening decision'].startswith('Advance')}
+    q=[x for x in csv.DictReader((d/'Working_559_Queue.csv').open(newline='')) if x['Record ID'] in advanced]
 norm = lambda s: re.sub(r'[^a-z0-9]', '', s.lower())
 def fetch(url, name):
     with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent':'CEP-SLR-source-discovery/1.0'}), timeout=25) as r:

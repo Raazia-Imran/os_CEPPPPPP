@@ -1,5 +1,3 @@
-# Screening continuation workspace
+# Screening continuation
 
-Read CURRENT_STATUS.md, progress.json and Review_Process_Amendment.md first.
-
-All559records have preliminary assessments. Four now have final source-based inclusion decisions in Final_Eligibility_Decisions.csv; the working corpus is24studies/25reports, while the frozen report remains20/21. Full screening, PRISMA reconciliation and new report/workbook integration are still underway. No licensed PDFs or invented independent votes are included.
+Read CURRENT_STATUS.md and Review_Process_Amendment.md. Final_Screening_Decisions.csv records559stage decisions (225exclude,334advance). Final_Eligibility_Decisions.csv records five new eligible studies. The working corpus is25studies/26reports; the frozen release remains20/21. References, BibTeX, QA, outcomes and access logs are included. Full-text eligibility and report/workbook/PRISMA integration continue.

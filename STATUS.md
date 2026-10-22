@@ -13,3 +13,5 @@ Historical checkpoint detail remains in Git history; this current status contain
 ##23October2026 continuation
 
 All559records have preliminary assessments. Four inspected papers now have final source-based eligibility under user-reported instructor permission (M2026-10-23); working24studies/25reports. Frozen20/21artifacts remain unchanged. Independent human votes remain blank. PRISMA and report/workbook integration are pending. See task3/screening559/CURRENT_STATUS.md.
+
+Screening continuation update:559final title/abstract-stage decisions (225excluded,334advanced);56proposals conservatively reopened. Five final source-based inclusions now yield a working25-study/26-report corpus. Frozen20/21unchanged;329advanced records remain open. DOI/BibTeX,50QA rows,11outcomes and80public access events recorded.

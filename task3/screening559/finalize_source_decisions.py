@@ -12,6 +12,7 @@ mapping = {
     'R00143': ('S022', 'P025', 'Abacus'),
     'R01089': ('S023', 'P026', 'Miriam'),
     'R00656': ('S024', 'P027', 'SGDRC'),
+    'R00661': ('S025', 'P028', 'Pantheon'),
 }
 def read(name):
     return list(csv.DictReader((d / name).open(newline='')))
@@ -61,11 +62,17 @@ for x in qa:
 write('Final_Candidate_QA.csv', finalqa)
 p = json.loads((d/'progress.json').read_text())
 p.update({'final_source_based_eligibility_decisions': len(decisions),
-    'new_included_studies': len(decisions), 'working_unique_studies': 24,
-    'working_included_reports': 25, 'frozen_unique_studies': 20,
+    'new_full_text_eligibility_assessments':len(decisions),
+    'full_text_criteria_prepared':len(criteria),
+    'candidate_QA_items_prepared':len(qa),
+    'candidate_outcomes_prepared':len(outcomes),
+    'candidate_studies_meeting_first_review_criteria':len(decisions),
+    'candidate_QA_totals':{rid:sum(int(x['Prepared score']) for x in qa if x['Record ID']==rid) for rid in mapping},
+    'new_included_studies': len(decisions), 'working_unique_studies': 20+len(decisions),
+    'working_included_reports': 21+len(decisions), 'frozen_unique_studies': 20,
     'frozen_included_reports': 21, 'independent_human_votes': 0,
     'review_process_amendment': 'M2026-10-23',
     'prisma_changed': False, 'prisma_reconciliation_pending': True,
-    'final_screening_complete': False, 'all_full_text_eligibility_closed': False})
+    'all_full_text_eligibility_closed': False})
 (d/'progress.json').write_text(json.dumps(p, indent=2)+'\n')
-print('Four final source-based inclusion decisions; working corpus24studies/25reports; frozen20/21 unchanged.')
+print(f'{len(decisions)} final source-based inclusion decisions; working corpus{20+len(decisions)}studies/{21+len(decisions)}reports; frozen20/21 unchanged.')

@@ -33,3 +33,8 @@ Public checkpoint publication is authorized on22October2026. The separate folder
 - [x] Finalize four inspected primary papers; preserve initial decisions and empty human votes.
 - [ ] Close remaining screening and eligibility, identity links and retrieval gaps.
 - [ ] Integrate working24-study corpus into a new report/workbook and recompute PRISMA.
+
+- [x] Complete559title/abstract stage decisions:225exclude,334advance;56borderline proposals reopened.
+- [x] Finalize Pantheon: working corpus25studies/26reports;50new QA items,11outcomes.
+- [x] Check indexed PDF routes for initial278retrieval candidates;34PDFs retrieved; content inspection remains open.
+- [ ] Close eligibility for329advanced records and reconcile report versions.
