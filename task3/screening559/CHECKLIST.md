@@ -38,3 +38,8 @@ Public checkpoint publication is authorized on22October2026. The separate folder
 - [x] Finalize Pantheon: working corpus25studies/26reports;50new QA items,11outcomes.
 - [x] Check indexed PDF routes for initial278retrieval candidates;34PDFs retrieved; content inspection remains open.
 - [ ] Close eligibility for329advanced records and reconcile report versions.
+
+- [x] Oneiros included after inspecting author-hosted final paper; six new eligible studies,60QA rows,14outcomes,six references/BibTeX entries.
+- [x] Two final full-textEC2exclusions (In-Mig,ALL-RP);326advanced records remain open.
+- [x] Update methodology_corrections.csv with review-process amendment, date-basis distinctions, access limits and remaining gaps.
+- [ ] Integrate new eligibility into report/workbook/synthesis and reconcile whole-review PRISMA.

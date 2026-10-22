@@ -1,10 +1,8 @@
 {
-  "last_verified_commit": "9dea3a8cb46b3baf24f563f00eeca6e44176d4c4",
+  "last_verified_branch_head": "3ae8bef835bf00ad7309f1c112ae1721f034485b",
   "branch": "task3-screening-559",
   "folder": "task3/screening559",
   "draft_pull_request": "https://github.com/Raazia-Imran/os_CEPPPPPP/pull/5",
-  "files_verified": 71,
-  "manifest_hashes_verified": 70,
   "frozen_artifacts_unchanged": true,
-  "verification_scope": "Initial396-assessment publication; newer local changes require a subsequent verified commit."
+  "verification_scope": "Prior branch head and frozen artifact hashes. Prior manifest had two stale generated-decision file hashes; this publication rebuilds the full manifest after all writes. Verify current commit against PUBLICATION_MANIFEST.json; no self-referential current commit hash is embedded."
 }

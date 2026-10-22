@@ -13,6 +13,7 @@ mapping = {
     'R01089': ('S023', 'P026', 'Miriam'),
     'R00656': ('S024', 'P027', 'SGDRC'),
     'R00661': ('S025', 'P028', 'Pantheon'),
+    'R00086': ('S026', 'P029', 'Oneiros'),
 }
 def read(name):
     return list(csv.DictReader((d / name).open(newline='')))
@@ -42,7 +43,8 @@ for rid, (sid, pid, name) in mapping.items():
         'Independent human vote': '', 'Decided UTC': now,
         'Applied to frozen release': 'No',
         'Working integration status': 'Eligible addition; synthesis/report/workbook integration pending'})
-write('Final_Eligibility_Decisions.csv', decisions)
+exclusions=read('Full_Text_Exclusions.csv') if (d/'Full_Text_Exclusions.csv').exists() else []
+write('Final_Eligibility_Decisions.csv', decisions+exclusions)
 finalcriteria = []
 for x in criteria:
     y = dict(x)
@@ -61,7 +63,8 @@ for x in qa:
     finalqa.append(y)
 write('Final_Candidate_QA.csv', finalqa)
 p = json.loads((d/'progress.json').read_text())
-p.update({'final_source_based_eligibility_decisions': len(decisions),
+p.update({'final_source_based_eligibility_decisions': len(decisions)+len(exclusions),
+    'final_full_text_exclusions':len(exclusions),
     'new_full_text_eligibility_assessments':len(decisions),
     'full_text_criteria_prepared':len(criteria),
     'candidate_QA_items_prepared':len(qa),

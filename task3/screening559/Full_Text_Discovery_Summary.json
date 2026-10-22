@@ -1,0 +1,8 @@
+{
+  "records": 334,
+  "identity_matches": 297,
+  "records_with_pdf_route": 92,
+  "earlier_verified_entries_preserved_after_failed_or_incomplete_refresh": 88,
+  "latest_refresh_attempts": "Full_Text_Discovery_Attempts_Expanded.csv",
+  "eligibility_not_inferred": true
+}

@@ -72,20 +72,20 @@
     "git_blob_sha": "e0d9f35602e4dc5fdb6088392de0f2492d4f8dbf"
   },
   "task3/screening559/CHECKLIST.md": {
-    "bytes": 3118,
-    "git_blob_sha": "51ebd968522ca0af6a8c89c1065947a637c52e14"
+    "bytes": 3580,
+    "git_blob_sha": "8ff4a035361945b44d0822ad25332bf3489d08fa"
   },
   "task3/screening559/CURRENT_STATUS.md": {
-    "bytes": 1883,
-    "git_blob_sha": "086db9b9e9cf1bfdc7e8878f8e2afe1204ab6221"
+    "bytes": 2401,
+    "git_blob_sha": "a48f2d76bb63962cd7d1ba0fd4a2f2a9227e9388"
   },
   "task3/screening559/Candidate_Outcomes_Prepared.csv": {
-    "bytes": 2988,
-    "git_blob_sha": "d8551ab35d9572567897175e857a0b9a7c68c25e"
+    "bytes": 4154,
+    "git_blob_sha": "228528f803f6c4e16e112bd1cc7cb9e681dee2b5"
   },
   "task3/screening559/Candidate_QA_Prepared.csv": {
-    "bytes": 12141,
-    "git_blob_sha": "84f81abc6c72faaed9d3d97e3647c882e06e685b"
+    "bytes": 14593,
+    "git_blob_sha": "8eab746a610cdbbf84fd6d3ec549798e790dea3c"
   },
   "task3/screening559/Candidate_Synthesis_Notes.md": {
     "bytes": 5113,
@@ -100,36 +100,48 @@
     "git_blob_sha": "6f2da5d0b6806eafffbcda66de3c299771efffeb"
   },
   "task3/screening559/Final_Candidate_QA.csv": {
-    "bytes": 16051,
-    "git_blob_sha": "0199af8e5cb8bb4f9cd413c8c0aaecd1d0bc532f"
+    "bytes": 19273,
+    "git_blob_sha": "29029892940ec4930137d08d27dfc408bcc8903f"
   },
   "task3/screening559/Final_Eligibility_Criteria.csv": {
-    "bytes": 14477,
-    "git_blob_sha": "47b42af33226317d5975cc96cd90060fb7410a72"
+    "bytes": 17424,
+    "git_blob_sha": "8440893791206f3df1a87cbbf8c541ea020db604"
   },
   "task3/screening559/Final_Eligibility_Decisions.csv": {
-    "bytes": 2556,
-    "git_blob_sha": "2b757414d0ecbead582fb67fb49a0be957374525"
+    "bytes": 4370,
+    "git_blob_sha": "821820bb5b7f94c32dc0a0a4cb6448c08e64d462"
   },
   "task3/screening559/Final_Screening_Decisions.csv": {
     "bytes": 333043,
     "git_blob_sha": "160ec5ea9002d6e6000830a114ec936e9114ba4d"
   },
+  "task3/screening559/Full_Text_Discovery_Attempts_Expanded.csv": {
+    "bytes": 501279,
+    "git_blob_sha": "3ca2192544a2b7f4bee2359cc2a9f7b044f80d22"
+  },
   "task3/screening559/Full_Text_Discovery_Routes.csv": {
-    "bytes": 430157,
-    "git_blob_sha": "62e7712631f000f73fb7aa7e481c9b33e46a3619"
+    "bytes": 519939,
+    "git_blob_sha": "8234948666cfbdff1a82087f9306f4a0d64d1584"
+  },
+  "task3/screening559/Full_Text_Discovery_Summary.json": {
+    "bytes": 269,
+    "git_blob_sha": "dbd639b2a28e5f8df6bd1e7a5dfd1c25eb34a3ca"
   },
   "task3/screening559/Full_Text_Eligibility_Prepared.csv": {
-    "bytes": 11495,
-    "git_blob_sha": "7eb3ad999406da21ed086ef85b2be814c7685ecc"
+    "bytes": 13860,
+    "git_blob_sha": "f19a37106813297e858a27f6881a90bc2b43053a"
+  },
+  "task3/screening559/Full_Text_Exclusions.csv": {
+    "bytes": 1566,
+    "git_blob_sha": "78cf5a8853c9d803270424613118206231cc6626"
   },
   "task3/screening559/Full_Text_Review_Cautions.csv": {
     "bytes": 2935,
     "git_blob_sha": "e735358cf30cf6d97a81ea99e4cc3e7f80254e92"
   },
   "task3/screening559/Full_Text_Source_Register.csv": {
-    "bytes": 2111,
-    "git_blob_sha": "8c3c2195745eda13ca8e2428f615875bce5fa14e"
+    "bytes": 2478,
+    "git_blob_sha": "82da107a365d2bb5180e8171ca0d256bde1182c7"
   },
   "task3/screening559/INTEGRATION_PLAN.md": {
     "bytes": 2648,
@@ -140,20 +152,24 @@
     "git_blob_sha": "20510f13e4cff5f7b2b2230c5eebc3711091c691"
   },
   "task3/screening559/New_Included_References.bib": {
-    "bytes": 2527,
-    "git_blob_sha": "a4bafe43b5221dfd6a1a7532e6f1f1907b1c2192"
+    "bytes": 2999,
+    "git_blob_sha": "b8c0652e638f87eb5c21903d438c5460aa5e87c4"
   },
   "task3/screening559/New_Included_References.csv": {
-    "bytes": 3125,
-    "git_blob_sha": "7a1954d408373583e5e3ea25ba66a90b14339267"
+    "bytes": 3708,
+    "git_blob_sha": "812c36513bff2f09d1932f190d2b55b2414ffb88"
   },
   "task3/screening559/OpenAlex_Metadata_Recovery.csv": {
     "bytes": 773650,
     "git_blob_sha": "955ed440c4db8820170dcbf5c19fbabe3eea537f"
   },
+  "task3/screening559/PRISMA_Branch_Accounting.json": {
+    "bytes": 553,
+    "git_blob_sha": "c388785912a9109865ececcf11947e562997b64f"
+  },
   "task3/screening559/PUBLICATION_RECEIPT.json": {
-    "bytes": 436,
-    "git_blob_sha": "5846e5452688868c7562a88bf9cb21da65f40ba6"
+    "bytes": 569,
+    "git_blob_sha": "c1f0d42488f05005571fbe649ab059694dc4ed36"
   },
   "task3/screening559/Public_Full_Text_Access_Attempts.csv": {
     "bytes": 26493,
@@ -179,6 +195,10 @@
     "bytes": 1134,
     "git_blob_sha": "fe211482201aefb465a50701399a51667a2753bf"
   },
+  "task3/screening559/Report_Integration_Additions.md": {
+    "bytes": 4926,
+    "git_blob_sha": "ec98366f6aff7ab1adf39c2ff9cc90ab31687fc8"
+  },
   "task3/screening559/Retrieval_and_Metadata_Checks.csv": {
     "bytes": 1001,
     "git_blob_sha": "59e81e1be752515c0798ec742ad987418546e226"
@@ -188,8 +208,8 @@
     "git_blob_sha": "57fa42c0878fb84f99980ad0b0a6086799bd0f8d"
   },
   "task3/screening559/START_HERE.md": {
-    "bytes": 439,
-    "git_blob_sha": "4340fb05f514ae00970cdbf4538bcb72e3495920"
+    "bytes": 427,
+    "git_blob_sha": "e610a20ad3ec193d226ee77b61fd50c322404d1d"
   },
   "task3/screening559/Screening_Stage_Accounting.json": {
     "bytes": 400,
@@ -212,12 +232,16 @@
     "git_blob_sha": "e58a359a612b135a1b1447195ddc483176d93eea"
   },
   "task3/screening559/VALIDATION.json": {
-    "bytes": 795,
-    "git_blob_sha": "09cac08f15a1660221b23d7d9626dfab37f0bcbd"
+    "bytes": 588,
+    "git_blob_sha": "f920a48a42879395a6049bdf3d9ccd1aeface6e9"
   },
   "task3/screening559/Working_559_Queue.csv": {
     "bytes": 1061353,
     "git_blob_sha": "a197e78e3387ba716f9a98a961b09491b6910506"
+  },
+  "task3/screening559/add_oneiros_review.py": {
+    "bytes": 5271,
+    "git_blob_sha": "95fd6dc4a4dc83b76179989fed4ce672cc0894a5"
   },
   "task3/screening559/add_pantheon_review.py": {
     "bytes": 5500,
@@ -316,8 +340,8 @@
     "git_blob_sha": "a4c6b0af74b4d6f040a7c0bb46b23808844e63f9"
   },
   "task3/screening559/finalize_source_decisions.py": {
-    "bytes": 3995,
-    "git_blob_sha": "cb7950c26e981171fa7fcbd5c9c4e11e0af48b57"
+    "bytes": 4210,
+    "git_blob_sha": "fe570839e2f6e707c92c7594570d5cba0fd2f0b2"
   },
   "task3/screening559/finalize_title_abstract_screening.py": {
     "bytes": 4751,
@@ -335,13 +359,17 @@
     "bytes": 238,
     "git_blob_sha": "9e150f6eb580f87f0299fc26cd1a66e04fbb89dd"
   },
+  "task3/screening559/methodology_corrections.csv": {
+    "bytes": 10434,
+    "git_blob_sha": "b1751c1663e5f12e6689c392cbc71065efab9cc5"
+  },
   "task3/screening559/openalex_recovery_progress.json": {
     "bytes": 230,
     "git_blob_sha": "4301715473364c0164b9f8a35be114266aa91984"
   },
   "task3/screening559/progress.json": {
-    "bytes": 2207,
-    "git_blob_sha": "62c4b22ddbc1c2edcb4508b70909b435540da2d0"
+    "bytes": 2408,
+    "git_blob_sha": "ea0e5400db3197bd9783133eae0671f72cc8e8f1"
   },
   "task3/screening559/publisher_recovery_progress.json": {
     "bytes": 197,
@@ -374,5 +402,9 @@
   "task3/screening559/title_batch003_judgments.json": {
     "bytes": 7136,
     "git_blob_sha": "f0084d7c10a73fd5cd7a61f2d4e74dcef2ea5412"
+  },
+  "task3/screening559/validate_continuation.py": {
+    "bytes": 3434,
+    "git_blob_sha": "72f69d68c65bc043a47075ee15176ef1fa965e8a"
   }
 }

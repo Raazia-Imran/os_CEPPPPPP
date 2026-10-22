@@ -1,17 +1,21 @@
-# Current screening improvement checkpoint
+# Current screening continuation
 
 ## Frozen and working corpus
 
-Frozen commit04271d77eae68f153d0682f951bd3cc1e9162a6b remains20studies/21reports, including the original37-sheet workbook and ZIP. Its bytes are unchanged.
+Frozen commit04271d77eae68f153d0682f951bd3cc1e9162a6b remains20unique studies/21reports, including its original37-sheet workbook and ZIP. Frozen bytes remain unchanged.
 
-Five inspected primary papers now have final source-based inclusion decisions under amendment M2026-10-23: LithOS(S021/P024), Abacus(S022/P025), Miriam(S023/P026), SGDRC(S024/P027), Pantheon(S025/P028). Working corpus:25unique studies/26reports. The new packages contain30criterion checks,50QA items and11outcomes, plus verified DOI/reference rows and BibTeX. Independent human votes remain absent.
+Six new primary papers have final source-based inclusion decisions under M2026-10-23: LithOS(S021/P024), Abacus(S022/P025), Miriam(S023/P026), SGDRC(S024/P027), Pantheon(S025/P028), Oneiros(S026/P029). The working corpus is26unique studies/27reports.36criterion checks,60QA items,14outcomes and six DOI/reference/BibTeX entries support these additions. No independent human votes are asserted.
 
-## All559records have stage decisions
+## Screening and eligibility
 
-The final title/abstract screening decisions are225exclusions and334advancements to retrieval/full-text eligibility. A conservative scope audit reopened56earlier proposed exclusions.108exclusions use title/metadata evidence alone; their off-topic/type reasons are explicit. No record is excluded for missing an abstract. The original preliminary assessments remain preserved.
+All559records now have final title/abstract-stage decisions:225excluded,334advanced. A conservative audit reopened56earlier proposed exclusions.108exclusions are explicitly title-only; none is due to missing an abstract. Original preliminary assessments remain preserved.
 
-Five advanced records are included;329advanced records still need full-text eligibility or report identity closure. Indexed routes were checked for the earlier278-record retrieval set:73had PDF routes,80access events produced34local PDFs. Those34downloads are not34eligible studies; their content/version must be assessed. Pantheon was additionally retrieved through an author page. Remaining routes must be expanded to include the56reopened records.
+Of334advanced records, six are included and two are excluded at full text (In-Mig and ALL-RP, eachEC2).326still need full-text eligibility or report identity closure. Final_Screening_Decisions.csv and Final_Eligibility_Decisions.csv distinguish these stages. PRISMA_Branch_Accounting.json gives branch arithmetic, not a whole-review final PRISMA flow.
 
-## Integration still open
+Indexed routes for the earlier278-record set yielded73records with PDF routes;80access events produced34local PDFs. Downloads do not establish identity/version or eligibility. Additional author-route PDFs support Pantheon and the inspected final Oneiros version. The route register is being expanded to334advanced records. A single403is not a final unavailable-report classification.
 
-Final report, workbook and synthesis integration remain pending. The branch-stage accounting is available in Screening_Stage_Accounting.json; the whole-review PRISMA must be reconciled with historical logs and duplicate/companion linkage. No final whole-review flow is asserted. Public source URLs and hashes are logged; reading PDFs are not redistributed.
+## Integration
+
+The new report,37-sheet master-workbook updates, synthesis and whole-review PRISMA reconciliation remain pending. New_Included_References.bib can be merged into the LaTeX bibliography using stable IDs. methodology_corrections.csv preserves original audit issues plus new resolutions and explicit limitations. Read Review_Process_Amendment.md and INTEGRATION_PLAN.md before integration. Reading PDFs are not redistributed.
+
+Route expansion is complete for334advanced records:297have an exact metadata identity match and92have an indexed PDF route. Earlier verified routes are preserved when a refresh fails; latest refresh attempts are separate. None of these metadata matches counts as final full-text eligibility.
