@@ -1,5 +1,5 @@
 {
-  "built_utc": "2026-10-22T18:29:43.702357+00:00",
+  "built_utc": "2026-10-22T18:55:37.679987+00:00",
   "frozen_commit": "04271d77eae68f153d0682f951bd3cc1e9162a6b",
   "queue_records": 559,
   "abstracts_available_in_initial_queue": 235,
@@ -36,5 +36,18 @@
   "publisher_records_attempted": 200,
   "record_text_assessments_prepared": 396,
   "title_abstract_stage_closed": false,
-  "all_full_text_eligibility_closed": false
+  "all_full_text_eligibility_closed": false,
+  "initial_record_recommendations_total": 559,
+  "title_only_assessments_prepared": 163,
+  "recommendations_all_evidence_levels": {
+    "retain_for_full_text": 165,
+    "uncertain_need_full_text": 76,
+    "propose_exclusion": 281,
+    "uncertain_need_abstract_or_full_text": 37
+  },
+  "records_without_preparation_recommendation": 0,
+  "first_preparation_pass_complete": true,
+  "final_screening_complete": false,
+  "abstract_text_still_missing": 163,
+  "proposed_title_only_exclusions": 109
 }

@@ -1,15 +1,15 @@
 {
-  "checked_utc": "2026-10-22T18:29:43.702357+00:00",
+  "checked_utc": "2026-10-22T18:55:37.679987+00:00",
   "queue_records": 559,
-  "record_text_assessments": 396,
-  "without_abstract_text": 163,
-  "low_quality_metadata_texts": 5,
+  "preliminary_recommendations": 559,
+  "recovered_text_assessments": 396,
+  "title_only_assessments": 163,
+  "retained_for_full_text": 165,
+  "uncertain_needing_more_evidence": 113,
+  "proposed_exclusions": 281,
   "original_fields_unchanged": true,
   "human_votes_unchanged_and_empty": true,
   "frozen_hashes_unchanged": true,
-  "source_hashes_verified": true,
-  "candidate_IC_rows": 24,
-  "candidate_QA_rows": 40,
-  "candidate_outcome_rows": 8,
+  "final_eligibility_closed": false,
   "final_inclusion_changes": 0
 }

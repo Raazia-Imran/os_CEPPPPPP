@@ -72,12 +72,12 @@
     "git_blob_sha": "e0d9f35602e4dc5fdb6088392de0f2492d4f8dbf"
   },
   "task3/screening559/CHECKLIST.md": {
-    "bytes": 1964,
-    "git_blob_sha": "76a5ea9cd993e083789a05997b7d6942c36862cf"
+    "bytes": 2344,
+    "git_blob_sha": "3b9d8ed7249914fc2012bd1f8ff74dc25c779cfa"
   },
   "task3/screening559/CURRENT_STATUS.md": {
-    "bytes": 1825,
-    "git_blob_sha": "b95f1dbafa608d019c60c1789cea2bd89f67921d"
+    "bytes": 1973,
+    "git_blob_sha": "be35b9b3585ae9111bb6bff93971cdb84e5724dd"
   },
   "task3/screening559/Candidate_Outcomes_Prepared.csv": {
     "bytes": 2192,
@@ -119,6 +119,10 @@
     "bytes": 773650,
     "git_blob_sha": "955ed440c4db8820170dcbf5c19fbabe3eea537f"
   },
+  "task3/screening559/PUBLICATION_RECEIPT.json": {
+    "bytes": 436,
+    "git_blob_sha": "5846e5452688868c7562a88bf9cb21da65f40ba6"
+  },
   "task3/screening559/Publisher_Abstract_Attempts.csv": {
     "bytes": 139093,
     "git_blob_sha": "ab6f55d96bed736d77fa2c19396d16a3f4083015"
@@ -144,24 +148,40 @@
     "git_blob_sha": "59e81e1be752515c0798ec742ad987418546e226"
   },
   "task3/screening559/START_HERE.md": {
-    "bytes": 874,
-    "git_blob_sha": "4c666c68dab422c675c34711a29bd4468980716d"
+    "bytes": 988,
+    "git_blob_sha": "c8173942018dee8b3fe89de2be87a1557f119433"
   },
   "task3/screening559/Supplemental_Abstract_Status.json": {
     "bytes": 403,
     "git_blob_sha": "fc528bc06abdd58981352cea25a7a1900cdd7de6"
   },
+  "task3/screening559/Title_Batch_001_Review.csv": {
+    "bytes": 33689,
+    "git_blob_sha": "b0c08908fba3c53c92c1c2a6510f6dad1f7ac7d1"
+  },
+  "task3/screening559/Title_Batch_002_Review.csv": {
+    "bytes": 34267,
+    "git_blob_sha": "2ceb76d36161da7740b39843eb46f1e8cc0a9e2b"
+  },
+  "task3/screening559/Title_Batch_003_Review.csv": {
+    "bytes": 32530,
+    "git_blob_sha": "e58a359a612b135a1b1447195ddc483176d93eea"
+  },
   "task3/screening559/VALIDATION.json": {
-    "bytes": 447,
-    "git_blob_sha": "c42c66019c79ade9d5e0299bb6e7f9cde939cd55"
+    "bytes": 477,
+    "git_blob_sha": "05b379aac3bfefc693cee4d798da38d7850c1427"
   },
   "task3/screening559/Working_559_Queue.csv": {
-    "bytes": 1009510,
-    "git_blob_sha": "06d46a8e0c78107e077bed5978f486235433e075"
+    "bytes": 1061353,
+    "git_blob_sha": "a197e78e3387ba716f9a98a961b09491b6910506"
   },
   "task3/screening559/apply_batch.py": {
     "bytes": 3493,
     "git_blob_sha": "ac950f56c23d16f40ef585ad05f56df356463bc9"
+  },
+  "task3/screening559/apply_title_batch.py": {
+    "bytes": 2859,
+    "git_blob_sha": "ae48504df1f5283e670733643c3680ec2d6d78da"
   },
   "task3/screening559/attempt_publisher_abstracts.py": {
     "bytes": 3399,
@@ -260,8 +280,8 @@
     "git_blob_sha": "4301715473364c0164b9f8a35be114266aa91984"
   },
   "task3/screening559/progress.json": {
-    "bytes": 1313,
-    "git_blob_sha": "59b204113ebd631cff0b8273f41376d381daf335"
+    "bytes": 1806,
+    "git_blob_sha": "09667a17203d7182a2e34abc34fec4760f236ca6"
   },
   "task3/screening559/publisher_recovery_progress.json": {
     "bytes": 197,
@@ -278,5 +298,17 @@
   "task3/screening559/start_continuation.py": {
     "bytes": 11120,
     "git_blob_sha": "ce35fa8e3960412a08ada771c2a0c4728e9a1cfa"
+  },
+  "task3/screening559/title_batch001_judgments.json": {
+    "bytes": 7954,
+    "git_blob_sha": "b072442ad1bad5928b52063aa73f607d91e927a1"
+  },
+  "task3/screening559/title_batch002_judgments.json": {
+    "bytes": 7545,
+    "git_blob_sha": "c02c627833769c22c3ee144aaf55428bc64f53f3"
+  },
+  "task3/screening559/title_batch003_judgments.json": {
+    "bytes": 7136,
+    "git_blob_sha": "f0084d7c10a73fd5cd7a61f2d4e74dcef2ea5412"
   }
 }

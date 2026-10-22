@@ -1,9 +1,11 @@
 # Screening continuation workspace
 
-This folder contains the improved working evidence for the559-record branch. It is separate from the frozen Task3_Complete_First_Draft.zip.
+This folder preserves improvements to the559-record branch separately from the frozen Task3_Complete_First_Draft.zip.
 
-Open CURRENT_STATUS.md, progress.json and CHECKLIST.md first. INTEGRATION_PLAN.md explains how teammate returns and newly eligible studies will be reconciled into a future dated submission.
+Read CURRENT_STATUS.md and progress.json first, then CHECKLIST.md and INTEGRATION_PLAN.md.
 
-Current checkpoint:396preliminary record-text assessments,163records still without abstracts,4new candidate full-text reviews with24criterion judgments,40provisional QA items and8outcome rows. Five recovered metadata texts are incomplete/generic. These are not independent reviewer votes or final inclusion decisions.
+All559records have preliminary recommendations:396recovered-text assessments and163title-only assessments. Five recovered metadata texts are incomplete/generic. Combined recommendations:165retain for full text,113uncertain,281proposed exclusions. These are not independent human votes or adjudicated final eligibility decisions.
 
-No licensed paper PDFs are included. Source URLs, hashes and page anchors are recorded. Keep the frozen20-study report and37-sheet workbook unchanged until the improved release is built.
+Four candidate full-text packages contain24inclusion judgments,40provisional QA items and8outcome rows. The frozen20-study report is unchanged. No licensed reading PDFs are included.
+
+Future work: obtain missing primary text, assess all potentially eligible/uncertain reports, resolve duplicates/companions, integrate actual teammate checks and then build a separately dated submission report/workbook/package.

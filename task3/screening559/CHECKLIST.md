@@ -20,3 +20,9 @@
 - [ ] Build and validate a new dated submission ZIP; keep frozen backup unchanged.
 
 Public checkpoint publication is authorized on22October2026. The separate folder and branch preserve the frozen submission; final scientific integration remains pending.
+
+## Completed first preparation pass
+
+- [x] Assess163remaining records individually using title/metadata, with evidence level explicitly recorded.
+- [x] Preserve559preliminary recommendations,396based on recovered text and163title-only.
+- [ ] Complete primary-text retrieval, independent review and adjudication; do not equate first-pass preparation with final screening closure.
