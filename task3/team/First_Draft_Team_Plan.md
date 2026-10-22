@@ -187,6 +187,6 @@ Prepared assistance can recover metadata, organize evidence, propose criterion-b
 | Close 559-record scope | Red | Complete screening or retain bounded deviation with dated instructor direction if obtained. |
 | Resolve historical search and ParvaGPU version unknowns | Yellow | Recover evidence if possible; otherwise retain precise limitations. |
 | Read the main CEP draft together | Yellow | Check interpretation, citations, tables, spelling and conditional conclusion. |
-| Verify repository publication | Yellow | Use publication_receipt.json for verified remote commit; a local commit is not proof of main. |
+| Verify repository publication | Green | Research content verified on main at13f31ca. See publication_receipt.json; later package updates may follow. |
 
 The team can now review one integrated first draft. A final read can approve wording and presentation, while the research-method conditions remain separately visible. Do not mark unfinished source votes or selection work complete merely because the package is ready to read.

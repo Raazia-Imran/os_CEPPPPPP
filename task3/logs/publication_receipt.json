@@ -1,6 +1,12 @@
 {
-  "state": "Pending publication for integrated22October2026 package",
-  "old_checkpoint_receipts_are_historical": true,
-  "target": "Raazia-Imran/os_CEPPPPPP/main",
-  "note": "A later verified main commit will replace this receipt; local existence is not publication."
+  "state": "Verified research content on main",
+  "repository": "Raazia-Imran/os_CEPPPPPP",
+  "branch": "main",
+  "verified_research_commit": "13f31ca9f89594142fbfca4530045317ac4e7327",
+  "verified_tree": "11ac0990a7c805903b9bfb116f0a156ac3e81110",
+  "verified_utc": "2026-10-22T11:24:00.686354+00:00",
+  "verification": "Main ref, all report/workbook/member binaries and research text matched.22active CSVs had only CRLF-to-LF normalization; original byte endings are preserved in the following handover update.",
+  "note": "This records the research-content checkpoint. Later package/receipt updates may be later commits.",
+  "complete_first_draft": true,
+  "exhaustive_slr_or_independent_human_signoff": false
 }
