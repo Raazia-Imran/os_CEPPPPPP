@@ -26,3 +26,10 @@ Public checkpoint publication is authorized on22October2026. The separate folder
 - [x] Assess163remaining records individually using title/metadata, with evidence level explicitly recorded.
 - [x] Preserve559preliminary recommendations,396based on recovered text and163title-only.
 - [ ] Complete primary-text retrieval, independent review and adjudication; do not equate first-pass preparation with final screening closure.
+
+##23October2026 process amendment
+
+- [x] Record user-reported instructor permission for final source-based eligibility.
+- [x] Finalize four inspected primary papers; preserve initial decisions and empty human votes.
+- [ ] Close remaining screening and eligibility, identity links and retrieval gaps.
+- [ ] Integrate working24-study corpus into a new report/workbook and recompute PRISMA.

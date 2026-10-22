@@ -16,7 +16,7 @@
   "remaining_with_recovered_abstracts": 0,
   "remaining_without_recovered_abstracts": 163,
   "new_full_text_eligibility_assessments": 4,
-  "new_included_studies": 0,
+  "new_included_studies": 4,
   "frozen_unique_studies": 20,
   "independent_human_votes": 0,
   "prisma_changed": false,
@@ -49,5 +49,11 @@
   "first_preparation_pass_complete": true,
   "final_screening_complete": false,
   "abstract_text_still_missing": 163,
-  "proposed_title_only_exclusions": 109
+  "proposed_title_only_exclusions": 109,
+  "final_source_based_eligibility_decisions": 4,
+  "working_unique_studies": 24,
+  "working_included_reports": 25,
+  "frozen_included_reports": 21,
+  "review_process_amendment": "M2026-10-23",
+  "prisma_reconciliation_pending": true
 }

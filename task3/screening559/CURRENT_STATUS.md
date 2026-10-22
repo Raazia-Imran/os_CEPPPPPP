@@ -1,18 +1,13 @@
 # Current screening improvement checkpoint
 
-Frozen baseline04271d77eae68f153d0682f951bd3cc1e9162a6b and its20-study report,37-sheet workbook and complete ZIP remain unchanged. This folder is a working evidence checkpoint, not the final integrated report.
+The frozen baseline04271d77eae68f153d0682f951bd3cc1e9162a6b remains unchanged:20unique studies,21reports,37-sheet workbook and original ZIP.
 
-## All559records have a preliminary recommendation
+All559records have preliminary recommendations:396record-text assessments and163title-only assessments. The recommendations are165retain,113uncertain and281proposed exclusions. These proposals are not all final screening decisions. Five recovered texts have quality flags; missing abstracts are never an exclusion reason.
 
--396record assessments use235original abstracts and161supplemental recovered texts, including37publisher abstract sections. Five metadata texts are incomplete/generic and require primary verification.
--163record assessments use titles and metadata only because abstract text remains unavailable.
--Combined recommendations:165retain for full text,76uncertain needing full text,37uncertain needing abstract/full text,281proposed scope/type exclusions.
--No independent reviewer votes or adjudicated eligibility decisions have been supplied. No missing abstract has been used as an exclusion reason.
+## Final eligibility now authorized and underway
 
-The first preparation pass is complete for559records. Title/abstract-stage scientific closure and full-text eligibility are not complete. All title-only recommendations are explicitly labeled; proposed exclusions require review and remain reopenable.
+Under amendment M2026-10-23, four inspected primary papers have final source-based inclusion decisions: LithOS(S021/P024), Abacus(S022/P025), Miriam(S023/P026), SGDRC(S024/P027). The working corpus is24unique studies/25reports. Their24criterion checks,40QA items and8outcomes are recorded. No independent human vote is asserted. The original prepared files remain unchanged; read Final_Eligibility_Decisions.csv and Review_Process_Amendment.md for the final decisions and actual process.
 
-## Full-text candidates and integration
+The working additions are not yet integrated into the report/workbook/synthesis. The frozen report still correctly describes its20-study snapshot. PRISMA reconciliation is pending; no final-flow count is invented from preliminary recommendations. The remaining274retained/uncertain records require retrieval/eligibility or identity resolution. Other proposed exclusions also require final screening confirmation.
 
-Four candidates (LithOS, Abacus, Miriam, SGDRC) have24source-anchored inclusion judgments,40provisional QA items and8outcome rows prepared. Independent review and adjudication remain pending. No additions are applied to the frozen corpus.165retained records and113uncertain records require further retrieval/eligibility work, with duplicate and companion linkage resolved before study counting.
-
-Open START_HERE.md, progress.json, CHECKLIST.md and INTEGRATION_PLAN.md. Integration_Change_Log.csv preserves source-based proposals. Source PDFs are separate reading copies; source URLs, hashes and anchors are recorded. Public checkpoint publication is authorized; verify PUBLICATION_RECEIPT.json for the last verified commit. Final report/workbook integration remains pending.
+Public discovery routes are being checked. A route or HTTP200 is not proof of content identity or eligibility, and one403 is not a final unavailable-report classification. Reading PDFs are not redistributed.
