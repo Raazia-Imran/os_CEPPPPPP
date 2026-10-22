@@ -14,6 +14,7 @@ mapping = {
     'R00656': ('S024', 'P027', 'SGDRC'),
     'R00661': ('S025', 'P028', 'Pantheon'),
     'R00086': ('S026', 'P029', 'Oneiros'),
+    'R00647': ('S027', 'P030', 'GACER'),
 }
 def read(name):
     return list(csv.DictReader((d / name).open(newline='')))
@@ -70,7 +71,7 @@ p.update({'final_source_based_eligibility_decisions': len(decisions)+len(exclusi
     'candidate_QA_items_prepared':len(qa),
     'candidate_outcomes_prepared':len(outcomes),
     'candidate_studies_meeting_first_review_criteria':len(decisions),
-    'candidate_QA_totals':{rid:sum(int(x['Prepared score']) for x in qa if x['Record ID']==rid) for rid in mapping},
+    'candidate_QA_totals':{rid:sum(int(x['Prepared score']) for x in qa if x['Record ID']==rid and x['Prepared score']!='N/A') for rid in mapping},
     'new_included_studies': len(decisions), 'working_unique_studies': 20+len(decisions),
     'working_included_reports': 21+len(decisions), 'frozen_unique_studies': 20,
     'frozen_included_reports': 21, 'independent_human_votes': 0,

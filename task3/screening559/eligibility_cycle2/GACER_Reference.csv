@@ -1,0 +1,2 @@
+Record ID,Study ID,Report ID,Authors,Title,Venue,Year,DOI,Primary URL,Primary SHA256,Date basis,Version
+R00647,S027,P030,Yongbo Yu and Fuxun Yu and Zhi Tian and Xiang Chen,GACER: Granularity-Aware ConcurrEncy Regulation for Multi-Tenant Deep Learning,IEEE/ACM International Conference on Computer-Aided Design (ICCAD2024),2024,10.1145/3676536.3676718,https://par.nsf.gov/servlets/purl/10643398,3cd5b49a18ddaeb2de98c0c0cad1f8850ef1796686d9e79a9b654f00fe78d575,Conference2024; repository/index2025retained separately,"Final9page conference report, not2023arXiv11page precursor"

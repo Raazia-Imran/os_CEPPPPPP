@@ -1,19 +1,15 @@
-# Task 3 frozen first draft and separate screening continuation — 22 October 2026
+# Current CEP working status23October2026
 
-Continuation branch progress:396record-level text assessments (235original abstracts plus161supplemental recoveries; five metadata texts need quality verification). Current proposals:148retain for full text,76uncertain,172scope exclusions. These are not adjudicated final eligibility or independent votes. Four new candidate full-text reviews,24ICjudgments,40provisional QA items and8outcomes are prepared separately.163records still lack abstract text after metadata and200publisher-page attempts. See task3/screening559/CURRENT_STATUS.md and progress.json. Frozen artifacts remain unchanged; no new studies are added to their counts and no new remote publication is claimed.
+# Current working integration23October2026
 
-The current CEP first draft and master workbook integrate all three source-review packages: 20 unique studies, 21 report versions, 200 QA items and 52 retained outcomes. The clarified 20-study target is met. The missing InferFair source review is complete.
+Working corpus:27unique studies across28reports. Seven source-eligible additions are LithOS,Abacus,Miriam,SGDRC,Pantheon,Oneiros andGACER(S021-S027/P024-P030). Their42ICchecks,70QAitems,18outcomes and seven DOI/BibTeX references are recorded. Combined workbook/report:270QAitems,70reported outcomes and two separately recorded calculations. GACER Q9is reasonedN/A; its score is13/18,not13/20.
 
-Open task3/report/main.pdf, task3/workbook/CEP_Task3_Evidence_Workbook.xlsx and task3/team/First_Draft_Team_Plan.pdf. The complete handover is task3/team/Task3_Complete_First_Draft.zip.
+All559continuation records have screening-stage decisions:225exclude,334advance. Seven additions and two source exclusions are resolved;325advanced records remain open. Missing abstracts are not exclusion reasons.92indexed PDF routes are discovery leads, not92eligible studies. Historical search-provenance and companion/version gaps remain explicit.
 
-Independent human checks, the 559 retained-record selection branch, historical search provenance and ParvaGPU final-text equivalence remain explicit limitations. The original submitted protocol and frozen baseline are unchanged. Publication is established only by a verified remote commit.
+The new141-page PDF and complete LaTeX source are in integrated_report. The integrated38-tab working workbook is in integrated_workbook, preserving the original37tabs and adding bibliographic reference details. Studies,QA,Extraction,Evidence,Screening,Eligibility,source checks,taxonomy,comparisons,recommendations,gaps,validity and count/QA reconciliation are updated for this snapshot. All count differences are zero; a new-study QA edit was tested through its formula dependency. Final whole-review PRISMA remains open.
 
-Historical checkpoint detail remains in Git history; this current status contains no private-source history or access information.
+Frozen commit04271d77eae68f153d0682f951bd3cc1e9162a6b retains the20-study/21-report ZIP,report,37-tab workbook and submitted protocol unchanged. Teammate returns must be merged by stable IDs into the working release. Do not overwrite the frozen backup.
 
-##23October2026 continuation
+For the next three university-access PDFs read Priority_PDF_Request.csv and repository-rootFULL_TEXT_ACCESS_AND_NEXT_STEPS.md. Source PDFs stay private. No independent human votes are claimed.
 
-All559records have preliminary assessments. Four inspected papers now have final source-based eligibility under user-reported instructor permission (M2026-10-23); working24studies/25reports. Frozen20/21artifacts remain unchanged. Independent human votes remain blank. PRISMA and report/workbook integration are pending. See task3/screening559/CURRENT_STATUS.md.
-
-Screening continuation update:559final title/abstract-stage decisions (225excluded,334advanced);56proposals conservatively reopened. Five final source-based inclusions now yield a working25-study/26-report corpus. Frozen20/21unchanged;329advanced records remain open. DOI/BibTeX,50QA rows,11outcomes and80public access events recorded.
-
-Latest source checkpoint: six new eligible studies (working26/27), two final full-text exclusions,326advanced records open. Supporting36IC checks,60QA rows,14outcomes,six DOI/BibTeX references and19methodology-audit issues are in task3/screening559. Frozen release and submitted protocol unchanged.
+See task3/screening559/CURRENT_STATUS.md, integrated_report/main.pdf and integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx. The continuation stays on task3-screening-559; main remains the frozen baseline until final integration.

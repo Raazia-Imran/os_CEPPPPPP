@@ -1,3 +1,3 @@
-# Screening continuation
+# Current working release
 
-Read CURRENT_STATUS.md and Review_Process_Amendment.md.559screening decisions:225exclude,334advance. Final full-text decisions:6include,2exclude,326open. Working corpus26studies/27reports; frozen20/21unchanged. Source-anchored QA, outcomes, six DOI/reference/BibTeX entries, access logs and methodology corrections are included. New report/workbook and whole-review PRISMA integration remain pending.
+Read CURRENT_STATUS.md. Current27studies/28reports are integrated into integrated_report/main.pdf and integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx. Original frozen20/21release unchanged.325advanced records remain open. Priority_PDF_Request.csv lists three exact PDFs that would help university-access retrieval.
