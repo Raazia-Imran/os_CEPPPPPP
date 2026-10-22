@@ -109,9 +109,9 @@
     [
       "CMP06",
       "P019 E048 E049; P022 E052",
-      "QoS protection with low-contention or background throughput loss",
+      "ArkGPU ~5%low-contention QPS regression; Tally total normalized throughput1.19 versusTGS1.65",
       "Different experiments, consistent cost",
-      "Protecting foreground work can sacrifice co-tenant work",
+      "Foreground protection can carry aggregate or co-tenant costs; Tally outcome is total system throughput.",
       "Matched slowdown definitions"
     ],
     [
@@ -120,7 +120,7 @@
       "REEF engines and report versions differ",
       "Companion study, not replication",
       "Retain source-version strata; do not double-count corroboration",
-      "Outcome-to-version mapping for every combined REEF row"
+      "No current combined numerical rows: E018-E026 explicitly assigned to conferenceP005; journal experiments remain separate."
     ],
     [
       "CMP08",
@@ -178,7 +178,7 @@
       "Memory handover / controlled co-location",
       "P010 P019 E035 E048-E049",
       "Protect inference while using residual capacity",
-      "Reclamation overhead and reduced training progress",
+      "Memory/reclamation costs and possible co-tenant regression; ArkGPU ~5%QPS loss under low contention.",
       "Separate resources for intolerable interference",
       "Measure inference tails separately from training throughput"
     ],
@@ -190,17 +190,17 @@
       "Resource allocation with configurable co-location",
       "Fragmentation and reconfiguration overhead",
       "Software sharing when partition granularity wastes capacity",
-      "Validate profile fit and reconfiguration effects; security needs separate tests"
+      "Validate profile fit and online request tails; Dyna-P8.09%makespan penalty at15%prediction perturbation is local, not Section4.3.2simulation."
     ],
     [
       "REC06",
       "Several models with unequal service pressure",
       "Fairness-aware admission / scheduling",
       "P018 E046-E047",
-      "Balance normalized slowdown and SLO goodput",
+      "In Table3ratio3:1:2,total600requests/s: goodput524.29 versusClockwork457.24; unfairness1.05 versus1.50.",
       "May give up aggregate throughput to improve fairness",
       "Priority scheduling when one foreground SLA dominates",
-      "Agree fairness objective and per-model SLO before deployment"
+      "Validate intended SLO/arrival mix; source uses100msSLO,50msperiod and max/min slowdown unfairness. No universal throughput advantage is inferred."
     ]
   ],
   "Research Gaps": [
@@ -242,7 +242,7 @@
     [
       "G05",
       "Version and method details remain incomplete",
-      "P002 P011 P022; QA Q3/Q4/Q10",
+      "ParvaGPU final-text equivalence; source Q3/Q4/Q10 reporting limits. iGniter final checked; Tallyv3 pinned.",
       "How reproducible are the comparisons?",
       "Publish exact version, driver/runtime, warmup, repetitions and uncertainty"
     ],
@@ -292,10 +292,10 @@
     ],
     [
       "Source version",
-      "Author manuscripts and combined REEF anchors",
+      "ParvaGPU author manuscript not compared with final text",
       "Page/result mappings may differ",
-      "Separate source-version and retrieval records",
-      "Compare final published text and map companion outcomes"
+      "iGniter final checked; Tallyv3 pinned; REEF conference/journal mapping resolved",
+      "Confirm ParvaGPU final equivalence or retain version condition."
     ],
     [
       "Measurement heterogeneity",
@@ -308,8 +308,8 @@
       "Reporting bias",
       "Uneven repetitions and uncertainty",
       "Headlines may overstate robustness",
-      "Adverse and null findings retained",
-      "Recheck high-impact claims at exact source locations"
+      "All52 retained outcome values/context checked; adverse findings retained",
+      "Independent high-impact claim checks; reporting uncertainty still missing in some sources."
     ]
   ],
   "Human Checks": [
@@ -326,52 +326,52 @@
     [
       "H01",
       "High",
-      "Confirm whether bounded review with 559 unassessed retained records is acceptable",
-      "Instructor direction / dated team scope decision",
+      "Close559-record scope",
+      "Dated scope decision or completed screening/full-text logs",
       "Pending",
       "",
       "",
-      "Do not infer approval from general permission to use AI"
+      "20study target satisfied; bounded selection still disclosed"
     ],
     [
       "H02",
-      "High",
-      "Supply InferFair, ArkGPU and Dyna-P PDFs already downloaded",
-      "Original PDFs or legitimate accessible source",
-      "Pending",
+      "Closed",
+      "Complete20study source access",
+      "All20primary copies plus REEFcompanion inspected",
+      "Completed in source-review pass",
       "",
-      "",
-      "These three publisher copies were not retrieved"
+      "2026-10-22T10:46:11.840545+00:00",
+      "InferFair source gap closed; no missing assigned study copy"
     ],
     [
       "H03",
       "High",
-      "Check headline outcomes against source figures/tables",
-      "Report ID, evidence ID, source version, page, correction and actual time",
+      "Independent check of prepared claims/forms",
+      "Actual name,time,initial judgment,source anchor and adjudication",
       "Pending",
       "",
       "",
-      "Use 52 evidence rows; do not sign unseen rows"
+      "All200QAitems,126included-reportICitems,52outcomes have first-pass source entries"
     ],
     [
       "H04",
       "Medium",
-      "Check companion/version mapping",
-      "P005/P023 outcomes and P002/P011/P022 manuscript comparisons",
+      "Check final-version condition",
+      "ParvaGPU final text comparison or explicit version limitation",
       "Pending",
       "",
       "",
-      "Separate report count from study count"
+      "REEF mapping and iGniter final-copy checks complete; Tallyv3 pinned"
     ],
     [
       "H05",
       "Medium",
-      "Confirm original search artifacts and group provenance",
-      "Exact original exports, search fields/facets and times",
-      "Pending",
+      "Close search evidence gaps",
+      "Original run/file/facet receipts or retained explicit limitations",
+      "Limitations documented",
       "",
       "",
-      "Do not reconstruct missing event times from file dates"
+      "No manufactured exact times or archive byte checks"
     ]
   ],
   "Requirements": [

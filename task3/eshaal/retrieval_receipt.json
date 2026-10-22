@@ -1,0 +1,82 @@
+[
+  {
+    "Report ID": "P001",
+    "URL": "https://jcst.ict.ac.cn/en/article/pdf/preview/10.1007/s11390-024-3773-5.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.693816+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 21,
+    "sha256": "38451986cdaeb1f903822f9b30969b2b08ca652bfd487838ebefe020e7ef5552",
+    "bytes": 5400230,
+    "title_page": "JCST Papers\nOnly for Academic and Non-Commercial Use\nThanks for Reading!\nSurvey\nComputer Architecture and Systems\nArtificial Intelligence and Pattern Recognition\nComputer Graphics and Multimedia\nData Management and Data Mining\nSoftware Systems\nComputer Networks and Distributed Computing\nTheory and Algorithms\nEmerging Areas\nJCST URL: https://jcst.ict.ac.cn\nSPRINGER URL: https://www.springer.com/journal/11390\nE-mail: jcst@ict.ac.cn\nOnline Submission: https://mc03.manuscriptcentral.com/jcst\nJCST We"
+  },
+  {
+    "Report ID": "P002",
+    "URL": "https://arxiv.org/pdf/2211.01713",
+    "Attempt UTC": "2026-10-22T09:48:00.695037+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 16,
+    "sha256": "255b4d07a1d79d586513b067e895af5a6bfaf714bf61a4b2ccfc63bd092d4aaa",
+    "bytes": 4683259,
+    "title_page": "SUBMITTED TO IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS\n1\niGniter: Interference-Aware GPU Resource\nProvisioning for Predictable DNN Inference in\nthe Cloud\nFei Xu, Member, IEEE, Jianian Xu, Jiabin Chen, Li Chen, Member, IEEE, Ruitao Shang,\nZhi Zhou, Member, IEEE, Fangming Liu, Senior Member, IEEE\nAbstract\u2014GPUs are essential to accelerating the latency-sensitive deep neural network (DNN) inference workloads in cloud\ndatacenters. To fully utilize GPU resources, spatial sharing of GPUs am"
+  },
+  {
+    "Report ID": "P003",
+    "URL": "https://www.usenix.org/system/files/atc22-choi-seungbeom.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.695705+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 18,
+    "sha256": "8b3ec8c3ac38f3d1fbe29361e65a6f8afee5ae8f9fca57b1e30ff15466027a9f",
+    "bytes": 7567937,
+    "title_page": "This paper is included in the Proceedings of the \n2022 USENIX Annual Technical Conference.\nJuly 11\u201313, 2022 \u2022 Carlsbad, CA, USA\n978-1-939133-29-8\nOpen access to the Proceedings of the \n2022 USENIX Annual Technical Conference \nis sponsored by\nServing Heterogeneous Machine Learning Models \non Multi-GPU Servers with Spatio-Temporal Sharing\nSeungbeom Choi, Sunho Lee, Yeonjae Kim, Jongse Park, Youngjin Kwon,  \nand Jaehyuk Huh, KAIST\nhttps://www.usenix.org/conference/atc22/presentation/choi-seungbeom\n"
+  },
+  {
+    "Report ID": "P004",
+    "URL": "https://www.usenix.org/system/files/osdi20-bai.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.696456+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 17,
+    "sha256": "bda339767febf69c5aaf9091fbfef42f3073df27c7f1a30b8973dd7867e7c0aa",
+    "bytes": 929126,
+    "title_page": "This paper is included in the Proceedings of the \n14th USENIX Symposium on Operating Systems \nDesign and Implementation\nNovember 4\u20136, 2020\n978-1-939133-19-9\nOpen access to the Proceedings of the \n14th USENIX Symposium on Operating \nSystems Design and Implementation \nis sponsored by USENIX\nPipeSwitch: Fast Pipelined Context Switching \nfor Deep Learning Applications\nZhihao Bai and Zhen Zhang, Johns Hopkins University; Yibo Zhu, \nByteDance Inc.; Xin Jin, Johns Hopkins University\nhttps://www.usenix."
+  },
+  {
+    "Report ID": "P005",
+    "URL": "https://www.usenix.org/system/files/osdi22-han.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.697669+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 21,
+    "sha256": "d0c1dfc5274d4a44826d02b70d78a90b7b9f1279d87804f398a1386abcecce91",
+    "bytes": 804508,
+    "title_page": "This paper is included in the Proceedings of the \n16th USENIX Symposium on Operating Systems  \nDesign and Implementation.\nJuly 11\u201313, 2022 \u2022 Carlsbad, CA, USA\n978-1-939133-28-1\nOpen access to the Proceedings of the  \n16th USENIX Symposium on Operating  \nSystems Design and Implementation  \nis sponsored by\nMicrosecond-scale Preemption for Concurrent \nGPU-accelerated DNN Inferences\nMingcong Han, Institute of Parallel and Distributed Systems, SEIEE, Shanghai Jiao Tong \nUniversity; Shanghai AI Labora"
+  },
+  {
+    "Report ID": "P006",
+    "URL": "https://vincen.tl/files/ng23paella.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.699884+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 16,
+    "sha256": "99d90b79293be180ddb888abf700583ddc530c62fcc2cca603b9a533e62f602e",
+    "bytes": 1203901,
+    "title_page": "Paella: Low-latency Model Serving with\nSoftware-defined GPU Scheduling\nKelvin K.W. Ng\nUniversity of Pennsylvania\nkelvinng@seas.upenn.edu\nHenri Maxime Demoulin\nDBOS, Inc.\nmaxdml@dbos.dev\nVincent Liu\nUniversity of Pennsylvania\nliuv@seas.upenn.edu\nAbstract\nModel serving systems play a critical role in multiplexing\nmachine learning inference jobs across shared GPU infras-\ntructure. These systems have traditionally sat at a high level\nof abstraction\u2014receiving jobs from clients through a nar-\nrow API "
+  },
+  {
+    "Report ID": "P007",
+    "URL": "https://fotstrt.github.io/files/2024-orion.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.703754+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 18,
+    "sha256": "7421b546dc81577d787b2c8e17709da7b560d4d2992fc67e5c0898adc8eb8ae7",
+    "bytes": 1894950,
+    "title_page": "Orion: Interference-aware, Fine-grained GPU Sharing\nfor ML Applications\nFoteini Strati\nETH Zurich\nXianzhe Ma\nETH Zurich\nAna Klimovic\nETH Zurich\nAbstract\nGPUs are critical for maximizing the throughput-per-Watt\nof deep neural network (DNN) applications. However, DNN\napplications often underutilize GPUs, even when using large\nbatch sizes and eliminating input data processing or commu-\nnication stalls. DNN workloads consist of data-dependent\noperators, with different compute and memory requirements"
+  },
+  {
+    "Report ID": "P023",
+    "URL": "https://media.jryang.com/files/reef-tocs25.pdf",
+    "Attempt UTC": "2026-10-22T09:48:00.704635+00:00",
+    "status": "PDF retrieved; pending source reading",
+    "pages": 42,
+    "sha256": "462d0be310b4f92c1230e6e7fc0a8fb6185b885d40230375777e3364418024b8",
+    "bytes": 1058876,
+    "title_page": "Real-time, Work-conserving GPU Scheduling for Concurrent\nDNN Inference\nMINGCONG HAN, Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University, Shanghai,\nChina\nRONG CHEN, Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University, Shanghai,\nChina\nWEIHANG SHEN, Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University, Shanghai,\nChina\nHANZE ZHANG, Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University, Shanghai,\nChina\nJ"
+  }
+]

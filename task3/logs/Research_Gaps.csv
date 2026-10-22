@@ -3,5 +3,5 @@ G01,No matched all-family comparison,Comparability CMP01-CMP08,Which gains survi
 G02,Security/fault boundaries often unestablished,Extraction Security boundary / Fault boundary,Does performance control protect hostile tenants?,"Separate adversarial access, fault injection and performance tests"
 G03,Metrics emphasize different units,E001-E052,Can foreground protection preserve useful background work?,"Report per-model goodput, tails and background progress jointly"
 G04,Partition prediction affects makespan,P020 E050,How does reconfiguration affect online service?,Bursty arrivals plus placement changes and request-tail measurement
-G05,Version and method details remain incomplete,P002 P011 P022; QA Q3/Q4/Q10,How reproducible are the comparisons?,"Publish exact version, driver/runtime, warmup, repetitions and uncertainty"
+G05,Version and method details remain incomplete,ParvaGPU final-text equivalence; source Q3/Q4/Q10 reporting limits. iGniter final checked; Tallyv3 pinned.,How reproducible are the comparisons?,"Publish exact version, driver/runtime, warmup, repetitions and uncertainty"
 G06,Energy and cost evidence not harmonized,Extraction schema and heterogeneous outcomes,Do measured utilization gains reduce energy per useful request?,Measure GPU and host energy per SLO-compliant request

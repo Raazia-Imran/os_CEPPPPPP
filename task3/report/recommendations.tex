@@ -38,7 +38,7 @@ Validation needed & Sweep model sizes, cold starts, offered rate and concurrency
 Candidate & Memory handover / controlled co-location\\\addlinespace
 Evidence & P010 P019 E035 E048-E049\\\addlinespace
 Expected benefit & Protect inference while using residual capacity\\\addlinespace
-Sacrifice & Reclamation overhead and reduced training progress\\\addlinespace
+Sacrifice & Memory/reclamation costs and possible co-tenant regression; ArkGPU approximately 5\%QPS loss under low contention.\\\addlinespace
 Alternative / trigger & Separate resources for intolerable interference\\\addlinespace
 Validation needed & Measure inference tails separately from training throughput\\\addlinespace
 \bottomrule\end{longtable}
@@ -51,7 +51,7 @@ Evidence & P011 P014 P020 E036-E037 E042-E043 E050\\\addlinespace
 Expected benefit & Resource allocation with configurable co-location\\\addlinespace
 Sacrifice & Fragmentation and reconfiguration overhead\\\addlinespace
 Alternative / trigger & Software sharing when partition granularity wastes capacity\\\addlinespace
-Validation needed & Validate profile fit and reconfiguration effects; security needs separate tests\\\addlinespace
+Validation needed & Validate profile fit and online request tails; Dyna-P8.09\%makespan penalty at15\%prediction perturbation is local, not Section4.3.2simulation.\\\addlinespace
 \bottomrule\end{longtable}
 \subsubsection*{REC06: Several models with unequal service pressure}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
@@ -59,8 +59,8 @@ Validation needed & Validate profile fit and reconfiguration effects; security n
 \textbf{Dimension} & \textbf{Assessment}\\\midrule\endhead
 Candidate & Fairness-aware admission / scheduling\\\addlinespace
 Evidence & P018 E046-E047\\\addlinespace
-Expected benefit & Balance normalized slowdown and SLO goodput\\\addlinespace
+Expected benefit & In \nolinkurl{Table3ratio3:1:2,total600requests/s:} goodput524.29 versusClockwork457.24; unfairness1.05 versus1.50.\\\addlinespace
 Sacrifice & May give up aggregate throughput to improve fairness\\\addlinespace
 Alternative / trigger & Priority scheduling when one foreground SLA dominates\\\addlinespace
-Validation needed & Agree fairness objective and per-model SLO before deployment\\\addlinespace
+Validation needed & Validate intended SLO/arrival mix; source uses100msSLO,50msperiod and max/min slowdown unfairness. No universal throughput advantage is inferred.\\\addlinespace
 \bottomrule\end{longtable}

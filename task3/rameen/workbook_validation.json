@@ -1,0 +1,32 @@
+{
+  "tabs": [
+    "Overview",
+    "Sources",
+    "QA",
+    "Eligibility",
+    "Outcomes",
+    "Corrections",
+    "Survey overlap",
+    "Search log",
+    "Review queue"
+  ],
+  "counts": [
+    6,
+    0,
+    36,
+    0,
+    9,
+    0
+  ],
+  "qa_totals": [
+    18,
+    17,
+    16,
+    15,
+    18,
+    19
+  ],
+  "live_qa_formula_test": true,
+  "unavailable_scores_blank": true,
+  "error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

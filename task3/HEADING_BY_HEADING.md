@@ -1,47 +1,192 @@
-> Recovery update 2026-10-21T03:11:02.902345+00:00: the draft, analytical matrices and 27-tab workbook below are now recovered. See CONTINUE_HERE.md and report Appendix E for current artifact coverage. The following detailed entries preserve the earlier checkpoint; unavailable-file wording is historical.
+Operating Systems CEP | Topic 23 | 22 October 2026
 
-# Task 3: guideline-by-guideline execution record
+The current report, master workbook and all three individual review packages are integrated. This is the complete first-draft package for team review. Its limitations are written into the report; it is not certified as an exhaustive final SLR.
 
-Updated UTC: 2026-10-20T20:47:14.776Z. Actor: AI assistant under user direction.
+Use 20 unique primary studies. Sir’s clarified target is 20; the written guideline says 15–20. The 21 reports include two REEF versions belonging to one study. No extra three studies are needed merely to increase the number.
 
-## Source and completion rules
-The governing instructions are docs/guidelines.md and docs/topics.md; submitted Task 1 remains unchanged. This is a working checklist, not a declaration that the research or submission is complete. The supplied Task 3 baseline is task3/baseline/CEP_EVIDENCE_WORKBOOK.xlsx. Older root STATUS.md and task2/CHECKLIST.md describe the earlier 15-form checkpoint; their counts must not be silently mixed with the supplied later baseline.
+| Meaning | Status | How to read this guide |
+| --- | --- | --- |
+| Prepared and integrated | Green | The stated first-draft artifact or source-review task is done. |
+| Partly closed | Yellow | The artifact exists, but a method, source-version or verification condition remains. |
+| Not performed | Red | The specified research action or actual human vote is absent. |
 
-The supplied corpus has 21 reports representing 20 studies (P005 and P023 are linked REEF reports). The later baseline retains 559 candidates without completed assessment. A bounded synthesis can be drafted, but complete screening of the identified literature must not be claimed. Source-version checks and independent human review remain explicit limitations.
+| Member package | Source review completed | What is still personal work |
+| --- | --- | --- |
+| Eshaal: S001–S007 + P023 | 8 report copies; 70 QA items; 48 inclusion checks; 30 outcomes. | Independent check of Raazia’s S008–S014. |
+| Raazia: S008–S014 | 7 copies; 70 QA items; 42 inclusion checks; 13 outcomes. | Independent check of Rameen’s S015–S020; reconcile team returns. |
+| Rameen: S015–S020 | 6 copies; 60 QA items; 36 inclusion checks; 9 outcomes. | Independent check of Eshaal’s S001–S007 + REEF companion. |
 
-## Work sequence and acceptance evidence
-| Guideline | Required work | Concrete acceptance evidence | Current checkpoint |
-|---|---|---|---|
-| 1 Background | Explain local GPU sharing and competing requirements | Introduction tied to Topic 23 and included evidence | Opening prose drafted in report/sections/01_03_problem_and_objective.md |
-| 2 Engineering problem | State alternatives, constraints and decision | Conditional selection problem with measurable criteria | Opening prose drafted; source anchors pending integration |
-| 3 Objective | State what decision the review supports | Selection conditioned on workload, hardware and SLO | Opening prose drafted |
-| 4 SLR methodology | Preserve predefined method and disclose deviations | Submitted protocol + dated amendments + PRISMA reporting | Baseline available; final reconciliation pending |
-| 5 Required activities | Problem, preliminary investigation, 3–5 analytical RQs | Preserve protocol RQs; verify novelty against relevant surveys | Recover existing RQs before rewriting; novelty check pending |
-| 6 Protocol | Cover all 12 protocol fields | Field-by-field protocol crosswalk and amendment log | Reuse submitted protocol; no retrospective replacement |
-| 7 Databases | Justify four databases and supplemental searches | Source provenance and actual executed runs | Existing logs; completeness discrepancies remain |
-| 8 Search strategy | Exact accepted strings, fields and filters | Per-run query, time, counts, source file and hash | Preserve existing runs; do not substitute planned searches |
-| 9 Period | Explain window and exceptions | Publication-year/version register | Baseline available; report-version audit pending |
-| 10 Eligibility | Apply predefined IC/EC | Report-level decision and anchored rationale | Baseline available; retained unassessed pool disclosed |
-| 11 PRISMA | Reconcile occurrences, records, reports and studies | Formula checks and traceable diagram | 21 reports / 20 studies; bounded selection caveat required |
-| 12 Logs | Preserve complete screening and process history | Original screening rows + timestamped activity and decision logs | Original workbook published; expanded workbook not published |
-| 13 QA | Justify rubric, scores and applicability | 20 study forms, 200 item records; anchored checks | Supplied baseline; independent verification not claimed |
-| 14 Extraction | Preserve context and outcome meaning | 52 reported outcomes and two separate calculations | Baseline available; full-text/version checks pending |
-| 15 Taxonomy | Classify mechanisms rather than summarize papers | Multi-axis taxonomy: time, concurrency, partition, interception | Earlier local draft unavailable; recover or reconstruct |
-| 16 Comparison | Compare compatible outcomes and configurations | Matrix with baseline, hardware, workload, metric, direction and uncertainty | Recover/rebuild analytical matrix |
-| 17 Trade-offs | Explain benefits and sacrifices | Evidence-linked utilization/latency/fairness/isolation analysis | Recover/rebuild analytical text |
-| 18 Conflicts | Explain apparent disagreement | Context-matched contrasts, including adverse outcomes | Recover/rebuild conflict register |
-| 19 Synthesis | Answer every original RQ | Claims linked to studies and outcome IDs; confidence stated | Recover/rebuild RQ synthesis |
-| 20 Recommendation | Say what, when, why, cost and alternative | Conditional decision table and deployment validation criteria | Recover/rebuild recommendation matrix |
-| 21 Gaps | Derive gaps from missing or weak evidence | Gap → supporting coverage → consequence → research design | Recover/rebuild gap register |
-| 22 Validity | Evaluate the review's own limitations | Bias, missing abstracts, bounded screening, access and reviewer caveats | Carry all limitations into draft; mitigation status explicit |
-| 23 Deliverables | Account for all 25 required outputs | Output-to-file crosswalk with verified publication state | Pending complete artifact assembly |
-| 24 Structure | Assemble report in suggested sequence | Introduction, RQs, methods, PRISMA, taxonomy, synthesis, comparisons, trade-offs, discussion, recommendations, gaps, threats, conclusion, references, appendices | Markdown opening now saved; compiled draft unavailable |
-| 25 Analytical standard | Demonstrate evaluation through decision-making | Every recommendation has supporting evidence, conditions and sacrifices | Quality review pending; page count is not a quality measure |
+All 200 included-study QA items and all 52 retained outcomes now have source-review entries. InferFair access and its two outcomes are closed. Master integration is complete. The original baseline and protocol remain unchanged.
 
-## Workbook continuation
-Preserve all original 14 sheets and values. Recover or rebuild the 13 planned additions: Taxonomy, Comparability, Recommendations, Research Gaps, Validity, Human Checks, Requirements, Benchmark, PDF Retrieval, Activity Log, QA Reconciliation, Count Reconciliation, and Task3Guide. Existing 27-tab local workbook is not a published deliverable. Verify original-sheet preservation, formulas and readable layouts before publication.
+## 1. Open these files first
 
-Each new activity records UTC time, actor, action, source/input, output, result and limitation. Historical screening times remain historical; a build or export timestamp is not an individual screening-event time. Human signoff fields stay empty until a real reviewer supplies them.
+| File in the complete ZIP | Purpose |
+| --- | --- |
+| 01_Report/CEP_Task3_First_Draft.pdf | Read this as the main CEP first draft. It includes the analytical report, references and audit appendices. |
+| 01_Report/CEP_Task3_First_Draft.docx | Editable version of the same report content. |
+| 02_Master/CEP_Task3_Evidence_Workbook.xlsx | Current master: screening, study IDs, QA, outcomes, analysis and source-review audit. |
+| 03_Member_Reviews/Eshaal, Raazia, Rameen | Each member’s report, workbook, source checks and corrections. These are supporting files, not three separate final CEP reports. |
+| 04_Team/First_Draft_Team_Plan.pdf | This guide and the specific teammate return instructions. |
+| 05_Methodology/methodology_corrections.csv | Each audit issue, supporting evidence, justified correction or explicit remaining limitation. |
+| 05_Methodology/Remaining_559_Screening_Queue.csv | All 559 retained records, available abstract text, reviewer assignments and blank decision fields. |
+| 06_Protocol_and_Guidelines | Submitted protocol and Sir’s requirements; amendments are separate. |
+| 07_Evidence_and_Reproducibility | Frozen baseline, current CSVs, available search exports, logs and build scripts. |
 
-## Next step
-Reconcile heading 4–14 against the frozen protocol and supplied later workbook, retaining the original RQs and provenance. Continue with headings 15–22, then assemble and check headings 23–25. Obtain the three missing reading copies listed in papers/REMAINING_ACCESS.md. Binary recovery, workbook editing and PDF compilation depend on restoration of the execution environment; Markdown work and GitHub publication can continue now.
+Third-party reading PDFs are kept outside the public package/repository. The source catalogue gives URLs, report versions, hashes and page anchors. Thus “complete work package” means all project deliverables and available research records, not redistribution of licensed papers or recovery of missing historical exports.
+
+Older smaller review ZIPs are superseded by the new complete ZIP. Do not submit an older team-review-only ZIP as the whole Task 3.
+
+## 2. What Rameen and Eshaal should do now
+
+An independent check means reading the cited original source and recording your own initial judgment before comparing it with the prepared answer. Reading only the CEP draft is useful editing, but it does not replace the protocol’s separate source checks.
+
+| Person | Exact assignment | Return |
+| --- | --- | --- |
+| Rameen | Check Eshaal’s P001–P007 and companion P023: 70 QA items, 48 inclusion checks, 30 outcomes and REEF version linkage. | Your own score/decision for each assigned item, source page/table, actual name/time, corrections and disagreements. |
+| Eshaal | Check Raazia’s P008–P014: 70 QA items, 42 inclusion checks and 13 outcomes. Keep ParvaGPU manuscript/final condition visible. | The same item-level return; do not mark a source checked unless you opened it. |
+| Raazia | Check Rameen’s P015, P018–P022: 60 QA items, 36 inclusion checks and 9 outcomes. Resolve disagreements after independent returns. | An adjudication log with original judgments, source-based resolution and report/workbook changes. |
+
+1. Open the assigned member workbook and the cited source version. Keep your initial decisions in the independent fields or a separate return copy.
+
+2. For each retained number, verify metric, units, baseline, GPU/model/load, figure/table and whether it is a maximum, mean or percentile.
+
+3. For each QA and inclusion criterion, record your own evidence-based judgment. Missing reporting stays missing; performance protection is not proof of security.
+
+4. Enter your real name and actual time. Preserve disagreement before discussion. Resolve disagreements with a source anchor and a reason.
+
+5. After adjudication, read the main CEP draft together for clarity, citations, tables, consistency and the conditional recommendation.
+
+No independent human signatures have been supplied yet. The return template is: reviewer | actual UTC/timezone | study/report/version | item/evidence ID | initial judgment | source page/table | correction | reason | adjudicated result.
+
+## 3. After Task 2: headings 15–22
+
+| Heading | Preparation | What the draft now contains |
+| --- | --- | --- |
+| 15 Taxonomy | Green | Temporal, spatial/partition and runtime/API controls; assumptions and boundaries. |
+| 16 Comparison | Green | Within-source contrasts and context-aware matrix; Tally metric and REEF mapping corrected. |
+| 17 Trade-offs | Green | Latency/utilization, foreground protection, memory/transfer, trust and implementation costs; adverse findings retained. |
+| 18 Conflicting evidence | Green | Different setups are distinguished from true disagreement; within-source tensions explained. |
+| 19 Synthesis | Green | All five protocol RQs answered with linked evidence and comparability limits. |
+| 20 Recommendation | Green | Conditional choices, benefits, sacrifices, alternatives and local validation; InferFair source results integrated. |
+| 21 Research gaps | Green | Corpus-derived gaps and prior-survey comparison; no “first survey” or worldwide-absence claim. |
+| 22 Validity | Green | 559 selection branch, title-only decisions, search provenance, source versions and independent-review gaps explicitly reported. |
+
+These sections have been written and integrated. They do not need to be started again. Their independent source verification remains Yellow until the real teammate returns are recorded. New eligible studies from further screening would require an update.
+
+Current key corrections: InferFair 524.29 SLO-compliant requests/s and unfairness 1.05 under the specific Table 3 setup; ArkGPU’s low-contention regression retained; Dyna-P sensitivity tied to its local experiment; KRISP kept in its AMD emulation context; Tally’s 1.19 versus 1.65 denotes total normalized system throughput.
+
+## 4. Heading 23: mandatory deliverables (1–13)
+
+| Deliverable | Status | Evidence / condition |
+| --- | --- | --- |
+| 1 Final SLR report | Green | Complete first draft in PDF and Word; bounded-method limitations remain. |
+| 2 Engineering problem | Green | Report §1: decision, alternatives and conflicting requirements. |
+| 3 Objectives | Green | Report §1. |
+| 4 3–5 RQs | Green | Five submitted-protocol questions, report §2. |
+| 5 SLR protocol | Green | Original submitted PDF preserved; amendments separate. |
+| 6 Databases and justification | Green | Report §3 and Search Log. |
+| 7 Complete search strings | Yellow | Recorded strings supplied; historical fields/run mapping incomplete. |
+| 8 Inclusion/exclusion criteria | Green | Report §3; implementation deviations retained. |
+| 9 Database-wise search results | Yellow | Recorded counts retained; display/export discrepancies unresolved. |
+| 10 Search/screening log | Yellow | 4,075 canonical rows; 559 not advanced; title-only limits disclosed. |
+| 11 Duplicate-removal record | Green | 114 unique removed IDs with valid canonical targets; semantic pair audit separate. |
+| 12 PRISMA 2020 flow | Yellow | Arithmetic and bounded branch documented; exhaustive selection not established. |
+| 13 QA checklist/scores | Yellow | 200 source-reviewed items, current 338/396 applicable points; independent votes absent. |
+
+## 4. Heading 23: mandatory deliverables (14–25)
+
+| Deliverable | Status | Evidence / condition |
+| --- | --- | --- |
+| 14 Included primary studies | Green | 20 unique studies / 21 reports; target met. ParvaGPU version condition disclosed. |
+| 15 Extraction sheet | Green | 52 retained outcomes source-checked; two transparent calculations. |
+| 16 Taxonomy | Green | Mechanism-based classification in report/workbook. |
+| 17 Comparative matrix | Green | Context-aware comparisons integrated. |
+| 18 Trade-off analysis | Green | Benefits and sacrifices tied to conditions. |
+| 19 Conflicting evidence | Green | Source tensions and unmatched comparisons distinguished. |
+| 20 All RQ answers | Green | Five synthesis answers in report §6. |
+| 21 Engineering recommendation | Green | Conditional matrix in report §10; supported source corrections applied. |
+| 22 Research gaps | Green | Corpus-scoped gaps and future experiments. |
+| 23 Threats to validity | Green | Limitations and applied mitigations in report §12. |
+| 24 Complete references | Yellow | IEEE-style references present; ParvaGPU final-text equivalence not verified. |
+| 25 Supporting verification files | Green | Current and frozen data, three member packages, methods audit and scripts included. |
+
+Green certifies the stated preparation task. It does not mean the historical search is fully reproducible or the independent-review requirement has been met. The report preserves those separate limitations.
+
+## 5. Heading 24: report structure
+
+| Required part | Written and integrated content |
+| --- | --- |
+| 1 Introduction | Background, engineering decision, motivation, objectives and bounded contribution. |
+| 2 Research questions | Five original protocol RQs. |
+| 3 Research methodology | Protocol; databases; strings; eligibility; source review; appraisal; extraction; synthesis; actual deviations. |
+| 4 PRISMA study selection | Counts, screening, eligibility, included reports/studies and bounded flow. |
+| 5 Classification / taxonomy | Mechanisms, assumptions and control boundaries. |
+| 6 Results and evidence synthesis | Organized by RQ, not one summary per paper. |
+| 7 Comparative analysis | Metric/context matrix and limits of comparisons. |
+| 8 Engineering trade-offs | Benefits, sacrifices, costs and adverse outcomes. |
+| 9 Discussion | Conditions, apparent conflicts, version effects and strength of evidence. |
+| 10 Engineering recommendation | Scenario, candidate, benefit, sacrifice, alternative and validation. |
+| 11 Research gaps | Corpus-derived questions and needed experiments. |
+| 12 Threats to validity | Selection, abstracts, provenance, reviewer, version and measurement limitations. |
+| 13 Conclusion | Conditional engineering answer with its evidence boundary. |
+| References and appendices | IEEE references, search entries, study cards, QA, all outcomes, calculations and deliverable crosswalk. |
+
+The main PDF is the report to review. The long appendices provide traceability; their page count is not evidence of quality. Confirm any local instructor page limit before printing the full audit appendices.
+
+## 6. Headings 25–26: what a strong draft must show
+
+| Heading 25 outcome | Status | Evidence to inspect |
+| --- | --- | --- |
+| Systematic evidence collection | Yellow | Search Log, PRISMA and preserved baseline; historical gaps and bounded selection remain. |
+| Critical evaluation | Green | 200 source-appraised QA items and explicit reporting weaknesses. |
+| Classification | Green | Mechanism families and boundaries, not a list of products. |
+| Comparison | Green | GPU, workload, metric and baseline stay attached to results. |
+| Trade-off analysis | Green | For each benefit, state the sacrifice and conditions. |
+| Synthesis | Green | All five RQs answered across papers. |
+| Engineering decision | Green | Conditional recommendation traceable to report and outcome IDs. |
+
+| Heading 26 quality expectation | Status | Current position |
+| --- | --- | --- |
+| Every included paper traceable | Green | Study/report IDs, source version, URL/hash and anchors. |
+| PRISMA counts verifiable | Yellow | Arithmetic checked; incomplete selection process disclosed. |
+| Searches reproducible | Yellow | Original registered strings/counts preserved; missing run/archive/facet evidence remains a limitation. |
+| Inclusion/exclusion documented | Yellow | Decisions and criteria exist; 559 retained records still need assessment. |
+| No fabricated/selective evidence | Green | Unknowns preserved; adverse findings and source boundaries retained. |
+| Claims supported by citations | Green | 52 retained outcomes source-checked and corrections integrated; independent review remains pending. |
+| Limitations/conflicts transparent | Green | Explicit validity discussion and method-correction register. |
+
+## 7. The 559 records: exact next steps
+
+Do not add “stop when we have 20” or “abstract unavailable” as a new scientific exclusion rule. Twenty is the minimum target, not a maximum eligible-study limit. A record may be excluded only for an established criterion supported by available evidence.
+
+All 559 have been listed in the screening queue. First-review allocation: Eshaal 187, Raazia 186, Rameen 186; each record also has a different independent reviewer. Recovered abstract text is supplied for 235. The frozen baseline marks another 25 abstract-available but their bytes were not recovered here; 299 are marked unavailable.
+
+1. Review title/type/year against the submitted criteria. Use the available abstract; when relevance is uncertain, obtain the abstract or full text before deciding.
+
+2. Each assigned reviewer enters an initial decision, exact IC/EC, short reason, evidence location and actual time. Discuss only after preserving the independent decisions.
+
+3. Resolve disagreements. Seek full texts for potentially eligible records; record actual requests, versions, access attempts and reasons if unobtainable.
+
+4. Apply every inclusion criterion at full text. Link companion reports to one study. Include all newly eligible studies even if the count exceeds 20.
+
+5. Source-appraise new studies, extract outcomes and update taxonomy/RQ answers/recommendations. Recompute PRISMA from logged events; do not invent retrieval failures.
+
+6. If the team submits the present bounded first draft, keep the 559 branch and deviation visible. Instructor acceptance of bounded scope has not been supplied.
+
+Prepared assistance can recover metadata, organize evidence, propose criterion-based decisions and integrate genuine returns. It cannot create another person’s independent judgment or reconstruct unrecorded search events.
+
+## 8. Freeze the first draft: team checklist
+
+| Action | Status | Owner / completion evidence |
+| --- | --- | --- |
+| Integrate all three source-review packages | Green | Complete in current report and master workbook. |
+| Close InferFair missing source | Green | Correct supplied publisher copy; 10 QA items, 6 inclusion checks, 2 outcomes completed. |
+| Address methodology audit | Green | Every issue has a supported correction or an explicit limitation in methodology_corrections.csv. |
+| Prepare all mandatory deliverables and report sections | Green | See headings 23–26 crosswalk above. |
+| Record real independent source checks | Red | Rameen ↔ Eshaal/Raazia rotation described on page 3; actual returns absent. |
+| Close 559-record scope | Red | Complete screening or retain bounded deviation with dated instructor direction if obtained. |
+| Resolve historical search and ParvaGPU version unknowns | Yellow | Recover evidence if possible; otherwise retain precise limitations. |
+| Read the main CEP draft together | Yellow | Check interpretation, citations, tables, spelling and conditional conclusion. |
+| Verify repository publication | Yellow | Use publication_receipt.json for verified remote commit; a local commit is not proof of main. |
+
+The team can now review one integrated first draft. A final read can approve wording and presentation, while the research-method conditions remain separately visible. Do not mark unfinished source votes or selection work complete merely because the package is ready to read.

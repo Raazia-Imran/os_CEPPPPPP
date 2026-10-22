@@ -1,8 +1,6 @@
 {
-  "published_commit": "0df84ec66ecbead7662744c468fc05236ccd3d37",
-  "published_tree": "556ed9761434cbfd43f0b7876cc6b65a9b0b699c",
-  "local_tree_match": true,
-  "verified_utc": "2026-10-21T09:30:28.263030+00:00",
-  "method": "Connected GitHub app; expected-head guarded update; no force",
-  "third_party_fulltexts_published": false
+  "state": "Pending publication for integrated22October2026 package",
+  "old_checkpoint_receipts_are_historical": true,
+  "target": "Raazia-Imran/os_CEPPPPPP/main",
+  "note": "A later verified main commit will replace this receipt; local existence is not publication."
 }

@@ -1,28 +1,27 @@
-# Current Task 3 publication and team continuation
+# Task 3: integrated first draft — 22 October 2026
 
-Published to Raazia-Imran/os_CEPPPPPP main at 0df84ec66ecbead7662744c468fc05236ccd3d37. The GitHub tree 556ed9761434cbfd43f0b7876cc6b65a9b0b699c exactly matches the prepared local research/artifact checkpoint. User confirmation resolved the earlier approval block; publication used the connected GitHub app because local git push lacked credentials. Earlier blocked-publication notes below are historical.
+Start with [the main report](report/main.pdf), [master workbook](workbook/CEP_Task3_Evidence_Workbook.xlsx), and [team handover](team/First_Draft_Team_Plan.pdf).
 
-Start with task3/TEAM_WORK_DIVISION.md. Eshaal checks S001-S007 plus P023 and audits methods. Raazia checks S008-S014 and owns final integration. Rameen checks S015-S020, missing reading PDFs, scope and recent-survey novelty. Each checks all assigned QA and outcome rows; rotate separate independent checks and record actual signoffs.
+The complete handover ZIP is `team/Task3_Complete_First_Draft.zip`. It supersedes the earlier member-review-only ZIP.
 
-The 107-page PDF, Word, LaTeX/BibTeX, 27-tab workbook, checklist and logs are published. Third-party full texts are excluded. Remaining scientific gaps still apply: three missing reading PDFs, 559 unassessed records, source/version and bibliography checks, independent verification, novelty and final editorial review.
+Current source-review coverage: 20 unique studies, 21 report copies (REEF is one study), 200 QA items, 126 included-report inclusion checks, and 52 retained outcomes. The correct InferFair copy is checked and all three member packages are integrated. Sir’s clarified 20-study target is met. No additional three studies are needed merely for the count.
 
----
-Historical recovery checkpoint follows.
+Independent named human source checks remain pending. The 559 retained records have not been advanced to complete eligibility assessment. Historical search-provenance gaps and ParvaGPU final-text equivalence remain explicit limitations. Do not relabel these records exclusions or manufacture votes, abstracts or search events.
 
-# Recovered Task 3 draft checkpoint
+## Exact files
+- `report/main.pdf`: integrated CEP first draft with audit appendices.
+- `report/CEP_Task3_First_Draft.docx`: editable report companion.
+- `workbook/CEP_Task3_Evidence_Workbook.xlsx`: current 37-tab master.
+- `eshaal/`, `raazia/`, `rameen/`: individual source-review returns.
+- `team/First_Draft_Team_Plan.pdf`: headings 15–26 crosswalk, mandatory deliverables and teammate instructions.
+- `logs/methodology_corrections.csv`: justified audit resolutions and remaining limitations.
+- `logs/Remaining_559_Screening_Queue.csv`: all 559 records, recoverable abstracts, different first/independent reviewers and blank decision fields.
+- `logs/publication_receipt.json`: verified remote publication checkpoint; check its timestamp/commit rather than inferring publication from a local file.
 
-Recovered and rebuilt on 2026-10-21T03:11:02.902345+00:00. Previous local execution blocker is resolved.
+## Real teammate return
+Rameen independently checks Eshaal’s P001–P007 plus P023; Eshaal checks Raazia’s P008–P014; Raazia checks Rameen’s P015 and P018–P022. Record actual names, times, initial judgments, page/table anchors and disagreements before adjudication. Then review the main CEP draft together.
 
-- PDF: report/main.pdf, 107 pages rebuilt from the recovered sources.
-- Editable Word: report/CEP_Task3_First_Draft.docx generated from the same TeX and bibliography. Braced leading numeric cell values before Pandoc conversion to prevent dropped counts and scores.
-- Workbook: workbook/CEP_Task3_Evidence_Workbook.xlsx, 27 tabs. All original 14-sheet values preserved except equivalent numeric QA conversions; zero other differences.
-- LaTeX source, BibTeX, analysis matrices, complete baseline screening register and retrieval metadata are included.
-- 18 reading PDFs recovered locally. Per AGENTS.md, full-text PDFs and extracted full text are excluded from public Git; source URLs and hashes are published.
-- InferFair, ArkGPU and Dyna-P reading copies remain unavailable. No new retrieval or source verification is claimed for them.
+## Reproducibility and boundaries
+The submitted Task1 protocol and frozen Task2 evidence workbook are preserved. Current CSVs and source-review appraisals are separate. Build the report with `python task3/scripts/build_report.py`, then pdflatex/bibtex in `task3/report`; `build_word.py` creates Word from those sources. Workbook authoring scripts use the documented artifact-tool runtime.
 
-This remains a first draft. The supplied bounded corpus comprises 21 reports / 20 studies; 559 retained records were not assessed. Independent review and source/version checks remain pending. The guideline crosswalk is in report Appendix E and logs/Requirements.csv. Report organization follows heading 24; analyses address headings 15–22. Page count does not establish scientific completeness.
-
-Next: verify source anchors and bibliographic metadata, assess novelty against recent surveys, complete item-level checks, and refine the recommendation argument. Preserve Task 1 and the supplied baseline.
-
-## Publication blocker
-Automatic approval review rejected the push to Raazia-Imran/os_CEPPPPPP main because it did not recognize explicit authorization for the exact destination and payload. No remote publication is claimed. Request confirmation for the recovered draft PDF, Word, LaTeX/BibTeX, 27-tab workbook and research logs; exclude third-party full text.
+Third-party reading PDFs are excluded from Git and the ZIP. Source identities, URLs, hashes and versions are retained. Available search artifacts are included; missing historical archive bytes are explicitly documented, not claimed recovered.

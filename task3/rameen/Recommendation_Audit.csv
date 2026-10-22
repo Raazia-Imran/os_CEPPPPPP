@@ -1,0 +1,6 @@
+Item,Status,Finding,Action
+REC02,Supported conditionally,XSched and Tally source checks support foreground latency versus total throughput trade-off.,"Keep workload, offered load, shared GPU and comparator visible; correct E052 metric."
+REC04,Source checked; conditions retained,ArkGPU local P99 and low-contention regression verified in supplied PDF.,"Retain MPS comparator, thirty tested pairs and four-GPU/local distinction; no fault-isolation guarantee."
+REC05,Source checked; job-level evidence,Dyna-P sensitivity and local/cluster strata verified.,Correct E050 anchor to section4.2. Do not replace online request-tail evidence with makespan.
+REC06,Source checked;fairness-specific condition,Local goodput andmax/min slowdown unfairness verified inInferFairTable3.,"Retain600requests/s,three-model loadsplit3:1:2,SLO100ms and50ms interval;do not infer security/fault isolation."
+G01-G06,"Corpus observations, not worldwide absences","Existing surveys already discuss efficiency, fairness, security and LLM integration.",Phrase gaps as missing matched evidence in this reviewed corpus; do not imply the whole literature has no solution.

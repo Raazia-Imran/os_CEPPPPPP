@@ -1,0 +1,115 @@
+Removed record ID,Canonical record ID,Database,Title,DOI,Link basis
+R00061,R00060,ACM,Efficient Remote KV Cache Reuse with GPU-native Video Codec,10.1145/3789240.3829120,Exact DOI/URL or exact title+authors+year without identifiers
+R00081,R00080,ACM,LithOS: An Operating System for Efficient Machine Learning on GPUs,10.1145/3731569.3764818,Exact DOI/URL or exact title+authors+year without identifiers
+R00121,R00120,ACM,"Wattchmen: Watching the Wattchers – High Fidelity, Flexible GPU Energy Modeling",10.1145/3797905.3800514,Exact DOI/URL or exact title+authors+year without identifiers
+R00162,R00159,ACM,Improving GPU Energy Efficiency through an Application-transparent Frequency Scaling Policy with Performance Assurance,10.1145/3627703.3629584,Exact DOI/URL or exact title+authors+year without identifiers
+R00202,R00201,ACM,UGPU: Dynamically Constructing Unbalanced GPUs for Enhanced Resource Efficiency,10.1145/3695053.3731103,Exact DOI/URL or exact title+authors+year without identifiers
+R00282,R00281,ACM,TAAF: A Trace Abstraction and Analysis Framework Synergizing Knowledge Graphs and LLMs,10.1145/3744916.3787832,Exact DOI/URL or exact title+authors+year without identifiers
+R00343,R00341,ACM,Fine-grained Policy-driven I/O Sharing for Burst Buffers,10.1145/3581784.3607041,Exact DOI/URL or exact title+authors+year without identifiers
+R00484,R00478,ACM,Rethinking Thread Scheduling under Oversubscription: A User-Space Framework for Coordinating Multi-runtime and Multi-process Workloads,10.1145/3774934.3786451,Exact DOI/URL or exact title+authors+year without identifiers
+R00502,R00501,ACM,PSM: Parametric Saliency Maps for Autonomous Pedestrians,10.1145/3487983.3488299,Exact DOI/URL or exact title+authors+year without identifiers
+R00542,R00540,ACM,MeshfreeFlowNet: a physics-constrained deep continuous space-time super-resolution framework,,Exact DOI/URL or exact title+authors+year without identifiers
+R00566,R00561,ACM,An Intelligent Scheduling Approach on Mobile OS for Optimizing UI Smoothness and Power,10.1145/3674910,Exact DOI/URL or exact title+authors+year without identifiers
+R00662,R00641,ACM,Unlocking True Elasticity for the Cloud-Native Era with Dandelion,10.1145/3731569.3764803,Exact DOI/URL or exact title+authors+year without identifiers
+R00745,R00741,ACM,Session Summary Podcast: Session 31: WIUHPC: Sixth Combined Workshop on Interactive and Urgent High-Performance Computing,10.1145/3731599.3787551,Exact DOI/URL or exact title+authors+year without identifiers
+R00822,R00818,ACM,EcoAssist: Embedding Sustainability into AI-Assisted Frontend Development,10.1145/3772318.3791330,Exact DOI/URL or exact title+authors+year without identifiers
+R00883,R00858,ACM,Zephyr: A Zero-loss and Tranparent TLS Connection Migration Framework,10.1145/3820441.3820474,Exact DOI/URL or exact title+authors+year without identifiers
+R00926,R00921,ACM,"""It's like a rubber duck that talks back"": Understanding Generative AI-Assisted Data Analysis Workflows through a Participatory Prompting Study",10.1145/3663384.3663389,Exact DOI/URL or exact title+authors+year without identifiers
+R01044,R01040,ACM,Machine Learning for Electronic Design Automation: A Survey,10.1145/3451179,Exact DOI/URL or exact title+authors+year without identifiers
+R01063,R01060,ACM,"Alps, a versatile research infrastructure",10.1145/3757348.3757365,Exact DOI/URL or exact title+authors+year without identifiers
+R01124,R01119,ACM,Learning-Augmented Energy-Aware List Scheduling for Precedence-Constrained Tasks,10.1145/3680278,Exact DOI/URL or exact title+authors+year without identifiers
+R01132,R01118,ACM,Controlled Self-Recovery of the Aggregator in Federated Learning Using RAFT Protocol,10.1145/3785470,Exact DOI/URL or exact title+authors+year without identifiers
+R01202,R01200,ACM,ObjCtrl: Object-based Control Relaxation for Conditional Text-to-Image Generation,10.1145/3746027.3755367,Exact DOI/URL or exact title+authors+year without identifiers
+R01250,R01240,ACM,AExec: Asynchronous Multi-accelerator Execution and Management Mechanism,10.1145/3801487.3801807,Exact DOI/URL or exact title+authors+year without identifiers
+R01263,R01261,ACM,"Creative ML Assemblages: The Interactive Politics of People, Processes, and Products",10.1145/3637315,Exact DOI/URL or exact title+authors+year without identifiers
+R01284,R01280,ACM,Decoupled Variational Embedding for Signed Directed Networks,10.1145/3408298,Exact DOI/URL or exact title+authors+year without identifiers
+R01364,R01361,ACM,StreamSplit: Continuous Audio Representation Learning via Uncertainty-Guided Adaptive Splitting,10.1145/3745756.3809189,Exact DOI/URL or exact title+authors+year without identifiers
+R01482,R01481,ACM,Retina: analyzing 100GbE traffic on commodity hardware,10.1145/3544216.3544227,Exact DOI/URL or exact title+authors+year without identifiers
+R01542,R01521,ACM,Realism and Field of View Affect Presence in VR but Not the Way You Think,10.1145/3544548.3581448,Exact DOI/URL or exact title+authors+year without identifiers
+R01562,R01540,ACM,WattWiser: Power & Resource-Efficient Scheduling for Multi-Model Multi-GPU Inference Servers,10.1145/3634769.3634807,Exact DOI/URL or exact title+authors+year without identifiers
+R01568,R01567,ACM,HealthServe: A Public Health-Aware Inference Framework,10.1145/3820171.3806868,Crossref is-identical-to relation; https://api.crossref.org/works/10.1145/3820171.3806868
+R01582,R00021,ACM,ESG: Pipeline-Conscious Efficient Scheduling of DNN Workflows on Serverless Platforms with Shareable GPUs,10.1145/3625549.3658657,Exact DOI/URL or exact title+authors+year without identifiers
+R01783,R01782,Springer,RouteLlama: Proactive Disentanglement for Robust Multi-domain Text Mining,10.1007/978-981-92-1465-5_7,Exact DOI/URL or exact title+authors+year without identifiers
+R01923,R01922,Springer,Medium-sized protein language models perform well at transfer learning on realistic datasets,10.1038/s41598-025-05674-x,Exact DOI/URL or exact title+authors+year without identifiers
+R02003,R02002,Springer,The forget-set identification problem,10.1007/s10994-025-06897-9,Exact DOI/URL or exact title+authors+year without identifiers
+R02190,R01536,IEEE,DARIS: An Oversubscribed Spatio-Temporal Scheduler for Real-Time DNN Inference on GPUs,,Exact publisher primary URL matches DOI-less occurrence; https://api.crossref.org/works/10.1109/dac63849.2025.11132423
+R02197,R02173,IEEE,GPU Partitioning Mechanisms for Safety-related Applications,,Exact DOI/URL or exact title+authors+year without identifiers
+R02198,R02171,IEEE,ParvaGPU: Efficient Spatial GPU Sharing for Large-Scale DNN Inference in Cloud Environments,,Exact DOI/URL or exact title+authors+year without identifiers
+R02201,R02176,IEEE,KRISP: Enabling Kernel-wise RIght-sizing for Spatial Partitioned GPU Inference Servers,,Exact DOI/URL or exact title+authors+year without identifiers
+R02207,R02183,IEEE,Exploring the Diversity of Multiple Job Deployments over GPUs for Efficient Resource Sharing,,Exact DOI/URL or exact title+authors+year without identifiers
+R02231,R02173,IEEE,GPU Partitioning Mechanisms for Safety-related Applications,,Exact DOI/URL or exact title+authors+year without identifiers
+R02255,R02213,IEEE,SMOOTH: Scalable Multitask Offloading with Backbone Sharing,,Exact DOI/URL or exact title+authors+year without identifiers
+R02256,R00350,IEEE,"CRONUS: Fault-isolated, Secure and High-performance Heterogeneous Computing for Trusted Execution Environment",,Exact publisher primary URL matches DOI-less occurrence; https://api.crossref.org/works/10.1109/micro56248.2022.00019
+R02265,R02249,IEEE,A Review of GPU Virtualization Technology Based on API Redirection,,Exact DOI/URL or exact title+authors+year without identifiers
+R02280,R00241,Supplementary,Tally: Non-Intrusive Performance Isolation for Concurrent Deep Learning Workloads,10.1145/3669940.3707282,Exact DOI/URL or exact title+authors+year without identifiers
+R02281,R00088,Supplementary,Orion: Interference-aware Fine-grained GPU Sharing for ML Applications,10.1145/3627703.3629578,Exact DOI/URL or exact title+authors+year without identifiers
+R02282,R00077,Supplementary,GSLICE: Controlled Spatial Sharing of GPUs for a Scalable Inference Platform,10.1145/3419111.3421284,Exact DOI/URL or exact title+authors+year without identifiers
+R02284,R00017,Supplementary,Paella: Low-latency Model Serving with Software-defined GPU Scheduling,10.1145/3600006.3613163,Exact DOI/URL or exact title+authors+year without identifiers
+R02288,R00067,Supplementary,"On the Efficiency, Fairness, and Security of AI Accelerator Sharing",10.1145/3721427,Exact DOI/URL or exact title+authors+year without identifiers
+R02337,R02105,ScienceDirect,Unleashing the hidden powers of low-cost IoT boards: GPU-based edutainment case study,10.1016/j.jksuci.2020.02.001,Exact DOI
+R02344,R01951,ScienceDirect,Knowledge distillation in transformers with tripartite attention: Multiclass brain tumor detection in highly augmented MRIs,10.1016/j.jksuci.2023.101907,Exact DOI
+R02353,R02323,ScienceDirect,Prediction-based GPU sharing for distributed training,10.1016/j.future.2026.108413,Exact DOI
+R02365,R02302,ScienceDirect,SpaceFlow: Runtime enforcement of cloud-native GPU spatial partitioning,10.1016/j.jpdc.2026.105311,Exact DOI
+R02373,R02325,ScienceDirect,Concord: A GPU cluster scheduler with enhanced interference profiling and asymmetric job packing,10.1016/j.future.2026.108596,Exact DOI
+R02388,R02313,ScienceDirect,AdaGap: An adaptive gap-aware resource allocation strategy for GPU sharing in heterogeneous clusters,10.1016/j.future.2025.107883,Exact DOI
+R02395,R02324,ScienceDirect,Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving,10.1016/j.peva.2025.102539,Exact DOI
+R02414,R02310,ScienceDirect,CloudX: A dual-layered cloud native architecture for GPU resource management using interactive notebook,10.1016/j.array.2026.101026,Exact DOI
+R02427,R02326,ScienceDirect,NGS: A network GPGPU system for orchestrating remote and virtual accelerators,10.1016/j.sysarc.2024.103138,Exact DOI
+R02589,R02348,ScienceDirect,Characterizing concurrency mechanisms for NVIDIA GPUs under deep learning workloads,10.1016/j.peva.2021.102234,Exact DOI
+R02595,R02323,ScienceDirect,Prediction-based GPU sharing for distributed training,10.1016/j.future.2026.108413,Exact DOI
+R02600,R02290,ScienceDirect,InferFair: Towards QoS-aware scheduling for performance isolation guarantee in heterogeneous model serving systems,10.1016/j.future.2023.08.020,Exact DOI
+R02613,R02302,ScienceDirect,SpaceFlow: Runtime enforcement of cloud-native GPU spatial partitioning,10.1016/j.jpdc.2026.105311,Exact DOI
+R02625,R02325,ScienceDirect,Concord: A GPU cluster scheduler with enhanced interference profiling and asymmetric job packing,10.1016/j.future.2026.108596,Exact DOI
+R02631,R02297,ScienceDirect,Mind control attack: Undermining deep learning with GPU memory exploitation,10.1016/j.cose.2020.102115,Exact DOI
+R02635,R02383,ScienceDirect,ESEN: Efficient GPU sharing of Ensemble Neural Networks,10.1016/j.neucom.2024.128030,Exact DOI
+R02637,R02384,ScienceDirect,ESCAN: Efficient GPU sharing for cascade neural network inference,10.1016/j.neunet.2025.107703,Exact DOI
+R02644,R02313,ScienceDirect,AdaGap: An adaptive gap-aware resource allocation strategy for GPU sharing in heterogeneous clusters,10.1016/j.future.2025.107883,Exact DOI
+R02645,R02389,ScienceDirect,QoS-aware dynamic resource allocation with improved utilization and energy efficiency on GPU,10.1016/j.parco.2022.102958,Exact DOI
+R02648,R02320,ScienceDirect,A comprehensive survey on multi-GPU systems,10.1016/j.parco.2026.103208,Exact DOI
+R02649,R02324,ScienceDirect,Lilou: Resource-aware model-driven latency prediction for GPU-accelerated model serving,10.1016/j.peva.2025.102539,Exact DOI
+R02655,R02407,ScienceDirect,Solving the task scheduling and GPU reconfiguration problem on MIG devices via deep reinforcement learning,10.1016/j.future.2025.108145,Exact DOI
+R02656,R02410,ScienceDirect,Chapter Six - Deep learning with GPUs,10.1016/bs.adcom.2020.11.003,Exact DOI
+R02667,R02420,ScienceDirect,Optimum: Runtime optimization for multiple mixed model deployment deep learning inference,10.1016/j.sysarc.2023.102901,Exact DOI
+R02672,R02326,ScienceDirect,NGS: A network GPGPU system for orchestrating remote and virtual accelerators,10.1016/j.sysarc.2024.103138,Exact DOI
+R02680,R02581,ScienceDirect,"Advancing food science through molecular docking: Methods, applications, and future perspectives",10.1016/j.tifs.2026.105751,Exact DOI
+R02723,R02332,ScienceDirect,Using machine learning techniques to analyze the performance of concurrent kernel execution on GPUs,10.1016/j.future.2020.07.038,Exact DOI
+R02798,R02696,ScienceDirect,A physics-informed neural network framework for multi-physics coupling microfluidic problems,10.1016/j.compfluid.2024.106421,Exact DOI
+R02849,R02499,ScienceDirect,A bacterial phyla dataset for protein function prediction,10.1016/j.dib.2019.105002,Exact DOI
+R03080,R02348,ScienceDirect,Characterizing concurrency mechanisms for NVIDIA GPUs under deep learning workloads,10.1016/j.peva.2021.102234,Exact DOI
+R03092,R02290,ScienceDirect,InferFair: Towards QoS-aware scheduling for performance isolation guarantee in heterogeneous model serving systems,10.1016/j.future.2023.08.020,Exact DOI
+R03102,R02617,ScienceDirect,GPU Usage Time-Based Ordering Management Technique for Tasks Execution to Prevent Running Failures of GPU Tasks in Container Environments,10.32604/cmc.2025.061182,Exact DOI
+R03115,R02621,ScienceDirect,Deep-learning-based 3D GPR densification using sequential 2D reconstructions and pseudo-GPR training data,10.1016/j.jappgeo.2026.106318,Exact DOI
+R03124,R02297,ScienceDirect,Mind control attack: Undermining deep learning with GPU memory exploitation,10.1016/j.cose.2020.102115,Exact DOI
+R03147,R02320,ScienceDirect,A comprehensive survey on multi-GPU systems,10.1016/j.parco.2026.103208,Exact DOI
+R03161,R02410,ScienceDirect,Chapter Six - Deep learning with GPUs,10.1016/bs.adcom.2020.11.003,Exact DOI
+R03165,R02312,ScienceDirect,Dynamic Scheduling Algorithm of Cloud Edge Collaborative Computing Power for Edge Intelligence: A Resource Demand Prediction Model Based on Deep Learning,10.1016/j.procs.2026.03.351,Exact DOI
+R03170,R02420,ScienceDirect,Optimum: Runtime optimization for multiple mixed model deployment deep learning inference,10.1016/j.sysarc.2023.102901,Exact DOI
+R03171,R02423,ScienceDirect,"Chapter 9 - Introduction to GPU computing, OpenACC, and CUDA basics",10.1016/b978-0-443-45574-2.00011-3,Exact DOI
+R03216,R02311,ScienceDirect,From virtualization security issues to cloud protection opportunities: An in-depth analysis of system virtualization models,10.1016/j.cose.2020.101905,Exact DOI
+R03341,R02307,ScienceDirect,PPS: Fair and efficient black-box scheduling for multi-tenant GPU clusters,10.1016/j.parco.2024.103082,Exact DOI
+R03363,R02302,ScienceDirect,SpaceFlow: Runtime enforcement of cloud-native GPU spatial partitioning,10.1016/j.jpdc.2026.105311,Exact DOI
+R03372,R02314,ScienceDirect,Performance optimization techniques for virtual machines and containers in weak-isolation environments,10.1016/j.sysarc.2026.103800,Exact DOI
+R03376,R02325,ScienceDirect,Concord: A GPU cluster scheduler with enhanced interference profiling and asymmetric job packing,10.1016/j.future.2026.108596,Exact DOI
+R03383,R02730,ScienceDirect,Communication resource allocation and multi-DNN inference optimization in edge computing-aided video analytics,10.1016/j.comcom.2026.108607,Exact DOI
+R03389,R02639,ScienceDirect,FastPTM: Fast weights loading of pre-trained models for parallel inference service provisioning,10.1016/j.parco.2024.103114,Exact DOI
+R03391,R02387,ScienceDirect,Octopus: Accuracy-aware resource scheduling for multi-video streaming inference at the edge,10.1016/j.comnet.2025.111887,Exact DOI
+R03393,R02313,ScienceDirect,AdaGap: An adaptive gap-aware resource allocation strategy for GPU sharing in heterogeneous clusters,10.1016/j.future.2025.107883,Exact DOI
+R03405,R02404,ScienceDirect,PipePar: Enabling fast DNN pipeline parallel training in heterogeneous GPU clusters,10.1016/j.neucom.2023.126661,Exact DOI
+R03416,R02310,ScienceDirect,CloudX: A dual-layered cloud native architecture for GPU resource management using interactive notebook,10.1016/j.array.2026.101026,Exact DOI
+R03446,R02329,ScienceDirect,A Comprehensive Survey on Energy-Efficient Power Management Techniques,10.1016/j.procs.2020.03.432,Exact DOI
+R03530,R02294,ScienceDirect,"Space Computing: Architectures, Challenges, and Future Directions",10.34133/icomputing.0134,Exact DOI
+R03571,R02817,ScienceDirect,A zero-copy lock-free data pipeline for edge streaming,10.1016/j.ins.2026.123171,Exact DOI
+R03582,R02332,ScienceDirect,Using machine learning techniques to analyze the performance of concurrent kernel execution on GPUs,10.1016/j.future.2020.07.038,Exact DOI
+R03596,R02495,ScienceDirect,Chapter 4 - Resource management and performance metrics in parallel systems,10.1016/b978-0-443-45574-2.00023-x,Exact DOI
+R03611,R03508,ScienceDirect,"Real-time, crowdsourcing-enhanced forecasting of building functionality during urban floods",10.1016/j.cacaie.2026.100163,Exact DOI
+R03617,R02308,ScienceDirect,"Distributed artificial intelligence: Taxonomy, review, framework, and reference architecture",10.1016/j.iswa.2023.200231,Exact DOI
+R03696,R02331,ScienceDirect,Chapter 1 - Introduction,10.1016/b978-0-32-390796-5.00010-3,Exact DOI
+R03729,R02775,ScienceDirect,Reliable and efficient multi-objective task scheduling for multiple-payload satellite based on genetic algorithm strengthened deep reinforcement learning,10.1016/j.asr.2025.07.047,Exact DOI
+R03745,R02801,ScienceDirect,GNN-based deep reinforcement learning for computation task scheduling in autonomous multi-robot systems,10.1016/j.sysarc.2025.103534,Exact DOI
+R03767,R02919,ScienceDirect,A survey on hardware security of DNN models and accelerators,10.1016/j.sysarc.2021.102163,Exact DOI
+R03843,R02886,ScienceDirect,Artificial Intelligence for Trusted Autonomous Satellite Operations,10.1016/j.paerosci.2023.100960,Exact DOI
+R03904,R03802,ScienceDirect,Comprehensive mitigation method for atmospheric turbulence errors in Vision-Based displacement monitoring of long-span bridges,10.1016/j.ymssp.2025.113351,Exact DOI
+R03962,R02300,ScienceDirect,"A survey on hardware accelerators: Taxonomy, trends, challenges, and perspectives",10.1016/j.sysarc.2022.102561,Exact DOI
+R03975,R02470,ScienceDirect,Quantitative resolution analysis in seismic imaging: From classical theory to cutting-edge advances,10.1016/j.earscirev.2025.105289,Exact DOI
+R04173,R03212,ScienceDirect,Abstracts,10.1016/j.fueleneab.2024.02.002,Exact DOI
+R04189,R03225,ScienceDirect,"A systematic literature review on energy efficiency in serverless environments: Taxonomy, techniques, and future directions",10.1016/j.compeleceng.2026.111212,Exact DOI

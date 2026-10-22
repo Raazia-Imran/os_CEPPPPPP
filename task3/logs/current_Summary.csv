@@ -1,0 +1,18 @@
+Item,Value,Meaning
+Review title,GPU Sharing Mechanisms for Multi-Tenant Inference,Bounded rapid systematic review (see Method & Deviations)
+Imported occurrences,4189,All database and supplementary occurrences
+Duplicate links applied,114,"Linked repeats retained in the provenance log. Earlier working registers showed 111 (ACM 29, IEEE 7); this workbook applies 114 (ACM 30, IEEE 9)."
+Canonical records screened,4075,Unique records receiving a structured record decision
+Excluded at screening,3493,Record-level exclusions with criterion and reason
+Not advanced under stopping rule,559,"Retained by screening, but outside the bounded source-assessment set; not final inclusion or exclusion"
+Source-assessed report versions,23,21 included report versions plus 2 source-based exclusions
+Included unique studies,20,Final comparative synthesis corpus
+QA appraisals,200,Ten Q1-Q10 items for each included study
+Evidence rows,52,Source-linked observations; metrics are not pooled across unlike studies
+Calculated quantities,2,Values calculated from explicitly recorded source inputs
+Method,Single assessment pass under team direction; see Method & Deviations,AI-tool use and the independent-review evidence boundary are stated once in Method & Deviations.
+Identifier guide,P = report; S = study; R = record; E = evidence row; C = calculation,A companion publication may share one study ID
+Records screened without abstract text,2933,Decisions rest on title/type metadata only
+Records screened with abstract text in export,1142,Abstract text was available in the export
+Independent human verification,Team verification reported; item-level record unavailable,"The supplied workbook asserts teammate verification but contains no named independent reviewer, separate votes, dated check log or item-level sign-off. No inter-rater agreement is claimed."
+Task3 integrated status,20studies;21reports;200QAitems;52outcomes source-reviewed,First draft complete as an artifact; independent signoff and exhaustive screening are not claimed.

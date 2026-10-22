@@ -1,0 +1,58 @@
+{
+  "sources_inspected": 6,
+  "sources_pending_full_text": 0,
+  "qa_assessed": 60,
+  "qa_pending": 0,
+  "eligibility_supported_in_accessed_versions": 36,
+  "eligibility_pending": 0,
+  "outcomes_checked": 9,
+  "outcomes_pending": 0,
+  "scope_records_unassessed": 559,
+  "instructor_scope_accepted": false,
+  "independent_human_signoff": false,
+  "score_treatment": "Proposals for teammate adjudication; master and frozen baseline unchanged",
+  "sources": [
+    {
+      "report": "P015",
+      "original": 16,
+      "original_max": 18,
+      "proposed": 18,
+      "proposed_max": 20
+    },
+    {
+      "report": "P018",
+      "original": 15,
+      "original_max": 20,
+      "proposed": 17,
+      "proposed_max": 20
+    },
+    {
+      "report": "P019",
+      "original": 16,
+      "original_max": 20,
+      "proposed": 16,
+      "proposed_max": 20
+    },
+    {
+      "report": "P020",
+      "original": 15,
+      "original_max": 20,
+      "proposed": 15,
+      "proposed_max": 20
+    },
+    {
+      "report": "P021",
+      "original": 16,
+      "original_max": 20,
+      "proposed": 18,
+      "proposed_max": 20
+    },
+    {
+      "report": "P022",
+      "original": 17,
+      "original_max": 20,
+      "proposed": 19,
+      "proposed_max": 20
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "tabs": [
+    "Overview",
+    "Sources",
+    "QA",
+    "Eligibility",
+    "Outcomes",
+    "Corrections",
+    "Methodology",
+    "Review queue"
+  ],
+  "qa_totals": [
+    13,
+    18,
+    20,
+    17,
+    18,
+    16,
+    19
+  ],
+  "outcomes": 30,
+  "live_formula_test": true,
+  "error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

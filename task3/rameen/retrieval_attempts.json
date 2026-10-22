@@ -1,0 +1,110 @@
+[
+  {
+    "report_id": "P015",
+    "url": "https://www.usenix.org/system/files/osdi25-shen-weihang.pdf",
+    "attempt_utc": "2026-10-22T08:37:38.295452+00:00",
+    "http_status": 200,
+    "final_url": "https://www.usenix.org/system/files/osdi25-shen-weihang.pdf",
+    "content_type": "application/pdf",
+    "bytes": 963393,
+    "sha256": "b25305be75363bd0d39564dd4bb3dd8fafc7c5ce25f3f4e95cf74c2c5fd3c76f",
+    "status": "retrieved_pdf",
+    "pages": 23,
+    "text_chars": 111220
+  },
+  {
+    "report_id": "P018",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0167739X23003187/pdfft",
+    "attempt_utc": "2026-10-22T08:37:38.296802+00:00",
+    "http_status": 200,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S0167739X23003187/pdfft",
+    "content_type": "text/html",
+    "bytes": 195,
+    "sha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
+    "status": "unavailable",
+    "error": "Response is not a PDF"
+  },
+  {
+    "report_id": "P019",
+    "url": "https://link.springer.com/content/pdf/10.1007/s42514-023-00154-y.pdf",
+    "attempt_utc": "2026-10-22T08:37:38.297332+00:00",
+    "http_status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s42514-023-00154-y?error=cookies_not_supported&code=2ecf4797-b9e9-407c-a436-20dbea187434",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 322856,
+    "sha256": "83c72a5dd081191b9faee54f98993237cfccf6a83989c773d8e4c8ccaf53dc66",
+    "status": "unavailable",
+    "error": "Response is not a PDF"
+  },
+  {
+    "report_id": "P020",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10586-025-05284-2.pdf",
+    "attempt_utc": "2026-10-22T08:37:38.297871+00:00",
+    "http_status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s10586-025-05284-2?error=cookies_not_supported&code=26ee3983-e7f5-4ebb-88b3-e79fd46c9b18",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 296344,
+    "sha256": "0420d1694397a7017294f73bf94b127e2aa96ded431e34e42241bf753c3bef5f",
+    "status": "unavailable",
+    "error": "Response is not a PDF"
+  },
+  {
+    "report_id": "P021",
+    "url": "https://danielwong.org/files/KRISP-HPCA2023.pdf",
+    "attempt_utc": "2026-10-22T08:37:38.298340+00:00",
+    "http_status": 200,
+    "final_url": "https://danielwong.org/files/KRISP-HPCA2023.pdf",
+    "content_type": "application/pdf",
+    "bytes": 911150,
+    "sha256": "5a32bf912d0b75169afa56d27a66ab81ec0b4e9878405954400c64a5694d4fda",
+    "status": "retrieved_pdf",
+    "pages": 14,
+    "text_chars": 80497
+  },
+  {
+    "report_id": "P022",
+    "url": "https://arxiv.org/pdf/2410.07381v2",
+    "attempt_utc": "2026-10-22T08:37:38.299212+00:00",
+    "http_status": 200,
+    "final_url": "https://arxiv.org/pdf/2410.07381v2",
+    "content_type": "application/pdf",
+    "bytes": 1024258,
+    "sha256": "3de91814daedc97163069195768b45f69d1dcd20612fe77c53a0925a49de8437",
+    "status": "retrieved_pdf",
+    "pages": 14,
+    "text_chars": 80219
+  },
+  {
+    "report_id": "RV01",
+    "url": "https://arxiv.org/pdf/2203.09040",
+    "attempt_utc": "2026-10-22T08:37:44.412520+00:00",
+    "http_status": 200,
+    "final_url": "https://arxiv.org/pdf/2203.09040",
+    "content_type": "application/pdf",
+    "bytes": 3576821,
+    "sha256": "e13949c85d2f5fc8158b71619a9b3f0deb95d6210e0847ab8fa2b1ea6f8f704b",
+    "status": "retrieved_pdf",
+    "pages": 8,
+    "text_chars": 42837
+  },
+  {
+    "report_id": "RV02",
+    "url": "https://www.cs.newpaltz.edu/~lik/publications/Jiahua-Huang-ACM-CSUR-2025",
+    "attempt_utc": "2026-10-22T08:37:44.473817+00:00",
+    "http_status": 200,
+    "final_url": "https://www.cs.newpaltz.edu/~lik/publications/Jiahua-Huang-ACM-CSUR-2025",
+    "content_type": "application/pdf",
+    "bytes": 3036581,
+    "sha256": "86030f07bd60076e7b2f00b3d435eb064b6726efa9a003413896c984ddc48e78",
+    "status": "retrieved_pdf",
+    "pages": 35,
+    "text_chars": 140175
+  },
+  {
+    "report_id": "RV03",
+    "url": "https://hal.science/hal-05429292v1/document",
+    "attempt_utc": "2026-10-22T08:37:44.978406+00:00",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

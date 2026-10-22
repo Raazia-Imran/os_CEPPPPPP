@@ -32,9 +32,18 @@ task2/report/main.pdf
 
 /task3/papers/P*.pdf
 /task3/papers/P*.txt
+/task3/papers/RV*.pdf
+/task3/papers/RV*.txt
+/task3/rameen/node_modules
 /task3/report/*.aux
 /task3/report/*.log
 /task3/report/*.out
 /task3/report/*.toc
 /task3/report/*.blg
 /task3/report/*.bbl
+
+/task3/papers/*.corrupt
+/task3/raazia/node_modules
+*inspect.ndjson*
+
+/task3/papers/ScienceDirect_upload.zip

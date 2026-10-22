@@ -3,6 +3,6 @@ Selection/stopping,559 retained records not assessed,No exhaustive recall or pre
 Title-only decisions,2933 records without exported abstract,Relevant work may be missed,Abstract-availability column retained,Prioritize uncertain/relevant records for abstract checks
 Single review,No item-level independent checks,Correlated screening/QA/extraction errors possible,Original rationale and source anchors retained,Record real named checks if performed
 Search provenance,Displayed/exported discrepancies and broad fields,Search cannot be fully reconstructed from totals,Exact preserved query/log values retained,"Supply missing original exports, facets and receipts"
-Source version,Author manuscripts and combined REEF anchors,Page/result mappings may differ,Separate source-version and retrieval records,Compare final published text and map companion outcomes
+Source version,ParvaGPU author manuscript not compared with final text,Page/result mappings may differ,iGniter final checked; Tallyv3 pinned; REEF conference/journal mapping resolved,Confirm ParvaGPU final equivalence or retain version condition.
 Measurement heterogeneity,Different GPU/model/baseline/statistic,Cross-study speedup ranking is invalid,No pooled effect size or universal winner,Matched comparisons needed
-Reporting bias,Uneven repetitions and uncertainty,Headlines may overstate robustness,Adverse and null findings retained,Recheck high-impact claims at exact source locations
+Reporting bias,Uneven repetitions and uncertainty,Headlines may overstate robustness,All52 retained outcome values/context checked; adverse findings retained,Independent high-impact claim checks; reporting uncertainty still missing in some sources.

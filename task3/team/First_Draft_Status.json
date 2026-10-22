@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-22",
+  "target_unique_studies": 20,
+  "current_unique_studies": 20,
+  "included_reports": 21,
+  "source_review_complete": true,
+  "master_integration_complete": true,
+  "qa_items": 200,
+  "outcomes": 52,
+  "independent_human_signoff": false,
+  "retained_unassessed": 559,
+  "first_draft_artifacts": "Prepared; bounded review limitations retained",
+  "mandatory_deliverables": [
+    [
+      "Final SLR report",
+      "Green",
+      "Complete first draft in PDF and Word; bounded-method limitations remain."
+    ],
+    [
+      "Engineering problem",
+      "Green",
+      "Report \u00a71: decision, alternatives and conflicting requirements."
+    ],
+    [
+      "Objectives",
+      "Green",
+      "Report \u00a71."
+    ],
+    [
+      "3\u20135 RQs",
+      "Green",
+      "Five submitted-protocol questions, report \u00a72."
+    ],
+    [
+      "SLR protocol",
+      "Green",
+      "Original submitted PDF preserved; amendments separate."
+    ],
+    [
+      "Databases and justification",
+      "Green",
+      "Report \u00a73 and Search Log."
+    ],
+    [
+      "Complete search strings",
+      "Yellow",
+      "Recorded strings supplied; historical fields/run mapping incomplete."
+    ],
+    [
+      "Inclusion/exclusion criteria",
+      "Green",
+      "Report \u00a73; implementation deviations retained."
+    ],
+    [
+      "Database-wise search results",
+      "Yellow",
+      "Recorded counts retained; display/export discrepancies unresolved."
+    ],
+    [
+      "Search/screening log",
+      "Yellow",
+      "4,075 canonical rows; 559 not advanced; title-only limits disclosed."
+    ],
+    [
+      "Duplicate-removal record",
+      "Green",
+      "114 unique removed IDs with valid canonical targets; semantic pair audit separate."
+    ],
+    [
+      "PRISMA 2020 flow",
+      "Yellow",
+      "Arithmetic and bounded branch documented; exhaustive selection not established."
+    ],
+    [
+      "QA checklist/scores",
+      "Yellow",
+      "200 source-reviewed items, current 338/396 applicable points; independent votes absent."
+    ],
+    [
+      "Included primary studies",
+      "Green",
+      "20 unique studies / 21 reports; target met. ParvaGPU version condition disclosed."
+    ],
+    [
+      "Extraction sheet",
+      "Green",
+      "52 retained outcomes source-checked; two transparent calculations."
+    ],
+    [
+      "Taxonomy",
+      "Green",
+      "Mechanism-based classification in report/workbook."
+    ],
+    [
+      "Comparative matrix",
+      "Green",
+      "Context-aware comparisons integrated."
+    ],
+    [
+      "Trade-off analysis",
+      "Green",
+      "Benefits and sacrifices tied to conditions."
+    ],
+    [
+      "Conflicting evidence",
+      "Green",
+      "Source tensions and unmatched comparisons distinguished."
+    ],
+    [
+      "All RQ answers",
+      "Green",
+      "Five synthesis answers in report \u00a76."
+    ],
+    [
+      "Engineering recommendation",
+      "Green",
+      "Conditional matrix in report \u00a710; supported source corrections applied."
+    ],
+    [
+      "Research gaps",
+      "Green",
+      "Corpus-scoped gaps and future experiments."
+    ],
+    [
+      "Threats to validity",
+      "Green",
+      "Limitations and applied mitigations in report \u00a712."
+    ],
+    [
+      "Complete references",
+      "Yellow",
+      "IEEE-style references present; ParvaGPU final-text equivalence not verified."
+    ],
+    [
+      "Supporting verification files",
+      "Green",
+      "Current and frozen data, three member packages, methods audit and scripts included."
+    ]
+  ]
+}

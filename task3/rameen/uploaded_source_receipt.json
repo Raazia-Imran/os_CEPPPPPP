@@ -1,0 +1,22 @@
+[
+  {
+    "Report ID": "P019",
+    "Drive file ID": "1avJnG1rMh-XOq-28kM-vRSDLQO8GJfQ2",
+    "Retrieved UTC": "2026-10-22T09:45:36.755389+00:00",
+    "SHA256": "428d2eda6ac81fe486e709b63ce6da1a4f5f0d83ac39307ca29a6a1239fe69c1",
+    "Bytes": 7420576,
+    "Pages": 18,
+    "Identity anchor": "PDF p1",
+    "Status": "Read and appraised; source PDF excluded from public Git"
+  },
+  {
+    "Report ID": "P020",
+    "Drive file ID": "1UN94Gazed1uOUzn83BiMAMCaLImRctQz",
+    "Retrieved UTC": "2026-10-22T09:45:36.755389+00:00",
+    "SHA256": "70b7419d0903964fe05f7b2bdbc65a1ce0039848e4640b65dcefb4ed02de3e08",
+    "Bytes": 3389237,
+    "Pages": 19,
+    "Identity anchor": "PDF p1",
+    "Status": "Read and appraised; source PDF excluded from public Git"
+  }
+]

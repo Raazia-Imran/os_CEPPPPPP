@@ -1,0 +1,11 @@
+Change ID,Scope,Field,Original,Proposed treatment,Evidence
+ES01,P001 E001 E002,Source anchor,pp457-458,PDFpp16-17 / printed458-459; GPU-specific TensorRT/Poisson context retained,Figure14 and section6.7
+ES02,P002,Version and Xplore identifier,arXiv manuscript; earlier lookup10018218,Final typeset TPDS copy inspected; correct Xplore article identifier10002315; retain source URL/hash,Final DOI/title/page1 and IEEE metadata
+ES03,P004,Scope and metric,Mixed workload could be mistaken for training-only,"Retain under separable single-GPU inference evidence; Table3 is added mean overhead,not P99/total latency",PDFpp11-12
+ES04,P005 P023,Report/study linkage,Two versions; possible double-count,SameS005 per explicit extension statement; conferenceAMD results distinct from journalNVIDIA/LLM additions,"P023p1;pp23-24,31-33"
+ES05,P023,Implementation generalization,ConferenceREEF-N equated with journal fullNVIDIAREEF,Keep implementations separate; TVM0.8/Ubuntu18.04/16GBhost versus TVM0.14/Ubuntu20.04/32GBhost,P005p11;P023p23
+ES06,P003 E006,Percentile meaning,Could be read as requestP90,CDF across co-location scenarios; no requestP90/P99 inference,PDFp6;Figure7
+ES07,P006 E028,Metric population,Could be read as request latency,Added empty-kernel instrumentationP90 overhead at160blocks with aggregation,PDFp12;Figure15
+ES08,P007,Trust and comparator,Performance isolation could imply untrusted isolation,Same trust domain; reconstructedREEF-N comparator and aggregate throughput conditions retained,"PDFpp9,12-13"
+ES09,All studies Q9,Calibration,Similar performance-control evidence has inconsistent inheritedQ9 treatment,Retain assessed scores in Eshaal package; flag team calibration before final master totals,SubmittedQ9;Raazia/Rameen proposals;source anchors
+ES10,P002 P003 P005,QA Q9 / P003 Q10,Inherited scores retained pending common calibration,Q9=2 for direct claim-specific performance interference tests; P003 Q10=2 for versioned artifact appendix. Original scores remain visible.,Source anchors in QA rows; common Q9 rubric applied without extrapolating to security/fault isolation

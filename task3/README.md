@@ -1,17 +1,27 @@
-# Task 3: first full CEP draft
+# Task 3: integrated first draft — 22 October 2026
 
-The supplied 18 October workbook/report supersede the older GitHub status for this Task 3 branch of work. Original Task 1 and Task 2 files remain unchanged.
+Start with [the main report](report/main.pdf), [master workbook](workbook/CEP_Task3_Evidence_Workbook.xlsx), and [team handover](team/First_Draft_Team_Plan.pdf).
 
-## Corpus
-21 included report versions map to 20 unique studies. P005 and P023 are REEF companion versions of S005. P016 (TGS) and P017 (HiveD) are excluded and do not belong in the included-paper folder. 559 retained records were not advanced under the bounded stopping rule. This is a bounded rapid review, not a completed exhaustive eligibility census.
+The complete handover ZIP is `team/Task3_Complete_First_Draft.zip`. It supersedes the earlier member-review-only ZIP.
 
-## Phases
-1. Preserve baseline and reconcile IDs/counts.
-2. Retrieve the 21 reports, validate PDF identity, and record source/version/hash/access outcome.
-3. Extend the workbook with activity, retrieval, provenance, synthesis, sensitivity and requirement records.
-4. Benchmark journal survey argumentation; draft the full report through guideline 22, organized using 24 and audited against 23.
-5. Verify files, publish and record outstanding team actions.
+Current source-review coverage: 20 unique studies, 21 report copies (REEF is one study), 200 QA items, 126 included-report inclusion checks, and 52 retained outcomes. The correct InferFair copy is checked and all three member packages are integrated. Sir’s clarified 20-study target is met. No additional three studies are needed merely for the count.
 
-New activity times describe actual actions/checkpoints in UTC and Asia/Karachi. Historical batch/build times remain explicitly labeled. No second reviewer is invented.
+Independent named human source checks remain pending. The 559 retained records have not been advanced to complete eligibility assessment. Historical search-provenance gaps and ParvaGPU final-text equivalence remain explicit limitations. Do not relabel these records exclusions or manufacture votes, abstracts or search events.
 
-See papers/ for the report catalogue and accessible copies, logs/ for machine-readable records, workbook/ for the expanded Excel, report/ for the first draft, and benchmark/ for the journal comparison.
+## Exact files
+- `report/main.pdf`: integrated CEP first draft with audit appendices.
+- `report/CEP_Task3_First_Draft.docx`: editable report companion.
+- `workbook/CEP_Task3_Evidence_Workbook.xlsx`: current 37-tab master.
+- `eshaal/`, `raazia/`, `rameen/`: individual source-review returns.
+- `team/First_Draft_Team_Plan.pdf`: headings 15–26 crosswalk, mandatory deliverables and teammate instructions.
+- `logs/methodology_corrections.csv`: justified audit resolutions and remaining limitations.
+- `logs/Remaining_559_Screening_Queue.csv`: all 559 records, recoverable abstracts, different first/independent reviewers and blank decision fields.
+- `logs/publication_receipt.json`: verified remote publication checkpoint; check its timestamp/commit rather than inferring publication from a local file.
+
+## Real teammate return
+Rameen independently checks Eshaal’s P001–P007 plus P023; Eshaal checks Raazia’s P008–P014; Raazia checks Rameen’s P015 and P018–P022. Record actual names, times, initial judgments, page/table anchors and disagreements before adjudication. Then review the main CEP draft together.
+
+## Reproducibility and boundaries
+The submitted Task1 protocol and frozen Task2 evidence workbook are preserved. Current CSVs and source-review appraisals are separate. Build the report with `python task3/scripts/build_report.py`, then pdflatex/bibtex in `task3/report`; `build_word.py` creates Word from those sources. Workbook authoring scripts use the documented artifact-tool runtime.
+
+Third-party reading PDFs are excluded from Git and the ZIP. Source identities, URLs, hashes and versions are retained. Available search artifacts are included; missing historical archive bytes are explicitly documented, not claimed recovered.

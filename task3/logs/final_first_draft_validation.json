@@ -1,0 +1,121 @@
+{
+  "built_utc": "2026-10-22T10:46:11.840545+00:00",
+  "studies": 20,
+  "reports": 21,
+  "qa_items": 200,
+  "outcomes": 52,
+  "included_report_criteria_source_reviewed": 126,
+  "qa_totals": {
+    "P001": [
+      13,
+      18
+    ],
+    "P002": [
+      18,
+      20
+    ],
+    "P003": [
+      20,
+      20
+    ],
+    "P004": [
+      17,
+      20
+    ],
+    "P005": [
+      18,
+      20
+    ],
+    "P006": [
+      16,
+      18
+    ],
+    "P007": [
+      19,
+      20
+    ],
+    "P008": [
+      17,
+      20
+    ],
+    "P009": [
+      18,
+      20
+    ],
+    "P010": [
+      17,
+      20
+    ],
+    "P011": [
+      14,
+      20
+    ],
+    "P012": [
+      15,
+      20
+    ],
+    "P013": [
+      17,
+      20
+    ],
+    "P014": [
+      16,
+      20
+    ],
+    "P015": [
+      18,
+      20
+    ],
+    "P018": [
+      17,
+      20
+    ],
+    "P019": [
+      16,
+      20
+    ],
+    "P020": [
+      15,
+      20
+    ],
+    "P021": [
+      18,
+      20
+    ],
+    "P022": [
+      19,
+      20
+    ]
+  },
+  "qa_sum": 338,
+  "qa_max": 396,
+  "na": [
+    [
+      "P001",
+      "Q7"
+    ],
+    [
+      "P006",
+      "Q9"
+    ]
+  ],
+  "independent_human_signoffs": 0,
+  "queue": {
+    "records": 559,
+    "baseline_with_abstract": 260,
+    "metadata_abstract_recovered": 235,
+    "first_assignment": {
+      "Eshaal": 187,
+      "Raazia": 186,
+      "Rameen": 186
+    },
+    "decisions_entered": 0,
+    "note": "Metadata availability is not a completed screening vote. The frozen selection partition is unchanged."
+  },
+  "protocol_sha256": "cc1179c8f0e6656075e9d7e3f2b8da5d86e84f853af89a48f8dc7b87c39ac44d",
+  "baseline_sha256": "3a385c32453516455fb64567161ba8b10194ff09e6d043a803a0b3d80751c460",
+  "report_pdf_pages": 111,
+  "workbook_tabs": 37,
+  "word_current_source": "report/main.tex and included files",
+  "notes": "Current appraisals are integrated first-pass research preparation; independent human signatures remain absent."
+}

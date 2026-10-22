@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-10-22T09:54:10.996844+00:00",
+  "sources_inspected": 8,
+  "unique_studies": 7,
+  "qa_items": 70,
+  "qa_not_applicable": 2,
+  "eligibility_items": 48,
+  "outcome_rows": 30,
+  "canonical_records": 4075,
+  "unique_record_ids": 4075,
+  "duplicate_links": 114,
+  "unique_removed_ids": 114,
+  "duplicate_targets_exist": true,
+  "screening_categories": {
+    "retained_not_advanced_under_stopping_rule": 559,
+    "excluded_at_screening": 3493,
+    "included_in_synthesis": 21,
+    "excluded_after_source_assessment": 2
+  },
+  "abstract_missing": 2933,
+  "qa_totals_unchanged": true,
+  "independent_human_signoff": false,
+  "master_integrated": false,
+  "methodology_census_completed": false
+}
