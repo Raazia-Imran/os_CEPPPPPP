@@ -32,6 +32,9 @@ task2/report/main.pdf
 
 /task3/papers/P*.pdf
 /task3/papers/P*.txt
+/task3/papers/RV*.pdf
+/task3/papers/RV*.txt
+/task3/rameen/node_modules
 /task3/report/*.aux
 /task3/report/*.log
 /task3/report/*.out

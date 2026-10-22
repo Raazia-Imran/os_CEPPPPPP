@@ -1,5 +1,5 @@
 # Rameen assigned review
 
-AI-assisted work in progress for S015-S020 (P015, P018, P019, P020, P021, P022), source access, scope and recent-survey overlap. The starting commit is feeabc8, preserving Raazia's unmerged PR #4 work.
+Work in progress: AI-assisted preparation of Rameen's S015-S020 source checks, access audit, scope question and recent-survey overlap audit. This is not a human independent vote. Preserve the submitted protocol and the frozen baseline. The existing Raazia review is the starting checkpoint; it remains unmerged in PR #4.
 
-Public PDFs for XSched, KRISP and Tally were retrieved on 22 October 2026. Fresh publisher PDF attempts for InferFair, ArkGPU and Dyna-P returned HTML rather than PDF; full-text checks remain pending. Access logs and item-level appraisals are being prepared. No independent human vote or instructor acceptance is claimed. The 559 retained records remain unassessed.
+Assigned reports: P015, P018, P019, P020, P021 and P022. Unavailable source text stays pending. Record actual retrieval attempts and source/version boundaries. The 559 retained records remain unassessed unless a separate screening task is performed. Instructor scope acceptance is not assumed.

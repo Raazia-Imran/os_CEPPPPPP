@@ -1,0 +1,6 @@
+Item,Status,Finding,Action
+REC02,Supported conditionally,XSched and Tally source checks support foreground latency versus total throughput trade-off.,"Keep workload, offered load, shared GPU and comparator visible; correct E052 metric."
+REC04,Partial source coverage,ArkGPU-specific evidence has not been freshly rechecked.,Keep as a candidate recommendation supported by inherited extraction; resolve P019 before final acceptance.
+REC05,Partial source coverage,Dyna-P prediction and reconfiguration outcomes remain inherited.,Do not use makespan as online request-tail evidence; resolve P020 and keep local versus cluster strata separate.
+REC06,Pending primary source,InferFair is the sole report directly cited by this recommendation.,Mark recommendation provisional; no unconditional fairness recommendation until P018 text and definitions are verified.
+G01-G06,"Corpus observations, not worldwide absences","Existing surveys already discuss efficiency, fairness, security and LLM integration.",Phrase gaps as missing matched evidence in this reviewed corpus; do not imply the whole literature has no solution.

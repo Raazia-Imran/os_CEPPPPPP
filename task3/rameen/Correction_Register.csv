@@ -1,0 +1,13 @@
+Change ID,Scope,Field,Original,Proposed treatment,Evidence
+RM01,P015,Source anchor,section7.4 case3,section8 case3; PDFp14/printedp683,Printed source heading
+RM02,P015 Q9,Applicability and score,NA/0,Proposed2/2; compute/performance control is claimed and tested,PDFpp14-15; Figure15a; section9. Submitted Q9 is not restricted to security/fault guarantees.
+RM03,P021 Q9,QA score,1/2 because no security/fault test,Proposed2/2 for delimited compute-resource boundary,"PDFpp10-12; KRISP-I/O; Figures13,16. No stronger security claim inferred."
+RM04,P021 Q10,QA score,1/2 because emulation limits deployability,Proposed2/2 for transparent replication and limitation details,PDFpp7-9; emulation calibration and formula. Emulation alone is not a failure of reporting.
+RM05,P022,Source version,Unpinned arXiv URL,Pin arXiv2410.07381v3; 17pages; DOI-matched ASPLOS manuscript,v3PDFp1 and arXiv version history
+RM06,P022 E052,Metric,Normalized background throughput,Normalized total system throughput,"v3PDFpp9-10; sections5.1,5.3"
+RM07,P022 Q5,QA score,1/2 due policy throughput trade-off,Proposed2/2; stated policies and common conditions support interpretable comparison,v3PDFpp9-11. Different policy objectives alone do not invalidate a benchmark comparison.
+RM08,P022 Q9,QA score,1/2 because no hostile isolation,Proposed2/2 for directly measured performance isolation,v3PDFpp9-13; no security/fault equivalence inferred
+RM09,P018 P019 P020,Fresh validation,Inherited scores/eligibility/outcomes,Keep pending; retain baseline without new validation claim,Fresh publisher PDF responses are HTML; retrieval_attempts.json
+RM10,Novelty,Contribution wording,Broad taxonomy/trade-offs could be described as novel,"Position as bounded, source-audited, condition-specific update; no first-review claim",Yu2022; Huang2025; Ye2024; supplementary search receipt
+RM11,Recommendations REC04-REC06,Evidence strength,Missing-reading sources cited without local review distinction,Mark P019/P020/P018 dependent recommendations provisional pending source reacquisition,Scope/recommendation audit
+RM12,P022,Runtime label,ONNX1.17,ONNX Runtime GPU1.17.0,v3PDFp9; section5.1
