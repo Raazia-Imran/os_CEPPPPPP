@@ -1,0 +1,10 @@
+Record A,Record B or existing study,Observed basis,Required resolution
+R00070,R00149,Matching title and abstract; different DOIs,Verify publication version relation; retain record provenance
+R00300,R00336,NEPTUNE conference/journal titles and mechanism overlap,Compare authors and full texts before study linkage
+R01567,R01570,HealthServe same title/abstract; different DOIs,Verify article/proceedings relation
+R01524,R02180,WAGES exact title/abstract; second record lacks DOI,Check source metadata; likely duplicate import
+R00645,R02185,DistMind exact title/abstract; second record lacks DOI,Check source metadata; likely duplicate import
+R01087,R02186,MPS granularity paper same abstract; year/punctuation differ,Verify2024 proceeding identity and link imports
+R00652,S012/P012,Torpor journal title differs from included USENIX report,Compare authors/experiments and link companion study if confirmed
+R00038,R01098,Energy/carbon-sharing theme and modeling overlap only,Do not assume duplicate; check authors/content
+R00643,R01082,Janus shared system name but substantially different work,Do not merge by system name alone

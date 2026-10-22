@@ -1,0 +1,40 @@
+{
+  "built_utc": "2026-10-22T18:29:43.702357+00:00",
+  "frozen_commit": "04271d77eae68f153d0682f951bd3cc1e9162a6b",
+  "queue_records": 559,
+  "abstracts_available_in_initial_queue": 235,
+  "supplemental_abstracts_recovered": 161,
+  "abstracts_reviewed_total": 396,
+  "latest_batch": "018",
+  "latest_batch_size": 18,
+  "recommendations": {
+    "retain_for_full_text": 148,
+    "uncertain_need_full_text": 76,
+    "propose_exclusion": 172
+  },
+  "remaining_initial_abstract_reviews": 163,
+  "remaining_with_recovered_abstracts": 0,
+  "remaining_without_recovered_abstracts": 163,
+  "new_full_text_eligibility_assessments": 4,
+  "new_included_studies": 0,
+  "frozen_unique_studies": 20,
+  "independent_human_votes": 0,
+  "prisma_changed": false,
+  "frozen_artifact_hashes_unchanged": true,
+  "full_text_criteria_prepared": 24,
+  "candidate_studies_meeting_first_review_criteria": 4,
+  "candidate_QA_items_prepared": 40,
+  "candidate_outcomes_prepared": 8,
+  "candidate_QA_totals": {
+    "R00080": 17,
+    "R00143": 17,
+    "R01089": 16,
+    "R00656": 16
+  },
+  "metadata_texts_with_quality_flags": 5,
+  "publisher_abstract_sections_recovered": 37,
+  "publisher_records_attempted": 200,
+  "record_text_assessments_prepared": 396,
+  "title_abstract_stage_closed": false,
+  "all_full_text_eligibility_closed": false
+}

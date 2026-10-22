@@ -1,0 +1,10 @@
+{
+  "commit": "04271d77eae68f153d0682f951bd3cc1e9162a6b",
+  "sha256": {
+    "task3/team/Task3_Complete_First_Draft.zip": "5d53adb5d7b2705a25095bdd9d331703f118e1e8210c328d6efbbfad9457a22e",
+    "task3/report/main.pdf": "c29ce1502390454412de07978683a850286d5e657562a322968ec4f443ce355e",
+    "task3/workbook/CEP_Task3_Evidence_Workbook.xlsx": "63c5fecbf894a99f247579c94989db7f78d7b7c137ea1a73ebb539a6e50c0e2c",
+    "task1/submitted_protocol.pdf": "cc1179c8f0e6656075e9d7e3f2b8da5d86e84f853af89a48f8dc7b87c39ac44d"
+  },
+  "rule": "Do not rebuild or overwrite these frozen artifacts during queue work; integrate changes into a separately named improved release."
+}

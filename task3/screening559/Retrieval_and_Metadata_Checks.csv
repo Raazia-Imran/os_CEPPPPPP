@@ -1,0 +1,5 @@
+Record ID,URL,Attempt type,Result,Checked UTC,Remaining action
+R00001,https://dl.acm.org/doi/fullHtml/10.1145/3673038.3673089,Publisher full text,403 Forbidden,2026-10-22T16:42:59.671879+00:00,Seek author/institutional copy; full text not yet assessed.
+R00035,https://dl.acm.org/doi/pdf/10.1145/3698038.3698555,Publisher PDF,403 Forbidden,2026-10-22T16:42:59.671879+00:00,Seek legitimate author/repository copy; do not mark report not retrieved after this attempt alone.
+R00030,https://dl.acm.org/doi/pdf/10.1145/3721145.3735113,Publisher PDF,403 Forbidden,2026-10-22T16:42:59.671879+00:00,Seek legitimate author/repository copy; detailed extraction pending.
+R00006,https://research.ibm.com/publications/towards-optimal-preemptive-gpu-time-sharing-for-edge-model-serving,Author institutional publication page,"Read title,abstract,authors and11December2023/workshop label",2026-10-22T16:42:59.671879+00:00,Correct historical year only through version audit; inspect full text for IC1 eligibility.

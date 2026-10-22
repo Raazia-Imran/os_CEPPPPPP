@@ -1,0 +1,10 @@
+{
+  "original_abstracts": 235,
+  "new_nonplaceholder_identity_matched_abstracts": 161,
+  "still_without_abstract_text": 163,
+  "new_abstracts_read": 161,
+  "frozen_queue_changed": false,
+  "placeholder_rule": "No abstract available and text shorter than80characters not treated as a usable abstract; metadata evidence retained.",
+  "low_quality_metadata_texts": 5,
+  "publisher_abstract_sections": 37
+}
