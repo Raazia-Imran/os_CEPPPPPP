@@ -23,7 +23,7 @@ The frozen submission remains unchanged. All work after that freeze is maintaine
 | Rameen | Read Methodology, Study Selection, QA and Validity. Compare the report counts with the current status and workbook reconciliation; verify reference metadata and source versions. | List discrepancies and proposed corrections. Retain unresolved provenance and eligibility limitations. |
 | Raazia | Keep the current working report and master together. Review the cover, author details, formatting, references and submission instructions. Coordinate the final single version. | Record the exact Git commit used for submission and the files submitted. |
 
-Teammates can read while the working review progresses. Return corrections by stable study/report ID and section, rather than overwriting the frozen report or maintaining separate competing masters. Apply accepted corrections to the working sources and rebuild the report and workbook together.
+Teammates can read while the working review progresses. Record corrections in `Team_Correction_Inbox.csv`, by stable study/report ID and section, rather than overwriting the frozen report or maintaining separate competing masters. Apply accepted corrections to the working sources and rebuild the report and workbook together.
 
 ## Final integration sequence
 

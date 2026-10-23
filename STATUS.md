@@ -1,15 +1,13 @@
-# Current CEP working status23October2026
+# Current CEP working status
 
-# Current working integration23October2026
+The current working review contains **29 unique studies across 30 reports**. The report and master workbook include **290 QA items, 84 outcome rows and two separate calculations**. All work after the freeze is in `task3/screening559/`.
 
-Working corpus:27unique studies across28reports. Seven source-eligible additions are LithOS,Abacus,Miriam,SGDRC,Pantheon,Oneiros andGACER(S021-S027/P024-P030). Their42ICchecks,70QAitems,18outcomes and seven DOI/BibTeX references are recorded. Combined workbook/report:270QAitems,70reported outcomes and two separately recorded calculations. GACER Q9is reasonedN/A; its score is13/18,not13/20.
+The 559-record continuation has 225 screening exclusions and 334 advancements. Of those advancements, nine reports are newly included, four are excluded after full-text assessment, and **321 remain open**. The completed branch decisions do not establish a final whole-review PRISMA flow.
 
-All559continuation records have screening-stage decisions:225exclude,334advance. Seven additions and two source exclusions are resolved;325advanced records remain open. Missing abstracts are not exclusion reasons.92indexed PDF routes are discovery leads, not92eligible studies. Historical search-provenance and companion/version gaps remain explicit.
+ElasticRoom and SPLIT are integrated into the report, references and master. All three requested PDFs were supplied. MIGER remains pending on the concurrent-inference evidence requirement, rather than on access. Source versions, historical search-provenance gaps and possible companion reports remain explicit limitations.
 
-The new141-page PDF and complete LaTeX source are in integrated_report. The integrated38-tab working workbook is in integrated_workbook, preserving the original37tabs and adding bibliographic reference details. Studies,QA,Extraction,Evidence,Screening,Eligibility,source checks,taxonomy,comparisons,recommendations,gaps,validity and count/QA reconciliation are updated for this snapshot. All count differences are zero; a new-study QA edit was tested through its formula dependency. Final whole-review PRISMA remains open.
+The current PDF has 156 pages including evidence appendices, with all 13 main sections and a headings 23–26 crosswalk. The 38-sheet workbook preserves the original 37 sheets and adds reference details. Report compilation, count/QA reconciliation, a live formula dependency and packaged-workbook readback passed.
 
-Frozen commit04271d77eae68f153d0682f951bd3cc1e9162a6b retains the20-study/21-report ZIP,report,37-tab workbook and submitted protocol unchanged. Teammate returns must be merged by stable IDs into the working release. Do not overwrite the frozen backup.
+The frozen 20-study/21-report ZIP, report, workbook and submitted protocol are unchanged. Use the current report and workbook together; do not combine frozen counts with current evidence.
 
-For the next three university-access PDFs read Priority_PDF_Request.csv and repository-rootFULL_TEXT_ACCESS_AND_NEXT_STEPS.md. Source PDFs stay private. No independent human votes are claimed.
-
-See task3/screening559/CURRENT_STATUS.md, integrated_report/main.pdf and integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx. The continuation stays on task3-screening-559; main remains the frozen baseline until final integration.
+Start with [current status](task3/screening559/CURRENT_STATUS.md), [report](task3/screening559/integrated_report/main.pdf), [master workbook](task3/screening559/integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx) and [teammate handover](task3/screening559/SUBMISSION_HANDOVER.md). Record genuine teammate corrections by stable ID in the correction inbox. No independent human votes are invented.

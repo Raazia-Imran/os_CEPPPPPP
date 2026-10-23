@@ -13,12 +13,17 @@ shutil.copyfile(repo/'task3/baseline/PRISMA_2020_FLOW_DIAGRAM.pdf',out/'figures/
 
 def read(name):return list(csv.DictReader((screen/name).open(newline='')))
 elig=[x for x in read('Final_Eligibility_Decisions.csv') if x['Final eligibility decision']=='Include']
-assert len(elig)==7
+assert len(elig)>=6
 refs=read('New_Included_References.csv')
 qa=read('Final_Candidate_QA.csv')
 criteria=read('Final_Eligibility_Criteria.csv')
 outcomes=read('Candidate_Outcomes_Prepared.csv')
-assert len(qa)==70 and len(criteria)==42 and len(outcomes)==18
+assert len(qa)==10*len(elig) and len(criteria)==6*len(elig)
+n=len(elig);nst=20+n;nrep=21+n;nq=200+len(qa);nout=52+len(outcomes)
+nexc=len([x for x in read('Final_Eligibility_Decisions.csv') if x['Final eligibility decision']=='Exclude'])
+nopen=334-n-nexc
+addedscore=sum(int(x['Final source-based score']) for x in qa if x['Final source-based score']!='N/A')
+addedmax=sum(int(x['Maximum']) for x in qa)
 
 def patch(name,old,new):
     p=out/name;s=p.read_text()
@@ -32,7 +37,8 @@ def tex(s):
     s=str(s)
     if re.fullmatch(r'[a-f0-9]{64}',s):return r'\nolinkurl{'+s+'}'
     if s.startswith('https://'):return r'\url{'+s+'}'
-    return ''.join({'\\':r'\textbackslash{}','&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}'}.get(c,c) for c in s)
+    escaped=''.join({'\\':r'\textbackslash{}','&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','~':r'\textasciitilde{}','^':r'\textasciicircum{}'}.get(c,c) for c in s)
+    return escaped.replace(';',r';\allowbreak{}').replace(',',r',\allowbreak{}')
 
 patch('main.tex','Task 3: First Complete Draft','Task 3: Integrated Working Draft')
 patch('main.tex','22 October 2026','23 October 2026')
@@ -64,7 +70,7 @@ a=a.replace('Supplied bounded-review selection flow, preserved from Task 2. Curr
 (out/'counts.tex').write_text(table(['Accounting scope / stage','Count'],[
 ('Historical identified occurrences','4,189'),('Historical duplicate links','114'),('Historical canonical records','4,075'),
 ('Historical original included reports / studies','21 / 20'),('Continuation records screened','559'),('Continuation screening exclusions','225'),
-('Continuation advanced to retrieval / eligibility','334'),('Continuation full-text inclusions / exclusions','6 / 2'),('Advanced records with unresolved eligibility or identity','326'),
+('Continuation advanced to retrieval / eligibility','334'),('Continuation full-text inclusions / exclusions','6 / 2'),('Advanced records with unresolved eligibility or identity',str(nopen)),
 ('Working included reports / unique studies','27 / 26')],[.7,.15])+r'\textbf{Stage distinctions:} $559=225+334$ and $334=6+2+326$. Advancement does not mean that all 334 reports have been retrieved or assessed. This is branch accounting, not a completed whole-review PRISMA flow.'+'\n')
 
 before('body.tex',r'\subsection{Spatial allocation and partitions}',r'''LithOS extends temporal control with transparent kernel atomization and TPC allocation; Abacus makes operator overlap deterministic so a controller can predict concurrent-service latency. Miriam and Pantheon target edge inference, but at different intervention boundaries: elastic kernels versus chunk preemption combined with early-exit variants. They are not interchangeable implementations of the same scheduler \cite{s021,s022,s023,s025}.''')
@@ -161,14 +167,14 @@ appendix+=r'''\section{Continuation full-text exclusions}
 Only assessed reports enter this table. Pending or inaccessible records are not relabeled as scientific exclusions.
 '''
 ex=[x for x in read('Final_Eligibility_Decisions.csv') if x['Final eligibility decision']=='Exclude']
-appendix+=table(['Record / DOI','Decisive reason'],[(tex(x['Record ID']+'; '+x['DOI']),tex(x['Basis'])) for x in ex],[.26,.64])
+appendix+=table(['Record / DOI','Decisive reason'],[(tex(x['Record ID'])+r'; \nolinkurl{'+x['DOI']+'}',tex(x['Basis'])) for x in ex],[.26,.64])
 
 crosswalk=[
 ('23','25mandatory deliverables','The inherited crosswalk plus the current inclusion/QA/extraction appendices and separate electronic registers','Prepared report/evidence; final whole-review PRISMA and eligibility closure remain open'),
 ('24','13main report sections','Introduction;RQs;Method;Selection;Taxonomy;RQ synthesis;Comparison;Trade-offs;Discussion;Recommendation;Gaps;Validity;Conclusion','All13sections retained and six additions integrated'),
 ('25','Analytical standard','Mechanism taxonomy; contextual comparative matrix; adverse outcomes; trade-offs; fiveRQ answers; conditional recommendations','Analysis integrated; systematic selection remains incomplete at full text'),
 ('26','Research quality','Stable IDs, primary URLs/hashes, DOI references, eligibility reasons, QA/extraction anchors and explicit limits','Traceability prepared; historical search reconstruction and326advanced records remain open')]
-appendix+=r'\section{Headings 23--26 completion map}'+'\n'+table(['Heading','Requirement','Current evidence','Remaining qualification'],[(tex(a),tex(b),tex(c),tex(d)) for a,b,c,d in crosswalk],[.07,.17,.39,.25])
+appendix+=r'\clearpage\section{Headings 23--26 completion map}'+'\n'+table(['Heading','Requirement','Current evidence','Remaining qualification'],[(tex(a),tex(b),tex(c),tex(d)) for a,b,c,d in crosswalk],[.07,.17,.39,.25])
 (out/'appendices.tex').write_text(appendix)
 
 (out/'README.md').write_text('''# Integrated working report,23October2026
@@ -181,29 +187,59 @@ The inherited PRISMA figure is explicitly historical. The current branch table r
 ''')
 summary={'working_studies':26,'working_reports':27,'QA_items':260,'applicable_QA_points':516,'awarded_QA_points':437,'reported_outcomes':66,'calculations':2,'added_IC_checks':36,'added_QA_items':60,'added_outcomes':14,'added_citations':6,'screening_excluded':225,'advanced':334,'full_text_added_include':6,'full_text_added_exclude':2,'advanced_open':326,'whole_review_PRISMA_final':False,'frozen_report_unchanged':hashlib.sha256((frozen/'main.pdf').read_bytes()).hexdigest()=='c29ce1502390454412de07978683a850286d5e657562a322968ec4f443ce355e'}
 (out/'integration_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+
+# Integrate the two user-supplied final reports by analytical question, not merely
+# by adding paper cards. Their different metric/control boundaries stay explicit.
+if any(x['Record ID']=='R01093' for x in elig):
+    for anchor,text in {
+        r'\subsection{RQ2: measurements and comparability}':r'''Compiler/runtime approaches also differ internally. ElasticRoom generates resource-constrained kernel candidates and applies priority-aware runtime ordering; GACER uses microbatch and operator coordination. SPLIT instead schedules requests sequentially at model-block boundaries. These are software controls over different resources, not interchangeable MIG-like partitions \cite{s027,s028,s029}.''',
+        r'\subsection{RQ3: conditions affecting results}':r'''ElasticRoom's Goodput divides QoS-satisfying requests by maximum batch inference latency, and its main real-time endpoint is mean end-to-end latency including queuing. SPLIT measures target-relative violation fraction and calls block-execution-time dispersion jitter. These definitions differ from GACER's batch completion and Oneiros's P99 token latencies; no numeric cross-study average is justified \cite{s027,s028,s029,s026}.''',
+        r'\subsection{RQ4: isolation and implementation cost}':r'''On A100, ElasticRoom reports 22\% lower mean real-time latency and 1.43 times its defined Goodput relative to its described REEF policy. On MI100, its specified Conv2/Conv3 candidates can perform worse than Ansor by less than 8\%, and sustained execution drift can undermine offline choices. SPLIT's ResNet50 splitting overhead rises from 15.4\% for two blocks to 50.3\% for four. Its short-request stability gain can sacrifice long-request stability. More variants or finer splitting therefore do not uniformly improve service \cite{s028,s029}.''',
+        r'\subsection{RQ5: conditional selection}':r'''ElasticRoom's virtual-room abstraction concerns performance coordination; it does not demonstrate fault containment. SPLIT's token-controlled sequential execution avoids simultaneous-kernel contention, but does not establish adversarial or runtime-fault separation. Both require model knowledge and offline work, with missing configuration and repeated-trial details limiting transfer. Isolation requirements must be specified separately from the reported QoS benefit \cite{s028,s029}.''',
+        r'\section{Comparative analysis}':r'''A compiler/runtime candidate is appropriate when the workload and toolchain permit variant generation and priority control. A block-preemptive temporal candidate is appropriate when static model graphs and splitting costs fit the service budget. Choose neither merely because its headline percentage is larger: ElasticRoom changes resource-constrained kernels, while SPLIT changes model execution boundaries, and their endpoints are not matched \cite{s028,s029}.''',
+        r'\subsection{Version and engine effects}':r'''Baseline adaptation is material in the new evidence. ElasticRoom's KRISP comparator uses ElasticRoom-generated kernels and REEF-like priority, so it is not an unchanged original KRISP experiment. SPLIT's abstract calls its 43\% headline a violation-rate reduction, whereas its conclusion calls it a response-ratio reduction; the two endpoints are not silently equated. The extraction excludes that ambiguous headline from the quantitative synthesis and preserves the directly specified alternatives \cite{s028,s029}.'''
+    }.items():before('body.tex',anchor,text)
+    append_table_rows('comparisons.tex',[
+        ('CMP14 P031 / ELAST-01--02. Defined endpoint','22\\% lower mean RT latency;1.43times source-defined Goodput against described REEF policy','A100;batch1; source averages; mean latency is notp99; adapted comparator/scenario ambiguities retained'),
+        ('CMP15 P032 / SPLIT-04--05. Adverse split configuration','ResNet50 two-block overhead15.4\\%;four-block50.3\\%','Additional sum-of-block execution cost versus vanilla model; blockSDjitter differs from request-tail latency')])
+    path=out/'taxonomy.tex';path.write_text(path.read_text()+r'\paragraph{Two further software boundaries.} ElasticRoom coordinates resource-constrained compilation and runtime priorities, while SPLIT uses model-block temporal preemption over independently arriving tasks. Neither is a new hardware partition; sequential execution in SPLIT remains GPU sharing through time multiplexing \cite{s028,s029}.'+'\n')
+    path=out/'recommendations.tex';path.write_text(path.read_text()+r'''\subsubsection*{REC11: Priority-aware CNN/BERT co-location with compilation access}
+Consider ElasticRoom when generating kernel variants and maintaining offline tuning is feasible. Expect context-dependent real-time latency/Goodput improvement, while retaining model-specific no-gain cases, hardware drift and adverse generated kernels. Prefer a simpler or separately isolated mechanism when variant maintenance or a fault boundary is decisive \cite{s028}.
+\subsubsection*{REC12: Static-DAG edge requests with mixed execution lengths}
+Consider SPLIT when block-boundary preemption and its measured execution overhead fit the request budget. Short-request QoS can improve at the cost of long-request stability and spatial parallelism. Do not use the studied offline splitting method as evidence for input-dependent RNNs, arbitrary burst overload or universally reduced request-tail jitter \cite{s029}.
+''')
+    append_table_rows('gaps.tex',[
+        ('Compiler/kernel choice under hardware drift','ElasticRoom MI100 slowdown and adverse candidate cases','Evaluate refreshed profiles, matched baseline ports and repeatability under sustained runs'),
+        ('Block dispersion versus request stability','SPLIT uses blockSDjitter; short/long-task trade-off','Report actual request-latency distributions and per-task deadline outcomes jointly')])
 print(json.dumps(summary))
 
-# Refresh current-corpus phrases after the inherited six-addition template has
-# been built. Original20-study snapshot statements and original52rows stay intact.
+# Refresh only known current-corpus phrases in the six-addition template.
+# Original20-study snapshot statements and original52rows remain historical.
 replacements={
- '26 studies':'27 studies','26 unique studies':'27 unique studies','26-study':'27-study','26studies':'27studies',
- '27 reports':'28 reports','27 report versions':'28 report versions','27reports':'28reports',
- '260 appraisal':'270 appraisal','260QA':'270QA','66 reported':'70 reported','66 outcome':'70 outcome','66outcomes':'70outcomes',
- '326 advanced':'325 advanced','326open':'325open','326advanced':'325advanced','Close326':'Close325','six additional studies':'seven additional studies','six new reports':'seven new reports',
- 'six source-eligible additions':'seven source-eligible additions','six confirmed additions':'seven confirmed additions',
- 'Six additions':'Seven additions','six additions':'seven additions','Six added':'Seven added','six new cards':'seven new cards','Six added study cards':'Seven added study cards',
- '36 source-anchored':'42 source-anchored','36IC':'42IC','60 Q1--Q10':'70 Q1--Q10','60 new source-based':'70 new source-based','60QA':'70QA',
- '14 outcome rows for':'18 outcome rows for','14new observations':'18new observations','14outcomes':'18outcomes',
- '162 included-report':'168 included-report','437/516':'450/534',
- 'Miriam, SGDRC, Pantheon and Oneiros. Their appraisal totals are respectively 17, 17, 16, 16, 16 and 17 out of 20.':'Miriam, SGDRC, Pantheon, Oneiros and GACER. The first six appraisal totals are17,17,16,16,16and17out of20; GACER scores13/18with a reasonedN/A isolation item.',
- '6 / 2':'7 / 2','27 / 26':'28 / 27','334=6+2+326':'334=7+2+325',
- 'seven new source-based items':'seven new source-based items',
+ '26 studies':f'{nst} studies','26 unique studies':f'{nst} unique studies','26-study':f'{nst}-study','26studies':f'{nst}studies',
+ '27 reports':f'{nrep} reports','27 report versions':f'{nrep} report versions','27reports':f'{nrep}reports',
+ '260 appraisal':f'{nq} appraisal','260QA':f'{nq}QA','66 reported':f'{nout} reported','66 outcome':f'{nout} outcome','66outcomes':f'{nout}outcomes',
+ '326 advanced':f'{nopen} advanced','326open':f'{nopen}open','326advanced':f'{nopen}advanced','Close326':f'Close{nopen}',
+ 'The remaining 326 records':f'The remaining {nopen} records','The 326 unresolved advanced records':f'The {nopen} unresolved advanced records',
+ 'and two were excluded at full text under EC2':f'and {nexc} were excluded at full text under their recorded decisive criteria',
+ 'two reports were excluded at full text':f'{nexc} reports were excluded at full text',
+ 'and two full-text exclusions':f'and {nexc} full-text exclusions',
+ 'six additional studies':f'{n} additional studies','six new reports':f'{n} new reports',
+ 'six source-eligible additions':f'{n} source-eligible additions','six confirmed additions':f'{n} confirmed additions',
+ 'Six additions':f'{n} additions','six additions':f'{n} additions','Six added':f'{n} added','six new cards':f'{n} new cards',
+ '36 source-anchored':f'{len(criteria)} source-anchored','36IC':f'{len(criteria)}IC','60 Q1--Q10':f'{len(qa)} Q1--Q10','60 new source-based':f'{len(qa)} new source-based','60QA':f'{len(qa)}QA',
+ '14 outcome rows for':f'{len(outcomes)} outcome rows for','14new observations':f'{len(outcomes)}new observations','14outcomes':f'{len(outcomes)}outcomes',
+ '162 included-report':f'{126+len(criteria)} included-report','437/516':f'{338+addedscore}/{396+addedmax}',
+ 'Miriam, SGDRC, Pantheon and Oneiros. Their appraisal totals are respectively 17, 17, 16, 16, 16 and 17 out of 20.':'Miriam, SGDRC, Pantheon, Oneiros and the additional source packages listed in the current catalogue. Claim-specific N/A items retain their justified applicable denominators.',
+ '6 / 2':f'{n} / {nexc}','27 / 26':f'{nrep} / {nst}','334=6+2+326':f'334={n}+{nexc}+{nopen}',
 }
 for path in [*out.glob('*.tex'),out/'README.md']:
     text=path.read_text()
     for old,new in replacements.items():text=text.replace(old,new)
-    text=text.replace('60 new source-based items','70 new source-based items').replace('26 study-level forms','27 study-level forms')
-    text=text.replace('52inherited plus14new','52 inherited plus18 new')
+    text=text.replace('26 study-level forms',f'{nst} study-level forms')
+    text=text.replace('52inherited plus14new',f'52 inherited plus{len(outcomes)} new')
+    text=text.replace('52 inherited and 14 new',f'52 inherited and {len(outcomes)} new')
+    text=text.replace('six confirmed additions',f'{n} confirmed additions')
     if path.name=='comparisons.tex':text=text.replace(r'65.5\%lowerP99TBT;20.7\%lowerP99TTFT;6.6\%higher',r'65.5\% lower P99 TBT; 20.7\% lower P99 TTFT; 6.6\% higher')
     if path.name=='appendices.tex':
         text=text.replace('Introduction;RQs;Method;Selection;Taxonomy;RQ synthesis;Comparison;Trade-offs;Discussion;Recommendation;Gaps;Validity;Conclusion','Introduction; RQs; Method; Selection; Taxonomy; RQ synthesis; Comparison; Trade-offs; Discussion; Recommendation; Gaps; Validity; Conclusion')
@@ -216,5 +252,15 @@ GACER extends the fine-grained compiler/runtime family through microbatch splitt
 path=out/'comparisons.tex';path.write_text(path.read_text()+gacer)
 path=out/'taxonomy.tex';path.write_text(path.read_text()+r'\paragraph{Cross-stack extension.} GACER belongs to compiler/runtime coordination: spatial microbatch splitting and temporal cross-model scheduling complement native streams. This resource-efficiency control does not assert a fault/security boundary \cite{s027}.'+'\n')
 path=out/'recommendations.tex';path.write_text(path.read_text()+r'\paragraph{Known heterogeneous batch mixes.} Consider GACER when batch-completion efficiency is the objective and profiling/optimization delay is acceptable. Its reported0.84--1.26second optimization cost and absent serving-tail/fault evidence limit transfer to online SLO-sensitive or mutually untrusted tenants \cite{s027}.'+'\n')
-summary.update({'working_studies':27,'working_reports':28,'QA_items':270,'applicable_QA_points':534,'awarded_QA_points':450,'reported_outcomes':70,'added_IC_checks':42,'added_QA_items':70,'added_outcomes':18,'added_citations':7,'full_text_added_include':7,'advanced_open':325})
+path=out/'recommendations.tex';path.write_text(path.read_text().replace('reported0.84--1.26second','reported 0.84--1.26 second'))
+summary.update({'working_studies':nst,'working_reports':nrep,'QA_items':nq,'applicable_QA_points':396+addedmax,'awarded_QA_points':338+addedscore,'reported_outcomes':nout,'added_IC_checks':len(criteria),'added_QA_items':len(qa),'added_outcomes':len(outcomes),'added_citations':n,'full_text_added_include':n,'full_text_added_exclude':nexc,'advanced_open':nopen})
 (out/'integration_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+path=out/'body.tex';text=path.read_text()
+new_na=[x['Report ID']+' '+x['Criterion'] for x in qa if x['Final source-based score']=='N/A']
+text=text.replace('After the source-based denominator review, two items are N/A: P001 Q7 and P006 Q9.',
+    'After the source-based denominator review, '+str(2+len(new_na))+' items are N/A: P001 Q7, P006 Q9'+(', '+', '.join(new_na) if new_na else '')+'. Their nonclaim rationales remain explicit.')
+text=text.replace('The '+str(nout)+' outcome rows and two calculations are not 68 studies.','The '+str(nout)+' outcome rows and two calculations are observations, not independent studies.')
+path.write_text(text)
+if (screen/'Identity_Evidence_Audit.csv').exists():
+    path=out/'validity.tex';path.write_text(path.read_text()+r'\paragraph{Native identity evidence.} Some enriched IEEE entries inherit matching abstracts/DOIs from candidate leads while the native source retains a distinct IEEE URL and lacks those fields. Matching enriched values alone are circular evidence for deduplication. These proposals remain unresolved until native publisher/report identity is established; the current study counts do not subtract them.'+'\n')
+print(json.dumps(summary))

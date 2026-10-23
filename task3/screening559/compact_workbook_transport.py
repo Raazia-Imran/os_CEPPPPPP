@@ -34,7 +34,7 @@ for name in sorted(parts):
     before = snapshot(root, strings)
     for c in root.iter(T('c')):
         v = c.find(T('v'))
-        if c.get('t') != 'str' or c.find(T('f')) is not None or v is None:
+        if c.get('t') != 'str' or c.find(T('f')) is not None or v is None or v.text is None:
             continue
         value = v.text or ''
         if value not in lookup:

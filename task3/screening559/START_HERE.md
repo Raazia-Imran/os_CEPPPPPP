@@ -1,3 +1,3 @@
-# Current working release
+# Working evidence and integrated draft
 
-Read CURRENT_STATUS.md. Current27studies/28reports are integrated into integrated_report/main.pdf and integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx. Original frozen20/21release unchanged.325advanced records remain open. Priority_PDF_Request.csv lists three exact PDFs that would help university-access retrieval.
+Read CURRENT_STATUS.md. Current corpus:29studies/30reports;559screening decisions;9new inclusions,4new full-text exclusions,321advanced records open. The new integrated PDF/LaTeX is in integrated_report/ and expanded master workbook in integrated_workbook/. Frozen20/21release preserved. References,source evidence,QA,outcomes and methodology corrections are included. Whole-review PRISMA and eligibility census remain open.

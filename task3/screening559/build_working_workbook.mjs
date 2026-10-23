@@ -54,13 +54,13 @@ for(let i=2;i<=ns;i++){
  get('QA Reconciliation').getRange(`F${i}:J${i}`).formulas=[[`=SUMIF(QA!$A$2:$A$${nq},B${i},QA!$D$2:$D$${nq})`,`=D${i}/F${i}`,`=IF(G${i}<0.6,"Yes","No")`,`=D${i}-C${i}`,`=F${i}-E${i}`]];
 }
 get('QA Reconciliation').getRange(`G2:G${ns}`).setNumberFormat('0.0%');
-const c=p.counts,control=[['Metric','Computed count','Expected working count','Difference'],['Canonical records',null,4075,null],['Screening exclusions',null,c.screening_exclusions,null],['Eligibility/identity open',null,c.open,null],['Included reports',null,c.included_reports,null],['Full-text exclusions',null,c.full_text_exclusions,null],['Unique studies',null,c.studies,null],['QA items',null,c.qa,null],['Outcome rows',null,c.outcomes,null],['Duplicate links',null,114,null],['Source-assessed reports',null,c.assessed,null],['Partition total',null,4075,null]];
+const c=p.counts,control=[['Metric','Computed count','Expected working count','Difference'],['Canonical records',null,4075,null],['Screening exclusions',null,c.screening_exclusions,null],['Eligibility/identity open',null,c.open,null],['Included reports',null,c.included_reports,null],['Full-text exclusions',null,c.full_text_exclusions,null],['Unique studies',null,c.studies,null],['QA items',null,c.qa,null],['Outcome rows',null,c.outcomes,null],['Duplicate links',null,114,null],['Completed full-text decisions',null,c.assessed,null],['Partition total',null,4075,null]];
 put('Count Reconciliation',control);
 const ff=["=COUNTA('Screening Log'!A2:A4076)",'=COUNTIF(\'Screening Log\'!E2:E4076,"excluded_at_screening")','=COUNTIF(\'Screening Log\'!E2:E4076,"full_text_eligibility_pending")','=COUNTIF(\'Screening Log\'!E2:E4076,"included_in_synthesis")','=COUNTIF(\'Screening Log\'!E2:E4076,"excluded_after_source_assessment")',`=COUNTA(Studies!A2:A${ns})`,`=COUNTA(QA!A2:A${nq})`,`=COUNTA(Evidence!A2:A${c.outcomes+1})`,"=COUNTA('Duplicate Removal'!A2:A115)",'=B5+B6','=B3+B4+B5+B6'];
 for(let i=2;i<=12;i++){get('Count Reconciliation').getRange(`B${i}`).formulas=[[ff[i-2]]];get('Count Reconciliation').getRange(`D${i}`).formulas=[[`=B${i}-C${i}`]];}
 w.recalculate();
 const diff=get('Count Reconciliation').getRange('D2:D12').values.flat(),qdiff=get('QA Reconciliation').getRange(`I2:J${ns}`).values.flat();
-if(diff.some(x=>x!==0)||qdiff.some(x=>x!==0))throw Error('Reconciliation failed '+JSON.stringify({diff,qdiff}));
+if(diff.some(x=>x!==0)||qdiff.some(x=>x!==0)){throw Error('Reconciliation failed '+JSON.stringify({diff,qdiff}));}
 // A meaningful live dependency check on a newly integrated numeric appraisal.
 const row=202,old=get('QA').getCell(row-1,2).values[0][0],beforeScore=get('Studies').getRange('G22').values[0][0];
 if(typeof old!=='number'){throw Error('Numeric appraisal test unavailable');}
@@ -73,7 +73,10 @@ console.log(errors.ndjson);
 await fs.mkdir(out+'/previews',{recursive:true});
 for(const n of [...new Set(changes)]){
  const s=get(n),nrows=s.getUsedRange().values.length,range=n==='Studies'?`A22:I${ns}`:n==='QA Reconciliation'?`A22:J${ns}`:n==='Count Reconciliation'?'A1:D12':n==='Summary'?'A1:C9':n==='Screening Log'?'A1:G3':`A${Math.max(1,nrows-2)}:F${nrows}`;
- const b=await w.render({sheetName:n,range,scale:1,format:'png'});await fs.writeFile(out+'/previews/'+n.replaceAll(' ','_')+'.png',new Uint8Array(await b.arrayBuffer()));
+ const previewName=n.replace(/[^A-Za-z0-9_-]/g,'_')+'.png';
+ const previewPath=path.join(out,'previews',previewName);
+ const b=await w.render({sheetName:n,range,scale:1,format:'png'});
+ await fs.writeFile(previewPath,new Uint8Array(await b.arrayBuffer()));
 }
 await(await SpreadsheetFile.exportXlsx(w)).save(out+'/CEP_Task3_Working_Integrated_2026-10-23.xlsx');
 await fs.writeFile(out+'/workbook_validation.json',JSON.stringify({counts:c,preserved_original_tabs:baselineNames.every(n=>w.worksheets.items.some(s=>s.name===n)),tabs:w.worksheets.items.map(s=>s.name),count_differences:diff,QA_differences:qdiff,live_QA_dependency_check:true,error_scan:errors.ndjson,frozen_input_not_overwritten:true},null,2));

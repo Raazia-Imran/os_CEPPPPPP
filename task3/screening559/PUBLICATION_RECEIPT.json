@@ -1,8 +1,14 @@
 {
-  "last_verified_branch_head": "3ae8bef835bf00ad7309f1c112ae1721f034485b",
+  "last_verified_checkpoint_head": "54a584cae3b66b7800ff5ced969676411408ffcf",
   "branch": "task3-screening-559",
+  "target_branch": "main",
   "folder": "task3/screening559",
-  "draft_pull_request": "https://github.com/Raazia-Imran/os_CEPPPPPP/pull/5",
+  "pull_request": "https://github.com/Raazia-Imran/os_CEPPPPPP/pull/5",
+  "publication_authorization": "User explicitly requested merge of post-freeze work to main in a separate folder,23October2026",
   "frozen_artifacts_unchanged": true,
-  "verification_scope": "Prior branch head and frozen artifact hashes. Prior manifest had two stale generated-decision file hashes; this publication rebuilds the full manifest after all writes. Verify current commit against PUBLICATION_MANIFEST.json; no self-referential current commit hash is embedded."
+  "working_studies": 29,
+  "working_reports": 30,
+  "remaining_advanced_records": 321,
+  "prepared_utc": "2026-10-23T04:41:51.487150+00:00",
+  "verification_scope": "This receipt records the verified checkpoint preceding integrated publication. Current file bytes are listed in PUBLICATION_MANIFEST.json; the containing Git commit identifies the published snapshot. No self-referential current commit hash is embedded."
 }

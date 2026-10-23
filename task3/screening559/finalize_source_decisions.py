@@ -25,6 +25,8 @@ def write(name, rows):
 
 criteria = read('Full_Text_Eligibility_Prepared.csv')
 sources = {x['Record ID']: x for x in read('Full_Text_Source_Register.csv')}
+references=read('New_Included_References.csv')
+mapping={x['Record ID']:(x['Study ID'],x['Report ID'],sources[x['Record ID']]['Candidate name']) for x in references}
 qa = read('Candidate_QA_Prepared.csv')
 outcomes = read('Candidate_Outcomes_Prepared.csv')
 decisions = []
@@ -66,7 +68,7 @@ write('Final_Candidate_QA.csv', finalqa)
 p = json.loads((d/'progress.json').read_text())
 p.update({'final_source_based_eligibility_decisions': len(decisions)+len(exclusions),
     'final_full_text_exclusions':len(exclusions),
-    'new_full_text_eligibility_assessments':len(decisions),
+    'new_full_text_eligibility_assessments':len(decisions)+len(exclusions),
     'full_text_criteria_prepared':len(criteria),
     'candidate_QA_items_prepared':len(qa),
     'candidate_outcomes_prepared':len(outcomes),
