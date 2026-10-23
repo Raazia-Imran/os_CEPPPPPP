@@ -12,4 +12,4 @@ Multi-model memory remapping and protection & P029 capacity/latency results; no 
 Source configuration/report inconsistencies & P025 A100 SM label; P026 platform label; P029 platform/isolation caption & Publish exact device identifiers and corrected experiment manifests\\\addlinespace
 Compiler/kernel choice under hardware drift & ElasticRoom MI100 slowdown and adverse candidate cases & Evaluate refreshed profiles, matched baseline ports and repeatability under sustained runs\\\addlinespace
 Block dispersion versus request stability & SPLIT uses blockSDjitter; short/long-task trade-off & Report actual request-latency distributions and per-task deadline outcomes jointly\\\addlinespace
-\bottomrule\end{longtable}
+\bottomrule\end{longtable}\paragraph{Throughput-oriented colocation and serving guarantees.} KACE identifies useful kernel features and inference-target contention, but does not establish request-level tail or fault isolation. Evaluate candidate-selection policies with identical arrival traces, per-tenant goodput, latency distributions and explicit protection requirements across GPU generations \cite{s030}.

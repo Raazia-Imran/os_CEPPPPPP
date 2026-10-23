@@ -1,23 +1,9 @@
-# Current working snapshot
+# Current CEP first draft
 
-Updated UTC: 2026-10-23T04:37:40.311291+00:00.
+The dated first draft contains **30 unique studies across 31 reports**, **300 QA items**, **90 reported observations** and **two separate calculations**. KACE is integrated as S030/P033 with six inclusion checks and ten QA items (14/16 applicable points).
 
-The working corpus contains **29unique studies across30reports**. The frozen20-study/21-report ZIP,report,workbook and submitted protocol remain unchanged.
+All 559 continuation records have title/abstract-stage decisions: 225 exclusions and 334 advancements. Ten new reports are included, four are excluded after full text and **320 remain deferred for eligibility or identity assessment at this first-draft cutoff**. No deferred record is relabeled excluded or unavailable. Whole-review PRISMA and historical search provenance remain limitations.
 
-## Selection
+The matching PDF, Word companion and master workbook are in task3/screening559/integrated_report/ and integrated_workbook/. The PDF is 162 pages. All ten added PDFs have been recovered and matched to the assessment hashes; private reading copies are excluded from public GitHub publication.
 
-All559continuation records have final title/abstract-stage decisions:225excluded and334advanced.56earlier exclusion proposals were conservatively reopened.108screening exclusions are explicitly title/metadata-only; missing abstract text is never the exclusion reason.
-
-Within the334advanced records,9new reports are included and4are excluded at full text;321still require eligibility or report-identity closure. The newly included studies are LithOS, Abacus, Miriam, SGDRC, Pantheon, Oneiros, GACER, ElasticRoom, SPLIT. A source PDF can be available while scope remains undecided: MIGER's supplied full text is recorded but its local-inference criterion remains pending. It is not counted as an added study or as unavailable.
-
-## Integrated report and workbook
-
-The new working PDF/LaTeX report is in integrated_report/. The expanded working master is integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx. It extends the frozen37-sheet master and retains source/version,eligibility,QA,extraction,comparison,recommendation and audit records. The current report integrates the additions into all13main sections and evidence appendices, with a headings23–26map. These are working artifacts; further eligibility can change the corpus.
-
-The additions contribute54criterion checks,90QA items,32outcome rows and9DOI/reference/BibTeX entries. Working totals are290QA items,84reported observations and two inherited calculations. No independent human votes are asserted; the actual process is documented once in methodology and amendmentM2026-10-23.
-
-## Remaining closure
-
-The whole-review PRISMA is not final. Branch arithmetic and the working canonical partition are recorded separately; unresolved records are not relabeled exclusions or failed retrievals. Historical search-count/field/run gaps and ParvaGPU version limitations remain. Duplicate/companion hypotheses require native evidence; matching enrichment alone does not prove identity. Source PDFs are private reading copies and are not redistributed in the repository.
-
-For submission, use the dated working report and workbook together, preserve the frozen backup, and retain the explicit remaining limits. Check VALIDATION.json and the artifact-specific validation files for the verified snapshot.
+Use task3/screening559/RELEASE_HANDOVER.md for the teammate workflow. All further reviews should use this dated master, while corrections from older copies transfer by stable IDs. The earlier 20-study/21-report frozen release and submitted protocol remain unchanged as backups. The successor release merges the completed additions with that earlier package.

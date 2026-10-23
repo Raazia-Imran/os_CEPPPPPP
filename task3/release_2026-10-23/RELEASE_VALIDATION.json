@@ -1,0 +1,21 @@
+{
+  "built_utc": "2026-10-23T18:02:16.359424+00:00",
+  "working_studies": 30,
+  "working_reports": 31,
+  "QA_items": 300,
+  "outcomes": 90,
+  "deferred_eligibility": 320,
+  "added_reading_PDFs": 10,
+  "all_added_PDF_hashes_match": true,
+  "old_frozen_zip_unchanged": true,
+  "public_reading_PDFs_excluded": true,
+  "public_zip_sha256": "fc324ccd0a112fc842af2819b9d922beb737a3909f7bc74c937f4820973c32ec",
+  "private_zip_sha256": "8a0be829f320a6b7c8e015977b64f93bbfdd0604ba573672dd186461453330a8",
+  "public_bytes": 14606470,
+  "private_bytes": 41934440,
+  "public_file_count": 699,
+  "public_tar_xz_sha256": "2fd68cc9b48025f4ada25ad1920f45e5ec2b5e027dcf638c8f5b98ea481e39e3",
+  "public_tar_xz_bytes": 7765800,
+  "public_tar_matches_all_699_zip_entries": true,
+  "all_ten_added_DOIs_found_in_primary_PDF_text": true
+}

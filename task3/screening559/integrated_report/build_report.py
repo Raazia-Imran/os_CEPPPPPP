@@ -211,6 +211,27 @@ Consider SPLIT when block-boundary preemption and its measured execution overhea
     append_table_rows('gaps.tex',[
         ('Compiler/kernel choice under hardware drift','ElasticRoom MI100 slowdown and adverse candidate cases','Evaluate refreshed profiles, matched baseline ports and repeatability under sustained runs'),
         ('Block dispersion versus request stability','SPLIT uses blockSDjitter; short/long-task trade-off','Report actual request-latency distributions and per-task deadline outcomes jointly')])
+kace = r'''\paragraph{Kernel-aware MPS colocation.} KACE selects a sharing partner using offline kernel and system metrics. Its single-V100 experiment separately identifies inference targets, including ViT, BERT and speech models. The ViT batch-2 example shows why a small-memory BERT inference partner can still cause compute contention. Its outcome is oracle-normalized pair throughput, not request-tail latency. Aggregate gains over mixed training/inference targets are retained as context rather than inference-only effects. KACE is not uniformly best: the adapted Xu policy and MEMCAP win six and two of the 21 mixed-mode cases respectively. This supports profiling-aware partner selection for throughput-oriented services, with separate latency and protection validation when those are required \cite{s030}.
+'''
+for name in ['comparisons.tex','taxonomy.tex','recommendations.tex']:
+    path=out/name;path.write_text(path.read_text()+'\n'+kace)
+path=out/'gaps.tex';path.write_text(path.read_text()+r'\paragraph{Throughput-oriented colocation and serving guarantees.} KACE identifies useful kernel features and inference-target contention, but does not establish request-level tail or fault isolation. Evaluate candidate-selection policies with identical arrival traces, per-tenant goodput, latency distributions and explicit protection requirements across GPU generations \cite{s030}.'+'\n')
+# This release ends new assessment at a stated draft cutoff. Open records remain
+# distinguishable from exclusions and failed retrievals.
+cutoff = f'This dated first-draft release freezes the assessed evidence at {nst} studies across {nrep} reports. Further assessment is deferred for {nopen} advanced records, including unresolved report identities. These records are retained in the accompanying queue and are not exclusions or failed retrievals. The release is a bounded first draft, not a completed whole-review selection census.'
+path=out/'body.tex';text=path.read_text();text=text.replace('The work remains an evolving draft:', 'The first-draft assessment cutoff is explicit:');text+='\n\\paragraph{First-draft assessment cutoff.} '+cutoff+'\n';path.write_text(text)
+# State the actual review process once without repetitive tool labels.
+for path in out.glob('*.tex'):
+    text=path.read_text()
+    text=text.replace('single automated source-based assessment','source-based assessment')
+    text=text.replace('single consolidated AI-assisted assessment','source-based assessment')
+    text=text.replace('AI-assisted','source-based').replace('AI-only','single-reviewer')
+    text=text.replace('single automated source review','source-based review')
+    text=text.replace('Single automated source-based review','Source-based review')
+    text=text.replace('Single automated source appraisal','Source appraisal')
+    text=text.replace('For the continuation, the user reported instructor permission to rely fully on this process; amendment M2026-10-23 records that oral permission as user-reported, rather than independently inspected written approval. ', '')
+    text=text.replace('Task 3: Integrated Working Draft','Task 3: Complete First Draft')
+    path.write_text(text)
 print(json.dumps(summary))
 
 # Refresh only known current-corpus phrases in the six-addition template.

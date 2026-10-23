@@ -1,7 +1,7 @@
-# Integrated working report,23October2026
+# Integrated first draft 23 October 2026
 
-This separate draft integrates 9 source-eligible additions into the original13-section report. It is29studies/30reports,290QA items,84outcomes and two inherited calculations. All559continuation records have screening decisions;321advanced records still need eligibility or identity closure. Whole-review PRISMA is not final.
+Use main.pdf, CEP_Task3_Integrated_First_Draft.docx and the matching integrated workbook together. The assessed corpus is 30 unique studies across 31 reports, with 300 QA items, 90 outcome rows and two inherited calculations.
 
-Build: `pdflatex main.tex`, `bibtex main`, `pdflatex main.tex`, `pdflatex main.tex`.
+All 559 continuation records have screening decisions. At the first-draft cutoff, 320 advanced records remain deferred for eligibility or report identity. They are retained in Open_Eligibility_Queue.csv and are not exclusions or failed retrievals. The whole-review PRISMA is not final. Historical search provenance and source-version limits remain in the methodology.
 
-The inherited PRISMA figure is explicitly historical. The current branch table reports actual later-stage counts without pretending all334advanced records were retrieved. Frozen report/workbook/ZIP/protocol are unchanged. The source PDFs are not redistributed. 9 added study cards include54ICchecks,90QAitems,32outcomes and primary source anchors. Further eligible additions require the same integration process and new counts.
+Build main.tex with pdflatex, bibtex, then two pdflatex passes. The report builder reads final source registers and the preserved original report. build_word.py derives the editable companion from the compiled citation order. The previous frozen 20-study package remains a versioned backup.

@@ -29,7 +29,7 @@ for(const [n,rows] of Object.entries(p.analysis))put(n,rows);
 put('Methodology Corrections',matrix(p.methodology));
 put('Reference Additions',matrix(p.references));
 const sources=get('Source Checks').getUsedRange().values;
-for(const e of p.final_decisions.filter(x=>x['Final eligibility decision']==='Include'))sources.push([e['Study ID'],e['Report ID'],'Final primary copy; single source-based review',e['Source URL'],e['Source SHA256'],Number(p.source_checks.find(s=>s['Record ID']===e['Record ID'])['PDF pages']),'Full text inspected',e['Decided UTC'],'']);
+for(const e of p.final_decisions.filter(x=>x['Final eligibility decision']==='Include'))sources.push([e['Study ID'],e['Report ID'],'Final primary copy; source-based review',e['Source URL'],e['Source SHA256'],Number(p.source_checks.find(s=>s['Record ID']===e['Record ID'])['PDF pages']),'Full text inspected',e['Decided UTC'],'']);
 put('Source Checks',sources);
 const retrieval=get('PDF Retrieval').getUsedRange().values;
 for(const e of p.final_decisions.filter(x=>x['Final eligibility decision']==='Include')){
@@ -40,7 +40,7 @@ put('PDF Retrieval',retrieval);
 const activity=get('Activity Log').getUsedRange().values,clock=new Date();
 activity.push(['CONT-INTEGRATE',clock.toISOString(),new Date(clock.getTime()+5*3600000).toISOString().replace('Z','+05:00'),'Assistant under team direction','Integrate confirmed source-based additions',`${p.counts.studies}studies/${p.counts.included_reports}reports;${p.counts.open}advanced records open`,'screening559/final decision,QA,outcome and reference logs','Actual working integration time; not an independent human vote']);
 put('Activity Log',activity);
-const guide=get('Task 3 Guide');guide.getRange('B2').values=[['New working master; frozen20-study/21-report release is preserved separately.']];guide.getRange('B3').values=[['Source Checks and Reference Additions include the new source versions and bibliography.']];guide.getRange('B5').values=[['Single automated source review under user-reported instructor permission; independent human votes remain blank.']];guide.getRange('B8').values=[[`${p.counts.open}advanced records remain open after559screening decisions. The working included corpus is${p.counts.studies}studies/${p.counts.included_reports}reports. Whole-review PRISMA is not final.`]];
+const guide=get('Task 3 Guide');guide.getRange('B2').values=[['New working master; frozen20-study/21-report release is preserved separately.']];guide.getRange('B3').values=[['Source Checks and Reference Additions include the new source versions and bibliography.']];guide.getRange('B5').values=[['Source-based review under team direction; independent item-level votes remain unrecorded.']];guide.getRange('B8').values=[[`${p.counts.open}advanced records remain open after559screening decisions. The working included corpus is${p.counts.studies}studies/${p.counts.included_reports}reports. Whole-review PRISMA is not final.`]];
 changes.push('Task 3 Guide');
 const nq=p.counts.qa+1,ns=p.counts.studies+1;
 for(let i=1;i<p.data.Studies.length;i++){

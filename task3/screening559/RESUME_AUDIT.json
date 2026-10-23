@@ -1,9 +1,9 @@
 {
-  "checked_utc": "2026-10-23T17:38:48.096521+00:00",
+  "checked_utc": "2026-10-23T17:55:39.487155+00:00",
   "screened": 559,
   "screening_exclusions": 225,
-  "closed_eligibility": 13,
-  "open_eligibility_or_identity": 321,
+  "closed_eligibility": 14,
+  "open_eligibility_or_identity": 320,
   "integration_verified_by_report_DOI_and_workbook_ID_DOI": [
     "R00080",
     "R00143",
@@ -13,9 +13,10 @@
     "R00086",
     "R00647",
     "R01093",
-    "R00877"
+    "R00877",
+    "R00035"
   ],
-  "report_sha256": "de4f156370cdbdb4360e3f3620e1ba4a9570b249b4740f31bf24310aca77c64a",
-  "workbook_sha256": "49c642c34052ee1d69ffe976566e8d191da453019676677200d5dec94d4f7751",
+  "report_sha256": "486c4a9f3209549284aecdc861300e95fe14da62d4ccee9721cf0aafc302fb85",
+  "workbook_sha256": "14fbab1c5c633aba62016d8025bc9f6373cb9baef5233f099c2b33c283918e18",
   "research_decisions_changed": false
 }

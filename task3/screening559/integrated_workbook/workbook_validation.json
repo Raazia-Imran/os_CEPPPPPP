@@ -2,14 +2,14 @@
   "counts": {
     "canonical": 4075,
     "screening_exclusions": 3718,
-    "open": 321,
-    "included_reports": 30,
+    "open": 320,
+    "included_reports": 31,
     "full_text_exclusions": 6,
-    "studies": 29,
-    "qa": 290,
-    "outcomes": 84,
+    "studies": 30,
+    "qa": 300,
+    "outcomes": 90,
     "duplicates": 114,
-    "assessed": 36
+    "assessed": 37
   },
   "preserved_original_tabs": true,
   "tabs": [
@@ -66,6 +66,8 @@
     0
   ],
   "QA_differences": [
+    0,
+    0,
     0,
     0,
     0,

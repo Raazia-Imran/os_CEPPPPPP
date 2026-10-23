@@ -1,6 +1,6 @@
 {
   "tabs": 38,
-  "working_studies": 29,
+  "working_studies": 30,
   "count_differences": [
     0,
     0,
@@ -26,6 +26,10 @@
     "S029": {
       "score": 14,
       "maximum": 18
+    },
+    "S030": {
+      "score": 14,
+      "maximum": 16
     }
   },
   "transport_shared_strings_readback_passed": true,

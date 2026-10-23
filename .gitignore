@@ -47,3 +47,15 @@ task2/report/main.pdf
 *inspect.ndjson*
 
 /task3/papers/ScienceDirect_upload.zip
+
+/task3/screening559/integrated_report/*.aux
+/task3/screening559/integrated_report/*.log
+/task3/screening559/integrated_report/*.out
+/task3/screening559/integrated_report/*.toc
+/task3/screening559/integrated_report/*.blg
+/task3/screening559/integrated_report/*.bbl
+/task3/screening559/integrated_workbook/previews/
+/task3/screening559/integrated_workbook/baseline_preview.png
+/task3/screening559/integrated_workbook/integrated_workbook_data.json
+
+/task3/release_2026-10-23/Task3_First_Draft_Public_2026-10-23.zip

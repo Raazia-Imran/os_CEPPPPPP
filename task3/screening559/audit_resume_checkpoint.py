@@ -23,7 +23,7 @@ closed = {x['Record ID'] for x in elig}
 assert len(queue) == len({x['Record ID'] for x in queue}) == 559
 assert not excluded & closed
 open_rows = [x for x in queue if x['Record ID'] not in excluded | closed]
-assert len(open_rows) == 321
+assert len(open_rows) == 334-len(closed)
 
 report_text = '\n'.join(p.read_text() for p in (d / 'integrated_report').glob('*.tex'))
 workbook = d / 'integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx'

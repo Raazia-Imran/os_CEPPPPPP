@@ -1,0 +1,9 @@
+{
+  "source": "report/main.tex and included TeX files",
+  "reference_order": "report/main.bbl",
+  "reference_count": 38,
+  "tables": 190,
+  "paragraphs": 443,
+  "same_claims_and_appendices": true,
+  "output": "CEP_Task3_Integrated_First_Draft.docx"
+}

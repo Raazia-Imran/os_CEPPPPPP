@@ -14,7 +14,8 @@ def replace_rows(name,rid,rows):
         w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(old+rows)
 
 configs=[('eligibility_cycle3/elasticroom','Source.csv','Eligibility.csv','QA.csv','Outcomes.csv','Reference.csv','ElasticRoom'),
-         ('eligibility_cycle3/split','SPLIT_Source.csv','SPLIT_Eligibility.csv','SPLIT_QA.csv','SPLIT_Outcomes.csv','SPLIT_Reference.csv','SPLIT')]
+         ('eligibility_cycle3/split','SPLIT_Source.csv','SPLIT_Eligibility.csv','SPLIT_QA.csv','SPLIT_Outcomes.csv','SPLIT_Reference.csv','SPLIT'),
+         ('eligibility_cycle4','Source.csv','Eligibility.csv','QA.csv','Outcomes.csv','Reference.csv','KACE')]
 adopted=[]
 for folder,sn,en,qn,on,rn,name in configs:
     root=d/folder;s=read(root/sn)[0];ref=read(root/rn)[0];ec=read(root/en);qa=read(root/qn);out=read(root/on)
@@ -25,7 +26,7 @@ for folder,sn,en,qn,on,rn,name in configs:
     assert all(x['Rationale'] and x['Anchor'] and (x['Score']=='N/A' and x['Applicable maximum']=='0' or 0<=int(x['Score'])<=int(x['Applicable maximum'])<=2) for x in qa)
     assert out and all(x['Anchor'] and x['Interpretation limit'] for x in out)
     assert all(x['Source SHA256']==s['Source SHA256'] for x in ec+qa)
-    replace_rows('Full_Text_Source_Register.csv',rid,[{'Record ID':rid,'Candidate name':name,'DOI':s['DOI'],'Source URL':s['Source URL'],'Access result':s['Access result'],'Source SHA256':s['Source SHA256'],'PDF pages':s['PDF pages'],'Checked UTC':now,'Reading copy':'User-supplied local final copy; no licensed PDF redistributed','Stage':'Final source eligibility under M2026-10-23'}])
+    replace_rows('Full_Text_Source_Register.csv',rid,[{'Record ID':rid,'Candidate name':name,'DOI':s['DOI'],'Source URL':s['Source URL'],'Access result':s['Access result'],'Source SHA256':s['Source SHA256'],'PDF pages':s['PDF pages'],'Checked UTC':now,'Reading copy':'Private reading copy; access route recorded above; PDF not redistributed','Stage':'Final source eligibility under M2026-10-23'}])
     replace_rows('Full_Text_Eligibility_Prepared.csv',rid,[{'Record ID':rid,'Candidate name':name,'Criterion':x['Criterion'],'Prepared judgment':'Meets criterion on inspected full text','Evidence':x['Evidence'],'Anchor':x['Anchor'],'Source URL':s['Source URL'],'Source SHA256':s['Source SHA256'],'Checked UTC':x['Checked UTC'],'Independent vote':'','Adjudicated eligibility':'Pending','Assigned new study ID':''} for x in ec])
     replace_rows('Candidate_QA_Prepared.csv',rid,[{'Record ID':rid,'Criterion':x['Criterion'],'Prepared score':x['Score'],'Maximum':x['Applicable maximum'],'Rationale':x['Rationale'],'PDF anchor':x['Anchor'],'Checked UTC':x['Checked UTC'],'Appraisal status':'Final source appraisal; reasoned N/A retained; no independent vote','Independent score':'','Adjudicated score':''} for x in qa])
     replace_rows('Candidate_Outcomes_Prepared.csv',rid,[{k:x[k] for k in read(d/'Candidate_Outcomes_Prepared.csv')[0]} for x in out])
