@@ -1,0 +1,5 @@
+# S030/P033: empirical timing under MPS contention
+
+This study contributes inference-specific contention characterization rather than an inference-serving throughput optimization. AlexNet is a separately reported inference victim, co-running with engineered scalarProd or vectorAdd stressors on one RTX3060. Its local measured maxima and predicted bounds extend the predictability evidence for MPS SMK/SP configurations. They support cautious early-design estimation, not a certified timing guarantee. The accepted IEEE source is scientifically usable because its acceptance notice and final DOI establish publication identity; no claim of exact typeset equivalence is made.
+
+For taxonomy use MPS with SMK/spatial SM assignment and an offline learned timing estimator. In comparisons, distinguish empirical maximum and predictor pessimism from mean or tail request latency. The reported5.52x/5.0x AlexNet overestimation cautions against importing predictions as hard SLA guarantees. A synthetic non-inference stressor does not erase the separately measured inference victim; the submitted criteria permit this mixed workload evidence. No human independent review is claimed.

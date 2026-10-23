@@ -1,0 +1,7 @@
+# MuxWise full-text scope decision
+
+Exclude under EC2. This is a completed source-based decision for the inspected final ASPLOS 2026 report. The submitted protocol defines a tenant as a separately managed inference workload/process affected by co-tenants and IC2 requires distinct concurrent tenants/processes/models/applications.
+
+Section3.2.1 (PDF p6) explicitly selects intra-process GreenContext so both phases share memory and one KV-cache pool. Section3.4.1 (p8) states scheduling is within a single serving instance; section5 (pp13-14) describes a single-instance optimization complementary to distributed disaggregation. The two phases can execute independently, but they are stages of the same model-serving instance rather than distinct managed model workers. Evaluation separately deploys Llama8B, Llama70B and Qwen3 models; it does not establish their concurrent co-tenancy.
+
+The paper has valid inference, latency/goodput and hardware/software evidence. Exclusion does not depend on missing text, absence of p99, tensor parallelism or study count. Keep it as adjacent prefill/decode scheduling context; no included QA/outcome rows or S/P IDs are assigned. Reserved S031/P034 is unused.

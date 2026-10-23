@@ -1,0 +1,13 @@
+{
+  "record": "R00001",
+  "decision": "Exclude",
+  "primary_reason": "EC2",
+  "secondary_scope_note": "EC4",
+  "criteria_rows": 6,
+  "full_text_available": true,
+  "source_sha256": "11322073592686791f534c5528e01baf0dcf5dd06a86a9537044a819328605c8",
+  "source_pages": 10,
+  "no_study_id_assigned": true,
+  "prior_pending_decision_preserved": "eligibility_cycle3/miger/",
+  "independent_human_vote_asserted": false
+}
