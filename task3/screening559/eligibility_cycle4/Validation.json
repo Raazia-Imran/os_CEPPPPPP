@@ -1,0 +1,12 @@
+{
+  "record": "R00035",
+  "study": "S030",
+  "report": "P033",
+  "criteria_met": 6,
+  "QA_items": 10,
+  "QA_score": 14,
+  "QA_maximum": 16,
+  "outcomes": 6,
+  "source_sha256": "3415333f3f603ad209954bb96cca98ddbcfa44b149606f72dfc447a73275e0e0",
+  "PDF_redistributed": false
+}
