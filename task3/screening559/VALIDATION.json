@@ -1,13 +1,13 @@
 {
-  "checked_utc": "2026-10-23T21:24:25.794794+00:00",
+  "checked_utc": "2026-10-23T21:42:27.256787+00:00",
   "queue_records": 559,
   "original_fields_unchanged": true,
   "human_votes_unchanged_and_empty": true,
   "final_screening_excluded": 225,
   "final_screening_advanced": 334,
   "new_final_inclusions": 10,
-  "new_full_text_exclusions": 4,
-  "advanced_records_open": 320,
+  "new_full_text_exclusions": 6,
+  "advanced_records_open": 318,
   "working_studies": 30,
   "working_reports": 31,
   "new_QA_rows": 100,
@@ -17,5 +17,5 @@
   "frozen_hashes_unchanged": true,
   "whole_review_prisma_final": false,
   "new_report_workbook_integration_complete": true,
-  "integration_scope": "Current30-study working snapshot;320advanced records still open"
+  "integration_scope": "Current30-study working snapshot;318advanced records still open"
 }

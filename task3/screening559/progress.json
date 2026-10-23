@@ -72,11 +72,11 @@
   "discovery_exact_identity_matches": 297,
   "records_with_public_pdf_routes": 92,
   "new_report_workbook_integration_complete": true,
-  "integration_scope": "Current 30-study/31-report first draft; wider selection remains incomplete",
+  "integration_scope": "Current 30-study/31-report first draft; 318 advanced records deferred",
   "working_QA_items": 300,
   "working_reported_outcomes": 90,
   "reference_additions": 10,
   "integrated_working_report_and_workbook": true,
   "whole_review_final_prisma": false,
-  "metadata_reconciled_utc": "2026-10-23T21:21:44.738276+00:00"
+  "metadata_reconciled_utc": "2026-10-23T21:42:27.437692+00:00"
 }

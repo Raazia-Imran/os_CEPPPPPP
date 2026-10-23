@@ -22,14 +22,14 @@ assert (summary['working_studies'],summary['working_reports'],summary['QA_items'
 
 # Repair stale navigation metadata without rewriting historical assessments.
 p=d/'progress.json';v=json.loads(p.read_text())
-v.update({'remaining_advanced_records':320,'integration_scope':'Current 30-study/31-report first draft; 320 advanced records deferred',
+v.update({'remaining_advanced_records':318,'integration_scope':'Current 30-study/31-report first draft; 318 advanced records deferred',
           'working_QA_items':300,'working_reported_outcomes':90,'reference_additions':10,
           'metadata_reconciled_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()})
 p.write_text(json.dumps(v,indent=2)+'\n')
-(d/'START_HERE.md').write_text('# Current first draft\n\nUse Task3_First_Draft_2026-10-24 for the PDF, Word report, Excel master and team guide. Use Task3_LaTeX_2026-10-24 for self-contained report sources. Current evidence: 30 studies / 31 reports, 300 QA items, 90 outcomes. All 559 continuation screening decisions are recorded; 320 advanced eligibility/identity records remain deferred. The full SLR is not complete. Older frozen packages are historical backups.\n')
+(d/'START_HERE.md').write_text('# Current first draft\n\nUse Task3_First_Draft_2026-10-24 for the PDF, Word report, Excel master and team guide. Use Task3_LaTeX_2026-10-24 for self-contained report sources. Current evidence: 30 studies / 31 reports, 300 QA items, 90 outcomes. All 559 continuation screening decisions are recorded; 318 advanced eligibility/identity records remain deferred. The full SLR is not complete. Older frozen packages are historical backups.\n')
 rows=read('Heading_15_26_Integration_Checklist.csv')
 for row in rows:
-    for k in row:row[k]=row[k].replace('29-study','30-study').replace('323advanced','320 advanced').replace('323 advanced','320 advanced')
+    for k in row:row[k]=row[k].replace('29-study','30-study').replace('323advanced','318 advanced').replace('323 advanced','318 advanced')
     if row['Heading']=='23':row['Remaining condition']='Team checking, final eligibility/PRISMA and historical search-provenance closure remain'
     if row['Heading']=='24':row['Current snapshot status']='All 13 sections present';row['Remaining condition']='Team review and any evidence corrections before submission'
 write_csv(d/'Heading_15_26_Integration_Checklist.csv',rows)
@@ -78,7 +78,7 @@ if ($LASTEXITCODE -ne 0) { throw "BibTeX failed" }
 (latex/'.gitignore').write_text('*.aux\n*.log\n*.out\n*.toc\n*.blg\n*.bbl\n*.fls\n*.fdb_latexmk\n')
 (latex/'README.md').write_text('''# Task 3 LaTeX project
 
-This self-contained project produces the 30-study/31-report first draft. Its evidence snapshot is dated 23 October; this portable folder was packaged on 24 October. The report explicitly retains 320 deferred eligibility/identity records.
+This self-contained project produces the 30-study/31-report first draft. Its evidence snapshot is dated 23 October; this portable folder was packaged on 24 October. The report explicitly retains 318 deferred eligibility/identity records.
 
 ## Overleaf
 1. Download the separate LaTeX ZIP.
@@ -138,7 +138,7 @@ requirements=[
  ('7','Exact search strings','Report appendix and search register','Partly closed','Historical fields and run/export mapping are incomplete'),
  ('8','Inclusion and exclusion criteria','Report section 3 and Eligibility.csv','Present','Apply the same six criteria to each added paper'),
  ('9','Database wise search results','Search_Log.csv and report section 4','Partly closed','Historical displayed/exported counts need evidence'),
- ('10','Search and screening log','Screening_Log.csv and Final_Screening_Decisions.csv','Partly closed','559 continuation screening decisions complete; 320 advanced eligibility/identity cases deferred'),
+ ('10','Search and screening log','Screening_Log.csv and Final_Screening_Decisions.csv','Partly closed','559 continuation screening decisions complete; 318 advanced eligibility/identity cases deferred'),
  ('11','Duplicate removal record','Duplicate_Removal.csv and identity audit','Documented with limits','114 links applied; unresolved companion/native identities remain'),
  ('12','PRISMA flow diagram','Report section 4 and counts.tex','Partly closed','Historical flow and current branch accounting are labelled; whole-review flow is not final'),
  ('13','QA checklist and scores','Master QA and Final_Candidate_QA.csv','Source appraisals present','300 items; independent checking must be recorded only when done'),
@@ -201,7 +201,7 @@ table(['Measure','Verified position'],[
  ('New papers','10 additions; each has six eligibility checks, ten QA items, extraction and a reference entry'),
  ('Source PDFs','All ten added PDFs recovered and matched to their assessment hashes'),
  ('Continuation screening','559 of 559 decisions recorded: 225 excluded and 334 advanced'),
- ('Continuation eligibility','14 of 334 advanced records closed: 10 included and four excluded; 320 deferred'),
+ ('Continuation eligibility','16 of 334 advanced records closed: 10 included and six excluded; 318 deferred'),
  ('Full SLR completion','Incomplete eligibility, historical search provenance and independent checking remain')],[2.0,4.9])
 para('The earlier 100% referred to assembling a bounded draft package. It did not mean that the entire SLR or every guideline requirement was fully closed. There is no defensible single percentage for all research work because the remaining records differ in effort and evidence availability.')
 para('A record is a database entry. A report is a paper version. A study is the underlying investigation. The two linked REEF reports count as one study, which is why 31 reports represent 30 studies.')
@@ -252,13 +252,13 @@ table(['No','Requirement','Location','Status'],[(x[0],x[1],x[2],x[3]) for x in r
 head('How headings 24 to 27 apply')
 para('Heading 24 is the report structure. The current report has all thirteen main sections: Introduction; Research Questions; Methodology; Study Selection; Taxonomy; Results by RQ; Comparison; Trade-offs; Discussion; Recommendation; Research Gaps; Validity; Conclusion. References and evidence appendices follow. The appendix paper cards support the synthesis; they do not replace analysis across papers.')
 para('Heading 25 asks for critical analysis. For each recommendation, explain which mechanism fits which workload, what evidence supports it and what cost must be accepted. Do not rank unrelated percentages as though the papers used one experiment. Mean latency, p99, batch completion, block dispersion and throughput sum remain distinct.')
-para('Heading 26 asks for traceability and reproducibility. Every included study needs an identifiable source, every decision needs evidence, and every PRISMA count needs a real log. The current source/QA/extraction records are present. The 320 deferred records and historical search gaps mean that full compliance is still incomplete. They must remain visible.')
+para('Heading 26 asks for traceability and reproducibility. Every included study needs an identifiable source, every decision needs evidence, and every PRISMA count needs a real log. The current source/QA/extraction records are present. The 318 deferred records and historical search gaps mean that full compliance is still incomplete. They must remain visible.')
 para('Heading 27 is the final engineering answer. Read the recommendation section and ask: what should an engineer select, under which conditions, why, with which benefit and sacrifice, and when is an alternative preferable? Every answer must point back to the reviewed evidence.')
 head('Work before Sunday submission')
 for step,s in enumerate(['Start with this current package and transfer any older corrections by paper ID.',
           'Eshaal and Rameen check their assigned sources and the report sections above. Return concrete corrections, not a blanket approval.',
           'Raazia reconciles corrections, regenerates affected outputs and checks the final report against the guideline matrix.',
-          'Keep the 320-record queue separate. If further records are actually assessed, apply the criteria and rebuild the corpus-dependent outputs. Do not mark that queue complete merely because the draft minimum is met.',
+          'Keep the 318-record queue separate. If further records are actually assessed, apply the criteria and rebuild the corpus-dependent outputs. Do not mark that queue complete merely because the draft minimum is met.',
           'Confirm cover details, submission instructions, required individual submissions and file opening. Record the exact final version before sending it to Sir.'],1):
     para(str(step)+'. '+s)
 para('The current draft can be reviewed as a bounded first draft. Approval cannot be guaranteed, particularly while systematic selection and historical search reconstruction remain incomplete. The most useful work now is genuine source checking and correction of substantive claims, followed by a single consistent submission version.')
@@ -272,7 +272,7 @@ Use 04_Team/Team_Guide.pdf first. This is the current 30-study / 31-report team 
 
 Read 01_Report/CEP_Task3_First_Draft.pdf. Use the matching Word file for comments and 02_Master/CEP_Task3_Evidence_Workbook.xlsx as the database. The private team ZIP includes ten added source PDFs. They are excluded from public GitHub; their exact sources, DOIs and hashes are in 03_Data_and_Logs.
 
-The separate Task3_LaTeX_2026-10-24 folder is self-contained and can compile without the whole repository. All thirteen report sections are drafted. All 559 continuation screening decisions are recorded. Full-text eligibility/identity remains deferred for 320 advanced records; the whole SLR is not 100% complete. The deliverable matrix states the remaining limits.
+The separate Task3_LaTeX_2026-10-24 folder is self-contained and can compile without the whole repository. All thirteen report sections are drafted. All 559 continuation screening decisions are recorded. Full-text eligibility/identity remains deferred for 318 advanced records; the whole SLR is not 100% complete. The deliverable matrix states the remaining limits.
 
 Eshaal and Rameen have individual CSV check queues. Existing older checks transfer by stable IDs. Only actual completed source checks should receive a checker name and date. Raazia maintains the single master and applies accepted changes. Keep the older frozen ZIPs as historical backups.
 '''

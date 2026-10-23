@@ -1,6 +1,6 @@
 # Current version
 
-Use ../Task3_First_Draft_2026-10-24 and ../Task3_LaTeX_2026-10-24. The material below describes an earlier checkpoint. Current counts are 30 studies / 31 reports, 300 QA items, 90 outcomes and 320 deferred eligibility/identity records.
+Use ../Task3_First_Draft_2026-10-24 and ../Task3_LaTeX_2026-10-24. The material below describes an earlier checkpoint. Current counts are 30 studies / 31 reports, 300 QA items, 90 outcomes and 318 deferred eligibility/identity records.
 
 ## Historical notes
 

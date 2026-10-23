@@ -8,7 +8,7 @@ Deliverable,Requirement,Location,Status,Team action or remaining limit
 7,Exact search strings,Report appendix and search register,Partly closed,Historical fields and run/export mapping are incomplete
 8,Inclusion and exclusion criteria,Report section 3 and Eligibility.csv,Present,Apply the same six criteria to each added paper
 9,Database wise search results,Search_Log.csv and report section 4,Partly closed,Historical displayed/exported counts need evidence
-10,Search and screening log,Screening_Log.csv and Final_Screening_Decisions.csv,Partly closed,559 continuation screening decisions complete; 320 advanced eligibility/identity cases deferred
+10,Search and screening log,Screening_Log.csv and Final_Screening_Decisions.csv,Partly closed,559 continuation screening decisions complete; 318 advanced eligibility/identity cases deferred
 11,Duplicate removal record,Duplicate_Removal.csv and identity audit,Documented with limits,114 links applied; unresolved companion/native identities remain
 12,PRISMA flow diagram,Report section 4 and counts.tex,Partly closed,Historical flow and current branch accounting are labelled; whole-review flow is not final
 13,QA checklist and scores,Master QA and Final_Candidate_QA.csv,Source appraisals present,300 items; independent checking must be recorded only when done

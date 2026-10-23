@@ -1,6 +1,6 @@
 # Task 3 LaTeX project
 
-This self-contained project produces the 30-study/31-report first draft. Its evidence snapshot is dated 23 October; this portable folder was packaged on 24 October. The report explicitly retains 320 deferred eligibility/identity records.
+This self-contained project produces the 30-study/31-report first draft. Its evidence snapshot is dated 23 October; this portable folder was packaged on 24 October. The report explicitly retains 318 deferred eligibility/identity records.
 
 ## Overleaf
 1. Download the separate LaTeX ZIP.

@@ -1,8 +1,9 @@
 {
-  "clean_zip_extraction_build_passed": true,
-  "private_files_or_repository_inputs_required": false,
-  "compiled_PDF_text_matches_submission": true,
+  "standalone_build_passed": true,
+  "pages": 163,
+  "text_matches_submission_pdf": true,
   "undefined_references": false,
   "overfull_boxes": false,
-  "compiler": "pdfLaTeX with BibTeX and two final pdfLaTeX passes"
+  "open_eligibility": 318,
+  "source_snapshot": "30 studies / 31 reports"
 }

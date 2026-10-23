@@ -4,7 +4,7 @@ Use the new dated package for all further editing. Keep the earlier frozen ZIP a
 
 The draft includes 30 unique studies across 31 reports, 300 QA items, 90 source observations and two separate calculations. The ten additions are S021-S030, reports P024-P033. KACE is S030/P033. Report IDs P022/P023 are not new included studies merely because the numbering has gaps.
 
-All 559 continuation records have screening decisions. The first-draft cutoff retains 320 advanced records as deferred eligibility or identity work. No decision has been invented to remove that queue. Historical search provenance and source-version limits remain in the report. The included-study decisions and extracted findings are source-assessed decisions, not placeholders.
+All 559 continuation records have screening decisions. The first-draft cutoff retains 318 advanced records as deferred eligibility or identity work. No decision has been invented to remove that queue. Historical search provenance and source-version limits remain in the report. The included-study decisions and extracted findings are source-assessed decisions, not placeholders.
 
 | Person | Work on this version | Record corrections |
 |---|---|---|

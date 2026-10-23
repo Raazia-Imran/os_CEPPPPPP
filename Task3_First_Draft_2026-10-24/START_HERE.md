@@ -1,9 +1,7 @@
-# Start here
+# Current first draft
 
-Use 04_Team/Team_Guide.pdf first. This is the current 30-study / 31-report team package. The two ZIPs previously shared with teammates are the older 20-study / 21-report version. The report/evidence snapshot is dated 23 October and this organized handover is dated 24 October 2026.
+Start with 04_Team/READ_THIS_FIRST.md or the one-page Team_Guide.pdf. Eshaal owns the LaTeX edit; Rameen checks evidence and returns corrections. The older frozen ZIPs are backups.
 
-Read 01_Report/CEP_Task3_First_Draft.pdf. Use the matching Word file for comments and 02_Master/CEP_Task3_Evidence_Workbook.xlsx as the database. The private team ZIP includes ten added source PDFs. They are excluded from public GitHub; their exact sources, DOIs and hashes are in 03_Data_and_Logs.
+Current corpus: 30 studies / 31 reports, 300 QA items, 90 observations and two separate calculations. Continuation eligibility: 16/334 closed; 318 open. The entire SLR is incomplete. See 04_Team/Progress.pdf for actual denominators and every guideline heading.
 
-The separate Task3_LaTeX_2026-10-24 folder is self-contained and can compile without the whole repository. All thirteen report sections are drafted. All 559 continuation screening decisions are recorded. Full-text eligibility/identity remains deferred for 320 advanced records; the whole SLR is not 100% complete. The deliverable matrix states the remaining limits.
-
-Eshaal and Rameen have individual CSV check queues. Existing older checks transfer by stable IDs. Only actual completed source checks should receive a checker name and date. Raazia maintains the single master and applies accepted changes. Keep the older frozen ZIPs as historical backups.
+01_Report holds PDF/Word; 02_Master holds Excel; 03_Data_and_Logs holds CSVs and decisions; 05_Added_Paper_PDFs contains ten private reading copies in the ZIP; 06_Protocol_and_Guidelines holds requirements; 07_Historical_Backup preserves the original release. 08_LaTeX in the full ZIP contains the self-contained editable project. Private retrieval reading copies are in 09_Eligibility_Reading, with open status explicit. These private PDFs are absent from public GitHub.

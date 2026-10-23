@@ -13,8 +13,8 @@
   "screening_excluded": 225,
   "advanced": 334,
   "full_text_added_include": 10,
-  "full_text_added_exclude": 4,
-  "advanced_open": 320,
+  "full_text_added_exclude": 6,
+  "advanced_open": 318,
   "whole_review_PRISMA_final": false,
   "frozen_report_unchanged": true
 }
