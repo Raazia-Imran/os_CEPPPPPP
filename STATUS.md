@@ -11,3 +11,9 @@ The current PDF has 156 pages including evidence appendices, with all 13 main se
 The frozen 20-study/21-report ZIP, report, workbook and submitted protocol are unchanged. Use the current report and workbook together; do not combine frozen counts with current evidence.
 
 Start with [current status](task3/screening559/CURRENT_STATUS.md), [report](task3/screening559/integrated_report/main.pdf), [master workbook](task3/screening559/integrated_workbook/CEP_Task3_Working_Integrated_2026-10-23.xlsx) and [teammate handover](task3/screening559/SUBMISSION_HANDOVER.md). Record genuine teammate corrections by stable ID in the correction inbox. No independent human votes are invented.
+
+## Resumed checkpoint, 23 October 2026
+
+Reconciled all 559 continuation IDs: 225 screening exclusions, 13 closed eligibility decisions and 321 open eligibility/identity records. `task3/screening559/Open_Eligibility_Queue.csv` lists the exact open set. Verified the nine added report DOIs in the current LaTeX and their IDs/DOIs in the packaged workbook; corrected stale integration-pending ledger labels. The finalizer now preserves a previously recorded integration status when source hash, DOI and IDs are unchanged.
+
+Recovered the author-hosted ten-page KACE full text (R00035); DOI/title and source hash are recorded in `Resumed_Source_Retrieval.csv`. Retrieval does not yet change eligibility or corpus totals. Existing continuation validation passes and frozen hashes are unchanged. See `RESUME_AUDIT.json` for the report/workbook hashes and evidence checks.

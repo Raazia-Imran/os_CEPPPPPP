@@ -29,6 +29,7 @@ references=read('New_Included_References.csv')
 mapping={x['Record ID']:(x['Study ID'],x['Report ID'],sources[x['Record ID']]['Candidate name']) for x in references}
 qa = read('Candidate_QA_Prepared.csv')
 outcomes = read('Candidate_Outcomes_Prepared.csv')
+previous_decisions = {x['Record ID']: x for x in read('Final_Eligibility_Decisions.csv')} if (d/'Final_Eligibility_Decisions.csv').exists() else {}
 decisions = []
 for rid, (sid, pid, name) in mapping.items():
     checks = [x for x in criteria if x['Record ID'] == rid]
@@ -37,6 +38,10 @@ for rid, (sid, pid, name) in mapping.items():
     assert len([x for x in qa if x['Record ID'] == rid]) == 10
     assert any(x['Record ID'] == rid for x in outcomes)
     source = sources[rid]
+    previous = previous_decisions.get(rid, {})
+    integration_status = 'Eligible addition; synthesis/report/workbook integration pending'
+    if all(previous.get(k) == v for k, v in [('Source SHA256', source['Source SHA256']), ('Study ID', sid), ('Report ID', pid), ('DOI', source['DOI'])]):
+        integration_status = previous.get('Working integration status') or integration_status
     decisions.append({'Record ID': rid, 'Study ID': sid, 'Report ID': pid,
         'Short name': name, 'Final eligibility decision': 'Include',
         'Basis': 'All IC1-IC6 met on inspected final primary text; see criterion-level source anchors',
@@ -45,7 +50,7 @@ for rid, (sid, pid, name) in mapping.items():
         'Decision method': 'Single automated source-based review; user-reported instructor permission; amendment M2026-10-23',
         'Independent human vote': '', 'Decided UTC': now,
         'Applied to frozen release': 'No',
-        'Working integration status': 'Eligible addition; synthesis/report/workbook integration pending'})
+        'Working integration status': integration_status})
 exclusions=read('Full_Text_Exclusions.csv') if (d/'Full_Text_Exclusions.csv').exists() else []
 write('Final_Eligibility_Decisions.csv', decisions+exclusions)
 finalcriteria = []
