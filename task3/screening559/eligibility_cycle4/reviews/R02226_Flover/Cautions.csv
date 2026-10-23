@@ -1,0 +1,8 @@
+Record ID,Study ID,Report ID,Issue,Meaning,Anchor
+R02226,S038,P041,Eligibilityboundary,"Included for empirical local independent-model-instance baseline sharing. Proposed fusedstream alone is request batching, not proof all requestbatchers qualify.",p3; p7
+R02226,S038,P041,Scale,16.7xLlama65B is4GPU;13xLlama33B is2GPU. Keep outside local headline comparisons.,p7 Fig4
+R02226,S038,P041,Latencycost,Meanrequestlatency increases under fusion compared with isolatedrequest; aggregatecompletion improvements notzero cost.,pp7–8
+R02226,S038,P041,Modelmention,Source mentionsLlama6B/7B inconsistently; selectedextractsuseclearlymapped13B/GPTJ6B.,"pp2,7"
+R02226,S038,P041,Arrivalnotation,"Source labels exponentialinterval parameterlambda in milliseconds, unlike rate notation in otherstudies. Preserve units.",p8 Fig5
+R02226,S038,P041,ORCAclaim,Authors claim ORCAuniformlengthrestriction but no direct matchedexperiment; do not adopt broad superiority as established.,"pp3,10"
+R02226,S038,P041,Version,OfficiallabBibTeX resolves sixauthors includingTianChen despite blank renderedauthorlink.,OfficialNowLabBibTeX

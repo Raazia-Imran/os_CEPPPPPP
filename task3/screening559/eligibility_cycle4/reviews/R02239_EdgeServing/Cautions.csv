@@ -1,0 +1,8 @@
+Record ID,Study ID,Report ID,Issue,Meaning,Anchor
+R02239,S037,P040,Accuracy,Latency gains require substantial quality loss at load; early exit accuracy must accompany serving metrics.,pp3–4 TableI; pp6–8
+R02239,S037,P040,Proxy,"Runtime accuracy computed by weighting fixed per-exit table accuracy, not directly evaluating each completed request prediction.",p6 §VI.C
+R02239,S037,P040,Trafficaxis,Traffic intensity lambda denotes ResNet152 rate; totalrate6lambda for3:2:1 experiment. Other modelcombination uses equal rates.,pp5–7
+R02239,S037,P040,Profilestatistic,§III/V saysP95 profile; §IV.B saysaverage latency; §VI saysP95 scheduler. Do not silently reconcile implementation ambiguity.,"pp2–4,6"
+R02239,S037,P040,Hardwareidentity,GTX1650 and1650Super names conflict; exactvariant unknown.,"pp5,7"
+R02239,S037,P040,Determinism,Measured coefficientofvariation<3percent does not prove deterministic latency under all conditions.,p3
+R02239,S037,P040,Publicationgap,"Accepted fullconference source verified; publisher DOI/pages remain unknown, arXivDOI not substituted.",Author acceptance records

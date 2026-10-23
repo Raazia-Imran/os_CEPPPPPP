@@ -1,0 +1,11 @@
+{
+  "record": "R02239",
+  "study": "S037",
+  "report": "P040",
+  "IC_rows": 6,
+  "QA_rows": 10,
+  "QA_score": 12,
+  "QA_applicable_maximum": 18,
+  "outcomes": 8,
+  "PDF_in_git": false
+}

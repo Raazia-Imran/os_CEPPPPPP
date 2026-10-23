@@ -1,0 +1,8 @@
+Record ID,Study ID,Report ID,Issue,Meaning,Anchor
+R01586,S034,P037,Dates,Cite2026 perpublisher citation; retainfirstonline27Aug2025 andEuro-Par2025 conference.,Publisher metadata; authorrecord
+R01586,S034,P037,Tailtradeoff,HAS-GPUP90=109.8ms vsKServe93.1ms; betterP95/P99 doesnotmeaneveryquantileimproves.,p13 Fig6
+R01586,S034,P037,Pricing,"2.48USD/hour assumedGoogleCloudV100price supports resource-derivedcost,notliteralnewpurchaseinvoice.",p13
+R01586,S034,P037,No universals,Broad first-work/LLMs requireexclusiveGPU statements in source are not adopted as review facts.,pp2–3
+R01586,S034,P037,MPSlimits,Temporalquota changes aredynamic; SMallocationtiedtoinitialCUDAcontext andheldstable.,p7
+R01586,S034,P037,Headlineambiguity,10.8xcostheadline described both average and up-to language; rawfunctioncosts preferred.,"pp1,14"
+R01586,S034,P037,Localvscluster,Fig4 localallocation sensitivity; Fig6/7 tenGPUplatform/function results. Do notdescribe allnumbersas controlledoneGPUcotenantcomparison.,pp11–14
