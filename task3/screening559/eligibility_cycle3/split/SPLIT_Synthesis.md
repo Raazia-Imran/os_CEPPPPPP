@@ -1,0 +1,13 @@
+# SPLIT: synthesis and claim boundaries
+
+SPLIT is eligible for the local GPU-sharing review. It adds model-aware temporal sharing, using offline genetic search for evenly sized blocks and online greedy block-boundary preemption. Independently arriving model tasks share one physical Jetson Nano; section6explicitly says execution is sequential to avoid interactions. Do not misclassify it as measured MPS/MIG spatial sharing merely because several model requests are live.
+
+The engineering decision is lower short-request waiting and target-violation risk versus added model-splitting execution cost and reduced long-request stability. It supports static-DAGCNNs/Transformers; the authors identify input-dependent RNNexecution as unsuitable for offline splitting. The elastic mechanism suspends splitting at very dense loads or many same-type requests. Shorter90msintervals cause growing queues, while200msintervals make sequential processing sufficient; those loads are excluded from the six main scenarios rather than evidence that the method handles all regimes.
+
+Keep these definitions separate: end-to-end latency includes waiting and execution; response ratio normalizes by isolated execution time; target multiplier alpha is swept2-20; reported jitter is the SDof block execution time. The block-dispersion objective is not identical to end-to-end request-latency jitter or p99. Figure7and prose provide short-request improvements while explicitly sacrificing stability for long requests. No throughput/utilization/fault-isolation benefit is inferred.
+
+The abstract describes a43%latency-violation-rate reduction, whereas the conclusion describes a43%response-ratio reduction. These are different quantities, and the comparator/context is not unambiguous; the package does not use43%as a synthesized numerical effect. Likewise, the stated<10%versus26%threshold comparison does not identify a precise panel in its sentence; preserve that attribution rather than constructing an exact paired effect.
+
+Other reporting cautions: the profiling section says11models but enumerates10; the request-generation parameterization calls lambda an average interval in ms, so do not silently convert it into a conventional Poisson arrival rate; PREMA/ClockWork descriptions are the authors' baselines and do not establish original artifact equivalence. Hardware/runtime setup lacks CUDAversion,batch,input-shape and repeated-trial details. No full reproduction is claimed.
+
+QA:14/18applicable points(77.78%), with Q6reasonedN/A because no utilization/throughput/density benefit is claimed. This is reporting appraisal, not an inclusion gate, precision estimate or independent reviewer agreement. All initial human-vote fields remain blank.

@@ -1,0 +1,19 @@
+{
+  "record": "R01093",
+  "study": "S028",
+  "report": "P031",
+  "final_decision": "Include",
+  "all_six_IC_met": true,
+  "QA_rows": 10,
+  "QA_raw_sum": 15,
+  "QA_applicable_maximum": 20,
+  "QA_percent": 75.0,
+  "outcome_rows": 8,
+  "caution_rows": 11,
+  "source_sha256": "e06cad575734efc02dfa2c7cecfc9a8bc7226d706920a9e1ca09a82edcb6a2fe",
+  "source_pages": 14,
+  "independent_human_vote": false,
+  "reading_PDF_copied_into_repository": false,
+  "root_registers_modified_by_this_builder": false,
+  "checked_utc": "2026-10-23T04:24:30.973342+00:00"
+}

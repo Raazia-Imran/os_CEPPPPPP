@@ -1,8 +1,14 @@
 """Apply explicitly read record judgments without filling human votes or final decisions."""
 from pathlib import Path
-import csv,json,datetime,hashlib,collections,sys
+import csv,json,datetime,hashlib,collections,sys,re
 d=Path(__file__).resolve().parent
-batch=sys.argv[1]; judgments=json.loads((d/f'batch{batch}_judgments.json').read_text())
+if len(sys.argv) != 2 or not re.fullmatch(r'[0-9]{3}', sys.argv[1]):
+ raise SystemExit('Usage: apply_batch.py NNN (three-digit batch ID)')
+batch=sys.argv[1]
+judgment_path=(d/f'batch{batch}_judgments.json').resolve()
+if judgment_path.parent != d:
+ raise SystemExit('Judgment file must remain in the screening directory')
+judgments=json.loads(judgment_path.read_text())
 q=list(csv.DictReader((d/'Working_559_Queue.csv').open(newline='')))
 now=datetime.datetime.now(datetime.timezone.utc).isoformat();rows=[]
 for x in q:
@@ -18,7 +24,10 @@ def write(path,rr):
  with path.open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(rr[0]));w.writeheader();w.writerows(rr)
 assert len(rows)==len(judgments)
-write(d/f'Batch_{batch}_Abstract_Review.csv',rows);write(d/'Working_559_Queue.csv',q)
+review_path=(d/f'Batch_{batch}_Abstract_Review.csv').resolve()
+if review_path.parent != d:
+ raise SystemExit('Review output must remain in the screening directory')
+write(review_path,rows);write(d/'Working_559_Queue.csv',q)
 assert all(not x[k] for x in q for k in ['Initial decision','Independent decision','Adjudicated decision'])
 snap=json.loads((d/'frozen_snapshot.json').read_text())
 for p,sha in snap['sha256'].items():assert hashlib.sha256((d.parents[1]/p).read_bytes()).hexdigest()==sha,p
