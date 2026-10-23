@@ -1,0 +1,22 @@
+{
+"R03153":["propose_exclusion","EC2","Layer partitioning/merging parallelizes DNN training, not concurrent inference tenants.","Verify primary scope."],
+"R03164":["uncertain_need_full_text","IC3","GPU kernel interference classification uses ML predictors, but actual evaluated inference workloads are not identified.","Inspect workload list; using CNN/GRU as predictors is not inference-sharing evidence."],
+"R03300":["propose_exclusion","EC2","MrCAN is a time-series forecasting architecture without GPU inference tenant sharing.","Verify primary scope."],
+"R03325":["propose_exclusion","EC2","The wind-maintenance LLM agent evaluates tool-grounded answers rather than GPU sharing.","Verify primary scope and publication date."],
+"R03333":["propose_exclusion","EC2","PINN vortex simulation does not evaluate GPU inference co-tenants; interference is fluid wake interaction.","Verify primary scope."],
+"R03335":["uncertain_need_full_text","IC2/IC5","LGT4CG measures GPU TEE inference overhead but does not describe concurrent independent tenants.","Inspect protected-context sharing and fault/security evaluation; do not conflate its GPU Shield name with other studies."],
+"R03360":["propose_exclusion","EC1","This is explicitly a review of warehouse robot AI techniques rather than a primary GPU-sharing study.","Verify publication type."],
+"R03394":["propose_exclusion","EC2","TakuNet benchmarks efficient vision models on devices without concurrent inference tenant sharing.","Verify primary scope."],
+"R03421":["propose_exclusion","EC1","This is explicitly a review of battery management systems, not a primary GPU-sharing study.","Verify publication type."],
+"R03428":["propose_exclusion","EC2","KANT improves code-comprehension LLM inference with knowledge anchors, without GPU sharing evaluation.","Verify primary scope."],
+"R03445":["propose_exclusion","EC2","Medical slice-to-volume registration models do not evaluate concurrent GPU inference tenants.","Verify primary scope."],
+"R03455":["propose_exclusion","EC2","The autoencoder learns modulation/coding for wireless channels rather than GPU sharing.","Verify primary scope."],
+"R03463":["propose_exclusion","EC2","Underwater imaging and segmentation do not evaluate concurrent model-serving GPU tenancy.","Verify primary scope."],
+"R03465":["propose_exclusion","EC2","SkyGPT predicts cloud images and solar output without a GPU-sharing mechanism.","Verify primary scope."],
+"R03479":["propose_exclusion","EC1","This is explicitly a scientometric/systematic review of computer vision for sidewalks.","Verify publication type; no primary GPU-sharing inclusion."],
+"R03485":["propose_exclusion","EC2","Earthquake damage mapping and vehicle routing do not describe GPU inference sharing.","Verify primary scope."],
+"R03492":["propose_exclusion","EC2","The paper solves a plasma PDE with PINNs without concurrent GPU inference tenants.","Verify primary scope."],
+"R03540":["propose_exclusion","EC2","The paper predicts travel locations using geospatial neural models rather than GPU sharing.","Verify primary scope."],
+"R03553":["propose_exclusion","EC2","Graph reinforcement learning for portfolio optimization does not evaluate GPU inference tenant sharing.","Verify primary scope."],
+"R03562":["propose_exclusion","EC2","The artistic design framework benchmarks one-GPU generation speed without a concurrent tenant sharing setup.","Verify primary scope and actual meaning of dynamic resource scheduling."]
+}

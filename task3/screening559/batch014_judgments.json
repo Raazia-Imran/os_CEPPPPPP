@@ -1,0 +1,22 @@
+{
+"R02367":["propose_exclusion","EC2","The study compares glyph recognition models and preprocessing, without concurrent inference GPU sharing.","Verify primary scope."],
+"R02382":["propose_exclusion","EC2","MIG denotes metal inert gas welding; the paper classifies welding faults rather than sharing GPUs for inference.","Verify primary scope and record acronym false positive."],
+"R02406":["propose_exclusion","EC2","The nuclear-theory infrastructure outlook does not describe concurrent model-serving GPU tenants.","Verify primary scope and publication type."],
+"R02408":["propose_exclusion","EC2","PINN welding thermal simulation uses a GPU for convergence but not concurrent inference tenants; MIG refers to welding.","Verify primary scope and acronym false positive."],
+"R02440":["propose_exclusion","EC2","The paper parallelizes SNN hyperparameter training rather than serving concurrent inference tenants.","Verify primary scope."],
+"R02513":["propose_exclusion","EC2","Federated toxicity prediction concerns collaborative model training/privacy rather than a GPU inference-sharing mechanism.","Verify primary scope and final metadata."],
+"R02578":["propose_exclusion","EC2","The supplied text describes wetland microplastic prediction, without GPU tenant sharing; the recovered abstract begins mid-sentence.","Verify primary abstract and scope before final exclusion."],
+"R02596":["propose_exclusion","EC2","WaveDL supplies scientific inverse-problem training and export tooling, without concurrent inference GPU sharing.","Verify primary scope; Apple MPS is a different meaning from NVIDIA MPS."],
+"R02610":["propose_exclusion","EC2","The model predicts vibration-related neck discomfort rather than evaluating GPU inference tenant sharing.","Verify primary scope."],
+"R02660":["propose_exclusion","EC2","The plasma-control pipeline measures individual GPU inference latency; no concurrent co-tenant sharing experiment is described.","Check primary full text for any omitted multi-tenant experiment."],
+"R02674":["propose_exclusion","EC2","The paper develops a financial forecasting model, not an inference GPU-sharing mechanism.","Verify primary scope."],
+"R02755":["propose_exclusion","EC2","The paper improves light-field image quality with a CNN, without concurrent inference tenant sharing.","Verify primary scope."],
+"R02792":["uncertain_need_full_text","IC2/IC3/IC5","The recovered text is a truncated retinal-classification snippet rather than a complete abstract; no sharing evidence is provided.","Recover actual primary abstract before definitive scope decision."],
+"R02838":["propose_exclusion","EC2","The paper detects landslides with InSAR/CNNs without an evaluated GPU-sharing setup.","Verify primary scope."],
+"R02873":["propose_exclusion","EC2","MPS denotes Moving Particle Semi-Implicit simulation; the ML boundary treatment does not evaluate inference GPU tenants.","Verify primary scope and acronym false positive."],
+"R02966":["propose_exclusion","EC2","The paper estimates thermoelectric storage reliability using a neural predictor, not GPU inference sharing.","Verify primary scope."],
+"R03001":["propose_exclusion","EC2","Geophysical Bayesian inversion and generative models do not describe concurrent inference tenants sharing one GPU.","Verify primary scope; co-located properties are geological, not GPU tenancy."],
+"R03077":["uncertain_need_full_text","IC2/IC3/IC5","OKEAP predicts kernel execution time and selects devices; ML inference may refer to the predictor, not a GPU-sharing workload.","Inspect actual concurrent inference benchmark and one-GPU sharing intervention."],
+"R03084":["propose_exclusion","EC5","The proposed accelerator is FPGA-based preprocessing/postprocessing around YOLO, not GPU sharing.","Verify primary hardware scope."],
+"R03098":["propose_exclusion","EC2","The dataset/simulator uses multi-GPU hyperparameter training and attack classification without concurrent model-serving sharing.","Verify primary scope."]
+}

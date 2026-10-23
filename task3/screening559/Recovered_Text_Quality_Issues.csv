@@ -1,0 +1,6 @@
+Record ID,Issue,Required action
+R02352,Truncated publisher-page snippet,Retrieve and verify complete primary abstract or full text; do not treat recovered text as complete.
+R02578,Recovered abstract begins mid-sentence,Retrieve and verify complete primary abstract or full text; do not treat recovered text as complete.
+R02792,Truncated publisher-page snippet,Retrieve and verify complete primary abstract or full text; do not treat recovered text as complete.
+R03906,Generic publisher branding instead of article abstract,Retrieve and verify complete primary abstract or full text; do not treat recovered text as complete.
+R03930,Truncated publisher-page snippet,Retrieve and verify complete primary abstract or full text; do not treat recovered text as complete.

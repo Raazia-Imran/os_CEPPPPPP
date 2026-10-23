@@ -1,0 +1,14 @@
+Record IDs,Issue,Evidence based limitation or clarification,Anchor
+R00080,Version,Author-hosted SOSP version used. The older arXiv abstract has different SOTA latency/throughput summaries; do not mix versions.,PDF p1 versus arXiv2504.15465 abstract
+R00080,Baseline fairness,Inference-only experiment has three applications for LithOS/MPS but no BE application for MIG/Limits; MIG uses3/7-4/7 rather than25/75 split. Comparisons are scenario dependent.,PDF p11 section8.1
+R00080,Implementation portability,REEF and Orion baselines were reimplemented and extended; persistent/cross-block kernels disable atomization and stealing. Functional support on other architectures is not a repeated performance evaluation.,PDF p10 sections6-7
+R00143,Hardware discrepancy,"Table2 labels A100 as128SM, which needs verification against actual device configuration; do not silently copy or correct this hardware field.",PDF p9 Table2; artifact p15 A100-PCIE-40GB
+R00143,Measurement population,"Baseline queries past QoS deadline are dropped and excluded from latency calculations, but dropped queries are counted in QoS violation. Throughput is queries/s, not images/s.",PDF pp9-10 sections7.1-7.3
+R00143,Adverse result,VGG16/VGG19 saturated operators can have slight performance degradation from scheduling overhead. Profiling cost and CPU prediction overhead must accompany benefit claims.,"PDF pp10,12 sections7.3 and7.8"
+R00062;R00145;R00299,Date scope clarification,The submitted protocol starts1January2020. These2020 records do not need a pre2020 seminal exception. Earlier batch notes asking to check an exception condition are resolved by protocol section6.,Submitted protocol PDF p8 section6
+R01089,Publication year,"Frozen queue says2024, but the retrieved typeset paper identifies SenSys2023 and the exact DOI. Preserve old metadata and propose a2023 correction.",PDF p1
+R01089,Platform description,"Section9.1.1 labels a Jetson AGX Xavier as Pascal256CUDA cores, while the background describes TX2. Verify actual platform identity before normalizing hardware; do not silently repair the source.","PDF pp2,9"
+R01089,Claim boundary,"Introductory summary says under10percent critical latency overhead, but the closed-loop result on p9 describes a21percent increase versus Sequential. Attach workload and baseline to each claim.","PDF pp1-2,9 section9.2"
+R00656,Model count,"Abstract and Table3 identify11models (8LS,3BE), while section9.2 says12. Preserve this internal reporting discrepancy.","PDF pp1,10"
+R00656,Baseline/configuration,"Orion policy is reimplemented within SGDRC, MPS uses a50/50compute split, and all systems disable dynamic batching. SLO threshold depends on number of concurrent services.",PDF p10 section9.2
+R00656,Adverse result,Overall throughput is lower than Multi-streaming in some cases although its LS goodput/latency is better. Do not state universal throughput dominance.,PDF pp10-11 section9.3

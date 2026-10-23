@@ -1,0 +1,13 @@
+record_id,criterion,result,rationale,evidence_anchor
+R00179,IC1,Met,English peer-reviewed conference primary paper; version and venue evidenced above.,PDF p3 section 2.3; p9 Table 5 and section 7.2
+R00179,IC2,Not met,Design explicitly executes one GPU job at a time and eschews GPU sharing across apps during recording/replay. The reported replay inference and CPU interference correctness tests do not evaluate independent concurrent GPU inference tenants. Yielding to interactive apps is not evaluated concurrent inference sharing.,PDF p3 section 2.3; p9 Table 5 and section 7.2
+R00179,IC3,Met in isolation,"Inference workloads are evaluated, but not in the required concurrent independent-tenant sharing setting.",PDF p3 section 2.3; p9 Table 5 and section 7.2
+R00179,IC4,Not met for review scope,"Inspectable performance exists for the paper objective, but no relevant concurrent inference sharing outcome.",PDF p3 section 2.3; p9 Table 5 and section 7.2
+R00179,IC5,Not met for review scope,Local GPU results do not provide a per-GPU concurrent inference co-tenant comparison.,PDF p3 section 2.3; p9 Table 5 and section 7.2
+R00179,IC6,Met,2022 ASPLOS or 2021 CGO within protocol window.,PDF p3 section 2.3; p9 Table 5 and section 7.2
+R00562,IC1,Met,English peer-reviewed conference primary paper; version and venue evidenced above.,PDF p1 abstract; p8 sections V.B/V.C/VI.A and Fig9; p9 section VI.B Fig11
+R00562,IC2,Not met,"Compiler detects tensorized instruction applicability and rewrites individual tensor operations. Evaluation compares individual batch-one DNN inference models and convolution kernels with cuDNN/TVM, rather than concurrent independent models/apps/tenants. Intra-kernel parallelism and instruction utilization are not systems-level GPU sharing among inference tenants.",PDF p1 abstract; p8 sections V.B/V.C/VI.A and Fig9; p9 section VI.B Fig11
+R00562,IC3,Met in isolation,"Inference workloads are evaluated, but not in the required concurrent independent-tenant sharing setting.",PDF p1 abstract; p8 sections V.B/V.C/VI.A and Fig9; p9 section VI.B Fig11
+R00562,IC4,Not met for review scope,"Inspectable performance exists for the paper objective, but no relevant concurrent inference sharing outcome.",PDF p1 abstract; p8 sections V.B/V.C/VI.A and Fig9; p9 section VI.B Fig11
+R00562,IC5,Not met for review scope,Local GPU results do not provide a per-GPU concurrent inference co-tenant comparison.,PDF p1 abstract; p8 sections V.B/V.C/VI.A and Fig9; p9 section VI.B Fig11
+R00562,IC6,Met,2022 ASPLOS or 2021 CGO within protocol window.,PDF p1 abstract; p8 sections V.B/V.C/VI.A and Fig9; p9 section VI.B Fig11

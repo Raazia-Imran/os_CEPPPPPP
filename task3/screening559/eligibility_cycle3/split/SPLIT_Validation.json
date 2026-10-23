@@ -1,0 +1,15 @@
+{
+  "six_criteria_met": true,
+  "QA_items": 10,
+  "QA_raw_sum": 14,
+  "QA_applicable_maximum": 18,
+  "QA_percent": 77.77777777777779,
+  "outcome_rows": 6,
+  "source_pages": 10,
+  "source_sha256": "6f21116f4e99fb2a2eaa2218ffda80a70aa4a6db0bda23c0bd00cfac111b538f",
+  "independent_human_vote": false,
+  "IDs_reserved_by_root": true,
+  "licensed_PDF_redistributed": false,
+  "eligibility": "Include",
+  "classification": "Model-aware temporal block preemption; sequential execution of independently arriving tasks on one physical GPU"
+}

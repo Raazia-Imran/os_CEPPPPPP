@@ -1,0 +1,33 @@
+{
+  "tabs": 38,
+  "working_studies": 29,
+  "count_differences": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "added_QA_checks": {
+    "S027": {
+      "score": 13,
+      "maximum": 18
+    },
+    "S028": {
+      "score": 15,
+      "maximum": 20
+    },
+    "S029": {
+      "score": 14,
+      "maximum": 18
+    }
+  },
+  "transport_shared_strings_readback_passed": true,
+  "cell_values_formulas_and_styles_preserved": true
+}

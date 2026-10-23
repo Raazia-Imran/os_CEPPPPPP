@@ -1,0 +1,13 @@
+Heading,Requirement,Current snapshot status,Integrated evidence,Remaining condition
+15,Taxonomy,Integrated,"Temporal/spatial,edge/compiler-runtime and memory-management families cover current29-study corpus",Full eligible-set closure pending
+16,Comparison,Integrated,Contextual comparative matrices and hardware/workload/baseline limits updated,Matched comparisons remain limited by source designs
+17,Trade-offs,Integrated,"Latency/utilization,accuracy,memory,power,transfer and implementation costs updated",Do not infer universal performance or isolation guarantees
+18,Conflicting evidence,Integrated,Adverse and unlike-context results retained; batch latency and serving tails distinguished,Source inconsistencies remain explicit
+19,RQ synthesis,Integrated,"All five RQs updated with source-specific compiler/runtime,model-block,edge and memory evidence",May change as323advanced records close
+20,Recommendation,Integrated,Conditional choice matrix includes new supported workloads and sacrifices,Deployments still need configuration-specific validation
+21,Research gaps,Integrated,"Reproducibility,metrics,version,isolation and workload gaps tied to source corpus",No worldwide absence/first-survey claim
+22,Validity,Integrated,"Single-review process,selection,text access,search and comparability limits retained",Historical unknowns not erased
+23,Mandatory deliverables,Partly closed,"WorkingPDF,LaTeX,masterworkbook,reference and source logs prepared",Final selection/PRISMA closure and finalrelease pending
+24,Report structure,Drafted,"All13main sections,references and evidence appendices included",Final prose/count refresh after research closure
+25,Analytical standard,Integrated for current corpus,"Critical evaluation,classification,comparison,trade-offs,synthesis and engineering decision",Systematic eligibility remains incomplete
+26,Research quality,Partly closed,"Stable IDs,DOIs,source hashes,criteria,QA,outcomes and unknowns traceable",Search provenance and323advanced records remain open

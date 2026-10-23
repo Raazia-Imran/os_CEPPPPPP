@@ -1,0 +1,22 @@
+{
+"R00398":["propose_exclusion","EC1","The paper surveys prior hosting and outlines a deployment vision and research directions rather than a described full empirical primary study.","Verify position/vision status from full publication metadata."],
+"R00413":["propose_exclusion","EC2","SmartNIC image preprocessing accelerates pipelines, without described GPU tenant sharing evaluation.","Check independently for a relevant same-device co-tenant inference experiment."],
+"R00415":["propose_exclusion","EC5","The optimizations target CPU GNN inference, without an evaluated GPU sharing mechanism.","Independent scope check."],
+"R00416":["propose_exclusion","EC2","DONS is a CPU packet-level network simulator, not a concurrent inference GPU sharing system.","Independent scope check."],
+"R00420":["propose_exclusion","EC2","Concurrent Tensor and CUDA units execute one GNN computation; this is not described as distinct tenant inference sharing.","Independent tenant-scope check."],
+"R00422":["propose_exclusion","EC5","FlexiDRAM is processing-in-DRAM hardware compared to GPUs, not an evaluated GPU sharing mechanism.","Independent accelerator-scope check."],
+"R00446":["propose_exclusion","EC5","MCoreOPU is an FPGA processor; A100 comparisons do not establish GPU tenancy sharing.","Independent scope check."],
+"R00449":["propose_exclusion","EC5","DACAPO proposes a custom partitionable accelerator rather than GPU sharing; GPU continuous-learning systems are comparators.","Verify no relevant evaluated GPU mechanism and reconcile 2024 DOI versus recorded 2025 if used as context."],
+"R00455":["propose_exclusion","EC5","MicroEdge explicitly multiplexes Coral TPUs rather than GPUs.","Keep relevant accelerator context separate from the GPU corpus."],
+"R00461":["retain_for_full_text","IC2/IC3/IC4/IC5","DynCNN controls neural network concurrency and GPU frequency under thermal/power constraints on Jetson devices.","Verify distinct concurrent models/streams and local inference trade-off measurements."],
+"R00468":["propose_exclusion","EC5","ChatOPU is FPGA LLM acceleration; GPU comparison is not an evaluated GPU sharing mechanism.","Independent scope check."],
+"R00475":["propose_exclusion","EC2","EasyAnimate changes video generation attention/training and quality, with no described concurrent multi-tenant sharing outcome.","Independent scope check."],
+"R00479":["propose_exclusion","EC2","Hippo reuses computations between hyperparameter training trials, not model-serving inference tenants.","Independent scope check."],
+"R00481":["uncertain_need_full_text","IC2/IC5","ARMA coordinates radio and application scheduling; GPU allocation is mentioned but local concurrent sharing evidence is unclear.","Inspect GPU-specific co-tenancy and local latency measurements separate from end-to-end radio effects."],
+"R00489":["propose_exclusion","EC5","COSMO implements stochastic computing in memory; GPU baseline comparison is not a GPU sharing intervention.","Independent scope check."],
+"R00519":["propose_exclusion","EC2","DBSCAN acceleration and speculative transfers do not describe concurrent model-serving GPU tenants.","Independent scope check."],
+"R00537":["propose_exclusion","EC4","DistDPU optimizes cloud network disaggregation and RDMA isolation across a large deployment; local inference GPU sharing is not described.","Verify publication status and any eligible local experiment before final decision."],
+"R00540":["propose_exclusion","EC2","MeshfreeFlowNet proposes a scientific ML model and distributed training implementation, not GPU inference tenant sharing.","Independent scope check."],
+"R00562":["propose_exclusion","EC2","UNIT compiles tensorized instructions for inference acceleration without described concurrent tenants.","Independent scope check."],
+"R00571":["propose_exclusion","EC2","HamSim performs classical quantum simulation with CUDA kernels, not ML inference sharing.","Independent scope check."]
+}

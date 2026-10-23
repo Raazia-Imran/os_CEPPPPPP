@@ -1,0 +1,20 @@
+{
+  "working_studies": 29,
+  "working_reports": 30,
+  "QA_items": 290,
+  "applicable_QA_points": 572,
+  "awarded_QA_points": 479,
+  "reported_outcomes": 84,
+  "calculations": 2,
+  "added_IC_checks": 54,
+  "added_QA_items": 90,
+  "added_outcomes": 32,
+  "added_citations": 9,
+  "screening_excluded": 225,
+  "advanced": 334,
+  "full_text_added_include": 9,
+  "full_text_added_exclude": 4,
+  "advanced_open": 321,
+  "whole_review_PRISMA_final": false,
+  "frozen_report_unchanged": true
+}

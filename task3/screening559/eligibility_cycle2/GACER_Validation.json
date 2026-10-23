@@ -1,0 +1,12 @@
+{
+  "six_criteria_met": true,
+  "QA_items": 10,
+  "QA_raw_sum": 13,
+  "QA_applicable_maximum": 18,
+  "QA_percent": 72.22222222222221,
+  "outcome_rows": 4,
+  "source_pages": 9,
+  "source_sha256": "3cd5b49a18ddaeb2de98c0c0cad1f8850ef1796686d9e79a9b654f00fe78d575",
+  "independent_human_vote": false,
+  "IDs_reserved_by_root": true
+}
