@@ -1,11 +1,31 @@
 """Apply explicitly read record judgments without filling human votes or final decisions."""
 from pathlib import Path
-import csv,json,datetime,hashlib,collections,sys,re
+import csv,json,datetime,hashlib,collections,sys
 d=Path(__file__).resolve().parent
-if len(sys.argv) != 2 or not re.fullmatch(r'[0-9]{3}', sys.argv[1]):
- raise SystemExit('Usage: apply_batch.py NNN (three-digit batch ID)')
+BATCH_FILES = {
+ '002': ('batch002_judgments.json', 'Batch_002_Abstract_Review.csv'),
+ '003': ('batch003_judgments.json', 'Batch_003_Abstract_Review.csv'),
+ '004': ('batch004_judgments.json', 'Batch_004_Abstract_Review.csv'),
+ '005': ('batch005_judgments.json', 'Batch_005_Abstract_Review.csv'),
+ '006': ('batch006_judgments.json', 'Batch_006_Abstract_Review.csv'),
+ '007': ('batch007_judgments.json', 'Batch_007_Abstract_Review.csv'),
+ '008': ('batch008_judgments.json', 'Batch_008_Abstract_Review.csv'),
+ '009': ('batch009_judgments.json', 'Batch_009_Abstract_Review.csv'),
+ '010': ('batch010_judgments.json', 'Batch_010_Abstract_Review.csv'),
+ '011': ('batch011_judgments.json', 'Batch_011_Abstract_Review.csv'),
+ '012': ('batch012_judgments.json', 'Batch_012_Abstract_Review.csv'),
+ '013': ('batch013_judgments.json', 'Batch_013_Abstract_Review.csv'),
+ '014': ('batch014_judgments.json', 'Batch_014_Abstract_Review.csv'),
+ '015': ('batch015_judgments.json', 'Batch_015_Abstract_Review.csv'),
+ '016': ('batch016_judgments.json', 'Batch_016_Abstract_Review.csv'),
+ '017': ('batch017_judgments.json', 'Batch_017_Abstract_Review.csv'),
+ '018': ('batch018_judgments.json', 'Batch_018_Abstract_Review.csv'),
+}
+if len(sys.argv) != 2 or sys.argv[1] not in BATCH_FILES:
+ raise SystemExit('Usage: apply_batch.py NNN (registered historical batch ID)')
 batch=sys.argv[1]
-judgment_path=(d/f'batch{batch}_judgments.json').resolve()
+source_name, output_name = BATCH_FILES[batch]
+judgment_path=(d/source_name).resolve()
 if judgment_path.parent != d:
  raise SystemExit('Judgment file must remain in the screening directory')
 judgments=json.loads(judgment_path.read_text())
@@ -24,7 +44,7 @@ def write(path,rr):
  with path.open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(rr[0]));w.writeheader();w.writerows(rr)
 assert len(rows)==len(judgments)
-review_path=(d/f'Batch_{batch}_Abstract_Review.csv').resolve()
+review_path=(d/output_name).resolve()
 if review_path.parent != d:
  raise SystemExit('Review output must remain in the screening directory')
 write(review_path,rows);write(d/'Working_559_Queue.csv',q)
