@@ -1,6 +1,12 @@
 import fs from 'node:fs/promises';
+import path from 'node:path';
 import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
-const root=process.argv[2],dir=root+'/task3/screening559',out=dir+'/integrated_workbook';
+const root=await fs.realpath(process.cwd());
+const dir=await fs.realpath(path.join(root,'task3','screening559'));
+if(path.relative(root,dir)!==path.join('task3','screening559')){throw Error('Unexpected repository/source directory');}
+const out=await fs.realpath(path.join(dir,'integrated_workbook'));
+if(path.relative(dir,out)!=='integrated_workbook'){throw Error('Output directory escapes the continuation folder');}
+await fs.access(path.join(root,'AGENTS.md'));
 const p=JSON.parse(await fs.readFile(out+'/integrated_workbook_data.json','utf8'));
 const w=await SpreadsheetFile.importXlsx(await FileBlob.load(root+'/task3/workbook/CEP_Task3_Evidence_Workbook.xlsx'));
 const baselineNames=w.worksheets.items.map(s=>s.name);const get=n=>w.worksheets.getItem(n);
@@ -57,8 +63,11 @@ const diff=get('Count Reconciliation').getRange('D2:D12').values.flat(),qdiff=ge
 if(diff.some(x=>x!==0)||qdiff.some(x=>x!==0))throw Error('Reconciliation failed '+JSON.stringify({diff,qdiff}));
 // A meaningful live dependency check on a newly integrated numeric appraisal.
 const row=202,old=get('QA').getCell(row-1,2).values[0][0],beforeScore=get('Studies').getRange('G22').values[0][0];
-if(typeof old!=='number')throw Error('Numeric appraisal test unavailable');get('QA').getCell(row-1,2).values=[[old-1]];
-if(get('Studies').getRange('G22').values[0][0]!==beforeScore-1)throw Error('New study formula did not respond');get('QA').getCell(row-1,2).values=[[old]];w.recalculate();
+if(typeof old!=='number'){throw Error('Numeric appraisal test unavailable');}
+get('QA').getCell(row-1,2).values=[[old-1]];
+if(get('Studies').getRange('G22').values[0][0]!==beforeScore-1){throw Error('New study formula did not respond');}
+get('QA').getCell(row-1,2).values=[[old]];
+w.recalculate();
 const errors=await w.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#NUM!|#NULL!',options:{useRegex:true,maxResults:30},maxChars:3000});
 console.log(errors.ndjson);
 await fs.mkdir(out+'/previews',{recursive:true});
