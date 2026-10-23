@@ -1,0 +1,6 @@
+Check ID,Priority,Task,Evidence to return,Status,Reviewer,Checked UTC,Notes
+H01,High,Close559-record scope,Dated scope decision or completed screening/full-text logs,Pending,,,20study target satisfied; bounded selection still disclosed
+H02,Closed,Complete20study source access,All20primary copies plus REEFcompanion inspected,Completed in source-review pass,,2026-10-22T10:46:11.840545+00:00,InferFair source gap closed; no missing assigned study copy
+H03,High,Independent check of prepared claims/forms,"Actual name,time,initial judgment,source anchor and adjudication",Pending,,,"All200QAitems,126included-reportICitems,52outcomes have first-pass source entries"
+H04,Medium,Check final-version condition,ParvaGPU final text comparison or explicit version limitation,Pending,,,REEF mapping and iGniter final-copy checks complete; Tallyv3 pinned
+H05,Medium,Close search evidence gaps,Original run/file/facet receipts or retained explicit limitations,Limitations documented,,,No manufactured exact times or archive byte checks

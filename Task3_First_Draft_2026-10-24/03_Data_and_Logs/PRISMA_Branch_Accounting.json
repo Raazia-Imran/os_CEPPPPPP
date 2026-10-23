@@ -1,0 +1,11 @@
+{
+  "scope": "559-record continuation at first-draft cutoff; whole-review PRISMA remains incomplete",
+  "records_screened": 559,
+  "records_excluded_at_screening": 225,
+  "records_advanced_to_retrieval": 334,
+  "new_included_reports": 10,
+  "full_text_excluded_reports": 4,
+  "advanced_records_without_closed_eligibility_or_identity": 320,
+  "reconciliation": "559=225+334;334=10+4+320",
+  "whole_review_final_prisma": false
+}

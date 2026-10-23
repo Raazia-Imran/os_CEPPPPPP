@@ -1,3 +1,9 @@
+# Current version
+
+Use ../Task3_First_Draft_2026-10-24 and ../Task3_LaTeX_2026-10-24. The material below describes an earlier checkpoint. Current counts are 30 studies / 31 reports, 300 QA items, 90 outcomes and 320 deferred eligibility/identity records.
+
+## Historical notes
+
 # Task 3: integrated first draft — 22 October 2026
 
 Start with [the main report](report/main.pdf), [master workbook](workbook/CEP_Task3_Evidence_Workbook.xlsx), and [team handover](team/First_Draft_Team_Plan.pdf).

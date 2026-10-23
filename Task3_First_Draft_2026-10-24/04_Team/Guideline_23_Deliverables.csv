@@ -1,0 +1,26 @@
+Deliverable,Requirement,Location,Status,Team action or remaining limit
+1,Final SLR report,01_Report PDF and Word,Draft prepared,Team review and wider selection limits remain
+2,Defined engineering problem,Report section 1,Present,Check the local single-GPU boundary
+3,Research objectives,Report section 1,Present,Check consistency with the protocol
+4,Three to five RQs,Report section 2,Present,Five RQs; each must have a synthesis answer
+5,SLR protocol,06_Protocol_and_Guidelines and methodology,Present,Original unchanged; deviations are separate
+6,Databases and justification,Report section 3 and Search_Log.csv,Present,Check named resources and actual coverage
+7,Exact search strings,Report appendix and search register,Partly closed,Historical fields and run/export mapping are incomplete
+8,Inclusion and exclusion criteria,Report section 3 and Eligibility.csv,Present,Apply the same six criteria to each added paper
+9,Database wise search results,Search_Log.csv and report section 4,Partly closed,Historical displayed/exported counts need evidence
+10,Search and screening log,Screening_Log.csv and Final_Screening_Decisions.csv,Partly closed,559 continuation screening decisions complete; 320 advanced eligibility/identity cases deferred
+11,Duplicate removal record,Duplicate_Removal.csv and identity audit,Documented with limits,114 links applied; unresolved companion/native identities remain
+12,PRISMA flow diagram,Report section 4 and counts.tex,Partly closed,Historical flow and current branch accounting are labelled; whole-review flow is not final
+13,QA checklist and scores,Master QA and Final_Candidate_QA.csv,Source appraisals present,300 items; independent checking must be recorded only when done
+14,Included primary studies,Master Studies and Source_Register.csv,Assessed set present,30 studies / 31 reports; ParvaGPU source-version condition and wider coverage remain
+15,Extraction sheet,Master Extraction and Evidence,Present,30 study forms; 90 observations plus two separate calculations
+16,Taxonomy,Report section 5 and Taxonomy.csv,Present,Classify mechanisms and implementation layers correctly
+17,Comparative evidence matrix,Report section 7 and Comparability.csv,Present,"Preserve workload, hardware and baseline conditions"
+18,Engineering trade offs,Report section 8,Present,Connect each benefit to a cost or limitation
+19,Conflicting evidence,Report section 9 and comparison tables,Present,Retain adverse results and explain unlike experiments
+20,Answers to all RQs,Report section 6,Present,Verify source support for each conclusion
+21,Engineering recommendation,Report section 10 and Recommendations.csv,Present,"State choice, conditions, evidence, benefit, sacrifice and alternative"
+22,Research gaps,Report section 11 and Research_Gaps.csv,Present,Scope gaps to reviewed evidence
+23,Threats to validity,Report section 12 and Validity.csv,Present,Retain incomplete selection and provenance limits
+24,Complete references,Report references and references.bib,Present with version limits,Ten added DOIs were found in their source PDFs; check original source-version cautions
+25,Supporting verification files,03_Data_and_Logs and repository history,Present with limits,Original exports and historic gaps retain their actual status

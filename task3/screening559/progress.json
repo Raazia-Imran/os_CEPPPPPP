@@ -67,15 +67,16 @@
   "final_screening_advanced": 334,
   "screening_reopened_prior_proposals": 56,
   "final_full_text_exclusions": 4,
-  "remaining_advanced_records": 321,
+  "remaining_advanced_records": 320,
   "discovery_records": 334,
   "discovery_exact_identity_matches": 297,
   "records_with_public_pdf_routes": 92,
   "new_report_workbook_integration_complete": true,
-  "integration_scope": "Current27-study/28-report snapshot; selection remains incomplete",
-  "working_QA_items": 270,
-  "working_reported_outcomes": 70,
-  "reference_additions": 9,
+  "integration_scope": "Current 30-study/31-report first draft; 320 advanced records deferred",
+  "working_QA_items": 300,
+  "working_reported_outcomes": 90,
+  "reference_additions": 10,
   "integrated_working_report_and_workbook": true,
-  "whole_review_final_prisma": false
+  "whole_review_final_prisma": false,
+  "metadata_reconciled_utc": "2026-10-23T21:21:44.738276+00:00"
 }

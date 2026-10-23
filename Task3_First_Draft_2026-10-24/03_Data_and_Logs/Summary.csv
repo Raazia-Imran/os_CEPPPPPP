@@ -1,0 +1,18 @@
+Item,Value,Meaning
+Review title,GPU Sharing Mechanisms for Multi-Tenant Inference,Bounded rapid systematic review (see Method & Deviations)
+Imported occurrences,4189,All database and supplementary occurrences
+Duplicate links applied,114,"Linked repeats retained in the provenance log. Earlier working registers showed 111 (ACM 29, IEEE 7); this workbook applies 114 (ACM 30, IEEE 9)."
+Canonical records screened,4075,Unique records receiving a structured record decision
+Excluded at screening,3718,Historical3493plus225continuation decisions; source labels preserved
+Full-text eligibility or identity open,320,Stopping rule removed for continued559branch; remaining retrieval/eligibility or identity open
+Completed full-text eligibility decisions,37,Completed eligibility decisions only; pending inspected reports such as MIGER are not counted here
+Included unique studies,30,Working eligible corpus; selection census still incomplete
+QA appraisals,300,Ten criteria per study; source evidence retained
+Evidence rows,90,Source-specific observations; no pooling of unlike metrics
+Calculated quantities,2,Values calculated from explicitly recorded source inputs
+Method,Single assessment pass under team direction; see Method & Deviations,AI-tool use and the independent-review evidence boundary are stated once in Method & Deviations.
+Identifier guide,P = report; S = study; R = record; E = evidence row; C = calculation,A companion publication may share one study ID
+Records screened without abstract text,2933,Decisions rest on title/type metadata only
+Records screened with abstract text in export,1142,Abstract text was available in the export
+Independent human verification,No item-level independent human votes supplied,Source-based review under team direction; amendmentM2026-10-23
+Task3 integrated status,30studies;31reports;300QAitems;90outcomes,New working workbook; frozen20/21release unchanged; full-text scope remains open

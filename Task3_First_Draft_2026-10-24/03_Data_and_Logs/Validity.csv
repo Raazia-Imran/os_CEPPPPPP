@@ -1,0 +1,9 @@
+Threat,Evidence,Effect on conclusion,Mitigation applied,Remaining work
+Selection/stopping,559 retained records not assessed,No exhaustive recall or prevalence claim,Stopping branch remains visible,Instructor/team decision on bounded scope; extend if required
+Title-only decisions,2933 records without exported abstract,Relevant work may be missed,Abstract-availability column retained,Prioritize uncertain/relevant records for abstract checks
+Single review,No item-level independent checks,Correlated screening/QA/extraction errors possible,Original rationale and source anchors retained,Record real named checks if performed
+Search provenance,Displayed/exported discrepancies and broad fields,Search cannot be fully reconstructed from totals,Exact preserved query/log values retained,"Supply missing original exports, facets and receipts"
+Source version,ParvaGPU author manuscript not compared with final text,Page/result mappings may differ,iGniter final checked; Tallyv3 pinned; REEF conference/journal mapping resolved,Confirm ParvaGPU final equivalence or retain version condition.
+Measurement heterogeneity,Different GPU/model/baseline/statistic,Cross-study speedup ranking is invalid,No pooled effect size or universal winner,Matched comparisons needed
+Reporting bias,Uneven repetitions and uncertainty,Headlines may overstate robustness,All52 retained outcome values/context checked; adverse findings retained,Independent high-impact claim checks; reporting uncertainty still missing in some sources.
+Continuation incomplete,559screened;320advanced records open,Working corpus may change,Conservative reopening; staged evidence logs and explicit method amendment,Complete full text and identity audit; retain historical search limitations

@@ -1,0 +1,12 @@
+Gap ID,Observation in corpus,Reports / basis,Research question,Needed experiment
+G01,No matched all-family comparison,Comparability CMP01-CMP08,Which gains survive matched conditions?,"Same GPU, model mix, memory budget, arrivals and SLO across families"
+G02,Security/fault boundaries often unestablished,Extraction Security boundary / Fault boundary,Does performance control protect hostile tenants?,"Separate adversarial access, fault injection and performance tests"
+G03,Metrics emphasize different units,E001-E052,Can foreground protection preserve useful background work?,"Report per-model goodput, tails and background progress jointly"
+G04,Partition prediction affects makespan,P020 E050,How does reconfiguration affect online service?,Bursty arrivals plus placement changes and request-tail measurement
+G05,Version and method details remain incomplete,ParvaGPU final-text equivalence; source Q3/Q4/Q10 reporting limits. iGniter final checked; Tallyv3 pinned.,How reproducible are the comparisons?,"Publish exact version, driver/runtime, warmup, repetitions and uncertainty"
+G06,Energy and cost evidence not harmonized,Extraction schema and heterogeneous outcomes,Do measured utilization gains reduce energy per useful request?,Measure GPU and host energy per SLO-compliant request
+CONT-G1,"Supported tenant sets, reimplemented baselines and metric populations differ",P024-P029,RQ2/RQ3: which gains survive matched comparisons?,Same GPU/model/load/partition and late-request accounting
+CONT-G2,Performance isolation is often stronger than demonstrated fault/security evidence,P024-P029,RQ4: what failure boundaries are actually established?,Fault injection and adversarial co-tenancy with latency tests
+CONT-G3,Edge variants and LLM remapping shift costs beyond utilization,"P026,P028,P029",RQ3/RQ5: when do accuracy/memory/transfer costs dominate?,Multi-metric sensitivity under deployment-specific constraints
+CONT-G4,Kernel variants can be sensitive to sustained hardware drift,P031,RQ3/RQ4:when do offline choices become stale?,Repeat sustained runs with refreshed profiles and matched compiler baselines
+CONT-G5,Block-time dispersion is not end-to-end request jitter,P032,RQ2/RQ3:do block-level proxies predict request stability?,Report per-task request distributions and accuracy/deadline metrics together

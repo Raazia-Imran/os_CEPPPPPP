@@ -1,0 +1,1 @@
+The private team ZIP contains all ten added PDFs in this folder. The public repository provides URLs, DOIs and hashes in 03_Data_and_Logs/Release_Reading_Copy_Access.csv. Reading copies are excluded from public publication.

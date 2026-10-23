@@ -1,0 +1,11 @@
+Stage,Count,Accounting note
+Records identified,4189,Preserved historical count; run-provenance limitations remain
+Duplicate links applied,114,Existing duplicate links retained; new companion proposals pending
+Canonical records screened,4075,Working partition: screening exclusions + open + included report records + full-text exclusions
+Excluded at record screening,3718,3493historical+225continuation; underlying evidence labels retained
+Advanced after screening,357,Not all advanced reports are retrieved or assessed
+Eligibility/identity open,320,Unresolved; not relabeled unavailable or excluded
+Completed full-text eligibility decisions,37,Historical23plus final continuation decisions; pending inspected reports not included
+Excluded after source assessment,6,Historical2plus continuation exclusions
+Included report versions,31,REEF companion remains one study
+Included unique studies,30,Working corpus; not an exhaustive final census

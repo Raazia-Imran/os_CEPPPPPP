@@ -1,0 +1,11 @@
+Study ID,Report ID,Paper,DOI,Suggested checker,PDF in private bundle,QA rows,Eligibility criteria,Outcome rows,Current decision,Independent check
+S021,P024,LithOS,10.1145/3731569.3764818,Eshaal,05_Added_Paper_PDFs/S021_P024.pdf,10,6,2,Include; source assessed,Not recorded by this guide
+S022,P025,Abacus,10.1145/3458817.3476143,Rameen,05_Added_Paper_PDFs/S022_P025.pdf,10,6,2,Include; source assessed,Not recorded by this guide
+S023,P026,Miriam,10.1145/3625687.3625789,Eshaal,05_Added_Paper_PDFs/S023_P026.pdf,10,6,2,Include; source assessed,Not recorded by this guide
+S024,P027,SGDRC,10.1145/3710848.3710863,Rameen,05_Added_Paper_PDFs/S024_P027.pdf,10,6,2,Include; source assessed,Not recorded by this guide
+S025,P028,Pantheon,10.1145/3643832.3661878,Eshaal,05_Added_Paper_PDFs/S025_P028.pdf,10,6,3,Include; source assessed,Not recorded by this guide
+S026,P029,Oneiros,10.1145/3772052.3772215,Rameen,05_Added_Paper_PDFs/S026_P029.pdf,10,6,3,Include; source assessed,Not recorded by this guide
+S027,P030,GACER,10.1145/3676536.3676718,Eshaal,05_Added_Paper_PDFs/S027_P030.pdf,10,6,4,Include; source assessed,Not recorded by this guide
+S028,P031,ElasticRoom,10.1145/3625549.3658654,Rameen,05_Added_Paper_PDFs/S028_P031.pdf,10,6,8,Include; source assessed,Not recorded by this guide
+S029,P032,SPLIT,10.1145/3605573.3605627,Eshaal,05_Added_Paper_PDFs/S029_P032.pdf,10,6,6,Include; source assessed,Not recorded by this guide
+S030,P033,KACE,10.1145/3698038.3698555,Rameen,05_Added_Paper_PDFs/S030_P033.pdf,10,6,6,Include; source assessed,Not recorded by this guide

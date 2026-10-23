@@ -1,3 +1,13 @@
+# Current Task 3 first draft
+
+Use [Task3_First_Draft_2026-10-24](Task3_First_Draft_2026-10-24/) for the PDF, Word report, current Excel master, all core data logs, six-page team guide and suggested check queues. Use [Task3_LaTeX_2026-10-24](Task3_LaTeX_2026-10-24/) for the standalone runnable LaTeX project.
+
+Current assessed evidence: 30 studies across 31 reports, 300 QA items and 90 outcome rows. All 559 continuation screening decisions are recorded; 320 advanced eligibility/identity records remain deferred. The entire SLR is not complete. The new team guide maps every mandatory deliverable and the remaining limits. Licensed reading PDFs are only in the private team download.
+
+The earlier frozen packages below are historical backups.
+
+---
+
 ## Current files
 
 Open **[final things](final%20things/README.md)** for the statistics, current paper/DOI list, report and LaTeX, simple dated workbook, QA, extraction and supporting logs. Final selection remains pending; the folder preserves current status.

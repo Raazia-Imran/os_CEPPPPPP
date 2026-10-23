@@ -1,0 +1,8 @@
+Code,Meaning
+extracted,Value taken from the source and anchored to a location
+not_assessed,Field or property not established in the evidence assessed for this review; this does not mean the source never reports it.
+not_reported,Source was checked and does not report it
+not applicable,Field does not apply to this record or study
+not recorded,Information was not captured when the work was done (for example individual decision times)
+NA (QA),Justified not-applicable QA item; its maximum is removed from the applicable denominator
+no DOI; official URL in Source column,Publication has no resolved DOI; use the official URL

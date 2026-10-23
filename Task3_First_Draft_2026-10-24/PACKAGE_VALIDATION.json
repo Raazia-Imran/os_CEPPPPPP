@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24",
+  "studies": 30,
+  "reports": 31,
+  "QA_items": 300,
+  "outcomes": 90,
+  "calculations": 2,
+  "continuation_screening": {
+    "total": 559,
+    "excluded": 225,
+    "advanced": 334,
+    "closed_eligibility": 14,
+    "deferred_eligibility_or_identity": 320
+  },
+  "new_papers": 10,
+  "new_criteria": 60,
+  "new_QA_items": 100,
+  "new_outcomes": 38,
+  "guideline_23_deliverables_mapped": 25,
+  "guide_pages": 6,
+  "report_structure_sections": 13,
+  "whole_SLR_complete": false,
+  "independent_checks_not_invented": true,
+  "report_pdf_sha256": "486c4a9f3209549284aecdc861300e95fe14da62d4ccee9721cf0aafc302fb85",
+  "master_sha256": "14fbab1c5c633aba62016d8025bc9f6373cb9baef5233f099c2b33c283918e18",
+  "old_shared_zip_matches_backup": true
+}
