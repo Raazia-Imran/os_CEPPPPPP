@@ -1,0 +1,8 @@
+Record ID,Study ID,Report ID,Issue,Meaning,Anchor
+R02181,S030,P033,No safety proof,"All observed predictions exceed measured maxima, but authors expressly deny safety guarantees; finite-run MOET is not true WCET.",p1 abstract; p14 conclusion
+R02181,S030,P033,Large pessimism,"AlexNet EN estimate39901.50ms exceeds measured maximum by5.52xSMK/5.0xSP; this is adverse prediction pessimism, not latency speedup.",Tables4-5
+R02181,S030,P033,Global headline conflict,Abstract/conclusion maximum overestimation11x conflicts with Table4 gramschm14.75; preserve raw table and avoid corpus-wide11x claim.,p1/p14 vs p12 Table4
+R02181,S030,P033,Sampling inconsistency,Training phase describes10runs per kernel; result tables describe maximum1000runs. Do not silently harmonize.,p10 sectionVII.A.3; p12 sectionVII.B.2
+R02181,S030,P033,Scope,"Kernel/application timing characterization of one inference benchmark with synthetic stressors; no arrival-rate SLA, throughput or isolation result.",pp9-13
+R02181,S030,P033,Version,Accepted IEEE source footer identifies correct2024 DOI; front-page DOI/volume/year are placeholders. Not a preprint-only item and not claimed publisher-typeset-equivalent.,allpagefooters
+R02181,S030,P033,ObservedSPvsSMK,Different enemy and partition setup; do not attribute7975.966vs7224.10ms difference causally to SP alone.,pp11-13

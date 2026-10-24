@@ -1,0 +1,8 @@
+Record ID,Study ID,Report ID,Issue,Meaning,Anchor
+R01590,S035,P038,Scopecondition,Inference executionatbatch1mustfitlongesttrainingbubble; peakmemorysum mustfitoneGPU.,p5 §3.2
+R01590,S035,P038,No absolute guarantee,MultiinstanceDP allows<7%trainingloss; pipelinecaseCoExectradeoff3–9%; keepadverseresults.,pp9–10
+R01590,S035,P038,Normalization,ExclusiveusesadditionalGPU; normalizedthroughputsareinstancespecificnotunqualifieddeviceutilization.,p8 §5.2
+R01590,S035,P038,Headline,14xDPofflinevsTGS and67%DPonlinep95vsMPS describe differentexperiments.,p9
+R01590,S035,P038,299percent,299%morethanbaseline is3.99x; do notconvertto2.99x.,p10
+R01590,S035,P038,Sampling,Bubblemonitor example2ms vsNVML0.166–1sstatupdates; notGPUutilization samplingdenominatorforthethroughputmetric.,p5
+R01590,S035,P038,Version,Publisher firstonline2025 althoughNPCevent2024;12pageauthorcopyvs13pagetypeset; versionlimitsretain.,Publisherrecord; PDFp1

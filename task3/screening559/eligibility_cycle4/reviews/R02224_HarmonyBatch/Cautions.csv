@@ -1,0 +1,7 @@
+Record ID,Study ID,Report ID,Issue,Meaning,Anchor
+R02224,S036,P039,Tenants,"Same model does not imply same tenant: independently specified app SLOs, arrivals and batching timeouts establish management separation.",pp3–4 TableI
+R02224,S036,P039,Cloudcontrol,Cloud cGPU implementation and unknown neighbouring load limit per-cotenant attribution; do not imply experiment controls physical neighbour identities.,pp3–5
+R02224,S036,P039,Baselines,MBS+ embeds authors predictor; BATCH uses CPU-only functions. Cost gains reflect heterogeneous provisioning and batching jointly.,pp7–8
+R02224,S036,P039,Maximum,Observed/profiled maxima and model equations do not prove a worst-case latency guarantee under all unseen loads.,pp3–5
+R02224,S036,P039,Metadata,"Use final10page NSF copy, not11page arXiv; recovered DOI should replace missing DOI in queue without changing immutable ID.",NSF PDF; artifact citation
+R02224,S036,P039,Captionerror,"Fig10 caption says BATCH does support GPU functions, while methods say CPU-only; preserve methods and flag inconsistency.",pp7–8

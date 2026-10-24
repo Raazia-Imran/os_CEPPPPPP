@@ -1,0 +1,12 @@
+{
+  "record": "R02181",
+  "study": "S030",
+  "report": "P033",
+  "decision": "Include",
+  "IC_rows": 6,
+  "QA_rows": 10,
+  "QA_score": 11,
+  "QA_applicable_maximum": 16,
+  "outcome_rows": 4,
+  "PDF_in_git": false
+}

@@ -1,0 +1,15 @@
+{
+  "record": "R00054",
+  "study": "S032",
+  "report": "P035",
+  "criteria": 6,
+  "QA_items": 10,
+  "QA_score": 12,
+  "QA_applicable_maximum": 18,
+  "outcomes": 6,
+  "official_source_pages": 7,
+  "official_source_sha256": "6b1e4e8a857b64d9b5dfb1949891a9fbbfd89691391b10f10ecc9c355bc2bc3f",
+  "final_scientific_text_checked": true,
+  "abstract_body_average_discrepancy_retained": true,
+  "independent_human_vote_asserted": false
+}

@@ -1,0 +1,15 @@
+{
+  "record": "R00116",
+  "study": "S033",
+  "report": "P036",
+  "criteria": 6,
+  "QA_items": 10,
+  "QA_score": 16,
+  "QA_applicable_maximum": 20,
+  "outcomes": 6,
+  "source_pages": 17,
+  "source_sha256": "98a10291118e87aa450ab2c9320f30e86f115ccbc4c9cb12e2bd5cdda4e8a052",
+  "accepted_published_identity_corroborated": true,
+  "publisher_typeset_equivalence_asserted": false,
+  "independent_human_vote_asserted": false
+}
