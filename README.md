@@ -1,3 +1,9 @@
+# Latest frozen first draft: 31 studies / 32 reports
+
+Open [First_Draft_Submission_2026-10-24](First_Draft_Submission_2026-10-24/) for the current public submission ZIP and separate editable LaTeX ZIP. These supersede the older 30-study / 31-report folders below. The assessed corpus is frozen; 313 advanced candidates remain unassessed at cutoff.
+
+## Historical documentation (superseded for current handover)
+
 # Current Task 3 first draft
 
 Use [Task3_First_Draft_2026-10-24](Task3_First_Draft_2026-10-24/) for the PDF, Word report, current Excel master, all core data logs, one-page team guide and suggested check queues. Use [Task3_LaTeX_2026-10-24](Task3_LaTeX_2026-10-24/) for the standalone runnable LaTeX project.
